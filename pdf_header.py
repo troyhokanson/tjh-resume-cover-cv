@@ -265,4 +265,35 @@ __all__ = [
     "PAGE1_BANNER_HEIGHT", "PAGEN_BANNER_HEIGHT",
     "draw_page1_header", "draw_pageN_header",
     "clean_pdf_metadata",
-]
+]from reportlab.lib.units import inch
+from reportlab.lib.colors import black, HexColor
+
+FOOTER_LINE_1 = "Controlled Distribution — For Hiring Consideration Only"
+FOOTER_LINE_2 = "linkedin.com/in/troyhokanson  |  troy-hokanson.github.io/portfolio"
+LIGHT_GRAY = HexColor("#7A7A7A")
+
+
+def build_footer(canvas, doc, *, show_page_numbers=False):
+    """
+    Stamps controlled-distribution footer on every page.
+    Corporate investigative protocol standard.
+    """
+    canvas.saveState()
+    page_w = doc.pagesize[0]
+
+    # Line 1: Distribution statement (EB Garamond Italic, 9pt, black)
+    line1 = FOOTER_LINE_1
+    if show_page_numbers:
+        line1 = f"{FOOTER_LINE_1} — Page {canvas.getPageNumber()}"
+
+    canvas.setFont("EBGaramond-Italic", 9)
+    canvas.setFillColor(black)
+    canvas.drawCentredString(page_w / 2.0, 0.45 * inch, line1)
+
+    # Line 2: Raw URL fallback (Inter, 8pt, light gray)
+    canvas.setFont("Inter-Regular", 8)
+    canvas.setFillColor(LIGHT_GRAY)
+    canvas.drawCentredString(page_w / 2.0, 0.30 * inch, FOOTER_LINE_2)
+
+    canvas.restoreState()
+
