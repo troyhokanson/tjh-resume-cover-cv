@@ -296,4 +296,10 @@ def build_footer(canvas, doc, *, show_page_numbers=False):
     canvas.drawCentredString(page_w / 2.0, 0.30 * inch, FOOTER_LINE_2)
 
     canvas.restoreState()
+    doc.build(
+    story,
+    onFirstPage=lambda c, d: (draw_first_page_header(c, d), build_footer(c, d)),
+    onLaterPages=lambda c, d: (draw_later_page_header(c, d), build_footer(c, d, show_page_numbers=True)),
+)
+
 
