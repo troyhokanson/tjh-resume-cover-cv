@@ -36,13 +36,13 @@ tailor a resume, tailor a cover letter, build a resume, build a cover letter, bu
 
 | Element | Spec |
 |---|---|
-| Background | Full-bleed navy `#0D1B2A`, zero whitespace above, left, or right |
-| Name | "Troy J. Hokanson", Garamond-Bold 28pt, WHITE `#FFFFFF`, centered |
-| Rule | Thin gold `#C9A84C`, 0.75pt, centered, ~70% page width |
-| Contact row | Inter 9pt (PDF) / Calibri 10pt (DOCX), gold `#C9A84C`, centered, separator `   \|   ` |
+| Background | Full-bleed navy `#0D1B2A`, zero whitespace above, left, or right, entire header always Navy no exceptions |
+| Name | "Troy J. Hokanson", Garamond-Bold 24pt, WHITE `#FFFFFF`, centered |
+| Rule | Thin gold `#C9A84C`, 0.90pt, centered, ~55% page width |
+| Contact row | Garamond 10pt (PDF) / Garamond 12pt (DOCX), gold `#C9A84C`, centered, separator `   \|   ` |
 | Contact items | Loaded from environment variables via `config.py` — see `config.example.env`. Never hardcoded. |
 | Subtitle | NONE. No role title between name and contact row. Ever. |
-| Page 2+ (PDF) | Slim 0.42" navy bar with name only in white Garamond-Bold 14pt |
+| Page 2+ (PDF) | Slim 0.42" navy bar with name only in white Garamond-Bold 16pt |
 | Page 2+ (DOCX) | Same banner repeats via section header part |
 | Body top margin | 1.55" page 1 / 0.67" page 2+ (matches `MARGIN['top_page1']` / `MARGIN['top_pageN']`) |
 
