@@ -423,3 +423,67 @@ __all__ = [
     "add_paragraph_bottom_border",
     "new_document",
 ]
+from docx.shared import Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
+
+FOOTER_LINE_1 = "Controlled Distribution — For Hiring Consideration Only"
+FOOTER_LINE_2 = "linkedin.com/in/troyhokanson  |  troy-hokanson.github.io/portfolio"
+
+
+def build_footer(document, *, show_page_numbers=False):
+    """
+    Adds controlled-distribution footer to DOCX.
+    Corporate investigative protocol standard.
+    """
+    section = document.sections[0]
+    footer = section.footer
+
+    # Line 1: Distribution statement (EB Garamond Italic, 9pt, centered)
+    p1 = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
+    p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run1 = p1.add_run(FOOTER_LINE_1)
+    run1.font.name = "EB Garamond"
+    run1.font.size = Pt(9)
+    run1.font.italic = True
+    run1.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
+
+    if show_page_numbers:
+        _append_page_x_of_y(p1)
+
+    # Line 2: Raw URL fallback (Inter, 8pt, light gray, centered)
+    p2 = footer.add_paragraph()
+    p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run2 = p2.add_run(FOOTER_LINE_2)
+    run2.font.name = "Inter"
+    run2.font.size = Pt(8)
+    run2.font.color.rgb = RGBColor(0x7A, 0x7A, 0x7A)
+
+
+def _append_page_x_of_y(paragraph):
+    """Inserts ' — Page X of Y' via Word field codes."""
+    run = paragraph.add_run(" — Page ")
+    run.font.name = "EB Garamond"
+    run.font.size = Pt(9)
+    run.font.italic = True
+
+    def _field(instr_text):
+        fld_begin = OxmlElement("w:fldChar")
+        fld_begin.set(qn("w:fldCharType"), "begin")
+        instr = OxmlElement("w:instrText")
+        instr.set(qn("xml:space"), "preserve")
+        instr.text = instr_text
+        fld_end = OxmlElement("w:fldChar")
+        fld_end.set(qn("w:fldCharType"), "end")
+        r = paragraph.add_run()
+        r.font.name = "EB Garamond"
+        r.font.size = Pt(9)
+        r.font.italic = True
+        r._r.append(fld_begin)
+        r._r.append(instr)
+        r._r.append(fld_end)
+
+    _field("PAGE")
+    paragraph.add_run(" of ").font.italic = True
+    _field("NUMPAGES")
