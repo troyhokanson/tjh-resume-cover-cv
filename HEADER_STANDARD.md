@@ -1,6 +1,6 @@
 # Troy Hokanson — Document Header Standard
 
-**Locked April 2026. This is the single source of truth for every document Troy ships.**
+**Locked May 19, 2026. This is the single source of truth for every document Troy ships.**
 
 Any resume, cover letter, CV, portfolio export, VA tracker print view, or other artifact bearing Troy's name MUST use the locked header from this repo. No exceptions. No hand-rolled headers. No "just this once" deviations.
 
