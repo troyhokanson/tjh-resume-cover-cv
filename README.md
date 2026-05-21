@@ -15,7 +15,7 @@ If you are about to build a Hokanson document and this repo is not present in th
 ## Repository Structure
 
 ```
-troy-hokanson-resume-cover-cv/
+tjh-resume-cover-cv/
 ├── config.py               # Contact info loader — reads env vars, never hardcoded
 ├── config.example.env      # Copy to .env and fill in real values
 ├── docx_header.py          # Locked DOCX header builder + body helpers
@@ -42,8 +42,8 @@ troy-hokanson-resume-cover-cv/
 
 ```bash
 # 1. Clone and set up
-git clone https://github.com/troyhokanson/troy-hokanson-resume-cover-cv
-cd troy-hokanson-resume-cover-cv
+git clone https://github.com/troyhokanson/tjh-resume-cover-cv
+cd tjh-resume-cover-cv
 pip install -r requirements.txt
 
 # 2. Configure contact info (never hardcoded — kept out of the repo)
