@@ -176,7 +176,7 @@ Always pass city/state in the school string: 'St. Cloud State University, St. Cl
 4. Page 1 section margin: 	op: 0. Required for full-bleed header.
 5. Honors (Magna Cum Laude, etc.) go in the duLine fifth parameter — never omitted.
 6. City/state always included in school name string.
-7. All dates written in full: 'March 2010 – May 2011', not '2010-2011'.
+7. Canonical repository chronology ranges may use compact forms such as '2007-2025', '2010-2011', and '2016-2021'. Expand dates in end-user documents only when the target document explicitly requires it.
 
 ---
 
