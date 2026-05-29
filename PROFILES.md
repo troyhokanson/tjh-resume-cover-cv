@@ -4,7 +4,7 @@
 
 This file defines the Layer 2 (audience-specific) voice rules referenced by [`VOICE_STANDARD.md`](./VOICE_STANDARD.md). Layer 1 hard rules apply to every profile and live in `VOICE_STANDARD.md`. The scanner reads this file conceptually but enforces the rules programmatically via the `PROFILE_RULES` dictionary in [`anti_ai_scan.py`](./anti_ai_scan.py).
 
-If no profile is specified at scan time, the scanner defaults to **`vendor-solutions`**. This reflects Troy's primary target archetype as of May 2026: Solutions Consultant / Sales Engineer / Public Safety Manager roles at vendors that sell into law enforcement and corporate investigations (Thomson Reuters, Magnet Forensics, Cellebrite, Axon, Veritone, Mark43).
+If no profile is specified at scan time, the scanner defaults to **`vendor-solutions`**. This reflects Troy's primary target archetype as of May 2026: Solutions Consultant / Sales Engineer / Public Safety Manager roles at vendors that sell into law enforcement and corporate investigations (Thomson Reuters, Magnet Forensics, Cellebrite, Axon, Veritone, Mark43, Flock Safety).
 
 Each profile defines:
 
@@ -23,7 +23,7 @@ Each profile defines:
 ### Target roles
 
 - Solutions Consultant (Thomson Reuters CLEAR, Magnet Forensics, Cellebrite)
-- Sales Engineer / Senior Sales Engineer (Axon, Veritone, Mark43)
+- Sales Engineer / Senior Sales Engineer (Axon, Veritone, Mark43, Flock Safety)
 - Solutions Expert / Solutions Architect (Cellebrite, Magnet, Exterro)
 - Public Safety Manager / Public Safety Strategy Lead
 - Technical Consultant (Public Safety, Government, Justice)
