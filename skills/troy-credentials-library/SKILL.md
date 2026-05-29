@@ -5,8 +5,6 @@ description: Structured catalog of Troy Hokanson's certifications, training hour
 
 # Troy Credentials Library
 
-> **Public Version Notice.** This is the sanitized, cross-platform-portable copy of `troy-credentials-library` published to GitHub for use across ChatGPT, Claude, Cursor, and other AI tools that read skills from a repo. Third-party civilian names and one neighboring-agency case file number have been redacted. The `suppressed_email_quotes` block has been removed entirely. The unsanitized master copy lives in Troy's private Perplexity user skill library and is the authoritative source.
-
 ## Purpose
 
 This skill is the single source of truth for which certifications and which commendation quotes are eligible for any given Troy Hokanson document. It exists so cover letters, resumes, and recruiter packets stop overclaiming, stop undershipping, and stop accidentally surfacing PTSD-flagged content.
@@ -17,13 +15,11 @@ The skill consumes one structured data file:
 /home/user/workspace/skills/troy-credentials-library/credentials_catalog.json
 ```
 
-Five top-level keys live in that file:
+Three top-level keys live in that file:
 
-1. `certifications` — split into `digital_forensics`, `investigations`, `supervisory_management`. Every entry has a tier (`headline` / `supporting` / `suppressed`), a `ptsd_safe` boolean, and a `profiles` list naming which target archetypes the entry is appropriate for.
-2. `commendation_quotes` — every formal written-commendation Troy can cite. Each has a `ptsd_safe` flag, a `themes` list, a `profiles` list, a one-paragraph `verbatim_short` direct quote, an `verbatim_attribution_notes` paragraph that captures the case context Troy can paraphrase, and a `nominator_role` (supervisor / citizen).
-3. `email_quotes` — supervisor and citizen email atta-cops and thank-you notes (less formal than written commendations, but still citable). Same shape as `commendation_quotes`: `id` (prefix `EMAIL-YYYYMMDD-SHORTNAME`), `ptsd_safe`, `tier`, `profiles`, `themes`, `verbatim_short`, `verbatim_attribution_notes`, `nominator_role`. Selectors treat `email_quotes` as an EXTENSION of `commendation_quotes` — both pools are eligible, both honor the supervisor + citizen cap and the voice/PTSD rules.
-4. `suppressed_email_quotes` — email entries excluded from selector output because they fail the PTSD-safe filter. Kept for personnel-file completeness only. NEVER pulled by any selector.
-5. `training_hours_total` — the documented hours figure used in summaries and cover letters.
+1. `certifications` — split into `digital_forensics`, `investigations`, `supervisory_management`, `community_diversity`, `teaching_faculty`. Every entry has a tier (`headline` / `supporting` / `suppressed`), a `ptsd_safe` boolean, and a `profiles` list naming which target archetypes the entry is appropriate for. ICAC-scope entries also carry `allow_icac_required: true` and remain `tier: suppressed` unless the consumer explicitly enables `allow_icac=True`.
+2. `commendation_quotes` — every supervisor write-up Troy can cite. Each has a `ptsd_safe` flag, a `themes` list, a `profiles` list, a one-paragraph `verbatim_short` direct quote, an `verbatim_attribution_notes` paragraph that captures the case context Troy can paraphrase, and a `nominator_role` (supervisor / citizen).
+3. `training_hours_total` — the documented hours figure used in summaries and cover letters.
 
 ## Hard Rules
 
@@ -46,7 +42,7 @@ When another skill (linkedin-profile-optimizer, github-application-document-stan
    - Cover letter inline reference: never list certifications. Reference one or two by name in prose if directly relevant (for example, "Cellebrite CCPA" for a vendor with mobile-forensics adjacency).
    - CV: every eligible entry, grouped by domain.
    - One-pager / capabilities sheet: 6 to 8 headline-tier entries only.
-4. **Pull eligible quotes.** Filter `commendation_quotes` AND `email_quotes` together the same way (union the two pools, apply identical filters). For a cover letter, attempt to select one entry with `nominator_role == "supervisor"` and one with `nominator_role == "citizen"`. If only one role is available for that profile, use one quote. Never use two from the same role. Headline-tier entries are preferred over supporting-tier. `suppressed_email_quotes` is NEVER read by the selector.
+4. **Pull eligible quotes.** Filter `commendation_quotes` the same way. For a cover letter, attempt to select one entry with `nominator_role == "supervisor"` and one with `nominator_role == "citizen"`. If only one role is available for that profile, use one quote. Never use two from the same role.
 5. **Pull the training hours figure.** Always cite `training_hours_total.documented_hours` rather than rounding or inventing.
 
 ## Quote Insertion Standard
@@ -77,14 +73,27 @@ When Troy provides new certificates or commendations:
 
 ## Files Currently Cataloged
 
-Source PDFs OCR'd into the catalog:
+Source documents OCR'd or reconciled into the catalog:
 
-- Digital-Forensic-Certificates.pdf (16 pages)
+- Digital-Forensic-Certificates.pdf (16 pages, original)
+- Digital-Forensic-Certificates-Compressed.pdf (16 pages, May 2026 update — added date precision and ICAC entries)
+- Digital-Forensic-Certificates-Compressed-2.pdf (16 pages, May 2026 variant)
+- Patrol-Certificates-02.pdf (13 pages — patrol-era certs reflected in tracker totals; not added as standalone catalog entries due to low SIU relevance)
 - Investigations-Certificates.pdf (22 pages)
 - Supervisory-Certificates.pdf (8 pages)
 - WRITTEN-COMMENDATION-02.pdf (4 pages)
 - Written-Commendations-01.pdf (24 pages)
-- 30 atta-cop email files (2002–2016) supplied 2026-05-29. 20 entries are in `email_quotes` (SAFE / citable). In the private master copy an additional 10 entries live under `suppressed_email_quotes` for personnel-file completeness only; that block is omitted from this public copy. Headline entries include the Chief Long thank-you on the joint US Postal Inspection Service federal mail-fraud case (Troy received a formal US Postal Inspection Service award on this case), the Sgt Polinski note on Troy's leadership of the probation liaison program, the Sgt Castonguay fraud follow-through note (prime SIU material), the Chief Martens 2002 performance-evaluation praise ("go-gettum attitude"), Troy's nomination of an off-duty civilian nurse for the Chief's Award of Merit (civilian-recognition leadership work), the 2009 Hvinden military send-off escort (multi-agency military-LE bridge), and a strong Lakeville-resident citizen letter (stolen-property recovery).
+- **Hokanson_Certification_Tracker_2026_UPDATED.BACKUP_20260413.xlsx** (master tracker, April 2026: 206 entries, 1,238.75 documented hours, used for `training_hours_total` reconciliation)
+
+Current catalog totals:
+
+- 65 cert entries across 5 domains (digital_forensics 21, investigations 26, supervisory_management 12, community_diversity 5, teaching_faculty 1)
+- 4 ICAC-gated entries (DF-018 through DF-021) with `allow_icac_required: true` flag and `tier: suppressed` by default
+- Documented training hours: 1,238.75 (1,208.75 excluding PTSD-unsafe / EXCLUDED categories)
+
+Pending (not in catalog yet):
+
+- Atta-cop email PDFs from the NotebookLM notebook at https://notebooklm.google.com/notebook/fbd4cdcd-11ed-4a85-8dd9-dff812343dcd — Troy will provide these as PDF uploads in a future session. Once available, add them under a new top-level `email_quotes` key with the same shape as `commendation_quotes`, marking each with `nominator_role: "supervisor"` or `nominator_role: "citizen"`.
 
 ## Cross-References
 
