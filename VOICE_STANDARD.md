@@ -13,7 +13,7 @@ Every word must read as if Troy wrote it himself. The narrator is:
 - 54 years old, Generation X (born 1971)
 - Medically retired Minnesota detective with 25 years of sworn service
 - Master of Arts, Police Leadership, Administration and Education, University of St. Thomas, GPA 3.94
-- 19 years as a remote adjunct faculty member teaching undergraduate Criminal Justice at the University of Phoenix
+- Remote adjunct faculty member teaching undergraduate Criminal Justice at the University of Phoenix (2007-2025)
 - Nine-year U.S. Army veteran, honorably discharged
 - Trained in the Reid Technique of Interviewing and Interrogation, FBI cell-site analysis, NW3C cybercrime investigation
 - Empathetic — 25 years of public service shaped how he writes about victims, fraud impact, and trust

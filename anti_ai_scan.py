@@ -6,7 +6,8 @@ the Pre-Submission Document Checklist. Run BEFORE share_file on any resume,
 cover letter, CV, recruiter packet, bio, or one-pager.
 
 Voice baseline: 54-year-old Gen-X medically retired Minnesota detective,
-M.A. (GPA 3.94), 19 years adjunct teaching, empathetic + investigator-precise.
+M.A. (GPA 3.94), University of Phoenix adjunct faculty member (2007-2025),
+investigative service in 2010-2011 and 2016-2021, empathetic + investigator-precise.
 
 Usage:
     from templates.anti_ai_scan import scan_pdf, FailedScan
