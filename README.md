@@ -5,8 +5,10 @@
 This repo enforces three locked standards:
 
 1. **Navy/gold header layout** (HEADER_STANDARD.md, docx_header.py, pdf_header.py)
-2. **Anti-AI / voice rules** (VOICE_STANDARD.md, anti_ai_scan.py)
+2. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in VOICE_STANDARD.md and Layer 2 audience profiles in PROFILES.md. Enforced by anti_ai_scan.py. Pick the right profile using PROFILE_SELECTOR.md.
 3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
+
+Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
 
 If you are about to build a Hokanson document and this repo is not present in the workspace, STOP and clone it first.
 
@@ -20,7 +22,8 @@ tjh-resume-cover-cv/
 ├── config.example.env      # Copy to .env and fill in real values
 ├── docx_header.py          # Locked DOCX header builder + body helpers
 ├── pdf_header.py           # Locked PDF page-1 header renderer
-├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate
+├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
+├── scan_and_report.py      # Friendly wrapper - run this at the share-file delivery gate
 ├── build_reference.py      # Rebuilds reference_header.docx after any header change
 ├── reference_header.docx   # Visual ground truth — diff against every new build
 ├── requirements.txt        # Python dependencies
@@ -30,7 +33,9 @@ tjh-resume-cover-cv/
 │   ├── test_anti_ai_scan.py  # 80+ unit tests for every scan rule
 │   └── test_config.py        # Tests for env-var loading and safe fallbacks
 ├── HEADER_STANDARD.md      # Locked layout specification
-├── VOICE_STANDARD.md       # Troy's permanent voice standard
+├── VOICE_STANDARD.md       # Layer 1 hard rules (apply to every document, every profile)
+├── PROFILES.md             # Layer 2 profile definitions (vendor-solutions, siu-fraud, analyst-intelligence)
+├── PROFILE_SELECTOR.md     # Decision tree - pick the right profile from a job posting
 ├── SYSTEM_PROMPT.md        # Copy-paste system prompt for custom AI setups
 ├── PLATFORM_SETUP.md       # How to configure ChatGPT, Claude, Gemini, etc.
 └── chatgpt_action_schema.json  # OpenAPI schema for ChatGPT Actions
@@ -54,6 +59,12 @@ cp config.example.env .env
 python -c "from docx_header import build_navy_header, new_document; print('OK')"
 python -c "from pdf_header import draw_page1_header; print('OK')"
 python -c "from anti_ai_scan import scan_pdf; print('OK')"
+python -c "from scan_and_report import main; print('OK')"
+
+# 5. Run the delivery-gate scan on a built document
+python scan_and_report.py /path/to/Hokanson_Cover_ThomsonReuters.pdf cover
+python scan_and_report.py /path/to/Hokanson_Cover_GEICO_SIU.pdf cover --profile siu-fraud
+python scan_and_report.py /path/to/Hokanson_Resume_Stripe_Analyst.pdf resume --profile analyst-intelligence
 
 # 4. Run the test suite
 python -m pytest tests/ -v
