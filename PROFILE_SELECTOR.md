@@ -13,6 +13,7 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Title contains | Profile |
 |---|---|
 | Solutions Consultant, Solutions Expert, Solutions Architect, Solutions Engineer | `vendor-solutions` |
+| Customer Solutions Manager, Customer Solutions Lead, Customer Solutions Architect | `vendor-solutions` |
 | Sales Engineer, Senior Sales Engineer, Public Safety Sales Engineer | `vendor-solutions` |
 | Public Safety Manager, Public Safety Strategy, Customer Success Engineer (public safety) | `vendor-solutions` |
 | Field Application Specialist, Technical Consultant (Public Safety / Justice) | `vendor-solutions` |
