@@ -1,8 +1,31 @@
 # Troy Hokanson — Document Header Standard
 
-**Locked May 19, 2026. This is the single source of truth for every document Troy ships.**
+**Locked May 19, 2026. Last updated June 3, 2026. This is the single source of truth for every document Troy ships.**
 
 Any resume, cover letter, CV, portfolio export, VA tracker print view, or other artifact bearing Troy's name MUST use the locked header from this repo. No exceptions. No hand-rolled headers. No "just this once" deviations.
+
+---
+
+## ⛔ CRITICAL ENFORCEMENT RULE — READ FIRST
+
+### The navy banner MUST live inside the Word document header section. NOT in the body.
+
+**This is the most commonly violated rule. Every AI session must read and enforce this before generating any DOCX.**
+
+- In a `.docx` file, the navy `#0D1B2A` full-bleed banner — including Troy's name, gold rule, and contact row — MUST be placed inside the document's **header section** (accessed via `doc.sections[0].header` in python-docx).
+- **NEVER render the navy banner as body content.** Placing it in the body makes it look like a solid navy block at the top of the page followed by a second chunk of color — it is visually broken and unprofessional.
+- The body of the document begins BELOW the header section, with the correct top margin applied so body text does not overlap the header.
+- The `build_navy_header(doc)` function in `docx_header.py` handles this correctly. Calling it is mandatory. Writing header HTML, table rows, or colored paragraphs into `doc.add_paragraph()` is forbidden.
+
+**What a broken output looks like (NEVER DO THIS):**
+- A navy bar appears at the very top of the page (looks okay at first glance)
+- Then another navy/colored block immediately follows in the body with the name text inside it
+- This produces a double-banner, ugly stacked block effect
+
+**What the correct output looks like:**
+- The header section contains the full-bleed navy banner (name, gold rule, contact row) — this repeats on every page automatically
+- The body starts cleanly below with white background and normal margins
+- No navy color appears anywhere in the body content
 
 ---
 
@@ -46,6 +69,8 @@ tailor a resume, tailor a cover letter, build a resume, build a cover letter, bu
 | Page 2+ (DOCX) | Same banner repeats via section header part |
 | Body top margin | 1.55" page 1 / 0.67" page 2+ (matches `MARGIN['top_page1']` / `MARGIN['top_pageN']`) |
 
+---
+
 ## How to Use
 
 ### DOCX (resumes, cover letters, CVs in Word format)
@@ -59,11 +84,13 @@ from templates.docx_header import (
 )
 
 doc = new_document()
-build_navy_header(doc)
+build_navy_header(doc)   # <-- this writes into doc.sections[0].header — NOT into the body
 add_section_heading(doc, "Professional Summary")
-# ... body ...
+# ... body content below here ...
 doc.save("output.docx")
 ```
+
+> **Why this works:** `build_navy_header(doc)` writes the navy banner into `doc.sections[0].header`, which is the actual Word document header section. This means the banner is structurally separate from the body, prints on every page, and looks correct in Word, Google Docs, and every PDF export. Writing banner content into `doc.add_paragraph()` instead is the failure mode — it will always look broken.
 
 ### PDF (resumes, cover letters, CVs in PDF format — ReportLab Platypus)
 
@@ -99,6 +126,8 @@ draw_page1_header(c, LETTER)
 c.save()
 ```
 
+---
+
 ## Visual Ground Truth
 
 `templates/reference_header.docx` — open this and any new doc side by side. Page 1 must match. If it doesn't, the build script is wrong, not the module.
@@ -109,14 +138,19 @@ Rebuild the reference after any module change:
 cd /home/user/workspace && python3 templates/build_reference.py
 ```
 
+---
+
 ## Hard Rules
 
 1. **Never hand-roll the header.** Always import from `templates.docx_header` or `templates.pdf_header`.
-2. **Never add a subtitle, role title, eyebrow, or tagline between the name and contact row.** The contact row sits directly under the gold rule.
-3. **Never use Inter for the name** or Garamond for the body.
-4. **Never use em dashes, en dashes, exclamation points, or VEVRAA language** anywhere in the document.
-5. **Never use `topMargin > 0` on a PDF** — the navy banner must sit flush at the top.
-6. **If the spec genuinely needs to change**, edit both `docx_header.py` and `pdf_header.py`, rebuild the reference DOCX, bump the version, and commit.
+2. **The navy banner lives in the Word header section — NEVER in the document body.** If you are writing a colored paragraph, table, or any navy content via `doc.add_paragraph()` or `doc.add_table()` at the top of the body, you are doing it wrong. Stop. Use `build_navy_header(doc)`.
+3. **Never add a subtitle, role title, eyebrow, or tagline between the name and contact row.** The contact row sits directly under the gold rule.
+4. **Never use Inter for the name** or Garamond for the body.
+5. **Never use em dashes, en dashes, exclamation points, or VEVRAA language** anywhere in the document.
+6. **Never use `topMargin > 0` on a PDF** — the navy banner must sit flush at the top.
+7. **If the spec genuinely needs to change**, edit both `docx_header.py` and `pdf_header.py`, rebuild the reference DOCX, bump the version, and commit.
+
+---
 
 ## Repo
 
@@ -130,6 +164,8 @@ cd troy-hokanson-resume-cover-cv
 cp config.example.env .env
 # Edit .env and fill in your real contact values
 ```
+
+---
 
 ## Contact Info Setup (Multi-Device)
 
@@ -149,6 +185,8 @@ Add these secrets under Settings -> Secrets and variables -> Actions:
 - `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio`
 
 Builds run on any device or via Actions will inject the real values into every document header automatically.
+
+---
 
 ## Skill Enforcement
 
