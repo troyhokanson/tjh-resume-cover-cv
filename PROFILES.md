@@ -33,12 +33,12 @@ Each profile defines:
 
 ### Voice emphasis
 
-Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways / GrayKey operator experience as the END USER the vendor is selling to. Lean into his 19 years of adjunct teaching as proof he can train customers, run workshops, and present at conferences. Lean into the 10-agency Dakota County Electronic Crimes Task Force as proof he understands the multi-stakeholder buyer (chief, sheriff, county attorney, IT). Lean into the 25 years of credibility with sworn-officer audiences. Travel readiness 25%-60% is in-scope.
+Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways / GrayKey operator experience as the END USER the vendor is selling to. Lean into his 18 years of adjunct teaching as proof he can train customers, run workshops, and present at conferences. Lean into the 10-agency Dakota County Electronic Crimes Task Force as proof he understands the multi-stakeholder buyer (chief, sheriff, county attorney, IT). Lean into the 25 years of credibility with sworn-officer audiences. Travel readiness 25%-60% is in-scope.
 
 ### Required framing elements (in addition to Layer 1)
 
 - The phrase "from the end-user side of the workflow" or its equivalent must appear at least once in a cover letter or About section. Troy was the customer for these tools. That credibility is the whole pitch.
-- At least one reference to teaching, training, or explaining to a non-technical audience. Examples: "I have spent 19 years explaining digital evidence to undergraduate Criminal Justice classes that had never seen a hash value." "I trained five sworn officers in Cellebrite UFED extraction over the course of three years."
+- At least one reference to teaching, training, or explaining to a non-technical audience. Examples: "I have spent 18 years explaining digital evidence to undergraduate Criminal Justice classes that had never seen a hash value." "I trained five sworn officers in Cellebrite UFED extraction over the course of three years."
 - Comp / travel readiness: when the posting names travel above 25%, the cover letter must explicitly affirm travel readiness in one sentence. Plain, not performative.
 
 ### Preferred vocabulary
@@ -62,7 +62,7 @@ Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me what good investigative tooling looks like from the end-user side of the workflow. I ran Cellebrite UFED extractions on the Dakota County Electronic Crimes Task Force across ten partner agencies, processed 5,304 GB of digital evidence in 2020, and spent 19 years as an adjunct faculty member at the University of Phoenix teaching the next generation of Criminal Justice graduates how to read what those tools produce.
+> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me what good investigative tooling looks like from the end-user side of the workflow. I ran Cellebrite UFED extractions on the Dakota County Electronic Crimes Task Force across ten partner agencies, processed 5,304 GB of digital evidence in 2020, and spent 18 years as an adjunct faculty member at the University of Phoenix teaching the next generation of Criminal Justice graduates how to read what those tools produce.
 
 ### Worked example — resume bullet
 
@@ -137,7 +137,7 @@ Lean into the 6.5 years of investigation experience, the documented restitution 
 
 ### Voice emphasis
 
-Lean into the writing. Lean into the 19 years of adjunct teaching as proof Troy writes for audiences who were not there. Lean into the Master's degree (M.A. Police Leadership, GPA 3.94) and the OSINT, link-analysis, and structured-analytic-technique exposure. Lean into the digital forensic underpinning (Cellebrite, FTK, X-Ways) as the source of the data the analyst would normally consume. Lean into pattern recognition across cases. Lean into the SAR/STR familiarity (cataloged training hours back this up).
+Lean into the writing. Lean into the 18 years of adjunct teaching as proof Troy writes for audiences who were not there. Lean into the Master's degree (M.A. Police Leadership, GPA 3.94) and the OSINT, link-analysis, and structured-analytic-technique exposure. Lean into the digital forensic underpinning (Cellebrite, FTK, X-Ways) as the source of the data the analyst would normally consume. Lean into pattern recognition across cases. Lean into the SAR/STR familiarity (cataloged training hours back this up).
 
 ### Required framing elements (in addition to Layer 1)
 

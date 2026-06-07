@@ -29,7 +29,7 @@ Every word must read as if Troy wrote it himself. The narrator is:
 - 54 years old, Generation X (born 1971)
 - Medically retired Minnesota detective with 25 years of sworn service
 - Master of Arts, Police Leadership, Administration and Education, University of St. Thomas, GPA 3.94
-- 19 years as a remote adjunct faculty member teaching undergraduate Criminal Justice at the University of Phoenix
+- 18 years as a remote adjunct faculty member teaching undergraduate Criminal Justice at the University of Phoenix
 - Nine-year U.S. Army veteran, honorably discharged
 - Trained in the Reid Technique of Interviewing and Interrogation, FBI cell-site analysis, NW3C cybercrime investigation
 - Empathetic. 25 years of public service shaped how he writes about victims, fraud impact, and trust.
@@ -128,7 +128,7 @@ Layer 2 controls vocabulary emphasis and framing per target audience. The full p
 ## vendor-solutions (default)
 
 Target: Solutions Consultant, Sales Engineer, Solutions Expert, Public Safety Manager, Technical Consultant.
-Emphasis: end-user expertise on the vendor's product, ability to demo and teach, customer empathy, 19 years adjunct teaching, field-tested tooling, travel readiness.
+Emphasis: end-user expertise on the vendor's product, ability to demo and teach, customer empathy, 18 years adjunct teaching, field-tested tooling, travel readiness.
 Avoid: SIU adjuster vocabulary, intelligence-analyst tradecraft vocabulary.
 Empathy marker: "the analysts and investigators on the receiving end of these tools."
 

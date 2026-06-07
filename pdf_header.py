@@ -265,7 +265,8 @@ __all__ = [
     "PAGE1_BANNER_HEIGHT", "PAGEN_BANNER_HEIGHT",
     "draw_page1_header", "draw_pageN_header",
     "clean_pdf_metadata",
-]from reportlab.lib.units import inch
+]
+from reportlab.lib.units import inch
 from reportlab.lib.colors import black, HexColor
 
 FOOTER_LINE_1 = "Controlled Distribution — For Hiring Consideration Only"

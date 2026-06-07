@@ -10,7 +10,6 @@ import os, sys
 
 # Allow running directly from the repo root (`python build_reference.py`) as
 # well as via the workspace/templates symlink (`python templates/build_reference.py`).
-# In both cases __file__ resolves to the repo directory when made absolute.
 _here = os.path.dirname(os.path.abspath(__file__))
 if _here not in sys.path:
     sys.path.insert(0, _here)
@@ -35,10 +34,17 @@ def build():
     )
 
     add_section_heading(doc, "Professional Experience")
+
+    # DCECTF and ECU are always two separate blocks -- never merged.
+    # Dates from CAREER_CONSTANTS.md (locked June 2026).
     add_job_block(doc, "Detective / Digital Forensic Examiner",
-                  "Lakeville Police Department  |  Dakota County Electronic Crimes Task Force",
-                  "September 2016 - December 2021")
+                  "Dakota County Electronic Crimes Task Force (DCECTF)  |  Lakeville Police Department",
+                  "June 2017 - December 2021")
     add_bullet(doc, "Sample bullet to verify body styling stays consistent across builds.")
+
+    add_job_block(doc, "Detective / Electronic Crimes Unit (ECU)",
+                  "Lakeville Police Department  |  Lakeville, MN",
+                  "September 2016 - June 2017")
     add_bullet(doc, "Second sample bullet to confirm bullet alignment and line spacing.")
 
     out = os.path.join(os.path.dirname(os.path.abspath(__file__)), "reference_header.docx")
