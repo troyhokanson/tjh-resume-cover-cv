@@ -17,7 +17,7 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 `occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company` `theft` `retail-fraud` `burglary` `theft-by-swindle`
 
 **Investigative Methods**
-`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination` `physical-evidence-collection` `casino-security-coordination` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `canvass` `probation-coordination` `warrant-service` `community-liaison`
+`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination` `physical-evidence-collection` `casino-security-coordination` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `canvass` `probation-coordination` `warrant-service` `community-liaison` `self-initiated-followup`
 
 **Outcome**
 `felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed` `prison` `parole-violation` `charged` `stayed-sentence` `supervised-probation` `gambling-treatment-ordered`
@@ -218,6 +218,36 @@ In 2012 I was selected as one of two officers to launch the Lakeville Police Dep
 
 ---
 
+## Professional Conduct Entry — Self-Initiated Fraud Follow-Up on Patrol
+
+**Source:** Supervisor email from Sgt. Jay Castonguay, December 8, 2013, copied to all patrol sergeants and police staff, subject line referencing case number 13004539
+**Context:** This email was sent during a period when Troy carried no investigative assignment. His first investigative rotation ended approximately 2011. His second investigative rotation did not begin until September 2016. The December 2013 commendation falls nearly in the middle of a five-year patrol period between those two rotations.
+**Significance:** Sgt. Castonguay stated in writing that most patrol officers would have forwarded the fraud report to the investigations unit without doing additional work, and that Troy instead took the necessary steps to resolve the case on his own. The email was distributed to all patrol sergeants and staff, giving it command-level visibility. It documents a pattern — not an exception — because Troy routinely conducted investigative follow-up on fraud cases during patrol shifts when no assignment or additional compensation required it.
+**TAGS:** `self-initiated-followup` `commendation` `siu-fraud` `analyst-intelligence`
+
+### Resume Bullet — Full
+
+During patrol assignments between investigative rotations spanning approximately 2011 to September 2016, routinely self-initiated investigative follow-up on fraud cases through to resolution rather than forwarding initial reports to the investigations unit. A supervising sergeant documented this pattern in writing in December 2013, noting that most patrol officers would have forwarded the case without additional work, and copied the commendation to all patrol sergeants and police staff.
+
+### Resume Bullet — Condensed
+
+Consistently self-initiated fraud case follow-up through to resolution during a five-year patrol period between investigative rotations; documented in a December 2013 written commendation from a supervising sergeant distributed to all department sergeants and staff.
+
+### Cover Letter Paragraph
+
+During patrol assignments between investigative rotations, I consistently self-initiated follow-up on fraud cases through to resolution rather than forwarding initial reports to investigators. A supervising sergeant noted this in writing in December 2013, observing that most patrol officers would have forwarded the case without doing additional work. That commendation was copied to all patrol sergeants and police staff. The period it references fell between two investigative rotations with no assignment, no expectation, and no additional compensation requiring that level of effort.
+
+### Interview Talking Points
+
+- No investigative assignment from approximately 2011 through September 2016; carried a patrol role during that entire window
+- Routinely worked fraud cases to resolution during patrol shifts rather than forwarding them to the investigations unit
+- December 2013: Supervising Sgt. Jay Castonguay sent a written commendation noting that most patrol officers would have forwarded the fraud report to INV without doing additional work
+- Email was copied to all patrol sergeants and police staff, giving it department-wide visibility
+- The commendation is not an isolated incident — it documents a behavioral pattern Troy applied consistently across the five-year between-rotation period
+- Directly relevant to SIU: SIU investigators work independently with minimal supervision; this documents that Troy's default behavior has always been to work cases to closure without external direction
+
+---
+
 ## Usage Notes
 
 - **"The" vs. "a":** Never write "the BEC case" or "the Condello Wall case" as though only one case exists. Always frame as "among several" or "one of several complex fraud cases I led."
@@ -229,6 +259,7 @@ In 2012 I was selected as one of two officers to launch the Lakeville Police Dep
 - **Case 3 usage note:** This case is strongest for demonstrating database querying skills (APS), multi-system evidence convergence speed, inter-agency coordination, and search warrant authorship under time pressure.
 - **Case 4 usage note:** This case is strongest for demonstrating digital forensics capability, proactive evidence preservation, warrant authorship for digital accounts, and behavioral intelligence development through a field canvass. The Google search return with the detective's own name is a uniquely compelling interview detail — use it to illustrate consciousness of guilt and the value of digital evidence. The court-imposed no-casino condition validates the investigative read developed through the behavioral lead.
 - **Probation Liaison usage note:** Use for roles that value inter-agency coordination, compliance monitoring, or stakeholder relationship management. The program demonstrates that Troy was selected for leadership roles early in his career and received commendations from both internal command staff and external agency partners.
+- **Professional Conduct entry usage note:** Use the self-initiated fraud follow-up entry in any cover letter or interview context where autonomy, self-direction, or intrinsic motivation is relevant. It is most powerful when stated with the timeline: the commendation falls between two investigative rotations with no assignment requiring that level of effort. Do not cite the sergeant's name or the case number in application materials. The documented pattern is the credential, not the individual instance.
 
 ---
 
