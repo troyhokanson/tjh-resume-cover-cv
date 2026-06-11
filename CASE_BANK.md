@@ -14,13 +14,13 @@ This file is the source of truth for quantified, outcome-verified case examples 
 Use these approved tags in the `TAGS:` field of each case. Add new tags to this list before using them.
 
 **Fraud Type**
-`occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company` `theft` `retail-fraud`
+`occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company` `theft` `retail-fraud` `burglary`
 
 **Investigative Methods**
-`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination`
+`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination` `physical-evidence-collection` `casino-security-coordination` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `canvass`
 
 **Outcome**
-`felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed` `prison` `parole-violation`
+`felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed` `prison` `parole-violation` `charged`
 
 **Profile Applicability** (mirrors PROFILES.md)
 `siu-fraud` `analyst-intelligence` `vendor-solutions`
@@ -34,6 +34,7 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 | 1 | BEC / Shell Companies | ~2019-2021 | Financial crime, wire fraud, organized fraud | $360,000+ verified victim losses | Felony conviction, written commendation from an Assistant Dakota County Attorney |
 | 2 | Condello Wall / MCI Paint and Drywall | 2010 | Occupational fraud, internal theft, credit card fraud | ~$80,000 in unauthorized charges | Felony conviction, full restitution paid through 2022, expungement request denied |
 | 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
+| 4 | Garwood Burglary / Google Search Warrant | TBD | Burglary, physical and digital evidence convergence | Commercial burglary of Goodfellas; cash box recovered | Charged; Google search warrant return connected suspect including searches of victim business and investigating detective by name |
 
 ---
 
@@ -136,6 +137,41 @@ In one investigation, a suspect stole a victim's purse from a Lakeville city par
 
 ---
 
+## Case 4 — Garwood Burglary / Google Search Warrant
+
+**Case Reference:** Lakeville PD, year TBD
+**Case Type:** Commercial burglary, physical and digital evidence convergence
+**Suspect Profile:** Male suspect; identified through video surveillance, physical evidence, casino security coordination, and Google account search warrant
+**Loss Amount / Impact:** Commercial burglary of Goodfellas bar/business; CSU cash box stolen and recovered personally by investigator the following morning along County Road 42 in Savage
+**Investigative Methods:** Video surveillance retrieval (Goodfellas), physical evidence collection at scene, personal recovery of stolen cash box (County Road 42, Savage), suspect canvass at residence, lead development through family member (father indicated suspect's preference for gambling and possible location at Mystic Lake Casino), in-person coordination with Mystic Lake Casino security staff, video surveillance obtained from casino confirming suspect wearing matching Minnesota Gophers ball cap, Google email address identification and immediate preservation, Google search warrant authored and served, digital evidence analysis of search warrant return
+**Outcome:** Charged; Google search warrant return confirmed suspect's connection to the crime through documented searches including searches of Goodfellas by name and searches of the investigating detective (Detective Troy Hokanson) by name
+**TAGS:** `burglary` `video-surveillance` `physical-evidence-collection` `canvass` `casino-security-coordination` `photo-identification` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `search-warrant` `interview` `charged` `digital-forensics` `analyst-intelligence` `siu-fraud`
+
+### Resume Bullet — Full
+
+Investigated a commercial burglary in which the suspect was identified through layered physical and digital evidence. Collected physical evidence at the scene, personally recovered the stolen cash box the following morning along County Road 42 in Savage, and obtained video surveillance from the business. A canvass at the suspect's residence produced a family lead indicating the suspect frequented Mystic Lake Casino. Traveled to the casino, coordinated with security staff, and obtained video confirming the suspect wearing clothing that matched the crime scene footage. Located and immediately preserved the suspect's Google email address, authored a search warrant, and the return produced documented searches of the victim business by name and searches of the investigating detective by name, directly connecting the suspect to the crime.
+
+### Resume Bullet — Condensed
+
+Closed a commercial burglary investigation through physical evidence collection, personal recovery of stolen property, casino security coordination, and a Google search warrant return that documented the suspect's searches of the victim business and the investigating detective by name.
+
+### Cover Letter Paragraph
+
+In a commercial burglary investigation, I collected physical evidence at the scene and personally recovered the stolen cash box the following morning along a county road. A canvass of the suspect's residence produced a lead pointing to Mystic Lake Casino, where I coordinated with security staff and obtained video of the suspect in matching clothing. I located and immediately preserved his Google email address, authored a search warrant, and the return documented searches of the victim business by name and searches of me, the investigating detective, by name. That case illustrated how rapidly digital evidence can confirm what physical and video evidence suggests.
+
+### Interview Talking Points
+
+- Commercial burglary of Goodfellas; retrieved video surveillance from the scene at the outset
+- Collected physical evidence from the scene; personally recovered the stolen CSU cash box the next morning along County Road 42 in Savage
+- Canvassed the suspect's residence; father provided a behavioral lead indicating preference for gambling and a possible location at Mystic Lake Casino
+- Traveled to Mystic Lake, coordinated directly with casino security staff, and obtained video of the suspect wearing a Minnesota Gophers ball cap matching crime scene footage
+- Located the suspect's Google email address and preserved it immediately to prevent loss before the warrant was served
+- Authored a Google search warrant; return confirmed the suspect had searched Goodfellas by name and searched the investigating detective, Detective Troy Hokanson, by name
+- That search history established consciousness of guilt and directly tied the suspect to the investigation
+- Case demonstrates end-to-end investigative range: physical evidence, field canvass, third-party coordination, digital preservation, and warrant-based digital forensics
+
+---
+
 ## Usage Notes
 
 - **"The" vs. "a":** Never write "the BEC case" or "the Condello Wall case" as though only one case exists. Always frame as "among several" or "one of several complex fraud cases I led."
@@ -145,6 +181,7 @@ In one investigation, a suspect stole a victim's purse from a Lakeville city par
 - **Expungement detail:** Use when applying to roles that emphasize documentation integrity, regulatory audit readiness, or compliance package quality.
 - **Tag filtering:** When drafting for a specific role, filter by profile applicability tag (`siu-fraud`, `analyst-intelligence`, `vendor-solutions`) to identify the most relevant cases to pull from.
 - **Case 3 usage note:** This case is strongest for demonstrating database querying skills (APS), multi-system evidence convergence speed, inter-agency coordination, and search warrant authorship under time pressure. Use for roles that emphasize investigative technology proficiency or field investigation capability.
+- **Case 4 usage note:** This case is strongest for demonstrating digital forensics capability, proactive evidence preservation, warrant authorship for digital accounts, and the ability to develop suspect leads through behavioral intelligence (family canvass, casino pattern). The Google search return with the detective's own name is a uniquely compelling detail for interviews — use it to illustrate consciousness of guilt and the value of digital evidence in closing cases where physical evidence alone might be insufficient.
 
 ---
 
