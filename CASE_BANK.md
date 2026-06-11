@@ -33,7 +33,7 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 |---|---|---|---|---|---|
 | 1 | BEC / Shell Companies | ~2019-2021 | Financial crime, wire fraud, organized fraud | $360,000+ verified victim losses | Felony conviction, written commendation from an Assistant Dakota County Attorney |
 | 2 | Condello Wall / MCI Paint and Drywall | 2010 | Occupational fraud, internal theft, credit card fraud | ~$80,000 in unauthorized charges | Felony conviction, full restitution paid through 2022, expungement request denied |
-| 3 | Lakeville Park Theft / Multi-System ID Convergence | Lakeville PD era | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
+| 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
 
 ---
 
@@ -103,7 +103,7 @@ In a separate occupational fraud case, I investigated an office manager who made
 
 ## Case 3 — Lakeville Park Theft / Multi-System Identification
 
-**Case Reference:** Lakeville PD, exact year TBD
+**Case Reference:** Lakeville PD, approximately 2010-2011
 **Case Type:** Theft from vehicle, credit card fraud, rapid suspect identification
 **Suspect Profile:** Male with a 36-year criminal history; identified through automated pawn system cross-reference and photo driver license match
 **Loss Amount / Impact:** Victim's purse stolen from a city park vehicle; credit cards used at a Lakeville SuperTarget retail location shortly after the theft
