@@ -14,13 +14,13 @@ This file is the source of truth for quantified, outcome-verified case examples 
 Use these approved tags in the `TAGS:` field of each case. Add new tags to this list before using them.
 
 **Fraud Type**
-`occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company`
+`occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company` `theft` `retail-fraud`
 
 **Investigative Methods**
-`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral`
+`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination`
 
 **Outcome**
-`felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed`
+`felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed` `prison` `parole-violation`
 
 **Profile Applicability** (mirrors PROFILES.md)
 `siu-fraud` `analyst-intelligence` `vendor-solutions`
@@ -33,6 +33,7 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 |---|---|---|---|---|---|
 | 1 | BEC / Shell Companies | ~2019-2021 | Financial crime, wire fraud, organized fraud | $360,000+ verified victim losses | Felony conviction, written commendation from an Assistant Dakota County Attorney |
 | 2 | Condello Wall / MCI Paint and Drywall | 2010 | Occupational fraud, internal theft, credit card fraud | ~$80,000 in unauthorized charges | Felony conviction, full restitution paid through 2022, expungement request denied |
+| 3 | Lakeville Park Theft / Multi-System ID Convergence | Lakeville PD era | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
 
 ---
 
@@ -100,6 +101,41 @@ In a separate occupational fraud case, I investigated an office manager who made
 
 ---
 
+## Case 3 — Lakeville Park Theft / Multi-System Identification
+
+**Case Reference:** Lakeville PD, exact year TBD
+**Case Type:** Theft from vehicle, credit card fraud, rapid suspect identification
+**Suspect Profile:** Male with a 36-year criminal history; identified through automated pawn system cross-reference and photo driver license match
+**Loss Amount / Impact:** Victim's purse stolen from a city park vehicle; credit cards used at a Lakeville SuperTarget retail location shortly after the theft
+**Investigative Methods:** Video surveillance retrieval (SuperTarget), Crime Alert broadcast (Twin Cities metro-wide), inter-agency detective collaboration for identity lead, Automated Pawn System (APS) query, photo identification via Minnesota driver license image, search warrant for suspect residence in Richfield, coordination with Richfield SWAT team for warrant service, subject statement obtained
+**Outcome:** Suspect charged, taken into custody, and sentenced to prison on a parole violation; 36-year criminal history documented as part of case file
+**TAGS:** `theft` `credit-card-fraud` `video-surveillance` `crime-alert` `automated-pawn-system` `photo-identification` `search-warrant` `SWAT-coordination` `multi-agency` `interview` `felony-conviction` `prison` `parole-violation` `analyst-intelligence` `siu-fraud`
+
+### Resume Bullet — Full
+
+Investigated a theft from vehicle case in which a suspect stole a victim's purse from a Lakeville city park and used her credit cards at a nearby retail store within minutes of the theft. Obtained video surveillance, issued a metro-wide Crime Alert, and collaborated with another detective to develop a suspect identity. Queried the Automated Pawn System and confirmed the suspect's identity through a Minnesota photo driver license match at a Burnsville pawn store, where he appeared in the same clothing. Authored a search warrant for the suspect's Richfield residence, coordinated service with that city's SWAT team, obtained a statement, and closed the case with charges, conviction, and a prison sentence on a parole violation.
+
+### Resume Bullet — Condensed
+
+Closed a credit card fraud and theft investigation through rapid convergence of video surveillance, a metro-wide Crime Alert, Automated Pawn System queries, and photo identification across jurisdictions, resulting in a search warrant, SWAT-served arrest, and prison sentence on a parole violation for a suspect with a 36-year criminal history.
+
+### Cover Letter Paragraph
+
+In one investigation, a suspect stole a victim's purse from a Lakeville city park and used her credit cards at a nearby retail location within minutes. I obtained video surveillance, issued a metro-wide Crime Alert, and worked with a fellow detective to develop a suspect identity. A query of the Automated Pawn System returned a photo match confirming the suspect at a Burnsville pawn store in the same clothing worn during the theft. I authored a search warrant for his Richfield residence, coordinated service with that city's SWAT team, obtained a statement, and the case closed with charges and a prison sentence on a parole violation. The suspect had a 36-year criminal history.
+
+### Interview Talking Points
+
+- Theft occurred at a Lakeville city park; credit cards used at SuperTarget within minutes, establishing a tight timeline
+- Retrieved video surveillance from SuperTarget to document the fraudulent transactions
+- Issued a Crime Alert distributed metro-wide across the Twin Cities
+- Received suspect identity lead from a fellow detective; queried the Automated Pawn System
+- APS returned the suspect by name with a Minnesota photo driver license match at a Burnsville Pawn America, 20 minutes north of the target store, in the same clothing
+- Authored a search warrant for a Richfield residence; coordinated with Richfield SWAT for service
+- Obtained a subject statement; suspect charged, convicted, and sentenced to prison on a parole violation
+- Suspect had a documented 36-year criminal history at the time of arrest
+
+---
+
 ## Usage Notes
 
 - **"The" vs. "a":** Never write "the BEC case" or "the Condello Wall case" as though only one case exists. Always frame as "among several" or "one of several complex fraud cases I led."
@@ -108,6 +144,7 @@ In a separate occupational fraud case, I investigated an office manager who made
 - **Restitution detail:** The Condello Wall restitution ran through 2022 — include this when demonstrating long-term case outcome tracking and KPI awareness.
 - **Expungement detail:** Use when applying to roles that emphasize documentation integrity, regulatory audit readiness, or compliance package quality.
 - **Tag filtering:** When drafting for a specific role, filter by profile applicability tag (`siu-fraud`, `analyst-intelligence`, `vendor-solutions`) to identify the most relevant cases to pull from.
+- **Case 3 usage note:** This case is strongest for demonstrating database querying skills (APS), multi-system evidence convergence speed, inter-agency coordination, and search warrant authorship under time pressure. Use for roles that emphasize investigative technology proficiency or field investigation capability.
 
 ---
 
