@@ -96,10 +96,24 @@ STOP_WORDS = {
 # -- PROFILE-SPECIFIC SKIP TERMS (overclaim guard) ----------------------------
 # Terms that appear in JDs but should not be injected because Troy cannot
 # legitimately claim them without context.
+#
+# IMPORTANT — Tableau disambiguation:
+#   DO NOT block the bare word "tableau". Troy has legitimate hands-on experience
+#   with Tableau write blockers (forensic hardware used in digital evidence
+#   collection). The overclaim is Tableau Desktop / Tableau Server (data
+#   visualization software). Block the specific product names only.
 OVERCLAIM_SKIP = {
     "siu-fraud": {
-        "salesforce", "tableau", "alteryx", "sql", "python advanced",
-        "machine learning", "ai model", "underwriting authority",
+        "salesforce",
+        "tableau desktop",    # Tableau data viz software — NOT the same as Tableau write blockers
+        "tableau server",     # Tableau data viz software — NOT the same as Tableau write blockers
+        "tableau software",   # Tableau data viz software — NOT the same as Tableau write blockers
+        "alteryx",
+        "sql",
+        "python advanced",
+        "machine learning",
+        "ai model",
+        "underwriting authority",
     },
     "vendor-solutions": {
         "recorded statement", "euo", "claim file", "nicb",
