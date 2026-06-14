@@ -89,6 +89,9 @@ Notes:      Initial patrol period. 18 years total FTO service spans full career.
             20+ written commendations. SWAT service begins in this block.
             MAAG Tactical Team on-call membership: 2005 - 2011 -- see Collateral Duties.
             ALPR / Target+Blue grant program: 2007 - 2010 -- see Collateral Duties.
+            ALPR bullet MUST appear under this block (November 1998 - February 2010)
+            on all resumes, as the program ran 2007 - 2010 within this patrol period.
+            Do NOT place ALPR bullet under the June 2011 - August 2016 patrol block.
 ```
 
 ### Adjunct Faculty — Criminal Justice
@@ -106,14 +109,35 @@ Notes:      Phoenix500 Faculty Excellence Award -- 2020, 2021.
 
 ### U.S. Army — Military Service
 ```
-Branch:     U.S. Army
-MOS:        11B Infantry
-Total:      9 years
-Breakdown:  Active Duty -- 3 years
-            U.S. Army Reserve -- 2 years
-            MN Army National Guard -- 3 years
-Discharge:  Honorably Discharged
-Notes:      Always identify as veteran. Never use VEVRAA or protected-veteran language.
+Total Service:  8 years, 3 months
+Discharge:      Honorably Discharged
+Notes:          Always identify as veteran. Never use VEVRAA or protected-veteran language.
+                Never round up to 9 years. Correct figure is 8 years 3 months.
+
+Component Breakdown (chronological):
+  1. Army Reserve, MOS 11B Infantry
+     February 1989 - April 1991 (2 years, 2 months)
+
+  2. Active Duty, MOS 19K Armor (M1 Abrams Crewman)
+     April 1991 - April 1994 (3 years)
+
+  3. MN Army National Guard, MOS 88M Motor Transport
+     April 1994 - April 1995 (1 year)
+     [Break: April 1995 - October 1995 -- no service, do not count]
+
+  4. MN Army National Guard, MOS 95B Military Police
+     October 1995 - October 1998 (3 years)
+
+Display on resumes (standard one-liner):
+  "U.S. Army, 8 years 3 months -- Reserve (11B Infantry), Active Duty (19K Armor),
+   MN Army National Guard (88M Motor Transport; 95B Military Police). Honorably Discharged."
+
+Display on resumes (expanded, when space allows):
+  Army Reserve, MOS 11B Infantry, February 1989 - April 1991
+  Active Duty, MOS 19K Armor, April 1991 - April 1994
+  MN Army National Guard, MOS 88M Motor Transport, April 1994 - April 1995
+  MN Army National Guard, MOS 95B Military Police, October 1995 - October 1998
+  Honorably Discharged
 ```
 
 ---
@@ -148,6 +172,9 @@ Notes:      Multi-agency tactical team. On-call collateral duty. Spans initial p
 Assignment: Automated License Plate Recognition (ALPR) Program Lead
 Employer:   Lakeville Police Department
 Dates:      2007 - 2010
+Parent block: Police Officer / FTO -- Patrol (Initial), November 1998 - February 2010.
+             ALPR bullet ALWAYS appears under this block, never under the post-first-
+             rotation patrol block (June 2011 - August 2016).
 Partners:   Target Corporation (Target + Blue program); BCA CJIS; Genetec AutoVu;
             Lakeville Information Technology
 Grant:      $40,000 obtained through Target + Blue corporate partnership program.
@@ -231,6 +258,7 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 - CSU on-call: 2013 - 2018 (year-only acceptable for collateral duties)
 - MAAG on-call: 2005 - 2011 (year-only acceptable for collateral duties)
 - ALPR program: 2007 - 2010 (year-only acceptable for collateral duties)
+- Military total: 8 years 3 months -- never round to 9 years
 
 ---
 
@@ -248,8 +276,21 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 | Assignment | Dates | Notes |
 |---|---|---|
 | MAAG Tactical Team (on-call) | 2005 - 2011 | Multi-agency tactical; Dakota County |
-| ALPR / Target + Blue Grant | 2007 - 2010 | $40,000 grant; Genetec AutoVu; BCA CJIS integration |
+| ALPR / Target + Blue Grant | 2007 - 2010 | $40,000 grant; Genetec AutoVu; BCA CJIS integration -- under Initial Patrol block |
 | Crime Scene Unit (on-call) | 2013 - 2018 | Physical evidence, chain of custody |
+
+---
+
+## Military Service Summary (Quick Reference)
+
+| Component | MOS | Dates | Duration |
+|---|---|---|---|
+| Army Reserve | 11B Infantry | February 1989 - April 1991 | 2 yrs 2 mo |
+| Active Duty | 19K Armor | April 1991 - April 1994 | 3 yrs |
+| MN ARNG | 88M Motor Transport | April 1994 - April 1995 | 1 yr |
+| [Break] | -- | April 1995 - October 1995 | not counted |
+| MN ARNG | 95B Military Police | October 1995 - October 1998 | 3 yrs |
+| **Total** | | | **8 yrs 3 mo** |
 
 ---
 
@@ -267,6 +308,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Stat | Verbatim value |
 |---|---|
 | Total sworn service | 25 years (medically retired May 2024) |
+| Military service | 8 years 3 months (honorably discharged) |
 | Digital forensic / ECU + DCECTF combined | 5.5 years (September 2016 - December 2021) |
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
 | Digital evidence processed (2020) | 5,304 GB |
@@ -337,3 +379,16 @@ script, not this file.
   Full confirmed entry: B.A., Criminal Justice Studies, St. Cloud State University,
   St. Cloud, MN, 1998, Magna Cum Laude, GPA 3.51.
   Removed PENDING CONFIRMATION flag.
+- 2026-06-13 (commit 4): Corrected military service record.
+  Previous entry was incorrect (listed as 9 years, MOS 11B Infantry only).
+  Correct total: 8 years 3 months. Four components:
+    Army Reserve 11B Infantry: February 1989 - April 1991
+    Active Duty 19K Armor: April 1991 - April 1994
+    MN ARNG 88M Motor Transport: April 1994 - April 1995
+    [Break April 1995 - October 1995 -- not counted]
+    MN ARNG 95B Military Police: October 1995 - October 1998
+  Added Military Service Summary quick-reference table.
+  Added ALPR placement rule: ALPR bullet belongs under Initial Patrol block
+  (November 1998 - February 2010), NOT under post-first-rotation patrol block.
+  Updated Key Career Statistics table: military now shows 8 years 3 months.
+  Updated Date Rules: military total note added.
