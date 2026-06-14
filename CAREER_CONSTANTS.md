@@ -184,6 +184,79 @@ Cellebrite UFED
               Used for mobile device extraction and analysis throughout ECU/DCECTF tenure.
   Display:    "Cellebrite UFED" (full form); "Cellebrite" (abbreviated) -- both acceptable.
 
+Magnet AXIOM
+  Category:   Digital forensics / artifact recovery and analysis
+  Usage:      Used during ECU/DCECTF tenure for computer and mobile device artifact
+              recovery, timeline analysis, and evidence reporting.
+  Display:    "Magnet AXIOM" (full form); "AXIOM" (abbreviated) -- both acceptable.
+
+AccessData Forensic Toolkit (FTK)
+  Category:   Digital forensics / disk image analysis and case processing
+  Usage:      Used during ECU/DCECTF tenure for disk image processing, keyword searching,
+              file carving, and evidence analysis.
+  Display:    "AccessData FTK" or "Forensic Toolkit (FTK)" -- both acceptable.
+              Do NOT abbreviate to FTK alone on first reference; spell out on first use.
+
+FTK Imager
+  Category:   Digital forensics / forensic imaging
+  Usage:      Used during ECU/DCECTF tenure for creating forensic images of hard drives,
+              USB storage, and other digital media prior to analysis.
+  Display:    "FTK Imager" -- always list separately from FTK when both are relevant.
+              FTK Imager is a standalone imaging tool; do not conflate with FTK case tool.
+
+X-Ways Forensics
+  Category:   Digital forensics / disk and file system analysis
+  Usage:      Used during ECU/DCECTF tenure for advanced disk analysis, file system
+              examination, and evidence processing.
+  Display:    "X-Ways Forensics" (full form); "X-Ways" (abbreviated) -- both acceptable.
+              Do NOT spell as "X-ways" (lowercase w) in formal documents.
+
+X-Ways Imager
+  Category:   Digital forensics / forensic imaging
+  Usage:      Used during ECU/DCECTF tenure for forensic disk imaging.
+  Display:    "X-Ways Imager" -- list separately from X-Ways Forensics when both are
+              relevant. Same capitalization rule: capital W always.
+
+MacQuisition
+  Category:   Digital forensics / Mac live acquisition and imaging
+  Usage:      Used during ECU/DCECTF tenure for live acquisition and forensic imaging
+              of Apple Mac systems.
+  Display:    "MacQuisition" -- this is the correct product spelling (BlackBag Technologies).
+              Do NOT spell as "Macquisition" (lowercase q) in formal documents.
+
+GrayKey
+  Category:   Mobile device forensics / iOS passcode bypass and extraction
+  Usage:      Used during ECU/DCECTF tenure for iOS device passcode bypass and
+              full file system extraction.
+  Display:    "GrayKey" -- correct product spelling (Grayshift). Do NOT spell as "Graykey."
+
+RECON for macOS (Sumuri)
+  Category:   Digital forensics / Mac forensic analysis
+  Usage:      Used during ECU/DCECTF tenure for Mac-based forensic analysis and
+              artifact recovery.
+  Display:    "RECON for macOS" (full form); "RECON" (abbreviated when context is clear).
+              Vendor is Sumuri. Do not conflate with RECON ITR (different product).
+
+RECON Imager (Sumuri)
+  Category:   Digital forensics / Mac forensic imaging
+  Usage:      Used during ECU/DCECTF tenure for bootable forensic imaging of Mac systems.
+  Display:    "RECON Imager" -- list separately from RECON for macOS when both are relevant.
+              Vendor is Sumuri.
+
+Blacklight (BlackBag Technologies)
+  Category:   Digital forensics / Mac and iOS forensic analysis
+  Usage:      Used during ECU/DCECTF tenure for Mac and iOS device forensic analysis
+              and artifact examination.
+  Display:    "Blacklight" -- correct product spelling. Vendor is BlackBag Technologies
+              (now part of Cellebrite). Do not capitalize as "BlackLight."
+
+osTriage
+  Category:   Digital forensics / live Windows triage
+  Usage:      Used during ECU/DCECTF tenure for rapid live triage of Windows systems
+              prior to full forensic examination.
+  Display:    "osTriage" -- correct product spelling (lowercase o, capital T).
+              Do NOT spell as "OsTriage" or "ostriage."
+
 Microsoft Office 365 (Word, Excel, Outlook, Teams)
   Category:   Productivity / documentation
   Usage:      Standard proficiency; used throughout career for reports, data tracking,
@@ -411,6 +484,28 @@ Written Commendations (20+)
 
 ---
 
+## Investigative Tools -- Quick Reference Table
+
+| Tool | Category | Era |
+|---|---|---|
+| LexisNexis Accurint | Subject research / skip trace | Full career |
+| ZetX TRAXi | CDR / cell site mapping | Full career |
+| Cellebrite UFED | Mobile device forensics | ECU / DCECTF |
+| Magnet AXIOM | Artifact recovery and analysis | ECU / DCECTF |
+| AccessData FTK | Disk image processing | ECU / DCECTF |
+| FTK Imager | Forensic imaging | ECU / DCECTF |
+| X-Ways Forensics | Disk / file system analysis | ECU / DCECTF |
+| X-Ways Imager | Forensic imaging | ECU / DCECTF |
+| MacQuisition | Mac live acquisition / imaging | ECU / DCECTF |
+| GrayKey | iOS passcode bypass / extraction | ECU / DCECTF |
+| RECON for macOS (Sumuri) | Mac forensic analysis | ECU / DCECTF |
+| RECON Imager (Sumuri) | Mac forensic imaging | ECU / DCECTF |
+| Blacklight (BlackBag) | Mac / iOS forensic analysis | ECU / DCECTF |
+| osTriage | Live Windows triage | ECU / DCECTF |
+| Microsoft Office 365 | Productivity / documentation | Full career |
+
+---
+
 ## Enforcement
 
 Build scripts and AI agents must import from this file rather than hardcoding employment
@@ -482,3 +577,10 @@ script, not this file.
     Microsoft Office 365.
     PROHIBITED tools: Alteryx, i2 Analyst's Notebook, and any tool not
     explicitly confirmed by Troy. Hard enforcement note added.
+- 2026-06-14 (commit 4): Expanded CONFIRMED tools list with 10 additional
+  digital forensic tools confirmed by Troy from ECU/DCECTF tenure:
+    Magnet AXIOM, AccessData FTK, FTK Imager, X-Ways Forensics, X-Ways Imager,
+    MacQuisition, GrayKey, RECON for macOS (Sumuri), RECON Imager (Sumuri),
+    Blacklight (BlackBag Technologies), osTriage.
+  Each entry includes category, usage context, and display/capitalization rules.
+  Added Investigative Tools Quick Reference Table at bottom of tools section.
