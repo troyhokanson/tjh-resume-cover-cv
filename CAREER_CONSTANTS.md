@@ -43,14 +43,17 @@ Notes:      Ten partner agencies. Troy served as the Lakeville Police Department
             forensics -- not the task force lead examiner. LPD officers, investigators,
             and administrators came to Troy for guidance on mobile devices, tablets,
             computers, hard drives, USB storage, and other digital evidence questions.
-            He conducted forensic examinations on behalf of LPD and supported DCECTF
-            casework as the LPD agency rep within the task force structure.
-            5,304 GB processed in 2020 reflects Troy's examination volume, not a
-            task-force-wide figure.
+            Within the task force structure, Troy conducted forensic examinations on
+            behalf of LPD and also performed examinations for other partner agencies --
+            the 5,304 GB figure reflects his total personal examination volume across
+            all agencies he worked for through the task force, not LPD cases alone and
+            not a task-force-wide aggregate.
             DO NOT describe Troy as "lead examiner" or "task force lead" -- that
             overstates the role. Correct framing: "Lakeville PD representative and
-            digital forensics SME," "agency digital forensics examiner assigned to
-            the DCECTF," or "LPD's primary resource for digital evidence questions."
+            digital forensics SME assigned to the DCECTF," "agency digital forensics
+            examiner who also supported partner agency casework within the task force
+            structure," or similar language that reflects both the LPD anchor role and
+            the cross-agency examination work.
             DO NOT combine with ECU dates below into a single block.
 ```
 
@@ -323,7 +326,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Military service | 8 years 3 months (honorably discharged) |
 | Digital forensic / ECU + DCECTF combined | 5.5 years (September 2016 - December 2021) |
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
-| Digital evidence processed (2020) | 5,304 GB (Troy's examination volume as LPD agency rep) |
+| Digital evidence processed (2020) | 5,304 GB (Troy's total personal examination volume across all agencies he worked for through the task force -- not LPD-only, not a task-force-wide aggregate) |
 | Task force partner agencies | Ten |
 | FTO service | 18 years |
 | SWAT service | 5.5 years |
@@ -404,7 +407,7 @@ script, not this file.
   (November 1998 - February 2010), NOT under post-first-rotation patrol block.
   Updated Key Career Statistics table: military now shows 8 years 3 months.
   Updated Date Rules: military total note added.
-- 2026-06-14: Corrected DCECTF role framing.
+- 2026-06-14 (commit 1): Corrected DCECTF role framing.
   "Lead examiner" language removed -- that overstated Troy's role within the task force.
   Troy served as the Lakeville PD assigned representative and agency digital forensics
   SME. LPD personnel came to Troy for guidance on mobile devices, tablets, computers,
@@ -413,3 +416,10 @@ script, not this file.
   5,304 GB stat clarified as Troy's examination volume, not a task-force-wide figure.
   Added explicit "DO NOT describe as lead examiner" enforcement note in DCECTF block.
   Updated Key Career Statistics table note on the 5,304 GB stat to match.
+- 2026-06-14 (commit 2): Corrected scope of 5,304 GB figure.
+  Previous note said "LPD agency rep" examination volume only.
+  Corrected: Troy performed forensic examinations for LPD AND for other partner agencies
+  within the task force structure. The 5,304 GB figure represents his total personal
+  examination volume across all agencies he worked for through the DCECTF -- not LPD
+  cases alone and not a task-force-wide aggregate.
+  Updated DCECTF Notes block and Key Career Statistics table accordingly.
