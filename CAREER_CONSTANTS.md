@@ -6,6 +6,67 @@ recruiter packet, and bio. Never paraphrase, estimate, or hand-roll from memory.
 
 ---
 
+## HARD ENFORCEMENT RULES -- READ BEFORE DRAFTING ANY DOCUMENT
+
+These rules have been violated in prior drafts. They are non-negotiable and must be checked
+before any resume, cover letter, bio, or application material is finalized.
+
+### RULE 1 -- BEC Case Jurisdiction (CRITICAL)
+
+```
+THE BEC / SHELL COMPANIES CASE WAS A RAMSEY COUNTY PROSECUTION.
+IT IS NOT A FEDERAL CASE.
+IT DID NOT RESULT IN A FEDERAL SENTENCE.
+
+DO NOT use the words "federal" or "federally" in any sentence that describes the BEC case.
+DO NOT pair the 15-year sentence with the BEC case under any circumstances.
+DO NOT imply that the BEC investigation resulted in a federal referral that produced a sentence.
+
+Correct outcome language for the BEC case:
+  - Felony conviction
+  - Verified victim losses exceeding $360,000
+  - Written commendation from an Assistant Dakota County Attorney
+
+The BEC case involved federal coordination (federal agents were briefed during the
+investigation), but the prosecution and conviction were Ramsey County, not federal.
+The phrase "federal coordination" in CASE_BANK.md refers to investigative coordination
+only -- it does NOT mean the case was federally prosecuted.
+```
+
+### RULE 2 -- Torrens-Maldonado Case (15-Year Federal Sentence)
+
+```
+THE 15-YEAR FEDERAL SENTENCE BELONGS TO THE TORRENS-MALDONADO CASE.
+THAT IS A CHILD PORNOGRAPHY FEDERAL PROSECUTION.
+IT IS COMPLETELY SEPARATE FROM THE BEC CASE.
+
+DO NOT conflate the Torrens-Maldonado 15-year federal sentence with the BEC case.
+DO NOT mention the 15-year sentence in any context other than the Torrens-Maldonado case.
+DO NOT use the figure "15 years" when describing BEC case outcomes.
+
+The Torrens-Maldonado case is not yet in CASE_BANK.md as a full entry.
+Until it is added, do not use specific case details beyond the sentence length and
+federal prosecution status without confirmation from Troy.
+```
+
+### RULE 3 -- $295,704.11 Restitution Figure
+
+```
+The $295,704.11 restitution figure appeared in prior drafts attributed to the BEC case.
+This figure has NOT been confirmed as the BEC restitution amount.
+DO NOT use $295,704.11 in any BEC case context until Troy confirms it.
+
+If restitution is referenced for the BEC case, use only confirmed language:
+  "Verified victim losses exceeding $360,000"
+  or
+  "Felony conviction; written commendation from an Assistant Dakota County Attorney"
+
+The $295,704.11 figure has been removed from all future drafts pending confirmation
+of which case it belongs to.
+```
+
+---
+
 ## Employment Records (Reverse Chronological)
 
 ### Real Estate Consultant
@@ -466,8 +527,9 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Adjunct faculty | 18 years (March 2007 - October 2025) |
 | Written commendations | 20+ |
 | Real estate sales | $3.2M |
-| BEC restitution | $295,704.11 |
-| BEC federal sentence | 15 years |
+| BEC restitution | PENDING CONFIRMATION -- do not use $295,704.11 for BEC; see HARD ENFORCEMENT RULES above |
+| BEC conviction jurisdiction | Ramsey County (NOT federal) |
+| Torrens-Maldonado sentence | 15 years, federal, child pornography -- SEPARATE CASE from BEC |
 | Documented training hours | 1,238.75 |
 | Investigation-relevant training hours | 512 (subset) |
 | ALPR grant value | $40,000 |
@@ -602,3 +664,20 @@ script, not this file.
   Added hard enforcement note: DO NOT credit Troy with founding or establishing the ECU.
   Updated Cellebrite UFED entry in CONFIRMED tools to reflect "acquired and configured
   initial unit during ECU assignment" (not "during ECU establishment").
+- 2026-06-14 (commit 6): CRITICAL CORRECTION -- BEC case jurisdiction and sentence.
+  The BEC / Shell Companies case was prosecuted by Ramsey County.
+  It is NOT a federal case and did NOT result in a federal sentence.
+  The 15-year sentence belongs to the Torrens-Maldonado case (child pornography,
+  federal prosecution) -- a completely separate case from BEC.
+  The $295,704.11 restitution figure has NOT been confirmed as the BEC amount and
+  must not be used for the BEC case until Troy confirms which case it belongs to.
+  Added HARD ENFORCEMENT RULES section at the top of the file with three rules:
+    Rule 1: BEC case is Ramsey County, not federal -- confirmed outcome language defined.
+    Rule 2: Torrens-Maldonado 15-year sentence is federal child pornography -- never
+            conflate with BEC.
+    Rule 3: $295,704.11 restitution figure is PENDING CONFIRMATION -- do not assign
+            to BEC case.
+  Updated Key Career Statistics table to flag BEC restitution as pending and add
+  explicit jurisdiction and case-separation rows.
+  This error has been noted more than once. The HARD ENFORCEMENT RULES section
+  is positioned at the top of the file to ensure it is read before any drafting begins.
