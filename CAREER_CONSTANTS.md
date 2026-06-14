@@ -162,9 +162,10 @@ Employer:   Lakeville Police Department
 Location:   Lakeville, MN
 Dates:      March 2010 - May 2011
 Notes:      First investigative rotation. Financial crimes and property crime investigations.
-            Condello Wall / MCI Paint and Drywall occupational fraud case (offense 03/15/2008,
-            filed 03/21/2011) sits in this rotation. Lakeville Park Theft / multi-system ID
-            convergence case also in this rotation. Returned to patrol May 2011.
+            Occupational fraud case, employee misuse of company credit card (unauthorized
+            personal charges, approx. $80,000; offense 03/15/2008, filed 03/21/2011) sits
+            in this rotation. Lakeville Park Theft / multi-system ID convergence case also
+            in this rotation. Returned to patrol May 2011.
 ```
 
 ### Police Officer / FTO -- Patrol (Initial)
@@ -479,7 +480,7 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 
 | Rotation | Dates | Key Cases |
 |---|---|---|
-| First | March 2010 - May 2011 | Condello Wall / MCI Paint and Drywall; Lakeville Park Theft |
+| First | March 2010 - May 2011 | Occupational fraud (employee credit card misuse, ~$80K); Lakeville Park Theft |
 | Second (ECU + DCECTF) | September 2016 - December 2021 | BEC / Shell Companies; Garwood Burglary / Google Search Warrant |
 
 ---
@@ -691,3 +692,14 @@ script, not this file.
   Statistics table, and Change Log entry for commit 6.
   Rule 2 now includes an explicit spelling enforcement statement at the top of the block:
   "The correct spelling is TORRES-MALDONADO. Not Torrens. Not Torrence. Always Torres."
+- 2026-06-14 (commit 8): PRIVACY -- Removed suspect and victim company names from
+  occupational fraud case in First Investigative Rotation block and Investigative
+  Rotation Summary table.
+  Suspect name: withheld. Victim company name: withheld.
+  Scheme descriptor corrected from "drywall contractor / subcontractor scheme" to
+  "employee misuse of company credit card (unauthorized personal charges, approx. $80,000)."
+  New language in Notes block: "Occupational fraud case, employee misuse of company
+  credit card (unauthorized personal charges, approx. $80,000; offense 03/15/2008,
+  filed 03/21/2011)."
+  New language in quick-reference table: "Occupational fraud (employee credit card
+  misuse, ~$80K); Lakeville Park Theft."
