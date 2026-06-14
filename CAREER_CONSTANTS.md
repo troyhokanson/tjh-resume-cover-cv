@@ -1,4 +1,4 @@
-# Career Constants — Locked, Verbatim, Non-Negotiable
+# Career Constants -- Locked, Verbatim, Non-Negotiable
 
 Employment history entries for Troy J. Hokanson. These records are the single source of truth
 for dates, employer names, titles, and locations used in every resume, CV, cover letter,
@@ -20,7 +20,7 @@ Notes:      Medical retirement from law enforcement May 2024. Closed $3.2M in re
             frame as bridge role following medical retirement.
 ```
 
-### Police Officer — Return to Patrol
+### Police Officer -- Return to Patrol
 ```
 Title:      Police Officer
 Employer:   Lakeville Police Department
@@ -31,7 +31,7 @@ Notes:      Return to patrol following DCECTF assignment end. Medical retirement
             employment through retirement. Do not omit or merge into the DCECTF block.
 ```
 
-### Detective / Digital Forensic Examiner — DCECTF
+### Detective / Digital Forensic Examiner -- DCECTF
 ```
 Title:      Detective / Digital Forensic Examiner
 Employer:   Dakota County Electronic Crimes Task Force (DCECTF)
@@ -68,7 +68,7 @@ Notes:      Established ECU prior to DCECTF assignment. Acquired and configured
             DO NOT combine with DCECTF dates above into a single block.
 ```
 
-### Police Officer / FTO — Patrol (Post-First-Rotation)
+### Police Officer / FTO -- Patrol (Post-First-Rotation)
 ```
 Title:      Police Officer / Field Training Officer (FTO)
 Employer:   Lakeville Police Department
@@ -82,7 +82,7 @@ Notes:      Patrol period following first investigative rotation. December 2013 
             Duties section below.
 ```
 
-### Police Officer / Investigator — First Investigative Rotation
+### Police Officer / Investigator -- First Investigative Rotation
 ```
 Title:      Police Officer / Investigator (First Investigative Rotation)
 Employer:   Lakeville Police Department
@@ -94,7 +94,7 @@ Notes:      First investigative rotation. Financial crimes and property crime in
             convergence case also in this rotation. Returned to patrol May 2011.
 ```
 
-### Police Officer / FTO — Patrol (Initial)
+### Police Officer / FTO -- Patrol (Initial)
 ```
 Title:      Police Officer / Field Training Officer (FTO)
 Employer:   Lakeville Police Department
@@ -109,7 +109,7 @@ Notes:      Initial patrol period. 18 years total FTO service spans full career.
             Do NOT place ALPR bullet under the June 2011 - August 2016 patrol block.
 ```
 
-### Adjunct Faculty — Criminal Justice
+### Adjunct Faculty -- Criminal Justice
 ```
 Title:      Adjunct Faculty / Criminal Justice
 Employer:   University of Phoenix
@@ -122,7 +122,7 @@ Notes:      Phoenix500 Faculty Excellence Award -- 2020, 2021.
             Duration is 18 years -- never say 19 years.
 ```
 
-### U.S. Army — Military Service
+### U.S. Army -- Military Service
 ```
 Total Service:  8 years, 3 months
 Discharge:      Honorably Discharged
@@ -157,9 +157,61 @@ Display on resumes (expanded, when space allows):
 
 ---
 
+## Investigative Tools -- Confirmed and Prohibited
+
+This section is the single source of truth for every tool, platform, and software
+claim in Troy's application materials. Never list a tool that does not appear in
+the CONFIRMED section below. Never omit a tool from the PROHIBITED section.
+
+### Confirmed Tools (use freely in resumes and cover letters)
+```
+LexisNexis Accurint
+  Category:   Investigative research / skip trace / subject background
+  Usage:      Used during law enforcement career for subject location, asset identification,
+              associate mapping, and background research on persons of interest.
+  Display:    "LexisNexis Accurint" (full form); "Accurint" (abbreviated) -- both acceptable.
+
+ZetX (TRAXi / Traxx)
+  Category:   Cell site analysis / call detail record (CDR) mapping
+  Usage:      Used during law enforcement career for CDR analysis, cell tower mapping,
+              and location corroboration in criminal investigations.
+  Display:    "ZetX" or "ZetX TRAXi" -- do not spell as "Traxx" in formal documents;
+              "TRAXi" is the correct product name. Informal references may use "Traxx."
+
+Cellebrite UFED
+  Category:   Mobile device forensics
+  Usage:      Acquired and configured initial unit during ECU establishment (2016).
+              Used for mobile device extraction and analysis throughout ECU/DCECTF tenure.
+  Display:    "Cellebrite UFED" (full form); "Cellebrite" (abbreviated) -- both acceptable.
+
+Microsoft Office 365 (Word, Excel, Outlook, Teams)
+  Category:   Productivity / documentation
+  Usage:      Standard proficiency; used throughout career for reports, data tracking,
+              and communication.
+  Display:    "Microsoft Office 365" or "Microsoft Office" -- both acceptable.
+```
+
+### Prohibited Tools (DO NOT list in any application material)
+```
+Alteryx
+  Reason:     Troy has not used Alteryx. Do not list under skills, tools, or experience.
+              Do not imply familiarity even as "exposure" or "awareness."
+
+i2 Analyst's Notebook (and other i2 / IBM link analysis tools)
+  Reason:     Troy has not used i2 Analyst's Notebook or related IBM link-analysis
+              platforms. Do not list. Do not imply familiarity.
+
+Any tool not listed in the CONFIRMED section above
+  Reason:     If a tool does not appear in the CONFIRMED list, it must not appear in
+              any resume, cover letter, or application material without explicit
+              confirmation from Troy that he has used it.
+```
+
+---
+
 ## Collateral Duties and Special Assignments
 
-### Crime Scene Unit (CSU) — On-Call Team Member
+### Crime Scene Unit (CSU) -- On-Call Team Member
 ```
 Assignment: Crime Scene Unit (CSU)
 Employer:   Lakeville Police Department
@@ -170,7 +222,7 @@ Notes:      On-call collateral duty spanning the post-first-rotation patrol bloc
             surface as a collateral duty or bullet under the applicable Lakeville PD block.
 ```
 
-### Dakota County MAAG Tactical Team — On-Call Member
+### Dakota County MAAG Tactical Team -- On-Call Member
 ```
 Assignment: Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team
 Employer:   Dakota County (assigned from Lakeville Police Department)
@@ -417,9 +469,16 @@ script, not this file.
   Added explicit "DO NOT describe as lead examiner" enforcement note in DCECTF block.
   Updated Key Career Statistics table note on the 5,304 GB stat to match.
 - 2026-06-14 (commit 2): Corrected scope of 5,304 GB figure.
-  Previous note said "LPD agency rep" examination volume only.
-  Corrected: Troy performed forensic examinations for LPD AND for other partner agencies
-  within the task force structure. The 5,304 GB figure represents his total personal
-  examination volume across all agencies he worked for through the DCECTF -- not LPD
-  cases alone and not a task-force-wide aggregate.
-  Updated DCECTF Notes block and Key Career Statistics table accordingly.
+  Troy performed forensic examinations for LPD AND for other partner agencies within
+  the task force structure. The 5,304 GB figure is his total personal examination volume
+  across all agencies he worked for through the DCECTF -- not LPD cases alone and not
+  a task-force-wide aggregate.
+- 2026-06-14 (commit 3): Removed all em dashes (Unicode U+2014) from file.
+  Replaced every occurrence with double hyphen (--) to match existing plain-text
+  convention used throughout the file. Em dashes were present in section headers
+  and job block headers.
+  Added Investigative Tools section with two subsections:
+    CONFIRMED tools: LexisNexis Accurint, ZetX TRAXi, Cellebrite UFED,
+    Microsoft Office 365.
+    PROHIBITED tools: Alteryx, i2 Analyst's Notebook, and any tool not
+    explicitly confirmed by Troy. Hard enforcement note added.
