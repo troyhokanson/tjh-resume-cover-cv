@@ -63,6 +63,8 @@ Notes:      Patrol period following first investigative rotation. December 2013 
             commendation (self-initiated fraud case follow-up during patrol) falls here.
             Probation Liaison Officer Program co-founded 2012. 5.5 years SWAT spans
             across patrol and investigative blocks.
+            Crime Scene Unit (CSU) on-call membership begins 2013 -- see Collateral
+            Duties section below.
 ```
 
 ### Police Officer / Investigator — First Investigative Rotation
@@ -85,6 +87,8 @@ Location:   Lakeville, MN
 Dates:      November 1998 - February 2010
 Notes:      Initial patrol period. 18 years total FTO service spans full career.
             20+ written commendations. SWAT service begins in this block.
+            MAAG Tactical Team on-call membership: 2005 - 2011 -- see Collateral Duties.
+            ALPR / Target+Blue grant program: 2007 - 2010 -- see Collateral Duties.
 ```
 
 ### Adjunct Faculty — Criminal Justice
@@ -114,6 +118,55 @@ Notes:      Always identify as veteran. Never use VEVRAA or protected-veteran la
 
 ---
 
+## Collateral Duties and Special Assignments
+
+### Crime Scene Unit (CSU) — On-Call Team Member
+```
+Assignment: Crime Scene Unit (CSU)
+Employer:   Lakeville Police Department
+Dates:      2013 - 2018 (on-call)
+Notes:      On-call collateral duty spanning the post-first-rotation patrol block and
+            into the ECU period. Physical evidence collection, scene documentation,
+            and evidence chain of custody. Do not list as a separate job block --
+            surface as a collateral duty or bullet under the applicable Lakeville PD block.
+```
+
+### Dakota County MAAG Tactical Team — On-Call Member
+```
+Assignment: Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team
+Employer:   Dakota County (assigned from Lakeville Police Department)
+Dates:      2005 - 2011 (on-call)
+Notes:      Multi-agency tactical team. On-call collateral duty. Spans initial patrol
+            block and first investigative rotation. Do not list as a separate job block --
+            surface as a collateral duty or bullet under the applicable Lakeville PD block.
+            Correct full name: Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team.
+            Do not abbreviate to "SWAT" unless the specific posting requires that framing.
+```
+
+### ALPR / Target + Blue Grant Program
+```
+Assignment: Automated License Plate Recognition (ALPR) Program Lead
+Employer:   Lakeville Police Department
+Dates:      2007 - 2010
+Partners:   Target Corporation (Target + Blue program); BCA CJIS; Genetec AutoVu;
+            Lakeville Information Technology
+Grant:      $40,000 obtained through Target + Blue corporate partnership program.
+            Co-authored or collaborated on grant with a Reserve Officer who was also
+            a Target Assets Protection Manager.
+Technology: Genetec AutoVu ALPR system. Daily "hotlists" transferred automatically
+            via WiFi at midnight. Coordinated with BCA CJIS and Genetec AutoVu
+            and Lakeville IT to ensure reliable nightly hotlist sync.
+Notes:      This is a quantified technology acquisition and public-private partnership
+            accomplishment. Restitution-equivalent metric: $40,000 grant value.
+            Always cite the corporate partner (Target + Blue) and the grant dollar amount.
+            Surface in analyst-intelligence and vendor-solutions profiles where technology
+            procurement and data integration experience is relevant.
+            Do NOT omit the BCA CJIS / Genetec / Lakeville IT coordination detail --
+            it demonstrates multi-stakeholder technical integration experience.
+```
+
+---
+
 ## Education Records
 
 ### Graduate Degree
@@ -132,14 +185,17 @@ Notes:      Always list as M.A. Police Leadership, University of St. Thomas, St.
 ### Undergraduate Degree
 ```
 Degree:     Bachelor of Arts
+Field:      [CONFIRM MAJOR -- Criminal Justice or Law Enforcement or other]
 Institution: St. Cloud State University
 Location:   St. Cloud, MN
+Year:       1998
 GPA:        3.51
 Honors:     Magna Cum Laude
-Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN.
+Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN, 1998.
             Always include Magna Cum Laude and GPA 3.51.
             Do NOT list as University of Phoenix -- that is incorrect.
             Do NOT omit Magna Cum Laude.
+            FIELD OF STUDY: confirm major before using in documents.
 ```
 
 ---
@@ -157,6 +213,9 @@ Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN.
 | Current real estate status | Referral-only with KW Select |
 | Graduate school | University of St. Thomas |
 | Undergraduate school | St. Cloud State University |
+| MAAG full reference | Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team |
+| ALPR partner | Target Corporation (Target + Blue program) |
+| ALPR technology | Genetec AutoVu |
 
 ---
 
@@ -171,6 +230,9 @@ Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN.
 - Real estate end date is March 2026, not "Present"
 - University of Phoenix end date is October 2025, not "Present"
 - Medical retirement from sworn service: May 2024
+- CSU on-call: 2013 - 2018 (year-only acceptable for collateral duties)
+- MAAG on-call: 2005 - 2011 (year-only acceptable for collateral duties)
+- ALPR program: 2007 - 2010 (year-only acceptable for collateral duties)
 
 ---
 
@@ -180,6 +242,16 @@ Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN.
 |---|---|---|
 | First | March 2010 - May 2011 | Condello Wall / MCI Paint and Drywall; Lakeville Park Theft |
 | Second (ECU + DCECTF) | September 2016 - December 2021 | BEC / Shell Companies; Garwood Burglary / Google Search Warrant |
+
+---
+
+## Collateral Duty Summary (Quick Reference)
+
+| Assignment | Dates | Notes |
+|---|---|---|
+| MAAG Tactical Team (on-call) | 2005 - 2011 | Multi-agency tactical; Dakota County |
+| ALPR / Target + Blue Grant | 2007 - 2010 | $40,000 grant; Genetec AutoVu; BCA CJIS integration |
+| Crime Scene Unit (on-call) | 2013 - 2018 | Physical evidence, chain of custody |
 
 ---
 
@@ -210,6 +282,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | BEC federal sentence | 15 years |
 | Documented training hours | 1,238.75 |
 | Investigation-relevant training hours | 512 (subset) |
+| ALPR grant value | $40,000 |
 
 ---
 
@@ -244,7 +317,7 @@ script, not this file.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
   Added Awards and Honors section. Canonical stats table added.
-- 2026-06-13: Corrected Lakeville PD investigative rotation dates.
+- 2026-06-13 (commit 1): Corrected Lakeville PD investigative rotation dates.
   First rotation: March 2010 - May 2011.
   Second rotation: September 2016 - December 2021 (ECU + DCECTF).
   Added patrol return block: January 2022 - May 2024.
@@ -253,3 +326,12 @@ script, not this file.
   St. Paul, MN, GPA 3.94. (Previously listed incorrectly as Concordia University St. Paul.)
   Undergraduate degree: B.A., St. Cloud State University, St. Cloud, MN,
   Magna Cum Laude, GPA 3.51.
+- 2026-06-13 (commit 2): Added Collateral Duties and Special Assignments section.
+  CSU on-call team member: 2013 - 2018.
+  MAAG Tactical Team on-call: 2005 - 2011.
+  ALPR / Target + Blue grant program: 2007 - 2010; $40,000 grant; Genetec AutoVu;
+  BCA CJIS and Lakeville IT integration.
+  Added B.A. graduation year: 1998.
+  B.A. field of study flagged as PENDING CONFIRMATION.
+  Added ALPR grant value ($40,000) to Key Career Statistics table.
+  Added Collateral Duty Summary quick-reference table.
