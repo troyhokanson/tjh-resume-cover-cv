@@ -1,7 +1,8 @@
 """
 Anti-AI / Voice scan - MANDATORY automatic gate for every Hokanson document.
 
-Codifies the rules from VOICE_STANDARD.md (Layer 1 + Layer 2) and PROFILES.md.
+Codifies the rules from VOICE_STANDARD.md (Layer 1 + Layer 2), PROFILES.md,
+and PRIVACY_STANDARD.md.
 Run BEFORE share_file on any resume, cover letter, CV, recruiter packet, bio,
 or one-pager.
 
@@ -28,6 +29,13 @@ allow_icac = False (default) | True
              are permitted. All other PTSD-scope terms (homicide, lethal force,
              sexual assault, criminal sexual conduct, human trafficking) remain
              blocked regardless of this flag.
+
+Privacy enforcement (PRIVACY_STANDARD.md):
+    Suspect names, case control numbers, court case numbers, DOBs, victim names,
+    judge names, and probation officer names are hard-blocked in all output
+    documents. See PRIVACY_STANDARD.md for the full rationale and permitted
+    element table. CASE_BANK.md is the internal source of truth and may retain
+    full identifiers; application output documents must never reproduce them.
 """
 
 from __future__ import annotations
@@ -131,6 +139,55 @@ PTSD_TERMS_ICAC_GATED = [
     "child exploitation",
     "ICAC",
 ]
+
+
+# =========================================================================
+# PRIVACY STANDARD - CASE IDENTIFIER SUPPRESSION
+# Enforces PRIVACY_STANDARD.md Section 1 and Section 6.
+#
+# Hard rule: suspect names, case control numbers, court case numbers, DOBs,
+# victim names, judge names, and probation officer names must NEVER appear
+# in any application output document.
+#
+# CASE_BANK.md is the internal source and may retain full identifiers.
+# Application output documents (resume, cover, cv, bio) must never
+# reproduce them. See PRIVACY_STANDARD.md for the full rationale,
+# permitted element table, and expungement special rule.
+#
+# MAINTENANCE: When a new case is added to CASE_BANK.md, add the subject's
+# full name and any judicial/PO names to SUPPRESSED_NAMES below. Keep this
+# list synchronized with PRIVACY_STANDARD.md Section 6.
+# =========================================================================
+
+# Subject names, victim names, judicial names, and PO names from case files.
+# Full names and likely partial matches (last name alone) are both listed
+# where the last name is uncommon enough to be uniquely identifying.
+# Generic first names alone (e.g., "Matt") are not listed as they create
+# false positives in unrelated text.
+SUPPRESSED_NAMES = [
+    # Case 2 - Occupational fraud (MCI Paint and Drywall)
+    "Condello Wall",
+    # Case 4 - Commercial burglary
+    "Matt Garwood",
+    "Matthew Garwood",
+    "Matthew Scott Garwood",
+    # Judicial names from Cases 2 and 4
+    "Arlene Perkkio",
+    "Perkkio",
+]
+
+# Regex patterns for structural case identifiers.
+# These are hard-blocked regardless of content around them.
+# Pattern: Lakeville PD / Dakota County internal control number format
+_CONTROL_NUMBER_PATTERN = re.compile(r"Control\s*#\s*\d+", re.IGNORECASE)
+
+# Pattern: Minnesota district court case number format (e.g., 19HA-CR-11-907)
+_COURT_CASE_PATTERN = re.compile(
+    r"\b\d{2}[A-Z]{2}-[A-Z]{2}-\d{2}-\d{4}\b", re.IGNORECASE
+)
+
+# Pattern: Date of birth in MM/DD/YYYY format used as a subject identifier
+_DOB_PATTERN = re.compile(r"\bDOB\s*[:\-]?\s*\d{2}/\d{2}/\d{4}\b", re.IGNORECASE)
 
 
 # =========================================================================
@@ -257,9 +314,10 @@ def scan_text(
     text       : raw document text
     doc_type   : "resume" | "cover" | "cv" | "bio"
     profile    : "vendor-solutions" (default) | "siu-fraud" | "analyst-intelligence"
-    allow_icac : When True, CSAM / child-exploitation / ICAC training terms
-                 are permitted. Use only for documents targeting ICAC or
-                 child-safety roles. All other PTSD-scope terms remain blocked.
+    allow_icac : When True, opens the ICAC gate - permits CSAM / child-
+                 exploitation / ICAC training references. Use only for
+                 documents targeting ICAC or child-safety platform roles.
+                 All other PTSD-scope terms remain blocked.
     """
     doc_type = doc_type.lower()
     profile = _validate_profile(profile)
@@ -291,13 +349,13 @@ def scan_text(
 
     # 6. Layer 1 forbidden phrases (whole-word, case-insensitive)
     for p in ALL_FORBIDDEN:
-        pattern = re.escape(p).replace(r"\'", r"['']")
+        pattern = re.escape(p).replace(r"\'", r"[''']")
         if re.search(rf"(?<![A-Za-z]){pattern}(?![A-Za-z])", body, re.IGNORECASE):
             failures.append(f"[L1] Forbidden phrase: '{p}'")
 
     # 6b. Layer 2 profile-specific banned phrases
     for p in PROFILE_RULES[profile]["banned_phrases"]:
-        pattern = re.escape(p).replace(r"\'", r"['']")
+        pattern = re.escape(p).replace(r"\'", r"[''']")
         if re.search(rf"(?<![A-Za-z]){pattern}(?![A-Za-z])", body, re.IGNORECASE):
             failures.append(f"[L2:{profile}] Wrong-lane phrase: '{p}'")
 
@@ -348,7 +406,50 @@ def scan_text(
                     f"Pass allow_icac=True to permit for child-safety / ICAC role documents."
                 )
 
-    # 11. Protected veteran / VEVRAA language guard
+    # 11. PRIVACY STANDARD - case identifier suppression
+    #     Enforces PRIVACY_STANDARD.md Sections 1 and 6.
+    #     Hard-blocks suspect names, case control numbers, court case numbers,
+    #     DOBs, victim names, judge names, and probation officer names.
+    #     CASE_BANK.md is the internal source; application output must never
+    #     reproduce these identifiers.
+    #
+    #     MAINTENANCE: When a new case is added to CASE_BANK.md, add the
+    #     subject's name (and any judicial/PO names) to SUPPRESSED_NAMES above.
+
+    # 11a. Suppressed names (subjects, judges, POs from case files)
+    for name in SUPPRESSED_NAMES:
+        if re.search(rf"\b{re.escape(name)}\b", body, re.IGNORECASE):
+            failures.append(
+                f"[L1:PRIVACY] Suppressed case identifier present: '{name}'. "
+                f"Replace with role descriptor only (e.g., 'the subject', 'the court'). "
+                f"See PRIVACY_STANDARD.md Section 1."
+            )
+
+    # 11b. Case control numbers (internal department format)
+    if _CONTROL_NUMBER_PATTERN.search(body):
+        failures.append(
+            "[L1:PRIVACY] Case control number found (e.g., 'Control #XXXXXXXX'). "
+            "Omit entirely from application documents. "
+            "See PRIVACY_STANDARD.md Section 1B."
+        )
+
+    # 11c. Minnesota district court case numbers (e.g., 19HA-CR-11-907)
+    if _COURT_CASE_PATTERN.search(body):
+        failures.append(
+            "[L1:PRIVACY] Court case number found (e.g., '19HA-CR-11-907'). "
+            "Omit entirely from application documents. "
+            "See PRIVACY_STANDARD.md Section 1B."
+        )
+
+    # 11d. Date of birth used as subject identifier
+    if _DOB_PATTERN.search(body):
+        failures.append(
+            "[L1:PRIVACY] DOB string found (e.g., 'DOB: MM/DD/YYYY'). "
+            "Omit entirely from application documents. "
+            "See PRIVACY_STANDARD.md Section 1C."
+        )
+
+    # 12. Protected veteran / VEVRAA language guard
     if re.search(r"\b(VEVRAA|protected veteran)\b", body, re.IGNORECASE):
         failures.append("[L1] Protected veteran / VEVRAA language present - Troy directed this be omitted.")
 
