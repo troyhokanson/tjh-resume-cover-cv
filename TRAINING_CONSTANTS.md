@@ -113,14 +113,17 @@ Course:         osTriage Training
 Provider:       Office of Juvenile Justice and Delinquency Prevention (OJJDP)
 Delivery:       Online
 Year:           2020
-Hours:          Not confirmed -- do not estimate or list
-Display:        "osTriage Training, OJJDP, Online, 2020"
+Hours:          3
+Display:        "osTriage Training, OJJDP, 3 hours, Online, 2020"
+Short display:  "osTriage Training, OJJDP, Online, 2020"
 Notes:          OJJDP offered osTriage training as part of their Internet Crimes
                 Against Children (ICAC) task force support programs.
                 This training directly supports osTriage usage in the CONFIRMED tools list.
                 Delivery was online -- do not list a physical location.
-                Hour count is not confirmed -- omit unless Troy provides it.
+                3 hours confirmed by Troy Hokanson on 2026-06-14.
                 Capitalize osTriage as listed: lowercase o, capital T.
+                3 hours is a short course -- omit hour count in space-constrained
+                contexts (e.g., one-page resume) unless hours are explicitly requested.
 ```
 
 ---
@@ -141,7 +144,7 @@ Notes:          OJJDP offered osTriage training as part of their Internet Crimes
 | FTK Bootcamp | AccessData | St. Paul, MN | 2017 | 21 |
 | FBI CAST: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 |
 | X-Ways Forensics Training | X-Ways Software Technology AG | Chicago, IL | 2018 | 32 |
-| osTriage Training | OJJDP | Online | 2020 | Not confirmed |
+| osTriage Training | OJJDP | Online | 2020 | 3 |
 
 ---
 
@@ -150,12 +153,14 @@ Notes:          OJJDP offered osTriage training as part of their Internet Crimes
 - FTK Bootcamp: 21 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
 - FBI CAST: 16 hours confirmed (Troy Hokanson, 2026-06-14).
 - X-Ways Training: 32 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
-- osTriage / OJJDP: hour count NOT confirmed -- omit from all documents until Troy provides it.
+- osTriage / OJJDP: 3 hours confirmed (Troy Hokanson, 2026-06-14).
 - Never estimate or fabricate training hours.
 - When aggregating total training hours for a resume stat, only include confirmed
-  hour counts. Do not include courses where hours are unconfirmed.
-- The confirmed TRAINING_CONSTANTS hours currently total 69 hours
-  (21 FTK + 16 FBI CAST + 32 X-Ways). osTriage hours excluded pending confirmation.
+  hour counts.
+- All four courses are now fully confirmed. Confirmed aggregate total: 72 hours
+  (21 FTK + 16 FBI CAST + 32 X-Ways + 3 osTriage).
+- Note on osTriage: 3 hours is a short course. Omit the hour count in
+  space-constrained contexts (one-page resume) unless explicitly requested.
 
 ---
 
@@ -186,17 +191,18 @@ with this file is wrong -- fix the build script, not this file.
 
 - 2026-06-14 (commit 1): Initial creation.
   Certifications added: Cellebrite CCLO and CCPA, 2016, recertified 2018, 2020.
-  Training courses added: FTK Bootcamp (24 hrs), FBI CAST (unconfirmed),
-  X-Ways (24 hrs), osTriage OJJDP (unconfirmed).
-  NOTE: FTK 24 and X-Ways 24 hour counts in this commit were INCORRECT.
-  Superseded by commit 3.
+  Training courses added: FTK Bootcamp (24 hrs -- INCORRECT, see commit 3),
+  FBI CAST (unconfirmed), X-Ways (24 hrs -- INCORRECT, see commit 3),
+  osTriage OJJDP (unconfirmed).
 
-- 2026-06-14 (commit 2): VOIDED -- FBI CAST hours set to 16, but FTK and X-Ways
-  corrections not yet applied. Superseded by commit 3.
+- 2026-06-14 (commit 2): VOIDED -- FBI CAST set to 16, FTK/X-Ways not yet corrected.
+  Superseded entirely by commit 3.
 
-- 2026-06-14 (commit 3): All three confirmed hour counts corrected by Troy Hokanson.
-  FTK Bootcamp: corrected from 24 to 21 hours.
-  X-Ways Forensics Training: corrected from 24 to 32 hours.
-  FBI CAST: confirmed as 16 hours (consistent with commit 2 intent).
-  Confirmed aggregate updated to 69 hours (21 FTK + 16 FBI CAST + 32 X-Ways).
-  osTriage hours remain unconfirmed -- omit until provided.
+- 2026-06-14 (commit 3): All three in-person course hours corrected by Troy Hokanson.
+  FTK: 24 -> 21. X-Ways: 24 -> 32. FBI CAST confirmed at 16.
+  Confirmed aggregate: 69 hours.
+
+- 2026-06-14 (commit 4): osTriage hours confirmed by Troy Hokanson as 3.
+  All four courses now fully confirmed.
+  Confirmed aggregate updated to 72 hours (21 FTK + 16 FBI CAST + 32 X-Ways + 3 osTriage).
+  Added display note: omit osTriage hour count in space-constrained contexts.
