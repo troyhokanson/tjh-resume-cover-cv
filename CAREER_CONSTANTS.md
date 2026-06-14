@@ -38,7 +38,19 @@ Employer:   Dakota County Electronic Crimes Task Force (DCECTF)
             (Assigned from: Lakeville Police Department)
 Location:   Lakeville, MN
 Dates:      June 2017 - December 2021
-Notes:      Ten partner agencies. Lead examiner. 5,304 GB processed in 2020.
+Notes:      Ten partner agencies. Troy served as the Lakeville Police Department's
+            assigned representative and agency subject matter expert (SME) for digital
+            forensics -- not the task force lead examiner. LPD officers, investigators,
+            and administrators came to Troy for guidance on mobile devices, tablets,
+            computers, hard drives, USB storage, and other digital evidence questions.
+            He conducted forensic examinations on behalf of LPD and supported DCECTF
+            casework as the LPD agency rep within the task force structure.
+            5,304 GB processed in 2020 reflects Troy's examination volume, not a
+            task-force-wide figure.
+            DO NOT describe Troy as "lead examiner" or "task force lead" -- that
+            overstates the role. Correct framing: "Lakeville PD representative and
+            digital forensics SME," "agency digital forensics examiner assigned to
+            the DCECTF," or "LPD's primary resource for digital evidence questions."
             DO NOT combine with ECU dates below into a single block.
 ```
 
@@ -311,7 +323,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Military service | 8 years 3 months (honorably discharged) |
 | Digital forensic / ECU + DCECTF combined | 5.5 years (September 2016 - December 2021) |
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
-| Digital evidence processed (2020) | 5,304 GB |
+| Digital evidence processed (2020) | 5,304 GB (Troy's examination volume as LPD agency rep) |
 | Task force partner agencies | Ten |
 | FTO service | 18 years |
 | SWAT service | 5.5 years |
@@ -392,3 +404,12 @@ script, not this file.
   (November 1998 - February 2010), NOT under post-first-rotation patrol block.
   Updated Key Career Statistics table: military now shows 8 years 3 months.
   Updated Date Rules: military total note added.
+- 2026-06-14: Corrected DCECTF role framing.
+  "Lead examiner" language removed -- that overstated Troy's role within the task force.
+  Troy served as the Lakeville PD assigned representative and agency digital forensics
+  SME. LPD personnel came to Troy for guidance on mobile devices, tablets, computers,
+  hard drives, USB storage, and related digital evidence questions. He conducted forensic
+  examinations on behalf of LPD within the DCECTF structure.
+  5,304 GB stat clarified as Troy's examination volume, not a task-force-wide figure.
+  Added explicit "DO NOT describe as lead examiner" enforcement note in DCECTF block.
+  Updated Key Career Statistics table note on the 5,304 GB stat to match.
