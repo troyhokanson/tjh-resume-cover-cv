@@ -63,9 +63,17 @@ Title:      Detective / Electronic Crimes Unit (ECU)
 Employer:   Lakeville Police Department
 Location:   Lakeville, MN
 Dates:      September 2016 - June 2017
-Notes:      Established ECU prior to DCECTF assignment. Acquired and configured
-            initial Cellebrite UFED. Bridge between patrol/investigations and task force.
+Notes:      The ECU was established by a prior detective before Troy's assignment.
+            Troy did NOT establish the unit -- do not use "established ECU" language.
+            Troy's primary infrastructure contribution: developed the unit's investigator
+            training folder -- a structured resource package containing templates for
+            administrative subpoenas, preservation requests, and search warrants, coupled
+            with ISP and ESP reference data to reduce the learning curve for investigators
+            new to electronic crimes work.
+            Acquired and configured initial Cellebrite UFED.
+            Served as bridge between patrol/investigations and the DCECTF task force.
             DO NOT combine with DCECTF dates above into a single block.
+            DO NOT credit Troy with founding or establishing the ECU.
 ```
 
 ### Police Officer / FTO -- Patrol (Post-First-Rotation)
@@ -180,7 +188,7 @@ ZetX (TRAXi / Traxx)
 
 Cellebrite UFED
   Category:   Mobile device forensics
-  Usage:      Acquired and configured initial unit during ECU establishment (2016).
+  Usage:      Acquired and configured initial unit during ECU assignment (2016).
               Used for mobile device extraction and analysis throughout ECU/DCECTF tenure.
   Display:    "Cellebrite UFED" (full form); "Cellebrite" (abbreviated) -- both acceptable.
 
@@ -584,3 +592,13 @@ script, not this file.
     Blacklight (BlackBag Technologies), osTriage.
   Each entry includes category, usage context, and display/capitalization rules.
   Added Investigative Tools Quick Reference Table at bottom of tools section.
+- 2026-06-14 (commit 5): Corrected ECU establishment credit.
+  The ECU was founded by a prior detective before Troy's assignment in September 2016.
+  Troy did NOT establish the unit. Removed "Established ECU" language from ECU block.
+  Troy's correct infrastructure contribution: developed the unit's investigator training
+  folder containing templates for administrative subpoenas, preservation requests, and
+  search warrants, coupled with ISP/ESP reference data to reduce the learning curve
+  for investigators new to electronic crimes work.
+  Added hard enforcement note: DO NOT credit Troy with founding or establishing the ECU.
+  Updated Cellebrite UFED entry in CONFIRMED tools to reflect "acquired and configured
+  initial unit during ECU assignment" (not "during ECU establishment").
