@@ -118,12 +118,23 @@ Display:        "osTriage Training, OJJDP, 3 hours, Online, 2020"
 Short display:  "osTriage Training, OJJDP, Online, 2020"
 Notes:          OJJDP offered osTriage training as part of their Internet Crimes
                 Against Children (ICAC) task force support programs.
-                This training directly supports osTriage usage in the CONFIRMED tools list.
-                Delivery was online -- do not list a physical location.
                 3 hours confirmed by Troy Hokanson on 2026-06-14.
                 Capitalize osTriage as listed: lowercase o, capital T.
                 3 hours is a short course -- omit hour count in space-constrained
                 contexts (e.g., one-page resume) unless hours are explicitly requested.
+
+USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
+                osTriage is used for incident response, memory capture, and
+                digital artifact capture. It is a triage tool designed to rapidly
+                collect volatile and non-volatile forensic artifacts from a live
+                Windows system without requiring a full forensic imaging workflow.
+                When writing resume bullets or cover letter language involving
+                osTriage, frame it in the context of live-system triage,
+                first-responder digital evidence collection, incident response
+                support, and rapid artifact capture -- NOT as a full-disk imaging
+                or deep analysis platform (that role belongs to FTK and X-Ways).
+                Appropriate verbs: triaged, captured, collected, preserved.
+                Do NOT use: analyzed, examined, processed (those apply to FTK/X-Ways).
 ```
 
 ---
@@ -139,12 +150,12 @@ Notes:          OJJDP offered osTriage training as part of their Internet Crimes
 
 ## Training Courses Quick Reference Table
 
-| Course | Provider | Location | Year | Hours |
-|---|---|---|---|---|
-| FTK Bootcamp | AccessData | St. Paul, MN | 2017 | 21 |
-| FBI CAST: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 |
-| X-Ways Forensics Training | X-Ways Software Technology AG | Chicago, IL | 2018 | 32 |
-| osTriage Training | OJJDP | Online | 2020 | 3 |
+| Course | Provider | Location | Year | Hours | Use Case |
+|---|---|---|---|---|---|
+| FTK Bootcamp | AccessData | St. Paul, MN | 2017 | 21 | Full-disk forensic analysis |
+| FBI CAST: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 | Cell site / CDR analysis |
+| X-Ways Forensics Training | X-Ways Software Technology AG | Chicago, IL | 2018 | 32 | Deep forensic examination |
+| osTriage Training | OJJDP | Online | 2020 | 3 | Incident response, memory and artifact capture |
 
 ---
 
@@ -157,7 +168,7 @@ Notes:          OJJDP offered osTriage training as part of their Internet Crimes
 - Never estimate or fabricate training hours.
 - When aggregating total training hours for a resume stat, only include confirmed
   hour counts.
-- All four courses are now fully confirmed. Confirmed aggregate total: 72 hours
+- All four courses fully confirmed. Confirmed aggregate total: 72 hours
   (21 FTK + 16 FBI CAST + 32 X-Ways + 3 osTriage).
 - Note on osTriage: 3 hours is a short course. Omit the hour count in
   space-constrained contexts (one-page resume) unless explicitly requested.
@@ -174,6 +185,8 @@ Notes:          OJJDP offered osTriage training as part of their Internet Crimes
 - FTK Bootcamp: provider at time of training was AccessData -- use that name for
   the 2017 reference, not the current owner Exterro.
 - osTriage: always use lowercase o, capital T in all references.
+- osTriage framing: incident response, memory capture, artifact capture.
+  Do NOT frame as analysis or examination platform.
 - Course titles are locked -- do not paraphrase, shorten, or reorder words unless
   using the designated short display format defined above.
 
@@ -203,6 +216,11 @@ with this file is wrong -- fix the build script, not this file.
   Confirmed aggregate: 69 hours.
 
 - 2026-06-14 (commit 4): osTriage hours confirmed by Troy Hokanson as 3.
-  All four courses now fully confirmed.
-  Confirmed aggregate updated to 72 hours (21 FTK + 16 FBI CAST + 32 X-Ways + 3 osTriage).
+  All four courses now fully confirmed. Aggregate: 72 hours.
   Added display note: omit osTriage hour count in space-constrained contexts.
+
+- 2026-06-14 (commit 5): Added osTriage use-case note confirmed by Troy Hokanson.
+  Use case: incident response, memory capture, digital artifact capture.
+  Added verb guidance: triaged, captured, collected, preserved (not analyzed/examined).
+  Added use-case column to Training Courses Quick Reference Table.
+  Updated Credential Display Rules to include osTriage framing instruction.
