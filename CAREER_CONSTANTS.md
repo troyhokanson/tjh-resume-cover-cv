@@ -33,18 +33,22 @@ The phrase "federal coordination" in CASE_BANK.md refers to investigative coordi
 only -- it does NOT mean the case was federally prosecuted.
 ```
 
-### RULE 2 -- Torrens-Maldonado Case (15-Year Federal Sentence)
+### RULE 2 -- Torres-Maldonado Case (15-Year Federal Sentence)
 
 ```
-THE 15-YEAR FEDERAL SENTENCE BELONGS TO THE TORRENS-MALDONADO CASE.
+THE CORRECT SPELLING IS TORRES-MALDONADO.
+NOT "Torrens-Maldonado." NOT "Torrence-Maldonado." NOT any other variant.
+TORRES-MALDONADO. Always. Every document. Every reference. No exceptions.
+
+THE 15-YEAR FEDERAL SENTENCE BELONGS TO THE TORRES-MALDONADO CASE.
 THAT IS A CHILD PORNOGRAPHY FEDERAL PROSECUTION.
 IT IS COMPLETELY SEPARATE FROM THE BEC CASE.
 
-DO NOT conflate the Torrens-Maldonado 15-year federal sentence with the BEC case.
-DO NOT mention the 15-year sentence in any context other than the Torrens-Maldonado case.
+DO NOT conflate the Torres-Maldonado 15-year federal sentence with the BEC case.
+DO NOT mention the 15-year sentence in any context other than the Torres-Maldonado case.
 DO NOT use the figure "15 years" when describing BEC case outcomes.
 
-The Torrens-Maldonado case is not yet in CASE_BANK.md as a full entry.
+The Torres-Maldonado case is not yet in CASE_BANK.md as a full entry.
 Until it is added, do not use specific case details beyond the sentence length and
 federal prosecution status without confirmation from Troy.
 ```
@@ -529,7 +533,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Real estate sales | $3.2M |
 | BEC restitution | PENDING CONFIRMATION -- do not use $295,704.11 for BEC; see HARD ENFORCEMENT RULES above |
 | BEC conviction jurisdiction | Ramsey County (NOT federal) |
-| Torrens-Maldonado sentence | 15 years, federal, child pornography -- SEPARATE CASE from BEC |
+| Torres-Maldonado sentence | 15 years, federal, child pornography -- SEPARATE CASE from BEC |
 | Documented training hours | 1,238.75 |
 | Investigation-relevant training hours | 512 (subset) |
 | ALPR grant value | $40,000 |
@@ -667,13 +671,13 @@ script, not this file.
 - 2026-06-14 (commit 6): CRITICAL CORRECTION -- BEC case jurisdiction and sentence.
   The BEC / Shell Companies case was prosecuted by Ramsey County.
   It is NOT a federal case and did NOT result in a federal sentence.
-  The 15-year sentence belongs to the Torrens-Maldonado case (child pornography,
+  The 15-year sentence belongs to the Torres-Maldonado case (child pornography,
   federal prosecution) -- a completely separate case from BEC.
   The $295,704.11 restitution figure has NOT been confirmed as the BEC amount and
   must not be used for the BEC case until Troy confirms which case it belongs to.
   Added HARD ENFORCEMENT RULES section at the top of the file with three rules:
     Rule 1: BEC case is Ramsey County, not federal -- confirmed outcome language defined.
-    Rule 2: Torrens-Maldonado 15-year sentence is federal child pornography -- never
+    Rule 2: Torres-Maldonado 15-year sentence is federal child pornography -- never
             conflate with BEC.
     Rule 3: $295,704.11 restitution figure is PENDING CONFIRMATION -- do not assign
             to BEC case.
@@ -681,3 +685,9 @@ script, not this file.
   explicit jurisdiction and case-separation rows.
   This error has been noted more than once. The HARD ENFORCEMENT RULES section
   is positioned at the top of the file to ensure it is read before any drafting begins.
+- 2026-06-14 (commit 7): SPELLING CORRECTION -- Torres-Maldonado.
+  "Torrens-Maldonado" was a misspelling. The correct surname is Torres-Maldonado.
+  All 6 instances corrected: Rule 2 header, Rule 2 body (3 instances), Key Career
+  Statistics table, and Change Log entry for commit 6.
+  Rule 2 now includes an explicit spelling enforcement statement at the top of the block:
+  "The correct spelling is TORRES-MALDONADO. Not Torrens. Not Torrence. Always Torres."
