@@ -20,6 +20,17 @@ Notes:      Medical retirement from law enforcement May 2024. Closed $3.2M in re
             frame as bridge role following medical retirement.
 ```
 
+### Police Officer — Return to Patrol
+```
+Title:      Police Officer
+Employer:   Lakeville Police Department
+Location:   Lakeville, MN
+Dates:      January 2022 - May 2024
+Notes:      Return to patrol following DCECTF assignment end. Medical retirement May 2024.
+            This is the final sworn service period. Always include to show continuous
+            employment through retirement. Do not omit or merge into the DCECTF block.
+```
+
 ### Detective / Digital Forensic Examiner — DCECTF
 ```
 Title:      Detective / Digital Forensic Examiner
@@ -42,14 +53,38 @@ Notes:      Established ECU prior to DCECTF assignment. Acquired and configured
             DO NOT combine with DCECTF dates above into a single block.
 ```
 
-### Police Officer / Field Training Officer / Investigator
+### Police Officer / FTO — Patrol (Post-First-Rotation)
 ```
-Title:      Police Officer / Field Training Officer (FTO) / Investigator
+Title:      Police Officer / Field Training Officer (FTO)
 Employer:   Lakeville Police Department
 Location:   Lakeville, MN
-Dates:      November 1998 - September 2016
-Notes:      18 years FTO. Investigations Unit (financial crimes). 5.5 years SWAT.
-            20+ written commendations.
+Dates:      June 2011 - August 2016
+Notes:      Patrol period following first investigative rotation. December 2013 sergeant
+            commendation (self-initiated fraud case follow-up during patrol) falls here.
+            Probation Liaison Officer Program co-founded 2012. 5.5 years SWAT spans
+            across patrol and investigative blocks.
+```
+
+### Police Officer / Investigator — First Investigative Rotation
+```
+Title:      Police Officer / Investigator (First Investigative Rotation)
+Employer:   Lakeville Police Department
+Location:   Lakeville, MN
+Dates:      March 2010 - May 2011
+Notes:      First investigative rotation. Financial crimes and property crime investigations.
+            Condello Wall / MCI Paint and Drywall occupational fraud case (offense 03/15/2008,
+            filed 03/21/2011) sits in this rotation. Lakeville Park Theft / multi-system ID
+            convergence case also in this rotation. Returned to patrol May 2011.
+```
+
+### Police Officer / FTO — Patrol (Initial)
+```
+Title:      Police Officer / Field Training Officer (FTO)
+Employer:   Lakeville Police Department
+Location:   Lakeville, MN
+Dates:      November 1998 - February 2010
+Notes:      Initial patrol period. 18 years total FTO service spans full career.
+            20+ written commendations. SWAT service begins in this block.
 ```
 
 ### Adjunct Faculty — Criminal Justice
@@ -79,6 +114,36 @@ Notes:      Always identify as veteran. Never use VEVRAA or protected-veteran la
 
 ---
 
+## Education Records
+
+### Graduate Degree
+```
+Degree:     Master of Arts, Police Leadership
+Institution: University of St. Thomas
+Location:   St. Paul, MN
+GPA:        3.94
+Honors:     None listed (GPA speaks)
+Notes:      Always list as M.A. Police Leadership, University of St. Thomas, St. Paul, MN.
+            GPA 3.94 is confirmed and should always appear.
+            Do NOT list as Concordia University St. Paul -- that is incorrect.
+            Do NOT omit GPA for this degree.
+```
+
+### Undergraduate Degree
+```
+Degree:     Bachelor of Arts
+Institution: St. Cloud State University
+Location:   St. Cloud, MN
+GPA:        3.51
+Honors:     Magna Cum Laude
+Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN.
+            Always include Magna Cum Laude and GPA 3.51.
+            Do NOT list as University of Phoenix -- that is incorrect.
+            Do NOT omit Magna Cum Laude.
+```
+
+---
+
 ## Employer Name Rules
 
 | Context | Correct form |
@@ -88,8 +153,10 @@ Notes:      Always identify as veteran. Never use VEVRAA or protected-veteran la
 | ECU reference | Electronic Crimes Unit (ECU), Lakeville Police Department |
 | Patrol / main employer | Lakeville Police Department |
 | Real estate (full) | eXp Realty / KW Select |
-| University | University of Phoenix |
+| University (adjunct) | University of Phoenix |
 | Current real estate status | Referral-only with KW Select |
+| Graduate school | University of St. Thomas |
+| Undergraduate school | St. Cloud State University |
 
 ---
 
@@ -98,9 +165,21 @@ Notes:      Always identify as veteran. Never use VEVRAA or protected-veteran la
 - Use month-year format for all employment dates: `November 1998 - September 2016`
 - Never use year-only for employment (education uses year-only; employment uses month-year)
 - DCECTF and ECU are always two separate job blocks -- never merged into one
+- Patrol return (January 2022 - May 2024) is always its own block -- never merged into DCECTF
+- First investigative rotation: March 2010 - May 2011
+- Second investigative rotation: September 2016 - December 2021 (ECU + DCECTF combined span)
 - Real estate end date is March 2026, not "Present"
 - University of Phoenix end date is October 2025, not "Present"
 - Medical retirement from sworn service: May 2024
+
+---
+
+## Investigative Rotation Summary (Quick Reference)
+
+| Rotation | Dates | Key Cases |
+|---|---|---|
+| First | March 2010 - May 2011 | Condello Wall / MCI Paint and Drywall; Lakeville Park Theft |
+| Second (ECU + DCECTF) | September 2016 - December 2021 | BEC / Shell Companies; Garwood Burglary / Google Search Warrant |
 
 ---
 
@@ -165,3 +244,12 @@ script, not this file.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
   Added Awards and Honors section. Canonical stats table added.
+- 2026-06-13: Corrected Lakeville PD investigative rotation dates.
+  First rotation: March 2010 - May 2011.
+  Second rotation: September 2016 - December 2021 (ECU + DCECTF).
+  Added patrol return block: January 2022 - May 2024.
+  Added Education Records section.
+  Graduate degree corrected to M.A. Police Leadership, University of St. Thomas,
+  St. Paul, MN, GPA 3.94. (Previously listed incorrectly as Concordia University St. Paul.)
+  Undergraduate degree: B.A., St. Cloud State University, St. Cloud, MN,
+  Magna Cum Laude, GPA 3.51.
