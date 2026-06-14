@@ -157,12 +157,11 @@ Technology: Genetec AutoVu ALPR system. Daily "hotlists" transferred automatical
             via WiFi at midnight. Coordinated with BCA CJIS and Genetec AutoVu
             and Lakeville IT to ensure reliable nightly hotlist sync.
 Notes:      This is a quantified technology acquisition and public-private partnership
-            accomplishment. Restitution-equivalent metric: $40,000 grant value.
-            Always cite the corporate partner (Target + Blue) and the grant dollar amount.
-            Surface in analyst-intelligence and vendor-solutions profiles where technology
-            procurement and data integration experience is relevant.
-            Do NOT omit the BCA CJIS / Genetec / Lakeville IT coordination detail --
-            it demonstrates multi-stakeholder technical integration experience.
+            accomplishment. Always cite the corporate partner (Target + Blue) and the
+            grant dollar amount. Surface in analyst-intelligence and vendor-solutions
+            profiles where technology procurement and data integration experience is
+            relevant. Do NOT omit the BCA CJIS / Genetec / Lakeville IT coordination
+            detail -- it demonstrates multi-stakeholder technical integration experience.
 ```
 
 ---
@@ -184,18 +183,17 @@ Notes:      Always list as M.A. Police Leadership, University of St. Thomas, St.
 
 ### Undergraduate Degree
 ```
-Degree:     Bachelor of Arts
-Field:      [CONFIRM MAJOR -- Criminal Justice or Law Enforcement or other]
+Degree:     Bachelor of Arts, Criminal Justice Studies
 Institution: St. Cloud State University
 Location:   St. Cloud, MN
 Year:       1998
 GPA:        3.51
 Honors:     Magna Cum Laude
-Notes:      Always list as B.A. from St. Cloud State University, St. Cloud, MN, 1998.
-            Always include Magna Cum Laude and GPA 3.51.
+Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State University,
+            St. Cloud, MN, 1998, Magna Cum Laude, GPA 3.51.
             Do NOT list as University of Phoenix -- that is incorrect.
-            Do NOT omit Magna Cum Laude.
-            FIELD OF STUDY: confirm major before using in documents.
+            Do NOT omit Magna Cum Laude or the field of study.
+            Field of study is CONFIRMED: Criminal Justice Studies.
 ```
 
 ---
@@ -335,3 +333,7 @@ script, not this file.
   B.A. field of study flagged as PENDING CONFIRMATION.
   Added ALPR grant value ($40,000) to Key Career Statistics table.
   Added Collateral Duty Summary quick-reference table.
+- 2026-06-13 (commit 3): Confirmed B.A. field of study: Criminal Justice Studies.
+  Full confirmed entry: B.A., Criminal Justice Studies, St. Cloud State University,
+  St. Cloud, MN, 1998, Magna Cum Laude, GPA 3.51.
+  Removed PENDING CONFIRMATION flag.
