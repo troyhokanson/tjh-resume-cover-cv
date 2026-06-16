@@ -326,9 +326,29 @@ def scan_text(
 
     # 1. Em / en dashes - never in any document
     if "\u2014" in body:
-        failures.append(f"[L1] Em dash found ({body.count(chr(0x2014))}x). Replace with period or rewrite.")
+        failures.append(f"[L1] Em dash found ({body.count(chr(0x2014))}x). Replace with comma, period, or rewrite.")
     if "\u2013" in body:
-        failures.append(f"[L1] En dash found ({body.count(chr(0x2013))}x). Use 'to' in prose, plain hyphen in date fields.")
+        failures.append(f"[L1] En dash found ({body.count(chr(0x2013))}x). Use plain hyphen in date fields only.")
+
+    # 1b. Double-hyphen ( -- ) - em dash substitute, equally forbidden
+    double_hyphen_count = len(re.findall(r"--", body))
+    if double_hyphen_count:
+        failures.append(
+            f"[L1] Double-hyphen ( -- ) found ({double_hyphen_count}x). "
+            f"This is an em dash substitute and is equally forbidden. "
+            f"Replace with a comma, period, or restructure the sentence."
+        )
+
+    # 1c. Space-hyphen-space ( word - word ) used as a clause separator
+    # Exclude valid date ranges like "1998-2024" (no spaces around hyphen)
+    # and dimension ranges. Flag only where spaces surround the hyphen.
+    space_hyphen_count = len(re.findall(r"(?<=[A-Za-z,)]) - (?=[A-Za-z(])", body))
+    if space_hyphen_count:
+        failures.append(
+            f"[L1] Space-hyphen-space ( - ) used as clause separator "
+            f"({space_hyphen_count}x). This is a visual em dash substitute "
+            f"and is equally forbidden. Use a comma, period, or semicolon instead."
+        )
 
     # 2. Exclamation points - never
     if "!" in body:
