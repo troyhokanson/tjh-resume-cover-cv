@@ -74,13 +74,20 @@ Every word must read as if Troy wrote it himself. The narrator is:
 
 | Punctuation | Rule |
 |---|---|
-| Em dash (—) | Never. Anywhere. Replace with a period or restructure. |
-| En dash (–) | Never in prose. Plain hyphen acceptable in date fields (1998-2024). |
+| Em dash (—) | **Never. Anywhere. Zero exceptions.** Replace with a comma, period, or restructure the sentence. |
+| En dash (–) | Never in prose. Plain hyphen acceptable in date fields only (1998-2024). |
+| Double hyphen ( -- ) | **Never. Anywhere.** This is a direct substitution for an em dash and is equally forbidden. Use a comma or restructure. |
+| Space-hyphen-space ( - ) | **Never as a separator between clauses or list items.** This is a visual em dash substitute and is equally forbidden. Use a comma, period, or semicolon instead. |
 | Semicolon (;) | Never in cover letters or About / bio sections. Acceptable in resume bullets between parallel items. |
 | Ellipsis (...) | Never. Use a period or rewrite. |
 | Exclamation point (!) | Never in any professional content. Zero exceptions. |
 | Curly / smart quotes (" ' ' ') | Never. Use straight quotes only. |
 | Oxford comma | Use naturally, not mechanically. Mechanical consistency is itself an AI signal. |
+
+**Preferred separators when em dashes, en dashes, double hyphens, or space-hyphen-space would otherwise be used:**
+- Between a label and its value: use a comma. Example: `Certified Fraud Examiner (CFE), actively pursuing through ACFE, 2026.`
+- Between parallel certifications or credentials: use a period to end each item, or a comma within a series.
+- Between a clause and its modifier: rewrite as two sentences or use a comma.
 
 ## Number Conventions
 
