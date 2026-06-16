@@ -34,15 +34,31 @@ Badge No. 4849
 
 ---
 
+## Certified Cyber Crime Investigator (CCCI)
+
+```
+Certified Cyber Crime Investigator (CCCI), Certificate No. 4793
+Issued: January 2023
+Issuing Body: International Association of Computer Investigative Specialists (IACIS)
+```
+
+- **Certificate number: 4793** — this is the CCCI-issued credential number.
+- Do NOT confuse with badge number 4849 or POST license 14790. All three are different identifiers.
+- This credential belongs in the Certifications section of every resume and CV.
+- Display as: `Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023`
+
+---
+
 ## Common Error — Do Not Repeat
 
 | Wrong | Correct |
 |---|---|
 | `Minnesota Peace Officer License No. 4849` | `Minnesota Peace Officer License No. 14790` |
-| `License No. 14790` used as badge number | `Badge No. 4849` is the badge; `License No. 14790` is the POST license |
+| `CCCI No. 4849` or `CCCI No. 14790` | `CCCI No. 4793` |
+| `Badge No. 14790` | `Badge No. 4849` (internal only, not on resumes) |
 
-This was an error caught in the June 2026 document review. Every prior document using
-`License No. 4849` must be corrected before reuse.
+The badge number (4849), POST license (14790), and CCCI certificate (4793) are three distinct
+numbers. They must never be used interchangeably.
 
 ---
 
@@ -50,6 +66,7 @@ This was an error caught in the June 2026 document review. Every prior document 
 
 ```
 Certified Fraud Examiner (CFE), actively pursuing through ACFE, 2026.
+Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
 Minnesota Peace Officer License No. 14790, POST Board Certified, 1998-2023.
 BCA Certified Crime Scene Technician.
 Cellebrite CCLO and CCPA (2016, recertified 2020).
@@ -64,3 +81,5 @@ NW3C Cybercrime Investigation.
 
 - 2026-06-15: Created. Corrected POST license number from 4849 (badge) to 14790 (POST license).
   Badge number 4849 documented as internal-only, not a resume credential.
+- 2026-06-15: Added CCCI No. 4793 (January 2023). Updated common error table to include all three
+  distinct credential numbers. CCCI added to full credentials block.
