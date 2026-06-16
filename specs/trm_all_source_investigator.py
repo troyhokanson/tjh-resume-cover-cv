@@ -7,10 +7,12 @@ investigative and legal process match, crypto experience ramping.
 
 Usage:
     from build_doc import build_document
-    from specs.trm_all_source_investigator import RESUME_SPEC
+    from specs.trm_all_source_investigator import RESUME_SPEC, COVER_SPEC
 
-    build_document("resume", RESUME_SPEC,
-                   "output/Hokanson_Resume_TRM_All_Source_Investigator_" + TODAY.replace(",", "").replace(" ", "-") + ".docx")
+    build_document("resume",       RESUME_SPEC,
+                   "output/Hokanson_Resume_TRM_All_Source_Investigator_2026-06-15.docx")
+    build_document("cover_letter", COVER_SPEC,
+                   "output/Hokanson_Cover_TRM_All_Source_Investigator_2026-06-15.docx")
 """
 
 from datetime import date
@@ -89,7 +91,7 @@ RESUME_SPEC = {
                 "years, translating complex investigative and legal concepts into accessible written "
                 "content for non‑specialist audiences.",
                 "Maintained high standards of written feedback and documentation in a fully remote, "
-                "async environment that mirrors TRM’s Slack‑ and Notion‑driven operating model.",
+                "async environment that mirrors TRM's Slack‑ and Notion‑driven operating model.",
             ],
         },
     ],
@@ -107,5 +109,52 @@ RESUME_SPEC = {
                 "typologies, and victim‑to‑operator tracing heuristics."
             ],
         }
+    ],
+}
+
+COVER_SPEC = {
+    "date_str": TODAY,
+    "recipient_name": "Hiring Manager",
+    "recipient_org": "TRM Labs",
+    "recipient_address": ["Remote — United States"],
+    "salutation": "Hiring Manager",
+    "body_paragraphs": [
+        "I spent nine years in the U.S. Army and 25 years as a law enforcement officer investigating "
+        "financial crimes. What I carry from that background into this role is not simply a list of "
+        "credentials. It is a bone-deep understanding that fraud is not an abstract loss metric — it "
+        "is money taken from people who trusted a system designed to protect them. I know that "
+        "personally. My birth mother lost $20,000 to a crypto-ATM scam and never recovered a dollar. "
+        "The operators who built that operation are still out there. TRM's Scam Disruption mission is "
+        "not abstract to me. It is the work I want to be doing.",
+        "During six years assigned to the Dakota County Electronic Crimes Task Force — a 10-agency "
+        "consortium covering the southern Twin Cities metro — I ran financial crime investigations "
+        "end-to-end: 68 documented cases including transaction card fraud, check forgery, identity "
+        "theft, and multi-subject organized schemes spanning jurisdictions. Those cases produced "
+        "$295,704.11 in court-ordered restitution and a 15-year federal sentence. Every file was "
+        "built to withstand cross-examination because in that environment, it had to. I drafted and "
+        "executed multi-jurisdictional search warrants, worked the returns, and fused digital "
+        "artifacts, financial records, surveillance video, and OSINT into prosecution-ready targeting "
+        "packages — the same intelligence flywheel TRM's All-Source Investigators run daily.",
+        "The pivot from a single transaction to a full operator network is not a new concept for me. "
+        "That is how financial crime investigations work. You start with one check image, one Gmail "
+        "hit, one surveillance still — and you build until you have the operator, the network, and "
+        "the movement pattern. I have done that work across state and federal venues, coordinating "
+        "with partner agencies, prosecutors, and federal task forces. The targeting-package language "
+        "is new; the tradecraft is not.",
+        "I processed 5,304 GB of digital evidence in a single calendar year using Cellebrite UFED, "
+        "Magnet AXIOM, FTK, X-Ways Forensics, and GrayKey. I currently run 12 AI intelligence and "
+        "analytics platforms — Perplexity, Claude, ChatGPT, Copilot, Gemini, NotebookLM, and others "
+        "— as core tools for OSINT research, document analysis, and fraud-pattern recognition. I "
+        "have built a GitHub-based document automation pipeline with Python scripting and AI-driven "
+        "workflows. TRM asks for top-decile AI fluency in investigative work. I am already there.",
+        "For 18 years I designed and delivered criminal justice curriculum entirely online for the "
+        "University of Phoenix, long before remote work was a standard expectation. I know how to "
+        "operate with high autonomy and high output in an async environment, document everything "
+        "clearly in writing, and communicate findings to non-specialist audiences without losing "
+        "precision — exactly what TRM's Notion-driven, Slack-first team requires.",
+        "I am a Protected Veteran under VEVRAA and an Individual with a Disability under Section 503 "
+        "of the Rehabilitation Act. I welcome the opportunity to discuss how my financial crimes "
+        "investigative background, legal process expertise, and applied AI fluency can contribute to "
+        "TRM's mission of dismantling the scam networks that devastate real people.",
     ],
 }
