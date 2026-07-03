@@ -73,19 +73,45 @@ DEFAULT_PROFILE = "vendor-solutions"
 # =========================================================================
 
 # ---- Forbidden phrases ----
-FORBIDDEN_PHRASES = [
-    "I bring", "I offer", "leveraged", "harnessed", "spearheaded", "championed",
-    "passionate about", "dynamic", "synergy", "synergies", "robust",
-    "comprehensive", "cutting-edge", "best-in-class", "results-driven",
-    "detail-oriented", "proven track record", "in today's environment",
-    "in conclusion", "to summarize", "it is worth noting", "I am excited to",
-    "I would be remiss", "at the end of the day", "needless to say",
-    "with that said", "that being said", "moving forward", "going forward",
-    "touch base", "circle back", "value-add", "value add", "impactful",
-    "game-changer", "paradigm shift", "holistic approach", "deep dive",
-    "bandwidth", "optimized", "streamlined", "facilitated", "delivered value",
-    "implemented solutions", "drove outcomes", "empowered", "transformed",
-    "transforming", "I look forward to discussing",
+FORBIDDEN_PHRASES = [[
+
+        "end-user side of the workflow",
+
+        "demo to the customer",
+
+        "customer demo",
+
+        "drive revenue",
+
+        "drive top-line",
+
+        "top-of-funnel",
+
+        "sales cycle",
+
+        "deal cycle",
+
+        "pipeline coverage",
+
+        "recorded statement of the insured",
+
+        "examination under oath",
+
+        "claim file review",
+
+        "policyholders",
+
+        "premiums",
+
+        "boots on the ground",
+
+        "trusted advisor",
+
+        "thought leadership",
+
+        "passion for investigations",
+
+        "lifelong service",
 ]
 
 # Phrases the user has explicitly flagged as AI-sounding in this lineage
