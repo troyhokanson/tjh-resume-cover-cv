@@ -60,7 +60,7 @@ class FailedScan(Exception):
     """Raised when a document fails the anti-AI / voice scan."""
 
 
-VALID_PROFILES = ("VALID_PROFILES = (
+VALID_PROFILES = (
     "vendor-solutions",
     "siu-fraud",
     "analyst-intelligence",
@@ -73,7 +73,7 @@ DEFAULT_PROFILE = "vendor-solutions"
 # =========================================================================
 
 # ---- Forbidden phrases ----
-FORBIDDEN_PHRASES = [[
+FORBIDDEN_PHRASES = [
 
         "end-user side of the workflow",
 
@@ -112,6 +112,74 @@ FORBIDDEN_PHRASES = [[
         "passion for investigations",
 
         "lifelong service",
+
+        "leveraged",
+
+        "harnessed",
+
+        "spearheaded",
+
+        "championed",
+
+        "passionate about",
+
+        "dynamic",
+
+        "synergy",
+
+        "robust",
+
+        "comprehensive",
+
+        "cutting-edge",
+
+        "results-driven",
+
+        "detail-oriented",
+
+        "proven track record",
+
+        "in today's environment",
+
+        "in conclusion",
+
+        "to summarize",
+
+        "moving forward",
+
+        "going forward",
+
+        "touch base",
+
+        "circle back",
+
+        "impactful",
+
+        "game-changer",
+
+        "paradigm shift",
+
+        "holistic approach",
+
+        "deep dive",
+
+        "bandwidth",
+
+        "optimized",
+
+        "streamlined",
+
+        "facilitated",
+
+        "delivered value",
+
+        "implemented solutions",
+
+        "drove outcomes",
+
+        "empowered",
+
+        "transformed",
 ]
 
 # Phrases the user has explicitly flagged as AI-sounding in this lineage
