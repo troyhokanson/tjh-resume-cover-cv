@@ -21,7 +21,7 @@ except ImportError:  # pragma: no cover
 
 
 METRIC_PATTERN = re.compile(
-    r"(?:\$\s?\d[\d,]*(?:\.\d+)?\+?|\b\d[\d,]*(?:\.\d+)?%|\b\d{1,4}\s*(?:years?|year|months?|month|agencies?)\b|\b\d{4}\b)",
+    r"(?:\$\s?\d[\d,]*(?:\.\d+)?\+?|\b\d[\d,]*(?:\.\d+)?%|\b\d{1,4}\s*(?:years?|year|months?|month|(?:partner[- ]?)?agencies?)\b|\b\d{4}\b)",
     re.IGNORECASE,
 )
 TOKEN_PATTERN = re.compile(r"[a-z0-9][a-z0-9\-+/]*", re.IGNORECASE)
