@@ -24,7 +24,9 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Senior Intelligence Analyst, Financial Crime Analyst, AML Analyst | `analyst-intelligence` |
 | Threat Intelligence Analyst (corporate), Insider Threat Analyst | `analyst-intelligence` |
 | Corporate Security Analyst, Senior Corporate Security Analyst | `analyst-intelligence` |
-| Trust & Safety Investigator (non-ICAC) | `analyst-intelligence` |
+| Trust & Safety Investigator (non-ICAC) | `analyst-intelligence` || Global Special Investigator, Corporate Global Investigator, Corporate Security Investigator | `corporate-security-investigations` |
+| Senior Corporate Investigator, Enterprise Investigator, Ethics Investigator | `corporate-security-investigations` |
+| Insider Threat Investigator, Workplace Violence Investigator, Threat Assessment Investigator | `corporate-security-investigations` |
 
 ## Step 2: Read the company
 
@@ -44,6 +46,9 @@ If the JD is heavy on:
 - **demo, customer demos, RFP, proof of concept, partner agencies, workshops, training delivery, conference, travel 25%+** → `vendor-solutions`
 - **recorded statement, EUO, claim file, indicator review, NICB, restitution, charged out, plea, victim, premium** → `siu-fraud`
 - **SAR / STR, AML, structured analytic, link analysis, finished intelligence, written products, briefing, OSINT, typology, key judgment** → `analyst-intelligence`
+If the JD is heavy on:
+
+- employee misconduct, colleague safety, workplace violence, insider threat, data loss, cyber activity, Legal, HR, Internal Audit, enterprise risk, corporate security, business leaders, investigative findings → `corporate-security-investigations`
 
 If two profiles tie, prefer the one supported by the company tiebreaker. If still tied, default to `vendor-solutions`.
 
@@ -59,6 +64,25 @@ Profile-to-cert coverage (rough floor):
 
 If the floor cannot be met for any profile, the posting probably is not a fit. Note the gap in the build log and discuss with Troy before applying.
 
+document_strategy:
+  profile: corporate-security-investigations
+  lead_identity: corporate investigator
+  supporting_identity: retired detective / digital forensics SME
+  primary_examples:
+    - digital evidence / data loss
+    - workplace threat / harassment / safety
+    - fraud / financial crime
+  examples_to_suppress:
+    - patrol-heavy material
+    - generic 25-year veteran language
+    - real estate transition unless relevant
+  tone:
+    - mature
+    - corporate
+    - precise
+    - calm under pressure
+    - not salesy
+
 ## Step 5: Edge cases
 
 - **Hybrid Sales Engineer + Solutions Consultant** at a forensics vendor → `vendor-solutions`. Do not split the cover letter.
@@ -66,7 +90,13 @@ If the floor cannot be met for any profile, the posting probably is not a fit. N
 - **Financial Crime Investigator** at a bank → usually `analyst-intelligence`. Confirm via Step 3 verbs.
 - **Public Safety Sales Engineer** at Axon, Veritone, Mark43, Flock, Peregrine → `vendor-solutions`. Always.
 - **Trust & Safety Investigator** roles that are explicitly ICAC / child-safety → still `analyst-intelligence`, but build with `allow_icac=True` on the Layer 1 scanner gate.
-
+evidence_pack:
+  required:
+    - one fraud / financial crime example
+    - one digital evidence / cyber-adjacent example
+    - one threat / safety / sensitive-person matter
+  max_examples: 3
+  no_generic_claim_without_example: true
 ## Step 6: Log it
 
 In the build log (cover-letter file header comment or commit message), include:
