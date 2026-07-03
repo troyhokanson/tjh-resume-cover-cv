@@ -394,12 +394,26 @@ def verify_application_draft(
     }
 
 
+def _sanitize_for_storage(value: Any, key: str | None = None) -> Any:
+    sensitive_keys = {"jd_file", "resume", "cover", "seed_input"}
+    if isinstance(value, dict):
+        return {k: _sanitize_for_storage(v, k) for k, v in value.items()}
+    if isinstance(value, list):
+        return [_sanitize_for_storage(item, key) for item in value]
+    if isinstance(value, str) and key in sensitive_keys:
+        digest = hashlib.sha256(value.encode("utf-8")).hexdigest()[:12]
+        return f"sha256:{digest}"
+    return value
+
+
 def _write_report(path: Path, payload: dict[str, Any]) -> None:
+    sanitized_payload = _sanitize_for_storage(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+    path.write_text(json.dumps(sanitized_payload, indent=2), encoding="utf-8")
 
 
 def _write_preflight_text_report(path: Path, payload: dict[str, Any]) -> None:
+    payload = _sanitize_for_storage(payload)
     lines = [
         "Application Preflight Report",
         f"Generated: {payload['generated_at']}",
@@ -431,6 +445,7 @@ def _write_preflight_text_report(path: Path, payload: dict[str, Any]) -> None:
 
 
 def _write_verification_text_report(path: Path, payload: dict[str, Any]) -> None:
+    payload = _sanitize_for_storage(payload)
     lines = [
         "Application Draft Verification Report",
         f"Generated: {payload['generated_at']}",
