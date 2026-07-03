@@ -23,12 +23,12 @@ If you are about to build a Hokanson document and this repo is not present in th
 bash new_application.sh
 ```
 
-It will ask you three questions (JD file path, profile, employer/role name) and then:
-- Extract the high-signal ATS keywords from the job description automatically
-- Check coverage against any existing resume/cover docs you point to
-- Print the missing keywords you need to weave in
-- Save a dated audit report to `build_logs/`
-- Print the exact prompt to paste into your AI session to build the documents
+It will ask for the JD, profile, employer/role, and draft file paths, then run mandatory checkpoints:
+- **Profile select**
+- **Case/training evidence pack generation** (fails fast if fewer than 2 qualified cases or insufficient training evidence)
+- **ATS keyword audit**
+- **Post-draft verification** (required cases, concrete stats, training references, profile/overclaim checks)
+- Save all reports to `build_logs/` (`application_manifest_*`, `ats_audit_*`, `verification_report_*`)
 
 **That's it.** The script handles the rest. You do not need to remember command flags.
 
@@ -68,6 +68,7 @@ tjh-resume-cover-cv/
 ├── pdf_header.py           # Locked PDF page-1 header renderer
 ├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
 ├── ats_injector.py         # ATS keyword extraction, audit, and injection engine
+├── application_quality.py  # Case/training gate + deterministic variation + post-draft verifier
 ├── new_application.sh      # One-command new application starter (run this first)
 ├── scan_and_report.py      # Friendly wrapper — run at the share-file delivery gate
 ├── build_reference.py      # Rebuilds reference_header.docx after any header change
