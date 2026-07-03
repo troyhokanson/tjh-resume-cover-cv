@@ -1,0 +1,1 @@
+This profile must not read like a law enforcement retirement summary. It must read like a corporate investigator who happens to have law enforcement-grade investigative depth.
