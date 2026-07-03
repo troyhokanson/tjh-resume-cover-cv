@@ -190,3 +190,60 @@ python scan_and_report.py /path/to/cover.pdf cover --profile siu-fraud
 ```
 
 See [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md) for the upstream logic that picks a profile from a job posting URL or title.
+
+------
+
+## Profile 4: `corporate-security-investigations`
+
+### Target roles
+
+- Global Special Investigator
+- Corporate Global Investigator
+- Corporate Security Investigator
+- Senior Corporate Investigator
+- Employee Relations Investigator with security scope
+- Insider Threat Investigator
+- Workplace Violence / Threat Assessment Investigator
+- Global Security Investigations
+- Enterprise Investigations
+- Ethics and Compliance Investigator with investigative authority
+
+### Voice emphasis
+
+Lead with corporate risk, colleague safety, sensitive internal investigations, fact-finding, interviews, digital evidence, data loss, insider threat, workplace violence, and executive-ready reporting.
+
+Do not lead with "retired police officer." Do not lead with "25-year law enforcement veteran." Use that as credibility after the corporate investigation frame is already set.
+
+This profile should read like a serious corporate security investigator who has handled real cases, preserved evidence, interviewed people, coordinated with legal decision-makers, and written reports leaders could act on.
+
+### Required framing elements
+
+- Must include the phrase "corporate investigations" or "enterprise investigations" in the summary or opening.
+- Must include "colleague safety," "employee misconduct," "insider threat," "data loss," or "workplace violence" when supported by the posting.
+- Must include at least two specific investigation examples from the case bank, but sanitized for privacy.
+- Must include one digital evidence example.
+- Must include one threat, safety, harassment, or violence example.
+- Must include one financial crime, fraud, or misconduct example when the posting mentions financial crimes.
+- Must frame law enforcement as transferable investigative judgment, not as the main identity.
+
+### Preferred vocabulary
+
+corporate investigations, enterprise investigations, colleague safety, employee misconduct, insider threat, data loss, cyber activity, workplace violence, threat assessment, fact-finding, investigative findings, evidence preservation, executive-ready reporting, Legal, Human Resources, Internal Audit, Cyber Security, confidential investigation, reputational risk, business risk, risk mitigation, investigative judgment, misconduct review, internal inquiry, case intake, investigative plan, findings memo, leadership briefing
+
+### Banned vocabulary
+
+retired police officer as opener, 25-year law enforcement veteran as opener, street cop, patrol-heavy framing, criminal justice career, boots on the ground, passion for investigations, lifelong service, badge-forward framing, policyholder premium language, claim file review, recorded statement, EUO, demo, customer workflow, end-user side of the workflow
+
+### Empathy marker
+
+"The people inside the organization who need the process to be fair, careful, and defensible."
+
+Variant: "the employee, manager, attorney, or business leader who needs a clear answer without turning the investigation into theater."
+
+### Worked example — cover-letter opener
+
+Aon’s Global Special Investigator role fits the part of my background that has always mattered most: careful fact-finding in sensitive, high-liability situations. My investigative work has included fraud, employee-style misconduct, threats, harassment, digital evidence, search warrants, interviews, and written findings prepared for prosecutors, command staff, and partner agencies.
+
+### Worked example — resume bullet
+
+Led complex investigations involving fraud, threats, harassment, digital evidence, vulnerable victims, and financial crimes, translating witness interviews, electronic evidence, records review, and case timelines into written findings for legal and command-level decision-makers.
