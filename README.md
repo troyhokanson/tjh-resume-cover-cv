@@ -123,6 +123,30 @@ python build_reference.py
 
 ---
 
+## Portfolio Sync (Web + iOS + PC)
+
+This repo now includes a live portfolio page at:
+
+- `portfolio/index.html` (published via GitHub Pages workflow: `.github/workflows/deploy_portfolio.yml`)
+
+### What syncs automatically
+
+- The portfolio page reads live data from `applications/` using the GitHub API.
+- Any commit to `applications/` or `portfolio/` on `main` triggers a Pages deploy.
+- Online portfolio content stays in sync with the repository (single source of truth).
+
+### iOS and PC local-save workflow
+
+1. **PC:** clone the repository and commit updates as normal.
+2. **iOS:** use a Git client app (for example Working Copy) to clone the same repository, edit, commit, and push.
+3. GitHub becomes the sync layer between devices and the online portfolio.
+
+This is the same model as saving repos locally on PC: each device has a local clone, and GitHub syncs changes across devices and to the hosted portfolio.
+
+> Note: In repository settings, ensure **Pages** is configured to use **GitHub Actions** as the source.
+
+---
+
 ## Usage in a build script
 
 ```python
