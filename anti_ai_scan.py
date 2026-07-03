@@ -60,7 +60,11 @@ class FailedScan(Exception):
     """Raised when a document fails the anti-AI / voice scan."""
 
 
-VALID_PROFILES = ("vendor-solutions", "siu-fraud", "analyst-intelligence")
+VALID_PROFILES = ("VALID_PROFILES = (
+    "vendor-solutions",
+    "siu-fraud",
+    "analyst-intelligence",
+    "corporate-security-investigations")
 DEFAULT_PROFILE = "vendor-solutions"
 
 
