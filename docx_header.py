@@ -1,40 +1,19 @@
 """
-Troy J. Hokanson — Locked DOCX Header Module
-=============================================
+Troy Hokanson - Locked DOCX Header Module
+========================================
 
-SINGLE SOURCE OF TRUTH for the navy/gold header used on every DOCX
-resume, cover letter, and CV. Matches the UHG reference PDF exactly:
+Single source of truth for the navy and gold header used on every DOCX
+resume, cover letter, CV, and application document bearing Troy's name.
 
-  - Full-bleed navy #0D1B2A bar, ZERO whitespace above (page header part)
-  - "Troy J. Hokanson" in WHITE Garamond-Bold, mixed case, centered
-  - Thin gold #C9A84C horizontal rule, INSET (not edge-to-edge)
-  - Single gold contact row beneath, pipe-separated
-  - NO subtitle / role title between name and contact row
-  - Section headings: steel-blue with gold underline rule
+Locked header requirements:
+- Full-bleed navy #0D1B2A bar in the Word header part, never in the body.
+- "Troy Hokanson" in gold #C9A84C Garamond-Bold, centered.
+- Thin gold #C9A84C rule directly beneath the name.
+- Gold Garamond contact row beneath the rule.
+- No subtitle or role title between name and contact row.
+- No footer by default.
 
-Usage in any build script:
-
-    from docx import Document
-    from templates.docx_header import (
-        build_navy_header, add_section_heading, add_bullet,
-        add_job_block, set_run, set_paragraph_format,
-        BODY_FONT, NAME_FONT, NAVY, GOLD, STEEL, BLACK, GRAY, WHITE,
-    )
-
-    doc = Document()
-    build_navy_header(doc)
-    add_section_heading(doc, "Professional Summary")
-    ...
-
-DO NOT hand-roll the header in build scripts. If the locked spec needs to
-change, change it HERE and only HERE.
-
-Locked April 2026. Updated April 26, 2026: full-bleed navy bar fix
-(bleed_twips = full margin width) so navy header reaches the absolute
-page edge with zero white sliver on left, right, or top in Word.
-Hardened May 1, 2026: added VML page-anchored rectangle as a second
-background layer, so the navy bleed is guaranteed left-to-right even
-on Word installs that clip table shading at the printable area.
+Do not hand-roll the header in build scripts. Import build_navy_header(doc).
 """
 
 from docx import Document
@@ -42,11 +21,18 @@ from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement, parse_xml
-from config import TROY_NAME, TROY_PHONE, TROY_EMAIL, TROY_LOCATION, TROY_LINKEDIN, TROY_PORTFOLIO
+from config import (
+    TROY_NAME,
+    TROY_PHONE,
+    TROY_EMAIL,
+    TROY_LOCATION,
+    TROY_LINKEDIN,
+    TROY_PORTFOLIO,
+)
 
 
 # ============================================================
-# BRAND CONSTANTS — DO NOT CHANGE WITHOUT VERSION BUMP
+# BRAND CONSTANTS
 # ============================================================
 
 NAVY = RGBColor(0x0D, 0x1B, 0x2A)
@@ -57,22 +43,27 @@ BLACK = RGBColor(0x14, 0x14, 0x14)
 GRAY = RGBColor(0x55, 0x55, 0x55)
 
 BODY_FONT = "Calibri"
-NAME_FONT = "Garamond"  # Garamond-Bold for the name + section headings
+NAME_FONT = "Garamond"
+CONTACT_FONT = "Garamond"
+NAME = TROY_NAME or "Troy Hokanson"
 
-NAME = TROY_NAME
-# Each entry: (display_text, url_or_None). url=None means plain text (no link).
-# Contact info is loaded from environment variables via config.py.
-# Set values in .env (local) or GitHub Actions Secrets (CI). See config.example.env.
 _phone_digits = TROY_PHONE.replace(".", "").replace("-", "").replace(" ", "")
 CONTACT_PARTS = [
     (TROY_LOCATION, None),
-    # tel: format kept simple (no +1, no formatting) to survive Word's link
-    # validator on round-trip saves. Word strips tel:+1xxx links on some installs.
-    *( [(TROY_PHONE, f"tel:{_phone_digits}")] if TROY_PHONE else [] ),
+    *([(TROY_PHONE, f"tel:{_phone_digits}")] if TROY_PHONE else []),
     (TROY_EMAIL, f"mailto:{TROY_EMAIL}"),
-    (TROY_LINKEDIN, f"https://www.{TROY_LINKEDIN}" if not TROY_LINKEDIN.startswith("http") else TROY_LINKEDIN),
+    (
+        TROY_LINKEDIN,
+        f"https://www.{TROY_LINKEDIN}"
+        if TROY_LINKEDIN and not TROY_LINKEDIN.startswith("http")
+        else TROY_LINKEDIN,
+    ),
     ("Investigative Portfolio", TROY_PORTFOLIO),
 ]
+
+
+def _rgb_to_hex(color: RGBColor) -> str:
+    return f"{color[0]:02X}{color[1]:02X}{color[2]:02X}"
 
 
 # ============================================================
@@ -81,6 +72,8 @@ CONTACT_PARTS = [
 
 def shade_cell(cell, color_hex):
     tc_pr = cell._tc.get_or_add_tcPr()
+    for old in tc_pr.findall(qn("w:shd")):
+        tc_pr.remove(old)
     shd = OxmlElement("w:shd")
     shd.set(qn("w:val"), "clear")
     shd.set(qn("w:color"), "auto")
@@ -89,9 +82,7 @@ def shade_cell(cell, color_hex):
 
 
 def shade_paragraph(paragraph, color_hex):
-    """Apply background fill to a paragraph (paints behind the text and across the line height)."""
     p_pr = paragraph._p.get_or_add_pPr()
-    # Remove any existing shd
     for old in p_pr.findall(qn("w:shd")):
         p_pr.remove(old)
     shd = OxmlElement("w:shd")
@@ -102,15 +93,7 @@ def shade_paragraph(paragraph, color_hex):
 
 
 def add_header_background_shape(paragraph, color_hex="0D1B2A"):
-    """Add a VML navy rectangle anchored to the page behind the header.
-
-    Belt-and-suspenders for the negative-indent table: some Word installs
-    clip table-cell shading at the printable area boundary even when the
-    table is indented past the page edge, leaving a thin white sliver on
-    left or right. This absolute-positioned VML rectangle is anchored to
-    the page (not the margin), so it always covers from absolute left
-    page edge to absolute right page edge. Z-order is behind text.
-    """
+    """Add a page-anchored navy rectangle behind the header."""
     run = paragraph.add_run()
     xml = f"""
     <w:pict xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
@@ -130,10 +113,12 @@ def add_header_background_shape(paragraph, color_hex="0D1B2A"):
 
 def set_cell_margins(cell, top=100, bottom=100, left=140, right=140):
     tc_pr = cell._tc.get_or_add_tcPr()
+    for old in tc_pr.findall(qn("w:tcMar")):
+        tc_pr.remove(old)
     tc_mar = OxmlElement("w:tcMar")
-    for m, v in (("top", top), ("left", left), ("bottom", bottom), ("right", right)):
-        node = OxmlElement(f"w:{m}")
-        node.set(qn("w:w"), str(v))
+    for margin_name, value in (("top", top), ("left", left), ("bottom", bottom), ("right", right)):
+        node = OxmlElement(f"w:{margin_name}")
+        node.set(qn("w:w"), str(value))
         node.set(qn("w:type"), "dxa")
         tc_mar.append(node)
     tc_pr.append(tc_mar)
@@ -141,17 +126,20 @@ def set_cell_margins(cell, top=100, bottom=100, left=140, right=140):
 
 def remove_cell_borders(cell):
     tc_pr = cell._tc.get_or_add_tcPr()
+    for old in tc_pr.findall(qn("w:tcBorders")):
+        tc_pr.remove(old)
     tc_borders = OxmlElement("w:tcBorders")
     for edge in ("top", "left", "bottom", "right", "insideH", "insideV"):
-        b = OxmlElement(f"w:{edge}")
-        b.set(qn("w:val"), "nil")
-        tc_borders.append(b)
+        border = OxmlElement(f"w:{edge}")
+        border.set(qn("w:val"), "nil")
+        tc_borders.append(border)
     tc_pr.append(tc_borders)
 
 
 def add_paragraph_bottom_border(paragraph, color_hex="C9A84C", size=6, space=1):
-    """Adds a bottom border (horizontal rule) to a paragraph."""
     p_pr = paragraph._p.get_or_add_pPr()
+    for old in p_pr.findall(qn("w:pBdr")):
+        p_pr.remove(old)
     p_bdr = OxmlElement("w:pBdr")
     bottom = OxmlElement("w:bottom")
     bottom.set(qn("w:val"), "single")
@@ -163,15 +151,14 @@ def add_paragraph_bottom_border(paragraph, color_hex="C9A84C", size=6, space=1):
 
 
 def set_run(run, *, font=BODY_FONT, size=10.5, bold=False, italic=False, color=BLACK):
-    """Apply font + size + weight + color to a run, including East Asian and CS slots."""
     run.font.name = font
-    rPr = run._element.get_or_add_rPr()
-    rFonts = rPr.find(qn("w:rFonts"))
-    if rFonts is None:
-        rFonts = OxmlElement("w:rFonts")
-        rPr.append(rFonts)
+    r_pr = run._element.get_or_add_rPr()
+    r_fonts = r_pr.find(qn("w:rFonts"))
+    if r_fonts is None:
+        r_fonts = OxmlElement("w:rFonts")
+        r_pr.append(r_fonts)
     for attr in ("ascii", "hAnsi", "cs", "eastAsia"):
-        rFonts.set(qn(f"w:{attr}"), font)
+        r_fonts.set(qn(f"w:{attr}"), font)
     run.font.size = Pt(size)
     run.font.bold = bold
     run.font.italic = italic
@@ -179,12 +166,6 @@ def set_run(run, *, font=BODY_FONT, size=10.5, bold=False, italic=False, color=B
 
 
 def add_hyperlink(paragraph, text, url, *, color=None, font=BODY_FONT, size=10, bold=False):
-    """Append a real, clickable hyperlink to a paragraph.
-
-    Creates a w:hyperlink element backed by a relationship in the parent part,
-    so it works in Word, in PDFs converted via LibreOffice, and is preserved
-    through ATS systems. Supports http(s), mailto:, and tel: URLs.
-    """
     part = paragraph.part
     r_id = part.relate_to(
         url,
@@ -195,179 +176,157 @@ def add_hyperlink(paragraph, text, url, *, color=None, font=BODY_FONT, size=10, 
     hyperlink.set(qn("r:id"), r_id)
 
     new_run = OxmlElement("w:r")
-    rPr = OxmlElement("w:rPr")
+    r_pr = OxmlElement("w:rPr")
 
-    rFonts = OxmlElement("w:rFonts")
-    rFonts.set(qn("w:ascii"), font)
-    rFonts.set(qn("w:hAnsi"), font)
-    rFonts.set(qn("w:cs"), font)
-    rPr.append(rFonts)
+    r_fonts = OxmlElement("w:rFonts")
+    for attr in ("ascii", "hAnsi", "cs", "eastAsia"):
+        r_fonts.set(qn(f"w:{attr}"), font)
+    r_pr.append(r_fonts)
 
     sz = OxmlElement("w:sz")
     sz.set(qn("w:val"), str(int(size * 2)))
-    rPr.append(sz)
-    szCs = OxmlElement("w:szCs")
-    szCs.set(qn("w:val"), str(int(size * 2)))
-    rPr.append(szCs)
+    r_pr.append(sz)
+    sz_cs = OxmlElement("w:szCs")
+    sz_cs.set(qn("w:val"), str(int(size * 2)))
+    r_pr.append(sz_cs)
 
     if bold:
-        b = OxmlElement("w:b")
-        rPr.append(b)
+        r_pr.append(OxmlElement("w:b"))
 
     if color is not None:
-        c = OxmlElement("w:color")
-        c.set(qn("w:val"), "{:02X}{:02X}{:02X}".format(color[0], color[1], color[2]))
-        rPr.append(c)
+        color_node = OxmlElement("w:color")
+        color_node.set(qn("w:val"), _rgb_to_hex(color))
+        r_pr.append(color_node)
 
-    new_run.append(rPr)
-    t = OxmlElement("w:t")
-    t.text = text
-    t.set(qn("xml:space"), "preserve")
-    new_run.append(t)
+    new_run.append(r_pr)
+    text_node = OxmlElement("w:t")
+    text_node.text = text
+    text_node.set(qn("xml:space"), "preserve")
+    new_run.append(text_node)
     hyperlink.append(new_run)
     paragraph._p.append(hyperlink)
     return hyperlink
 
 
-def set_paragraph_format(p, *, before=0, after=0, line=1.15):
-    pf = p.paragraph_format
+def set_paragraph_format(paragraph, *, before=0, after=0, line=1.15):
+    pf = paragraph.paragraph_format
     pf.space_before = Pt(before)
     pf.space_after = Pt(after)
     pf.line_spacing = line
 
 
 # ============================================================
-# THE LOCKED HEADER — the only function that should ever build it
+# LOCKED HEADER
 # ============================================================
 
-def build_navy_header(doc, *, body_top_margin_inches=1.55,
-                      body_bottom_margin_inches=0.55,
-                      body_left_margin_inches=0.6,
-                      body_right_margin_inches=0.6):
-    """
-    Build the locked full-bleed navy/gold header in the page header part.
-
-    The navy bar lives in the section.header (not the body) so it can sit
-    flush at the top of the page with zero whitespace above it. The table
-    is given a negative left indent equal to the page margin so it bleeds
-    edge-to-edge horizontally as well.
-
-    Layout:
-        Row 1: Name in white Garamond-Bold ~28pt, centered
-        Row 2: Inset gold horizontal rule (paragraph with side margins)
-        Row 3: Gold contact line, centered, pipe separators
-    """
+def build_navy_header(
+    doc,
+    *,
+    body_top_margin_inches=1.55,
+    body_bottom_margin_inches=0.55,
+    body_left_margin_inches=0.6,
+    body_right_margin_inches=0.6,
+):
+    """Build the full-bleed navy and gold header in the Word header part."""
     section = doc.sections[0]
     section.top_margin = Inches(body_top_margin_inches)
     section.bottom_margin = Inches(body_bottom_margin_inches)
     section.left_margin = Inches(body_left_margin_inches)
     section.right_margin = Inches(body_right_margin_inches)
-    section.header_distance = Inches(0)  # bar starts at the top edge
+    section.header_distance = Inches(0)
+    section.footer_distance = Inches(0)
 
     header = section.header
     header.is_linked_to_previous = False
 
-    # Wipe default header paragraphs so we start clean
-    for p in list(header.paragraphs):
-        p_el = p._p
-        p_el.getparent().remove(p_el)
+    for paragraph in list(header.paragraphs):
+        paragraph._p.getparent().remove(paragraph._p)
 
-    page_w = section.page_width  # full page width including margins
-    page_w_twips = int(page_w.emu // 635)  # 1 twip = 635 EMU
+    page_w = section.page_width
+    page_w_twips = int(page_w.emu // 635)
     margin_twips = int(section.left_margin.emu // 635)
-    # Make the table WIDER than the page so it bleeds fully past both edges.
-    # Word renders the page header inside the printable area by default; to
-    # achieve a true edge-to-edge navy bar with ZERO white sliver on left,
-    # right, or top, we set the table width to (page width + 2 * margin) and
-    # indent it by -margin so it starts at the absolute left page edge and
-    # extends to the absolute right page edge.
-    bleed_twips = margin_twips  # full margin width of bleed past each side
+    bleed_twips = margin_twips
     tbl_total_twips = page_w_twips + (bleed_twips * 2)
 
-    tbl = header.add_table(rows=1, cols=1, width=page_w)
-    tbl.autofit = False
-    tbl.allow_autofit = False
+    table = header.add_table(rows=1, cols=1, width=page_w)
+    table.autofit = False
+    table.allow_autofit = False
 
-    tblPr = tbl._tbl.tblPr
+    tbl_pr = table._tbl.tblPr
+    for tag in ("w:tblW", "w:tblInd", "w:tblLayout"):
+        for old in tbl_pr.findall(qn(tag)):
+            tbl_pr.remove(old)
 
-    for old in tblPr.findall(qn("w:tblW")):
-        tblPr.remove(old)
-    tblW = OxmlElement("w:tblW")
-    tblW.set(qn("w:w"), str(tbl_total_twips))
-    tblW.set(qn("w:type"), "dxa")
-    tblPr.append(tblW)
+    tbl_w = OxmlElement("w:tblW")
+    tbl_w.set(qn("w:w"), str(tbl_total_twips))
+    tbl_w.set(qn("w:type"), "dxa")
+    tbl_pr.append(tbl_w)
 
-    # Negative left indent = (-left margin - extra bleed) so the table
-    # starts beyond the left page edge and extends beyond the right.
-    for old in tblPr.findall(qn("w:tblInd")):
-        tblPr.remove(old)
-    tblInd = OxmlElement("w:tblInd")
-    tblInd.set(qn("w:w"), str(-(margin_twips + bleed_twips)))
-    tblInd.set(qn("w:type"), "dxa")
-    tblPr.append(tblInd)
+    tbl_ind = OxmlElement("w:tblInd")
+    tbl_ind.set(qn("w:w"), str(-(margin_twips + bleed_twips)))
+    tbl_ind.set(qn("w:type"), "dxa")
+    tbl_pr.append(tbl_ind)
 
-    for old in tblPr.findall(qn("w:tblLayout")):
-        tblPr.remove(old)
-    tblLayout = OxmlElement("w:tblLayout")
-    tblLayout.set(qn("w:type"), "fixed")
-    tblPr.append(tblLayout)
+    tbl_layout = OxmlElement("w:tblLayout")
+    tbl_layout.set(qn("w:type"), "fixed")
+    tbl_pr.append(tbl_layout)
 
-    cell = tbl.cell(0, 0)
+    cell = table.cell(0, 0)
     shade_cell(cell, "0D1B2A")
     remove_cell_borders(cell)
-    # Tight inner padding (top a bit larger so name sits down from top edge)
-    set_cell_margins(cell, top=260, bottom=240, left=200, right=200)
+    set_cell_margins(cell, top=250, bottom=230, left=200, right=200)
 
-    tcPr = cell._tc.get_or_add_tcPr()
-    tcW = tcPr.find(qn("w:tcW"))
-    if tcW is None:
-        tcW = OxmlElement("w:tcW")
-        tcPr.append(tcW)
-    tcW.set(qn("w:w"), str(tbl_total_twips))
-    tcW.set(qn("w:type"), "dxa")
+    tc_pr = cell._tc.get_or_add_tcPr()
+    tc_w = tc_pr.find(qn("w:tcW"))
+    if tc_w is None:
+        tc_w = OxmlElement("w:tcW")
+        tc_pr.append(tc_w)
+    tc_w.set(qn("w:w"), str(tbl_total_twips))
+    tc_w.set(qn("w:type"), "dxa")
 
-    # ---- Row 1: Name (white Garamond-Bold, centered, navy bg) ----
     name_p = cell.paragraphs[0]
     name_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_paragraph_format(name_p, before=0, after=0, line=1.0)
     shade_paragraph(name_p, "0D1B2A")
     add_header_background_shape(name_p, "0D1B2A")
-    r = name_p.add_run(NAME)
-    set_run(r, font=NAME_FONT, size=28, bold=True, color=WHITE)
+    name_run = name_p.add_run(NAME)
+    set_run(name_run, font=NAME_FONT, size=24, bold=True, color=GOLD)
 
-    # ---- Row 2: Inset gold horizontal rule (rendered as gold characters
-    # over a NAVY-shaded paragraph so no white shows through) ----
     rule_p = cell.add_paragraph()
     rule_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_paragraph_format(rule_p, before=4, after=4, line=1.0)
+    set_paragraph_format(rule_p, before=3, after=3, line=1.0)
     shade_paragraph(rule_p, "0D1B2A")
-    rule_run = rule_p.add_run("\u2500" * 78)
-    set_run(rule_run, font=BODY_FONT, size=8, color=GOLD)
+    rule_run = rule_p.add_run("─" * 62)
+    set_run(rule_run, font=NAME_FONT, size=8, color=GOLD)
 
-    # ---- Row 3: Gold contact line, centered, pipe-separated, navy bg ----
-    # Each linkable piece is a real w:hyperlink so it's clickable in Word/PDF/ATS.
     contact_p = cell.add_paragraph()
     contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     set_paragraph_format(contact_p, before=2, after=0, line=1.15)
     shade_paragraph(contact_p, "0D1B2A")
-    sep = "  |  "
-    for i, (text, url) in enumerate(CONTACT_PARTS):
-        if i > 0:
-            sep_run = contact_p.add_run(sep)
-            set_run(sep_run, font=BODY_FONT, size=8.5, color=GOLD)
+    separator = "   |   "
+    for index, (text, url) in enumerate(CONTACT_PARTS):
+        if not text:
+            continue
+        if index > 0:
+            sep_run = contact_p.add_run(separator)
+            set_run(sep_run, font=CONTACT_FONT, size=12, color=GOLD)
         if url:
-            add_hyperlink(contact_p, text, url, color=GOLD, font=BODY_FONT, size=8.5)
+            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=12)
         else:
-            r = contact_p.add_run(text)
-            set_run(r, font=BODY_FONT, size=8.5, color=GOLD)
+            run = contact_p.add_run(text)
+            set_run(run, font=CONTACT_FONT, size=12, color=GOLD)
+
+    footer = section.footer
+    footer.is_linked_to_previous = False
+    for paragraph in list(footer.paragraphs):
+        paragraph._p.getparent().remove(paragraph._p)
 
 
 # ============================================================
-# SHARED BODY HELPERS — every build script should use these
+# BODY HELPERS
 # ============================================================
 
 def add_section_heading(doc, text):
-    """Steel-blue section heading with gold underline rule."""
     p = doc.add_paragraph()
     set_paragraph_format(p, before=8, after=2, line=1.1)
     run = p.add_run(text.upper())
@@ -382,30 +341,29 @@ def add_bullet(doc, text, *, size=10.5):
     pf = p.paragraph_format
     pf.left_indent = Inches(0.18)
     pf.first_line_indent = Inches(-0.18)
-    for r in p.runs:
-        r.text = ""
+    for run in p.runs:
+        run.text = ""
     run = p.add_run(text)
     set_run(run, size=size, color=BLACK)
     return p
 
 
 def add_job_block(doc, title, employer_line, dates):
-    """Gold job title + italic employer line + gray dates."""
     p1 = doc.add_paragraph()
     set_paragraph_format(p1, before=6, after=0, line=1.1)
-    r = p1.add_run(title)
-    set_run(r, size=11, bold=True, color=GOLD)
+    run = p1.add_run(title)
+    set_run(run, size=11, bold=True, color=GOLD)
 
     p2 = doc.add_paragraph()
     set_paragraph_format(p2, before=0, after=2, line=1.1)
-    r = p2.add_run(employer_line)
-    set_run(r, size=10.5, italic=True, color=BLACK)
-    r2 = p2.add_run("    " + dates)
-    set_run(r2, size=10, color=GRAY)
+    employer_run = p2.add_run(employer_line)
+    set_run(employer_run, size=10.5, italic=True, color=BLACK)
+    date_run = p2.add_run("    " + dates)
+    set_run(date_run, size=10, color=GRAY)
+    return p1, p2
 
 
 def new_document():
-    """Returns a Document with the default Normal style set to body font."""
     doc = Document()
     style = doc.styles["Normal"]
     style.font.name = BODY_FONT
@@ -413,77 +371,39 @@ def new_document():
     return doc
 
 
-__all__ = [
-    "NAVY", "GOLD", "STEEL", "WHITE", "BLACK", "GRAY",
-    "BODY_FONT", "NAME_FONT", "NAME", "CONTACT_PARTS",
-    "build_navy_header",
-    "add_section_heading", "add_bullet", "add_job_block",
-    "set_run", "set_paragraph_format", "add_hyperlink",
-    "shade_cell", "set_cell_margins", "remove_cell_borders",
-    "add_paragraph_bottom_border",
-    "new_document",
-]
-from docx.shared import Pt, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
-
-FOOTER_LINE_1 = "Controlled Distribution — For Hiring Consideration Only"
-FOOTER_LINE_2 = "linkedin.com/in/troyhokanson  |  troy-hokanson.github.io/portfolio"
-
-
 def build_footer(document, *, show_page_numbers=False):
-    """
-    Adds controlled-distribution footer to DOCX.
-    Corporate investigative protocol standard.
-    """
-    section = document.sections[0]
-    footer = section.footer
-
-    # Line 1: Distribution statement (EB Garamond Italic, 9pt, centered)
-    p1 = footer.paragraphs[0] if footer.paragraphs else footer.add_paragraph()
-    p1.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run1 = p1.add_run(FOOTER_LINE_1)
-    run1.font.name = "EB Garamond"
-    run1.font.size = Pt(9)
-    run1.font.italic = True
-    run1.font.color.rgb = RGBColor(0x00, 0x00, 0x00)
-
-    if show_page_numbers:
-        _append_page_x_of_y(p1)
-
-    # Line 2: Raw URL fallback (Inter, 8pt, light gray, centered)
-    p2 = footer.add_paragraph()
-    p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    run2 = p2.add_run(FOOTER_LINE_2)
-    run2.font.name = "Inter"
-    run2.font.size = Pt(8)
-    run2.font.color.rgb = RGBColor(0x7A, 0x7A, 0x7A)
+    """No-op by design. Troy's current locked standard uses no footer."""
+    return None
 
 
 def _append_page_x_of_y(paragraph):
-    """Inserts ' — Page X of Y' via Word field codes."""
-    run = paragraph.add_run(" — Page ")
-    run.font.name = "EB Garamond"
-    run.font.size = Pt(9)
-    run.font.italic = True
+    """No-op retained for backward compatibility with older scripts."""
+    return None
 
-    def _field(instr_text):
-        fld_begin = OxmlElement("w:fldChar")
-        fld_begin.set(qn("w:fldCharType"), "begin")
-        instr = OxmlElement("w:instrText")
-        instr.set(qn("xml:space"), "preserve")
-        instr.text = instr_text
-        fld_end = OxmlElement("w:fldChar")
-        fld_end.set(qn("w:fldCharType"), "end")
-        r = paragraph.add_run()
-        r.font.name = "EB Garamond"
-        r.font.size = Pt(9)
-        r.font.italic = True
-        r._r.append(fld_begin)
-        r._r.append(instr)
-        r._r.append(fld_end)
 
-    _field("PAGE")
-    paragraph.add_run(" of ").font.italic = True
-    _field("NUMPAGES")
+__all__ = [
+    "NAVY",
+    "GOLD",
+    "STEEL",
+    "WHITE",
+    "BLACK",
+    "GRAY",
+    "BODY_FONT",
+    "NAME_FONT",
+    "CONTACT_FONT",
+    "NAME",
+    "CONTACT_PARTS",
+    "build_navy_header",
+    "add_section_heading",
+    "add_bullet",
+    "add_job_block",
+    "set_run",
+    "set_paragraph_format",
+    "add_hyperlink",
+    "shade_cell",
+    "set_cell_margins",
+    "remove_cell_borders",
+    "add_paragraph_bottom_border",
+    "new_document",
+    "build_footer",
+]
