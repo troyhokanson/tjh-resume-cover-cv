@@ -17,7 +17,10 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 `occupational-fraud` `BEC` `wire-fraud` `insurance-fraud` `credit-card-fraud` `identity-theft` `workers-comp-fraud` `healthcare-fraud` `property-fraud` `auto-fraud` `life-insurance-fraud` `organized-fraud` `shell-company` `theft` `retail-fraud` `burglary` `theft-by-swindle`
 
 **Investigative Methods**
-`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination` `physical-evidence-collection` `casino-security-coordination` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `canvass` `probation-coordination` `warrant-service` `community-liaison` `self-initiated-followup`
+`search-warrant` `subpoena` `OSINT` `financial-analysis` `receipt-analysis` `digital-forensics` `surveillance` `interview` `social-media-investigation` `excel-summary` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `video-surveillance` `crime-alert` `automated-pawn-system` `multi-agency` `photo-identification` `SWAT-coordination` `physical-evidence-collection` `casino-security-coordination` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `canvass` `probation-coordination` `warrant-service` `community-liaison` `self-initiated-followup` `preservation-request` `google-account` `android-artifacts` `IMEI` `mobile-device-seizure` `forensic-interview-delegation` `suspect-interview` `deleted-evidence` `digital-child-exploitation-evidence` `ICAC`
+
+**Technology / Program**
+`ALPR` `license-plate-recognition` `technology-implementation` `database-integration` `CJIS` `IT-coordination` `grant-funded` `field-operations` `lead-development`
 
 **Outcome**
 `felony-conviction` `restitution` `expungement-denied` `commendation` `federal-referral` `administrative-action` `misdemeanor-conviction` `civil-referral` `no-charges-filed` `prison` `parole-violation` `charged` `stayed-sentence` `supervised-probation` `gambling-treatment-ordered`
@@ -35,6 +38,8 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 | 2 | Occupational Fraud / Office Manager | Offense: 03/15/2008, Filed: 03/21/2011 | Occupational fraud, theft by swindle | ~$80,000 in unauthorized charges | Felony conviction (Theft by Swindle); restitution ordered; early probation discharge 07/20/2021; expungement denied 02/11/2022 |
 | 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
 | 4 | Commercial Burglary / Google Search Warrant | Offense: 09/29/2016, Sentenced: 01/15/2020 | Burglary 2nd Degree (Possess Tool), physical and digital evidence convergence | Commercial burglary of a Lakeville bar; cash box recovered | Felony conviction; 30-month commitment stayed 10 years; 90-day jail/work release; 10-year supervised probation; $1,850 restitution; gambling treatment ordered; no-casino condition |
+| 5 | ALPR Technology Partnership / Target + Blue | 2007 | Technology implementation, ALPR, database integration | $40,000 corporate grant, one squad car deployment | Operational ALPR deployment with BCA CJIS and Lakeville IT coordination |
+| 6 | Digital Child Exploitation Evidence / Google, Android, IMEI Artifacts | TBD | Digital exploitation investigation, mobile device evidence, search warrants | Deleted digital child exploitation evidence and device/account artifacts located | Conviction and imprisonment |
 
 ---
 
@@ -249,6 +254,85 @@ During patrol assignments between investigative rotations, I consistently self-i
 
 ---
 
+## Program Entry — ALPR Technology Partnership / Target + Blue
+
+**Program Reference:** Lakeville Police Department, 2007 ALPR partnership, sometimes referenced as Target + Blue
+**Role:** Early adopter and implementation contributor for a license plate recognition partnership that connected corporate grant funding, BCA CJIS coordination, Lakeville IT, and patrol field operations
+**Program Type:** Technology-supported policing, database integration, field operations, investigative lead development, CJIS-aligned data workflow
+**Partner / Funding:** Corporate grant partnership (Target + Blue). Resulted in a $40,000 corporate grant to fund an ALPR solution for one squad car.
+**Technology / Workflow:** ALPR solution for one patrol squad car, database integration with BCA CJIS involvement, Lakeville IT coordination, and daily WiFi sync to the squad at midnight for data updates
+**Impact:** Demonstrated early adoption of emerging investigative technology, stakeholder coordination, external funding development, public-safety data integration, and field deployment of an investigative lead-development tool
+**TAGS:** `ALPR` `license-plate-recognition` `technology-implementation` `database-integration` `CJIS` `IT-coordination` `grant-funded` `field-operations` `lead-development` `vendor-solutions` `analyst-intelligence`
+
+### Resume Bullet — Full
+
+Helped develop and implement a 2007 ALPR technology partnership that secured a $40,000 corporate grant for one squad car, coordinating with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow to support field operations and investigative lead development.
+
+### Resume Bullet — Condensed
+
+Helped secure and implement a $40,000 grant-funded ALPR deployment for one squad car in 2007, coordinating with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow.
+
+### Cover Letter Paragraph
+
+One early example of my technology-supported investigative work was a 2007 ALPR partnership that resulted in a $40,000 corporate grant to fund an ALPR solution for one squad car. I worked with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow that connected field operations with emerging investigative data tools. That experience reflects a long-standing pattern in my career: adopting technology when it improves lead development, operational effectiveness, and investigative follow-up.
+
+### Interview Talking Points
+
+- 2007 early adoption example involving license plate recognition technology
+- Partnership resulted in a $40,000 corporate grant for one squad car
+- Worked with BCA CJIS and Lakeville IT on database integration
+- Supported daily midnight WiFi sync workflow for squad data updates
+- Strong example for OpenAI, technical investigator, corporate security, public safety technology, vendor-solutions, and analyst-intelligence profiles
+- Shows technology curiosity before the current AI/cyber pivot
+- Shows ability to connect outside stakeholders, IT, public-safety data rules, and field operations
+
+### Usage Note
+
+Use this entry when a role values technical curiosity, early technology adoption, data integration, cross-functional work with IT, public-safety technology, grant-funded implementation, or the ability to translate operational needs into technical workflows. Strong for OpenAI Technical Threat Investigator, Technical Abuse Investigator, corporate security investigator, public safety technology advisor, analyst-intelligence, and vendor-solutions profiles.
+
+---
+
+## Case 6 — Digital Child Exploitation Evidence / Google, Android, IMEI Artifacts
+
+**Case Reference:** Lakeville PD digital child exploitation investigation, year TBD from source materials
+**Case Type:** Digital child exploitation evidence, online offender behavior, search warrant preparation, preservation requests, suspect interview, mobile device seizure and forensic review
+**Suspect:** [Name suppressed per PRIVACY_STANDARD]
+**Victim / Witness Context:** Teen victim was forensically interviewed by another detective trained on juvenile victims through CornerHouse. Lead detective retained case ownership and delegated the specialized forensic interview component to the appropriately trained resource.
+**Lead Development:** Lead detective proactively contacted the victim's mother based on a daily summary. That contact produced suspect Google email, social media identifiers, phone information, and lead information supporting preservation requests and warrant preparation.
+**Investigative Methods:** Proactive victim-family contact, digital preservation requests, Google and social media and phone lead development, search warrant affidavit preparation, planned seizure and work-location interview, suspect interview with partial confession, mobile device seizure, forensic review, deleted evidence recovery, Google and Android and IMEI artifact analysis, comparison of suspect statement against teen victim account
+**Outcome:** Suspect statement conflicted with teen victim account. Deleted digital child exploitation evidence and related Google, Android, and IMEI artifacts were located. Suspect was convicted and imprisoned.
+**TAGS:** `digital-child-exploitation-evidence` `ICAC` `preservation-request` `google-account` `android-artifacts` `IMEI` `mobile-device-seizure` `forensic-interview-delegation` `suspect-interview` `deleted-evidence` `digital-forensics` `search-warrant` `interview` `felony-conviction` `prison` `analyst-intelligence`
+
+### Resume Bullet — Full
+
+Led a digital child exploitation investigation from proactive lead development through conviction, beginning with contact to the victim's mother based on a daily summary and developing suspect Google, social media, and phone identifiers. Prepared preservation requests and search warrant affidavits, conducted a planned work-location interview with another detective for officer safety, obtained a partial confession, seized the suspect's mobile device, and located deleted digital child exploitation evidence with supporting Google, Android, and IMEI artifacts. The suspect's statement conflicted with the teen victim's account, and the case resulted in conviction and imprisonment.
+
+### Resume Bullet — Condensed
+
+Led a digital child exploitation investigation involving proactive lead development, preservation requests, search warrant affidavits, suspect interview, mobile device seizure, deleted evidence recovery, and Google, Android, and IMEI artifact analysis, resulting in conviction and imprisonment.
+
+### Cover Letter Paragraph
+
+In one digital child exploitation investigation, I developed the case from a proactive contact with the victim's mother after reviewing a daily summary. That contact produced suspect Google, social media, and phone identifiers that supported preservation requests and search warrant affidavits. I conducted a planned work-location interview with another detective for officer safety, obtained a partial confession, seized the suspect's mobile device, and located deleted digital child exploitation evidence with supporting Google, Android, and IMEI artifacts. The suspect's statement conflicted with the teen victim's account, and the case resulted in conviction and imprisonment.
+
+### Interview Talking Points
+
+- Started from proactive review of a daily summary and contact with the victim's mother
+- Developed Google email, social media, phone, and device-related leads
+- Prepared preservation requests and search warrant affidavits
+- Victim forensic interview was conducted by another detective trained on juvenile victims through CornerHouse, delegated as a specialized component while lead detective retained case ownership
+- Conducted suspect interview with another detective for officer safety
+- Obtained partial confession and seized mobile device
+- Located deleted digital child exploitation evidence and supporting Google, Android, and IMEI artifacts
+- Compared suspect statement against teen victim account and identified material conflicts
+- Case resulted in conviction and imprisonment
+
+### Usage Note
+
+Use this entry only in controlled, clinical wording. Preferred phrase is "digital child exploitation evidence." Avoid graphic detail. Do not use "CP." Do not frame this as a split case simply because another detective conducted the forensic interview. The full case remained Troy's lead investigation, with the forensic interview delegated to the properly trained juvenile-victim resource. Strong for OpenAI Technical Abuse Investigator, Abuse Investigator Child Safety, platform abuse, trust and safety, digital investigations, ICAC-adjacent, and analyst-intelligence roles.
+
+---
+
 ## Usage Notes
 
 - **"The" vs. "a":** Never write "the BEC case" or "the occupational fraud case" as though only one case exists. Always frame as "among several" or "one of several complex fraud cases I led."
@@ -262,6 +346,8 @@ During patrol assignments between investigative rotations, I consistently self-i
 - **Probation Liaison usage note:** Use for roles that value inter-agency coordination, compliance monitoring, or stakeholder relationship management. The program demonstrates that Troy was selected for leadership roles early in his career and received commendations from both internal command staff and external agency partners.
 - **Professional Conduct entry usage note:** Use the self-initiated fraud follow-up entry in any cover letter or interview context where autonomy, self-direction, or intrinsic motivation is relevant. It is most powerful when stated with the timeline: the commendation falls between two investigative rotations with no assignment requiring that level of effort. Do not cite the sergeant's name or the case number in application materials. The documented pattern is the credential, not the individual instance.
 - **Party name suppression:** All suspect names, judge names, officer/colleague names, probation officer names, and command staff names have been suppressed in application-facing content per PRIVACY_STANDARD. Victim business names have been replaced with role descriptions (e.g., "a Lakeville bar/business"). Internal metadata fields retain case reference and court docket numbers for verification purposes only.
+- **ALPR Technology Partnership usage note:** Use for roles that value technical curiosity, early technology adoption, grant-funded implementation, cross-functional IT coordination, or public-safety data integration. Strongest for OpenAI Technical Threat Investigator, Technical Abuse Investigator, corporate security investigator, public safety technology advisor, analyst-intelligence, and vendor-solutions profiles. This entry documents technology adoption curiosity before the current AI/cyber pivot and demonstrates the ability to connect outside stakeholders, IT systems, public-safety data rules, and field operations.
+- **Case 6 (Digital Child Exploitation Evidence) usage note:** Use only in controlled, clinical wording. Preferred phrase is "digital child exploitation evidence." Avoid graphic detail. Do not use "CP." Do not frame this as a split case simply because another detective conducted the forensic interview. The full case remained Troy's lead investigation, with the forensic interview delegated to the properly trained juvenile-victim resource. Strong for OpenAI Technical Abuse Investigator, Abuse Investigator Child Safety, platform abuse, trust and safety, digital investigations, ICAC-adjacent, and analyst-intelligence roles. This entry requires the `allow_icac=True` flag when building application documents.
 
 ---
 
