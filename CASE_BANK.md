@@ -260,28 +260,28 @@ During patrol assignments between investigative rotations, I consistently self-i
 **Role:** Early adopter and implementation contributor for a license plate recognition partnership that connected corporate grant funding, BCA CJIS coordination, Lakeville IT, and patrol field operations
 **Program Type:** Technology-supported policing, database integration, field operations, investigative lead development, CJIS-aligned data workflow
 **Partner / Funding:** Corporate grant partnership (Target + Blue). Resulted in a $40,000 corporate grant to fund an ALPR solution for one squad car.
-**Technology / Workflow:** ALPR solution for one patrol squad car, database integration with BCA CJIS involvement, Lakeville IT coordination, and daily WiFi sync to the squad at midnight for data updates
+**Technology / Workflow:** Genetec AutoVu ALPR system deployed on one patrol squad car; database integration with BCA CJIS involvement, Lakeville IT coordination, and daily midnight WiFi sync to deliver hotlists to the squad car
 **Impact:** Demonstrated early adoption of emerging investigative technology, stakeholder coordination, external funding development, public-safety data integration, and field deployment of an investigative lead-development tool
 **TAGS:** `ALPR` `license-plate-recognition` `technology-implementation` `database-integration` `CJIS` `IT-coordination` `grant-funded` `field-operations` `lead-development` `vendor-solutions` `analyst-intelligence`
 
 ### Resume Bullet — Full
 
-Helped develop and implement a 2007 ALPR technology partnership that secured a $40,000 corporate grant for one squad car, coordinating with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow to support field operations and investigative lead development.
+Helped develop and implement a 2007 ALPR technology partnership that secured a $40,000 corporate grant for one squad car, deploying a Genetec AutoVu system and coordinating with BCA CJIS, Genetec AutoVu, and Lakeville IT on database integration and a daily midnight WiFi hotlist sync to support field operations and investigative lead development.
 
 ### Resume Bullet — Condensed
 
-Helped secure and implement a $40,000 grant-funded ALPR deployment for one squad car in 2007, coordinating with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow.
+Helped secure and implement a $40,000 grant-funded Genetec AutoVu ALPR deployment for one squad car in 2007, coordinating with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi hotlist sync.
 
 ### Cover Letter Paragraph
 
-One early example of my technology-supported investigative work was a 2007 ALPR partnership that resulted in a $40,000 corporate grant to fund an ALPR solution for one squad car. I worked with BCA CJIS and Lakeville IT on database integration and a daily midnight WiFi sync workflow that connected field operations with emerging investigative data tools. That experience reflects a long-standing pattern in my career: adopting technology when it improves lead development, operational effectiveness, and investigative follow-up.
+One early example of my technology-supported investigative work was a 2007 ALPR partnership that resulted in a $40,000 corporate grant to fund a Genetec AutoVu ALPR system for one squad car. I worked with BCA CJIS, Genetec AutoVu, and Lakeville IT on database integration and a daily midnight WiFi hotlist sync that connected field operations with emerging investigative data tools. That experience reflects a long-standing pattern in my career: adopting technology when it improves lead development, operational effectiveness, and investigative follow-up.
 
 ### Interview Talking Points
 
-- 2007 early adoption example involving license plate recognition technology
+- 2007 early adoption example involving Genetec AutoVu license plate recognition technology
 - Partnership resulted in a $40,000 corporate grant for one squad car
-- Worked with BCA CJIS and Lakeville IT on database integration
-- Supported daily midnight WiFi sync workflow for squad data updates
+- Deployed Genetec AutoVu system; worked with BCA CJIS, Genetec AutoVu, and Lakeville IT on database integration
+- Supported daily midnight WiFi hotlist sync to the squad car
 - Strong example for OpenAI, technical investigator, corporate security, public safety technology, vendor-solutions, and analyst-intelligence profiles
 - Shows technology curiosity before the current AI/cyber pivot
 - Shows ability to connect outside stakeholders, IT, public-safety data rules, and field operations
