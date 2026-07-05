@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Troy Hokanson | Investigative Portfolio</title>
+  <style>
+    :root {
+      --navy: #0d1b2a;
+      --gold: #c9a84c;
+      --steel: #2d6a9f;
+      --bg: #f8fafc;
+      --text: #102132;
+      --muted: #51606f;
+      --card: #ffffff;
+      --line: #d8e0e8;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.5;
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 2rem 1rem 1.5rem;
+      text-align: center;
+      border-bottom: 4px solid var(--gold);
+    }
+    h1 { margin: 0; font-size: 2rem; }
+    header p { margin: 0.5rem 0 0; color: #e3ebf5; }
+    main { max-width: 960px; margin: 0 auto; padding: 1.25rem; }
+    .meta {
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 1px 2px rgba(16, 33, 50, 0.05);
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 1rem;
+      color: var(--steel);
+      word-break: break-word;
+    }
+    .files { margin-top: 0.7rem; }
+    .files a {
+      display: block;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.94rem;
+      padding: 0.2rem 0;
+    }
+    .files a:hover { color: var(--steel); }
+    .actions {
+      margin-top: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      padding: 0.45rem 0.7rem;
+      color: var(--text);
+      background: #fff;
+      font-size: 0.9rem;
+    }
+    .btn:hover { border-color: var(--steel); color: var(--steel); }
+    #status { color: var(--muted); }
+    .error { color: #9f2d2d; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Troy J. Hokanson — Investigative Portfolio</h1>
+    <p>Live from repository data (applications folder)</p>
+  </header>
+
+  <main>
+    <div class="meta" id="status">Loading portfolio entries...</div>
+    <div id="cards" class="grid"></div>
+    <div class="actions">
+      <a class="btn" href="https://github.com/troyhokanson/tjh-resume-cover-cv" target="_blank" rel="noopener">Open Repository</a>
+      <a class="btn" href="https://github.com/troyhokanson/tjh-resume-cover-cv/tree/main/applications" target="_blank" rel="noopener">Applications Folder</a>
+    </div>
+  </main>
+
+  <script>
+    const owner = "troyhokanson";
+    const repo = "tjh-resume-cover-cv";
+    const branch = "main";
+    const cards = document.getElementById("cards");
+    const statusEl = document.getElementById("status");
+
+    const ghApi = (path) => `https://api.github.com/repos/${owner}/${repo}${path}`;
+    const ghFile = (path) => `https://github.com/${owner}/${repo}/blob/${branch}/${path}`;
+
+    function fmtDate(iso) {
+      const d = new Date(iso);
+      return Number.isNaN(d.getTime()) ? "Unknown" : d.toLocaleString();
+    }
+
+    async function load() {
+      try {
+        const [applicationsResp, commitsResp] = await Promise.all([
+          fetch(ghApi("/contents/applications")),
+          fetch(ghApi("/commits?path=applications&per_page=1"))
+        ]);
+
+        if (!applicationsResp.ok) throw new Error("Unable to fetch applications directory.");
+        if (!commitsResp.ok) throw new Error("Unable to fetch last update metadata.");
+
+        const allEntries = await applicationsResp.json();
+        const latestCommit = (await commitsResp.json())[0];
+        const dirs = allEntries.filter((x) => x.type === "dir").sort((a, b) => b.name.localeCompare(a.name));
+
+        if (!dirs.length) {
+          statusEl.textContent = "No application folders found yet.";
+          return;
+        }
+
+        statusEl.textContent = `Synced ${dirs.length} application folder(s). Last applications update: ${fmtDate(latestCommit?.commit?.author?.date)}`;
+
+        for (const dir of dirs) {
+          const folderResp = await fetch(ghApi(`/contents/applications/${encodeURIComponent(dir.name)}`));
+          if (!folderResp.ok) continue;
+          const files = (await folderResp.json())
+            .filter((item) => item.type === "file" && item.name.toLowerCase().endsWith(".md"))
+            .sort((a, b) => a.name.localeCompare(b.name));
+
+          const card = document.createElement("section");
+          card.className = "card";
+
+          const title = document.createElement("h2");
+          title.textContent = dir.name;
+          card.appendChild(title);
+
+          const fileWrap = document.createElement("div");
+          fileWrap.className = "files";
+
+          if (files.length) {
+            for (const f of files) {
+              const link = document.createElement("a");
+              link.href = ghFile(`applications/${dir.name}/${f.name}`);
+              link.target = "_blank";
+              link.rel = "noopener";
+              link.textContent = f.name;
+              fileWrap.appendChild(link);
+            }
+          } else {
+            const empty = document.createElement("span");
+            empty.textContent = "No markdown files in this folder.";
+            fileWrap.appendChild(empty);
+          }
+
+          card.appendChild(fileWrap);
+          cards.appendChild(card);
+        }
+      } catch (err) {
+        statusEl.className = "meta error";
+        statusEl.textContent = `Failed to load live repository data: ${err.message}`;
+      }
+    }
+
+    load();
+  </script>
+</body>
+</html>

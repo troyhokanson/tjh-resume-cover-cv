@@ -38,11 +38,11 @@ November 1998 to May 2024
 * Served on SWAT from 2005 to 2011 and Crime Scene Unit from 2013 to 2018, strengthening incident command, scene control, evidence preservation, and high-risk decision-making.
 * Processed digital evidence using Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, phone records, external media review, social media, and OSINT to support criminal investigations and prosecutor review.
 * Processed 5,304 GB of digital evidence in 2020 while assigned to electronic crimes and digital forensics work.
-* Investigated a multi-victim Business Email Compromise case with more than $360,000 in documented victim losses, $295,704.11 in court-ordered restitution, and a 15-year federal sentence.
+* Investigated a multi-victim Business Email Compromise case with more than $360,000 in documented victim losses, resulting in a felony conviction and a written commendation from an Assistant Dakota County Attorney.
 
 ### Dakota County Electronic Crimes Task Force, Dakota County, Minnesota
 **Task Force Detective and Lakeville Police Department SME**  
-September 2016 to December 2021
+June 2017 to December 2021
 
 * Served as Lakeville Police Department's digital forensics subject-matter resource on a multi-agency task force supporting approximately ten partner agencies.
 * Examined phones, external drives, USB media, cloud records, social media artifacts, financial records, and communications data for criminal investigations.
@@ -51,7 +51,7 @@ September 2016 to December 2021
 
 ### University of Phoenix
 **Adjunct Faculty, Criminal Justice**  
-2011 to 2022
+March 2007 to October 2025
 
 * Taught undergraduate and graduate Criminal Justice courses while working full-time in law enforcement.
 * Explained investigations, ethics, policy, leadership, evidence, and public safety concepts to students with varied professional backgrounds.
@@ -79,7 +79,7 @@ College period
 **Infantry, Armor Crewman, Truck Driver, Military Police**  
 1989 to 1998
 
-* Served nine years across the U.S. Army Reserve, Active Duty Army, and Minnesota Army National Guard.
+* Served 8 years 3 months across the U.S. Army Reserve, Active Duty Army, and Minnesota Army National Guard.
 * Served as an Active Duty Armor Crewman on the M1A1 Main Battle Tank from 1991 to 1994.
 * Served as a Military Police Soldier with the Minnesota Army National Guard from 1995 to 1998, including Camp Ripley security and law enforcement support duties.
 * Earned Army Achievement Medal, Army Good Conduct Medal, and Secret clearance in 1992.

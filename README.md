@@ -23,12 +23,12 @@ If you are about to build a Hokanson document and this repo is not present in th
 bash new_application.sh
 ```
 
-It will ask you three questions (JD file path, profile, employer/role name) and then:
-- Extract the high-signal ATS keywords from the job description automatically
-- Check coverage against any existing resume/cover docs you point to
-- Print the missing keywords you need to weave in
-- Save a dated audit report to `build_logs/`
-- Print the exact prompt to paste into your AI session to build the documents
+It will ask for the JD, profile, employer/role, and draft file paths, then run mandatory checkpoints:
+- **Profile select**
+- **Case/training evidence pack generation** (fails fast if fewer than 2 qualified cases or insufficient training evidence)
+- **ATS keyword audit**
+- **Post-draft verification** (required cases, concrete stats, training references, profile/overclaim checks)
+- Save all reports to `build_logs/` (`application_manifest_*`, `ats_audit_*`, `verification_report_*`)
 
 **That's it.** The script handles the rest. You do not need to remember command flags.
 
@@ -68,6 +68,7 @@ tjh-resume-cover-cv/
 ├── pdf_header.py           # Locked PDF page-1 header renderer
 ├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
 ├── ats_injector.py         # ATS keyword extraction, audit, and injection engine
+├── application_quality.py  # Case/training gate + deterministic variation + post-draft verifier
 ├── new_application.sh      # One-command new application starter (run this first)
 ├── scan_and_report.py      # Friendly wrapper — run at the share-file delivery gate
 ├── build_reference.py      # Rebuilds reference_header.docx after any header change
@@ -120,6 +121,30 @@ python -m pytest tests/ -v
 # 6. Build the visual reference DOCX
 python build_reference.py
 ```
+
+---
+
+## Portfolio Sync (Web + iOS + PC)
+
+This repo now includes a live portfolio page at:
+
+- `portfolio/index.html` (published via GitHub Pages workflow: `.github/workflows/deploy_portfolio.yml`)
+
+### What syncs automatically
+
+- The portfolio page reads live data from `applications/` using the GitHub API.
+- Any commit to `applications/` or `portfolio/` on `main` triggers a Pages deploy.
+- Online portfolio content stays in sync with the repository (single source of truth).
+
+### iOS and PC local-save workflow
+
+1. **PC:** clone the repository and commit updates as normal.
+2. **iOS:** use a Git client app (for example Working Copy) to clone the same repository, edit, commit, and push.
+3. GitHub becomes the sync layer between devices and the online portfolio.
+
+This is the same model as saving repos locally on PC: each device has a local clone, and GitHub syncs changes across devices and to the hosted portfolio.
+
+> Note: In repository settings, ensure **Pages** is configured to use **GitHub Actions** as the source.
 
 ---
 

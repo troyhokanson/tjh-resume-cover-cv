@@ -1,0 +1,45 @@
+name: PR Checks
+
+# Runs on every pull request targeting main.
+# Validates the test suite before any merge -- catches voice, scan,
+# and config regressions introduced in the PR branch.
+on:
+  pull_request:
+    branches: [main]
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Set up workspace structure
+        run: |
+          mkdir -p /home/runner/workspace
+          ln -s "$GITHUB_WORKSPACE" /home/runner/workspace/templates
+
+      - name: Run unit tests
+        working-directory: /home/runner/workspace
+        env:
+          TROY_PHONE:     ${{ secrets.TROY_PHONE }}
+          TROY_EMAIL:     ${{ secrets.TROY_EMAIL }}
+          TROY_LOCATION:  ${{ secrets.TROY_LOCATION }}
+          TROY_LINKEDIN:  ${{ secrets.TROY_LINKEDIN }}
+          TROY_PORTFOLIO: ${{ secrets.TROY_PORTFOLIO }}
+          TROY_NAME:      ${{ secrets.TROY_NAME }}
+        run: python -m pytest templates/tests/ -v
