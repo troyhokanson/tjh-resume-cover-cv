@@ -201,7 +201,7 @@ Add these secrets under Settings → Secrets and variables → Actions:
 - `TROY_EMAIL` — e.g. `TroyHokanson@iCloud.com`
 - `TROY_LOCATION` — e.g. `Lakeville, MN`
 - `TROY_LINKEDIN` — e.g. `linkedin.com/in/troyhokanson`
-- `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio`
+- `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio/`
 
 ---
 
