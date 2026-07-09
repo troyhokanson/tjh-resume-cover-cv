@@ -2,12 +2,12 @@
 Troy Hokanson - Locked DOCX Header Module
 ========================================
 
-Single source of truth for the navy and gold header used on every DOCX
+Single source of truth for the navy/gold/white header used on every DOCX
 resume, cover letter, CV, and application document bearing Troy's name.
 
 Locked header requirements:
 - Full-bleed navy #0D1B2A bar in the Word header part, never in the body.
-- "Troy Hokanson" in gold #C9A84C Garamond-Bold, centered.
+- "Troy Hokanson" in white #FFFFFF Garamond-family bold, centered, 26 pt.
 - Thin gold #C9A84C rule directly beneath the name.
 - Gold Garamond contact row beneath the rule.
 - No subtitle or role title between name and contact row.
@@ -29,11 +29,6 @@ from config import (
     TROY_LINKEDIN,
     TROY_PORTFOLIO,
 )
-
-
-# ============================================================
-# BRAND CONSTANTS
-# ============================================================
 
 NAVY = RGBColor(0x0D, 0x1B, 0x2A)
 GOLD = RGBColor(0xC9, 0xA8, 0x4C)
@@ -66,10 +61,6 @@ def _rgb_to_hex(color: RGBColor) -> str:
     return f"{color[0]:02X}{color[1]:02X}{color[2]:02X}"
 
 
-# ============================================================
-# LOW-LEVEL XML HELPERS
-# ============================================================
-
 def shade_cell(cell, color_hex):
     tc_pr = cell._tc.get_or_add_tcPr()
     for old in tc_pr.findall(qn("w:shd")):
@@ -93,7 +84,6 @@ def shade_paragraph(paragraph, color_hex):
 
 
 def add_header_background_shape(paragraph, color_hex="0D1B2A"):
-    """Add a page-anchored navy rectangle behind the header."""
     run = paragraph.add_run()
     xml = f"""
     <w:pict xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
@@ -192,7 +182,6 @@ def add_hyperlink(paragraph, text, url, *, color=None, font=BODY_FONT, size=10, 
 
     if bold:
         r_pr.append(OxmlElement("w:b"))
-
     if color is not None:
         color_node = OxmlElement("w:color")
         color_node.set(qn("w:val"), _rgb_to_hex(color))
@@ -215,10 +204,6 @@ def set_paragraph_format(paragraph, *, before=0, after=0, line=1.15):
     pf.line_spacing = line
 
 
-# ============================================================
-# LOCKED HEADER
-# ============================================================
-
 def build_navy_header(
     doc,
     *,
@@ -227,7 +212,7 @@ def build_navy_header(
     body_left_margin_inches=0.6,
     body_right_margin_inches=0.6,
 ):
-    """Build the full-bleed navy and gold header in the Word header part."""
+    """Build the full-bleed navy/gold/white header in the Word header part."""
     section = doc.sections[0]
     section.top_margin = Inches(body_top_margin_inches)
     section.bottom_margin = Inches(body_bottom_margin_inches)
@@ -290,7 +275,7 @@ def build_navy_header(
     shade_paragraph(name_p, "0D1B2A")
     add_header_background_shape(name_p, "0D1B2A")
     name_run = name_p.add_run(NAME)
-    set_run(name_run, font=NAME_FONT, size=24, bold=True, color=GOLD)
+    set_run(name_run, font=NAME_FONT, size=26, bold=True, color=WHITE)
 
     rule_p = cell.add_paragraph()
     rule_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -321,10 +306,6 @@ def build_navy_header(
     for paragraph in list(footer.paragraphs):
         paragraph._p.getparent().remove(paragraph._p)
 
-
-# ============================================================
-# BODY HELPERS
-# ============================================================
 
 def add_section_heading(doc, text):
     p = doc.add_paragraph()
