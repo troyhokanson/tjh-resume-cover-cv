@@ -2,12 +2,12 @@
 Troy Hokanson - Locked PDF Header Module
 =======================================
 
-Single source of truth for the navy and gold header on every PDF resume,
+Single source of truth for the navy/gold/white header on every PDF resume,
 cover letter, CV, or other PDF artifact bearing Troy's name.
 
 Locked header requirements:
 - Full-bleed navy #0D1B2A bar, zero whitespace above, left, or right.
-- "Troy Hokanson" in gold #C9A84C Garamond-Bold, centered.
+- "Troy Hokanson" in white #FFFFFF Garamond-family bold, centered, 26 pt on page 1.
 - Thin gold #C9A84C rule beneath the name.
 - Gold Garamond contact row, pipe-separated, centered.
 - No subtitle or role title between name and contact row.
@@ -33,6 +33,7 @@ from config import (
 BRAND = {
     "navy": HexColor("#0D1B2A"),
     "gold": HexColor("#C9A84C"),
+    "white": HexColor("#FFFFFF"),
     "steel": HexColor("#2D6A9F"),
     "black": HexColor("#141414"),
     "gray": HexColor("#555555"),
@@ -76,7 +77,7 @@ _FONTS_REGISTERED = False
 
 
 def _register_fonts():
-    """Register Garamond and fallback fonts if available."""
+    """Register Garamond-family and fallback fonts if available."""
     global _FONTS_REGISTERED
     if _FONTS_REGISTERED:
         return
@@ -114,7 +115,7 @@ def _safe_font(preferred, fallback):
 
 
 def draw_page1_header(c, pagesize, *, name=NAME, contact_parts=CONTACT_PARTS, contact_links=None):
-    """Draw the full page-1 navy and gold header."""
+    """Draw the full page-1 navy header."""
     _register_fonts()
     if contact_links is None:
         contact_links = CONTACT_LINKS
@@ -127,8 +128,8 @@ def draw_page1_header(c, pagesize, *, name=NAME, contact_parts=CONTACT_PARTS, co
     c.rect(-0.05 * inch, band_y - 0.05 * inch, page_w + 0.1 * inch, band_h + 0.1 * inch, fill=1, stroke=0)
 
     name_font = _safe_font("Garamond-Bold", "Helvetica-Bold")
-    c.setFillColor(BRAND["gold"])
-    c.setFont(name_font, 24)
+    c.setFillColor(BRAND["white"])
+    c.setFont(name_font, 26)
     name_y = band_y + band_h - 0.52 * inch
     c.drawCentredString(page_w / 2, name_y, name)
 
@@ -161,7 +162,7 @@ def draw_page1_header(c, pagesize, *, name=NAME, contact_parts=CONTACT_PARTS, co
 
 
 def draw_pageN_header(c, pagesize, *, name=NAME):
-    """Draw the slim page-2+ navy and gold header."""
+    """Draw the slim page-2+ navy header."""
     _register_fonts()
     page_w, page_h = pagesize
     band_h = PAGEN_BANNER_HEIGHT
@@ -171,7 +172,7 @@ def draw_pageN_header(c, pagesize, *, name=NAME):
     c.rect(-0.05 * inch, band_y - 0.05 * inch, page_w + 0.1 * inch, band_h + 0.1 * inch, fill=1, stroke=0)
 
     name_font = _safe_font("Garamond-Bold", "Helvetica-Bold")
-    c.setFillColor(BRAND["gold"])
+    c.setFillColor(BRAND["white"])
     c.setFont(name_font, 16)
     c.drawCentredString(page_w / 2, band_y + band_h / 2 - 5, name)
 
