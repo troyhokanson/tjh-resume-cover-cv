@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "effective_date": "2026-07-16",
+  "applies_to": "cover_letter",
+  "header_standard": "standards/document_design_standard.json",
+  "page_target": 1,
+  "composition": {
+    "vertical_alignment_goal": "optically centered beneath the header",
+    "method": "Treat the date, employer address, salutation, body paragraphs, closing, and signature block as one visual unit. Balance the free space above and below the unit instead of stacking all content at the top.",
+    "top_whitespace_inches_range": [0.22, 0.55],
+    "bottom_whitespace_inches_range": [0.45, 0.9],
+    "never_reduce_body_font_below_points": 9.75,
+    "never_use_manual_blank_lines_for_layout": true
+  },
+  "company_address": {
+    "include_when_available_and_relevant": true,
+    "source_priority": ["official job posting", "official careers site", "official company contact page", "official regional office page", "verified headquarters address"],
+    "remote_role_preference": ["office named in posting", "business unit office", "company headquarters"],
+    "omit_when": ["no reliable official address is available", "the address would be misleading", "the employer is undisclosed", "portal instructions make traditional business-letter formatting inappropriate"],
+    "never_invent": true
+  },
+  "spacing_points": {
+    "date_after": 8,
+    "address_line_after": 0,
+    "address_block_after": 9,
+    "salutation_after": 9,
+    "paragraph_after": 8,
+    "closing_before": 5,
+    "signature_gap": 38
+  },
+  "paragraphs": {
+    "preferred_count_min": 4,
+    "preferred_count_max": 6,
+    "preferred_total_words_min": 425,
+    "preferred_total_words_max": 625,
+    "line_spacing": 1.05,
+    "first_line_indent_inches": 0,
+    "alignment": "left"
+  },
+  "closing": {
+    "required_text": "Respectfully,",
+    "typed_name_required": true,
+    "signature_logic": "standards/digital_signature_decision.json"
+  },
+  "validation": [
+    "single page",
+    "balanced lower-page whitespace",
+    "official company address included when appropriate",
+    "paragraphs remain visually separate",
+    "signature area does not crowd the bottom margin",
+    "body appears centered beneath the header"
+  ]
+}
