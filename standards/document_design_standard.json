@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "effective_date": "2026-07-16",
+  "authority": "Permanent machine-readable visual standard for all Troy Hokanson resumes, cover letters, CVs, recruiter packets, and professional application documents.",
+  "applies_to": ["resume", "cover_letter", "cv", "recruiter_packet", "professional_bio", "one_pager"],
+  "page": {
+    "size": "US Letter",
+    "width_inches": 8.5,
+    "height_inches": 11.0,
+    "orientation": "portrait"
+  },
+  "palette": {
+    "navy": "#0D1B2A",
+    "gold": "#C9A84C",
+    "steel_blue": "#2D6A9F",
+    "white": "#FFFFFF",
+    "body_text": "#141414",
+    "secondary_text": "#555555"
+  },
+  "header": {
+    "required": true,
+    "location": "document_header_section",
+    "full_bleed": {
+      "top": true,
+      "left": true,
+      "right": true,
+      "white_gap_tolerance_points": 0,
+      "background_color": "#0D1B2A",
+      "rendering_requirement": "Navy must cover every pixel from the top edge to the bottom boundary of the header and from the left page edge to the right page edge in rendered DOCX and PDF output."
+    },
+    "height_inches": 1.28,
+    "content_block": {
+      "horizontal_alignment": "center",
+      "vertical_alignment": "bottom_up",
+      "bottom_padding_inches": 0.16,
+      "side_padding_inches": 0.25,
+      "grouping": "name, gold rule, and contact row are treated as one centered visual block"
+    },
+    "name": {
+      "text": "Troy J. Hokanson",
+      "font_family_primary": "Garamond",
+      "font_family_fallbacks": ["EB Garamond", "Adobe Garamond Pro", "Times New Roman"],
+      "font_size_points": 26,
+      "weight": "bold",
+      "color": "#FFFFFF",
+      "alignment": "center",
+      "space_after_points": 3
+    },
+    "gold_rule": {
+      "required": true,
+      "color": "#C9A84C",
+      "thickness_points": 0.9,
+      "width_percent_of_page": 55,
+      "alignment": "center",
+      "space_before_points": 0,
+      "space_after_points": 4,
+      "character_based_rules_prohibited": true
+    },
+    "contact_row": {
+      "font_family": "Garamond",
+      "font_size_points": 10.5,
+      "color": "#C9A84C",
+      "alignment": "center",
+      "separator": " | ",
+      "single_line_preferred": true,
+      "wrap_policy": "Reduce optional contact items before reducing font below 9.5 points.",
+      "hyperlinks_allowed": true
+    },
+    "subtitle": {
+      "allowed": false
+    }
+  },
+  "body": {
+    "font_family_primary": "Garamond",
+    "font_family_fallbacks": ["EB Garamond", "Calibri", "Arial"],
+    "resume_font_size_points": 10.25,
+    "cover_letter_font_size_points": 10.5,
+    "minimum_font_size_points": 9.75,
+    "line_spacing": 1.05,
+    "section_heading": {
+      "font_family": "Garamond",
+      "font_size_points": 11,
+      "weight": "bold",
+      "color": "#2D6A9F",
+      "gold_underline": true,
+      "gold_underline_thickness_points": 0.65,
+      "space_before_points": 8,
+      "space_after_points": 4
+    },
+    "gold_usage": {
+      "intent": "noticeable, restrained, professional, and classy",
+      "allowed": ["header rule", "contact row", "section underline", "small structural accents"],
+      "prohibited": ["large gold fills", "gold body paragraphs", "decorative borders around every section", "overuse that competes with content"]
+    }
+  },
+  "margins": {
+    "resume": {
+      "left_inches": 0.65,
+      "right_inches": 0.65,
+      "bottom_inches": 0.55,
+      "body_start_below_header_inches": 0.18,
+      "target_pages": 2,
+      "maximum_pages": 2
+    },
+    "cover_letter": {
+      "left_inches": 0.78,
+      "right_inches": 0.78,
+      "bottom_inches": 0.68,
+      "body_start_below_header_inches": 0.24,
+      "target_pages": 1,
+      "maximum_pages": 1
+    },
+    "cv": {
+      "left_inches": 0.7,
+      "right_inches": 0.7,
+      "bottom_inches": 0.6,
+      "body_start_below_header_inches": 0.2
+    }
+  },
+  "visual_intent": {
+    "audience": ["private sector investigations", "corporate security", "public safety vendors", "fraud and SIU", "trust and safety", "digital forensics"],
+    "reader_impression": ["familiar", "credible", "steady", "approachable", "experienced", "trustworthy"],
+    "avoid": ["flashy", "luxury brochure", "military dossier", "overdesigned", "cramped", "generic corporate template"]
+  },
+  "validation": {
+    "render_docx_to_png_required": true,
+    "inspect_every_page_required": true,
+    "pdf_render_inspection_required": true,
+    "checks": [
+      "no white strip above header",
+      "no white strip at left or right header edge",
+      "navy reaches exact header bottom boundary",
+      "name is 26 point Garamond-family and horizontally centered",
+      "gold rule is centered and approximately 55 percent page width",
+      "contact row is centered and legible",
+      "gold accents are restrained",
+      "resume section spacing is consistent",
+      "cover letter has balanced page composition",
+      "no clipping, overlap, broken glyphs, or unexpected blank pages"
+    ]
+  }
+}
