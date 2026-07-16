@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "collection": "Investigations and Casework",
+  "subject": "Troy Hokanson",
+  "canonical_source": "CASE_BANK.md",
+  "entries": [
+    {
+      "id": "occupational-fraud-approximately-80000",
+      "title": "Occupational fraud / employee credit-card misuse",
+      "category": "case_example",
+      "dates": "2010/2011",
+      "source": "CASE_BANK.md and CAREER_CONSTANTS.md:158-169",
+      "verification_status": "indexed",
+      "verified_facts": ["Approximately $80,000 in unauthorized personal charges", "Collected and analyzed receipts", "Prepared an Excel financial summary", "Submitted a documented case package", "Felony theft-by-swindle conviction and restitution order"],
+      "competencies": ["financial-analysis", "occupational-fraud", "evidence", "excel", "case-referral"],
+      "profiles": ["siu-fraud", "financial-fraud", "analyst-intelligence", "corporate-security"],
+      "safe_claims": ["Investigated approximately $80,000 in employee credit-card misuse, analyzed receipts in Excel, and prepared a prosecution-ready case that resulted in a felony conviction and restitution order."],
+      "cautions": ["Suppress subject, judge, and unnecessary business names."],
+      "related_archives": ["lakeville_programs"]
+    },
+    {
+      "id": "business-email-compromise",
+      "title": "Business email compromise investigation",
+      "category": "case_example",
+      "dates": null,
+      "source": "CASE_BANK.md and CAREER_CONSTANTS.md investigative rotation summary",
+      "verification_status": "indexed",
+      "verified_facts": ["Complex financial and digital investigation", "Multi-institution and partner coordination", "Documented victim losses above $360,000 where supported by the case bank"],
+      "competencies": ["business-email-compromise", "financial-records", "digital-evidence", "multi-agency-coordination"],
+      "profiles": ["siu-fraud", "financial-fraud", "analyst-intelligence"],
+      "safe_claims": ["Investigated a complex business email compromise involving financial records, digital communications, and external partners."],
+      "cautions": ["BEC restitution is pending confirmation; do not use $295,704.11 as a BEC restitution figure.", "Do not combine this case with the separate federal sentence case."],
+      "related_archives": ["electronic_crimes"]
+    },
+    {
+      "id": "digital-forensics-case-support",
+      "title": "Cross-agency digital-forensics case support",
+      "category": "casework_pattern",
+      "dates": "2017/2021",
+      "source": "evidence/electronic_crimes/evidence_catalog.json",
+      "verification_status": "indexed",
+      "verified_facts": ["Supported Lakeville and partner-agency casework", "Explained device intake, legal process, extraction limits, technical findings, and next steps"],
+      "competencies": ["digital-forensics", "case-consultation", "technical-communication", "multi-agency-support"],
+      "profiles": ["vendor-solutions", "dfir", "analyst-intelligence"],
+      "safe_claims": ["Guided investigators across a ten-agency task force through digital-evidence intake, legal process, extraction limits, findings, and next steps."],
+      "cautions": ["Do not describe Troy as task-force lead or lead examiner."],
+      "related_archives": ["electronic_crimes", "public_safety_vendors"]
+    }
+  ]
+}

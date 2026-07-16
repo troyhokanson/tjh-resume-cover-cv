@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "collection": "Residential Real Estate",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "real-estate-consultant-2024-2026",
+      "title": "Real Estate Consultant, eXp Realty / KW Select",
+      "category": "employment",
+      "dates": "2024-06/2026-03",
+      "source": "CAREER_CONSTANTS.md:76-86 and direct confirmation from Troy Hokanson",
+      "verification_status": "user_confirmed",
+      "verified_facts": ["$3.2 million in residential sales", "Guided clients through consultation, property search, negotiation, transaction coordination, closing, and follow-up", "Referral-only as of March 2026"],
+      "competencies": ["client-management", "sales", "negotiation", "transaction-coordination", "follow-up", "customer-outcomes"],
+      "profiles": ["vendor-solutions", "customer-success", "sales", "client-services"],
+      "safe_claims": ["Closed $3.2 million in residential sales while guiding clients through a complex, high-value customer journey."],
+      "cautions": ["Never describe as commercial real estate.", "Do not list as Present after March 2026."],
+      "related_archives": ["public_safety_vendors"]
+    },
+    {
+      "id": "real-estate-crm-stack",
+      "title": "Residential real-estate CRM and client technology",
+      "category": "tools",
+      "dates": "2024/2026",
+      "source": "Direct confirmation from Troy Hokanson on 2026-07-16",
+      "verification_status": "user_confirmed",
+      "verified_facts": ["Used kvCORE", "Used Keller Williams Command", "Used Follow Up Boss", "Used RealScout"],
+      "competencies": ["crm", "pipeline-management", "automated-follow-up", "client-communication", "technology-adoption"],
+      "profiles": ["vendor-solutions", "customer-success", "sales"],
+      "safe_claims": ["Used kvCORE, Keller Williams Command, Follow Up Boss, and RealScout to manage contacts, follow-up, opportunities, and transaction communication."],
+      "cautions": ["Do not imply Salesforce, Gainsight, or other unconfirmed platform experience."],
+      "related_archives": ["public_safety_vendors", "training_certifications"]
+    },
+    {
+      "id": "real-estate-client-recognition-and-credentials",
+      "title": "Client reviews and NAR credentials",
+      "category": "credentials_and_outcomes",
+      "dates": null,
+      "source": "Direct confirmation from Troy Hokanson on 2026-07-16",
+      "verification_status": "user_confirmed",
+      "verified_facts": ["Eight five-star RateMyAgent reviews", "NAR Accredited Buyer's Representative credential", "NAR Military Relocation Professional credential"],
+      "competencies": ["customer-satisfaction", "buyer-representation", "military-relocation", "professional-development"],
+      "profiles": ["customer-success", "vendor-solutions", "client-services"],
+      "safe_claims": ["Earned eight five-star RateMyAgent reviews and completed NAR Accredited Buyer's Representative and Military Relocation Professional credentials."],
+      "cautions": ["Use NAR credential names exactly.", "Archive original credential and review evidence when available."],
+      "related_archives": ["military_service", "training_certifications"]
+    }
+  ]
+}

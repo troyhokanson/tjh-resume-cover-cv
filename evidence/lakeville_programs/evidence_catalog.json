@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "collection": "Lakeville Police Programs and Assignments",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "field-training-officer",
+      "title": "Field Training Officer",
+      "category": "training_assignment",
+      "dates": "2004/2023",
+      "source": "Training tracker, Lakeville employment records, and direct confirmation from Troy Hokanson",
+      "verification_status": "user_confirmed",
+      "verified_facts": ["Completed Field Training Officer Course in 2004", "Applied FTO methods through 2023", "Demonstrated tasks, observed performance, documented progress, coached decisions and report writing, and moved officers toward independent work"],
+      "competencies": ["onboarding", "coaching", "performance-documentation", "adult-learning", "activation"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development", "public-safety"],
+      "safe_claims": ["Completed the Field Training Officer Course in 2004 and applied formal onboarding, coaching, and performance-documentation methods throughout 19 years of FTO work."],
+      "cautions": ["User confirms 19 years; CAREER_CONSTANTS currently says 18 years. Resolve before updating the global canonical statistic."],
+      "related_archives": ["training_certifications"]
+    },
+    {
+      "id": "reserve-liaison-program",
+      "title": "Reserve Liaison Officer training and coordination",
+      "category": "program_leadership",
+      "dates": "2003/2005",
+      "source": "EVIDENCE_BANK.md and prior application records",
+      "verification_status": "indexed",
+      "verified_facts": ["Responsible for approximately 20 police reserves", "Coordinated training, scheduling, event support, field assignments, expectations, and performance follow-up"],
+      "competencies": ["training", "scheduling", "program-coordination", "performance-management", "stakeholder-support"],
+      "profiles": ["vendor-solutions", "customer-success", "management", "public-safety"],
+      "safe_claims": ["Coordinated training, scheduling, assignments, expectations, and follow-up for approximately 20 police reserves."],
+      "cautions": ["Confirm the formal academy title before using 'Reserve Liaison Officer Training Academy' as a proper name."],
+      "related_archives": ["training_certifications"]
+    },
+    {
+      "id": "park-ranger-training",
+      "title": "Park Ranger training program",
+      "category": "training_program",
+      "dates": null,
+      "source": "EVIDENCE_BANK.md and prior application records",
+      "verification_status": "indexed",
+      "verified_facts": ["Developed and delivered training for park rangers", "Adapted police procedures to the responsibilities and authority of the audience"],
+      "competencies": ["curriculum-development", "audience-adaptation", "training", "public-safety"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development"],
+      "safe_claims": ["Developed a park-ranger training program that adapted public-safety procedures to the audience's responsibilities and authority."],
+      "cautions": ["Confirm dates and formal program title before using as a dated academy credential."],
+      "related_archives": ["training_certifications"]
+    },
+    {
+      "id": "community-engagement-team",
+      "title": "Community Engagement Team",
+      "category": "collateral_assignment",
+      "dates": "2021/2023",
+      "source": "EVIDENCE_BANK.md",
+      "verification_status": "indexed",
+      "verified_facts": ["Lakeville Police Department Community Engagement Team member"],
+      "competencies": ["community-engagement", "public-communication", "stakeholder-relations"],
+      "profiles": ["vendor-solutions", "customer-success", "public-safety"],
+      "safe_claims": ["Contributed to community-engagement work connecting public-safety personnel with community stakeholders."],
+      "cautions": ["Use a concise mention unless the role specifically values community engagement."],
+      "related_archives": []
+    },
+    {
+      "id": "crime-scene-unit",
+      "title": "Crime Scene Unit",
+      "category": "collateral_assignment",
+      "dates": "2013/2018",
+      "source": "CAREER_CONSTANTS.md:361-370",
+      "verification_status": "indexed",
+      "verified_facts": ["On-call Crime Scene Unit member", "Physical-evidence collection, scene documentation, and chain of custody"],
+      "competencies": ["evidence", "documentation", "chain-of-custody", "quality-control"],
+      "profiles": ["siu-fraud", "analyst-intelligence", "corporate-security", "public-safety"],
+      "safe_claims": ["Served as an on-call Crime Scene Unit member supporting evidence collection, scene documentation, and chain of custody."],
+      "cautions": ["Do not list as a separate full-time job block."],
+      "related_archives": ["investigations_casework"]
+    },
+    {
+      "id": "maag-tactical-team",
+      "title": "Dakota County Mutual Aid Assistance Group Tactical Team",
+      "category": "collateral_assignment",
+      "dates": "2005/2011",
+      "source": "CAREER_CONSTANTS.md:372-382",
+      "verification_status": "indexed",
+      "verified_facts": ["On-call multi-agency tactical-team member"],
+      "competencies": ["multi-agency-teamwork", "operational-readiness", "high-consequence-decisions"],
+      "profiles": ["corporate-security", "public-safety", "management"],
+      "safe_claims": ["Served on the on-call Dakota County Mutual Aid Assistance Group Tactical Team."],
+      "cautions": ["Do not abbreviate to SWAT unless role context requires it.", "Do not list as a separate full-time job block."],
+      "related_archives": []
+    }
+  ]
+}
