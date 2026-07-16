@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0.0",
+  "candidate": "Troy J. Hokanson",
+  "employer": "Meta",
+  "role": "Oversight Operations Investigator",
+  "category": "trust-and-safety",
+  "date_created": "2026-07-16",
+  "status": "drafting",
+  "priority": "Tier 1",
+  "fit_score": 84,
+  "work_mode": "remote",
+  "signature_decision": "typed_name_only",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1LefJh50C3wq3QShOkw8JnPJucMxBKI3w",
+  "notion_record_status": "pending_connector_write",
+  "documents": {
+    "resume_docx": "Troy_Hokanson_Resume_Meta_Oversight_Operations_Investigator.docx",
+    "resume_pdf": "Troy_Hokanson_Resume_Meta_Oversight_Operations_Investigator.pdf",
+    "cover_letter_docx": "Troy_Hokanson_Cover_Letter_Meta_Oversight_Operations_Investigator.docx",
+    "cover_letter_pdf": "Troy_Hokanson_Cover_Letter_Meta_Oversight_Operations_Investigator.pdf",
+    "resume_markdown": "resume.md",
+    "cover_letter_markdown": "cover_letter.md"
+  },
+  "qa": {
+    "resume_complete": true,
+    "cover_letter_complete": true,
+    "pdf_package_complete": true,
+    "markdown_archive_complete": false,
+    "notion_link_complete": false,
+    "final_visual_review_complete": false
+  }
+}
