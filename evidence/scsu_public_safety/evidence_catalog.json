@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0",
+  "collection": "St. Cloud State University Public Safety",
+  "subject": "Troy Hokanson",
+  "source_root": "Google Drive/01_Investigator Command Center/05_Awards and Commendations/SCSU Public Safety",
+  "public_repository_notice": "Source scans contain names, signatures, and historical institutional contact information. Use as verification artifacts; do not attach to applications unless requested.",
+  "documents": [
+    {
+      "id": "scsu-1996-05-22-narcotics-investigation-appreciation",
+      "file": "1996-05-22_narcotics_investigation_appreciation.jpg",
+      "document_date": "1996-05-22",
+      "document_type": "letter_of_appreciation",
+      "issuer": "Julie Lundgren, St. Cloud State University Public Safety",
+      "verified_facts": [
+        "Assisted with a narcotics investigation on May 2, 1996",
+        "Used interviews, room searches, and investigative techniques",
+        "Investigation recovered narcotics and paraphernalia"
+      ],
+      "competencies": ["investigations", "interviewing", "search", "teamwork", "professionalism"],
+      "profiles": ["siu-fraud", "analyst-intelligence", "public-safety"],
+      "safe_claim": "Received written appreciation for teamwork, interviews, searches, and investigative support in a campus narcotics investigation.",
+      "cautions": []
+    },
+    {
+      "id": "scsu-1996-09-04-training-program-appreciation",
+      "file": "1996-09-04_training_program_appreciation.jpg",
+      "document_date": "1996-09-04",
+      "document_type": "letter_of_appreciation",
+      "issuer": "Mark Petrick, St. Cloud State University Public Safety",
+      "verified_facts": [
+        "Appointed training coordinator",
+        "Developed curricula, lesson plans, schedules, and critique sheets",
+        "Coordinated classroom locations, instructors, equipment, and logistics",
+        "Created practical classes and scenarios",
+        "Participant critique sheets showed the expanded training surpassed expectations"
+      ],
+      "competencies": ["training", "onboarding", "curriculum-development", "program-implementation", "logistics", "instructor-coordination", "feedback-analysis", "continuous-improvement"],
+      "profiles": ["vendor-solutions", "public-safety", "learning-development", "customer-success"],
+      "safe_claim": "Developed and coordinated a university public-safety training program whose participant evaluations surpassed expectations.",
+      "cautions": []
+    },
+    {
+      "id": "scsu-1996-11-18-student-investigator-selection",
+      "file": "1996-11-18_student_investigator_selection.jpg",
+      "document_date": "1996-11-18",
+      "document_type": "selection_memo",
+      "issuer": "Warren Anderson, St. Cloud State University Public Safety",
+      "verified_facts": [
+        "Selected for Student Investigator duties",
+        "Assignment required case-time documentation and formal reports",
+        "Assignment required independent work, analytical ability, communication, and flexible client contact"
+      ],
+      "competencies": ["investigations", "case-management", "documentation", "analytical-judgment", "communication", "independent-work"],
+      "profiles": ["siu-fraud", "analyst-intelligence", "public-safety"],
+      "safe_claim": "Selected for campus investigative duties requiring independent case documentation, analytical judgment, and client communication.",
+      "cautions": [
+        "Memo is dated November 18, 1996 but refers to Spring quarter 1996; preserve this discrepancy unless corroborating evidence resolves it."
+      ]
+    },
+    {
+      "id": "scsu-1997-03-05-mark-petrick-recommendation",
+      "files": [
+        "1997-03-05_mark_petrick_recommendation_page_1.jpg",
+        "1997-03-05_mark_petrick_recommendation_page_2.jpg"
+      ],
+      "document_date": "1997-03-05",
+      "document_type": "letter_of_recommendation",
+      "issuer": "Mark A. Petrick, Director, St. Cloud State University Public Safety",
+      "verified_facts": [
+        "Progressed from student officer to Sergeant",
+        "Served as Training Supervisor and developed, coordinated, and supervised the departmental training course",
+        "Served as Investigation Sergeant and handled complex cases requiring interviews and written statements",
+        "Served as Operations Sergeant supervising four to eight student officers and managing a shift",
+        "Recommendation credits initiative, adaptability, integrity, communication, attention to detail, and development of junior officers"
+      ],
+      "competencies": ["leadership", "training", "program-management", "investigations", "interviewing", "written-communication", "supervision", "shift-operations", "coaching"],
+      "profiles": ["vendor-solutions", "siu-fraud", "analyst-intelligence", "public-safety", "management"],
+      "safe_claim": "Progressed through training, investigative, and operations leadership assignments while developing officers and managing public-safety programs.",
+      "cautions": ["Use the precise historical title supported by the source and relevant application context."]
+    },
+    {
+      "id": "scsu-1998-01-01-hiring-process-appreciation",
+      "file": "1998-01-01_hiring_process_appreciation.jpg",
+      "document_date": "1998-01-01",
+      "document_type": "letter_of_appreciation",
+      "issuer": "Mary Jo Trobec, St. Cloud State University Public Safety",
+      "verified_facts": [
+        "Assisted with interviewing fourteen University Public Safety Officer candidates on November 13-14, 1997",
+        "Contributed to appropriate and responsible hiring decisions",
+        "Participation required five hours"
+      ],
+      "competencies": ["interviewing", "candidate-assessment", "hiring", "decision-support", "team-selection"],
+      "profiles": ["management", "public-safety", "learning-development"],
+      "safe_claim": "Assisted with a fourteen-candidate public-safety hiring process and contributed to selection decisions.",
+      "cautions": []
+    }
+  ]
+}
