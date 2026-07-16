@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://career-system.local/schemas/application-package.schema.json",
+  "title": "Troy Hokanson Application Package",
+  "type": "object",
+  "required": ["candidate", "employer", "role", "status", "notion", "google_drive", "github", "artifacts"],
+  "properties": {
+    "schema_version": {"type": "string", "const": "1.0"},
+    "candidate": {"type": "string", "const": "Troy Hokanson"},
+    "employer": {"type": "string", "minLength": 1},
+    "role": {"type": "string", "minLength": 1},
+    "job_id": {"type": ["string", "null"]},
+    "job_url": {"type": ["string", "null"], "format": "uri"},
+    "created_date": {"type": "string", "format": "date"},
+    "applied_date": {"type": ["string", "null"], "format": "date"},
+    "status": {"type": "string", "enum": ["Researching", "Drafting", "Ready for Review", "Submitted", "Interviewing", "Offer", "Rejected", "Paused", "Withdrawn"]},
+    "fit_score": {"type": ["number", "null"], "minimum": 0, "maximum": 100},
+    "priority": {"type": ["string", "null"], "enum": ["Tier 1", "Tier 2", "Tier 3", null]},
+    "work_mode": {"type": ["string", "null"], "enum": ["Remote", "Hybrid", "Onsite", "Unknown", null]},
+    "signature_decision": {"type": "string", "enum": ["Typed name only", "Signature optional", "Signature recommended"]},
+    "notion": {"type": "object", "required": ["record_url", "record_complete"], "properties": {"record_url": {"type": ["string", "null"], "format": "uri"}, "record_complete": {"type": "boolean"}}},
+    "google_drive": {"type": "object", "required": ["folder_url", "folder_path", "upload_complete"], "properties": {"folder_url": {"type": ["string", "null"], "format": "uri"}, "folder_path": {"type": "string"}, "upload_complete": {"type": "boolean"}}},
+    "github": {"type": "object", "required": ["repository", "package_path"], "properties": {"repository": {"type": "string", "const": "troyhokanson/tjh-resume-cover-cv"}, "package_path": {"type": "string"}, "commit_sha": {"type": ["string", "null"]}}},
+    "artifacts": {"type": "object", "required": ["job_description", "resume_md", "cover_letter_md", "resume_docx", "resume_pdf", "cover_letter_docx", "cover_letter_pdf"], "properties": {"job_description": {"type": ["string", "null"]}, "resume_md": {"type": ["string", "null"]}, "cover_letter_md": {"type": ["string", "null"]}, "resume_docx": {"type": ["string", "null"]}, "resume_pdf": {"type": ["string", "null"]}, "cover_letter_docx": {"type": ["string", "null"]}, "cover_letter_pdf": {"type": ["string", "null"]}, "qa_report": {"type": ["string", "null"]}}},
+    "automation": {"type": "object", "properties": {"last_sync_at": {"type": ["string", "null"], "format": "date-time"}, "last_sync_status": {"type": "string", "enum": ["not_started", "partial", "complete", "failed"]}, "errors": {"type": "array", "items": {"type": "string"}}}}
+  },
+  "additionalProperties": false
+}
