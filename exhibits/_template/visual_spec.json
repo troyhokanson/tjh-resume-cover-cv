@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "candidate": "Troy J. Hokanson",
+  "fonts": {
+    "name": "Garamond Bold",
+    "body": "Garamond",
+    "supporting_sans": "Inter"
+  },
+  "palette": {
+    "navy": "#0D1B2A",
+    "gold": "#C9A84C",
+    "steel_blue": "#2D6A9F",
+    "white": "#FFFFFF"
+  },
+  "page_one_header": {
+    "style": "full_bleed",
+    "fills_top_edge": true,
+    "fills_left_edge": true,
+    "fills_right_edge": true,
+    "white_space_above": false,
+    "horizontal_alignment": "center",
+    "name_size_pt_approx": 28,
+    "name_color": "#FFFFFF",
+    "gold_rule": {"inset": true, "edge_to_edge": false},
+    "contact_row_color": "#C9A84C",
+    "subtitle_between_name_and_contact": false
+  },
+  "section_headings": {
+    "color": "#2D6A9F",
+    "underline_color": "#C9A84C"
+  },
+  "validation": {
+    "reference_docx": "../../reference_header.docx",
+    "header_builder": "../../docx_header.py",
+    "pdf_header_builder": "../../pdf_header.py",
+    "ats_floor_percent": 85,
+    "anti_ai_scan_required": true,
+    "visual_diff_required": true,
+    "native_docx_pdf_are_visual_source_of_truth": true
+  },
+  "notes": [
+    "This template mirrors Melissa's Markdown and JSON exhibit system while preserving Troy's established navy and gold standard.",
+    "Application-specific spacing values should be copied from the approved native packet and recorded here when an exhibit is finalized."
+  ]
+}
