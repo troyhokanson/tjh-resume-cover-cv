@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Determine whether Troy Hokanson should add a visible handwritten signature image to a cover-letter PDF before submission.",
+  "default_action": "typed_name_only",
+  "never_use": {
+    "certificate_based_digital_signature": true,
+    "reason": "Cryptographic or certificate-based signing is unnecessary for ordinary job applications unless the employer specifically requires it."
+  },
+  "recommend_visible_signature_when": [
+    {
+      "condition": "The cover letter is being emailed directly to a named recruiter, hiring manager, executive, or professional contact.",
+      "weight": 3
+    },
+    {
+      "condition": "The application is for a traditional, executive, investigative, public-safety, legal, government-contractor, insurance, or senior corporate role where a formal packet adds credibility.",
+      "weight": 2
+    },
+    {
+      "condition": "The final submission format is PDF and the signature image is clean, transparent, properly scaled, and does not disrupt page balance or ATS readability.",
+      "weight": 2
+    },
+    {
+      "condition": "The application is a direct-send packet rather than a high-volume applicant-tracking-system upload.",
+      "weight": 2
+    },
+    {
+      "condition": "The employer or recipient appears to value formal business correspondence.",
+      "weight": 1
+    }
+  ],
+  "avoid_visible_signature_when": [
+    {
+      "condition": "The application is being uploaded through a standard applicant-tracking system with no direct human recipient.",
+      "weight": -2
+    },
+    {
+      "condition": "The signature causes the cover letter to exceed one page, creates crowding, or produces excessive white space elsewhere.",
+      "weight": -4
+    },
+    {
+      "condition": "The available signature image is blurry, includes a white box, has inconsistent color, or appears pasted onto the page.",
+      "weight": -4
+    },
+    {
+      "condition": "The employer requests unsigned materials or provides no place for supplemental documents.",
+      "weight": -5
+    },
+    {
+      "condition": "The file is being submitted as DOCX rather than PDF.",
+      "weight": -3
+    }
+  ],
+  "decision_thresholds": {
+    "3_or_more": "Recommend adding the visible handwritten signature to the PDF cover letter.",
+    "1_to_2": "Optional. Remind Troy that the typed name is fully professional and the signature is a presentation choice only.",
+    "0_or_less": "Use typed name only and do not recommend adding a signature."
+  },
+  "mandatory_build_reminder": {
+    "trigger": "Before delivering or submitting every cover-letter package.",
+    "message_when_recommended": "A visible signature would add polish for this submission. Add the approved transparent signature image to the final PDF before sending.",
+    "message_when_optional": "A signature is optional here. The typed closing is already professional.",
+    "message_when_not_recommended": "Use the typed closing only for this submission."
+  },
+  "privacy_and_security": {
+    "store_signature_image_in_public_repository": false,
+    "instruction": "Never commit Troy's actual signature image to a public GitHub repository. Store it only in a secure local or private location and reference it during final PDF generation."
+  }
+}
