@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "authority": "Permanent routing rule for Troy Hokanson career application materials",
+  "systems": {
+    "notion": {
+      "role": "command_center_and_authoritative_status_database",
+      "required_database": "Investigator Command Center / Applications",
+      "required_links": ["Google Drive Folder", "GitHub Package", "Job URL"],
+      "required_tracking": ["Status", "Priority", "Fit Score", "Next Action", "Follow-Up Date", "Signature Decision", "package QA checkboxes"]
+    },
+    "google_drive": {
+      "role": "working_document_and_final_artifact_vault",
+      "root_path": "01_Investigator Command Center/09_Applications",
+      "application_folder_pattern": "YYYY-MM-DD_Company_Role",
+      "required_files_when_generated": ["job_description", "resume.docx", "resume.pdf", "cover_letter.docx", "cover_letter.pdf", "qa_report"],
+      "prohibit_final_files_outside_root": true
+    },
+    "github": {
+      "role": "standards_reusable_content_metadata_and_automation_source_of_truth",
+      "repository": "troyhokanson/tjh-resume-cover-cv",
+      "required_files_per_application": ["resume.md", "cover_letter.md", "application.json"],
+      "prohibit_sensitive_signature_image": true,
+      "prohibit_private_identifiers": ["SSN", "date of birth", "private case victim data", "medical records"]
+    },
+    "telegram": {
+      "role": "time_sensitive_alerting_only",
+      "allowed": ["high-fit jobs", "daily digest", "workflow failure", "weekly health summary"],
+      "not_authoritative": true
+    }
+  },
+  "event_rules": [
+    {
+      "event": "job_retained",
+      "actions": ["create_or_update_notion_record", "send_telegram_if_threshold_met"]
+    },
+    {
+      "event": "application_package_generated",
+      "actions": ["save_docx_and_pdf_to_drive", "save_md_and_json_to_github", "write_drive_and_github_links_to_notion", "run_package_qa"]
+    },
+    {
+      "event": "application_submitted",
+      "actions": ["update_notion_status", "record_applied_date", "set_follow_up_date", "preserve_submitted_versions"]
+    },
+    {
+      "event": "weekly_health_check",
+      "actions": ["check_workflows", "check_notion_completeness", "check_drive_package_presence", "check_github_standards", "report_to_user"]
+    }
+  ],
+  "human_approval_required": ["application submission", "outbound recruiter email", "visible signature use", "new factual claim", "deletion", "withdrawal"],
+  "failure_policy": {
+    "never_silently_drop": true,
+    "record_partial_sync_in_application_json": true,
+    "notify_on_critical_failure": true,
+    "retry_transient_network_errors": 3
+  }
+}
