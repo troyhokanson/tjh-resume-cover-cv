@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "candidate": "Troy J. Hokanson",
+  "company": "REPLACE_ME",
+  "position": "REPLACE_ME",
+  "requisition": null,
+  "application_date": "YYYY-MM-DD",
+  "status": "Draft",
+  "location": null,
+  "remote_type": null,
+  "application_url": null,
+  "profile": "vendor-solutions",
+  "documents": {
+    "resume_markdown": "resume.md",
+    "cover_letter_markdown": "cover_letter.md",
+    "resume_docx_expected": null,
+    "resume_pdf_expected": null,
+    "cover_letter_docx_expected": null,
+    "cover_letter_pdf_expected": null
+  },
+  "validation": {
+    "ats_floor_percent": 85,
+    "ats_passed": false,
+    "anti_ai_scan_passed": false,
+    "visual_review_passed": false,
+    "claims_verified": false
+  },
+  "source_of_truth": {
+    "content": ["resume.md", "cover_letter.md"],
+    "visual_layout": "Native DOCX and rendered PDF files",
+    "header_standard": "../../HEADER_STANDARD.md",
+    "voice_standard": "../../VOICE_STANDARD.md",
+    "case_bank": "../../CASE_BANK.md"
+  }
+}
