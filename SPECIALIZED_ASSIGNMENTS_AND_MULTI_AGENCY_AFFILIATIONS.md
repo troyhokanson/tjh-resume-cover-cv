@@ -9,26 +9,32 @@
 
 This file preserves accurate titles, date ranges, duty structure, training cadence, on-call status, and public-facing wording for Troy Hokanson's specialized assignments and multi-agency operational affiliations. Use it when preparing resumes, cover letters, LinkedIn content, interview materials, or the TroyHokanson.com portfolio.
 
-These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, part-time or split-duty task-force assignments, scheduled on-call rotations, duty-time response, agency representation, and professional memberships.
+These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, part-time or split-duty task-force assignments, scheduled on-call rotations, continuous team-based on-call status, duty-time response, agency representation, and professional memberships.
 
 ---
 
 ## 2. Dakota County Mutual Aid Assistance Group — MAAG / Lakeville Police Tactical Team
 
-**Lakeville Police Tactical Team Representative, 2005–2011**  
-**Duty structure:** Monthly team training, annual full-week training, and on-call tactical response.
+**Lakeville Police Tactical Team Representative — Bravo Team, 2005–2011**  
+**Duty structure:** Permanent assignment to Bravo Team, continuous on-call availability, monthly team training, and annual full-week training.
 
-Served as Lakeville Police Department's representative to the Dakota County Mutual Aid Assistance Group through the department's tactical team. The team generally trained one Wednesday each month for approximately 8–10 hours and completed one full week of annual training at locations including Camp Ripley, Minnesota; Camp Dodge, Iowa; or Fort McCoy, Wisconsin. Outside scheduled training, team members remained available for on-call tactical response and high-risk public-safety operations.
+Troy served as Lakeville Police Department's representative to the Dakota County Mutual Aid Assistance Group through the department's tactical team and was assigned specifically to Bravo Team. The approximately 34-officer tactical organization was divided into Alpha and Bravo teams. Team members remained continuously on call rather than rotating through weekly on-call periods. Depending on the nature and scale of an incident, command personnel could page one team, selected personnel, or both teams; all 34 officers were not automatically activated for every callout.
+
+The team generally trained one Wednesday each month for approximately 8–10 hours and completed one full week of annual training at locations including Camp Ripley, Minnesota; Camp Dodge, Iowa; or Fort McCoy, Wisconsin.
 
 ### Permitted short forms
 
-- `Dakota County MAAG — Lakeville Police Tactical Team Representative, 2005–2011`
-- `Lakeville Police Tactical Team / Dakota County MAAG — monthly and annual training with on-call operational response, 2005–2011`
+- `Dakota County MAAG — Lakeville Police Tactical Team Representative, Bravo Team, 2005–2011`
+- `Lakeville Police Tactical Team / Dakota County MAAG — Bravo Team; continuously on call with monthly and annual training, 2005–2011`
 
 ### Guardrails
 
+- Do not describe SWAT or MAAG coverage as a weekly on-call rotation.
+- Preserve that Troy was assigned specifically to Bravo Team.
+- Preserve continuous on-call availability throughout the assignment.
+- Do not imply that all approximately 34 officers were paged for every incident.
 - Do not describe this as a full-time tactical assignment.
-- Do not reduce the assignment to merely `on-call`; scheduled monthly and annual training were substantial recurring components.
+- Do not reduce the assignment to merely `on-call`; monthly and annual training were substantial recurring components.
 - Use `Camp Ripley`, not `Camp Riley`, unless a source document establishes different wording.
 - Preserve the Lakeville representative and multi-agency relationship.
 
@@ -95,7 +101,7 @@ Use a dedicated heading on TroyHokanson.com:
 
 ### Specialized Assignments & Multi-Agency Affiliations
 
-- **Dakota County Mutual Aid Assistance Group (MAAG)** — Lakeville Police Tactical Team Representative; monthly training, annual full-week training, and on-call response, 2005–2011
+- **Dakota County Mutual Aid Assistance Group (MAAG)** — Lakeville Police Tactical Team Representative, Bravo Team; continuously on call with monthly training and annual full-week training, 2005–2011
 - **Lakeville Police Crime Scene Unit (CSU)** — Team Member; scheduled one-week on-call rotation and duty-time scene response, 2012–2018
 - **Dakota County Electronic Crimes Task Force (DCECTF)** — Lakeville Police Detective & Digital Forensic Examiner Representative; split-duty assignment while serving full time in Lakeville Police Investigations, 2017–2021
 - **Minnesota Internet Crimes Against Children Task Force** — Digital Forensic Examiner | Lakeville Police Department Representative, 2016–2021
@@ -119,7 +125,7 @@ Use these assignments selectively based on role relevance:
 
 ## 7. Canonical Combined Statement
 
-> Held multiple specialized and multi-agency assignments while serving with Lakeville Police Department. Represented Lakeville on the Dakota County MAAG tactical team from 2005 through 2011, completing monthly 8–10-hour training sessions, annual full-week training, and on-call tactical response. Served on the Lakeville Police Crime Scene Unit from 2012 through 2018, responding during scheduled one-week on-call periods and when specialized scene support was needed while on duty. From 2017 through 2021, worked full time as a Lakeville detective while serving part time in a split-duty assignment as Lakeville's detective and digital forensic examiner representative to the Dakota County Electronic Crimes Task Force. During the investigations assignment, participated in a rotating weekly on-call schedule that generally placed each detective on call for one full week approximately every seven weeks.
+> Held multiple specialized and multi-agency assignments while serving with Lakeville Police Department. Represented Lakeville on the Dakota County MAAG tactical team from 2005 through 2011 as a member of Bravo Team, remaining continuously on call while completing monthly 8–10-hour training sessions and annual full-week training. The approximately 34-officer organization used Alpha and Bravo teams, and activations could involve one team, selected personnel, or both teams depending on the incident. Served on the Lakeville Police Crime Scene Unit from 2012 through 2018, responding during scheduled one-week on-call periods and when specialized scene support was needed while on duty. From 2017 through 2021, worked full time as a Lakeville detective while serving part time in a split-duty assignment as Lakeville's detective and digital forensic examiner representative to the Dakota County Electronic Crimes Task Force. During the investigations assignment, participated in a rotating weekly on-call schedule that generally placed each detective on call for one full week approximately every seven weeks.
 
 ---
 
@@ -127,6 +133,7 @@ Use these assignments selectively based on role relevance:
 
 - Locate appointment letters, rosters, training records, evaluations, commendations, or assignment memoranda supporting each date range
 - Confirm whether MAAG documentation uses a longer formal organizational name
+- Locate tactical-team rosters supporting Bravo Team assignment and the Alpha/Bravo structure
 - Locate tactical-team calendars or training records supporting the monthly and annual cadence
 - Locate CSU schedules or records supporting the designated one-week on-call structure
 - Confirm the exact DCECTF appointment, split-duty schedule, and rotation dates where public-facing precision is needed
