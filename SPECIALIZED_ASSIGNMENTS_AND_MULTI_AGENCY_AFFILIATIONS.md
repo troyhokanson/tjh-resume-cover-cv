@@ -1,15 +1,15 @@
 # Troy Hokanson — Specialized Assignments and Multi-Agency Affiliations
 
-**Status:** Canonical source for on-call specialized assignments, agency representative roles, and multi-agency operational affiliations  
+**Status:** Canonical source for specialized assignments, split-duty task-force service, agency representative roles, and multi-agency operational affiliations  
 **Last updated:** July 17, 2026
 
 ---
 
 ## 1. Purpose
 
-This file preserves accurate titles, date ranges, on-call status, and public-facing wording for Troy Hokanson's specialized assignments and multi-agency operational affiliations. Use it when preparing resumes, cover letters, LinkedIn content, interview materials, or the TroyHokanson.com portfolio.
+This file preserves accurate titles, date ranges, duty structure, on-call status, and public-facing wording for Troy Hokanson's specialized assignments and multi-agency operational affiliations. Use it when preparing resumes, cover letters, LinkedIn content, interview materials, or the TroyHokanson.com portfolio.
 
-These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, on-call collateral assignments, task-force representation, and professional memberships.
+These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, part-time or split-duty task-force assignments, on-call collateral assignments, agency representation, and professional memberships.
 
 ---
 
@@ -45,22 +45,36 @@ Do not describe the CSU role as a full-time crime-scene examiner position. It wa
 
 ---
 
-## 4. Dakota County Electronic Crimes Task Force — DCECTF
+## 4. Lakeville Police Investigations and Dakota County Electronic Crimes Task Force — DCECTF
 
-**Lakeville Police Detective & Digital Forensic Examiner Representative (On-Call), 2017–2021**
+**Lakeville Police Detective & Digital Forensic Examiner Representative, 2017–2021**  
+**Duty structure:** Full-time detective assigned to Lakeville Police investigations, with part-time/split-duty service at the Dakota County Electronic Crimes Task Force and continuing on-call investigative responsibilities.
 
-Represented Lakeville Police Department on the Dakota County Electronic Crimes Task Force as a detective and digital forensic examiner. Supported digital investigations, forensic examinations, electronic-evidence recovery, legal process, multi-agency coordination, and technical assistance to participating agencies.
+Troy worked full time in investigations for Lakeville Police Department while also serving part time as Lakeville's representative to the Dakota County Electronic Crimes Task Force. His DCECTF responsibilities included digital investigations, forensic examinations, electronic-evidence recovery, legal process, multi-agency coordination, and technical assistance to participating agencies.
 
-### Permitted short form
+The DCECTF assignment was not merely an on-call collateral role. It was a recurring split-duty assignment performed alongside Troy's full-time Lakeville detective responsibilities. At the same time, Troy remained part of Lakeville Police Investigations' rotating on-call schedule.
 
-- `Dakota County Electronic Crimes Task Force — Lakeville Police Detective & Digital Forensic Examiner Representative (On-Call), 2017–2021`
+### Investigations on-call rotation
+
+- Lakeville detectives rotated on-call responsibility weekly.
+- Each detective typically covered one full week of on-call responsibility.
+- With the detective staffing structure in place at the time, Troy's on-call week generally recurred approximately every seven weeks.
+- The on-call rotation supported after-hours investigative response, major incidents, time-sensitive legal process, evidence coordination, and other urgent investigative needs.
+
+### Permitted short forms
+
+- `Dakota County Electronic Crimes Task Force — Lakeville Police Detective & Digital Forensic Examiner Representative, 2017–2021`
+- `Full-time Lakeville detective with part-time DCECTF assignment and rotating investigations on-call coverage, 2017–2021`
+- `Lakeville Police Detective / Digital Forensic Examiner — split-duty assignment between LPD Investigations and DCECTF, 2017–2021`
 
 ### Guardrails
 
 - Preserve the agency-representative relationship.
-- Preserve the `on-call` distinction when describing the assignment at a high level.
+- Do not label the entire DCECTF assignment simply `on-call`.
+- Do not describe the DCECTF assignment as full-time unless a specific period or record supports that narrower claim.
+- Describe the overall structure as full-time Lakeville investigations with part-time or split-duty DCECTF service.
+- Preserve the separate rotating on-call responsibility within Lakeville Police Investigations.
 - Do not imply employment by Dakota County or a vendor.
-- Do not describe all task-force work as full-time unless a specific period or record supports that narrower claim.
 - Use the detailed forensic chronology for tool-specific dates and platform progression.
 
 ---
@@ -73,7 +87,7 @@ Use a dedicated heading on TroyHokanson.com:
 
 - **Dakota County Mutual Aid Assistance Group (MAAG)** — Lakeville Police Tactical Team Representative (On-Call), 2005–2011
 - **Lakeville Police Crime Scene Unit (CSU)** — Team Member (On-Call), 2012–2018
-- **Dakota County Electronic Crimes Task Force (DCECTF)** — Lakeville Police Detective & Digital Forensic Examiner Representative (On-Call), 2017–2021
+- **Dakota County Electronic Crimes Task Force (DCECTF)** — Lakeville Police Detective & Digital Forensic Examiner Representative; split-duty assignment while serving full time in Lakeville Police Investigations, 2017–2021
 - **Minnesota Internet Crimes Against Children Task Force** — Digital Forensic Examiner | Lakeville Police Department Representative, 2016–2021
 
 The Minnesota ICAC entry remains governed by `MEMBERSHIPS_AND_AFFILIATIONS.md` because its official task-force name and approved descriptive language have already been standardized there.
@@ -89,13 +103,13 @@ Use these assignments selectively based on role relevance:
 - **Investigations / corporate security:** DCECTF and CSU; MAAG when high-risk response or interagency coordination is relevant
 - **Evidence / crime-scene roles:** CSU and DCECTF
 - **Tactical technology / training:** MAAG and SOTA
-- **Academic CV:** include all specialized assignments with clear on-call labels
+- **Academic CV:** include all specialized assignments with accurate duty-structure labels
 
 ---
 
 ## 7. Canonical Combined Statement
 
-> Held multiple on-call specialized assignments while serving with Lakeville Police Department, including Lakeville's tactical-team representation to Dakota County MAAG from 2005 through 2011, Crime Scene Unit service from 2012 through 2018, and agency representation to the Dakota County Electronic Crimes Task Force as a detective and digital forensic examiner from 2017 through 2021.
+> Held multiple specialized and multi-agency assignments while serving with Lakeville Police Department, including on-call tactical-team representation to Dakota County MAAG from 2005 through 2011, on-call Crime Scene Unit service from 2012 through 2018, and a split-duty assignment from 2017 through 2021 as a full-time Lakeville detective who also served part time as Lakeville's detective and digital forensic examiner representative to the Dakota County Electronic Crimes Task Force. During the investigations assignment, participated in a rotating weekly on-call schedule that generally placed each detective on call for one full week approximately every seven weeks.
 
 ---
 
@@ -103,7 +117,8 @@ Use these assignments selectively based on role relevance:
 
 - Locate appointment letters, rosters, training records, evaluations, commendations, or assignment memoranda supporting each date range
 - Confirm whether MAAG documentation uses a longer formal organizational name
-- Confirm the exact DCECTF appointment and rotation dates where public-facing precision is needed
+- Confirm the exact DCECTF appointment, split-duty schedule, and rotation dates where public-facing precision is needed
+- Locate any investigations on-call schedules or policy records supporting the approximately seven-week rotation
 - Identify public-safe, redacted supporting documents for each assignment
 
 Absence of a public document does not erase the assignment. It controls whether the portfolio labels it verified, documented, or user-reported and whether supporting evidence is linked publicly.
