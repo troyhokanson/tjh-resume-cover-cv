@@ -4,7 +4,12 @@
 
 This file is the upstream decision tree that maps a job posting to one of the four profiles defined in [`PROFILES.md`](./PROFILES.md). Run this before you scan and before you build. The wrong profile produces the wrong document and wastes a real submission slot.
 
-For law-enforcement technology, SLED, public-safety SaaS, digital evidence, ALPR, RTCC, CAD/RMS, body-worn camera, DFR, investigative-data, or DFIR vendor roles, also read [`SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md`](./SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md).
+For law-enforcement technology, SLED, public-safety SaaS, digital evidence, ALPR, RTCC, CAD/RMS, body-worn camera, fleet video, mission-critical communications, patrol equipment, DFR, investigative-data, or DFIR vendor roles, also read:
+
+- [`SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md`](./SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md)
+- [`PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md`](./PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md)
+
+The strategy file defines target companies, role families, remote rules, and travel limits. The technology inventory defines Troy's exact product experience, primary-versus-supplemental workflows, and permitted proficiency language.
 
 If you cannot decide, **default to `vendor-solutions`** and note the uncertainty in the build log.
 
@@ -22,7 +27,7 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Customer Success Manager, Senior Customer Success Manager, Strategic Customer Success Manager | `vendor-solutions` when the employer serves public safety, law enforcement, justice, DFIR, or SLED |
 | Scaled Customer Success Manager, Growth Customer Success Manager, Customer Success Manager - Majors | `vendor-solutions` when the employer serves public safety, law enforcement, justice, DFIR, or SLED |
 | Customer Success Engineer, Customer Success Advocate, Agency Success Manager | `vendor-solutions` |
-| Technical Account Manager, Senior Technical Account Manager | `vendor-solutions` when the product serves public safety, investigations, evidence, or DFIR |
+| Technical Account Manager, Senior Technical Account Manager | `vendor-solutions` when the product serves public safety, investigations, evidence, communications, fleet, or DFIR |
 | Customer Engagement Manager, Engagement Manager, Customer Program Manager | `vendor-solutions` when customer implementation or adoption is the core duty |
 | Account Manager - Law Enforcement, Strategic Account Manager - Public Safety | `vendor-solutions` |
 | Public Safety Manager, Public Safety Strategy, Public Safety Strategist | `vendor-solutions` |
@@ -34,7 +39,7 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Public Safety Project Manager, Service Delivery Project Manager, Deployment Program Manager | `vendor-solutions` |
 | Customer Onboarding Manager, Customer Onboarding Consultant, Adoption Consultant | `vendor-solutions` |
 | Business Analyst - Public Safety, Business Analyst - Justice | `vendor-solutions` |
-| Field Application Specialist, Product Specialist - Public Safety / Forensics | `vendor-solutions` |
+| Field Application Specialist, Product Specialist - Public Safety / Forensics / Fleet | `vendor-solutions` |
 | Investigative Trainer, Technical Trainer, Customer Training Consultant | `vendor-solutions` |
 | Training Specialist - Public Safety, Law Enforcement Trainer, Customer Education Manager | `vendor-solutions` |
 | Customer Enablement Manager, Product Trainer, Curriculum Developer - Public Safety | `vendor-solutions` |
@@ -43,6 +48,8 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | DFR Program Manager, DFR Implementation Consultant, DFR Training Specialist | `vendor-solutions` |
 | DFR Technical Account Manager, Public Safety Drone Solutions Consultant | `vendor-solutions` |
 | Digital Evidence Consultant, Evidence Solutions Consultant, ALPR Solutions Consultant | `vendor-solutions` |
+| Body-Worn Camera Program Consultant, Fleet Video Implementation Consultant | `vendor-solutions` |
+| Mission-Critical Communications Consultant, Public Safety Radio Product Specialist | `vendor-solutions` |
 | Real-Time Crime Center Solutions Consultant, CAD/RMS Implementation Consultant | `vendor-solutions` |
 | Digital Forensics Consultant, Mobile Forensics Consultant, Forensic Solutions Consultant | `vendor-solutions` when employed by a vendor or professional-services team |
 | Investigative Analyst or Geolocation Analyst at a public-safety vendor | `analyst-intelligence` unless the role is mainly customer training, implementation, demos, or adoption, then `vendor-solutions` |
@@ -69,8 +76,10 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | DFR / public-safety drone vendor | Strong pull toward `vendor-solutions` for customer success, training, implementation, program, and solutions roles. |
 | ALPR / RTCC / investigative-intelligence vendor | Strong pull toward `vendor-solutions`. |
 | CAD / RMS / dispatch / justice software vendor | Strong pull toward `vendor-solutions` for implementation, professional services, business analyst, customer success, and training roles. |
+| Body-camera / fleet-video / connected-device vendor | Strong pull toward `vendor-solutions` for customer success, implementation, training, technical account, evidence, and product-adoption roles. |
+| Mission-critical communications / patrol-equipment vendor | Strong pull toward `vendor-solutions` for customer, training, field-application, implementation, and agency-advisory roles. |
 | LexisNexis Risk Solutions Government / Public Safety | Strong pull toward `vendor-solutions` for Accurint, Accurint One, Accurint Virtual Crime Center, Accurint TraX / ZetX, training, product, account, implementation, and service-delivery roles. Use `analyst-intelligence` for analyst-only geolocation or investigative-analysis positions. |
-| Flock Safety, Axon, Cellebrite, Magnet Forensics, Skydio, Motorola Solutions, Mark43, Tyler Technologies, Peregrine, SoundThinking, Genetec, RapidSOS, DroneSense, BRINC, Paladin, Rekor, CentralSquare, Hexagon, Veritone | Strong pull toward `vendor-solutions` when the job is customer-facing, implementation, training, solutions, technical account, program, or product-adoption focused. |
+| Flock Safety, Axon, Cellebrite, Magnet Forensics, Skydio, Motorola Solutions, Mark43, Tyler Technologies, Peregrine, SoundThinking, Genetec, RapidSOS, DroneSense, BRINC, Paladin, Rekor, CentralSquare, Hexagon, Veritone, SUMURI, OpenText, Exterro, Griffeye, Whelen | Strong pull toward `vendor-solutions` when the job is customer-facing, implementation, training, solutions, technical account, program, product-adoption, or field-application focused. |
 | Insurance carrier | Strong pull toward `siu-fraud`. |
 | Bank / fintech / payments | Strong pull toward `analyst-intelligence`. |
 | Tech platform corporate security | Strong pull toward `analyst-intelligence`, unless the title is investigator-led. |
@@ -84,13 +93,27 @@ If the JD is heavy on:
 
 - **demo, customer demos, RFP, RFI, proof of concept, discovery, partner agencies, workshops, customer training, implementation, onboarding, adoption, go-live, customer outcomes, account health, technical account, QBR, professional services, conference, territory, travel** -> `vendor-solutions`
 - **public safety, SLED, law enforcement, CJIS, ALPR, body-worn camera, fleet video, digital evidence, RTCC, CAD, RMS, dispatch, DFR, UAS, customer agency, command staff, patrol workflow** -> strong `vendor-solutions` signal when paired with customer-facing duties
+- **Axon Body 3, Axon Fleet 2, TASER X26, Motorola mobile radio, portable radio, mission-critical communications, Whelen, emergency vehicle equipment** -> `vendor-solutions` for training, customer success, implementation, solutions, field applications, or agency-advisory duties
 - **Accurint, Accurint One, Accurint Virtual Crime Center, Accurint TraX, ZetX, geolocation, cellular records, Google Earth, investigative trainer** -> `vendor-solutions` for training, customer, solutions, product, account, and service-delivery duties; `analyst-intelligence` for analyst-only duties
-- **Cellebrite, UFED, Physical Analyzer, Magnet AXIOM, FTK, X-Ways, GrayKey, mobile forensics, forensic examiner** -> `vendor-solutions` when customer-facing; `analyst-intelligence` when examination or analysis is the primary output
+- **Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, BlackLight, MacQuisition, FTK, X-Ways, TALINO, RECON, Tableau write blocker, mobile forensics, forensic examiner** -> `vendor-solutions` when customer-facing; `analyst-intelligence` when examination or analysis is the primary output
 - **recorded statement, EUO, claim file, indicator review, NICB, restitution, charged out, plea, victim, premium** -> `siu-fraud`
 - **SAR / STR, AML, structured analytic, link analysis, finished intelligence, written products, briefing, OSINT, typology, key judgment** -> `analyst-intelligence`
 - **employee misconduct, colleague safety, workplace violence, insider threat, data loss, cyber activity, Legal, HR, Internal Audit, enterprise risk, corporate security, business leaders, investigative findings** -> `corporate-security-investigations`
 
 If two profiles tie, prefer the one supported by the company tiebreaker. If still tied, default to `vendor-solutions` and log the uncertainty.
+
+### Tool-selection rule
+
+When a posting mentions a specific vendor or product family, consult [`PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md`](./PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md) before drafting.
+
+For mobile-forensics roles, preserve this hierarchy:
+
+1. Cellebrite Touch 2 and UFED 4PC as primary extraction platforms.
+2. Cellebrite Physical Analyzer as the primary decoding, review, analysis, and reporting platform.
+3. GrayKey as part of the primary mobile-device access workflow.
+4. Magnet AXIOM or Apple/Mac forensic tools as targeted supplemental paths when app artifacts or presentation needed another analytical view.
+
+Do not flatten primary and supplemental tools into one undifferentiated list.
 
 ## Step 4: Apply remote-first and travel filters
 
@@ -113,13 +136,15 @@ Travel guidance:
 
 A `remote` label does not mean low travel. Read the entire posting.
 
-## Step 5: Confirm with the credentials catalog
+## Step 5: Confirm with the credentials catalog and technology inventory
 
-Run a lookup against [`skills/troy-credentials-library/credentials_catalog.json`](./skills/troy-credentials-library/credentials_catalog.json). If the profile selection produces fewer than three usable certs or documented experience assets from the catalog, the profile may be wrong. Re-read the JD and reselect.
+Run a lookup against [`skills/troy-credentials-library/credentials_catalog.json`](./skills/troy-credentials-library/credentials_catalog.json). For public-safety vendor roles, also verify product claims against [`PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md`](./PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md).
+
+If the profile selection produces fewer than three usable certs or documented experience assets, the profile may be wrong. Re-read the JD and reselect.
 
 Profile-to-cert and experience coverage rough floor:
 
-- `vendor-solutions` -> at least three of: Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, LexisNexis Accurint, ZetX / Accurint TraX, cell-site analysis, Google Earth, NW3C CCCI, adjunct teaching, FTO, reserve academy development, ALPR project, BCA Law Enforcement Supervision & Management.
+- `vendor-solutions` -> at least three of: Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, FTK, X-Ways, TALINO, Tableau write blockers, LexisNexis Accurint, ZetX / Accurint TraX, cell-site analysis, Google Earth, Axon Body 3, Axon Fleet 2, Motorola radios, Genetec AutoVu agency-side project, NW3C CCCI, adjunct teaching, FTO, reserve academy development, BCA Law Enforcement Supervision & Management.
 - `siu-fraud` -> at least three of: NW3C CCCI, Reid Technique, Financial Crimes Investigation, Show Me the Money / TCORCA Forensic Accounting, Business Email Compromise case, CFE in progress.
 - `analyst-intelligence` -> at least three of: NW3C CCCI, OSINT training, Accurint, ZetX / Accurint TraX, cell-site / historical cellular analysis, investigative writing / report writing training, Master's in Police Leadership, adjunct teaching as writing-for-audiences proof.
 - `corporate-security-investigations` -> at least three of: Reid Technique, search warrant training, threat / crisis response training, workplace violence / active shooter response, Cellebrite / FTK / X-Ways, NW3C cybercrime, forensic accounting, BCA supervision and management.
@@ -163,8 +188,12 @@ evidence_pack:
 - **Customer Success Manager or Account Manager with `Manager` in the title but no direct reports** -> treat as a senior individual-contributor `vendor-solutions` role.
 - **SIU title at a vendor company** -> `siu-fraud` if the JD reads as investigation-side; `vendor-solutions` if it reads as customer-product, training, implementation, or carrier-product-side.
 - **Financial Crime Investigator** at a bank -> usually `analyst-intelligence`. Confirm via Step 3 verbs.
-- **Public Safety Sales Engineer** at Axon, Veritone, Mark43, Flock, Peregrine, Motorola, or LexisNexis Risk Solutions -> `vendor-solutions`.
+- **Public Safety Sales Engineer** at Axon, Veritone, Mark43, Flock, Peregrine, Motorola, Genetec, or LexisNexis Risk Solutions -> `vendor-solutions`.
 - **Investigative Trainer at LexisNexis Risk Solutions** -> `vendor-solutions`; lead with Accurint, ZetX / Accurint TraX, cellular investigations, Google Earth, teaching, and curriculum development.
+- **Cellebrite role** -> lead with Touch 2, UFED 4PC, Physical Analyzer, task-force workflow, warrants, reporting, and courtroom use.
+- **Magnet Forensics role** -> lead with GrayKey in the primary mobile workflow and AXIOM as a targeted supplemental platform when app artifacts or presentation benefited from another analytical path.
+- **Genetec AutoVu role** -> lead with agency-side AutoVu ALPR project involvement in 2007; do not imply current certification or system-administrator experience.
+- **Axon role** -> lead with Body 3, Fleet 2, TASER X26, patrol, evidence, investigations, and training; do not imply personal operation or implementation of newer Axon DFR systems.
 - **Geolocation Investigations Analyst at LexisNexis Risk Solutions** -> `analyst-intelligence` when case analysis is primary; use `vendor-solutions` if the role primarily trains or supports customers.
 - **DFR role requiring Part 107 within a stated onboarding period** -> potentially viable; state willingness to earn it. Do not claim certification before completion.
 - **DFR role requiring extensive logged flight time or advanced aviation credentials** -> likely gap; score cautiously.
@@ -182,6 +211,9 @@ Verified live: [date]
 Remote status: [fully remote / home-based / territory / hybrid / onsite]
 Travel: [percentage or unknown]
 Direct reports: [yes / no / unclear]
+Technology inventory checked: True
+Primary tools selected: [relevant products only]
+Supplemental tools selected: [if relevant]
 allow_icac: False
 ```
 
