@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "effective_date": "2026-07-17",
+  "authority": "Mandatory routing and writeback standard for all Troy Hokanson career-document workflows.",
+  "core_rule": "Every verified correction, clarification, credential, award, metric, date, role detail, case outcome, or reusable language enhancement must be written to the correct authoritative source in the same working session and branch or pull request before a tailored application is finalized.",
+  "application_files_are_outputs": true,
+  "correction_sidecars_prohibited": true,
+  "routes": {
+    "employment_titles_employers_locations_dates_duration_role_boundaries": "CAREER_CONSTANTS.md",
+    "higher_education_teaching_academic_qualifications_faculty_development_teaching_recognition": "TEACHING_FACULTY_CONSTANTS.md",
+    "certifications_courses_training_hours_credential_ids_issuers_status": "skills/troy-credentials-library/credentials_catalog.json",
+    "investigative_cases_outcomes_metrics_case_language": "CASE_BANK.md",
+    "audience_positioning_role_family_strategy": "PROFILES.md",
+    "voice_tone_prohibited_language_punctuation": "VOICE_STANDARD.md",
+    "header_typography_color_margins_document_design": [
+      "HEADER_STANDARD.md",
+      "DOCX_NODE_STANDARD.md",
+      "standards/document_design_standard.json"
+    ],
+    "workflow_and_persistence": [
+      "SOURCE_OF_TRUTH_ROUTING.md",
+      "AGENTS.md",
+      "SYSTEM_PROMPT.md"
+    ],
+    "job_specific_nonreusable_tailoring": "applications/<date>_<employer>_<role>/"
+  },
+  "required_sequence": [
+    "classify_change",
+    "update_authoritative_source",
+    "update_tailored_application",
+    "verify_consistency",
+    "report_source_file_and_branch_or_pull_request"
+  ],
+  "completion_blockers": [
+    "new_reusable_fact_exists_only_in_chat",
+    "new_reusable_fact_exists_only_in_application_file",
+    "new_reusable_fact_exists_only_in_generated_document",
+    "authoritative_source_conflicts_with_tailored_document",
+    "correction_sidecar_used_instead_of_direct_source_update"
+  ],
+  "conflict_rule": "The narrower authoritative source controls its subject area. Resolve conflicts before finalizing the application.",
+  "branch_rule": "Use the active application branch and pull request when one exists; otherwise create a maintenance branch and pull request."
+}

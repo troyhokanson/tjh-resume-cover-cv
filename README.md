@@ -2,12 +2,13 @@
 
 **SINGLE SOURCE OF TRUTH** for every Troy Hokanson resume, cover letter, CV, recruiter packet, professional bio, one-pager, or any DOCX/PDF document bearing his name. This repo MUST be cloned into `/home/user/workspace/templates/` (via symlink) at the start of every application build session — automatically, no exceptions.
 
-This repo enforces four locked standards:
+This repo enforces five locked standards:
 
-1. **Navy/gold header layout** (HEADER_STANDARD.md, docx_header.py, pdf_header.py)
-2. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in VOICE_STANDARD.md and Layer 2 audience profiles in PROFILES.md. Enforced by anti_ai_scan.py. Pick the right profile using PROFILE_SELECTOR.md.
-3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
-4. **ATS keyword coverage** — ats_injector.py audits every build against the job description and flags missing terms before documents are sent.
+1. **Authoritative fact routing and writeback** — `SOURCE_OF_TRUTH_ROUTING.md` and `AGENTS.md` require every verified correction, clarification, credential, award, metric, or reusable language improvement to be committed to the correct source file before an application is finalized.
+2. **Navy/gold header layout** — `HEADER_STANDARD.md`, `DOCX_NODE_STANDARD.md`, `docx_header.py`, and `pdf_header.py`.
+3. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in `VOICE_STANDARD.md` and Layer 2 audience profiles in `PROFILES.md`. Enforced by `anti_ai_scan.py`. Pick the right profile using `PROFILE_SELECTOR.md`.
+4. **PTSD-safe scope and writing voice** — linked from `VOICE_STANDARD.md`.
+5. **ATS keyword coverage** — `ats_injector.py` audits every build against the job description and flags missing terms before documents are sent.
 
 Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
 
@@ -31,6 +32,19 @@ It will ask you three questions (JD file path, profile, employer/role name) and 
 - Print the exact prompt to paste into your AI session to build the documents
 
 **That's it.** The script handles the rest. You do not need to remember command flags.
+
+### Mandatory source-of-truth writeback
+
+Before any application package is treated as complete:
+
+1. Read `SOURCE_OF_TRUTH_ROUTING.md`.
+2. Identify every new, corrected, clarified, or improved reusable fact or description developed during the build.
+3. Update the correct authoritative source on the same branch or pull request.
+4. Update the application-specific Markdown and generated documents from that source.
+5. Verify that the authoritative source and tailored application agree.
+6. Report the authoritative file and commit or pull request.
+
+Application folders are outputs, not permanent fact stores. Do not leave reusable information only in chat history, an application Markdown file, a DOCX/PDF, a pull-request description, or a correction sidecar.
 
 ### Manual ATS audit (if you prefer)
 
@@ -60,33 +74,43 @@ Exit code `0` = 85%+ coverage (good to send). Exit code `1` = below floor (fix b
 
 ## Repository Structure
 
-```
+```text
 tjh-resume-cover-cv/
-├── config.py               # Contact info loader — reads env vars, never hardcoded
-├── config.example.env      # Copy to .env and fill in real values
-├── docx_header.py          # Locked DOCX header builder + body helpers
-├── pdf_header.py           # Locked PDF page-1 header renderer
-├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
-├── ats_injector.py         # ATS keyword extraction, audit, and injection engine
-├── new_application.sh      # One-command new application starter (run this first)
-├── scan_and_report.py      # Friendly wrapper — run at the share-file delivery gate
-├── build_reference.py      # Rebuilds reference_header.docx after any header change
-├── reference_header.docx   # Visual ground truth — diff against every new build
-├── requirements.txt        # Python dependencies
-├── build_logs/             # ATS audit reports (auto-created, gitignored)
+├── AGENTS.md                         # Mandatory AI-agent read order and writeback rule
+├── SOURCE_OF_TRUTH_ROUTING.md        # Routes every reusable fact to its authoritative file
+├── CAREER_CONSTANTS.md               # Employment, dates, titles, role boundaries, and locked career facts
+├── TEACHING_FACULTY_CONSTANTS.md     # Teaching history, degrees, GPAs, faculty credentials, and recognition
+├── CASE_BANK.md                      # Source-of-truth investigative cases and outcomes
+├── config.py                         # Contact info loader — reads env vars, never hardcoded
+├── config.example.env                # Copy to .env and fill in real values
+├── docx_header.py                    # Locked DOCX header builder + body helpers
+├── pdf_header.py                     # Locked PDF page-1 header renderer
+├── anti_ai_scan.py                   # Automatic voice/anti-AI enforcement gate
+├── ats_injector.py                   # ATS keyword extraction, audit, and injection engine
+├── new_application.sh                # One-command new application starter
+├── scan_and_report.py                # Friendly wrapper — run at the share-file delivery gate
+├── build_reference.py                # Rebuilds reference_header.docx after header changes
+├── reference_header.docx             # Visual ground truth — diff against every new build
+├── requirements.txt                  # Python dependencies
+├── skills/
+│   └── troy-credentials-library/
+│       └── credentials_catalog.json  # Machine-readable professional training and credentials
+├── standards/
+│   └── document_design_standard.json # Machine-readable document design standard
+├── build_logs/                       # ATS audit reports (auto-created, gitignored)
 ├── fonts/
-│   └── README.md           # Font installation guide (EB Garamond, Inter)
+│   └── README.md                     # Font installation guide
 ├── tests/
-│   ├── test_anti_ai_scan.py  # 80+ unit tests for every scan rule
-│   └── test_config.py        # Tests for env-var loading and safe fallbacks
-├── CASE_BANK.md            # Source-of-truth case examples (Condello Wall, Garwood, Lakeville, BEC, etc.)
-├── HEADER_STANDARD.md      # Locked layout specification
-├── VOICE_STANDARD.md       # Layer 1 hard rules (apply to every document, every profile)
-├── PROFILES.md             # Layer 2 profile definitions (vendor-solutions, siu-fraud, analyst-intelligence)
-├── PROFILE_SELECTOR.md     # Decision tree — pick the right profile from a job posting
-├── SYSTEM_PROMPT.md        # Copy-paste system prompt for custom AI setups
-├── PLATFORM_SETUP.md       # How to configure ChatGPT, Claude, Gemini, etc.
-└── chatgpt_action_schema.json  # OpenAPI schema for ChatGPT Actions
+│   ├── test_anti_ai_scan.py          # Unit tests for scan rules
+│   └── test_config.py                # Tests for env-var loading and safe fallbacks
+├── HEADER_STANDARD.md                # Locked layout specification
+├── DOCX_NODE_STANDARD.md             # Locked Node.js DOCX implementation standard
+├── VOICE_STANDARD.md                 # Layer 1 hard rules
+├── PROFILES.md                       # Layer 2 profile definitions
+├── PROFILE_SELECTOR.md               # Decision tree — pick the right profile
+├── SYSTEM_PROMPT.md                  # Copy-paste system prompt for custom AI setups
+├── PLATFORM_SETUP.md                 # Configure ChatGPT, Claude, Gemini, etc.
+└── chatgpt_action_schema.json         # OpenAPI schema for ChatGPT Actions
 ```
 
 ---
@@ -159,62 +183,68 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
 
 ## Files
 
+- `SOURCE_OF_TRUTH_ROUTING.md` — mandatory routing and writeback standard. Read first for every build.
+- `AGENTS.md` — hard instructions for AI agents and automation operating in the repo.
+- `CAREER_CONSTANTS.md` — authoritative employment, role, and date facts. Never improvise from memory.
+- `TEACHING_FACULTY_CONSTANTS.md` — authoritative teaching history, degrees, GPAs, faculty development, and teaching recognition.
+- `skills/troy-credentials-library/credentials_catalog.json` — machine-readable professional training and credential source.
 - `new_application.sh` — **start here for every new application.** One command. Handles the ATS audit and prints the next steps.
-- `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine. Called by new_application.sh automatically.
-- `docx_header.py` — the locked header builder + shared body helpers. Import this in every build script. Never hand-roll the header.
+- `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine. Called by `new_application.sh` automatically.
+- `docx_header.py` — locked header builder + shared body helpers. Import this in every build script. Never hand-roll the header.
 - `pdf_header.py` — locked PDF page-1 header renderer.
 - `reference_header.docx` — visual ground truth. Diff against page 1 of every new build.
 - `build_reference.py` — rebuilds the reference DOCX after any header change.
 - `HEADER_STANDARD.md` — locked layout specification.
-- `CASE_BANK.md` — all quantified case examples with resume bullet, condensed bullet, cover letter paragraph, and interview talking points for each. Pull from here, never rewrite from memory.
-- `anti_ai_scan.py` — **automatic enforcement** of the voice and anti-AI rules. Called at the bottom of every `build_*.py` script. Hard-blocks any document that fails.
-- `VOICE_STANDARD.md` — Troy's permanent voice standard (54-year-old Gen-X retired detective, Master's-educated, empathetic / humanistic, investigations-experienced).
-- `requirements.txt` — Python dependencies. Install with `pip install -r requirements.txt`.
-- `fonts/README.md` — Instructions for installing EB Garamond and Inter fonts locally.
-- `tests/` — Unit tests for the scan engine and config loader. Run with `python -m pytest tests/ -v`.
+- `CASE_BANK.md` — quantified case examples with resume, cover-letter, and interview language. Pull from here, never rewrite from memory.
+- `anti_ai_scan.py` — automatic enforcement of voice and anti-AI rules. Called at the bottom of every `build_*.py` script.
+- `VOICE_STANDARD.md` — Troy's permanent voice standard.
+- `requirements.txt` — Python dependencies.
+- `fonts/README.md` — font installation instructions.
+- `tests/` — unit tests for the scan engine and configuration loader.
 
 ---
 
-## Locked spec (matches UHG reference April 2026)
+## Locked spec
 
-- Full-bleed navy `#0D1B2A` bar, ZERO whitespace above (sits in section page header part)
-- `Troy J. Hokanson` in WHITE Garamond-Bold ~28pt, mixed case, centered
-- INSET gold `#C9A84C` horizontal rule (not edge-to-edge)
+- Full-bleed navy `#0D1B2A` bar, ZERO whitespace above
+- `Troy J. Hokanson` in white Garamond-Bold, 26 pt on page 1
+- Inset gold `#C9A84C` horizontal rule
 - Single gold contact row beneath, pipe-separated
-- NO subtitle / role title between name and contact row
+- No subtitle or role title between name and contact row
 - Section headings: steel-blue `#2D6A9F` with gold underline rule
 
 ---
 
 ## Contact Info Setup (Multi-Device)
 
-Contact details (phone, email, location) are **never hardcoded** in this repo. They are loaded from environment variables at build time.
+Contact details are **never hardcoded** in this repo. They are loaded from environment variables at build time.
 
-**Local machine (any device):**
-1. Copy `config.example.env` to `.env` in the repo root: `cp config.example.env .env`
-2. Fill in your real values — the `.env` file is gitignored and will never be committed
-3. Run any build script normally; `config.py` loads `.env` automatically
+**Local machine:**
+1. Copy `config.example.env` to `.env`.
+2. Fill in the real values.
+3. Run the build script normally; `.env` is gitignored.
 
-**GitHub Actions (automated builds):**
+**GitHub Actions:**
 Add these secrets under Settings → Secrets and variables → Actions:
-- `TROY_PHONE` — e.g. `612.555.0000`
-- `TROY_EMAIL` — e.g. `TroyHokanson@iCloud.com`
-- `TROY_LOCATION` — e.g. `Lakeville, MN`
-- `TROY_LINKEDIN` — e.g. `linkedin.com/in/troyhokanson`
-- `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio`
+- `TROY_PHONE`
+- `TROY_EMAIL`
+- `TROY_LOCATION`
+- `TROY_LINKEDIN`
+- `TROY_PORTFOLIO`
 
 ---
 
-## To pull into a fresh sandbox (AUTOMATIC at session start)
+## To pull into a fresh sandbox
 
 ```bash
 cd /home/user/workspace
-gh repo clone troyhokanson/troy-hokanson-resume-cover-cv
-ln -sfn /home/user/workspace/troy-hokanson-resume-cover-cv /home/user/workspace/templates
+gh repo clone troyhokanson/tjh-resume-cover-cv
+ln -sfn /home/user/workspace/tjh-resume-cover-cv /home/user/workspace/templates
 pip install -r templates/requirements.txt
 ```
 
 After clone, verify imports work:
+
 ```python
 from templates.docx_header import build_navy_header, new_document
 from templates.pdf_header import draw_page1_header
@@ -227,29 +257,27 @@ from templates.ats_injector import ATSInjector
 ## Running Tests
 
 ```bash
-# From the repo root (no symlink needed — tests import directly)
 python -m pytest tests/ -v
-
-# From the workspace root (templates/ symlink layout)
-python -m pytest templates/tests/ -v
 ```
 
 Tests cover:
-- All 50+ forbidden phrases and extra-flagged AI clichés
-- All punctuation rules (em dash, en dash, exclamation, ellipsis, curly quotes)
-- Cover-letter structural rules (closing, contraction cap, semicolons)
-- Resume/CV contraction rules
+- forbidden phrases and AI clichés
+- punctuation rules
+- cover-letter structural rules
+- resume/CV contraction rules
 - PTSD-scope guard
 - VEVRAA language guard
-- Config env-var loading and safe fallbacks
+- configuration loading and safe fallbacks
 
 ---
 
-## Changing the locked spec
+## Changing a locked standard
 
-If the header style genuinely needs to change:
-1. Edit `docx_header.py`
-2. Run `python3 build_reference.py` to rebuild the reference
-3. Visually diff against the prior reference
-4. Run the test suite: `python -m pytest tests/ -v`
-5. Commit and push: `git add -A && git commit -m "Header change: <reason>" && git push`
+When a locked standard changes:
+
+1. Update the authoritative standard file.
+2. Update any machine-readable companion standard or implementation.
+3. Rebuild or rerun the applicable validation artifact.
+4. Run the test suite.
+5. Commit the authoritative update and downstream changes on the same branch or pull request.
+6. Identify the changed source-of-truth file in the handoff.
