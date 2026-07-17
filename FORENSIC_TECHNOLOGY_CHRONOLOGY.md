@@ -121,19 +121,35 @@ Do not describe MacQuisition as a messaging-app parser. It was primarily an acqu
 
 ---
 
-## 6. Tableau Write Blockers
+## 6. Tableau Write Blockers and Validation Practice
 
 - Troy used Tableau built-in and portable hardware write blockers in forensic acquisition workflows.
 - He recalls a model number beginning with `T3` and a sequence similar to `Ti345678`, but the exact model is not verified.
 - The unit was new around 2018.
+- **All mounted and portable write blockers were tested and validated at least annually to confirm that they were functioning properly and continued to prevent writes to source media.**
+- This was an evidence-integrity and quality-assurance practice, not merely equipment familiarity.
+
+### Strategic value
+
+The annual validation practice demonstrates:
+
+- Forensic-laboratory quality control
+- Evidence-integrity discipline
+- Awareness that hardware write protection must be verified rather than assumed
+- Repeatable acquisition procedures
+- Defensible chain-of-custody and examination practices
+- Readiness for audit, testimony, peer review, or procedural scrutiny
 
 ### Permitted wording
 
-- `Used Tableau built-in and portable hardware write blockers, including a newly acquired unit placed into service around 2018.`
+- `Used Tableau built-in and portable hardware write blockers in forensic acquisition workflows and participated in at least annual testing and validation to verify proper write-protection performance.`
+- `Maintained defensible acquisition practices by ensuring mounted and portable write blockers were tested and validated at least annually.`
 
 ### Verification rule
 
 Until documentation or photographs confirm the model, do not publish a specific Tableau model number.
+
+Do not overstate the role as laboratory accreditation management, formal calibration authority, or sole ownership of the validation program unless additional records support those claims.
 
 ---
 
@@ -220,6 +236,11 @@ This is not merely product familiarity. It demonstrates:
 
 - The role emphasizes mobile access, extraction, decoding, mobile evidence, customer training, mobile professional services, or public-safety solutions.
 
+### Lead with write-blocker validation when
+
+- The role emphasizes forensic acquisition, laboratory quality control, evidence integrity, validation, audit readiness, standard operating procedures, training, field applications, hardware support, or professional services.
+- The employer is OpenText/Tableau, SUMURI, a forensic hardware reseller, a laboratory-services provider, or a public-safety agency with formal evidence-acquisition requirements.
+
 ### Lead with Genetec AutoVu when
 
 - The role involves ALPR, customer success, implementation, solutions consulting, field applications, agency adoption, technical account management, or public-safety strategy.
@@ -234,5 +255,6 @@ This is not merely product familiarity. It demonstrates:
 - Representative cases illustrating AXIOM use for iPhones, app artifacts, messaging data, and Macs
 - Any Target Corporation grant document, Genetec invoice, project memo, CJIS correspondence, Wi-Fi implementation record, or ALPR training material
 - Exact dates when GrayKey entered and left the workflow
+- Any annual write-blocker validation logs, test forms, SOPs, checklists, or equipment records that can be safely indexed
 
-Absence of these records does not erase the underlying experience. It limits only model-specific or exact-date claims.
+Absence of these records does not erase the underlying experience. It limits only model-specific, exact-date, or formal-program-ownership claims.
