@@ -59,9 +59,10 @@ University of St. Thomas, St. Paul, MN | 2005
 **Bachelor of Arts, Criminal Justice**  
 St. Cloud State University, St. Cloud, MN | 1998 | GPA 3.51 | Magna Cum Laude
 
-## Selected Professional Training
+## Professional Training and Faculty Development
 
-Cellebrite mobile-device forensics training; X-Ways Forensics; AccessData FTK Bootcamp; FBI CAST-V Cell Site Analysis; NW3C Basic and Intermediate Data Recovery and Analysis; BCA crime-scene, latent-print, photography, death-investigation, supervision, and management training; Certified Advanced Facilitator.
+- **Certified Advanced Facilitator — University of Phoenix, 2012:** Invite-only, four-week faculty-development program requiring at least five years of facilitator experience.
+- Cellebrite mobile-device forensics training; X-Ways Forensics; AccessData FTK Bootcamp; FBI CAST-V Cell Site Analysis; NW3C Basic and Intermediate Data Recovery and Analysis; BCA crime-scene, latent-print, photography, death-investigation, supervision, and management training.
 
 ## Teaching Honors and Recognition
 
