@@ -7,41 +7,51 @@
 
 ## 1. Purpose
 
-This file preserves accurate titles, date ranges, duty structure, on-call status, and public-facing wording for Troy Hokanson's specialized assignments and multi-agency operational affiliations. Use it when preparing resumes, cover letters, LinkedIn content, interview materials, or the TroyHokanson.com portfolio.
+This file preserves accurate titles, date ranges, duty structure, training cadence, on-call status, and public-facing wording for Troy Hokanson's specialized assignments and multi-agency operational affiliations. Use it when preparing resumes, cover letters, LinkedIn content, interview materials, or the TroyHokanson.com portfolio.
 
-These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, part-time or split-duty task-force assignments, on-call collateral assignments, agency representation, and professional memberships.
+These assignments should not be described as ordinary memberships. Preserve the distinction between full-time primary assignments, part-time or split-duty task-force assignments, scheduled on-call rotations, duty-time response, agency representation, and professional memberships.
 
 ---
 
-## 2. Dakota County Mutual Aid Assistance Group — MAAG
+## 2. Dakota County Mutual Aid Assistance Group — MAAG / Lakeville Police Tactical Team
 
-**Lakeville Police Tactical Team Representative (On-Call), 2005–2011**
+**Lakeville Police Tactical Team Representative, 2005–2011**  
+**Duty structure:** Monthly team training, annual full-week training, and on-call tactical response.
 
-Served as Lakeville Police Department's representative to the Dakota County Mutual Aid Assistance Group through the department's tactical team. Participated in on-call tactical response, specialized training, interagency coordination, and high-risk public-safety operations.
+Served as Lakeville Police Department's representative to the Dakota County Mutual Aid Assistance Group through the department's tactical team. The team generally trained one Wednesday each month for approximately 8–10 hours and completed one full week of annual training at locations including Camp Ripley, Minnesota; Camp Dodge, Iowa; or Fort McCoy, Wisconsin. Outside scheduled training, team members remained available for on-call tactical response and high-risk public-safety operations.
 
-### Permitted short form
+### Permitted short forms
 
-- `Dakota County MAAG — Lakeville Police Tactical Team Representative (On-Call), 2005–2011`
+- `Dakota County MAAG — Lakeville Police Tactical Team Representative, 2005–2011`
+- `Lakeville Police Tactical Team / Dakota County MAAG — monthly and annual training with on-call operational response, 2005–2011`
 
-### Guardrail
+### Guardrails
 
-Do not describe this as a full-time tactical assignment. Preserve `on-call`, `collateral`, or equivalent language when context requires clarity.
+- Do not describe this as a full-time tactical assignment.
+- Do not reduce the assignment to merely `on-call`; scheduled monthly and annual training were substantial recurring components.
+- Use `Camp Ripley`, not `Camp Riley`, unless a source document establishes different wording.
+- Preserve the Lakeville representative and multi-agency relationship.
 
 ---
 
 ## 3. Lakeville Police Crime Scene Unit — CSU
 
-**Crime Scene Unit Team Member (On-Call), 2012–2018**
+**Crime Scene Unit Team Member, 2012–2018**  
+**Duty structure:** Scheduled one-week on-call periods plus duty-time scene response when needed.
 
-Served as an on-call Crime Scene Unit team member supporting scene documentation, photography, evidence recognition, collection, preservation, and coordination during significant incidents and investigations.
+Served as a Crime Scene Unit team member supporting scene documentation, photography, evidence recognition, collection, preservation, and coordination during significant incidents and investigations. CSU members had designated one-week periods when they were officially on call. Troy could also respond to qualifying scenes while already on duty when circumstances required specialized crime-scene support.
 
-### Permitted short form
+### Permitted short forms
 
-- `Lakeville Police Crime Scene Unit — Team Member (On-Call), 2012–2018`
+- `Lakeville Police Crime Scene Unit — Team Member, 2012–2018`
+- `Crime Scene Unit Team Member — scheduled on-call rotation and duty-time scene response, 2012–2018`
 
-### Guardrail
+### Guardrails
 
-Do not describe the CSU role as a full-time crime-scene examiner position. It was an on-call specialized team assignment performed in addition to Troy's primary duties.
+- Do not describe the CSU role as a full-time crime-scene examiner position.
+- Do not imply that response occurred only during formal on-call weeks.
+- Preserve both elements: scheduled one-week on-call periods and duty-time response when needed.
+- Describe the assignment as a specialized collateral team role performed in addition to Troy's primary duties.
 
 ---
 
@@ -85,8 +95,8 @@ Use a dedicated heading on TroyHokanson.com:
 
 ### Specialized Assignments & Multi-Agency Affiliations
 
-- **Dakota County Mutual Aid Assistance Group (MAAG)** — Lakeville Police Tactical Team Representative (On-Call), 2005–2011
-- **Lakeville Police Crime Scene Unit (CSU)** — Team Member (On-Call), 2012–2018
+- **Dakota County Mutual Aid Assistance Group (MAAG)** — Lakeville Police Tactical Team Representative; monthly training, annual full-week training, and on-call response, 2005–2011
+- **Lakeville Police Crime Scene Unit (CSU)** — Team Member; scheduled one-week on-call rotation and duty-time scene response, 2012–2018
 - **Dakota County Electronic Crimes Task Force (DCECTF)** — Lakeville Police Detective & Digital Forensic Examiner Representative; split-duty assignment while serving full time in Lakeville Police Investigations, 2017–2021
 - **Minnesota Internet Crimes Against Children Task Force** — Digital Forensic Examiner | Lakeville Police Department Representative, 2016–2021
 
@@ -109,7 +119,7 @@ Use these assignments selectively based on role relevance:
 
 ## 7. Canonical Combined Statement
 
-> Held multiple specialized and multi-agency assignments while serving with Lakeville Police Department, including on-call tactical-team representation to Dakota County MAAG from 2005 through 2011, on-call Crime Scene Unit service from 2012 through 2018, and a split-duty assignment from 2017 through 2021 as a full-time Lakeville detective who also served part time as Lakeville's detective and digital forensic examiner representative to the Dakota County Electronic Crimes Task Force. During the investigations assignment, participated in a rotating weekly on-call schedule that generally placed each detective on call for one full week approximately every seven weeks.
+> Held multiple specialized and multi-agency assignments while serving with Lakeville Police Department. Represented Lakeville on the Dakota County MAAG tactical team from 2005 through 2011, completing monthly 8–10-hour training sessions, annual full-week training, and on-call tactical response. Served on the Lakeville Police Crime Scene Unit from 2012 through 2018, responding during scheduled one-week on-call periods and when specialized scene support was needed while on duty. From 2017 through 2021, worked full time as a Lakeville detective while serving part time in a split-duty assignment as Lakeville's detective and digital forensic examiner representative to the Dakota County Electronic Crimes Task Force. During the investigations assignment, participated in a rotating weekly on-call schedule that generally placed each detective on call for one full week approximately every seven weeks.
 
 ---
 
@@ -117,6 +127,8 @@ Use these assignments selectively based on role relevance:
 
 - Locate appointment letters, rosters, training records, evaluations, commendations, or assignment memoranda supporting each date range
 - Confirm whether MAAG documentation uses a longer formal organizational name
+- Locate tactical-team calendars or training records supporting the monthly and annual cadence
+- Locate CSU schedules or records supporting the designated one-week on-call structure
 - Confirm the exact DCECTF appointment, split-duty schedule, and rotation dates where public-facing precision is needed
 - Locate any investigations on-call schedules or policy records supporting the approximately seven-week rotation
 - Identify public-safe, redacted supporting documents for each assignment
