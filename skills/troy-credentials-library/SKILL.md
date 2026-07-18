@@ -30,6 +30,7 @@ These are non-negotiable and apply to every consumer of this skill.
 3. **Quote cap.** Cover letters get up to two `commendation_quotes`: at most one supervisor and at most one citizen. Resumes and CVs get zero direct quotes (commendations are summarized as a count and theme, never quoted verbatim in resume bullets).
 4. **Verbatim quote integrity.** The `verbatim_short` field is the only string that may be presented as a direct quotation. Anything from `verbatim_attribution_notes` must be paraphrased, never quoted.
 5. **Tier ordering.** When listing certifications in a document, headline-tier entries appear first and are never demoted; supporting-tier entries fill out the section as space allows; suppressed-tier entries are excluded entirely.
+6. **Supervision & Management source control.** For `SUP-008`, use only the single final certificate titled `BCA Supervision & Management Program 98 Hours 06132012.pdf` as the authoritative supporting file. Do not link the bundled `Supervisory-Certificates.pdf` as the public certificate for this umbrella credential.
 
 ## Selection Workflow
 
@@ -80,7 +81,8 @@ Source documents OCR'd or reconciled into the catalog:
 - Digital-Forensic-Certificates-Compressed-2.pdf (16 pages, May 2026 variant)
 - Patrol-Certificates-02.pdf (13 pages — patrol-era certs reflected in tracker totals; not added as standalone catalog entries due to low SIU relevance)
 - Investigations-Certificates.pdf (22 pages)
-- Supervisory-Certificates.pdf (8 pages)
+- Supervisory-Certificates.pdf (8 pages; component-course source only, not the public source for SUP-008)
+- **BCA Supervision & Management Program 98 Hours 06132012.pdf** — authoritative single final certificate for SUP-008: https://drive.google.com/file/d/1S5wP796YEcprk6faI6DuIJF7S51lTde0/view?usp=drivesdk
 - WRITTEN-COMMENDATION-02.pdf (4 pages)
 - Written-Commendations-01.pdf (24 pages)
 - **Hokanson_Certification_Tracker_2026_UPDATED.BACKUP_20260413.xlsx** (master tracker, April 2026: 206 entries, 1,238.75 documented hours, used for `training_hours_total` reconciliation)
