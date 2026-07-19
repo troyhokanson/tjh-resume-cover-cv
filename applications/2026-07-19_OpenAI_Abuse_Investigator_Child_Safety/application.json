@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "company": "OpenAI",
+  "role": "Abuse Investigator - Child Safety",
+  "team": "Intelligence and Investigations",
+  "location": "San Francisco and Remote - US",
+  "job_url": "https://openai.com/careers/abuse-investigator-child-safety-san-francisco/",
+  "package_status": "draft_for_human_review",
+  "created_date": "2026-07-19",
+  "profile": "analyst-intelligence",
+  "allow_icac": true,
+  "posted_compensation": "$158.4K-$425K plus equity",
+  "fit_summary": {
+    "strong_matches": [
+      "Online child safety and child-exploitation investigations",
+      "NCMEC CyberTipline referrals and external reporting",
+      "More than five years tracking actors in abuse domains",
+      "Digital forensics, OSINT, cloud records, mobile evidence, and legal process",
+      "Cross-platform actor attribution using provider information, public sources, authorized records, and pre-warrant intelligence",
+      "Time-sensitive on-call escalations and high-risk harm",
+      "Written findings for prosecutors, command staff, partner agencies, and technical reviewers",
+      "Federal, state, local, and NGO coordination",
+      "AI-assisted workflow prototyping through the Investigator Academy training site",
+      "Repeatable source-grounded research and knowledge workflows using Gemini Notebook"
+    ],
+    "development_areas": [
+      "SQL fundamentals are in active structured development",
+      "Python fundamentals are in active structured development",
+      "No production Databricks experience claimed",
+      "No tech-company platform-abuse role claimed",
+      "No additional language proficiency claimed"
+    ]
+  },
+  "ai_and_workflow_tools": [
+    "ChatGPT",
+    "ChatGPT Work",
+    "Codex",
+    "Perplexity Pro",
+    "Gemini Notebook",
+    "Notion",
+    "Zapier",
+    "GitHub",
+    "GitHub Copilot"
+  ],
+  "actor_attribution_methods": [
+    "BCA-supplied CyberTipline and provider information",
+    "Google and Gmail identifiers",
+    "Facebook, Instagram, and Snapchat research",
+    "LexisNexis Accurint and public-record sources",
+    "internal law-enforcement and Minnesota Driver and Vehicle Services records",
+    "URL- and time-attributed evidentiary screenshots of publicly accessible social-media findings",
+    "social-media preservation requests when probable cause supported search-warrant process",
+    "pre-warrant site intelligence from public vantage points",
+    "correlation of accounts, profiles, people, addresses, vehicles, occupants, devices, and locations"
+  ],
+  "illustrative_social_media_legal_process": {
+    "matter_type": "homicide investigation",
+    "sequence": [
+      "captured evidentiary screenshots from a publicly accessible Facebook profile",
+      "sent a preservation request",
+      "drafted a social-media search warrant",
+      "obtained judicial approval",
+      "served the warrant on the provider",
+      "lawfully obtained complete responsive account records"
+    ],
+    "public_guardrail": "State affirmatively that the initial evidence was publicly viewable OSINT and that nonpublic provider records were obtained through judicially approved legal process. Do not identify the subject."
+  },
+  "on_call_assignments": [
+    {
+      "function": "SWAT",
+      "dates": "2005-2011"
+    },
+    {
+      "function": "Investigations",
+      "dates": "2010-2011"
+    },
+    {
+      "function": "Crime Scene Unit",
+      "dates": "2012-2018"
+    },
+    {
+      "function": "Investigations",
+      "dates": "2016-2021",
+      "schedule_note": "Full-week rotation generally about every seven weeks."
+    },
+    {
+      "function": "Digital forensic examiner",
+      "dates": "2016-2021",
+      "schedule_note": "Separate on-call responsibility from the Investigations rotation."
+    }
+  ],
+  "on_call_counting_guardrail": "Date ranges overlap because the assignments were concurrent or separate functional rotations. Do not add the years into a cumulative total.",
+  "external_communication_examples": [
+    {
+      "estimated_year_range": "2007-2009",
+      "outlet": "WCCO-TV Channel 4",
+      "format": "ride-along and on-camera interview",
+      "subject": "Lakeville Police Department license plate recognition project",
+      "communication_value": "Explained investigative technology and its public-safety purpose to a television reporter and general audience.",
+      "leadership_context": "Troy recalls that Thomas Vonhof was Lakeville Police Chief at the time. Historical records confirm Vonhof served as chief during the estimated 2007-2009 timeframe. This supports the general date context but does not establish the exact year or independently verify the WCCO broadcast.",
+      "verification": "Firsthand user-confirmed fact. The estimated year is 2007-2009. No archived story or video was located in the current public search.",
+      "guardrail": "Do not name the reporter without confirming the surname and exact broadcast record."
+    },
+    {
+      "year": 2012,
+      "outlet": "City of Lakeville LPD Journal",
+      "format": "city cable-show patrol ride-along coverage",
+      "subject": "Showing general audiences part of what Lakeville police officers did on patrol",
+      "communication_value": "A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.",
+      "verification": "Contemporaneously documented by a November 1, 2012 supervisor email titled Cable Show. An appearance-specific video has not been located.",
+      "source_file": "11012012 1832 Cable Show Ride.pdf",
+      "source_file_url": "https://drive.google.com/file/d/1nm5JHUwx8CzEgWLD7uJwwRBxVlNMqshE/view",
+      "program_url": "https://lakevillemn.gov/302/LPD-Journal",
+      "guardrail": "Do not describe this as a formal host or department spokesperson assignment."
+    }
+  ],
+  "gemini_notebook_workflows": [
+    "training development",
+    "professional certification study",
+    "administrative and benefits claim tracking",
+    "case-history organization",
+    "home-sale planning",
+    "personal vehicle research and records"
+  ],
+  "gemini_notebook_privacy_practice": "Case information not appropriate for public disclosure or hiring and recruiting was redacted before inclusion in the Cases Notebook.",
+  "verified_metrics": {
+    "documented_assigned_lakeville_investigations": 236,
+    "documented_child_exploitation_matters": 35,
+    "csam_or_production_possession_dissemination": 27,
+    "child_solicitation_or_online_exploitation": 8,
+    "lead_or_assigned_investigator": 19,
+    "forensic_examiner_or_investigative_support": 16,
+    "overlap_between_236_and_35": 10,
+    "broader_unverified_minor_victim_matters": 7,
+    "public_child_exploitation_count": 35
+  },
+  "metric_guardrails": [
+    "The 236 and 35 figures overlap and must not be added without accounting for 10 shared case numbers.",
+    "Use 236 documented, not more than 236.",
+    "Use 35 for public child-exploitation materials. Do not use the broader 42 without verification.",
+    "Do not imply every CSAM matter was personally led through the entire lifecycle.",
+    "Use many, not all, for full-lifecycle CyberTipline investigations."
+  ],
+  "required_files": {
+    "resume": "resume.md",
+    "resume_docx": "Hokanson_OpenAI_Child_Safety_Resume.docx",
+    "resume_pdf": "Hokanson_OpenAI_Child_Safety_Resume.pdf",
+    "cover_letter": "cover_letter.md",
+    "cover_letter_docx": "Hokanson_OpenAI_Child_Safety_Cover_Letter.docx",
+    "cover_letter_pdf": "Hokanson_OpenAI_Child_Safety_Cover_Letter.pdf",
+    "metadata": "application.json"
+  },
+  "source_files": [
+    "CHILD_SAFETY_INVESTIGATIONS.md",
+    "Cases to 08102021.csv",
+    "Hokanson ECTF Cases 2017 2021.xlsx",
+    "Troy Hokanson 2020 2021 ECTF Cases.xlsx",
+    "TRAINING_CONSTANTS.md",
+    "CREDENTIALS_CONSTANTS.md",
+    "VOICE_STANDARD.md"
+  ],
+  "qa": {
+    "facts_reconciled": true,
+    "case_populations_deoverlapped": true,
+    "private_case_identifiers_omitted": true,
+    "human_review_required": true,
+    "application_submitted": false,
+    "docx_generated": true,
+    "pdf_generated": true,
+    "rendered_resume_pages": 2,
+    "rendered_cover_letter_pages": 1,
+    "portfolio_header_verified": true,
+    "anti_ai_scan_completed": true,
+    "anti_ai_resume_passed": true,
+    "anti_ai_cover_letter_passed": true,
+    "delivery_gate_passed": true,
+    "ats_audit_completed": false
+  },
+  "human_approval_required_for": [
+    "final wording",
+    "document generation",
+    "application submission",
+    "outbound recruiter communication",
+    "visible signature use"
+  ]
+}

@@ -2,12 +2,13 @@
 
 **SINGLE SOURCE OF TRUTH** for every Troy Hokanson resume, cover letter, CV, recruiter packet, professional bio, one-pager, or any DOCX/PDF document bearing his name. This repo MUST be cloned into `/home/user/workspace/templates/` (via symlink) at the start of every application build session — automatically, no exceptions.
 
-This repo enforces four locked standards:
+This repo enforces five locked standards:
 
 1. **Navy/gold header layout** (HEADER_STANDARD.md, docx_header.py, pdf_header.py)
 2. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in VOICE_STANDARD.md and Layer 2 audience profiles in PROFILES.md. Enforced by anti_ai_scan.py. Pick the right profile using PROFILE_SELECTOR.md.
 3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
 4. **ATS keyword coverage** — ats_injector.py audits every build against the job description and flags missing terms before documents are sent.
+5. **Paired delivery gate** — delivery_gate.py blocks delivery unless both final PDFs pass the anti-AI scan and the page-one contact row ends with LinkedIn followed by `TroyHokanson.com`.
 
 Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
 
@@ -67,6 +68,7 @@ tjh-resume-cover-cv/
 ├── docx_header.py          # Locked DOCX header builder + body helpers
 ├── pdf_header.py           # Locked PDF page-1 header renderer
 ├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
+├── delivery_gate.py        # Mandatory paired resume/cover gate + contact-order check
 ├── ats_injector.py         # ATS keyword extraction, audit, and injection engine
 ├── new_application.sh      # One-command new application starter (run this first)
 ├── scan_and_report.py      # Friendly wrapper — run at the share-file delivery gate
@@ -109,10 +111,9 @@ python -c "from pdf_header import draw_page1_header; print('OK')"
 python -c "from anti_ai_scan import scan_pdf; print('OK')"
 python -c "from ats_injector import ATSInjector; print('OK')"
 
-# 4. Run the delivery-gate scan on a built document
-python scan_and_report.py /path/to/Hokanson_Cover_ThomsonReuters.pdf cover
-python scan_and_report.py /path/to/Hokanson_Cover_GEICO_SIU.pdf cover --profile siu-fraud
-python scan_and_report.py /path/to/Hokanson_Resume_Stripe_Analyst.pdf resume --profile analyst-intelligence
+# 4. Run the mandatory paired delivery gate on final PDFs
+python delivery_gate.py /path/to/Hokanson_Resume.pdf /path/to/Hokanson_Cover.pdf --profile analyst-intelligence
+# Add --icac only for accurately documented ICAC/child-safety materials.
 
 # 5. Run the test suite
 python -m pytest tests/ -v
@@ -153,7 +154,7 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
          doc_type="resume")   # raises FailedScan if any violation
 ```
 
-**Every `build_*.py` script must end with the `scan_pdf` call.** Skipping the scan is not allowed.
+**Every application must end with `delivery_gate.py` on both final PDFs.** The gate calls `anti_ai_scan.py` for each file and validates the locked contact order. Skipping it is not allowed.
 
 ---
 
@@ -168,6 +169,7 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
 - `HEADER_STANDARD.md` — locked layout specification.
 - `CASE_BANK.md` — all quantified case examples with resume bullet, condensed bullet, cover letter paragraph, and interview talking points for each. Pull from here, never rewrite from memory.
 - `anti_ai_scan.py` — **automatic enforcement** of the voice and anti-AI rules. Called at the bottom of every `build_*.py` script. Hard-blocks any document that fails.
+- `delivery_gate.py` — **final enforcement for the complete packet.** Requires LinkedIn followed by `TroyHokanson.com` and an anti-AI PASS for both resume and cover letter.
 - `VOICE_STANDARD.md` — Troy's permanent voice standard (54-year-old Gen-X retired detective, Master's-educated, empathetic / humanistic, investigations-experienced).
 - `requirements.txt` — Python dependencies. Install with `pip install -r requirements.txt`.
 - `fonts/README.md` — Instructions for installing EB Garamond and Inter fonts locally.
@@ -201,7 +203,7 @@ Add these secrets under Settings → Secrets and variables → Actions:
 - `TROY_EMAIL` — e.g. `TroyHokanson@iCloud.com`
 - `TROY_LOCATION` — e.g. `Lakeville, MN`
 - `TROY_LINKEDIN` — e.g. `linkedin.com/in/troyhokanson`
-- `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio`
+- `TROY_PORTFOLIO` — `https://TroyHokanson.com`
 
 ---
 
