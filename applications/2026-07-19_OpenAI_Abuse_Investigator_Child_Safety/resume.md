@@ -37,7 +37,7 @@ November 1998-May 2024
 - Completed a 25-year law-enforcement career involving emergency response, investigations, evidence collection, interviewing, documentation, courtroom testimony, and coordination with public-safety partners.
 - Served on the Crime Scene Unit from 2012-2018 and completed 90 hours of BCA and Hennepin County Medical Examiner training in death investigation, latent prints, and crime-scene processing.
 - Served in additional on-call assignments with SWAT from 2005-2011, Investigations from 2010-2011, and the Crime Scene Unit from 2012-2018.
-- Represented the department during a 2007 WCCO-TV ride-along and on-camera interview about a license plate recognition project and a documented 2012 city cable-show patrol ride-along. A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.
+- Represented the department during a WCCO-TV ride-along and on-camera interview about a license plate recognition project, approximately 2007-2009, and a documented 2012 city cable-show patrol ride-along. A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.
 - Served 18 years as a Field Training Officer, translating policy, legal requirements, and field judgment into practical instruction.
 
 ### Adjunct Faculty, Criminal Justice
