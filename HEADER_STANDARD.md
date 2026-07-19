@@ -49,6 +49,7 @@ If the user request contains ANY of the following words or phrases, this header 
 | Subtitle | NONE. No role title between name and contact row. Ever. |
 | Page 2+ PDF | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
 | Page 2+ DOCX | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
+| Page 2+ name position | Optically centered left-to-right and top-to-bottom; raise the name approximately 0.08 inch from the prior baseline |
 | Footer | NONE by default. Do not add a footer unless Troy explicitly requests one |
 | Body top margin | 1.55 inch page 1 / 0.67 inch page 2+ for PDF. DOCX body margin is set by `build_navy_header` |
 
