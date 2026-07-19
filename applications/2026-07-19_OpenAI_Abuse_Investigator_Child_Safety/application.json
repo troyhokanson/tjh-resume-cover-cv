@@ -90,6 +90,17 @@
     }
   ],
   "on_call_counting_guardrail": "Date ranges overlap because the assignments were concurrent or separate functional rotations. Do not add the years into a cumulative total.",
+  "external_communication_examples": [
+    {
+      "year": 2007,
+      "outlet": "WCCO-TV Channel 4",
+      "format": "ride-along and on-camera interview",
+      "subject": "Lakeville Police Department license plate recognition project",
+      "communication_value": "Explained investigative technology and its public-safety purpose to a television reporter and general audience.",
+      "verification": "Firsthand user-confirmed fact. No archived story or video was located in the current public search.",
+      "guardrail": "Do not name the reporter without confirming the surname and exact broadcast record."
+    }
+  ],
   "gemini_notebook_workflows": [
     "training development",
     "professional certification study",
