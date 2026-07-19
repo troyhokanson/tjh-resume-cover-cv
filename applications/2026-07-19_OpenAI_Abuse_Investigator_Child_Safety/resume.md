@@ -54,6 +54,11 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard
 
 - Completed 9 years of combined military service and received an honorable discharge.
 
+## AI-Assisted Development and Technical Learning
+
+- Designed and built Investigator Academy, an AI-assisted training site addressing a longstanding gap in structured investigator development. Used ChatGPT Work, Codex, GitHub, and GitHub Copilot to translate investigative experience into project requirements, training content, version-controlled code, testing, debugging, and documentation while developing practical Python and SQL skills.
+- Built connected research and knowledge workflows using ChatGPT, Codex, Perplexity Pro, Gemini Notebook, Notion, Zapier, GitHub, and GitHub Copilot to organize source material, preserve traceable revisions, automate repeatable tasks, and convert complex information into usable investigative resources.
+
 ## Selected Child-Safety and Technical Training
 
 - Internet Crimes Against Children Investigative Techniques, NCJTC and OJJDP, 40 hours, 2018.
@@ -72,4 +77,3 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard
 - Master of Arts, Police Leadership, Administration and Education, University of St. Thomas, GPA 3.94, 2005.
 - Bachelor of Arts, Criminal Justice, Magna Cum Laude, St. Cloud State University, GPA 3.51, 1998.
 - Associate of Arts, Criminal Justice, Magna Cum Laude, St. Cloud State University, 1996.
-
