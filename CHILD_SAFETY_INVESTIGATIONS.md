@@ -95,13 +95,13 @@ Troy identified a lack of structured training resources for incoming investigato
 
 Investigator Academy is also a practical learning environment for Python, SQL, version control, debugging, testing, documentation, and workflow automation. The project was developed through ChatGPT Work with Codex, GitHub, and GitHub Copilot. Supporting research and knowledge workflows use ChatGPT, Perplexity Pro, Gemini Notebook, Notion, and Zapier.
 
-Gemini Notebook is used as a repeatable, source-grounded research and knowledge-management environment rather than as a one-time experiment. Notebook examples reported by Troy include VA claim tracking, case-history organization, training development, home-sale planning, personal vehicle research and records, and ACFE study and professional development.
+Gemini Notebook is used as a repeatable, source-grounded research and knowledge-management environment rather than as a one-time experiment. Notebook examples reported by Troy include VA claim tracking, a Cases Notebook containing deliberately redacted case-history material, training development, home-sale planning, personal vehicle research and records, and ACFE study and professional development.
 
 Approved public positioning:
 
 > Applied Gemini Notebook across professional learning, training development, administrative tracking, and complex personal research projects to organize source material, compare records, preserve context, and produce usable summaries.
 
-Public materials should describe the workflow categories and professional value without disclosing personal claim details or implying that confidential investigative evidence, victim or suspect information, privileged material, protected health information, or other restricted records were uploaded. Do not infer the contents of a notebook from its title.
+Before creating the Cases Notebook, Troy specifically removed case information that was not appropriate for public disclosure or hiring and recruiting purposes. This is an example of privacy-aware source preparation and disciplined data minimization. Public materials should describe the workflow categories and professional value without disclosing personal claim details or suggesting access to unredacted investigative evidence, victim or suspect information, privileged material, protected health information, or other restricted records. Do not infer additional content from a notebook title.
 
 Approved positioning:
 
