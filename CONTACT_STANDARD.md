@@ -2,34 +2,47 @@
 
 **Permanent. Applies to every resume, cover letter, CV, recruiter packet, professional bio, one-pager, PDF, DOCX, and application document bearing Troy Hokanson's name.**
 
-## Canonical Email Rule
+## Canonical values
 
-Use this email address for every document header and every application document:
+- Email: `TroyHokanson@iCloud.com`
+- LinkedIn display: `linkedin.com/in/troyhokanson`
+- Portfolio display: `TroyHokanson.com`
+- Portfolio target: `https://TroyHokanson.com`
 
-`TroyHokanson@iCloud.com`
+Do not use `Troy.Hokanson@pm.me` or the retired GitHub Pages portfolio address in application documents.
 
-Do not use `Troy.Hokanson@pm.me` for resumes, cover letters, CVs, application packets, or document headers.
+## Locked page-one order
 
-## Build Rule
+The single-line contact row must appear in this order:
 
-The document templates must continue loading contact fields from environment variables. Do not hardcode personal contact details in template code.
+1. Location
+2. Phone, when supplied
+3. Email
+4. LinkedIn
+5. `TroyHokanson.com`
 
-For local builds, set the local `.env` file:
+The portfolio is always the far-right item immediately after LinkedIn. Its visible text must be `TroyHokanson.com`, not `Investigative Portfolio`.
+
+## Build rule
+
+Templates load contact values from `config.py`. Private values remain in local environment variables or repository secrets. Public canonical values may use the safe defaults defined in `config.py`.
 
 ```bash
 TROY_EMAIL=TroyHokanson@iCloud.com
+TROY_LINKEDIN=linkedin.com/in/troyhokanson
+TROY_PORTFOLIO=https://TroyHokanson.com
 ```
 
-For GitHub Actions builds, set the repository secret:
+## Mandatory delivery gate
+
+Every final resume and cover letter pair must be checked together before delivery:
 
 ```bash
-TROY_EMAIL=TroyHokanson@iCloud.com
+python delivery_gate.py RESUME.pdf COVER_LETTER.pdf --profile PROFILE
 ```
 
-## AI Build Rule
+Use `--icac` only for accurately documented ICAC/child-safety materials. The command must exit `0`. It hard-fails if the portfolio is missing, appears before LinkedIn, or either file fails `anti_ai_scan.py`.
 
-Any AI-assisted build session must confirm the contact email before exporting documents. If there is a conflict between memory, a previous resume, or a generated draft, this file controls.
+## AI build rule
 
-## Reason
-
-Past builds used the wrong email address in the header. This file prevents that from happening again.
+An AI-assisted build must use these defaults automatically. Do not ask Troy to restate the portfolio placement or remind the system to run both scans. If a generated draft conflicts with this file, this file controls.
