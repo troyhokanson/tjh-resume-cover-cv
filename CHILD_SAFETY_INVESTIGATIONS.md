@@ -89,6 +89,18 @@ These statements document breadth but are not separate quantified additions to t
 - OSINT and cross-platform research.
 - Search warrants, administrative subpoenas, evidence seizure, forensic acquisition, artifact analysis, timelines, written findings, and courtroom-ready documentation.
 
+## AI-assisted development and technical learning
+
+Troy identified a lack of structured training resources for incoming investigators in 2018 and created a shared collection of preservation requests, administrative subpoenas, search warrants, work samples, and practical reference material. After retirement, he returned to that same need by developing Investigator Academy as a structured training site.
+
+Investigator Academy is also a practical learning environment for Python, SQL, version control, debugging, testing, documentation, and workflow automation. The project was developed through ChatGPT Work with Codex, GitHub, and GitHub Copilot. Supporting research and knowledge workflows use ChatGPT, Perplexity Pro, Gemini Notebook, Notion, and Zapier.
+
+Approved positioning:
+
+> Designed and built Investigator Academy, an AI-assisted training site addressing a longstanding gap in structured investigator development. Used ChatGPT Work, Codex, GitHub, and GitHub Copilot to translate investigative experience into project requirements, training content, version-controlled code, testing, debugging, and documentation while developing practical Python and SQL skills.
+
+Do not describe Troy as a senior software engineer or production-scale data engineer. The value of this project is applied technical learning, disciplined AI-tool use, domain-to-product translation, and a working response to an identified investigator-training need.
+
 ## Relevant verified training
 
 - 2016 Internet Crimes Against Children Task Force Fall Conference, Minnesota BCA, 17 hours, 2016.
@@ -117,4 +129,3 @@ These statements document breadth but are not separate quantified additions to t
 - Minnesota BCA and ICAC training records.
 - Case-specific investigative and forensic summaries for the directly validated production and online-solicitation matters.
 - Troy Hokanson factual clarifications provided July 2026.
-
