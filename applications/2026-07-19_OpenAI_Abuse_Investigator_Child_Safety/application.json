@@ -97,16 +97,20 @@
       "format": "ride-along and on-camera interview",
       "subject": "Lakeville Police Department license plate recognition project",
       "communication_value": "Explained investigative technology and its public-safety purpose to a television reporter and general audience.",
+      "leadership_context": "Troy recalls that Thomas Vonhof was Lakeville Police Chief at the time. Historical records confirm Vonhof served as chief during the 2007 timeframe. This supports the date context but does not independently verify the WCCO broadcast.",
       "verification": "Firsthand user-confirmed fact. No archived story or video was located in the current public search.",
       "guardrail": "Do not name the reporter without confirming the surname and exact broadcast record."
     },
     {
+      "year": 2012,
       "outlet": "City of Lakeville LPD Journal",
-      "format": "limited city-produced on-camera patrol ride-along coverage",
+      "format": "city cable-show patrol ride-along coverage",
       "subject": "Showing general audiences part of what Lakeville police officers did on patrol",
-      "communication_value": "Explained police field work to a public audience in an accessible format.",
-      "verification": "Firsthand user-confirmed participation. The official LPD Journal program page is public, but an appearance-specific segment was not identified.",
-      "source_url": "https://lakevillemn.gov/302/LPD-Journal",
+      "communication_value": "A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.",
+      "verification": "Contemporaneously documented by a November 1, 2012 supervisor email titled Cable Show. An appearance-specific video has not been located.",
+      "source_file": "11012012 1832 Cable Show Ride.pdf",
+      "source_file_url": "https://drive.google.com/file/d/1nm5JHUwx8CzEgWLD7uJwwRBxVlNMqshE/view",
+      "program_url": "https://lakevillemn.gov/302/LPD-Journal",
       "guardrail": "Do not describe this as a formal host or department spokesperson assignment."
     }
   ],
