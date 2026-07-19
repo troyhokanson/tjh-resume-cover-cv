@@ -146,6 +146,8 @@
     "resume_docx": "Hokanson_OpenAI_Child_Safety_Resume.docx",
     "resume_pdf": "Hokanson_OpenAI_Child_Safety_Resume.pdf",
     "cover_letter": "cover_letter.md",
+    "cover_letter_docx": "Hokanson_OpenAI_Child_Safety_Cover_Letter.docx",
+    "cover_letter_pdf": "Hokanson_OpenAI_Child_Safety_Cover_Letter.pdf",
     "metadata": "application.json"
   },
   "source_files": [
@@ -166,6 +168,7 @@
     "docx_generated": true,
     "pdf_generated": true,
     "rendered_resume_pages": 2,
+    "rendered_cover_letter_pages": 1,
     "ats_audit_completed": false,
     "anti_ai_scan_completed": false
   },
