@@ -73,6 +73,16 @@
       "color": "#C9A84C",
       "alignment": "center",
       "separator": " | ",
+      "required_order": [
+        "location",
+        "phone_if_supplied",
+        "email",
+        "linkedin",
+        "TroyHokanson.com"
+      ],
+      "portfolio_display": "TroyHokanson.com",
+      "portfolio_target": "https://TroyHokanson.com",
+      "portfolio_position": "far_right_immediately_after_linkedin",
       "single_line_preferred": true,
       "wrap_policy": "Reduce optional contact items before reducing font below 9.5 points.",
       "hyperlinks_allowed": true
@@ -187,6 +197,8 @@
     "render_docx_to_png_required": true,
     "inspect_every_page_required": true,
     "pdf_render_inspection_required": true,
+    "paired_delivery_gate_required": true,
+    "anti_ai_scan_required_for_resume_and_cover_letter": true,
     "checks": [
       "no white strip above header",
       "no white strip at left or right header edge",
@@ -194,6 +206,9 @@
       "name is 26 point Garamond-family and horizontally centered",
       "gold rule is centered and approximately 55 percent page width",
       "contact row is centered and legible",
+      "page-one contact row ends with LinkedIn followed by TroyHokanson.com",
+      "resume and cover letter both pass anti_ai_scan.py",
+      "delivery_gate.py exits zero for the final PDF pair",
       "gold accents are restrained",
       "resume section spacing is consistent",
       "cover letter has balanced page composition",
