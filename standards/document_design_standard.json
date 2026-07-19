@@ -1,12 +1,19 @@
 {
-  "schema_version": "1.0.0",
-  "effective_date": "2026-07-16",
+  "schema_version": "1.1.0",
+  "effective_date": "2026-07-19",
   "authority": "Permanent machine-readable visual standard for all Troy Hokanson resumes, cover letters, CVs, recruiter packets, and professional application documents.",
-  "applies_to": ["resume", "cover_letter", "cv", "recruiter_packet", "professional_bio", "one_pager"],
+  "applies_to": [
+    "resume",
+    "cover_letter",
+    "cv",
+    "recruiter_packet",
+    "professional_bio",
+    "one_pager"
+  ],
   "page": {
     "size": "US Letter",
     "width_inches": 8.5,
-    "height_inches": 11.0,
+    "height_inches": 11,
     "orientation": "portrait"
   },
   "palette": {
@@ -39,7 +46,11 @@
     "name": {
       "text": "Troy J. Hokanson",
       "font_family_primary": "Garamond",
-      "font_family_fallbacks": ["EB Garamond", "Adobe Garamond Pro", "Times New Roman"],
+      "font_family_fallbacks": [
+        "EB Garamond",
+        "Adobe Garamond Pro",
+        "Times New Roman"
+      ],
       "font_size_points": 26,
       "weight": "bold",
       "color": "#FFFFFF",
@@ -58,21 +69,39 @@
     },
     "contact_row": {
       "font_family": "Garamond",
-      "font_size_points": 10.5,
+      "font_size_points": 9.5,
       "color": "#C9A84C",
       "alignment": "center",
       "separator": " | ",
       "single_line_preferred": true,
       "wrap_policy": "Reduce optional contact items before reducing font below 9.5 points.",
-      "hyperlinks_allowed": true
+      "hyperlinks_allowed": true,
+      "required_final_item": "troyhokanson.com"
     },
     "subtitle": {
       "allowed": false
+    },
+    "geometry": {
+      "coordinate_reference": "physical_page",
+      "background_implementation": "page_relative_shape",
+      "background_width_points": 612,
+      "background_height_points": 92.16,
+      "content_implementation": "centered_header_paragraphs_with_symmetric_section_margins",
+      "negative_table_indent_allowed": false,
+      "table_based_content_centering_allowed": false,
+      "rule_width_reference": "physical_page",
+      "content_group": "name_rule_and_contact_row",
+      "vertical_centering_reference": "entire_content_group_not_name_alone",
+      "name_expected_position": "above_header_midpoint_because_rule_and_contact_row_follow"
     }
   },
   "body": {
     "font_family_primary": "Garamond",
-    "font_family_fallbacks": ["EB Garamond", "Calibri", "Arial"],
+    "font_family_fallbacks": [
+      "EB Garamond",
+      "Calibri",
+      "Arial"
+    ],
     "resume_font_size_points": 10.25,
     "cover_letter_font_size_points": 10.5,
     "minimum_font_size_points": 9.75,
@@ -89,8 +118,18 @@
     },
     "gold_usage": {
       "intent": "noticeable, restrained, professional, and classy",
-      "allowed": ["header rule", "contact row", "section underline", "small structural accents"],
-      "prohibited": ["large gold fills", "gold body paragraphs", "decorative borders around every section", "overuse that competes with content"]
+      "allowed": [
+        "header rule",
+        "contact row",
+        "section underline",
+        "small structural accents"
+      ],
+      "prohibited": [
+        "large gold fills",
+        "gold body paragraphs",
+        "decorative borders around every section",
+        "overuse that competes with content"
+      ]
     }
   },
   "margins": {
@@ -118,9 +157,30 @@
     }
   },
   "visual_intent": {
-    "audience": ["private sector investigations", "corporate security", "public safety vendors", "fraud and SIU", "trust and safety", "digital forensics"],
-    "reader_impression": ["familiar", "credible", "steady", "approachable", "experienced", "trustworthy"],
-    "avoid": ["flashy", "luxury brochure", "military dossier", "overdesigned", "cramped", "generic corporate template"]
+    "audience": [
+      "private sector investigations",
+      "corporate security",
+      "public safety vendors",
+      "fraud and SIU",
+      "trust and safety",
+      "digital forensics"
+    ],
+    "reader_impression": [
+      "familiar",
+      "credible",
+      "steady",
+      "approachable",
+      "experienced",
+      "trustworthy"
+    ],
+    "avoid": [
+      "flashy",
+      "luxury brochure",
+      "military dossier",
+      "overdesigned",
+      "cramped",
+      "generic corporate template"
+    ]
   },
   "validation": {
     "render_docx_to_png_required": true,
@@ -136,7 +196,24 @@
       "gold accents are restrained",
       "resume section spacing is consistent",
       "cover letter has balanced page composition",
-      "no clipping, overlap, broken glyphs, or unexpected blank pages"
-    ]
+      "no clipping, overlap, broken glyphs, or unexpected blank pages",
+      "header centering is measured against the physical page, not a table, margin box, or another document",
+      "troyhokanson.com appears as the final one-line contact item"
+    ],
+    "header_render_gate": {
+      "required": true,
+      "script": "header_render_validator.py",
+      "input": "rendered_first_page_png",
+      "background_color": "#0D1B2A",
+      "accent_color": "#C9A84C",
+      "maximum_horizontal_center_error_pixels": 2,
+      "vertical_composition_offset_fraction_range": [
+        -0.08,
+        0.02
+      ],
+      "fail_when_background_misses_top_left_or_right_page_edge": true,
+      "run_independently_for_resume_and_cover_letter": true,
+      "compare_resume_and_cover_letter_header_pixels_after_individual_pass": true
+    }
   }
 }
