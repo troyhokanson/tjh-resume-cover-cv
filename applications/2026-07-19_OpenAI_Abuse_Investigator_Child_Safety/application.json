@@ -65,6 +65,31 @@
     ],
     "public_guardrail": "Do not identify the subject or imply access to a private account without authorization."
   },
+  "on_call_assignments": [
+    {
+      "function": "SWAT",
+      "dates": "2005-2011"
+    },
+    {
+      "function": "Investigations",
+      "dates": "2010-2011"
+    },
+    {
+      "function": "Crime Scene Unit",
+      "dates": "2012-2018"
+    },
+    {
+      "function": "Investigations",
+      "dates": "2016-2021",
+      "schedule_note": "Full-week rotation generally about every seven weeks."
+    },
+    {
+      "function": "Digital forensic examiner",
+      "dates": "2016-2021",
+      "schedule_note": "Separate on-call responsibility from the Investigations rotation."
+    }
+  ],
+  "on_call_counting_guardrail": "Date ranges overlap because the assignments were concurrent or separate functional rotations. Do not add the years into a cumulative total.",
   "gemini_notebook_workflows": [
     "training development",
     "professional certification study",
