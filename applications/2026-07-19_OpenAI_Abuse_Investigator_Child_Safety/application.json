@@ -48,11 +48,23 @@
     "Facebook, Instagram, and Snapchat research",
     "LexisNexis Accurint and public-record sources",
     "internal law-enforcement and Minnesota Driver and Vehicle Services records",
-    "URL- and time-attributed screenshots",
+    "URL- and time-attributed evidentiary screenshots of publicly accessible social-media findings",
     "social-media preservation requests when probable cause supported search-warrant process",
     "pre-warrant site intelligence from public vantage points",
     "correlation of accounts, profiles, people, addresses, vehicles, occupants, devices, and locations"
   ],
+  "illustrative_social_media_legal_process": {
+    "matter_type": "homicide investigation",
+    "sequence": [
+      "captured evidentiary screenshots from a publicly accessible Facebook profile",
+      "sent a preservation request",
+      "drafted a social-media search warrant",
+      "obtained judicial approval",
+      "served the warrant on the provider",
+      "lawfully obtained complete responsive account records"
+    ],
+    "public_guardrail": "Do not identify the subject or imply access to a private account without authorization."
+  },
   "gemini_notebook_workflows": [
     "training development",
     "professional certification study",
