@@ -63,6 +63,7 @@ If the user request contains ANY of the following words or phrases, this header 
 - `docx_header.py` is the only approved DOCX implementation. Its page-relative background is deliberately separate from its content alignment.
 - Render the first page to PNG and run `header_render_validator.py`. The build fails if the top, left, or right background edge is missing or if the composition, name, or rule is more than two pixels from physical page center.
 - Validate resume and cover letter independently before comparing them. Two equally shifted headers do not constitute a pass.
+
 ## ATS-first application standard
 
 For every serious job application, build two resume tracks:
