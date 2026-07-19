@@ -48,7 +48,7 @@ CONTACT_PARTS = [
         TROY_PHONE if TROY_PHONE else None,
         TROY_EMAIL,
         TROY_LINKEDIN,
-        "Investigative Portfolio",
+        "TroyHokanson.com",
     ]
     if part
 ]
@@ -58,7 +58,7 @@ CONTACT_LINKS = {
     TROY_LINKEDIN: f"https://www.{TROY_LINKEDIN}"
     if TROY_LINKEDIN and not TROY_LINKEDIN.startswith("http")
     else TROY_LINKEDIN,
-    "Investigative Portfolio": TROY_PORTFOLIO,
+    "TroyHokanson.com": TROY_PORTFOLIO,
 }
 
 MARGIN = {
@@ -141,18 +141,18 @@ def draw_page1_header(c, pagesize, *, name=NAME, contact_parts=CONTACT_PARTS, co
 
     contact_font = _safe_font("Garamond", "Helvetica")
     c.setFillColor(BRAND["gold"])
-    c.setFont(contact_font, 10)
+    c.setFont(contact_font, 9.5)
 
     contact_text = SEPARATOR.join(contact_parts)
-    text_w = c.stringWidth(contact_text, contact_font, 10)
+    text_w = c.stringWidth(contact_text, contact_font, 9.5)
     contact_y = rule_y - 0.25 * inch
     start_x = (page_w - text_w) / 2
     c.drawString(start_x, contact_y, contact_text)
 
     cursor_x = start_x
-    sep_w = c.stringWidth(SEPARATOR, contact_font, 10)
+    sep_w = c.stringWidth(SEPARATOR, contact_font, 9.5)
     for index, part in enumerate(contact_parts):
-        part_w = c.stringWidth(part, contact_font, 10)
+        part_w = c.stringWidth(part, contact_font, 9.5)
         url = contact_links.get(part)
         if url:
             c.linkURL(url, (cursor_x, contact_y - 2, cursor_x + part_w, contact_y + 10), relative=0)
