@@ -103,6 +103,8 @@
       "name_weight": "bold",
       "name_color": "#FFFFFF",
       "name_alignment": "center",
+      "name_vertical_alignment": "optically_centered",
+      "name_vertical_shift_up_inches": 0.08,
       "contact_row": false,
       "gold_rule": false
     }
