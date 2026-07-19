@@ -57,7 +57,7 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard
 ## AI-Assisted Development and Technical Learning
 
 - Designed and built Investigator Academy, an AI-assisted training site addressing a longstanding gap in structured investigator development. Used ChatGPT Work, Codex, GitHub, and GitHub Copilot to translate investigative experience into project requirements, training content, version-controlled code, testing, debugging, and documentation while developing practical Python and SQL skills.
-- Built connected research and knowledge workflows using ChatGPT, Codex, Perplexity Pro, Gemini Notebook, Notion, Zapier, GitHub, and GitHub Copilot to organize source material, preserve traceable revisions, automate repeatable tasks, and convert complex information into usable investigative resources.
+- Built repeatable, source-grounded research and knowledge workflows with Gemini Notebook across training development, professional certification study, administrative tracking, and complex personal research. Used ChatGPT, Codex, Perplexity Pro, Notion, Zapier, GitHub, and GitHub Copilot to organize source material, preserve traceable revisions, automate repeatable tasks, and convert complex information into usable resources.
 
 ## Selected Child-Safety and Technical Training
 
