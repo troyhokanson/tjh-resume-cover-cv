@@ -71,6 +71,7 @@ MARGIN = {
 
 PAGE1_BANNER_HEIGHT = 1.45 * inch
 PAGEN_BANNER_HEIGHT = 0.42 * inch
+PAGE1_CONTENT_RAISE = 0.10 * inch
 SEPARATOR = "   |   "
 
 _FONTS_REGISTERED = False
@@ -130,7 +131,7 @@ def draw_page1_header(c, pagesize, *, name=NAME, contact_parts=CONTACT_PARTS, co
     name_font = _safe_font("Garamond-Bold", "Helvetica-Bold")
     c.setFillColor(BRAND["white"])
     c.setFont(name_font, 26)
-    name_y = band_y + band_h - 0.52 * inch
+    name_y = band_y + band_h - 0.52 * inch + PAGE1_CONTENT_RAISE
     c.drawCentredString(page_w / 2, name_y, name)
 
     c.setStrokeColor(BRAND["gold"])
