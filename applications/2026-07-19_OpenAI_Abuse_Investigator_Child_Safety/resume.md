@@ -45,6 +45,11 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard | 1989
 
 - Completed 9 years of combined military service and received an honorable discharge.
 
+## Education
+
+- Master of Arts, Police Leadership, Administration and Education, University of St. Thomas.
+- Bachelor of Arts, Criminal Justice, Magna Cum Laude, St. Cloud State University.
+
 ## AI-Assisted Development and Technical Learning
 
 - Designed and built Investigator Academy, an AI-assisted training site, using ChatGPT Work, Codex, GitHub, and GitHub Copilot for requirements, content, version-controlled code, testing, debugging, and documentation while developing Python and SQL skills.
@@ -61,8 +66,3 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard | 1989
 - Certified Cyber Crime Investigator, National White Collar Crime Center, 2023.
 - Law Enforcement Supervision & Management Program Certificate, Minnesota BCA, 98 hours, POST-approved, 2012.
 - Minnesota POST Board Certified Peace Officer, 1998-2023.
-
-## Education
-
-- Master of Arts, Police Leadership, Administration and Education, University of St. Thomas.
-- Bachelor of Arts, Criminal Justice, Magna Cum Laude, St. Cloud State University.
