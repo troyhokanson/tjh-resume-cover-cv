@@ -43,7 +43,7 @@ November 1998-May 2024
 ### Adjunct Faculty, Criminal Justice
 
 University of Phoenix, Online  
-2005-2023
+March 2007-October 2025
 
 - Taught undergraduate criminal justice courses in a fully remote environment for 18 years, explaining investigative, legal, ethical, and technical subjects to students with varied experience.
 - Produced clear written instruction and feedback for audiences who were not present for the underlying event, a skill later applied to prosecutors, command staff, partner agencies, and technical reviewers.
@@ -68,9 +68,12 @@ U.S. Army Reserve | U.S. Army Active Duty | Minnesota Army National Guard
 - Cellebrite Certified Logical Operator and Certified Physical Analyst, 2016, recertified in 2018 and 2020.
 - FBI CAST Basic Cell Site Analysis and Call Detail Records, 16 hours, 2017, and osTriage, OJJDP, 2020.
 
-## Credentials
+## Certifications and Licensure
 
 - Certified Cyber Crime Investigator, National White Collar Crime Center, 2023.
 - Minnesota POST Board Certified Peace Officer, 1998-2023.
+
+## Education
+
 - Master of Arts, Police Leadership, Administration and Education, University of St. Thomas.
 - Bachelor of Arts, Criminal Justice, Magna Cum Laude, St. Cloud State University.
