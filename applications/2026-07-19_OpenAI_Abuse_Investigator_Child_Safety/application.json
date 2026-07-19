@@ -169,8 +169,12 @@
     "pdf_generated": true,
     "rendered_resume_pages": 2,
     "rendered_cover_letter_pages": 1,
-    "ats_audit_completed": false,
-    "anti_ai_scan_completed": false
+    "portfolio_header_verified": true,
+    "anti_ai_scan_completed": true,
+    "anti_ai_resume_passed": true,
+    "anti_ai_cover_letter_passed": true,
+    "delivery_gate_passed": true,
+    "ats_audit_completed": false
   },
   "human_approval_required_for": [
     "final wording",
