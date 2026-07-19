@@ -63,7 +63,7 @@
       "served the warrant on the provider",
       "lawfully obtained complete responsive account records"
     ],
-    "public_guardrail": "Do not identify the subject or imply access to a private account without authorization."
+    "public_guardrail": "State affirmatively that the initial evidence was publicly viewable OSINT and that nonpublic provider records were obtained through judicially approved legal process. Do not identify the subject."
   },
   "on_call_assignments": [
     {
