@@ -53,7 +53,7 @@ CONTACT_PARTS = [
         if TROY_LINKEDIN and not TROY_LINKEDIN.startswith("http")
         else TROY_LINKEDIN,
     ),
-    ("Investigative Portfolio", TROY_PORTFOLIO),
+    ("troyhokanson.com", TROY_PORTFOLIO),
 ]
 
 
@@ -92,7 +92,7 @@ def add_header_background_shape(paragraph, color_hex="0D1B2A"):
       <v:rect id="TroyLockedHeaderNavyBackground"
               fillcolor="#{color_hex}"
               stroked="f"
-              style="position:absolute;margin-left:-90pt;margin-top:-28pt;width:800pt;height:112pt;z-index:-251654144;mso-position-horizontal:absolute;mso-position-horizontal-relative:page;mso-position-vertical:absolute;mso-position-vertical-relative:page">
+              style="position:absolute;margin-left:0pt;margin-top:0pt;width:612pt;height:92.16pt;z-index:-251654144;mso-position-horizontal:absolute;mso-position-horizontal-relative:page;mso-position-vertical:absolute;mso-position-vertical-relative:page">
         <v:fill color="#{color_hex}"/>
       </v:rect>
     </w:pict>
@@ -212,7 +212,13 @@ def build_navy_header(
     body_left_margin_inches=0.6,
     body_right_margin_inches=0.6,
 ):
-    """Build the full-bleed navy/gold/white header in the Word header part."""
+    """Build the locked header using page-edge background geometry.
+
+    The background is a page-relative shape. The visible content uses centered
+    paragraphs inside symmetric section margins. Negative table indents are
+    prohibited because Word-compatible renderers can center them against a
+    shifted canvas instead of the physical page.
+    """
     section = doc.sections[0]
     section.top_margin = Inches(body_top_margin_inches)
     section.bottom_margin = Inches(body_bottom_margin_inches)
@@ -224,82 +230,45 @@ def build_navy_header(
     header = section.header
     header.is_linked_to_previous = False
 
-    for paragraph in list(header.paragraphs):
+    name_p = header.paragraphs[0]
+    for child in list(name_p._p):
+        if child.tag != qn("w:pPr"):
+            name_p._p.remove(child)
+    for paragraph in list(header.paragraphs[1:]):
         paragraph._p.getparent().remove(paragraph._p)
 
-    page_w = section.page_width
-    page_w_twips = int(page_w.emu // 635)
-    margin_twips = int(section.left_margin.emu // 635)
-    bleed_twips = margin_twips
-    tbl_total_twips = page_w_twips + (bleed_twips * 2)
-
-    table = header.add_table(rows=1, cols=1, width=page_w)
-    table.autofit = False
-    table.allow_autofit = False
-
-    tbl_pr = table._tbl.tblPr
-    for tag in ("w:tblW", "w:tblInd", "w:tblLayout"):
-        for old in tbl_pr.findall(qn(tag)):
-            tbl_pr.remove(old)
-
-    tbl_w = OxmlElement("w:tblW")
-    tbl_w.set(qn("w:w"), str(tbl_total_twips))
-    tbl_w.set(qn("w:type"), "dxa")
-    tbl_pr.append(tbl_w)
-
-    tbl_ind = OxmlElement("w:tblInd")
-    tbl_ind.set(qn("w:w"), str(-(margin_twips + bleed_twips)))
-    tbl_ind.set(qn("w:type"), "dxa")
-    tbl_pr.append(tbl_ind)
-
-    tbl_layout = OxmlElement("w:tblLayout")
-    tbl_layout.set(qn("w:type"), "fixed")
-    tbl_pr.append(tbl_layout)
-
-    cell = table.cell(0, 0)
-    shade_cell(cell, "0D1B2A")
-    remove_cell_borders(cell)
-    set_cell_margins(cell, top=250, bottom=230, left=200, right=200)
-
-    tc_pr = cell._tc.get_or_add_tcPr()
-    tc_w = tc_pr.find(qn("w:tcW"))
-    if tc_w is None:
-        tc_w = OxmlElement("w:tcW")
-        tc_pr.append(tc_w)
-    tc_w.set(qn("w:w"), str(tbl_total_twips))
-    tc_w.set(qn("w:type"), "dxa")
-
-    name_p = cell.paragraphs[0]
     name_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_paragraph_format(name_p, before=0, after=0, line=1.0)
-    shade_paragraph(name_p, "0D1B2A")
+    content_width = (
+        section.page_width.inches
+        - section.left_margin.inches
+        - section.right_margin.inches
+    )
+    rule_indent = max(0, (content_width - (8.5 * 0.55)) / 2)
+    name_p.paragraph_format.left_indent = Inches(rule_indent)
+    name_p.paragraph_format.right_indent = Inches(rule_indent)
+    set_paragraph_format(name_p, before=14, after=4, line=1.0)
+    add_paragraph_bottom_border(name_p, color_hex="C9A84C", size=7, space=3)
     add_header_background_shape(name_p, "0D1B2A")
     name_run = name_p.add_run(NAME)
     set_run(name_run, font=NAME_FONT, size=26, bold=True, color=WHITE)
 
-    rule_p = cell.add_paragraph()
-    rule_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_paragraph_format(rule_p, before=3, after=3, line=1.0)
-    shade_paragraph(rule_p, "0D1B2A")
-    rule_run = rule_p.add_run("─" * 62)
-    set_run(rule_run, font=NAME_FONT, size=8, color=GOLD)
-
-    contact_p = cell.add_paragraph()
+    contact_p = header.add_paragraph()
     contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_paragraph_format(contact_p, before=2, after=0, line=1.15)
-    shade_paragraph(contact_p, "0D1B2A")
-    separator = "   |   "
-    for index, (text, url) in enumerate(CONTACT_PARTS):
+    set_paragraph_format(contact_p, before=4, after=0, line=1.0)
+    separator = " | "
+    visible_index = 0
+    for text, url in CONTACT_PARTS:
         if not text:
             continue
-        if index > 0:
+        if visible_index > 0:
             sep_run = contact_p.add_run(separator)
-            set_run(sep_run, font=CONTACT_FONT, size=12, color=GOLD)
+            set_run(sep_run, font=CONTACT_FONT, size=9.5, color=GOLD)
         if url:
-            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=12)
+            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=9.5)
         else:
             run = contact_p.add_run(text)
-            set_run(run, font=CONTACT_FONT, size=12, color=GOLD)
+            set_run(run, font=CONTACT_FONT, size=9.5, color=GOLD)
+        visible_index += 1
 
     footer = section.footer
     footer.is_linked_to_previous = False
