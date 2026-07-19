@@ -39,6 +39,7 @@
     "content_block": {
       "horizontal_alignment": "center",
       "vertical_alignment": "name_optically_centered",
+      "vertical_shift_up_inches": 0.1,
       "bottom_padding_inches": 0,
       "side_padding_inches": 0.25,
       "grouping": "name is optically centered within the full banner; gold rule and contact row remain directly below it"
