@@ -44,6 +44,7 @@ If the user request contains ANY of the following words or phrases, this header 
 | Name | `Troy Hokanson`, white `#FFFFFF`, Garamond-family bold, 26 pt, centered |
 | Rule | Thin gold `#C9A84C`, 0.90 pt, centered, about 55 percent page width, directly under the name |
 | Contact row | Garamond, gold `#C9A84C`, centered, separator `   \|   ` |
+| Page 1 content position | Raise the name, rule, and contact row together by approximately 0.10 inch from the prior baseline so the contact row has balanced space below it |
 | Contact items | Location, optional phone, email, LinkedIn, then `TroyHokanson.com` at the far right |
 | Subtitle | NONE. No role title between name and contact row. Ever. |
 | Page 2+ PDF | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
