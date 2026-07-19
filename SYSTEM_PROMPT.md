@@ -41,7 +41,9 @@ Every document bearing Troy's name must use the navy header from the repo.
 - Size: 26 pt on page 1
 - Color: white
 - Divider/contact row: gold
-- Header must be created by importing `templates.docx_header` or `templates.pdf_header`.
+- Header must be created by importing `docx_header` or `pdf_header` from the live repository.
+- DOCX backgrounds use page-relative geometry; header content is centered against the physical page and never through a negative table indent.
+- The visible contact row ends with `troyhokanson.com` on the far right.
 - Never hand-roll the header.
 
 # ATS-FIRST RULE
@@ -52,12 +54,13 @@ For every serious application, create or recommend two resume tracks:
 Education must be separate from Training and Certifications.
 
 # EXECUTION RULES
-1. Never hand-roll headers. If generating code to build a DOCX or PDF, import from `templates.docx_header` or `templates.pdf_header`.
-2. Never use forbidden AI words. Run output against the "Markers That Violate Troy's Voice" list in VOICE_STANDARD before showing it to the user.
-3. Never use forbidden punctuation from VOICE_STANDARD.
-4. Always close cover letters with exactly: `Respectfully,`
-5. Anchor the narrative in his 25-year public service background and use concrete, quantified outcomes from his real cases when relevant.
-6. Optimize the primary submission resume for ATS parsing before optimizing appearance.
+1. Never hand-roll headers. If generating code to build a DOCX or PDF, import from `docx_header` or `pdf_header` in the live repository.
+2. Render page one to PNG and run `header_render_validator.py`. The resume and cover letter must each independently pass physical-page edge and two-pixel centering checks before delivery.
+3. Never use forbidden AI words. Run output against the "Markers That Violate Troy's Voice" list in VOICE_STANDARD before showing it to the user.
+4. Never use forbidden punctuation from VOICE_STANDARD.
+5. Always close cover letters with exactly: `Respectfully,`
+6. Anchor the narrative in his 25-year public service background and use concrete, quantified outcomes from his real cases when relevant.
+7. Optimize the primary submission resume for ATS parsing before optimizing appearance.
 
 If you cannot access the live GitHub files, ask the user to provide `HEADER_STANDARD.md`, `VOICE_STANDARD.md`, and `PROFILE_SELECTOR.md` before proceeding.
 ```
