@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "company": "OpenAI",
+  "role": "Abuse Investigator - Child Safety",
+  "team": "Intelligence and Investigations",
+  "location": "San Francisco and Remote - US",
+  "job_url": "https://openai.com/careers/abuse-investigator-child-safety-san-francisco/",
+  "package_status": "draft_for_human_review",
+  "created_date": "2026-07-19",
+  "profile": "analyst-intelligence",
+  "allow_icac": true,
+  "posted_compensation": "$158.4K-$425K plus equity",
+  "fit_summary": {
+    "strong_matches": [
+      "Online child safety and child-exploitation investigations",
+      "NCMEC CyberTipline referrals and external reporting",
+      "More than five years tracking actors in abuse domains",
+      "Digital forensics, OSINT, cloud records, mobile evidence, and legal process",
+      "Time-sensitive on-call escalations and high-risk harm",
+      "Written findings for prosecutors, command staff, partner agencies, and technical reviewers",
+      "Federal, state, local, and NGO coordination"
+    ],
+    "development_areas": [
+      "SQL fundamentals are in active structured development",
+      "Python fundamentals are in active structured development",
+      "No production Databricks experience claimed",
+      "No tech-company platform-abuse role claimed",
+      "No additional language proficiency claimed"
+    ]
+  },
+  "verified_metrics": {
+    "documented_assigned_lakeville_investigations": 236,
+    "documented_child_exploitation_matters": 35,
+    "csam_or_production_possession_dissemination": 27,
+    "child_solicitation_or_online_exploitation": 8,
+    "lead_or_assigned_investigator": 19,
+    "forensic_examiner_or_investigative_support": 16,
+    "overlap_between_236_and_35": 10,
+    "broader_unverified_minor_victim_matters": 7,
+    "public_child_exploitation_count": 35
+  },
+  "metric_guardrails": [
+    "The 236 and 35 figures overlap and must not be added without accounting for 10 shared case numbers.",
+    "Use 236 documented, not more than 236.",
+    "Use 35 for public child-exploitation materials. Do not use the broader 42 without verification.",
+    "Do not imply every CSAM matter was personally led through the entire lifecycle.",
+    "Use many, not all, for full-lifecycle CyberTipline investigations."
+  ],
+  "required_files": {
+    "resume": "resume.md",
+    "cover_letter": "cover_letter.md",
+    "metadata": "application.json"
+  },
+  "source_files": [
+    "CHILD_SAFETY_INVESTIGATIONS.md",
+    "Cases to 08102021.csv",
+    "Hokanson ECTF Cases 2017 2021.xlsx",
+    "Troy Hokanson 2020 2021 ECTF Cases.xlsx",
+    "TRAINING_CONSTANTS.md",
+    "CREDENTIALS_CONSTANTS.md",
+    "VOICE_STANDARD.md"
+  ],
+  "qa": {
+    "facts_reconciled": true,
+    "case_populations_deoverlapped": true,
+    "private_case_identifiers_omitted": true,
+    "human_review_required": true,
+    "application_submitted": false,
+    "docx_generated": false,
+    "pdf_generated": false,
+    "ats_audit_completed": false,
+    "anti_ai_scan_completed": false
+  },
+  "human_approval_required_for": [
+    "final wording",
+    "document generation",
+    "application submission",
+    "outbound recruiter communication",
+    "visible signature use"
+  ]
+}
