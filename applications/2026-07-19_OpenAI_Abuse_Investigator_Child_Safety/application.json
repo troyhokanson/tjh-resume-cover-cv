@@ -92,13 +92,13 @@
   "on_call_counting_guardrail": "Date ranges overlap because the assignments were concurrent or separate functional rotations. Do not add the years into a cumulative total.",
   "external_communication_examples": [
     {
-      "year": 2007,
+      "estimated_year_range": "2007-2009",
       "outlet": "WCCO-TV Channel 4",
       "format": "ride-along and on-camera interview",
       "subject": "Lakeville Police Department license plate recognition project",
       "communication_value": "Explained investigative technology and its public-safety purpose to a television reporter and general audience.",
-      "leadership_context": "Troy recalls that Thomas Vonhof was Lakeville Police Chief at the time. Historical records confirm Vonhof served as chief during the 2007 timeframe. This supports the date context but does not independently verify the WCCO broadcast.",
-      "verification": "Firsthand user-confirmed fact. No archived story or video was located in the current public search.",
+      "leadership_context": "Troy recalls that Thomas Vonhof was Lakeville Police Chief at the time. Historical records confirm Vonhof served as chief during the estimated 2007-2009 timeframe. This supports the general date context but does not establish the exact year or independently verify the WCCO broadcast.",
+      "verification": "Firsthand user-confirmed fact. The estimated year is 2007-2009. No archived story or video was located in the current public search.",
       "guardrail": "Do not name the reporter without confirming the surname and exact broadcast record."
     },
     {
