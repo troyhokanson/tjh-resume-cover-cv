@@ -87,7 +87,7 @@ These were manual investigative signals and tracking strategies used to develop 
 
 ### Illustrative high-risk investigation
 
-In a homicide investigation, Troy located a publicly accessible Facebook profile without privacy restrictions and captured evidentiary screenshots before legal process was served. He then sent a preservation request, drafted the social-media search warrant, obtained judicial approval, and served the warrant on the provider to lawfully obtain the complete responsive account records. This example demonstrates the sequence from open-source collection through preservation, judicial review, provider service, and formal production. Public materials must not identify the subject or imply that Troy accessed a private account without authorization.
+In a homicide investigation, Troy located a publicly accessible Facebook profile without privacy restrictions and captured evidentiary screenshots before legal process was served. He then sent a preservation request, drafted the social-media search warrant, obtained judicial approval, and served the warrant on the provider to lawfully obtain the complete responsive account records. This example demonstrates the sequence from open-source collection through preservation, judicial review, provider service, and formal production. Public materials should state affirmatively that the initial evidence was publicly viewable OSINT and that nonpublic provider records were obtained through judicially approved legal process. Do not identify the subject.
 
 Approved resume wording:
 
