@@ -53,7 +53,7 @@ CONTACT_PARTS = [
         if TROY_LINKEDIN and not TROY_LINKEDIN.startswith("http")
         else TROY_LINKEDIN,
     ),
-    ("Investigative Portfolio", TROY_PORTFOLIO),
+    ("TroyHokanson.com", TROY_PORTFOLIO),
 ]
 
 
@@ -294,12 +294,12 @@ def build_navy_header(
             continue
         if index > 0:
             sep_run = contact_p.add_run(separator)
-            set_run(sep_run, font=CONTACT_FONT, size=12, color=GOLD)
+            set_run(sep_run, font=CONTACT_FONT, size=9.5, color=GOLD)
         if url:
-            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=12)
+            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=9.5)
         else:
             run = contact_p.add_run(text)
-            set_run(run, font=CONTACT_FONT, size=12, color=GOLD)
+            set_run(run, font=CONTACT_FONT, size=9.5, color=GOLD)
 
     footer = section.footer
     footer.is_linked_to_previous = False
