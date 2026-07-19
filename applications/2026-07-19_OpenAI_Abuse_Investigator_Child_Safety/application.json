@@ -143,6 +143,8 @@
   ],
   "required_files": {
     "resume": "resume.md",
+    "resume_docx": "Hokanson_OpenAI_Child_Safety_Resume.docx",
+    "resume_pdf": "Hokanson_OpenAI_Child_Safety_Resume.pdf",
     "cover_letter": "cover_letter.md",
     "metadata": "application.json"
   },
@@ -161,8 +163,9 @@
     "private_case_identifiers_omitted": true,
     "human_review_required": true,
     "application_submitted": false,
-    "docx_generated": false,
-    "pdf_generated": false,
+    "docx_generated": true,
+    "pdf_generated": true,
+    "rendered_resume_pages": 2,
     "ats_audit_completed": false,
     "anti_ai_scan_completed": false
   },
