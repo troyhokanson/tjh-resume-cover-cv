@@ -44,10 +44,10 @@ If the user request contains ANY of the following words or phrases, this header 
 | Name | `Troy Hokanson`, white `#FFFFFF`, Garamond-family bold, 26 pt, centered |
 | Rule | Thin gold `#C9A84C`, 0.90 pt, centered, about 55 percent page width, directly under the name |
 | Contact row | Garamond, gold `#C9A84C`, centered, separator `   \|   ` |
-| Contact items | Loaded from environment variables via `config.py`; never hardcoded |
+| Contact items | Location, optional phone, email, LinkedIn, then `TroyHokanson.com` at the far right |
 | Subtitle | NONE. No role title between name and contact row. Ever. |
 | Page 2+ PDF | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
-| Page 2+ DOCX | Same full banner repeats via section header part |
+| Page 2+ DOCX | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
 | Footer | NONE by default. Do not add a footer unless Troy explicitly requests one |
 | Body top margin | 1.55 inch page 1 / 0.67 inch page 2+ for PDF. DOCX body margin is set by `build_navy_header` |
 
@@ -133,6 +133,8 @@ clean_pdf_metadata(out_path, title="Resume - Troy Hokanson")
 7. Separate Education from Training and Certifications.
 8. Never add a footer by default.
 9. If the spec genuinely needs to change, edit both `docx_header.py` and `pdf_header.py`, rebuild the reference, visually check output, and commit.
+10. The page-one contact row ends with LinkedIn followed by `TroyHokanson.com`; the portfolio is always the far-right item.
+11. Run `delivery_gate.py` on the final resume and cover-letter PDFs. Delivery is blocked unless the command exits `0`.
 
 ---
 
