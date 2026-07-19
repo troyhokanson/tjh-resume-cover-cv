@@ -107,6 +107,17 @@ These statements document breadth but are not separate quantified additions to t
 
 Across his Lakeville career, Troy accumulated on-call experience through SWAT, Investigations, the Crime Scene Unit, and digital forensics. Several date ranges overlap because these were concurrent or separate functional rotations. Do not add the overlapping years to create an inflated cumulative total.
 
+## Media and external communication
+
+- In 2007, Troy participated in a WCCO-TV Channel 4 ride-along and on-camera interview about the Lakeville Police Department license plate recognition project.
+- The appearance required explaining an investigative technology project and its public-safety purpose to a television reporter and general audience.
+- Troy remembers the reporter's first name as Heather, but the surname and exact broadcast date have not been confirmed. Do not name the reporter in public materials without verification.
+- A current public search did not locate an archived story or video. The appearance is retained as a firsthand, user-confirmed fact and should not be described as independently archived or linked.
+
+Approved resume wording:
+
+> Represented the department during a 2007 WCCO-TV ride-along and on-camera interview about a license plate recognition project, explaining investigative technology and its public-safety purpose to a general audience.
+
 ## Technical tools and methods
 
 - Cellebrite UFED Touch and 4PC, Physical Analyzer, GrayKey.
