@@ -43,7 +43,7 @@ If the user request contains ANY of the following words or phrases, this header 
 | Background | Full-bleed navy `#0D1B2A`, zero whitespace above, left, or right |
 | Name | `Troy Hokanson`, white `#FFFFFF`, Garamond-family bold, 26 pt, centered |
 | Rule | Thin gold `#C9A84C`, 0.90 pt, centered, about 55 percent page width, directly under the name |
-| Contact row | Garamond, gold `#C9A84C`, centered, separator `   \|   ` |
+| Contact row | Garamond 9.5 pt, gold `#C9A84C`, centered, separator ` \| `, single line |
 | Contact items | Loaded from environment variables via `config.py`; `troyhokanson.com` is the final visible item |
 | Subtitle | NONE. No role title between name and contact row. Ever. |
 | Page 2+ PDF | Slim 0.42 inch navy bar with name only in white Garamond-family bold, 16 pt |
