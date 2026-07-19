@@ -113,13 +113,15 @@ Across his Lakeville career, Troy accumulated on-call experience through SWAT, I
 - The appearance required explaining an investigative technology project and its public-safety purpose to a television reporter and general audience.
 - Troy remembers the reporter's first name as Heather, but the surname and exact broadcast date have not been confirmed. Do not name the reporter in public materials without verification.
 - A current public search did not locate an archived story or video. The appearance is retained as a firsthand, user-confirmed fact and should not be described as independently archived or linked.
-- Troy also participated in limited on-camera work with the City of Lakeville production crew for LPD Journal, including patrol ride-along coverage intended to show the public part of what officers did on patrol.
-- This was occasional participation, not a formal host or department spokesperson assignment. Exact segment dates and an appearance-specific archive have not been confirmed.
+- Troy recalls that Thomas Vonhof was Lakeville Police Chief at the time. Historical records confirm Vonhof served as chief during the 2007 timeframe, which is consistent with Troy's recollection but does not independently verify the broadcast. His name is not needed in public resume wording.
+- Troy also participated in limited on-camera work with the City of Lakeville production crew for LPD Journal, including a patrol ride-along that showed the public part of what officers did on patrol.
+- A November 1, 2012 email from a Lakeville police sergeant confirms that he watched Troy's cable-show ride-along. The sergeant commended the recorded traffic stop, Troy's professional and well-considered reasoning, and his clear explanation of the outcome.
+- This was occasional participation, not a formal host or department spokesperson assignment. An appearance-specific video archive has not been located.
 - The City of Lakeville maintains an official LPD Journal page at https://lakevillemn.gov/302/LPD-Journal.
 
 Approved resume wording:
 
-> Represented the department during a 2007 WCCO-TV ride-along and on-camera interview about a license plate recognition project and participated in city-produced LPD Journal patrol coverage, explaining police technology and field work to general audiences.
+> Represented the department during a 2007 WCCO-TV ride-along and on-camera interview about a license plate recognition project and a documented 2012 city cable-show patrol ride-along. A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.
 
 ## Technical tools and methods
 
