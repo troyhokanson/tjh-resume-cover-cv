@@ -16,6 +16,8 @@ That work required more than finding prohibited files. It required understanding
 
 I carried this specialized work alongside a full-time investigative caseload. An August 2021 case-management snapshot documents 236 unique Lakeville investigations assigned to me. I also rotated through week-long on-call assignments that generally recurred about every seven weeks. Those callouts and assigned cases included child abuse and neglect, vulnerable victims, serious violent crime, missing persons, fraud, harassment, burglary, and other high-risk matters. The work demanded rapid judgment, careful escalation, and reports that prosecutors, command staff, and partner agencies could understand without having been present for the investigation.
 
+OpenAI also asks for experience improving workflows and using language models to scale processes. In 2018, I recognized that new investigators lacked organized training resources and created a shared collection of search warrants, preservation requests, subpoenas, work samples, and practical reference material. I recently returned to that same problem by building Investigator Academy in ChatGPT Work with Codex, GitHub, and GitHub Copilot. The project is helping me develop practical Python and SQL skills while converting years of investigative experience into a structured training resource. I also use Perplexity Pro and Gemini Notebook for source-backed research and synthesis, Notion for structured knowledge management, and Zapier for workflow automation. This is applied technical learning, not a claim of senior software engineering proficiency.
+
 My technical background includes Cellebrite UFED and Physical Analyzer, GrayKey, FTK, X-Ways Forensics, Magnet AXIOM, cloud-account legal process, mobile-carrier records, and live-system triage with osTriage. My SQL and Python skills are at the fundamentals stage, and I am strengthening both through structured coursework. I have spent my career learning unfamiliar technical systems well enough to use their outputs in search warrants, charging decisions, courtroom proceedings, and peer-reviewed forensic reports. That same discipline is how I am approaching platform data, notebooks, scripts, and investigative automation.
 
 OpenAI needs investigators who can work through disturbing material without losing precision or sight of the people affected. I understand that responsibility. I would value a conversation about how my child-safety, digital-forensic, and full-lifecycle investigative experience could support the Intelligence and Investigations team.
@@ -25,4 +27,3 @@ Respectfully,
 
 
 Troy J. Hokanson
-
