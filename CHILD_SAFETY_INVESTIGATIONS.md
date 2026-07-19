@@ -73,7 +73,7 @@ CyberTipline matters routed through the Minnesota BCA sometimes arrived with sub
 Methods reported by Troy included:
 
 - Searching Facebook, Instagram, Google, Snapchat, and other online services for related profiles, identifiers, photographs, locations, associates, and activity.
-- Preserving relevant online findings with screenshots that documented the source URL and date and time of collection before search-warrant execution.
+- Preserving publicly accessible social-media findings as evidentiary OSINT with screenshots that documented the source URL and date and time of collection before search-warrant execution.
 - When the investigation established probable cause for a social-media account search warrant, sending a preservation request to the relevant provider so stored account data would not be lost while the warrant process moved forward.
 - Using LexisNexis Accurint, TruePeopleSearch, internal law-enforcement records, Minnesota Driver and Vehicle Services records, and other authorized sources to identify addresses, vehicles, known occupants, associates, and possible links among subjects.
 - Conducting pre-warrant site intelligence from a public vantage point to document the residence, vehicles, observable occupants, and visible wireless-network security status.
@@ -81,9 +81,13 @@ Methods reported by Troy included:
 
 These were manual investigative signals and tracking strategies used to develop and test attribution. Do not describe them as automated platform detection or imply that Troy personally subpoenaed information obtained by the BCA before referral.
 
+### Illustrative high-risk investigation
+
+In a homicide investigation, Troy located a publicly accessible Facebook profile without privacy restrictions and captured evidentiary screenshots before legal process was served. He then sent a preservation request, drafted the social-media search warrant, obtained judicial approval, and served the warrant on the provider to lawfully obtain the complete responsive account records. This example demonstrates the sequence from open-source collection through preservation, judicial review, provider service, and formal production. Public materials must not identify the subject or imply that Troy accessed a private account without authorization.
+
 Approved resume wording:
 
-> Expanded BCA-supplied CyberTipline and provider information through cross-platform OSINT, authorized records research, and pre-warrant site intelligence, correlating accounts, profiles, people, addresses, vehicles, occupants, devices, and locations to support attribution, risk assessment, search-warrant affidavits, preservation requests, and operational planning.
+> Expanded BCA-supplied CyberTipline and provider information through cross-platform OSINT, authorized records research, and pre-warrant site intelligence, correlating accounts, profiles, people, addresses, vehicles, occupants, devices, and locations to support attribution, risk assessment, search-warrant affidavits, preservation requests, and operational planning. Preserved publicly accessible social-media findings as URL- and time-attributed evidentiary screenshots before legal process was served.
 
 ## Other serious and time-sensitive investigations
 
