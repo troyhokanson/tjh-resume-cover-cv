@@ -66,6 +66,25 @@ Approved resume wording:
 
 > Conducted many CSAM investigations through the full case lifecycle, from NCMEC CyberTipline referrals routed through the Minnesota BCA and ICAC Task Force, suspect attribution, preservation requests, and search warrants through evidence seizure, forensic examination, submission of suspected CSAM to NCMEC for confirmation, and delivery of prosecution-ready case files to county or federal authorities.
 
+## Actor attribution and pre-warrant intelligence
+
+CyberTipline matters routed through the Minnesota BCA sometimes arrived with subscriber or provider information the BCA had already obtained through legal process. The initial package might include an identifier such as a Gmail address or Facebook profile. Troy then expanded and corroborated those starting points through cross-platform and cross-internet research.
+
+Methods reported by Troy included:
+
+- Searching Facebook, Instagram, Google, Snapchat, and other online services for related profiles, identifiers, photographs, locations, associates, and activity.
+- Preserving relevant online findings with screenshots that documented the source URL and date and time of collection before search-warrant execution.
+- When the investigation established probable cause for a social-media account search warrant, sending a preservation request to the relevant provider so stored account data would not be lost while the warrant process moved forward.
+- Using LexisNexis Accurint, TruePeopleSearch, internal law-enforcement records, Minnesota Driver and Vehicle Services records, and other authorized sources to identify addresses, vehicles, known occupants, associates, and possible links among subjects.
+- Conducting pre-warrant site intelligence from a public vantage point to document the residence, vehicles, observable occupants, and visible wireless-network security status.
+- Correlating provider returns, account identifiers, social profiles, addresses, vehicles, occupants, device information, and field observations to support attribution, risk assessment, warrant affidavits, and operational planning.
+
+These were manual investigative signals and tracking strategies used to develop and test attribution. Do not describe them as automated platform detection or imply that Troy personally subpoenaed information obtained by the BCA before referral.
+
+Approved resume wording:
+
+> Expanded BCA-supplied CyberTipline and provider information through cross-platform OSINT, authorized records research, and pre-warrant site intelligence, correlating accounts, profiles, people, addresses, vehicles, occupants, devices, and locations to support attribution, risk assessment, search-warrant affidavits, preservation requests, and operational planning.
+
 ## Other serious and time-sensitive investigations
 
 Troy reports that his scheduled week-long on-call assignments and full-time investigative caseload included:
