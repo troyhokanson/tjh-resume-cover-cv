@@ -121,7 +121,7 @@ Across his Lakeville career, Troy accumulated on-call experience through SWAT, I
 
 Approved resume wording:
 
-> Represented the department during a WCCO-TV ride-along and on-camera interview about a license plate recognition project, approximately 2007-2009, and a documented 2012 city cable-show patrol ride-along. A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.
+> Represented the department during a WCCO-TV ride-along and on-camera interview about a license plate recognition project and a documented 2012 city cable-show patrol ride-along. A supervisor commended the professional reasoning and clear explanation demonstrated during the recorded traffic stop.
 
 ## Technical tools and methods
 
