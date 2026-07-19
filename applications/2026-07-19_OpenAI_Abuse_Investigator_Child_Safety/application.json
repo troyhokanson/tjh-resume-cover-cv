@@ -16,6 +16,7 @@
       "NCMEC CyberTipline referrals and external reporting",
       "More than five years tracking actors in abuse domains",
       "Digital forensics, OSINT, cloud records, mobile evidence, and legal process",
+      "Cross-platform actor attribution using provider information, public sources, authorized records, and pre-warrant intelligence",
       "Time-sensitive on-call escalations and high-risk harm",
       "Written findings for prosecutors, command staff, partner agencies, and technical reviewers",
       "Federal, state, local, and NGO coordination",
@@ -40,6 +41,17 @@
     "Zapier",
     "GitHub",
     "GitHub Copilot"
+  ],
+  "actor_attribution_methods": [
+    "BCA-supplied CyberTipline and provider information",
+    "Google and Gmail identifiers",
+    "Facebook, Instagram, and Snapchat research",
+    "LexisNexis Accurint and public-record sources",
+    "internal law-enforcement and Minnesota Driver and Vehicle Services records",
+    "URL- and time-attributed screenshots",
+    "social-media preservation requests when probable cause supported search-warrant process",
+    "pre-warrant site intelligence from public vantage points",
+    "correlation of accounts, profiles, people, addresses, vehicles, occupants, devices, and locations"
   ],
   "gemini_notebook_workflows": [
     "training development",
