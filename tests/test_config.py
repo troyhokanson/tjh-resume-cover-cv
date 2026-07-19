@@ -64,7 +64,7 @@ class TestConfigFallbacks:
 
     def test_troy_portfolio_has_fallback(self):
         cfg = _reload_config({})
-        assert cfg["TROY_PORTFOLIO"]
+        assert cfg["TROY_PORTFOLIO"] == "https://TroyHokanson.com"
 
     def test_troy_phone_empty_when_unset(self):
         cfg = _reload_config({})
