@@ -259,7 +259,9 @@ def build_navy_header(
     cell = table.cell(0, 0)
     shade_cell(cell, "0D1B2A")
     remove_cell_borders(cell)
-    set_cell_margins(cell, top=250, bottom=230, left=200, right=200)
+    # Raise the complete name/rule/contact group by about one tenth of an inch
+    # so the contact row does not sit too close to the banner's lower edge.
+    set_cell_margins(cell, top=90, bottom=230, left=200, right=200)
 
     tc_pr = cell._tc.get_or_add_tcPr()
     tc_w = tc_pr.find(qn("w:tcW"))
