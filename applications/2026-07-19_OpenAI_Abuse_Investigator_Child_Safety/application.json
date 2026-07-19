@@ -18,16 +18,28 @@
       "Digital forensics, OSINT, cloud records, mobile evidence, and legal process",
       "Time-sensitive on-call escalations and high-risk harm",
       "Written findings for prosecutors, command staff, partner agencies, and technical reviewers",
-      "Federal, state, local, and NGO coordination"
+      "Federal, state, local, and NGO coordination",
+      "AI-assisted workflow prototyping through the Investigator Academy training site"
     ],
     "development_areas": [
       "SQL fundamentals are in active structured development",
       "Python fundamentals are in active structured development",
       "No production Databricks experience claimed",
       "No tech-company platform-abuse role claimed",
-      "No additional language proficiency claimed"
+    "No additional language proficiency claimed"
     ]
   },
+  "ai_and_workflow_tools": [
+    "ChatGPT",
+    "ChatGPT Work",
+    "Codex",
+    "Perplexity Pro",
+    "Gemini Notebook",
+    "Notion",
+    "Zapier",
+    "GitHub",
+    "GitHub Copilot"
+  ],
   "verified_metrics": {
     "documented_assigned_lakeville_investigations": 236,
     "documented_child_exploitation_matters": 35,
