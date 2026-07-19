@@ -99,6 +99,15 @@
       "communication_value": "Explained investigative technology and its public-safety purpose to a television reporter and general audience.",
       "verification": "Firsthand user-confirmed fact. No archived story or video was located in the current public search.",
       "guardrail": "Do not name the reporter without confirming the surname and exact broadcast record."
+    },
+    {
+      "outlet": "City of Lakeville LPD Journal",
+      "format": "limited city-produced on-camera patrol ride-along coverage",
+      "subject": "Showing general audiences part of what Lakeville police officers did on patrol",
+      "communication_value": "Explained police field work to a public audience in an accessible format.",
+      "verification": "Firsthand user-confirmed participation. The official LPD Journal program page is public, but an appearance-specific segment was not identified.",
+      "source_url": "https://lakevillemn.gov/302/LPD-Journal",
+      "guardrail": "Do not describe this as a formal host or department spokesperson assignment."
     }
   ],
   "gemini_notebook_workflows": [
