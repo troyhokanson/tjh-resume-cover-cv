@@ -27,7 +27,7 @@ September 2016-December 27, 2021
 - Expanded BCA-supplied CyberTipline and provider information through cross-platform OSINT and authorized records research across Google, Facebook, Instagram, Snapchat, LexisNexis Accurint, public sources, internal records, and Minnesota Driver and Vehicle Services. Correlated accounts, profiles, people, addresses, vehicles, occupants, devices, locations, and victim disclosures to develop and test attribution.
 - Preserved publicly accessible social-media findings as URL- and time-attributed evidentiary OSINT and conducted pre-warrant site intelligence from public vantage points. When probable cause supported a social-media warrant, sent a preservation request, drafted the warrant, obtained judicial approval, and served it on the provider for responsive account records.
 - Coordinated high-risk investigations and external reporting with the Minnesota BCA, ICAC Task Force, NCMEC, FBI, prosecutors, partner agencies, and forensic examiners. Communicated findings through affidavits, prosecutor consultations, courtroom testimony, escalation summaries, and independently reviewed forensic reports.
-- Managed 236 documented Lakeville investigations across a broad felony caseload while serving part time at DCECTF and rotating through week-long on-call assignments about every seven weeks. Responded to child abuse and neglect, serious violence, vulnerable victims, missing persons, fraud, and other high-risk matters requiring rapid analysis and sound judgment. The 35 specialized matters partially overlap with this figure and are not added to it.
+- Managed 236 documented Lakeville investigations across a broad felony caseload while serving part time at DCECTF. Participated in separate Investigations and digital-forensics on-call rotations from 2016-2021, with Investigations coverage generally assigned for a full week about every seven weeks. Responded to child abuse and neglect, serious violence, vulnerable victims, missing persons, fraud, and other high-risk matters requiring rapid analysis and sound judgment. The 35 specialized matters partially overlap with this figure and are not added to it.
 
 ### Police Officer, Field Training Officer and Crime Scene Unit Member
 
@@ -36,6 +36,7 @@ November 1998-May 2024
 
 - Completed a 25-year law-enforcement career involving emergency response, investigations, evidence collection, interviewing, documentation, courtroom testimony, and coordination with public-safety partners.
 - Served on the Crime Scene Unit from 2012-2018 and completed 90 hours of BCA and Hennepin County Medical Examiner training in death investigation, latent prints, and crime-scene processing.
+- Served in additional on-call assignments with SWAT from 2005-2011, Investigations from 2010-2011, and the Crime Scene Unit from 2012-2018.
 - Served 18 years as a Field Training Officer, translating policy, legal requirements, and field judgment into practical instruction.
 
 ### Adjunct Faculty, Criminal Justice
