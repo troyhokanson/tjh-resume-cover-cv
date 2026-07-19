@@ -12,8 +12,12 @@ Use CSAM or child sexual abuse material in current application materials. The le
 - Lakeville Police Electronic Crimes Unit, 2016-2017.
 - Dakota County Electronic Crimes Task Force, Lakeville Police Department representative in a part-time split-duty assignment, 2017-2021.
 - Full-time Lakeville Police investigator, September 2016 through December 27, 2021.
-- Lakeville Police Investigations rotating on-call coverage consisted of a full week at a time, generally recurring about every seven weeks.
 - Crime Scene Unit member, 2012-2018, concurrent with the investigator assignment during 2016-2018.
+- SWAT on-call assignment, 2005-2011.
+- Investigations on-call assignment, 2010-2011.
+- Crime Scene Unit on-call assignment, 2012-2018.
+- Separate Investigations and digital forensic examiner on-call responsibilities, 2016-2021.
+- During the 2016-2021 investigator assignment, Investigations rotating on-call coverage consisted of a full week at a time, generally recurring about every seven weeks. The digital forensic examiner on-call responsibility was a separate rotation.
 
 ## Verified quantitative record
 
@@ -100,6 +104,8 @@ Troy reports that his scheduled week-long on-call assignments and full-time inve
 - Rapid-response callouts requiring scene coordination, interviews, legal process, evidence preservation, and prosecutorial consultation.
 
 These statements document breadth but are not separate quantified additions to the 236-case snapshot unless a supporting case number is identified. Public-facing materials remain subject to the trauma-scope rules in VOICE_STANDARD.md. The homicide and criminal sexual conduct terms should not appear in general application materials unless Troy expressly authorizes them for a specific target.
+
+Across his Lakeville career, Troy accumulated on-call experience through SWAT, Investigations, the Crime Scene Unit, and digital forensics. Several date ranges overlap because these were concurrent or separate functional rotations. Do not add the overlapping years to create an inflated cumulative total.
 
 ## Technical tools and methods
 
