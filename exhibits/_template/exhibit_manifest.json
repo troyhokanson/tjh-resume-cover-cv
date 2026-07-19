@@ -22,6 +22,10 @@
     "ats_floor_percent": 85,
     "ats_passed": false,
     "anti_ai_scan_passed": false,
+    "anti_ai_resume_passed": false,
+    "anti_ai_cover_letter_passed": false,
+    "portfolio_header_verified": false,
+    "delivery_gate_passed": false,
     "visual_review_passed": false,
     "claims_verified": false
   },
