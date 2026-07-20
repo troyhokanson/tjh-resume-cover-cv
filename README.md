@@ -9,6 +9,8 @@ This repo enforces four locked standards:
 3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
 4. **ATS keyword coverage** — ats_injector.py audits every build against the job description and flags missing terms before documents are sent.
 
+Before choosing a writing profile or starting an application, use [`CAREER_STRATEGY.md`](./CAREER_STRATEGY.md) to decide whether the opportunity advances Troy's primary public-safety technology vendor goal, the parallel investigations lane, or a selective leadership lane. It also contains the job-scoring framework, weekly priorities, learning priorities, and the rule for deciding when CFE study supports or distracts from the primary goal.
+
 Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
 
 If you are about to build a Hokanson document and this repo is not present in the workspace, STOP and clone it first.
@@ -80,6 +82,7 @@ tjh-resume-cover-cv/
 │   ├── test_anti_ai_scan.py  # 80+ unit tests for every scan rule
 │   └── test_config.py        # Tests for env-var loading and safe fallbacks
 ├── CASE_BANK.md            # Source-of-truth case examples (Condello Wall, Garwood, Lakeville, BEC, etc.)
+├── CAREER_STRATEGY.md       # Job-search priorities, role-fit scorecard, learning plan, and CFE decision rule
 ├── HEADER_STANDARD.md      # Locked layout specification
 ├── VOICE_STANDARD.md       # Layer 1 hard rules (apply to every document, every profile)
 ├── PROFILES.md             # Layer 2 profile definitions (vendor-solutions, siu-fraud, analyst-intelligence)
