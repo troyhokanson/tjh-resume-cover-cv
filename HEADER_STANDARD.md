@@ -1,19 +1,19 @@
 # Troy Hokanson - Document Header Standard
 
-**Locked May 19, 2026. Updated July 19, 2026. This is the single source of truth for every document Troy ships.**
+**Branded presentation-header standard. Updated July 22, 2026.**
 
-Any resume, cover letter, CV, portfolio export, recruiter packet, professional bio, one-pager, or other artifact bearing Troy's name MUST use the locked header from this repo. No exceptions. No hand-rolled headers. No one-off deviations.
+This standard controls documents that use Troy's navy/gold brand. It is mandatory for branded presentation copies, but it is not mandatory for every ATS upload. Under [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md), the AI may use a plain, text-first header when that better fits ATS parsing or the target industry's norms.
 
 ---
 
-## Critical enforcement rule - read first
+## Critical implementation rule - read first
 
-### The navy banner MUST live inside the Word document header section. NOT in the body.
+### When the navy banner is used, it MUST live inside the Word document header section. NOT in the body.
 
 - In a `.docx` file, the navy `#0D1B2A` full-bleed banner, including Troy's name, gold rule, and contact row, MUST be placed inside the document's **header section** using `doc.sections[0].header` in python-docx.
 - NEVER render the navy banner as body content.
 - The body of the document begins BELOW the header section, with the correct top margin applied so body text does not overlap the header.
-- The `build_navy_header(doc)` function in `docx_header.py` handles this correctly. Calling it is mandatory.
+- The `build_navy_header(doc)` function in `docx_header.py` handles this correctly. Calling it is mandatory for branded DOCX builds.
 
 Correct output:
 
@@ -72,7 +72,7 @@ For every serious job application, build two resume tracks:
    - DOCX preferred unless the employer requires PDF.
    - No tables, text boxes, columns, floating shapes, or decorative section grids.
    - Standard headings, left-aligned body text, bullets, and plain parsing-friendly layout.
-   - The locked navy header is allowed only when created by `build_navy_header(doc)`, not as a body table or text box.
+   - Use a plain, text-first contact header by default. The navy header is optional and allowed only when created by `build_navy_header(doc)`, not as a body table or text box.
    - Education must remain separate from Training and Certifications.
 
 2. **Executive Presentation Resume - human-facing PDF**
@@ -81,7 +81,7 @@ For every serious job application, build two resume tracks:
    - Do not submit the table-heavy version as the primary ATS upload unless the application portal clearly preserves PDF formatting and parsing is not a concern.
 
 3. **Cover letter**
-   - Uses the locked header.
+   - May use a plain ATS header or the branded header, based on the employer, upload method, and role lane.
    - PDF is acceptable for human review.
    - DOCX may be used if an application portal requests editable upload.
 
@@ -141,7 +141,7 @@ clean_pdf_metadata(out_path, title="Resume - Troy Hokanson")
 
 ## Hard rules
 
-1. Never hand-roll the header. Always import from `templates.docx_header` or `templates.pdf_header`.
+1. Never hand-roll the navy/gold branded header. When that design is selected, import it from `templates.docx_header` or `templates.pdf_header`.
 2. The navy banner lives in the Word header section, never in the document body.
 3. Never add a subtitle, role title, eyebrow, or tagline between the name and contact row.
 4. The name is white Garamond-family bold, 26 pt on page 1.
