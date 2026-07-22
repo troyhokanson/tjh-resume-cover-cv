@@ -57,7 +57,7 @@ RESUME_SPEC = {
             "heading": "Certifications and Professional Development",
             "paragraphs": [
                 "Certified Fraud Examiner (CFE) — actively pursuing through ACFE, 2026. "
-                "Minnesota Peace Officer License No. 4849 — POST Board Certified, 1998–2023. "
+                ""
                 "BCA Certificate, Bureau of Criminal Apprehension. "
                 "Cellebrite CCLO and CCPA — trained and proficient (2016, recertified 2020)."
             ],
