@@ -1,6 +1,6 @@
 # Troy Hokanson Voice Standard
 
-**Permanent. Non-negotiable. Applied to every resume, cover letter, CV, recruiter packet, professional bio, one-pager, or any DOCX/PDF that bears Troy Hokanson's name.**
+**Permanent voice, truth, and privacy guardrails. Role-specific wording, structure, emphasis, and formatting remain adaptive under [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md).**
 
 This file is the canonical source of truth for the voice and anti-AI rules. The local skill (`linkedin-profile-optimizer/SKILL.md`) mirrors it, and the automated scanner (`anti_ai_scan.py`) enforces it on every build. If a document fails the scan, fix the source text and rebuild. Never share a document that did not pass.
 
@@ -8,15 +8,12 @@ This file is the canonical source of truth for the voice and anti-AI rules. The 
 
 ## Architecture: Two Layers
 
-This standard is organized in two layers. Both layers apply to every document. Profile selection only changes Layer 2.
+This standard is organized in two layers.
 
-- **Layer 1 — Hard Rules.** Permanent, non-negotiable, identical across every job target. Punctuation, banned phrases, structural requirements, PTSD-scope. Enforced by `anti_ai_scan.py` regardless of profile.
-- **Layer 2 — Profile Voice.** Audience-specific vocabulary, framing, and emphasis. Selected by the `--profile` flag at scan time. Three profiles are defined in [`PROFILES.md`](./PROFILES.md):
-  - `vendor-solutions` (default) — Solutions Consultant, Sales Engineer, Solutions Expert, Public Safety Manager
-  - `siu-fraud` — SIU Investigator, fraud examiner, insurance investigator
-  - `analyst-intelligence` — Investigations and Intelligence Analyst, financial crime analyst, cybersecurity fraud analyst
+- **Layer 1 — Hard safeguards.** Truth, privacy, PTSD-scope, factual precision, and high-signal anti-AI checks apply to every target. These safeguards do not prescribe one career identity or one document template.
+- **Layer 2 — Role adaptation.** The AI selects industry-native vocabulary, framing, evidence, structure, and visual presentation after reading the complete posting. The available lanes include SIU, corporate security, customer success, technical account management, DFIR/cyber, intelligence/analytics, and solutions consulting.
 
-If no profile is specified, the scanner defaults to `vendor-solutions`. This matches Troy's primary target archetype as of May 2026.
+[`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md) governs authoring autonomy. [`PROFILES.md`](./PROFILES.md) supplies lane-specific guidance, and [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md) supplies selection logic. No profile is a master resume.
 
 ---
 
@@ -42,26 +39,15 @@ Every word must read as if Troy wrote it himself. The narrator is:
 - **Investigations-experienced specificity.** Names tools, names dollar amounts, names outcomes, names jurisdictions. Never vague ("handled cases"); always concrete ("led a multi-victim Business Email Compromise investigation that closed with $295,704.11 in court-ordered restitution").
 - **Adjunct-faculty clarity.** Complex things are made plain, the way Troy explains evidence to a jury or a concept to a 200-level Criminal Justice class. Not academic. Not stiff. Explanatory.
 - **Honest framing of skills he is still building.** Working proficiency, building competency, in progress, currently developing through directed self-study. Never overclaim.
-- **Closes with one earned, plain sentence.** Never "I look forward to discussing." Never "I'm excited about the opportunity." Closing salutation is always `Respectfully,`.
+- **Closes with one earned, plain sentence.** The AI may choose a restrained professional salutation that fits the employer and industry. Avoid canned enthusiasm and generic promises.
 
-## Three Things Every Cover Letter Must Contain
+## Role-Adaptive Content Requirements
 
-1. Both law enforcement and military credentials in the first sentence.
-2. At least one concrete number or named case outcome from Troy's actual record. Examples:
-   - The BEC case: $360,000+ in documented victim losses, $295,704.11 in court-ordered restitution, 15-year federal sentence
-   - 5,304 GB of digital evidence processed in 2020
-   - Ten partner agencies on the Dakota County Electronic Crimes Task Force
-   - 20+ written commendations
-   - $3.2M in real estate sales
-   - 512 documented hours of investigation-relevant training
-3. One sentence of genuine human connection between Troy's public service background and the real-world impact of the work — fraud raises premiums, denies legitimate claims, takes from people who cannot afford it; intelligence gaps cost lives; vendor tools that fail in the field cost cases. Earned, not performed. The exact framing is profile-specific (see Layer 2).
+A cover letter must not be built from a universal three-item formula. The AI should choose the most persuasive verified evidence for the role and explain any meaningful transition or gap. Law-enforcement service, military service, teaching, case outcomes, and metrics are optional assets, not mandatory first-sentence ingredients.
 
-## Three Things Every Resume Summary Must Contain
+A resume summary must lead with the professional identity most useful to the target. It may lead with SIU investigation, corporate investigations, customer success, technical account management, digital forensics, cyber investigations, intelligence analysis, or solutions consulting. It does not need to begin with "medically retired Minnesota detective."
 
-1. "Twenty-five-year medically retired Minnesota detective and digital forensic examiner" or a near-equivalent opener that anchors the reader in his identity.
-2. Quantified outcomes from real cases — felony convictions, restitution amounts, federal sentences, partner-agency adoption, training-hours total.
-3. Honest tooling positioning — what is mastered (Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, Python, API automation), what is being built (SQL, Tableau, Alteryx), what is in progress (CFE).
-
+The AI may shorten or omit experience that distracts from the target. It must never disguise Troy's actual titles or invent direct experience. See [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md).
 ## Markers That Violate Troy's Voice (never use, any profile)
 
 - **Corporate / SaaS verbs:** leveraged, harnessed, spearheaded, championed, optimized, streamlined, transformed, delivered value, drove outcomes, empowered, elevated, unlocked, seamlessly
@@ -103,16 +89,7 @@ Every word must read as if Troy wrote it himself. The narrator is:
 
 ## Closing
 
-Cover letters always close with exactly:
-
-```
-Respectfully,
-[48pt blank space for digital signature]
-Troy Hokanson
-```
-
-Never use Sincerely, Best regards, Best, Thank you, Kind regards, or any other closing.
-
+Use a restrained, professional closing appropriate to the employer and lane. Acceptable examples include `Respectfully,`, `Sincerely,`, and `Thank you,`. Do not force one closing across every application, and do not use performed enthusiasm.
 ## PTSD-Scope Hard Block (always, every profile)
 
 The following terms must NEVER appear in any document Troy's name is on, regardless of profile or job target:
@@ -137,9 +114,9 @@ roles. Use experience-based framing instead, such as "25 years of sworn service"
 
 ---
 
-# LAYER 2 — PROFILE VOICE (selected by --profile flag)
+# LAYER 2 — ROLE-ADAPTIVE VOICE
 
-Layer 2 controls vocabulary emphasis and framing per target audience. The full profile definitions live in [`PROFILES.md`](./PROFILES.md). The selector logic lives in [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md). What follows is a short overview.
+Layer 2 is guidance, not a fixed script. Read the complete posting, select the primary lane under [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md), and use industry-native vocabulary only when supported by Troy's verified record. The full profile definitions live in [`PROFILES.md`](./PROFILES.md), and selection logic lives in [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md).
 
 ## vendor-solutions (default)
 
@@ -185,7 +162,7 @@ python scan_and_report.py /path/to/file.pdf cover --profile siu-fraud
 
 The scanner raises `FailedScan` and hard-blocks the build on any Layer 1 violation OR any Layer 2 violation for the selected profile. Manual self-review is still required after the scan passes. The scanner catches phrases, not tone. Read the document out loud once before sharing.
 
-If `--profile` is omitted, the scanner defaults to `vendor-solutions`. This matches Troy's primary target archetype as of May 2026.
+If `--profile` is omitted, the scanner uses `adaptive`. Application builds should still record a selected primary lane after analyzing the posting.
 
 ---
 
