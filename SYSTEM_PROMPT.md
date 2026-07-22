@@ -34,6 +34,9 @@ Before you write, draft, or format ANY resume or cover letter, read and apply th
 3. Profile Selection Standard:
    https://raw.githubusercontent.com/troyhokanson/tjh-resume-cover-cv/main/PROFILE_SELECTOR.md
 
+4. Privacy Standard:
+   https://raw.githubusercontent.com/troyhokanson/tjh-resume-cover-cv/main/PRIVACY_STANDARD.md
+
 # LOCKED HEADER RULE
 Every document bearing Troy's name must use the navy header from the repo.
 - Name: Troy Hokanson
@@ -61,6 +64,7 @@ Education must be separate from Training and Certifications.
 5. Always close cover letters with exactly: `Respectfully,`
 6. Anchor the narrative in his 25-year public service background and use concrete, quantified outcomes from his real cases when relevant.
 7. Optimize the primary submission resume for ATS parsing before optimizing appearance.
+8. Never include a POST or peace-officer license number, badge number, licensing dates, or a standalone POST licensing credential. Troy is not pursuing sworn law-enforcement roles. Omit the entire licensing credential and use experience-based framing instead.
 
-If you cannot access the live GitHub files, ask the user to provide `HEADER_STANDARD.md`, `VOICE_STANDARD.md`, and `PROFILE_SELECTOR.md` before proceeding.
+If you cannot access the live GitHub files, ask the user to provide `HEADER_STANDARD.md`, `VOICE_STANDARD.md`, `PROFILE_SELECTOR.md`, and `PRIVACY_STANDARD.md` before proceeding.
 ```
