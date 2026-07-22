@@ -1,10 +1,10 @@
 # Troy Hokanson Profile Definitions
 
-**Three audience profiles. One narrator. Selected at scan time.**
+**Seven role lanes. One verified career record. Selected from the posting.**
 
 This file defines the Layer 2 (audience-specific) voice rules referenced by [`VOICE_STANDARD.md`](./VOICE_STANDARD.md). Layer 1 hard rules apply to every profile and live in `VOICE_STANDARD.md`. The scanner reads this file conceptually but enforces the rules programmatically via the `PROFILE_RULES` dictionary in [`anti_ai_scan.py`](./anti_ai_scan.py).
 
-If no profile is specified at scan time, the scanner defaults to **`vendor-solutions`**. This reflects Troy's primary target archetype as of May 2026: Solutions Consultant / Customer Solutions Manager / Sales Engineer / Public Safety Manager roles at vendors that sell into law enforcement and corporate investigations (Thomson Reuters, Magnet Forensics, Cellebrite, Axon, Veritone, Mark43, Flock Safety).
+If no profile is specified at scan time, the scanner uses **`adaptive`**. Application builds should still select and log a primary lane after reading the complete posting. [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md) controls authoring autonomy and hybrid-role decisions.
 
 Each profile defines:
 
@@ -171,6 +171,65 @@ Lean into the writing. Lean into the 18 years of adjunct teaching as proof Troy 
 ### Worked example — resume bullet
 
 > Produced written intelligence products from 5,304 GB of digital evidence processed in 2020, including search warrant affidavits, after-action reports, and case summaries written for non-technical audiences in the county attorney's office and the Dakota County Electronic Crimes Task Force partner agencies.
+
+---
+
+## Profile 5: `customer-success`
+
+### Target roles
+
+- Customer Success Manager / Senior or Strategic CSM
+- Customer Enablement Manager
+- Agency Success Manager
+- Customer Onboarding or Adoption Manager
+
+### Voice emphasis
+
+Lead with customer adoption, training, stakeholder relationships, issue resolution, change management, and the ability to translate complex tools into useful workflows. Use adjunct teaching, multi-agency coordination, end-user experience, and verified client work as transferable evidence. Do not claim renewals, ARR, churn, NRR, QBR ownership, CRM expertise, or a book of business unless verified.
+
+### Format and framing
+
+Use an outcome-oriented ATS resume with a concise customer-value summary, relevant transferable achievements, and a focused technology section. Translate experience honestly; do not rename prior jobs or disguise investigative work.
+
+---
+
+## Profile 6: `technical-account-management`
+
+### Target roles
+
+- Technical Account Manager
+- Customer Success Engineer
+- Technical Customer Success Manager
+- Service Delivery Manager
+- Implementation-oriented customer technical roles
+
+### Voice emphasis
+
+Lead with technical discovery, troubleshooting, escalation coordination, implementation support, workflow integration, training, documentation, and product feedback. Connect tools to operational or customer results. Do not claim formal SaaS account ownership, SLAs, cloud architecture, ticket volumes, or renewal quotas without evidence.
+
+### Format and framing
+
+Use a hybrid customer/technical ATS resume. Put relevant technical capabilities near the top and explain the transfer from operator, investigator, instructor, or cross-agency coordinator without overstating direct TAM experience.
+
+---
+
+## Profile 7: `dfir-cyber`
+
+### Target roles
+
+- Digital Forensic Examiner
+- DFIR or Cyber Investigations role
+- Cybercrime Investigator
+- Incident Response Investigator
+- Digital Forensics Consultant
+
+### Voice emphasis
+
+Lead with acquisition, preservation, examination, validation, chain of custody, mobile and computer forensics, evidence volume, forensic reporting, and communication with technical and non-technical audiences. Separate primary platforms from supplemental tools and label developing cyber or incident-response skills honestly.
+
+### Format and framing
+
+Use a technical ATS resume with an early tools and methods section, representative examinations or projects, quantified evidence work, and relevant training. Avoid generic customer-success, insurance, or leadership-heavy wording unless the posting is genuinely hybrid.
 
 ---
 
