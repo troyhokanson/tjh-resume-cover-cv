@@ -163,7 +163,7 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
 
 - `new_application.sh` — **start here for every new application.** One command. Handles the ATS audit and prints the next steps.
 - `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine. Called by new_application.sh automatically.
-- `docx_header.py` — the locked header builder + shared body helpers. Import this in every build script. Never hand-roll the header.
+- `docx_header.py` — the branded navy/gold header builder + shared body helpers. Import it when a branded presentation copy is selected. Never hand-roll the branded header.
 - `pdf_header.py` — locked PDF page-1 header renderer.
 - `reference_header.docx` — visual ground truth. Diff against page 1 of every new build.
 - `build_reference.py` — rebuilds the reference DOCX after any header change.
