@@ -126,6 +126,17 @@ _COURT_CASE_PATTERN = re.compile(
 )
 _DOB_PATTERN = re.compile(r"\bDOB\s*[:\-]?\s*\d{2}/\d{2}/\d{4}\b", re.IGNORECASE)
 
+_POST_LICENSE_REFERENCE_PATTERN = re.compile(
+    r"\b(?:Minnesota\s+|MN\s+)?"
+    r"(?:Peace\s+Officer(?:\s+POST)?|POST(?:\s+Board)?)\s+"
+    r"(?:License|Licensed|Certification|Certified)\b",
+    re.IGNORECASE,
+)
+_POST_NUMBER_PATTERN = re.compile(
+    r"\bPOST\s*(?:#|No\.?|Number|License\s*(?:No\.?|Number)?)\s*\d{4,6}\b",
+    re.IGNORECASE,
+)
+
 
 # =========================================================================
 # LAYER 2 - PROFILE-SPECIFIC RULES
@@ -348,6 +359,12 @@ def scan_text(
 
     if _DOB_PATTERN.search(body):
         failures.append("[L1:PRIVACY] DOB string found. Omit entirely from application documents.")
+
+    if _POST_LICENSE_REFERENCE_PATTERN.search(body) or _POST_NUMBER_PATTERN.search(body):
+        failures.append(
+            "[L1:PRIVACY] POST / peace-officer licensing identifier found. "
+            "Omit the entire licensing credential from public and application documents."
+        )
 
     if re.search(r"\b(VEVRAA|protected veteran)\b", body, re.IGNORECASE):
         failures.append("[L1] Protected veteran / VEVRAA language present - Troy directed this be omitted.")
