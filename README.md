@@ -2,15 +2,15 @@
 
 **SINGLE SOURCE OF TRUTH** for every Troy Hokanson resume, cover letter, CV, recruiter packet, professional bio, one-pager, or any DOCX/PDF document bearing his name. This repo MUST be cloned into `/home/user/workspace/templates/` (via symlink) at the start of every application build session — automatically, no exceptions.
 
-This repo enforces five locked standards:
+This repo separates hard safeguards from role-specific authoring choices:
 
-1. **Navy/gold header layout** (HEADER_STANDARD.md, docx_header.py, pdf_header.py)
-2. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in VOICE_STANDARD.md and Layer 2 audience profiles in PROFILES.md. Enforced by anti_ai_scan.py. Pick the right profile using PROFILE_SELECTOR.md.
-3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
-4. **ATS keyword coverage** — ats_injector.py audits every build against the job description and flags missing terms before documents are sent.
-5. **Privacy hard block** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
+1. **Role adaptation and LLM autonomy** — ROLE_ADAPTATION_STANDARD.md requires posting-led wording, evidence, structure, and formatting for SIU, corporate security, customer success, technical account management, DFIR/cyber, intelligence, and solutions roles.
+2. **ATS and presentation formats** — HEADER_STANDARD.md supports a plain text-first ATS header or the navy/gold branded presentation header.
+3. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
+4. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
+5. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
 
-Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
+Seven primary lanes are defined: `vendor-solutions`, `siu-fraud`, `analyst-intelligence`, `corporate-security-investigations`, `customer-success`, `technical-account-management`, and `dfir-cyber`. The scanner uses `adaptive` if no lane is supplied, but each final application should log a selected primary lane.
 
 If you are about to build a Hokanson document and this repo is not present in the workspace, STOP and clone it first.
 
@@ -81,8 +81,9 @@ tjh-resume-cover-cv/
 │   ├── test_anti_ai_scan.py  # 80+ unit tests for every scan rule
 │   └── test_config.py        # Tests for env-var loading and safe fallbacks
 ├── CASE_BANK.md            # Source-of-truth case examples (Condello Wall, Garwood, Lakeville, BEC, etc.)
-├── HEADER_STANDARD.md      # Locked layout specification
-├── VOICE_STANDARD.md       # Layer 1 hard rules (apply to every document, every profile)
+├── ROLE_ADAPTATION_STANDARD.md # Posting-led authoring and formatting autonomy
+├── HEADER_STANDARD.md      # ATS and branded presentation layout options
+├── VOICE_STANDARD.md       # Voice, truth, and privacy guardrails
 ├── PROFILES.md             # Layer 2 profile definitions (vendor-solutions, siu-fraud, analyst-intelligence)
 ├── PROFILE_SELECTOR.md     # Decision tree — pick the right profile from a job posting
 ├── SYSTEM_PROMPT.md        # Copy-paste system prompt for custom AI setups
@@ -154,7 +155,7 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
          doc_type="resume")   # raises FailedScan if any violation
 ```
 
-**Every `build_*.py` script must end with the `scan_pdf` call.** Skipping the scan is not allowed.
+**Every `build_*.py` script must end with the `scan_pdf` call.** Select the primary role lane from the posting and pass it with `--profile`; use `adaptive` only while the lane is unresolved.
 
 ---
 
@@ -169,7 +170,8 @@ scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
 - `HEADER_STANDARD.md` — locked layout specification.
 - `CASE_BANK.md` — all quantified case examples with resume bullet, condensed bullet, cover letter paragraph, and interview talking points for each. Pull from here, never rewrite from memory.
 - `anti_ai_scan.py` — **automatic enforcement** of the voice and anti-AI rules. Called at the bottom of every `build_*.py` script. Hard-blocks any document that fails.
-- `VOICE_STANDARD.md` — Troy's permanent voice standard (54-year-old Gen-X retired detective, Master's-educated, empathetic / humanistic, investigations-experienced).
+- `ROLE_ADAPTATION_STANDARD.md` — Controls posting-led identity, wording, structure, evidence, and format choices.
+- `VOICE_STANDARD.md` — Preserves Troy's direct, precise, human voice without a universal document script.
 - `requirements.txt` — Python dependencies. Install with `pip install -r requirements.txt`.
 - `fonts/README.md` — Instructions for installing EB Garamond and Inter fonts locally.
 - `tests/` — Unit tests for the scan engine and config loader. Run with `python -m pytest tests/ -v`.
