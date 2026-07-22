@@ -81,6 +81,24 @@ team to serve a search warrant").
 
 **Permitted replacement:** "a Dakota County probation officer," "department supervision staff."
 
+### 1H — Law-Enforcement License and Internal Service Identifiers
+- Minnesota POST or peace-officer license numbers
+- Badge numbers and internal personnel or employee identifiers
+- License effective dates, expiration dates, renewal details, or credential IDs
+- A standalone POST or peace-officer licensing credential line, even without a number
+
+Troy is not pursuing sworn law-enforcement positions. These identifiers provide no
+material value for his current targets and create an unnecessary searchable link to
+licensing records.
+
+**Permitted replacement:** Omit the licensing credential entirely. Describe the
+relevant experience as "25 years of sworn law-enforcement service" or "medically
+retired Minnesota detective" when the target role benefits from that context.
+
+**Private verification exception:** If an employer makes a legitimate, role-specific
+written request for licensing verification, respond privately outside the resume,
+cover letter, CV, portfolio, or public repository.
+
 ---
 
 ## Section 2 — Permitted Elements (What Stays)
