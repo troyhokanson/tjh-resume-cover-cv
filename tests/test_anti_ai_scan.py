@@ -217,6 +217,22 @@ class TestPtsdScopeGuard:
 
 
 # ---------------------------------------------------------------------------
+# POST / peace-officer licensing privacy guard
+# ---------------------------------------------------------------------------
+
+class TestPostLicensePrivacyGuard:
+    @pytest.mark.parametrize("phrase", [
+        "Minnesota Peace Officer License No. 54321",
+        "MN Peace Officer POST Certification, License No. 54321",
+        "POST Board Certified Peace Officer, License No. 54321",
+        "POST # 54321",
+    ])
+    def test_post_licensing_identifier_flagged(self, phrase):
+        violations = _resume(f"Professional Credentials: {phrase}.")
+        assert any("licensing identifier" in v for v in violations)
+
+
+# ---------------------------------------------------------------------------
 # VEVRAA guard
 # ---------------------------------------------------------------------------
 
