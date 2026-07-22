@@ -119,9 +119,6 @@ class TestForbiddenPhrases:
         "moving forward", "going forward", "touch base", "circle back",
         "impactful", "game-changer", "paradigm shift",
         "holistic approach", "deep dive", "bandwidth",
-        "optimized", "streamlined", "facilitated",
-        "delivered value", "implemented solutions", "drove outcomes",
-        "empowered", "transformed",
     ])
     def test_core_forbidden_phrase(self, phrase):
         body = f"The candidate {phrase} the program."
@@ -153,38 +150,22 @@ class TestForbiddenPhrases:
 # ---------------------------------------------------------------------------
 
 class TestCoverLetterRules:
-    def test_look_forward_flagged(self):
-        body = _clean_cover() + " I look forward to hearing from you."
-        violations = _cover(body)
-        assert any("look forward" in v for v in violations)
+    @pytest.mark.parametrize("closing", ["Respectfully,", "Sincerely,", "Thank you,"])
+    def test_professional_closing_is_adaptive(self, closing):
+        body = _clean_cover().replace("Respectfully,", closing)
+        assert _cover(body) == []
 
-    def test_bad_closing_sincerely_flagged(self):
-        body = _clean_cover().replace("Respectfully,", "Sincerely,")
-        violations = _cover(body)
-        assert any("Sincerely" in v for v in violations)
-
-    def test_bad_closing_best_regards_flagged(self):
-        body = _clean_cover().replace("Respectfully,", "Best regards,")
-        violations = _cover(body)
-        assert any("Best regards" in v for v in violations)
-
-    def test_contraction_cap_exceeded(self):
-        # More than 2 contractions in a cover letter
+    def test_natural_contractions_are_allowed(self):
         body = (
-            "I'm proud of my record. I've built a strong foundation. "
-            "I'll bring that here. I'd welcome the opportunity.\n\nRespectfully,"
+            "I'm interested because the work fits what I've done. "
+            "I'd welcome a practical conversation about the role.\n\nSincerely,"
         )
-        violations = _cover(body)
-        assert any("contractions" in v for v in violations)
+        assert not any("contractions" in v for v in _cover(body))
 
-    def test_two_contractions_allowed(self):
-        body = (
-            "I'm proud of my record and I've built a strong foundation. "
-            "This work is meaningful.\n\nRespectfully,"
-        )
+    def test_formulaic_look_forward_phrase_remains_flagged(self):
+        body = _clean_cover() + " I look forward to discussing the role."
         violations = _cover(body)
-        assert not any("contractions" in v for v in violations)
-
+        assert any("look forward" in v.lower() for v in violations)
 
 # ---------------------------------------------------------------------------
 # Resume / CV contraction rules
@@ -215,6 +196,29 @@ class TestPtsdScopeGuard:
         violations = _resume(f"The investigation involved {term} cases.")
         assert any("PTSD-scope" in v for v in violations)
 
+
+# ---------------------------------------------------------------------------
+# Role-adaptive profile support
+# ---------------------------------------------------------------------------
+
+class TestRoleAdaptiveProfiles:
+    @pytest.mark.parametrize("profile", [
+        "adaptive", "vendor-solutions", "siu-fraud",
+        "analyst-intelligence", "corporate-security-investigations",
+        "customer-success", "technical-account-management", "dfir-cyber",
+    ])
+    def test_supported_profile_accepts_clean_text(self, profile):
+        assert scan_text("Documented verified outcomes.", profile=profile) == []
+
+    @pytest.mark.parametrize("phrase", [
+        "optimized the onboarding workflow",
+        "streamlined the escalation process",
+        "facilitated customer training",
+        "implemented solutions for partner agencies",
+        "drove outcomes through careful follow-up",
+    ])
+    def test_legitimate_industry_language_is_not_globally_blocked(self, phrase):
+        assert _resume(phrase) == []
 
 # ---------------------------------------------------------------------------
 # POST / peace-officer licensing privacy guard
