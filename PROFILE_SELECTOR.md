@@ -11,7 +11,7 @@ For law-enforcement technology, SLED, public-safety SaaS, digital evidence, ALPR
 
 The strategy file defines target companies, role families, remote rules, and travel limits. The technology inventory defines Troy's exact product experience, primary-versus-supplemental workflows, and permitted proficiency language.
 
-If you cannot decide, **default to `vendor-solutions`** and note the uncertainty in the build log.
+If the role is genuinely ambiguous, use **`adaptive`** for the initial scan, document the uncertainty, and choose the primary lane before final delivery. Do not silently force the role into `vendor-solutions`.
 
 ---
 
@@ -24,11 +24,12 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Solutions Engineer, Senior Solutions Engineer, Public Safety Solutions Engineer | `vendor-solutions` |
 | Sales Engineer, Senior Sales Engineer, Public Safety Sales Engineer | `vendor-solutions` |
 | Customer Solutions Manager, Customer Solutions Lead, Customer Solutions Architect | `vendor-solutions` |
-| Customer Success Manager, Senior Customer Success Manager, Strategic Customer Success Manager | `vendor-solutions` when the employer serves public safety, law enforcement, justice, DFIR, or SLED |
-| Scaled Customer Success Manager, Growth Customer Success Manager, Customer Success Manager - Majors | `vendor-solutions` when the employer serves public safety, law enforcement, justice, DFIR, or SLED |
-| Customer Success Engineer, Customer Success Advocate, Agency Success Manager | `vendor-solutions` |
-| Technical Account Manager, Senior Technical Account Manager | `vendor-solutions` when the product serves public safety, investigations, evidence, communications, fleet, or DFIR |
-| Customer Engagement Manager, Engagement Manager, Customer Program Manager | `vendor-solutions` when customer implementation or adoption is the core duty |
+| Customer Success Manager, Senior Customer Success Manager, Strategic Customer Success Manager | `customer-success`; add `vendor-solutions` only as a secondary lane for public-safety or investigative technology |
+| Scaled Customer Success Manager, Growth Customer Success Manager, Customer Success Manager - Majors | `customer-success` |
+| Customer Success Engineer | `technical-account-management` |
+| Customer Success Advocate, Agency Success Manager | `customer-success` |
+| Technical Account Manager, Senior Technical Account Manager | `technical-account-management`; add `dfir-cyber` or `vendor-solutions` only as a secondary lane when the product warrants it |
+| Customer Engagement Manager, Engagement Manager, Customer Program Manager | `customer-success` when adoption and relationship outcomes are primary; `technical-account-management` when technical delivery is primary |
 | Account Manager - Law Enforcement, Strategic Account Manager - Public Safety | `vendor-solutions` |
 | Public Safety Manager, Public Safety Strategy, Public Safety Strategist | `vendor-solutions` |
 | Public Safety Advisor, Public Safety Technology Advisor, Public Safety Subject-Matter Expert | `vendor-solutions` |
@@ -37,21 +38,24 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 | Implementation Consultant, Senior Implementation Consultant, Implementation Specialist | `vendor-solutions` when the employer is a public-safety or investigative-technology vendor |
 | Implementation Manager, Professional Services Consultant, Service Delivery Consultant | `vendor-solutions` when duties are individual-contributor, project, or customer-outcome focused |
 | Public Safety Project Manager, Service Delivery Project Manager, Deployment Program Manager | `vendor-solutions` |
-| Customer Onboarding Manager, Customer Onboarding Consultant, Adoption Consultant | `vendor-solutions` |
+| Customer Onboarding Manager, Customer Onboarding Consultant, Adoption Consultant | `customer-success` |
 | Business Analyst - Public Safety, Business Analyst - Justice | `vendor-solutions` |
 | Field Application Specialist, Product Specialist - Public Safety / Forensics / Fleet | `vendor-solutions` |
 | Investigative Trainer, Technical Trainer, Customer Training Consultant | `vendor-solutions` |
 | Training Specialist - Public Safety, Law Enforcement Trainer, Customer Education Manager | `vendor-solutions` |
-| Customer Enablement Manager, Product Trainer, Curriculum Developer - Public Safety | `vendor-solutions` |
+| Customer Enablement Manager | `customer-success` |
+| Product Trainer, Curriculum Developer - Public Safety | `vendor-solutions` |
 | Instructor - Digital Investigations, Instructor - Geolocation Investigations | `vendor-solutions` |
-| DFR Customer Success Manager, Customer Success Manager - DFR | `vendor-solutions` |
+| DFR Customer Success Manager, Customer Success Manager - DFR | `customer-success` with `dfir-cyber` as secondary |
 | DFR Program Manager, DFR Implementation Consultant, DFR Training Specialist | `vendor-solutions` |
-| DFR Technical Account Manager, Public Safety Drone Solutions Consultant | `vendor-solutions` |
+| DFR Technical Account Manager | `technical-account-management` with `dfir-cyber` as secondary |
+| Public Safety Drone Solutions Consultant | `vendor-solutions` |
 | Digital Evidence Consultant, Evidence Solutions Consultant, ALPR Solutions Consultant | `vendor-solutions` |
 | Body-Worn Camera Program Consultant, Fleet Video Implementation Consultant | `vendor-solutions` |
 | Mission-Critical Communications Consultant, Public Safety Radio Product Specialist | `vendor-solutions` |
 | Real-Time Crime Center Solutions Consultant, CAD/RMS Implementation Consultant | `vendor-solutions` |
-| Digital Forensics Consultant, Mobile Forensics Consultant, Forensic Solutions Consultant | `vendor-solutions` when employed by a vendor or professional-services team |
+| Digital Forensics Consultant, Mobile Forensics Consultant | `dfir-cyber`; use `vendor-solutions` only when demos, discovery, or adoption are the primary output |
+| Forensic Solutions Consultant | `vendor-solutions` with `dfir-cyber` as secondary |
 | Investigative Analyst or Geolocation Analyst at a public-safety vendor | `analyst-intelligence` unless the role is mainly customer training, implementation, demos, or adoption, then `vendor-solutions` |
 | SIU Investigator, Senior SIU Investigator, Special Investigations Unit | `siu-fraud` |
 | Insurance Fraud Investigator, Field Fraud Investigator, Special Investigator - carrier | `siu-fraud` |
@@ -91,16 +95,18 @@ If you cannot decide, **default to `vendor-solutions`** and note the uncertainty
 
 If the JD is heavy on:
 
-- **demo, customer demos, RFP, RFI, proof of concept, discovery, partner agencies, workshops, customer training, implementation, onboarding, adoption, go-live, customer outcomes, account health, technical account, QBR, professional services, conference, territory, travel** -> `vendor-solutions`
+- **demo, customer demos, RFP, RFI, proof of concept, discovery, conference, territory** -> `vendor-solutions`
+- **customer adoption, onboarding, account health, customer outcomes, enablement, retention, relationship plan** -> `customer-success`
+- **technical account, escalation, implementation support, integration, troubleshooting, service delivery, technical enablement** -> `technical-account-management`
 - **public safety, SLED, law enforcement, CJIS, ALPR, body-worn camera, fleet video, digital evidence, RTCC, CAD, RMS, dispatch, DFR, UAS, customer agency, command staff, patrol workflow** -> strong `vendor-solutions` signal when paired with customer-facing duties
 - **Axon Body 3, Axon Fleet 2, TASER X26, Motorola mobile radio, portable radio, mission-critical communications, Whelen, emergency vehicle equipment** -> `vendor-solutions` for training, customer success, implementation, solutions, field applications, or agency-advisory duties
 - **Accurint, Accurint One, Accurint Virtual Crime Center, Accurint TraX, ZetX, geolocation, cellular records, Google Earth, investigative trainer** -> `vendor-solutions` for training, customer, solutions, product, account, and service-delivery duties; `analyst-intelligence` for analyst-only duties
-- **Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, BlackLight, MacQuisition, FTK, X-Ways, TALINO, RECON, Tableau write blocker, mobile forensics, forensic examiner** -> `vendor-solutions` when customer-facing; `analyst-intelligence` when examination or analysis is the primary output
+- **Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, BlackLight, MacQuisition, FTK, X-Ways, TALINO, RECON, Tableau write blocker, mobile forensics, forensic examiner** -> `dfir-cyber` when examination is the primary output; `technical-account-management` when technical customer ownership is primary; `vendor-solutions` when demos or pre-sales are primary
 - **recorded statement, EUO, claim file, indicator review, NICB, restitution, charged out, plea, victim, premium** -> `siu-fraud`
 - **SAR / STR, AML, structured analytic, link analysis, finished intelligence, written products, briefing, OSINT, typology, key judgment** -> `analyst-intelligence`
 - **employee misconduct, colleague safety, workplace violence, insider threat, data loss, cyber activity, Legal, HR, Internal Audit, enterprise risk, corporate security, business leaders, investigative findings** -> `corporate-security-investigations`
 
-If two profiles tie, prefer the one supported by the company tiebreaker. If still tied, default to `vendor-solutions` and log the uncertainty.
+If two profiles tie, select the lane that owns the role's primary business outcome and log one secondary lane. If the outcome is still unclear, use `adaptive` during drafting and resolve the lane before delivery.
 
 ### Tool-selection rule
 
@@ -204,8 +210,9 @@ evidence_pack:
 In the build log, cover-letter file header comment, or commit message, include:
 
 ```text
-Profile: vendor-solutions
-Posting: Investigative Trainer - LexisNexis Risk Solutions
+Profile: customer-success
+Secondary profile: vendor-solutions
+Posting: Customer Success Manager - Public Safety Technology
 URL: [posting URL if available]
 Verified live: [date]
 Remote status: [fully remote / home-based / territory / hybrid / onsite]
