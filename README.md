@@ -2,12 +2,13 @@
 
 **SINGLE SOURCE OF TRUTH** for every Troy Hokanson resume, cover letter, CV, recruiter packet, professional bio, one-pager, or any DOCX/PDF document bearing his name. This repo MUST be cloned into `/home/user/workspace/templates/` (via symlink) at the start of every application build session — automatically, no exceptions.
 
-This repo enforces four locked standards:
+This repo enforces five locked standards:
 
 1. **Navy/gold header layout** (HEADER_STANDARD.md, docx_header.py, pdf_header.py)
 2. **Anti-AI / voice rules** — two layers: Layer 1 hard rules in VOICE_STANDARD.md and Layer 2 audience profiles in PROFILES.md. Enforced by anti_ai_scan.py. Pick the right profile using PROFILE_SELECTOR.md.
 3. **PTSD-safe scope and writing voice** (linked from VOICE_STANDARD.md)
 4. **ATS keyword coverage** — ats_injector.py audits every build against the job description and flags missing terms before documents are sent.
+5. **Privacy hard block** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
 
 Three profiles are defined: `vendor-solutions` (default — Solutions Consultant, Sales Engineer, Public Safety Manager), `siu-fraud` (SIU Investigator, Insurance Fraud Investigator), and `analyst-intelligence` (Investigations and Intelligence Analyst, Financial Crime Analyst). The scan defaults to `vendor-solutions` if no profile is specified.
 
