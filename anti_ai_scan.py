@@ -1,8 +1,8 @@
 """
 Anti-AI / Voice scan - MANDATORY automatic gate for every Hokanson document.
 
-Codifies the rules from VOICE_STANDARD.md (Layer 1 + Layer 2), PROFILES.md,
-and PRIVACY_STANDARD.md. Run BEFORE share_file on any resume, cover letter,
+Codifies the hard safeguards from VOICE_STANDARD.md, ROLE_ADAPTATION_STANDARD.md,
+PROFILES.md, and PRIVACY_STANDARD.md. Run BEFORE share_file on any resume, cover letter,
 CV, recruiter packet, bio, or one-pager.
 
 Voice baseline: 54-year-old Gen-X medically retired Minnesota detective,
@@ -32,12 +32,16 @@ class FailedScan(Exception):
 
 
 VALID_PROFILES = (
+    "adaptive",
     "vendor-solutions",
     "siu-fraud",
     "analyst-intelligence",
     "corporate-security-investigations",
+    "customer-success",
+    "technical-account-management",
+    "dfir-cyber",
 )
-DEFAULT_PROFILE = "vendor-solutions"
+DEFAULT_PROFILE = "adaptive"
 
 
 # =========================================================================
@@ -143,6 +147,10 @@ _POST_NUMBER_PATTERN = re.compile(
 # =========================================================================
 
 PROFILE_RULES = {
+    "adaptive": {
+        "description": "Posting-led drafting when no primary lane has been selected yet.",
+        "banned_phrases": [],
+    },
     "vendor-solutions": {
         "description": (
             "Solutions Consultant / Sales Engineer / Solutions Expert / "
@@ -211,6 +219,30 @@ PROFILE_RULES = {
             "boots on the ground",
             "trusted advisor", "thought leadership", "thought leader",
             "passion for investigations", "lifelong service",
+        ],
+    },
+    "customer-success": {
+        "description": "Customer Success Manager / Customer Enablement / Agency Success.",
+        "banned_phrases": [
+            "examination under oath", "recorded statement of the insured",
+            "claim file review", "policyholders", "premiums",
+            "F3EAD", "finished intelligence", "boots on the ground",
+        ],
+    },
+    "technical-account-management": {
+        "description": "Technical Account Manager / Customer Success Engineer / Service Delivery.",
+        "banned_phrases": [
+            "examination under oath", "recorded statement of the insured",
+            "claim file review", "policyholders", "premiums",
+            "boots on the ground",
+        ],
+    },
+    "dfir-cyber": {
+        "description": "Digital Forensics / DFIR / Cyber Investigations / Forensic Consulting.",
+        "banned_phrases": [
+            "recorded statement of the insured", "claim file review",
+            "policyholders", "premiums", "top-of-funnel",
+            "pipeline coverage", "deal cycle", "boots on the ground",
         ],
     },
 }
@@ -309,20 +341,9 @@ def scan_text(
         failures.append("[L1] Paragraph opens with 'As a [Title]...' - strongest AI opener pattern.")
 
     if doc_type == "cover":
-        if re.search(r"I look forward", body, re.IGNORECASE):
-            failures.append("[L1] Cover letter contains 'I look forward...' - most-overused AI closing.")
-        for bad_close in ["Sincerely,", "Best regards,", "Best,", "Thank you,", "Kind regards,", "Warm regards,"]:
-            if bad_close in body:
-                failures.append(f"[L1] Cover letter uses '{bad_close}' - must be 'Respectfully,'")
-        contractions = re.findall(
-            r"\b(?:I'm|I've|I'll|I'd|don't|won't|can't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't"
-            r"|wouldn't|shouldn't|couldn't|it's|that's|there's|here's|what's|who's|let's"
-            r"|you're|we're|they're|you'll|we'll|they'll|you've|we've|they've|you'd|we'd|they'd)\b",
-            body, re.IGNORECASE,
-        )
-        if len(contractions) > 2:
-            failures.append(f"[L1] Cover letter has {len(contractions)} contractions (max 2): {contractions}")
-
+        # Cover-letter opener, paragraph structure, contractions, and professional
+        # closing are role-adaptive. High-signal cliches remain covered above.
+        pass
     if doc_type in ("resume", "cv"):
         bullet_contractions = re.findall(
             r"\b(?:I'm|I've|I'll|I'd|don't|won't|can't|isn't|aren't|wasn't|weren't|haven't|hasn't|hadn't"
