@@ -100,7 +100,7 @@ RESUME_SPEC = {
             "heading": "Certifications, AI and Scam‑Disruption Focus",
             "paragraphs": [
                 "Certified Fraud Examiner (CFE) — actively pursuing through ACFE, 2026. Minnesota Peace "
-                "Officer License No. 4849 — POST Board Certified, 1998–2023. Cellebrite CCLO and CCPA — "
+                "Cellebrite CCLO and CCPA — "
                 "trained and proficient (2016, recertified 2020). Heavy AI operator using Perplexity, "
                 "Claude, ChatGPT, Copilot, Gemini, NotebookLM, and GitHub‑based automation as core "
                 "investigative tools for OSINT, document analysis, and pattern recognition. Personally "
