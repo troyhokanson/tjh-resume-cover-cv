@@ -58,9 +58,7 @@ FORBIDDEN_PHRASES = [
     "with that said", "that being said", "moving forward", "going forward",
     "touch base", "circle back", "value-add", "value add", "impactful",
     "game-changer", "paradigm shift", "holistic approach", "deep dive",
-    "bandwidth", "optimized", "streamlined", "facilitated", "delivered value",
-    "implemented solutions", "drove outcomes", "empowered", "transformed",
-    "transforming", "I look forward to discussing",
+    "bandwidth", "I look forward to discussing",
 ]
 
 EXTRA_FLAGGED = [
@@ -79,7 +77,6 @@ EXTRA_FLAGGED = [
     "elevate",
     "unlock",
     "world-class",
-    "best practices",
     "OSINT and open-source",
     "interviews and interrogations",
     "surveillance and monitoring",
