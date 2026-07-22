@@ -1,73 +1,55 @@
-# Credentials Constants — Locked, Verbatim, Non-Negotiable
+# Credentials Constants - Locked, Verbatim, Non-Negotiable
 
-These identifiers must appear exactly as written in every resume, CV, and any document
-that references Troy's law enforcement licensing or service credentials.
-**Never reverse, swap, or paraphrase these numbers.**
-
----
-
-## Minnesota Peace Officer License
-
-```
-Minnesota Peace Officer License No. 14790
-POST Board Certified, 1998-2023
-```
-
-- **License number: 14790** — this is the POST-issued license number. It goes on resumes and CVs.
-- This number is issued by the Minnesota Board of Peace Officer Standards and Training (POST Board).
-- Do NOT use 4849 here. 4849 is Troy's badge number (see below). They are entirely different identifiers.
+This file defines which professional credentials may appear in Troy Hokanson resumes,
+cover letters, CVs, recruiter packets, professional bios, one-pagers, portfolio content,
+and other public or application-facing documents.
 
 ---
 
-## Badge Number (internal service identifier — NOT a resume credential)
+## Permanent Privacy Rule - Law-Enforcement Identifiers
 
-```
-Badge No. 4849
-```
+Troy is not pursuing sworn law-enforcement positions. The following information is
+historical-record material only and must never appear in public or application-facing
+content:
 
-- **Badge number: 4849** — this is Troy's Lakeville Police Department service badge number.
-- Badge numbers are **internal department identifiers only**.
-- Badge numbers do **not** appear on resumes, CVs, cover letters, or any application document.
-- The only permitted use is in first-person narrative context if Troy references his service directly
-  (e.g., in a LinkedIn About section where he chooses to include it for personal voice).
-- If in doubt, omit the badge number entirely.
+- Minnesota POST or peace-officer license numbers
+- Badge numbers
+- Internal personnel, employee, or agency identifiers
+- License effective dates, expiration dates, or renewal details
+- A standalone POST or peace-officer licensing credential line, even without a number
+
+Do not store the actual identifiers in this public repository, including examples,
+tests, comments, change logs, commit messages, generated artifacts, or application
+folders.
+
+Permitted career framing includes "25 years of sworn law-enforcement service,"
+"medically retired Minnesota detective," and verified training or investigative
+experience. Those facts establish the relevant background without publishing a
+searchable licensing key.
+
+If an employer later makes a legitimate, role-specific written request for licensing
+verification, handle that privately and outside application materials. Do not alter
+this public-facing rule for a one-off request.
 
 ---
 
-## Certified Cyber Crime Investigator (CCCI)
+## Certified Cyber Crime Investigator
 
 ```
 Certified Cyber Crime Investigator (CCCI), Certificate No. 4793
 Issued: January 2023
-Issuing Body: International Association of Computer Investigative Specialists (IACIS)
 ```
 
-- **Certificate number: 4793** — this is the CCCI-issued credential number.
-- Do NOT confuse with badge number 4849 or POST license 14790. All three are different identifiers.
-- This credential belongs in the Certifications section of every resume and CV.
-- Display as: `Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023`
+This credential belongs in the Certifications section when relevant to the target role.
+Display as: `Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023`.
 
 ---
 
-## Common Error — Do Not Repeat
-
-| Wrong | Correct |
-|---|---|
-| `Minnesota Peace Officer License No. 4849` | `Minnesota Peace Officer License No. 14790` |
-| `CCCI No. 4849` or `CCCI No. 14790` | `CCCI No. 4793` |
-| `Badge No. 14790` | `Badge No. 4849` (internal only, not on resumes) |
-
-The badge number (4849), POST license (14790), and CCCI certificate (4793) are three distinct
-numbers. They must never be used interchangeably.
-
----
-
-## Full Credentials Block (verbatim for resume/CV certifications section)
+## Full Public-Facing Credentials Block
 
 ```
 Certified Fraud Examiner (CFE), actively pursuing through ACFE, 2026.
 Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
-Minnesota Peace Officer License No. 14790, POST Board Certified, 1998-2023.
 BCA Certified Crime Scene Technician.
 Cellebrite CCLO and CCPA (2016, recertified 2020).
 Reid Technique of Interviewing and Interrogation.
@@ -79,7 +61,6 @@ NW3C Cybercrime Investigation.
 
 ## Change Log
 
-- 2026-06-15: Created. Corrected POST license number from 4849 (badge) to 14790 (POST license).
-  Badge number 4849 documented as internal-only, not a resume credential.
-- 2026-06-15: Added CCCI No. 4793 (January 2023). Updated common error table to include all three
-  distinct credential numbers. CCCI added to full credentials block.
+- 2026-07-22: Removed all public-facing POST, peace-officer license, badge, and
+  internal identifier details. Added a permanent rule to omit the entire licensing
+  credential because Troy is not pursuing sworn law-enforcement roles.
