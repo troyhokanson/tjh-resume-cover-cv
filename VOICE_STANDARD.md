@@ -126,6 +126,15 @@ The following terms must NEVER appear in any document Troy's name is on, regardl
 
 Additionally, CSAM / child exploitation / ICAC training references are blocked by default and only opened via the `allow_icac=True` flag for child-safety platform roles (Roblox Trust & Safety, NCMEC, tech platform child-safety teams).
 
+## Law-Enforcement Identifier Privacy Hard Block
+
+POST or peace-officer license numbers, badge numbers, internal personnel identifiers,
+license dates, and standalone POST licensing credential lines must never appear in a
+resume, cover letter, CV, recruiter packet, professional bio, one-pager, portfolio
+page, or generated application artifact. Troy is not pursuing sworn law-enforcement
+roles. Use experience-based framing instead, such as "25 years of sworn service" or
+"medically retired Minnesota detective."
+
 ---
 
 # LAYER 2 — PROFILE VOICE (selected by --profile flag)
