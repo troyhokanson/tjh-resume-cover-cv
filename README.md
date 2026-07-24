@@ -6,13 +6,38 @@ This repo separates hard safeguards from role-specific authoring choices:
 
 1. **Role adaptation and LLM autonomy** — ROLE_ADAPTATION_STANDARD.md requires posting-led wording, evidence, structure, and formatting for SIU, corporate security, customer success, technical account management, DFIR/cyber, intelligence, and solutions roles.
 2. **ATS and presentation formats** — HEADER_STANDARD.md supports a plain text-first ATS header or the navy/gold branded presentation header.
-3. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
-4. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
-5. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
+3. **Body typography and pagination** — standards/body_typography_pagination_standard.md and standards/document_design_standard.json require Garamond-family body styling, steel-blue section headings with restrained gold rules, and no orphaned headings or job blocks.
+4. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
+5. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
+6. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
+7. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
 
 Seven primary lanes are defined: `vendor-solutions`, `siu-fraud`, `analyst-intelligence`, `corporate-security-investigations`, `customer-success`, `technical-account-management`, and `dfir-cyber`. The scanner uses `adaptive` if no lane is supplied, but each final application should log a selected primary lane.
 
 If you are about to build a Hokanson document and this repo is not present in the workspace, STOP and clone it first.
+
+---
+
+## Automatic Trigger Rule
+
+Any time Troy uploads, pastes, summarizes, or references a job description and asks to draft, build, tailor, revise, update, format, or prepare a resume, cover letter, CV, professional bio, candidate profile, recruiter packet, or application materials, that request is a **formal application build**.
+
+A formal application build automatically requires:
+
+1. Read the job posting completely.
+2. Select one primary role lane and record the rationale.
+3. Draft the ATS version and, when useful, the branded presentation version.
+4. Separate Education from Training and Certifications.
+5. Use the locked header when a branded copy is requested or appropriate.
+6. Use Garamond-family body, heading, subheading, and job-block styling.
+7. Prevent orphaned headings, subheadings, employer/title lines, and job blocks.
+8. Render DOCX to PDF.
+9. Render every PDF page to PNG.
+10. Run `validate_application_packet.py` against every final document.
+11. Save the JSON validation reports with the application files.
+12. Do not deliver, share, upload, or mark the packet Ready unless the validator passes.
+
+This rule is mandatory. The user should not have to separately ask for the anti-AI scan, privacy scan, header check, body typography check, pagination check, or Drive save.
 
 ---
 
@@ -24,19 +49,17 @@ If you are about to build a Hokanson document and this repo is not present in th
 bash new_application.sh
 ```
 
-It will ask you three questions (JD file path, profile, employer/role name) and then:
+It will ask for the job description file path, selected profile, employer name, and role name, then:
 - Extract the high-signal ATS keywords from the job description automatically
-- Check coverage against any existing resume/cover docs you point to
-- Print the missing keywords you need to weave in
-- Save a dated audit report to `build_logs/`
-- Print the exact prompt to paste into your AI session to build the documents
+- Save a dated ATS audit report to `build_logs/`
+- Print the mandatory final validation commands
+- Print the exact prompt to paste into an AI session to build the documents
 
-**That's it.** The script handles the rest. You do not need to remember command flags.
+The script starts the process. The build is not complete until `validate_application_packet.py` passes on the final files.
 
-### Manual ATS audit (if you prefer)
+### Manual ATS audit
 
 ```bash
-# Save the job description as a .txt file, then:
 python ats_injector.py \
   --jd job_description.txt \
   --resume Hokanson_Resume_XYZ.docx \
@@ -45,15 +68,42 @@ python ats_injector.py \
   --output build_logs/ats_audit.txt
 ```
 
-Exit code `0` = 85%+ coverage (good to send). Exit code `1` = below floor (fix before sending).
+Exit code `0` = 85%+ coverage. Exit code `1` = below floor, fix before sending.
 
-### How the ATS injector works
+### Mandatory final validator
+
+Use this after the DOCX has been rendered to PDF and the PDF pages have been rendered to PNG.
+
+```bash
+python validate_application_packet.py \
+  --docx output/Hokanson_Resume_Employer_Role_BRANDED.docx \
+  --pdf output/Hokanson_Resume_Employer_Role_BRANDED.pdf \
+  --header-png output/rendered_resume/page-1.png \
+  --header-png output/rendered_resume/page-2.png \
+  --doc-type resume \
+  --profile analyst-intelligence \
+  --json-out build_logs/validate_resume_Employer_Role.json
+
+python validate_application_packet.py \
+  --docx output/Hokanson_Cover_Employer_Role_BRANDED.docx \
+  --pdf output/Hokanson_Cover_Employer_Role_BRANDED.pdf \
+  --header-png output/rendered_cover/page-1.png \
+  --doc-type cover \
+  --profile analyst-intelligence \
+  --json-out build_logs/validate_cover_Employer_Role.json
+```
+
+The validator checks anti-AI language, privacy patterns, POST/license suppression, blocked PTSD-scope terms, role-lane wrong-language, Garamond-family styling, Word header placement, navy/gold header markers, rendered header edges, and page-tail orphan headings.
+
+---
+
+## How the ATS injector works
 
 - Extracts single-word and two-word phrase keywords from any raw JD text, weighted by frequency
 - Checks which terms are already present in your built resume and cover letter
 - Reports coverage percentage vs. the 85% floor target
 - `inject_into_summary()` and `inject_into_skills()` helpers let build scripts auto-weave missing terms
-- **Never overclaims:** profile-specific skip lists block terms Troy cannot legitimately claim (e.g. Salesforce, Tableau, underwriting authority for `siu-fraud` targets)
+- **Never overclaims:** profile-specific skip lists block terms Troy cannot legitimately claim, such as Salesforce, Tableau, or underwriting authority for SIU targets
 - **Never violates VOICE_STANDARD:** Layer 1 banned phrases and PTSD-scope hard block are enforced at injection time
 - See `ats_injector.py` for full documentation
 
@@ -63,32 +113,37 @@ Exit code `0` = 85%+ coverage (good to send). Exit code `1` = below floor (fix b
 
 ```
 tjh-resume-cover-cv/
-├── config.py               # Contact info loader — reads env vars, never hardcoded
-├── config.example.env      # Copy to .env and fill in real values
-├── docx_header.py          # Locked DOCX header builder + body helpers
-├── pdf_header.py           # Locked PDF page-1 header renderer
-├── anti_ai_scan.py         # Automatic voice/anti-AI enforcement gate (Layer 1 + Layer 2)
-├── ats_injector.py         # ATS keyword extraction, audit, and injection engine
-├── new_application.sh      # One-command new application starter (run this first)
-├── scan_and_report.py      # Friendly wrapper — run at the share-file delivery gate
-├── build_reference.py      # Rebuilds reference_header.docx after any header change
-├── reference_header.docx   # Visual ground truth — diff against every new build
-├── requirements.txt        # Python dependencies
-├── build_logs/             # ATS audit reports (auto-created, gitignored)
+├── config.py                                # Contact info loader, reads env vars, never hardcoded
+├── config.example.env                       # Copy to .env and fill in real values
+├── docx_header.py                           # Locked DOCX header builder + body helpers
+├── pdf_header.py                            # Locked PDF page-1 header renderer
+├── anti_ai_scan.py                          # Voice/anti-AI enforcement gate
+├── validate_application_packet.py           # Mandatory final delivery validator
+├── ats_injector.py                          # ATS keyword extraction, audit, and injection engine
+├── new_application.sh                       # One-command new application starter
+├── scan_and_report.py                       # Friendly anti-AI wrapper
+├── build_reference.py                       # Rebuilds reference_header.docx after any header change
+├── reference_header.docx                    # Visual ground truth, diff against every new build
+├── requirements.txt                         # Python dependencies
+├── build_logs/                              # ATS and validation audit reports, gitignored
 ├── fonts/
-│   └── README.md           # Font installation guide (EB Garamond, Inter)
+│   └── README.md                            # Font installation guide, EB Garamond, Inter
 ├── tests/
-│   ├── test_anti_ai_scan.py  # 80+ unit tests for every scan rule
-│   └── test_config.py        # Tests for env-var loading and safe fallbacks
-├── CASE_BANK.md            # Source-of-truth case examples (Condello Wall, Garwood, Lakeville, BEC, etc.)
-├── ROLE_ADAPTATION_STANDARD.md # Posting-led authoring and formatting autonomy
-├── HEADER_STANDARD.md      # ATS and branded presentation layout options
-├── VOICE_STANDARD.md       # Voice, truth, and privacy guardrails
-├── PROFILES.md             # Layer 2 profile definitions (vendor-solutions, siu-fraud, analyst-intelligence)
-├── PROFILE_SELECTOR.md     # Decision tree — pick the right profile from a job posting
-├── SYSTEM_PROMPT.md        # Copy-paste system prompt for custom AI setups
-├── PLATFORM_SETUP.md       # How to configure ChatGPT, Claude, Gemini, etc.
-└── chatgpt_action_schema.json  # OpenAPI schema for ChatGPT Actions
+│   ├── test_anti_ai_scan.py                 # Unit tests for scan rules
+│   └── test_config.py                       # Tests for env-var loading and safe fallbacks
+├── standards/
+│   ├── document_design_standard.json        # Machine-readable visual/body/pagination standard
+│   └── body_typography_pagination_standard.md # Human-readable body typography standard
+├── CASE_BANK.md                             # Source-of-truth case examples
+├── ROLE_ADAPTATION_STANDARD.md              # Posting-led authoring and formatting autonomy
+├── HEADER_STANDARD.md                       # ATS and branded presentation layout options
+├── VOICE_STANDARD.md                        # Voice, truth, and privacy guardrails
+├── PRIVACY_STANDARD.md                      # Privacy suppression rules
+├── PROFILES.md                              # Layer 2 profile definitions
+├── PROFILE_SELECTOR.md                      # Decision tree, pick the right profile from a job posting
+├── SYSTEM_PROMPT.md                         # Copy-paste system prompt for custom AI setups
+├── PLATFORM_SETUP.md                        # Configure ChatGPT, Claude, Gemini, etc.
+└── chatgpt_action_schema.json               # OpenAPI schema for ChatGPT Actions
 ```
 
 ---
@@ -101,7 +156,7 @@ git clone https://github.com/troyhokanson/tjh-resume-cover-cv
 cd tjh-resume-cover-cv
 pip install -r requirements.txt
 
-# 2. Configure contact info (never hardcoded — kept out of the repo)
+# 2. Configure contact info, never hardcoded
 cp config.example.env .env
 # Edit .env and fill in real values
 
@@ -110,16 +165,12 @@ python -c "from docx_header import build_navy_header, new_document; print('OK')"
 python -c "from pdf_header import draw_page1_header; print('OK')"
 python -c "from anti_ai_scan import scan_pdf; print('OK')"
 python -c "from ats_injector import ATSInjector; print('OK')"
+python -c "import validate_application_packet; print('OK')"
 
-# 4. Run the delivery-gate scan on a built document
-python scan_and_report.py /path/to/Hokanson_Cover_ThomsonReuters.pdf cover
-python scan_and_report.py /path/to/Hokanson_Cover_GEICO_SIU.pdf cover --profile siu-fraud
-python scan_and_report.py /path/to/Hokanson_Resume_Stripe_Analyst.pdf resume --profile analyst-intelligence
-
-# 5. Run the test suite
+# 4. Run the test suite
 python -m pytest tests/ -v
 
-# 6. Build the visual reference DOCX
+# 5. Build the visual reference DOCX
 python build_reference.py
 ```
 
@@ -140,119 +191,79 @@ from templates.docx_header import (
 doc = new_document()
 build_navy_header(doc)
 add_section_heading(doc, "Professional Summary")
-# ... body content using add_bullet, add_job_block, etc.
+# body content using add_bullet, add_job_block, etc.
 doc.save("/home/user/workspace/output/Hokanson_Resume_Employer_Role.docx")
-
-# Convert to PDF, then run the MANDATORY anti-AI / voice scan
-import subprocess
-subprocess.run(["libreoffice", "--headless", "--convert-to", "pdf",
-                "--outdir", "/home/user/workspace/output",
-                "/home/user/workspace/output/Hokanson_Resume_Employer_Role.docx"],
-               check=True, capture_output=True)
-
-from templates.anti_ai_scan import scan_pdf
-scan_pdf("/home/user/workspace/output/Hokanson_Resume_Employer_Role.pdf",
-         doc_type="resume")   # raises FailedScan if any violation
 ```
 
-**Every `build_*.py` script must end with the `scan_pdf` call.** Select the primary role lane from the posting and pass it with `--profile`; use `adaptive` only while the lane is unresolved.
+Every build script must finish by rendering the DOCX, rendering page PNGs, and running `validate_application_packet.py`. `scan_pdf` alone is no longer enough for final delivery because it does not check Garamond styling, rendered header edges, or orphaned job headings.
 
 ---
 
 ## Files
 
-- `new_application.sh` — **start here for every new application.** One command. Handles the ATS audit and prints the next steps.
-- `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine. Called by new_application.sh automatically.
-- `docx_header.py` — the branded navy/gold header builder + shared body helpers. Import it when a branded presentation copy is selected. Never hand-roll the branded header.
+- `new_application.sh` — start here for every new application. One command. Handles the ATS audit and prints the mandatory final validator commands.
+- `validate_application_packet.py` — final delivery checklist. Hard-blocks failed application packets.
+- `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine.
+- `docx_header.py` — branded navy/gold header builder + shared body helpers. Import it when a branded presentation copy is selected. Never hand-roll the branded header.
 - `pdf_header.py` — locked PDF page-1 header renderer.
 - `reference_header.docx` — visual ground truth. Diff against page 1 of every new build.
 - `build_reference.py` — rebuilds the reference DOCX after any header change.
+- `standards/document_design_standard.json` — machine-readable visual, typography, and pagination standard.
+- `standards/body_typography_pagination_standard.md` — human-readable Garamond and pagination standard.
 - `HEADER_STANDARD.md` — locked layout specification.
-- `CASE_BANK.md` — all quantified case examples with resume bullet, condensed bullet, cover letter paragraph, and interview talking points for each. Pull from here, never rewrite from memory.
-- `anti_ai_scan.py` — **automatic enforcement** of the voice and anti-AI rules. Called at the bottom of every `build_*.py` script. Hard-blocks any document that fails.
-- `ROLE_ADAPTATION_STANDARD.md` — Controls posting-led identity, wording, structure, evidence, and format choices.
-- `VOICE_STANDARD.md` — Preserves Troy's direct, precise, human voice without a universal document script.
-- `requirements.txt` — Python dependencies. Install with `pip install -r requirements.txt`.
-- `fonts/README.md` — Instructions for installing EB Garamond and Inter fonts locally.
-- `tests/` — Unit tests for the scan engine and config loader. Run with `python -m pytest tests/ -v`.
+- `CASE_BANK.md` — quantified case examples with resume, cover-letter, and interview language. Pull from here, never rewrite from memory.
+- `anti_ai_scan.py` — voice and anti-AI rules. Still required, but now called through the full validator.
+- `ROLE_ADAPTATION_STANDARD.md` — posting-led identity, wording, structure, evidence, and format choices.
+- `VOICE_STANDARD.md` — direct, precise, human voice rules.
+- `PRIVACY_STANDARD.md` — privacy and identifier suppression rules.
+- `requirements.txt` — Python dependencies.
+- `fonts/README.md` — instructions for installing EB Garamond and Inter fonts locally.
+- `tests/` — unit tests for scan engine and config loader.
 
 ---
 
-## Locked spec (matches UHG reference April 2026)
+## Locked spec
 
-- Full-bleed navy `#0D1B2A` bar, ZERO whitespace above (sits in section page header part)
-- `Troy J. Hokanson` in WHITE Garamond-Bold ~28pt, mixed case, centered
-- INSET gold `#C9A84C` horizontal rule (not edge-to-edge)
-- Single gold contact row beneath, pipe-separated
-- NO subtitle / role title between name and contact row
-- Section headings: steel-blue `#2D6A9F` with gold underline rule
+- Full-bleed navy `#0D1B2A` bar, zero whitespace above, left, or right.
+- Navy header must live in the Word document header section, not the body.
+- `Troy Hokanson` in white Garamond-family bold, centered.
+- Inset gold `#C9A84C` horizontal rule.
+- Single gold contact row beneath, pipe-separated.
+- No subtitle or role title between name and contact row.
+- Body, headings, subheadings, job headings, date lines, and bullets use Garamond-family styling.
+- Section headings use steel blue `#2D6A9F` with restrained gold underline.
+- No orphaned section headings, subheadings, employer/title lines, or job headings.
+- No Adjunct Faculty or other job block may start at the bottom of a page without related content following on that same page.
+- Education remains separate from Training and Certifications.
 
 ---
 
-## Contact Info Setup (Multi-Device)
+## Contact Info Setup, Multi-Device
 
-Contact details (phone, email, location) are **never hardcoded** in this repo. They are loaded from environment variables at build time.
+Contact details are **never hardcoded** in this repo. They are loaded from environment variables at build time.
 
-**Local machine (any device):**
+**Local machine:**
 1. Copy `config.example.env` to `.env` in the repo root: `cp config.example.env .env`
-2. Fill in your real values — the `.env` file is gitignored and will never be committed
-3. Run any build script normally; `config.py` loads `.env` automatically
+2. Fill in real values. The `.env` file is gitignored and will never be committed.
+3. Run any build script normally. `config.py` loads `.env` automatically.
 
-**GitHub Actions (automated builds):**
+**GitHub Actions:**
 Add these secrets under Settings → Secrets and variables → Actions:
-- `TROY_PHONE` — e.g. `612.555.0000`
-- `TROY_EMAIL` — e.g. `TroyHokanson@iCloud.com`
-- `TROY_LOCATION` — e.g. `Lakeville, MN`
-- `TROY_LINKEDIN` — e.g. `linkedin.com/in/troyhokanson`
-- `TROY_PORTFOLIO` — e.g. `https://troy-hokanson.github.io/portfolio`
+- `TROY_PHONE`
+- `TROY_EMAIL`
+- `TROY_LOCATION`
+- `TROY_LINKEDIN`
+- `TROY_PORTFOLIO`
 
 ---
 
-## To pull into a fresh sandbox (AUTOMATIC at session start)
+## To pull into a fresh sandbox
 
 ```bash
 cd /home/user/workspace
-gh repo clone troyhokanson/troy-hokanson-resume-cover-cv
-ln -sfn /home/user/workspace/troy-hokanson-resume-cover-cv /home/user/workspace/templates
+gh repo clone troyhokanson/tjh-resume-cover-cv
+ln -sfn /home/user/workspace/tjh-resume-cover-cv /home/user/workspace/templates
 pip install -r templates/requirements.txt
 ```
 
-After clone, verify imports work:
-```python
-from templates.docx_header import build_navy_header, new_document
-from templates.pdf_header import draw_page1_header
-from templates.anti_ai_scan import scan_pdf
-from templates.ats_injector import ATSInjector
-```
-
----
-
-## Running Tests
-
-```bash
-# From the repo root (no symlink needed — tests import directly)
-python -m pytest tests/ -v
-
-# From the workspace root (templates/ symlink layout)
-python -m pytest templates/tests/ -v
-```
-
-Tests cover:
-- All 50+ forbidden phrases and extra-flagged AI clichés
-- All punctuation rules (em dash, en dash, exclamation, ellipsis, curly quotes)
-- Cover-letter structural rules (closing, contraction cap, semicolons)
-- Resume/CV contraction rules
-- PTSD-scope guard
-- VEVRAA language guard
-- Config env-var loading and safe fallbacks
-
----
-
-## Changing the locked spec
-
-If the header style genuinely needs to change:
-1. Edit `docx_header.py`
-2. Run `python3 build_reference.py` to rebuild the reference
-3. Visually diff against the prior reference
-4. Run the test suite: `python -m pytest tests/ -v`
-5. Commit and push: `git add -A && git commit -m "Header change: <reason>" && git push`
+After clone, verify imports work and run the validator before delivery.
