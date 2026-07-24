@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.1.0",
-  "effective_date": "2026-07-19",
+  "schema_version": "1.2.0",
+  "effective_date": "2026-07-24",
   "authority": "Permanent machine-readable visual standard for all Troy Hokanson resumes, cover letters, CVs, recruiter packets, and professional application documents.",
   "applies_to": [
     "resume",
@@ -106,6 +106,18 @@
     "cover_letter_font_size_points": 10.5,
     "minimum_font_size_points": 9.75,
     "line_spacing": 1.05,
+    "font_enforcement": {
+      "required": true,
+      "scope": "Every visible body paragraph, section heading, subsection heading, job title, employer line, degree line, bullet, and date line must resolve to Garamond or the approved Garamond fallback family before export.",
+      "mixed_default_fonts_prohibited": true,
+      "prohibited_visible_defaults": [
+        "Aptos",
+        "Calibri Body",
+        "Calibri Light",
+        "Arial"
+      ],
+      "exception": "Fallback fonts are allowed only when Garamond is not available in the rendering environment, but the DOCX style name must still be authored as Garamond-family."
+    },
     "section_heading": {
       "font_family": "Garamond",
       "font_size_points": 11,
@@ -114,7 +126,52 @@
       "gold_underline": true,
       "gold_underline_thickness_points": 0.65,
       "space_before_points": 8,
-      "space_after_points": 4
+      "space_after_points": 4,
+      "keep_with_next": true,
+      "page_break_before_allowed": true,
+      "orphan_allowed": false
+    },
+    "subsection_heading": {
+      "font_family": "Garamond",
+      "font_size_points": 10.5,
+      "weight": "bold",
+      "color": "#141414",
+      "space_before_points": 5,
+      "space_after_points": 1,
+      "keep_with_next": true,
+      "orphan_allowed": false,
+      "minimum_following_content_lines_on_same_page": 2
+    },
+    "job_heading": {
+      "font_family": "Garamond",
+      "font_size_points": 10.5,
+      "weight": "bold",
+      "color": "#141414",
+      "space_before_points": 5,
+      "space_after_points": 0,
+      "keep_with_next": true,
+      "keep_with_first_bullet": true,
+      "orphan_allowed": false,
+      "minimum_following_content_lines_on_same_page": 2,
+      "failure_example": "A job title such as Adjunct Faculty appearing by itself at the bottom of a page is a layout failure. Move the entire job block or reduce earlier spacing."
+    },
+    "job_subheading": {
+      "font_family": "Garamond",
+      "font_size_points": 9.75,
+      "weight": "regular",
+      "color": "#555555",
+      "space_before_points": 0,
+      "space_after_points": 2,
+      "keep_with_next": true,
+      "orphan_allowed": false
+    },
+    "bullet": {
+      "font_family": "Garamond",
+      "font_size_points": 10.25,
+      "space_before_points": 0,
+      "space_after_points": 2,
+      "line_spacing": 1.05,
+      "widow_control": true
     },
     "gold_usage": {
       "intent": "noticeable, restrained, professional, and classy",
@@ -131,6 +188,35 @@
         "overuse that competes with content"
       ]
     }
+  },
+  "pagination": {
+    "required": true,
+    "widow_orphan_control_required": true,
+    "keep_with_next_required_for": [
+      "section_heading",
+      "subsection_heading",
+      "job_heading",
+      "job_subheading"
+    ],
+    "keep_together_required_for": [
+      "contact_header_group",
+      "section_heading_plus_first_content_line",
+      "job_heading_plus_subheading_plus_first_bullet"
+    ],
+    "isolated_heading_failure_rules": [
+      "No section heading may appear as the final visible paragraph on a page.",
+      "No subsection heading may appear as the final visible paragraph on a page.",
+      "No job heading may appear at the bottom of a page without at least two lines of related content after it on the same page.",
+      "No employer/title/date block may be split so the title is stranded on page N and its bullets start on page N+1.",
+      "If the Adjunct Faculty block, or any other job block, starts at the end of a page by itself, the build fails until the block is moved or spacing is adjusted."
+    ],
+    "automated_remediation_order": [
+      "Move the full job block to the next page when a job heading would be orphaned.",
+      "Reduce safe intra-section spacing by no more than 0.5 points at a time.",
+      "Condense bullets only if the wording remains truthful and passes the anti-AI scan.",
+      "Never solve an orphan by changing body font away from Garamond or by hiding content."
+    ],
+    "manual_visual_gate": "Render DOCX to PDF and PNG, inspect every page, and fail if any heading, subheading, or job title is isolated at the page bottom."
   },
   "margins": {
     "resume": {
@@ -193,10 +279,15 @@
       "name is 26 point Garamond-family and horizontally centered",
       "gold rule is centered and approximately 55 percent page width",
       "contact row is centered and legible",
+      "all visible headings, subheadings, job headings, date lines, bullets, and body paragraphs use Garamond-family styling",
+      "section headings use Garamond bold steel-blue text with restrained gold underline",
+      "subheadings and job headings use Garamond-family styling and are not rendered in Calibri, Aptos, Arial, or default Word font",
       "gold accents are restrained",
       "resume section spacing is consistent",
       "cover letter has balanced page composition",
       "no clipping, overlap, broken glyphs, or unexpected blank pages",
+      "no section heading, subheading, employer/title line, or job heading is isolated at the bottom of a page",
+      "no Adjunct Faculty or other job block begins at the end of a page without related content following on that same page",
       "header centering is measured against the physical page, not a table, margin box, or another document",
       "troyhokanson.com appears as the final one-line contact item"
     ],
@@ -214,6 +305,16 @@
       "fail_when_background_misses_top_left_or_right_page_edge": true,
       "run_independently_for_resume_and_cover_letter": true,
       "compare_resume_and_cover_letter_header_pixels_after_individual_pass": true
+    },
+    "body_render_gate": {
+      "required": true,
+      "script": "body_typography_pagination_validator.py",
+      "input": "rendered_all_pages_png_and_docx_style_tree",
+      "required_font_family": "Garamond",
+      "fail_on_isolated_heading": true,
+      "fail_on_isolated_job_heading": true,
+      "fail_on_adjunct_faculty_orphan": true,
+      "fail_on_default_word_font_visible_in_body": true
     }
   }
 }
