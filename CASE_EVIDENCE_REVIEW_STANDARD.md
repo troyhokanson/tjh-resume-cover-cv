@@ -103,7 +103,23 @@ Court portals and filed documents may be indexed by defendant or suspect name ra
 8. When the identity match is uncertain, mark `Possible Match—Needs Verification` and do not transfer facts between cases.
 9. Record whether the matter remained in state court, was federally adopted, was declined, or had no verified federal filing. A reported federal declination must be labeled according to its source quality and must not be inferred from the absence of a federal docket.
 
-This private crosswalk is specifically designed to prevent two prosecutions involving the same person from being collapsed into one matter or from having charges, warrants, or sentencing data assigned to the wrong investigation.
+This private crosswalk prevents separate prosecutions involving the same person from being collapsed into one evidentiary record or from having charges, warrants, or sentencing data assigned to the wrong investigation.
+
+### Multi-Case Subject Series and Composite Career Narrative
+
+Separate evidentiary records may be combined at the career-story level when two or more verified investigations involve the same subject and together demonstrate a meaningful longitudinal body of work.
+
+1. Create a private `SUBJECT-SERIES` identifier that links the separate case, ECTF, court-outcome, source, STAR, and resume-bullet records.
+2. Preserve each investigation, charging document, warrant set, court file, disposition, sentence, and appeal history as a separate underlying record.
+3. Build the composite only from facts verified within each individual case. Do not transfer methods, charges, outcomes, metrics, or duties from one case to another.
+4. Show chronology clearly: initial investigation, later investigation, Troy's role in each, legal-process support, forensic examinations, reporting, prosecution support, and verified outcomes.
+5. Record whether the later matter reflects new conduct, new evidence, a new investigation, delayed provider evidence, probation or supervision activity, or another documented reason for the separate prosecution.
+6. Avoid language suggesting that Troy continuously monitored a person between cases unless a source proves that responsibility.
+7. Keep the subject's name and all internal identifiers private. The public-facing version should use language such as `two separate investigations involving the same subject` or `a multi-year series of related investigations`.
+8. A composite STAR example or resume bullet may cite both cases and summarize the combined workload, progression, and impact, but it must explicitly state that they were separate investigations and separate prosecutions.
+9. Composite use remains `Internal / Hold` until both underlying case records have role verification, court-outcome verification or documented access exceptions, privacy review, and an approved sanitized narrative.
+
+The series layer is an analytical and career-story roll-up. It never replaces or merges the underlying evidence records.
 
 ### Source and access rules
 
@@ -121,6 +137,7 @@ For every completed court pass, record:
 - court and jurisdiction;
 - public court file or docket number, kept internal;
 - private internal subject key when name-based discovery was used;
+- subject-series identifier when a composite narrative is supported;
 - related but separate agency cases and court files;
 - identity-confidence status;
 - charging document status;
@@ -145,10 +162,10 @@ Once a case-review batch is authorized, continue through all routine, reversible
 3. comparing duplicate or derivative records;
 4. reconciling Troy's role against the evidence hierarchy;
 5. assigning verification, sensitivity, retention, and public-approval status;
-6. performing the adaptive court-record enrichment and private subject crosswalk;
+6. performing the adaptive court-record enrichment, private subject crosswalk, and supported subject-series roll-up;
 7. updating the private Google Drive Career Evidence Master and reading back the write;
 8. updating sanitized GitHub standards or reusable career facts when supported;
-9. updating the Notion command center, case record, court-outcome record, or exception status when available;
+9. updating the Notion command center, case record, court-outcome record, subject-series record, or exception status when available;
 10. continuing to the next reviewable item in the active batch.
 
 Pause only when one of these conditions applies:
@@ -166,9 +183,9 @@ After each meaningful batch, provide a completion receipt identifying what was r
 
 ## Cross-System Ownership
 
-- **Google Drive:** private evidence, source files, hashes, exact internal crosswalks, duplicate control, court records, private subject-name mappings, and the Career Evidence Master.
+- **Google Drive:** private evidence, source files, hashes, exact internal crosswalks, duplicate control, court records, private subject-name mappings, subject-series roll-ups, and the Career Evidence Master.
 - **GitHub:** sanitized standards, verified reusable career facts, validation logic, and application-generation rules. Do not store protected case identifiers, subject names, or private evidence.
-- **Notion:** human-readable command center, project status, application status, case and court-outcome status, private subject keys, review queue, exceptions, next actions, and links to the authoritative Drive and GitHub records.
+- **Notion:** human-readable command center, project status, application status, case and court-outcome status, private subject keys, subject-series status, review queue, exceptions, next actions, and links to the authoritative Drive and GitHub records.
 
 A system is not considered updated until the connector confirms the write and the result is read back when the tool supports readback.
 
@@ -188,5 +205,7 @@ An ECTF-related case is not fully reconciled until the private Career Evidence M
 A case is not outcome-complete until the court pass records either verified disposition and sentencing/current-status data or a documented access exception showing what was searched and why the information could not be confirmed.
 
 When name-based discovery is used, the court pass is not identity-complete until each court file is linked to a verified private subject key with an identity-confidence status and separate-case control.
+
+A multi-case subject series is not career-ready until every included case remains separately documented and the composite narrative passes source, role, privacy, and public-use review.
 
 The case must also have a verified role statement, evidence hierarchy, privacy status, and public-approval status before use in application materials.
