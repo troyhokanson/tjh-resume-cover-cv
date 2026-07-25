@@ -64,6 +64,41 @@ Use evidence in this order when available:
 
 Record conflicts rather than silently blending them.
 
+## Continuous Review and Exception-Only Pause Rule
+
+Once a case-review batch is authorized, continue through all routine, reversible steps without asking for separate approval at each stage. Routine work includes:
+
+1. locating and opening likely source files;
+2. searching exact identifiers and date variants across available workbooks and indexes;
+3. comparing duplicate or derivative records;
+4. reconciling Troy's role against the evidence hierarchy;
+5. assigning verification, sensitivity, retention, and public-approval status;
+6. updating the private Google Drive Career Evidence Master and reading back the write;
+7. updating sanitized GitHub standards or reusable career facts when supported;
+8. updating the Notion command center, case record, or exception status when available;
+9. continuing to the next reviewable item in the active batch.
+
+Pause only when one of these conditions applies:
+
+- a file deletion, permanent replacement, public release, publication, or application submission is requested;
+- two high-quality primary sources conflict and the conflict cannot be resolved from available evidence;
+- a decision depends on Troy's personal preference rather than an evidence rule;
+- the candidate, case, role, or target record cannot be identified safely;
+- the proposed action could expose protected names, identifiers, victim information, or other sensitive material;
+- a connector, validation, or write action fails in a way that could leave systems inconsistent.
+
+When a pause condition occurs, do not stop the entire batch. Record an exception with the blocked item, reason, sources searched, safest provisional status, next evidence target, and exact user action required. Continue processing other independent items that are not blocked.
+
+After each meaningful batch, provide a completion receipt identifying what was reviewed, what changed in GitHub, Google Drive, and Notion, what failed, what remains unresolved, and whether any user decision is required.
+
+## Cross-System Ownership
+
+- **Google Drive:** private evidence, source files, hashes, exact internal crosswalks, duplicate control, and the Career Evidence Master.
+- **GitHub:** sanitized standards, verified reusable career facts, validation logic, and application-generation rules. Do not store protected case identifiers or private evidence.
+- **Notion:** human-readable command center, project status, application status, review queue, exceptions, next actions, and links to the authoritative Drive and GitHub records.
+
+A system is not considered updated until the connector confirms the write and the result is read back when the tool supports readback.
+
 ## Privacy
 
 Agency case numbers, ECTF numbers, names, victim information, account identifiers, device identifiers, warrant details, raw evidentiary paths, and sensitive offense facts are internal record-matching data.
