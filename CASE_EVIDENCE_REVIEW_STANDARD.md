@@ -64,6 +64,58 @@ Use evidence in this order when available:
 
 Record conflicts rather than silently blending them.
 
+## Adaptive Court-Record Enrichment
+
+After the case identity and ECTF crosswalk are established, perform a court-outcome enrichment pass appropriate to the information available and the case's career value.
+
+### Search targets
+
+Search for and reconcile, when lawfully accessible:
+
+1. criminal complaint, indictment, information, or charging document;
+2. amended charges and dismissed counts;
+3. publicly available search warrants, warrant returns, inventories, affidavits, and related electronic-evidence orders;
+4. register of actions, docket, hearing status, trial status, plea status, and current court status;
+5. verdict, guilty plea, acquittal, dismissal, diversion, stay of adjudication, or other disposition;
+6. sentencing order, judgment of conviction, incarceration term, stayed time, probation or supervised release, fines, restitution, forfeiture, and conditions;
+7. appellate opinions, remands, post-conviction rulings, resentencing, and final appeal status;
+8. prosecutor, court, Department of Justice, or other official public releases that independently confirm the outcome.
+
+### Adaptive depth
+
+- **Level 1 — Outcome confirmation:** verify disposition, sentence, and current status when the case is already well documented.
+- **Level 2 — Charge-to-outcome reconciliation:** add the complaint or charging document, count-level disposition, and sentencing details when facts or charges are incomplete.
+- **Level 3 — Full legal-process packet:** add accessible warrants, returns, affidavits, appellate records, and related orders when the case is high-value, digitally complex, disputed, or likely to support a STAR example or resume claim.
+
+Use the deepest level justified by source availability and career relevance. Do not spend time pursuing low-value detail that will not improve factual accuracy, privacy-safe career language, or interview preparation.
+
+### Source and access rules
+
+- Prefer official court portals, published opinions, prosecutor or government releases, and documents already preserved in Google Drive.
+- Use third-party aggregators only as discovery leads and verify the final claim against an official or primary source.
+- Do not attempt to bypass login controls, fees, access restrictions, sealed status, or unavailable records.
+- If a complaint, warrant, sentencing order, or docket cannot be accessed, record `Not Located`, `Restricted`, `Sealed`, `Paywalled`, or `Access Requires Human Account` as appropriate.
+- Never infer a charge, warrant, sentence, restitution amount, probation term, or current status from a partial source.
+- Record the date checked because court status can change.
+
+### Output requirements
+
+For every completed court pass, record:
+
+- court and jurisdiction;
+- public court file or docket number, kept internal;
+- charging document status;
+- warrant or legal-process status;
+- current court status;
+- disposition;
+- sentence and supervision;
+- restitution, fines, or forfeiture when verified;
+- appeal or post-conviction status;
+- source type, source link, date checked, and verification level;
+- privacy status and public-use status.
+
+Only sanitized outcome language may move into resume bullets, cover letters, STAR examples, GitHub career facts, or the public portfolio.
+
 ## Continuous Review and Exception-Only Pause Rule
 
 Once a case-review batch is authorized, continue through all routine, reversible steps without asking for separate approval at each stage. Routine work includes:
@@ -73,10 +125,11 @@ Once a case-review batch is authorized, continue through all routine, reversible
 3. comparing duplicate or derivative records;
 4. reconciling Troy's role against the evidence hierarchy;
 5. assigning verification, sensitivity, retention, and public-approval status;
-6. updating the private Google Drive Career Evidence Master and reading back the write;
-7. updating sanitized GitHub standards or reusable career facts when supported;
-8. updating the Notion command center, case record, or exception status when available;
-9. continuing to the next reviewable item in the active batch.
+6. performing the adaptive court-record enrichment pass;
+7. updating the private Google Drive Career Evidence Master and reading back the write;
+8. updating sanitized GitHub standards or reusable career facts when supported;
+9. updating the Notion command center, case record, court-outcome record, or exception status when available;
+10. continuing to the next reviewable item in the active batch.
 
 Pause only when one of these conditions applies:
 
@@ -93,9 +146,9 @@ After each meaningful batch, provide a completion receipt identifying what was r
 
 ## Cross-System Ownership
 
-- **Google Drive:** private evidence, source files, hashes, exact internal crosswalks, duplicate control, and the Career Evidence Master.
+- **Google Drive:** private evidence, source files, hashes, exact internal crosswalks, duplicate control, court records, and the Career Evidence Master.
 - **GitHub:** sanitized standards, verified reusable career facts, validation logic, and application-generation rules. Do not store protected case identifiers or private evidence.
-- **Notion:** human-readable command center, project status, application status, review queue, exceptions, next actions, and links to the authoritative Drive and GitHub records.
+- **Notion:** human-readable command center, project status, application status, case and court-outcome status, review queue, exceptions, next actions, and links to the authoritative Drive and GitHub records.
 
 A system is not considered updated until the connector confirms the write and the result is read back when the tool supports readback.
 
@@ -111,5 +164,7 @@ An ECTF-related case is not fully reconciled until the private Career Evidence M
 
 - an exact verified ECTF crosswalk with source workbook, tab, and row; or
 - `Unresolved—Not Found` with every searched source documented.
+
+A case is not outcome-complete until the court pass records either verified disposition and sentencing/current-status data or a documented access exception showing what was searched and why the information could not be confirmed.
 
 The case must also have a verified role statement, evidence hierarchy, privacy status, and public-approval status before use in application materials.
