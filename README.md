@@ -9,8 +9,9 @@ This repo separates hard safeguards from role-specific authoring choices:
 3. **Body typography and pagination** — standards/body_typography_pagination_standard.md and standards/document_design_standard.json require Garamond-family body styling, steel-blue section headings with restrained gold rules, and no orphaned headings or job blocks.
 4. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
 5. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
-6. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
-7. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
+6. **Case evidence and ECTF crosswalk control** — CASE_EVIDENCE_REVIEW_STANDARD.md requires exact source matching, role reconciliation, duplicate-view control, and an explicit unresolved status when an ECTF number cannot be verified.
+7. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
+8. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
 
 Seven primary lanes are defined: `vendor-solutions`, `siu-fraud`, `analyst-intelligence`, `corporate-security-investigations`, `customer-success`, `technical-account-management`, and `dfir-cyber`. The scanner uses `adaptive` if no lane is supplied, but each final application should log a selected primary lane.
 
@@ -135,6 +136,7 @@ tjh-resume-cover-cv/
 │   ├── document_design_standard.json        # Machine-readable visual/body/pagination standard
 │   └── body_typography_pagination_standard.md # Human-readable body typography standard
 ├── CASE_BANK.md                             # Source-of-truth case examples
+├── CASE_EVIDENCE_REVIEW_STANDARD.md          # Mandatory case-source and ECTF crosswalk workflow
 ├── ROLE_ADAPTATION_STANDARD.md              # Posting-led authoring and formatting autonomy
 ├── HEADER_STANDARD.md                       # ATS and branded presentation layout options
 ├── VOICE_STANDARD.md                        # Voice, truth, and privacy guardrails
@@ -212,6 +214,7 @@ Every build script must finish by rendering the DOCX, rendering page PNGs, and r
 - `standards/body_typography_pagination_standard.md` — human-readable Garamond and pagination standard.
 - `HEADER_STANDARD.md` — locked layout specification.
 - `CASE_BANK.md` — quantified case examples with resume, cover-letter, and interview language. Pull from here, never rewrite from memory.
+- `CASE_EVIDENCE_REVIEW_STANDARD.md` — mandatory source hierarchy, role verification, privacy controls, and exact ECTF crosswalk workflow for every relevant case review.
 - `anti_ai_scan.py` — voice and anti-AI rules. Still required, but now called through the full validator.
 - `ROLE_ADAPTATION_STANDARD.md` — posting-led identity, wording, structure, evidence, and format choices.
 - `VOICE_STANDARD.md` — direct, precise, human voice rules.
