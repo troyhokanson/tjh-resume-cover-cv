@@ -7,9 +7,13 @@ sensitive information (phone number, email) is never hardcoded in
 the public repository.
 
 Priority order:
-1. Environment variable already set in the shell, such as GitHub Actions Secret
-2. .env file in the repo root, gitignored for local machine use
-3. Fallback placeholder string safe for public display
+1. Nonblank environment variable already set in the shell, such as a GitHub Actions Secret
+2. Nonblank value from the .env file in the repo root, gitignored for local machine use
+3. Fallback value safe for public display
+
+Blank environment variables are treated as unset. This prevents an empty
+GitHub Actions secret from suppressing a valid public fallback such as the
+canonical portfolio URL.
 
 Setup on a new device:
 1. Copy config.example.env to .env in the repo root.
@@ -45,12 +49,20 @@ def _load_dotenv(env_path: Path) -> None:
                 os.environ[key] = value
 
 
+def _env_or_default(name: str, default: str) -> str:
+    """Return a stripped nonblank environment value, otherwise the default."""
+    value = os.getenv(name)
+    if value is None or not value.strip():
+        return default
+    return value.strip()
+
+
 _load_dotenv(Path(__file__).parent / ".env")
 
 
-TROY_PHONE = os.getenv("TROY_PHONE", "")
-TROY_EMAIL = os.getenv("TROY_EMAIL", "TroyHokanson@iCloud.com")
-TROY_LOCATION = os.getenv("TROY_LOCATION", "Lakeville, MN")
-TROY_LINKEDIN = os.getenv("TROY_LINKEDIN", "linkedin.com/in/troyhokanson")
-TROY_PORTFOLIO = os.getenv("TROY_PORTFOLIO", "https://troy-hokanson.github.io/portfolio")
-TROY_NAME = os.getenv("TROY_NAME", "Troy Hokanson")
+TROY_PHONE = _env_or_default("TROY_PHONE", "")
+TROY_EMAIL = _env_or_default("TROY_EMAIL", "TroyHokanson@iCloud.com")
+TROY_LOCATION = _env_or_default("TROY_LOCATION", "Lakeville, MN")
+TROY_LINKEDIN = _env_or_default("TROY_LINKEDIN", "linkedin.com/in/troyhokanson")
+TROY_PORTFOLIO = _env_or_default("TROY_PORTFOLIO", "https://troyhokanson.com")
+TROY_NAME = _env_or_default("TROY_NAME", "Troy Hokanson")
