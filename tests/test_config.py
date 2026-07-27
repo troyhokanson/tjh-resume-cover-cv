@@ -62,14 +62,18 @@ class TestConfigFallbacks:
         cfg = _reload_config({})
         assert cfg["TROY_LINKEDIN"]
 
-    def test_troy_portfolio_has_fallback(self):
+    def test_troy_portfolio_has_canonical_fallback(self):
         cfg = _reload_config({})
-        assert cfg["TROY_PORTFOLIO"]
+        assert cfg["TROY_PORTFOLIO"] == "https://troyhokanson.com"
 
     def test_troy_phone_empty_when_unset(self):
         cfg = _reload_config({})
         # Phone intentionally has no default so it is omitted from headers
         assert cfg["TROY_PHONE"] == ""
+
+    def test_blank_portfolio_env_uses_canonical_fallback(self):
+        cfg = _reload_config({"TROY_PORTFOLIO": "   "})
+        assert cfg["TROY_PORTFOLIO"] == "https://troyhokanson.com"
 
 
 class TestConfigEnvVarOverride:
@@ -85,6 +89,10 @@ class TestConfigEnvVarOverride:
         cfg = _reload_config({"TROY_EMAIL": "test@example.com"})
         assert cfg["TROY_EMAIL"] == "test@example.com"
 
+    def test_portfolio_set_via_env(self):
+        cfg = _reload_config({"TROY_PORTFOLIO": "https://example.com/portfolio"})
+        assert cfg["TROY_PORTFOLIO"] == "https://example.com/portfolio"
+
 
 class TestConfigNoSensitiveHardcoding:
     def test_phone_not_hardcoded_in_source(self):
@@ -95,8 +103,8 @@ class TestConfigNoSensitiveHardcoding:
             source = f.read()
         # Phone fallback must be an empty string, never a real number
         import re
-        # Find TROY_PHONE getenv line
-        match = re.search(r'TROY_PHONE\s*=\s*os\.getenv\([^)]+\)', source)
+        # Find TROY_PHONE assignment line
+        match = re.search(r'TROY_PHONE\s*=\s*_env_or_default\([^)]+\)', source)
         assert match, "TROY_PHONE line not found"
         assert '""' in match.group() or "''" in match.group(), \
             f"TROY_PHONE fallback must be empty string, got: {match.group()}"
