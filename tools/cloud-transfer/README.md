@@ -31,6 +31,14 @@ The recommended script is `Cloud-Storage-To-GDrive-Local.ps1`. It uses the
 three providers' official Windows sync clients and does not need cloud API
 tokens, a GitHub secret, or a third-party transfer service.
 
+## CloudBridge CLI
+
+The `cloudbridge/` directory contains the tested Python CLI. It adds a single
+command surface for local SHA-256-verified copies and direct, immutable rclone
+copies from OneDrive Personal or iCloud Drive to Google Drive. See
+[`cloudbridge/README.md`](cloudbridge/README.md) and
+[`cloudbridge/SECURITY.md`](cloudbridge/SECURITY.md).
+
 ## Dry run
 
 ```powershell
