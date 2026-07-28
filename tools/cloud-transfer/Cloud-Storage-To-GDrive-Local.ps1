@@ -256,7 +256,7 @@ $statusCounts = $records |
 $summaryLines = [Collections.Generic.List[string]]::new()
 $summaryLines.Add("Cloud storage inventory and safe-copy summary")
 $summaryLines.Add("Inventory time (UTC): $((Get-Date).ToUniversalTime().ToString("o"))")
-$summaryLines.Add("Mode: $(if ($Execute) { "COPY" } else { "DRY RUN" })")
+$summaryLines.Add("Mode: $(if ($Execute) { 'COPY' } else { 'DRY RUN' })")
 $summaryLines.Add("Destination: $resolvedDestination")
 $summaryLines.Add("Source roots:")
 foreach ($source in $sources) {
