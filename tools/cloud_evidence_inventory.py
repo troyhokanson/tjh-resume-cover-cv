@@ -39,6 +39,7 @@ SENSITIVE_HINTS = (
     "dd214", "da form", "victim", "ncmec", "icac", "ectf", "case",
 )
 
+
 @dataclass
 class FileRecord:
     source_label: str
@@ -121,16 +122,21 @@ def parse_root(value: str) -> tuple[str, Path]:
     else:
         path_text = value
         label = Path(path_text).name or "Cloud"
-    return label, Path(path_text).expanduser()
+    return label, Path(os.path.expandvars(path_text)).expanduser()
 
 
 def default_roots() -> list[tuple[str, Path]]:
     home = Path.home()
     userprofile = Path(os.environ.get("USERPROFILE", str(home)))
     candidates: list[tuple[str, Path]] = []
-    env_onedrive = os.environ.get("OneDrive")
-    if env_onedrive:
-        candidates.append(("OneDrive", Path(env_onedrive)))
+    for env_name, label in (
+        ("OneDrive", "OneDrive"),
+        ("OneDriveConsumer", "OneDrive-Personal"),
+        ("OneDriveCommercial", "OneDrive-Work"),
+    ):
+        env_value = os.environ.get(env_name)
+        if env_value:
+            candidates.append((label, Path(env_value)))
     candidates.extend([
         ("OneDrive", userprofile / "OneDrive"),
         ("iCloudDrive", userprofile / "iCloudDrive"),
@@ -264,7 +270,7 @@ def write_csv(path: Path, records: Iterable[FileRecord]) -> None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Read-only inventory and duplicate scan for synced cloud folders.")
-    parser.add_argument("--root", action="append", default=[], help="Repeatable LABEL=PATH or PATH.")
+    parser.add_argument("--root", action="append", default=[], help=r"Repeatable LABEL=PATH or PATH. Example: --root iCloudDrive=%USERPROFILE%\iCloudDrive")
     parser.add_argument("--registry-csv", type=Path, help="Optional export of the Career Evidence Master Sources tab.")
     parser.add_argument("--output-dir", type=Path, default=Path("build_logs/cloud_inventory"))
     parser.add_argument("--include-hidden", action="store_true")
