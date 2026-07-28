@@ -96,14 +96,30 @@ Files created:
    - certificates and credentials → `04 Certifications`
    - commendations and awards → `05 Commendations & Awards`
 5. Upload only verified, nonduplicate candidates.
-6. Register each uploaded source in the Career Evidence Master with size, SHA-256, MD5, provenance, sensitivity, role, original/derivative status, and retention decision.
-7. Link the source to the correct case, ECTF file, training record, certification, award, or Notion page.
-8. Read back every spreadsheet and Notion write before calling the ingestion complete.
+6. Download or otherwise retrieve the exact uploaded raw Drive file and calculate SHA-256 and MD5 from those canonical post-upload bytes. Do not reuse a pre-upload working-copy hash unless an exact-byte comparison proves the uploaded file is identical.
+7. Register each uploaded source in the Career Evidence Master with Drive file ID, size, post-upload SHA-256, MD5, provenance, sensitivity, role, original/derivative status, verification method, and retention decision.
+8. Link the source to the correct case, ECTF file, training record, certification, award, or Notion page.
+9. Read back every spreadsheet and Notion write before calling the ingestion complete.
+
+## Post-upload integrity gate
+
+A newly uploaded source does not pass integrity review merely because the upload action succeeded or the reported byte size matches. The controlling checksum values must be derived from the exact canonical Drive bytes after upload.
+
+When a connector does not return Drive checksum metadata:
+
+1. Retrieve the exact uploaded Drive file as raw bytes.
+2. Calculate SHA-256 as the primary integrity value.
+3. Calculate MD5 only as a compatibility value.
+4. Compare the downloaded size with the registered size.
+5. Record the verification method and date in the source registry.
+6. Independently read back the registry row.
+7. If a prior checksum was wrong, correct it transparently, preserve a data-quality record, and mark the earlier value superseded rather than silently replacing history.
 
 ## Matching rules
 
 - SHA-256 controls exact duplicate identification.
 - MD5 is retained only as a compatibility value, not as the primary integrity control.
+- Pre-upload and post-upload hashes may be treated as the same only after an exact-byte comparison.
 - A filename-and-size match without a SHA-256 match is only a candidate match and requires review.
 - Similar filenames are not proof of duplicate content.
 - Metadata-modified PDFs may render identically while having different hashes; record them as content-duplicate candidates only after comparison.
@@ -123,6 +139,7 @@ A cross-cloud ingestion pass is complete only when:
 - duplicate groups are reviewed
 - selected files are copied to the correct Google Drive folders
 - new Drive file IDs and links are captured
+- exact canonical post-upload Drive bytes are rehashed and registered
 - the Career Evidence Master is updated and read back
 - related Notion records are updated and read back
 - GitHub contains only the reusable workflow, never private manifests or evidence
