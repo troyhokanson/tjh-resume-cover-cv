@@ -1,6 +1,6 @@
 # OneDrive and iCloud Drive to Google Drive safe copy
 
-These Windows PowerShell workflows inventory and copy locally hydrated cloud
+This Windows PowerShell workflow inventories and copies locally hydrated cloud
 files to a private Google Drive intake folder while preserving source
 hierarchy.
 
@@ -11,12 +11,19 @@ Safety defaults:
 - existing files with different bytes are reported as conflicts and never
   overwritten;
 - every copied file is verified with SHA-256;
-- SHA-256 inventory and status summary are written locally before/while
+- SHA-256 inventory and status summary are written locally before and during
   transfer;
 - cloud-only placeholders are reported and skipped unless
   `-IncludeCloudOnly` is explicitly supplied;
-- temporary and incomplete download files excluded;
-- credentials, logs, and detailed manifests excluded from Git.
+- temporary and incomplete download files are excluded;
+- credentials, logs, and detailed manifests are excluded from Git.
+
+## Package contents
+
+- `Cloud-Storage-To-GDrive-Local.ps1` — primary dry-run and safe-copy workflow.
+- `.gitignore` — excludes private manifests, logs, CSV output, and local
+  credential files.
+- `README.md` — setup, execution, privacy, and review instructions.
 
 ## Prerequisites
 
@@ -27,9 +34,8 @@ Safety defaults:
    before the final run.
 5. Confirm the Google Drive destination is owner-only.
 
-The recommended script is `Cloud-Storage-To-GDrive-Local.ps1`. It uses the
-three providers' official Windows sync clients and does not need cloud API
-tokens, a GitHub secret, or a third-party transfer service.
+The script uses the providers' official Windows sync clients. It does not need
+cloud API tokens, a GitHub secret, or a third-party transfer service.
 
 ## Dry run
 
@@ -42,7 +48,8 @@ Set-ExecutionPolicy -Scope Process Bypass
 ```
 
 The script automatically looks for the usual local OneDrive and iCloud Drive
-folders. If either provider uses a nonstandard location, pass both explicitly:
+folders. If either provider uses a nonstandard location, pass the source roots
+explicitly:
 
 ```powershell
 $sources = @(
@@ -61,6 +68,8 @@ review before the copy run.
 
 ## Copy
 
+Run the copy only after the dry-run exceptions have been reviewed:
+
 ```powershell
 .\Cloud-Storage-To-GDrive-Local.ps1 `
   -GoogleDriveRoot "G:\My Drive" `
@@ -68,35 +77,22 @@ review before the copy run.
   -Execute
 ```
 
-The destination contains separate `OneDrive` and `iCloud Drive` branches, which
-prevents same-name files from the two providers from colliding.
-
-## Optional rclone path
-
-`OneDrive-To-GDrive-Copy.ps1` remains available for a locally hydrated
-OneDrive tree when Google Drive for desktop is not installed. It requires an
-rclone Google Drive remote named `gdrive`, is dry-run by default, and uses
-`copy --immutable`.
-
-```powershell
-.\OneDrive-To-GDrive-Copy.ps1 `
-  -SourceRoot "$env:OneDriveConsumer" `
-  -GoogleDriveRemote "gdrive:" `
-  -DestinationRoot "Career Evidence/00_Source Documents/OneDrive Intake"
-```
+The destination contains separate source branches, preventing same-name files
+from different providers from colliding. The script does not overwrite a
+file whose bytes differ from the source.
 
 ## GitHub boundary
 
-The generic scripts, README, and `.gitignore` may be published. GitHub is not a
+The generic script, README, and `.gitignore` may be published. GitHub is not a
 document-transfer destination and must not receive private evidence.
 
 Do not commit:
 
-- rclone configuration or OAuth tokens;
 - inventory CSVs or transfer logs;
 - source paths that reveal case, court, medical, or personnel information;
 - any copied source document;
-- Apple, Microsoft, or Google credentials, session cookies, or recovery codes.
+- Apple, Microsoft, or Google credentials, session cookies, recovery codes,
+  OAuth tokens, or local sync configuration.
 
 Dropbox is intentionally not part of the workflow. It should only be added
 after a durable personal account and retention rules are confirmed.
