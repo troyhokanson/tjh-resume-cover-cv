@@ -1,0 +1,4 @@
+private-manifests/
+*.log
+*.csv
+rclone.conf
