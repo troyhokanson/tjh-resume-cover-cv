@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "skill": "build-troy-application",
+  "candidate": "Troy J. Hokanson",
+  "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
+  "status_values": [
+    "researching",
+    "drafting",
+    "exception",
+    "ready_to_submit",
+    "submitted",
+    "interviewing",
+    "offer",
+    "rejected",
+    "paused",
+    "skipped"
+  ],
+  "phases": [
+    {
+      "id": "exact_opportunity",
+      "required": true,
+      "checks": [
+        "candidate_confirmed",
+        "employer_confirmed",
+        "exact_title_confirmed",
+        "job_id_recorded_or_exception",
+        "official_url_recorded_or_exception",
+        "location_recorded",
+        "work_mode_recorded",
+        "salary_recorded_or_not_published",
+        "posting_date_recorded_or_not_published",
+        "travel_recorded_or_not_stated",
+        "complete_job_description_acquired"
+      ]
+    },
+    {
+      "id": "workspace",
+      "required": true,
+      "checks": [
+        "dated_drive_folder_confirmed",
+        "job_description_archived",
+        "github_package_confirmed",
+        "single_notion_record_confirmed"
+      ]
+    },
+    {
+      "id": "standards_and_lane",
+      "required": true,
+      "checks": [
+        "current_github_standards_reviewed",
+        "primary_lane_selected",
+        "fit_score_recorded",
+        "gaps_recorded",
+        "hiring_manager_concerns_recorded"
+      ]
+    },
+    {
+      "id": "evidence",
+      "required": true,
+      "checks": [
+        "verified_evidence_reviewed",
+        "candidate_separation_passed",
+        "privacy_filter_passed",
+        "unsupported_claims_removed"
+      ]
+    },
+    {
+      "id": "documents",
+      "required": true,
+      "checks": [
+        "resume_markdown_complete",
+        "cover_letter_markdown_complete",
+        "resume_docx_complete",
+        "resume_pdf_complete",
+        "cover_letter_docx_complete",
+        "cover_letter_pdf_complete"
+      ]
+    },
+    {
+      "id": "validation",
+      "required": true,
+      "checks": [
+        "anti_ai_passed",
+        "privacy_passed",
+        "prohibited_content_passed",
+        "factual_consistency_passed",
+        "contact_information_passed",
+        "education_constants_passed",
+        "ats_review_passed",
+        "application_packet_validator_passed",
+        "delivery_gate_passed_or_not_applicable"
+      ]
+    },
+    {
+      "id": "visual_qa",
+      "required": true,
+      "checks": [
+        "every_pdf_page_rendered",
+        "every_pdf_page_visually_inspected",
+        "no_clipping_or_overflow",
+        "header_and_typography_passed",
+        "links_and_contact_row_passed",
+        "no_private_identifiers_visible"
+      ]
+    },
+    {
+      "id": "publication",
+      "required": true,
+      "checks": [
+        "final_files_saved_to_drive",
+        "validation_report_saved_to_drive",
+        "github_metadata_updated",
+        "notion_record_updated",
+        "cross_system_links_confirmed"
+      ]
+    }
+  ],
+  "ready_to_submit_rule": {
+    "all_required_checks_must_pass": true,
+    "exceptions_must_be_empty": true,
+    "submission_requires_user_or_confirmation_evidence": true
+  },
+  "prohibited_claims": [
+    "invented_title",
+    "invented_certification",
+    "invented_software_proficiency",
+    "invented_metric",
+    "invented_customer_outcome",
+    "invented_enterprise_experience",
+    "invented_responsibility",
+    "invented_direct_reports",
+    "invented_budget_ownership"
+  ],
+  "prohibited_identifiers": [
+    "post_number",
+    "badge_number",
+    "social_security_number",
+    "personnel_identifier",
+    "protected_case_number",
+    "victim_information",
+    "private_address"
+  ]
+}
