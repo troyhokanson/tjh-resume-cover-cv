@@ -5,27 +5,36 @@
   "role": "Oversight Operations Investigator",
   "category": "trust-and-safety",
   "date_created": "2026-07-16",
+  "date_updated": "2026-08-01",
   "status": "drafting",
   "priority": "Tier 1",
   "fit_score": 84,
   "work_mode": "remote",
+  "primary_lane": "analyst-intelligence",
+  "secondary_lane": "corporate-security-investigations",
   "signature_decision": "typed_name_only",
-  "google_drive_folder": "https://drive.google.com/drive/folders/1LefJh50C3wq3QShOkw8JnPJucMxBKI3w",
-  "notion_record_status": "pending_connector_write",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1NGPeNgCkqKN7UrY13pZRkvTje0ZQgyOm",
+  "notion_record": "https://app.notion.com/p/3afa574973a9815bba2cc1944f6058b1",
   "documents": {
     "resume_docx": "Troy_Hokanson_Resume_Meta_Oversight_Operations_Investigator.docx",
     "resume_pdf": "Troy_Hokanson_Resume_Meta_Oversight_Operations_Investigator.pdf",
     "cover_letter_docx": "Troy_Hokanson_Cover_Letter_Meta_Oversight_Operations_Investigator.docx",
     "cover_letter_pdf": "Troy_Hokanson_Cover_Letter_Meta_Oversight_Operations_Investigator.pdf",
     "resume_markdown": "resume.md",
-    "cover_letter_markdown": "cover_letter.md"
+    "cover_letter_markdown": "cover_letter.md",
+    "validation_report": "validation_report.json"
   },
   "qa": {
     "resume_complete": true,
     "cover_letter_complete": true,
     "pdf_package_complete": true,
-    "markdown_archive_complete": false,
-    "notion_link_complete": false,
-    "final_visual_review_complete": false
-  }
+    "markdown_archive_complete": true,
+    "notion_link_complete": true,
+    "final_visual_review_complete": true,
+    "privacy_scan_passed": true,
+    "anti_ai_scan_passed": true,
+    "job_description_archived": false,
+    "official_live_requisition_confirmed": false
+  },
+  "remaining_gate": "Confirm the official live Meta requisition and archive the complete job description before marking Ready to Submit. Application has not been submitted."
 }
