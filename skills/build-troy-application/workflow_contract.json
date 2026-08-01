@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "skill": "build-troy-application",
   "candidate": "Troy J. Hokanson",
   "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
@@ -99,6 +99,12 @@
         "every_pdf_page_visually_inspected",
         "no_clipping_or_overflow",
         "header_and_typography_passed",
+        "header_to_first_heading_spacing_passed",
+        "major_section_spacing_passed",
+        "entry_spacing_passed",
+        "cover_letter_paragraph_spacing_passed",
+        "visual_rhythm_and_breathing_room_passed",
+        "orphan_and_widow_control_passed",
         "links_and_contact_row_passed",
         "no_private_identifiers_visible"
       ]
@@ -115,6 +121,18 @@
       ]
     }
   ],
+  "layout_minimums": {
+    "units": "twips",
+    "twips_per_point": 20,
+    "header_to_first_heading": 360,
+    "major_section_before": 280,
+    "major_section_after": 120,
+    "major_entry_before": 160,
+    "job_title_after": 40,
+    "employer_line_after": 80,
+    "cover_letter_paragraph_after": 120,
+    "compression_rule": "Edit or remove content before reducing any minimum spacing, body font size, or approved page margin."
+  },
   "ready_to_submit_rule": {
     "all_required_checks_must_pass": true,
     "exceptions_must_be_empty": true,
