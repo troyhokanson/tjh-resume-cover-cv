@@ -1,0 +1,24 @@
+{
+  "candidate": "Troy J. Hokanson",
+  "employer": "Meta",
+  "role": "Oversight Operations Investigator",
+  "build_date": "2026-08-01",
+  "selected_lane": "analyst-intelligence",
+  "secondary_lane": "corporate-security-investigations",
+  "status": "validated_draft",
+  "checks": {
+    "anti_ai_phrase_scan": "pass",
+    "privacy_and_identifier_scan": "pass",
+    "punctuation_scan": "pass",
+    "resume_rendered_pages": 2,
+    "cover_letter_rendered_pages": 1,
+    "all_pages_visually_inspected": true,
+    "clipping_or_overlap": false,
+    "header_footer_defects": false
+  },
+  "source_corrections": [
+    "Added required Associate of Arts degree entry",
+    "Corrected NW3C credential wording to Certified Cyber Crime Examiner"
+  ],
+  "remaining_gate": "Confirm official live Meta requisition and archive the complete job description before marking Ready to Submit."
+}
