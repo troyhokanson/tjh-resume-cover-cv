@@ -193,6 +193,12 @@ evidence_pack:
 - **Hybrid Sales Engineer + Solutions Consultant** at a forensics vendor -> `vendor-solutions`. Do not split the cover letter.
 - **Customer Success Manager or Account Manager with `Manager` in the title but no direct reports** -> treat as a senior individual-contributor `vendor-solutions` role.
 - **SIU title at a vendor company** -> `siu-fraud` if the JD reads as investigation-side; `vendor-solutions` if it reads as customer-product, training, implementation, or carrier-product-side.
+- **Claims Investigator / Claims Fraud Investigator** -> `siu-fraud`; classify as Direct when investigation is the primary function and Transferable when carrier claim ownership or coverage authority is central.
+- **Claims File Auditor / Claims Quality Auditor / Claims Quality Analyst** -> `siu-fraud` as Transferable when evidence sufficiency, documentation quality, fraud indicators, compliance with investigative procedure, or litigation readiness are central. Penalize direct carrier-system, coding, clinical, or settlement-authority requirements.
+- **Claims Adjuster Trainee / Associate Claims Adjuster** -> `siu-fraud` as Transferable when the employer trains new adjusters and accepts investigative or customer-facing experience. Never present Troy as an experienced adjuster.
+- **Premium Auditor** -> ordinarily not a claims role. Retain only when trainee-level and the posting supports transfer from investigation, document review, interviewing, or field fact-finding; otherwise reject accounting/payroll/classification requirements.
+- **Medical Claims Auditor** -> reject clinical, coding, utilization-review, or direct healthcare-claims requirements unless the posting is truly fraud-investigation-led and accepts transferable investigative experience.
+- **Catastrophe / Field Property Adjuster** -> penalize or reject Xactimate, roof/ladder, construction-estimating, deployment, and heavy-territory-travel requirements unless the posting is explicitly trainee-level and otherwise compatible.
 - **Financial Crime Investigator** at a bank -> usually `analyst-intelligence`. Confirm via Step 3 verbs.
 - **Public Safety Sales Engineer** at Axon, Veritone, Mark43, Flock, Peregrine, Motorola, Genetec, or LexisNexis Risk Solutions -> `vendor-solutions`.
 - **Investigative Trainer at LexisNexis Risk Solutions** -> `vendor-solutions`; lead with Accurint, ZetX / Accurint TraX, cellular investigations, Google Earth, teaching, and curriculum development.
