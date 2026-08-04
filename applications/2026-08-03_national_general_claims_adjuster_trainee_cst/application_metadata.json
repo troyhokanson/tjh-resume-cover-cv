@@ -13,18 +13,19 @@
   "work_mode": "Remote",
   "signature_decision": "Typed name only",
   "notion": {
-    "record_url": null,
-    "record_complete": false
+    "record_url": "https://app.notion.com/p/3b2a574973a98137999dddb681d9ccda",
+    "record_complete": true
   },
   "google_drive": {
     "folder_url": "https://drive.google.com/drive/folders/1V5Ryd9zc5SW4SO1L5DhJfdsrX7T4qtea",
     "folder_path": "09_Applications/2026-08-03 National General Claims Adjuster Trainee CST",
-    "upload_complete": false
+    "upload_complete": true
   },
   "github": {
     "repository": "troyhokanson/tjh-resume-cover-cv",
     "package_path": "applications/2026-08-03_national_general_claims_adjuster_trainee_cst",
-    "commit_sha": null
+    "commit_sha": "41631b4165b2c91cf1710e38fe0ea4a163798681",
+    "pull_request_url": "https://github.com/troyhokanson/tjh-resume-cover-cv/pull/27"
   },
   "artifacts": {
     "job_description": "job_description.md",
@@ -37,8 +38,8 @@
     "qa_report": "qa_report.md"
   },
   "automation": {
-    "last_sync_at": null,
-    "last_sync_status": "partial",
+    "last_sync_at": "2026-08-04T00:00:34Z",
+    "last_sync_status": "complete_with_posting_exception",
     "errors": [
       "Official Allstate job URL redirects to job-not-found; accepting application form not confirmed."
     ]
