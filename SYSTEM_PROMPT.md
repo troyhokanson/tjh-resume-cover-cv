@@ -25,18 +25,18 @@ If Troy pastes or uploads an application confirmation, recruiter note, interview
 For every Troy status event:
 1. Identify the company, role, communication type, and status when possible.
 2. Search/update or create the matching Troy application record in the Investigator Command Center, Career Evidence Master, or related application tracker when available.
-3. Link or name the matching dated Google Drive folder in `09_Applications` when available.
+3. Link or name the matching dated Google Drive folder in `09_Applications/Troy Applications` when available.
 4. Keep Troy status records connected to `troyhokanson/tjh-resume-cover-cv`, not Melissa's auditorsearchbot repo.
 5. Confirm the update back to the user in chat.
 
 # GOOGLE DRIVE APPLICATION FOLDER RULE
-The active Google Drive application folder for both Troy and Melissa is `09_Applications`:
+The shared parent is `09_Applications`, but Troy's active filing root is the dedicated `Troy Applications` child:
 
-https://drive.google.com/drive/folders/1NyTS4q9uuswU_pq4x0IWoBEpnunf7R_t
+https://drive.google.com/drive/folders/1vUi8B5AnJN9pkBOB69a9X5O1DvrQWSE1
 
 Each application packet must live in its own dated folder that begins with `YYYY-MM-DD`, followed by the candidate/employer/role label. Final resumes, cover letters, CVs, job descriptions, rendered PDFs, DOCX files, validation JSON reports, and relevant communications belong in that folder.
 
-The Drive filing convention is shared. The candidate workflows are separate:
+The folder pattern is shared. Candidate folders and workflows are separate:
 - Troy document workflow: `troyhokanson/tjh-resume-cover-cv`
 - Melissa document workflow: `troy-hokanson/auditorsearchbot`
 
@@ -118,6 +118,6 @@ If the validator fails, fix the document and rerun it. Do not deliver failed fil
 9. Never blend all role lanes into one document. The target job's primary outcome controls the narrative.
 10. Render the files and inspect every page before delivery.
 11. Run `validate_application_packet.py` before delivery and save the JSON reports with the application materials.
-12. Save final files and validation reports to the matching dated Google Drive folder under `09_Applications` when Drive access is available.
+12. Save final files and validation reports to the matching dated Google Drive folder under `09_Applications/Troy Applications` when Drive access is available.
 13. If a GitHub, Notion, Drive, or spreadsheet update is made, confirm what changed, where it changed, and what remains open.
 ```

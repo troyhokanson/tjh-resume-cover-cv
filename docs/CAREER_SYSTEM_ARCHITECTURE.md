@@ -14,7 +14,7 @@
 3. Telegram receives an alert only when the configured threshold is met.
 4. A human decides whether to pursue the role.
 5. The application package is generated from verified facts and locked design standards.
-6. DOCX and PDF files are saved under `01_Investigator Command Center/09_Applications/YYYY-MM-DD_Company_Role` in Google Drive.
+6. DOCX and PDF files are saved under `01_Investigator Command Center/09_Applications/Troy Applications/YYYY-MM-DD_Company_Role` in Google Drive.
 7. The substantive resume and cover letter are archived as Markdown in GitHub.
 8. Application metadata is validated against `standards/application_package.schema.json`.
 9. Google Drive and GitHub links are written back to the Notion application record.
@@ -51,3 +51,10 @@ The system is healthy only when:
 - generated Drive packages contain the expected files;
 - GitHub contains the matching Markdown and JSON records;
 - no stale repository names, hardcoded owner paths, or expired integration assumptions remain.
+
+## Public portfolio routing
+
+- Canonical public domain: `https://TroyHokanson.com`
+- Production GitHub Pages repository: `troyhokanson/troyhokanson.github.io`
+- Career-fact and application-standard repository: `troyhokanson/tjh-resume-cover-cv`
+- `troy-hokanson/portfolio` is a non-production duplicate and must not be treated as the deployed site or an authoritative career-fact source.

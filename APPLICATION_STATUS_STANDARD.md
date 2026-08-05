@@ -8,17 +8,17 @@ Troy's application document source of truth is:
 
 - GitHub repo: `troyhokanson/tjh-resume-cover-cv`
 - Notion hub: `Investigator Command Center`
-- Google Drive active applications folder: `09_Applications`
+- Google Drive active applications folder: `09_Applications/Troy Applications`
 
 The active Google Drive applications folder URL is:
 
-- `https://drive.google.com/drive/folders/1NyTS4q9uuswU_pq4x0IWoBEpnunf7R_t`
+- `https://drive.google.com/drive/folders/1vUi8B5AnJN9pkBOB69a9X5O1DvrQWSE1`
 
-## Shared Drive convention
+## Candidate-specific Drive convention
 
-Troy and Melissa use the same Drive filing convention:
+Troy and Melissa use the same folder-name convention, but their application roots are separate:
 
-- application folders live under `09_Applications`;
+- Troy application folders live under `09_Applications/Troy Applications`;
 - each folder begins with the application date in `YYYY-MM-DD` format;
 - each application has its own folder;
 - generated resumes, cover letters, CVs, PDFs, DOCX files, job descriptions, validation reports, and relevant communications belong in that dated folder;
@@ -32,7 +32,7 @@ Examples:
 
 ## Candidate boundary rule
 
-The Drive folder convention is shared. The candidate workflows are separate.
+The Drive folder-name convention is shared. The candidate roots and workflows are separate.
 
 - Troy document workflow: `troyhokanson/tjh-resume-cover-cv`
 - Melissa document workflow: `troy-hokanson/auditorsearchbot`
