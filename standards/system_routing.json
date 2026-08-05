@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "authority": "Permanent routing rule for Troy Hokanson career application materials",
   "systems": {
     "notion": {
@@ -10,7 +10,8 @@
     },
     "google_drive": {
       "role": "working_document_and_final_artifact_vault",
-      "root_path": "01_Investigator Command Center/09_Applications",
+      "root_path": "01_Investigator Command Center/09_Applications/Troy Applications",
+      "root_url": "https://drive.google.com/drive/folders/1vUi8B5AnJN9pkBOB69a9X5O1DvrQWSE1",
       "application_folder_pattern": "YYYY-MM-DD_Company_Role",
       "required_files_when_generated": ["job_description", "resume.docx", "resume.pdf", "cover_letter.docx", "cover_letter.pdf", "qa_report"],
       "prohibit_final_files_outside_root": true
@@ -21,6 +22,13 @@
       "required_files_per_application": ["resume.md", "cover_letter.md", "application.json"],
       "prohibit_sensitive_signature_image": true,
       "prohibit_private_identifiers": ["SSN", "date of birth", "private case victim data", "medical records"]
+    },
+    "public_portfolio": {
+      "role": "public_career_site",
+      "canonical_domain": "https://TroyHokanson.com",
+      "production_repository": "troyhokanson/troyhokanson.github.io",
+      "non_production_duplicate_repository": "troy-hokanson/portfolio",
+      "career_fact_authority": "troyhokanson/tjh-resume-cover-cv"
     },
     "telegram": {
       "role": "time_sensitive_alerting_only",
