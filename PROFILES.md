@@ -62,7 +62,7 @@ Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me what good investigative tooling looks like from the end-user side of the workflow. I ran Cellebrite UFED extractions on the Dakota County Electronic Crimes Task Force across ten partner agencies, processed 5,304 GB of digital evidence in 2020, and spent 18 years as an adjunct faculty member at the University of Phoenix teaching the next generation of Criminal Justice graduates how to read what those tools produce.
+> Twenty-five years as a Minnesota detective and 8 years 3 months in the U.S. Army taught me what good investigative tooling looks like from the end-user side of the workflow. I ran Cellebrite UFED extractions on the Dakota County Electronic Crimes Task Force across ten partner agencies, processed 5,304 GB of digital evidence in 2020, and spent 18 years as an adjunct faculty member at the University of Phoenix teaching the next generation of Criminal Justice graduates how to read what those tools produce.
 
 ### Worked example — resume bullet
 
@@ -113,7 +113,7 @@ Lean into the 6.5 years of investigation experience, the documented restitution 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army shaped how I work a suspicious claim. I led a multi-victim Business Email Compromise investigation that closed with $295,704.11 in court-ordered restitution and a 15-year federal sentence, and I wrote the after-action material for the county attorney's office that made that case usable in court.
+> Twenty-five years as a Minnesota detective and 8 years 3 months in the U.S. Army shaped how I work a suspicious claim. I led a multi-victim Business Email Compromise investigation that closed with $295,704.11 in court-ordered restitution and a 15-year federal sentence, and I wrote the after-action material for the county attorney's office that made that case usable in court.
 
 ### Worked example — resume bullet
 
@@ -166,7 +166,7 @@ Lean into the writing. Lean into the 18 years of adjunct teaching as proof Troy 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me to write for audiences who were not there for the investigation. I distilled multi-month digital forensic examinations into the search warrant affidavits, after-action reports, and case summaries that went to the county attorney, the chief, and the federal prosecutor on the Business Email Compromise case that closed with $295,704.11 in restitution.
+> Twenty-five years as a Minnesota detective and 8 years 3 months in the U.S. Army taught me to write for audiences who were not there for the investigation. I distilled multi-month digital forensic examinations into the search warrant affidavits, after-action reports, and case summaries that went to the county attorney, the chief, and the federal prosecutor on the Business Email Compromise case that closed with $295,704.11 in restitution.
 
 ### Worked example — resume bullet
 
