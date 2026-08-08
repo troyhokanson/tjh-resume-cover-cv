@@ -7,8 +7,11 @@
   "official_url": "https://apply.workable.com/huggingface/j/0BD8C06DB3/",
   "date_created": "2026-08-08",
   "date_updated": "2026-08-08",
-  "application_status": "ready_for_candidate_review",
-  "submission_status": "not_submitted",
+  "application_status": "submitted",
+  "submission_status": "submitted",
+  "submitted_date": "2026-08-08",
+  "submission_channel": "Hugging Face Workable application site",
+  "confirmation_status": "email_copy_pending",
   "priority": "Tier 3",
   "fit_score": 65,
   "fit_disposition": "conditional_low_probability_exploratory_pool",
@@ -34,5 +37,5 @@
     "visual_inspection_passed": true,
     "ats_exception_recorded": true
   },
-  "next_action": "Candidate review and submission decision"
+  "next_action": "Monitor for the application copy and employer response; archive confirmation when received"
 }
