@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "candidate": "Troy J. Hokanson",
+  "employer": "Hugging Face",
+  "role": "Wild Card",
+  "job_id": "0BD8C06DB3",
+  "official_url": "https://apply.workable.com/huggingface/j/0BD8C06DB3/",
+  "date_created": "2026-08-08",
+  "date_updated": "2026-08-08",
+  "application_status": "ready_for_candidate_review",
+  "submission_status": "not_submitted",
+  "priority": "Tier 3",
+  "fit_score": 65,
+  "fit_disposition": "conditional_low_probability_exploratory_pool",
+  "work_mode": "remote",
+  "location": "United States",
+  "primary_lane": "analyst-intelligence",
+  "secondary_lane": "customer-success",
+  "signature_decision": "typed_name_only",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1E6ZMyJ4JRRKNzsrZBlnI26emvr8kZPy-",
+  "notion_record": "https://app.notion.com/p/3b6a574973a9810fb9cedbd57ea65193?pvs=204",
+  "github_package": "https://github.com/troyhokanson/tjh-resume-cover-cv/tree/application/hugging-face-wild-card-2026-08-08/applications/2026-08-08_hugging_face_wild_card",
+  "deliverables": {
+    "resume_docx": "output/Troy_Hokanson_Resume_Hugging_Face_Wild_Card.docx",
+    "resume_pdf": "output/Troy_Hokanson_Resume_Hugging_Face_Wild_Card.pdf",
+    "cover_letter_docx": "output/Troy_Hokanson_Cover_Letter_Hugging_Face_Wild_Card.docx",
+    "cover_letter_pdf": "output/Troy_Hokanson_Cover_Letter_Hugging_Face_Wild_Card.pdf"
+  },
+  "quality_assurance": {
+    "resume_validator_passed": true,
+    "cover_letter_validator_passed": true,
+    "anti_ai_scans_passed": true,
+    "privacy_checks_passed": true,
+    "visual_inspection_passed": true,
+    "ats_exception_recorded": true
+  },
+  "next_action": "Candidate review and submission decision"
+}
