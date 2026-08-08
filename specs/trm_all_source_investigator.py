@@ -22,8 +22,8 @@ TODAY = date(2026, 6, 15).strftime("%B %d, %Y")
 RESUME_SPEC = {
     "summary": (
         "All‑source financial crimes and digital forensics investigator with 25 years of law "
-        "enforcement experience, six years on a 10‑agency electronic crimes task force covering "
-        "the southern Twin Cities metro, and nine years of U.S. Army service. Led 68 documented "
+        "enforcement experience, 4.5 years on a 10‑agency electronic crimes task force covering "
+        "the southern Twin Cities metro, and 8 years 3 months of U.S. Army service. Led 68 documented "
         "financial crimes cases—including transaction card fraud, check forgery, identity theft, "
         "and vulnerable‑adult exploitation—built to withstand cross‑examination and resulting in "
         "$295,704.11 in court‑ordered restitution and a 15‑year federal sentence. Expert in "
@@ -119,14 +119,14 @@ COVER_SPEC = {
     "recipient_address": ["Remote — United States"],
     "salutation": "Hiring Manager",
     "body_paragraphs": [
-        "I spent nine years in the U.S. Army and 25 years as a law enforcement officer investigating "
+        "I spent 8 years 3 months in the U.S. Army and 25 years as a law enforcement officer investigating "
         "financial crimes. What I carry from that background into this role is not simply a list of "
         "credentials. It is a bone-deep understanding that fraud is not an abstract loss metric — it "
         "is money taken from people who trusted a system designed to protect them. I know that "
         "personally. My birth mother lost $20,000 to a crypto-ATM scam and never recovered a dollar. "
         "The operators who built that operation are still out there. TRM's Scam Disruption mission is "
         "not abstract to me. It is the work I want to be doing.",
-        "During six years assigned to the Dakota County Electronic Crimes Task Force — a 10-agency "
+        "During 4.5 years assigned to the Dakota County Electronic Crimes Task Force — a 10-agency "
         "consortium covering the southern Twin Cities metro — I ran financial crime investigations "
         "end-to-end: 68 documented cases including transaction card fraud, check forgery, identity "
         "theft, and multi-subject organized schemes spanning jurisdictions. Those cases produced "
