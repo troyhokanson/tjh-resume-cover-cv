@@ -1,0 +1,28 @@
+{
+  "application": "Hugging Face Wild Card",
+  "validation_date": "2026-08-08",
+  "profile": "analyst-intelligence",
+  "status": "passed_with_documented_ats_exception",
+  "resume": {
+    "pages": 2,
+    "validator_passed": true,
+    "anti_ai_scan_passed": true,
+    "privacy_scan_passed": true,
+    "font_and_header_checks_passed": true,
+    "visual_inspection_passed": true
+  },
+  "cover_letter": {
+    "pages": 1,
+    "validator_passed": true,
+    "anti_ai_scan_passed": true,
+    "privacy_scan_passed": true,
+    "font_and_header_checks_passed": true,
+    "visual_inspection_passed": true
+  },
+  "ats_audit": {
+    "raw_coverage_percent": 2.5,
+    "floor_percent": 85,
+    "exception_recorded": true,
+    "reason": "The parser treated archived metadata, URLs, adjacent word pairs and benefits language in an open-ended talent-pool posting as requirements. Unsupported keywords were not inserted."
+  }
+}
