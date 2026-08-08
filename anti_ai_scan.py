@@ -6,7 +6,7 @@ PROFILES.md, and PRIVACY_STANDARD.md. Run BEFORE share_file on any resume, cover
 CV, recruiter packet, bio, or one-pager.
 
 Voice baseline: 54-year-old Gen-X medically retired Minnesota detective,
-M.A. (GPA 3.94), 19 years adjunct teaching, empathetic + investigator-precise.
+M.A. (GPA 3.94), 18 years adjunct teaching, empathetic + investigator-precise.
 """
 
 from __future__ import annotations
