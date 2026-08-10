@@ -49,6 +49,7 @@ EDUCATION_LINES = [
     "",
     "Associate of Arts, Criminal Justice, Magna Cum Laude",
     "St. Cloud State University, St. Cloud, MN",
+    "GPA: 3.50",
     "1996",
 ]
 
