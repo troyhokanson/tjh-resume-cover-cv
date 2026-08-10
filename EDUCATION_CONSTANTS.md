@@ -28,6 +28,7 @@ GPA: 3.51
 ```
 Associate of Arts, Criminal Justice, Magna Cum Laude
 St. Cloud State University, St. Cloud, MN
+GPA: 3.50
 1996
 ```
 
@@ -53,6 +54,8 @@ If either is missing, the scan should emit a `WARN: missing education constant` 
 ---
 
 ## Change Log
+
+- 2026-08-10: Added the verified Associate of Arts GPA of 3.50 for consistency with the MA and BA entries.
 
 - 2026-06-07: Added Associate of Arts entry (1996). Standardized all dates to year-only.
   Removed date-range format (was "August 2003 - December 2005" for MA -- corrected to 2005).
