@@ -4,8 +4,8 @@
   "pdf": "applications/2026-08-10_samsara_strategic_customer_success_manager/output/Hokanson_Resume_Samsara_Strategic_Customer_Success_Manager.pdf",
   "docx": "applications/2026-08-10_samsara_strategic_customer_success_manager/output/Hokanson_Resume_Samsara_Strategic_Customer_Success_Manager.docx",
   "header_pngs": [
-    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v3/page-1.png",
-    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v3/page-2.png"
+    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v4/page-1.png",
+    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v4/page-2.png"
   ],
   "passed": true,
   "failed_error_count": 0,
@@ -201,7 +201,7 @@
       "name": "render.header_png_exists",
       "passed": true,
       "severity": "info",
-      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v3/page-1.png"
+      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v4/page-1.png"
     },
     {
       "name": "render.header_top_left_right_navy",
@@ -213,7 +213,7 @@
       "name": "render.header_png_exists",
       "passed": true,
       "severity": "info",
-      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v3/page-2.png"
+      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_resume_v4/page-2.png"
     },
     {
       "name": "render.header_top_left_right_navy",
