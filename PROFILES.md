@@ -62,11 +62,11 @@ Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me what good investigative tooling looks like from the end-user side of the workflow. I ran Cellebrite UFED extractions on the Dakota County Electronic Crimes Task Force across ten partner agencies, processed 5,304 GB of digital evidence in 2020, and spent 18 years as an adjunct faculty member at the University of Phoenix teaching the next generation of Criminal Justice graduates how to read what those tools produce.
+> Twenty-five years in Minnesota law enforcement and prior U.S. Army service taught me what good investigative tooling looks like from the end-user side of the workflow. I conducted digital forensic examinations through the ten-agency Dakota County Electronic Crimes Task Force, personally processed 5,304 GB of digital evidence in 2020, and spent 18 years as an adjunct faculty member at the University of Phoenix explaining investigative concepts to undergraduate Criminal Justice students.
 
 ### Worked example — resume bullet
 
-> Operated Cellebrite UFED and Physical Analyzer as the primary end-user across 14 partner agencies on the Dakota County Electronic Crimes Task Force, including extraction, decoding, and courtroom presentation of mobile evidence in 60+ search-warrant-backed examinations.
+> Used Cellebrite UFED and Physical Analyzer while supporting examinations through the ten-agency Dakota County Electronic Crimes Task Force, connecting mobile-device findings with investigative records and explaining the results to investigators and prosecutors.
 
 ---
 
@@ -83,11 +83,11 @@ Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways 
 
 ### Voice emphasis
 
-Lean into the 6.5 years of investigation experience, the documented restitution dollar amounts, the multi-victim case framing, the working-with-prosecutors framing, and the cooperation-with-task-forces framing (Dakota County, FBI, USPS, BCA). Lean into the CFE in progress. Lean into the empathy. SIU hiring managers are former cops and former adjusters. They read like cops. The voice should land plain, procedural, and outcome-focused.
+Lean into the verified investigative assignments, documented victim-loss figures, multi-victim case framing, work with prosecutors, and cooperation with partner agencies. Lean into the CFE in progress. Lean into the empathy. SIU hiring managers often include former investigators and adjusters. The voice should land plain, procedural, and outcome-focused.
 
 ### Required framing elements (in addition to Layer 1)
 
-- Cover letter must reference at least one named, multi-victim case outcome with the restitution dollar amount, sentence, or charge type.
+- Cover letter should use at least one privacy-safe, source-backed case outcome when it materially strengthens the application. Use only the verified loss amount, conviction, charge type, or commendation recorded in `CAREER_CONSTANTS.md` and `CASE_BANK.md`.
 - Cover letter must reference fraud's effect on policyholders or premium-payers explicitly. Earned empathy, not slogan.
 - Resume must include the CFE-in-progress status with honest framing (e.g., "Certified Fraud Examiner (CFE), credential in progress, exam scheduled [date]"). Never overclaim.
 - At least one reference to working with the county attorney's office, federal prosecutor, or carrier counsel as the document hand-off audience.
@@ -113,11 +113,11 @@ Lean into the 6.5 years of investigation experience, the documented restitution 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army shaped how I work a suspicious claim. I led a multi-victim Business Email Compromise investigation that closed with $295,704.11 in court-ordered restitution and a 15-year federal sentence, and I wrote the after-action material for the county attorney's office that made that case usable in court.
+> Twenty-five years in Minnesota law enforcement shaped how I work a suspicious claim. I led a multi-victim Business Email Compromise investigation that documented more than $360,000 in victim losses and resulted in a felony conviction. The work also produced written recognition from a county prosecutor.
 
 ### Worked example — resume bullet
 
-> Investigated multi-victim Business Email Compromise scheme that closed with $360,000+ in documented victim losses, $295,704.11 in court-ordered restitution, and a 15-year federal sentence, coordinated across the FBI, USPS Inspection Service, BCA, and three local agencies.
+> Led a multi-victim Business Email Compromise investigation that documented more than $360,000 in victim losses, resulted in a felony conviction, and required coordination with local, state, and federal investigative partners.
 
 ---
 
@@ -166,7 +166,7 @@ Lean into the writing. Lean into the 18 years of adjunct teaching as proof Troy 
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years as a Minnesota detective and nine years in the U.S. Army taught me to write for audiences who were not there for the investigation. I distilled multi-month digital forensic examinations into the search warrant affidavits, after-action reports, and case summaries that went to the county attorney, the chief, and the federal prosecutor on the Business Email Compromise case that closed with $295,704.11 in restitution.
+> Twenty-five years in Minnesota law enforcement taught me to write for audiences who were not there for the investigation. I converted multi-month digital forensic examinations into search-warrant affidavits, case summaries, and briefings for prosecutors, command staff, and partner agencies.
 
 ### Worked example — resume bullet
 

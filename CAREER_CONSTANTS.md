@@ -527,7 +527,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
 | Digital evidence processed (2020) | 5,304 GB (Troy's total personal examination volume across all agencies he worked for through the task force -- not LPD-only, not a task-force-wide aggregate) |
 | Task force partner agencies | Ten |
-| FTO service | 18 years |
+| FTO service | 19 years (2004 - 2023) |
 | SWAT service | 5.5 years |
 | Adjunct faculty | 18 years (March 2007 - October 2025) |
 | Written commendations | 20+ |

@@ -36,8 +36,8 @@ def _cover(body: str) -> list[str]:
 def _clean_resume() -> str:
     return (
         "Managed a multi-victim Business Email Compromise investigation that "
-        "closed with court-ordered restitution of $295,704.11 and a 15-year "
-        "federal prison sentence."
+        "documented more than $360,000 in victim losses and resulted in a "
+        "felony conviction."
     )
 
 
@@ -45,8 +45,8 @@ def _clean_cover() -> str:
     return (
         "Twenty-five years in public service taught me that fraud erodes the "
         "trust between people and the systems designed to protect them. "
-        "My record includes $360,000 in documented victim losses recovered and "
-        "a 15-year federal sentence obtained.\n\nRespectfully,"
+        "My record includes a fraud investigation that documented more than "
+        "$360,000 in victim losses and resulted in a felony conviction.\n\nRespectfully,"
     )
 
 
@@ -62,7 +62,7 @@ class TestCleanTextPasses:
         assert _cover(_clean_cover()) == []
 
     def test_bio_no_semicolon_passes(self):
-        body = "Troy Hokanson is a medically retired Minnesota detective."
+        body = "Troy Hokanson is a medically retired Minnesota law-enforcement officer."
         assert scan_text(body, doc_type="bio") == []
 
 

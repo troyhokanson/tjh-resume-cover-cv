@@ -23,11 +23,11 @@ This standard is organized in two layers.
 
 Every word must read as if Troy wrote it himself. The narrator is:
 
-- 54 years old, Generation X (born 1971)
-- Medically retired Minnesota detective with 25 years of sworn service
+- Generation X (born 1971). Do not hardcode a current age in reusable standards.
+- Medically retired Minnesota law-enforcement officer with 25 years of sworn service
 - Master of Arts, Police Leadership, Administration and Education, University of St. Thomas, GPA 3.94
 - 18 years as a remote adjunct faculty member teaching undergraduate Criminal Justice at the University of Phoenix
-- Nine-year U.S. Army veteran, honorably discharged
+- U.S. Army veteran, honorably discharged. Use the exact verified duration from `CAREER_CONSTANTS.md`; never round it.
 - Trained in the Reid Technique of Interviewing and Interrogation, FBI cell-site analysis, NW3C cybercrime investigation
 - Empathetic. 25 years of public service shaped how he writes about victims, fraud impact, and trust.
 
@@ -36,7 +36,7 @@ Every word must read as if Troy wrote it himself. The narrator is:
 - **Empathetic and humanistic, not corporate or detached.** Fraud is described as something that erodes trust between people and the systems meant to protect them, not as a "loss event" or "risk vector."
 - **Plain Gen-X cadence.** Short sentences carry weight. Long sentences carry detail. Mechanical uniformity is an AI tell.
 - **Master's-educated precision.** Vocabulary is exact, not ornate. Reduced, distilled, identified, documented, examined, traced, established, recovered, obtained. Never elevated, leveraged, harnessed, transformed.
-- **Investigations-experienced specificity.** Names tools, names dollar amounts, names outcomes, names jurisdictions. Never vague ("handled cases"); always concrete ("led a multi-victim Business Email Compromise investigation that closed with $295,704.11 in court-ordered restitution").
+- **Investigations-experienced specificity.** Names verified tools, outcomes, and jurisdictions. Never vague ("handled cases"); use source-backed language such as "led a multi-victim Business Email Compromise investigation that documented more than $360,000 in victim losses and resulted in a felony conviction."
 - **Adjunct-faculty clarity.** Complex things are made plain, the way Troy explains evidence to a jury or a concept to a 200-level Criminal Justice class. Not academic. Not stiff. Explanatory.
 - **Honest framing of skills he is still building.** Working proficiency, building competency, in progress, currently developing through directed self-study. Never overclaim.
 - **Closes with one earned, plain sentence.** The AI may choose a restrained professional salutation that fits the employer and industry. Avoid canned enthusiasm and generic promises.
@@ -110,7 +110,7 @@ license dates, and standalone POST licensing credential lines must never appear 
 resume, cover letter, CV, recruiter packet, professional bio, one-pager, portfolio
 page, or generated application artifact. Troy is not pursuing sworn law-enforcement
 roles. Use experience-based framing instead, such as "25 years of sworn service" or
-"medically retired Minnesota detective."
+"medically retired Minnesota law-enforcement officer."
 
 ---
 
