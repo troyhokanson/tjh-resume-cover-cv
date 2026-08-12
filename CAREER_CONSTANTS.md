@@ -75,14 +75,16 @@ of which case it belongs to.
 
 ### Real Estate Consultant
 ```
-Title:      Real Estate Consultant (Referral-Only as of March 2026)
+Title:      Real Estate Consultant
 Employer:   eXp Realty / KW Select
 Location:   South Metro MN
 Dates:      June 2024 - March 2026
+License:    Minnesota real estate license expired June 2026; inactive.
 Notes:      Medical retirement from law enforcement May 2024. Closed $3.2M in residential
-            sales during transition. Currently referral-only while pursuing public-safety-
-            technology and investigative roles. Never list as primary employer -- always
-            frame as bridge role following medical retirement.
+            sales during transition. Real estate work ended March 2026 and the Minnesota
+            real estate license expired in June 2026; it is inactive. Do not describe Troy
+            as referral-only or as currently practicing real estate. Never list as primary
+            employer -- always frame as bridge role following medical retirement.
 ```
 
 ### Police Officer -- Return to Patrol
@@ -449,7 +451,7 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 | Patrol / main employer | Lakeville Police Department |
 | Real estate (full) | eXp Realty / KW Select |
 | University (adjunct) | University of Phoenix |
-| Current real estate status | Referral-only with KW Select |
+| Current real estate status | Inactive; Minnesota real estate license expired June 2026 |
 | Graduate school | University of St. Thomas |
 | Undergraduate school | St. Cloud State University |
 | MAAG full reference | Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team |
@@ -467,6 +469,7 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 - First investigative rotation: March 2010 - May 2011
 - Second investigative rotation: September 2016 - December 2021 (ECU + DCECTF combined span)
 - Real estate end date is March 2026, not "Present"
+- Minnesota real estate license expired June 2026 and is inactive
 - University of Phoenix end date is October 2025, not "Present"
 - Medical retirement from sworn service: May 2024
 - CSU on-call: 2013 - 2018 (year-only acceptable for collateral duties)
@@ -591,6 +594,10 @@ script, not this file.
 
 ## Change Log
 
+- 2026-08-12: Corrected real estate status. Real estate work ended March 2026. Minnesota
+  real estate license expired June 2026 and is inactive. Removed "referral-only" as a
+  current status and prohibited future application materials from describing Troy as
+  currently practicing real estate.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
   Added Awards and Honors section. Canonical stats table added.
