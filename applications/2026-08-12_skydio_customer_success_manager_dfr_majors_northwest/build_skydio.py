@@ -50,7 +50,7 @@ PROJECTS = [
 ]
 
 JOBS_PAGE1 = [
-    ("Real Estate Consultant (Referral-Only as of March 2026)", "June 2024 - March 2026", "eXp Realty / KW Select | South Metro MN", [
+    ("Real Estate Consultant", "June 2024 - March 2026", "eXp Realty / KW Select | South Metro MN", [
         "Managed client relationships from initial consultation through negotiation, inspection, financing, title, and closing. Completed $3.2M in residential sales during the transition from law enforcement.",
         "Coordinated clients, lenders, inspectors, appraisers, title professionals, and cooperating agents through time-sensitive transactions, kept milestones visible, and explained difficult decisions in plain language.",
     ]),
