@@ -28,6 +28,7 @@ from docx_header import (
     add_bullet,
     set_run,
     set_paragraph_format,
+    HEADING_FONT,
     BLACK,
 )
 from config import TROY_NAME, TROY_PHONE, TROY_EMAIL, TROY_LOCATION, TROY_LINKEDIN
@@ -53,6 +54,12 @@ EDUCATION_LINES = [
     "1996",
 ]
 
+EDUCATION_BLOCKS = (
+    tuple(EDUCATION_LINES[0:4]),
+    tuple(EDUCATION_LINES[5:9]),
+    tuple(EDUCATION_LINES[10:14]),
+)
+
 
 # ====================================================================
 # BODY BUILDERS — one per document type
@@ -70,12 +77,12 @@ def _build_resume_body(doc: Document, spec: dict) -> None:
     add_section_heading(doc, "Professional Summary")
     p = doc.add_paragraph(spec["summary"])
     set_paragraph_format(p, before=0, after=4, line=1.15)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
 
     add_section_heading(doc, "Core Skills")
     p = doc.add_paragraph(spec["skills"])
     set_paragraph_format(p, before=0, after=4, line=1.15)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
 
     add_section_heading(doc, "Experience")
     for job in spec.get("jobs", []):
@@ -88,14 +95,22 @@ def _build_resume_body(doc: Document, spec: dict) -> None:
         for para in section["paragraphs"]:
             p = doc.add_paragraph(para)
             set_paragraph_format(p, before=0, after=4, line=1.15)
-            set_run(p.runs[0], size=10.5)
+            set_run(p.runs[0], size=12)
 
     add_section_heading(doc, "Education")
-    for line in EDUCATION_LINES:
-        p = doc.add_paragraph(line)
+    for index, block in enumerate(EDUCATION_BLOCKS):
+        degree, *detail_lines = block
+        p = doc.add_paragraph()
         set_paragraph_format(p, before=0, after=0, line=1.0)
-        if p.runs:
-            set_run(p.runs[0], size=10.5)
+        set_run(p.add_run(degree), font=HEADING_FONT, size=12, bold=True)
+        p = doc.add_paragraph(" | ".join(detail_lines))
+        set_paragraph_format(
+            p,
+            before=0,
+            after=8 if index < len(EDUCATION_BLOCKS) - 1 else 3,
+            line=1.0,
+        )
+        set_run(p.runs[0], size=12)
 
 
 def _build_cover_letter_body(doc: Document, spec: dict) -> None:
@@ -120,7 +135,7 @@ def _build_cover_letter_body(doc: Document, spec: dict) -> None:
         if line:
             p = doc.add_paragraph(line)
             set_paragraph_format(p, before=0, after=0, line=1.0)
-            set_run(p.runs[0], size=10.5)
+            set_run(p.runs[0], size=12)
 
     doc.add_paragraph("")
     p = doc.add_paragraph(spec.get("date_str", date.today().strftime("%B %d, %Y")))
@@ -131,25 +146,25 @@ def _build_cover_letter_body(doc: Document, spec: dict) -> None:
         if line:
             p = doc.add_paragraph(line)
             set_paragraph_format(p, before=0, after=0, line=1.0)
-            set_run(p.runs[0], size=10.5)
+            set_run(p.runs[0], size=12)
 
     doc.add_paragraph("")
     p = doc.add_paragraph(f"Dear {spec.get('salutation', 'Hiring Manager')},")
     set_paragraph_format(p, before=0, after=6, line=1.15)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
 
     for para in spec.get("body_paragraphs", []):
         p = doc.add_paragraph(para)
         set_paragraph_format(p, before=0, after=6, line=1.15)
-        set_run(p.runs[0], size=10.5)
+        set_run(p.runs[0], size=12)
 
     doc.add_paragraph("")
     p = doc.add_paragraph("Respectfully,")
     set_paragraph_format(p, before=0, after=0, line=1.0)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
     p = doc.add_paragraph(TROY_NAME)
     set_paragraph_format(p, before=0, after=0, line=1.0)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
 
 
 def _build_stationary_body(doc: Document, spec: dict) -> None:
@@ -172,27 +187,27 @@ def _build_stationary_body(doc: Document, spec: dict) -> None:
         if line:
             p = doc.add_paragraph(line)
             set_paragraph_format(p, before=0, after=0, line=1.0)
-            set_run(p.runs[0], size=10.5)
+            set_run(p.runs[0], size=12)
 
     if spec.get("salutation"):
         doc.add_paragraph("")
         p = doc.add_paragraph(f"Dear {spec['salutation']},")
         set_paragraph_format(p, before=0, after=6, line=1.15)
-        set_run(p.runs[0], size=10.5)
+        set_run(p.runs[0], size=12)
 
     for para in spec.get("body_paragraphs", []):
         p = doc.add_paragraph(para)
         set_paragraph_format(p, before=0, after=6, line=1.15)
-        set_run(p.runs[0], size=10.5)
+        set_run(p.runs[0], size=12)
 
     doc.add_paragraph("")
     closing = spec.get("closing", "Respectfully,")
     p = doc.add_paragraph(closing)
     set_paragraph_format(p, before=0, after=0, line=1.0)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
     p = doc.add_paragraph(TROY_NAME)
     set_paragraph_format(p, before=0, after=0, line=1.0)
-    set_run(p.runs[0], size=10.5)
+    set_run(p.runs[0], size=12)
 
 
 # ====================================================================

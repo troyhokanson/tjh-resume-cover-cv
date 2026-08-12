@@ -6,7 +6,7 @@ Single source of truth for the navy/gold/white header used on every DOCX
 resume, cover letter, CV, and application document bearing Troy's name.
 
 Locked header requirements:
-- Full-bleed navy #0D1B2A bar in the Word header part, never in the body.
+- Full-bleed navy #0D1B2A table in the Word header part, never in the body.
 - "Troy Hokanson" in white #FFFFFF Garamond-family bold, centered, 26 pt.
 - Thin gold #C9A84C rule directly beneath the name.
 - Gold Garamond contact row beneath the rule.
@@ -37,9 +37,10 @@ WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 BLACK = RGBColor(0x14, 0x14, 0x14)
 GRAY = RGBColor(0x55, 0x55, 0x55)
 
-BODY_FONT = "Calibri"
+BODY_FONT = "Garamond"
 NAME_FONT = "Garamond"
 CONTACT_FONT = "Garamond"
+HEADING_FONT = "Garamond"
 NAME = TROY_NAME or "Troy Hokanson"
 
 _phone_digits = TROY_PHONE.replace(".", "").replace("-", "").replace(" ", "")
@@ -140,7 +141,7 @@ def add_paragraph_bottom_border(paragraph, color_hex="C9A84C", size=6, space=1):
     p_pr.append(p_bdr)
 
 
-def set_run(run, *, font=BODY_FONT, size=10.5, bold=False, italic=False, color=BLACK):
+def set_run(run, *, font=BODY_FONT, size=12, bold=False, italic=False, color=BLACK):
     run.font.name = font
     r_pr = run._element.get_or_add_rPr()
     r_fonts = r_pr.find(qn("w:rFonts"))
@@ -155,7 +156,7 @@ def set_run(run, *, font=BODY_FONT, size=10.5, bold=False, italic=False, color=B
     run.font.color.rgb = color
 
 
-def add_hyperlink(paragraph, text, url, *, color=None, font=BODY_FONT, size=10, bold=False):
+def add_hyperlink(paragraph, text, url, *, color=None, font=BODY_FONT, size=12, bold=False):
     part = paragraph.part
     r_id = part.relate_to(
         url,
@@ -212,12 +213,11 @@ def build_navy_header(
     body_left_margin_inches=0.6,
     body_right_margin_inches=0.6,
 ):
-    """Build the locked header using page-edge background geometry.
+    """Build the locked header using renderer-stable page-edge geometry.
 
-    The background is a page-relative shape. The visible content uses centered
-    paragraphs inside symmetric section margins. Negative table indents are
-    prohibited because Word-compatible renderers can center them against a
-    shifted canvas instead of the physical page.
+    The background is a single shaded cell sized slightly wider than the page
+    and offset symmetrically. This keeps the banner full-bleed across Word and
+    LibreOffice without relying on an absolute VML shape.
     """
     section = doc.sections[0]
     section.top_margin = Inches(body_top_margin_inches)
@@ -226,66 +226,104 @@ def build_navy_header(
     section.right_margin = Inches(body_right_margin_inches)
     section.header_distance = Inches(0)
     section.footer_distance = Inches(0)
+    section.different_first_page_header_footer = True
+    doc.settings.odd_and_even_pages_header_footer = True
 
-    header = section.header
-    header.is_linked_to_previous = False
+    # Use exact page geometry: one page-width cell offset by exactly the body
+    # margin. This avoids both the clipped oversize-table design and the
+    # renderer-sensitive absolute VML background used by earlier versions.
+    page_width_twips = int(section.page_width.emu // 635)
+    left_margin_twips = int(section.left_margin.emu // 635)
+    renderer_bleed_twips = 144
+    header_width_twips = page_width_twips + (renderer_bleed_twips * 2)
+    def populate_header(header):
+        header.is_linked_to_previous = False
+        for paragraph in list(header.paragraphs):
+            paragraph._p.getparent().remove(paragraph._p)
+        table = header.add_table(rows=1, cols=1, width=section.page_width)
+        table.autofit = False
+        table.allow_autofit = False
 
-    name_p = header.paragraphs[0]
-    for child in list(name_p._p):
-        if child.tag != qn("w:pPr"):
-            name_p._p.remove(child)
-    for paragraph in list(header.paragraphs[1:]):
-        paragraph._p.getparent().remove(paragraph._p)
+        table_properties = table._tbl.tblPr
+        for tag in ("w:tblW", "w:tblInd", "w:tblLayout"):
+            for old in table_properties.findall(qn(tag)):
+                table_properties.remove(old)
 
-    name_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    content_width = (
-        section.page_width.inches
-        - section.left_margin.inches
-        - section.right_margin.inches
-    )
-    rule_indent = max(0, (content_width - (8.5 * 0.55)) / 2)
-    name_p.paragraph_format.left_indent = Inches(rule_indent)
-    name_p.paragraph_format.right_indent = Inches(rule_indent)
-    set_paragraph_format(name_p, before=14, after=4, line=1.0)
-    add_paragraph_bottom_border(name_p, color_hex="C9A84C", size=7, space=3)
-    add_header_background_shape(name_p, "0D1B2A")
-    name_run = name_p.add_run(NAME)
-    set_run(name_run, font=NAME_FONT, size=26, bold=True, color=WHITE)
+        table_width = OxmlElement("w:tblW")
+        table_width.set(qn("w:w"), str(header_width_twips))
+        table_width.set(qn("w:type"), "dxa")
+        table_properties.append(table_width)
 
-    contact_p = header.add_paragraph()
-    contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    set_paragraph_format(contact_p, before=4, after=0, line=1.0)
-    separator = " | "
-    visible_index = 0
-    for text, url in CONTACT_PARTS:
-        if not text:
-            continue
-        if visible_index > 0:
-            sep_run = contact_p.add_run(separator)
-            set_run(sep_run, font=CONTACT_FONT, size=9.5, color=GOLD)
-        if url:
-            add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=9.5)
-        else:
-            run = contact_p.add_run(text)
-            set_run(run, font=CONTACT_FONT, size=9.5, color=GOLD)
-        visible_index += 1
+        table_indent = OxmlElement("w:tblInd")
+        table_indent.set(qn("w:w"), str(-(left_margin_twips + renderer_bleed_twips)))
+        table_indent.set(qn("w:type"), "dxa")
+        table_properties.append(table_indent)
 
-    footer = section.footer
-    footer.is_linked_to_previous = False
-    for paragraph in list(footer.paragraphs):
-        paragraph._p.getparent().remove(paragraph._p)
+        table_layout = OxmlElement("w:tblLayout")
+        table_layout.set(qn("w:type"), "fixed")
+        table_properties.append(table_layout)
+        table._tbl.tblGrid.gridCol_lst[0].set(qn("w:w"), str(header_width_twips))
+
+        cell = table.cell(0, 0)
+        shade_cell(cell, "0D1B2A")
+        remove_cell_borders(cell)
+        set_cell_margins(cell, top=220, bottom=180, left=140, right=140)
+        cell_width = cell._tc.get_or_add_tcPr().find(qn("w:tcW"))
+        cell_width.set(qn("w:w"), str(header_width_twips))
+        cell_width.set(qn("w:type"), "dxa")
+
+        name_p = cell.paragraphs[0]
+        name_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        set_paragraph_format(name_p, before=0, after=0, line=1.0)
+        shade_paragraph(name_p, "0D1B2A")
+        name_run = name_p.add_run(NAME)
+        set_run(name_run, font=NAME_FONT, size=26, bold=True, color=WHITE)
+
+        rule_p = cell.add_paragraph()
+        rule_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        set_paragraph_format(rule_p, before=0, after=0, line=1.0)
+        shade_paragraph(rule_p, "0D1B2A")
+        rule_run = rule_p.add_run("─" * 54)
+        set_run(rule_run, font=NAME_FONT, size=8, color=GOLD)
+
+        contact_p = cell.add_paragraph()
+        contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        set_paragraph_format(contact_p, before=2, after=0, line=1.0)
+        shade_paragraph(contact_p, "0D1B2A")
+        separator = " | "
+        visible_index = 0
+        for text, url in CONTACT_PARTS:
+            if not text:
+                continue
+            if visible_index > 0:
+                sep_run = contact_p.add_run(separator)
+                set_run(sep_run, font=CONTACT_FONT, size=9.5, color=GOLD)
+            if url:
+                add_hyperlink(contact_p, text, url, color=GOLD, font=CONTACT_FONT, size=9.5)
+            else:
+                run = contact_p.add_run(text)
+                set_run(run, font=CONTACT_FONT, size=9.5, color=GOLD)
+            visible_index += 1
+
+    for header in (section.header, section.first_page_header, section.even_page_header):
+        populate_header(header)
+
+    for footer in (section.footer, section.first_page_footer, section.even_page_footer):
+        footer.is_linked_to_previous = False
+        for paragraph in list(footer.paragraphs):
+            paragraph._p.getparent().remove(paragraph._p)
 
 
 def add_section_heading(doc, text):
     p = doc.add_paragraph()
     set_paragraph_format(p, before=8, after=2, line=1.1)
     run = p.add_run(text.upper())
-    set_run(run, size=11.5, bold=True, color=STEEL)
+    set_run(run, font=HEADING_FONT, size=12, bold=True, color=STEEL)
     add_paragraph_bottom_border(p, color_hex="C9A84C", size=6)
     return p
 
 
-def add_bullet(doc, text, *, size=10.5):
+def add_bullet(doc, text, *, size=12):
     p = doc.add_paragraph(style="List Bullet")
     set_paragraph_format(p, before=0, after=2, line=1.15)
     pf = p.paragraph_format
@@ -302,14 +340,14 @@ def add_job_block(doc, title, employer_line, dates):
     p1 = doc.add_paragraph()
     set_paragraph_format(p1, before=6, after=0, line=1.1)
     run = p1.add_run(title)
-    set_run(run, size=11, bold=True, color=GOLD)
+    set_run(run, font=HEADING_FONT, size=12, bold=True, color=GOLD)
 
     p2 = doc.add_paragraph()
     set_paragraph_format(p2, before=0, after=2, line=1.1)
     employer_run = p2.add_run(employer_line)
-    set_run(employer_run, size=10.5, italic=True, color=BLACK)
+    set_run(employer_run, size=12, italic=True, color=BLACK)
     date_run = p2.add_run("    " + dates)
-    set_run(date_run, size=10, color=GRAY)
+    set_run(date_run, size=12, color=GRAY)
     return p1, p2
 
 
@@ -317,7 +355,7 @@ def new_document():
     doc = Document()
     style = doc.styles["Normal"]
     style.font.name = BODY_FONT
-    style.font.size = Pt(10.5)
+    style.font.size = Pt(12)
     return doc
 
 
@@ -341,6 +379,7 @@ __all__ = [
     "BODY_FONT",
     "NAME_FONT",
     "CONTACT_FONT",
+    "HEADING_FONT",
     "NAME",
     "CONTACT_PARTS",
     "build_navy_header",
