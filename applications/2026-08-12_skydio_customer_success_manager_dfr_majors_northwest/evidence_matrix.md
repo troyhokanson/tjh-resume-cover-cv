@@ -1,12 +1,14 @@
 # Evidence Matrix
 
-| Skydio need | Verified evidence | Application use |
+| Skydio need | Verified evidence | Framing |
 |---|---|---|
-| Public-safety customer credibility | 25 years sworn service; direct relationships across command, patrol, investigations, IT, and prosecutors | Summary and cover opening |
-| Implementation and adoption | Led 2007-2010 agency ALPR program; $40,000 Target + Blue grant; Genetec AutoVu/BCA CJIS/Lakeville IT coordination | Resume accomplishment and cover example |
-| Training and enablement | 18 years FTO; 18 years remote adjunct faculty; electronic-crimes training resource | Resume and cover |
-| Complex account-like stakeholder work | Lakeville representative and digital-forensics SME in a ten-agency task force | Resume and cover |
-| Technical troubleshooting | 5,304 GB examined in 2020 using several forensic platforms; documented and translated results | Resume |
-| Connected public-safety technology | Direct Axon Body 3, Fleet 2, ALPR, radio, digital-evidence, and forensic platform use | Summary and experience |
-| Travel and territory | Comfortable with approximately 40% travel; Minnesota now, southwest Washington anticipated in 2027 | Cover close |
-| FAA requirement | Prepared to obtain Part 107 | Cover close |
+| Build scalable onboarding/processes | Electronic-crimes investigator resource folder with legal-process templates and provider references | Built repeatable workflows that reduced reinvention for new users |
+| Manage implementation projects | Target ALPR partnership; initial Cellebrite deployment | Took technology from operational need into sustained daily workflow |
+| Drive adoption | FTO, adjunct instruction, daily technical support to investigators | User-centered instruction and follow-through until independent use |
+| Interface with technical teams | Multi-platform digital forensics; task-force coordination; international/federal technical case coordination | Translated operational questions into technical requirements and usable outputs |
+| Project management concepts | Case ownership, multi-party deadlines, real-estate transactions, workflow automation projects | Scope, schedule, dependencies, risk, stakeholder communication |
+| Product feedback / customer advocacy | End-user evaluation of investigative tools and agency technology workflows | Credible operator perspective without claiming vendor product-management ownership |
+| SLED/public safety | 25 years sworn service, multi-agency task force, agency technology projects | Direct public-safety customer-domain credibility |
+| Remote customer communication | 18 years remote adjunct teaching; current remote GitHub/AI projects | Long-term remote communication discipline |
+| UAS / DFR | Developing DFR domain knowledge; ability to obtain Part 107 | State gap directly; do not overclaim |
+| Travel | Approximately 40% is workable | Explicitly affirm without claiming unlimited travel tolerance |
