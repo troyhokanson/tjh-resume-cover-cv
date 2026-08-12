@@ -21,6 +21,11 @@ Three top-level keys live in that file:
 2. `commendation_quotes` — every supervisor write-up Troy can cite. Each has a `ptsd_safe` flag, a `themes` list, a `profiles` list, a one-paragraph `verbatim_short` direct quote, an `verbatim_attribution_notes` paragraph that captures the case context Troy can paraphrase, and a `nominator_role` (supervisor / citizen).
 3. `training_hours_total` — the documented hours figure used in summaries and cover letters.
 
+The JSON catalog is the structured extraction layer. The application-safe selection layer is
+`awards_comm_perf_reviews.md` at the repository root. That file controls verified quote
+status, reviewer-name suppression, experience crosswalks, role relevance, and public citation
+eligibility.
+
 ## Hard Rules
 
 These are non-negotiable and apply to every consumer of this skill.
@@ -31,6 +36,9 @@ These are non-negotiable and apply to every consumer of this skill.
 4. **Verbatim quote integrity.** The `verbatim_short` field is the only string that may be presented as a direct quotation. Anything from `verbatim_attribution_notes` must be paraphrased, never quoted.
 5. **Tier ordering.** When listing certifications in a document, headline-tier entries appear first and are never demoted; supporting-tier entries fill out the section as space allows; suppressed-tier entries are excluded entirely.
 6. **Supervision & Management source control.** For `SUP-008`, use only the single final certificate titled `BCA Supervision & Management Program 98 Hours 06132012.pdf` as the authoritative supporting file. Do not link the bundled `Supervisory-Certificates.pdf` as the public certificate for this umbrella credential.
+7. **Reviewer identity suppression.** Application-facing output and the public website attribute praise by source type or role only. Do not publish reviewer names, citizen names, private email metadata, or protected case identifiers.
+8. **Quote-status gate.** Only entries marked `verified_verbatim` or `verified_excerpt` in `awards_comm_perf_reviews.md` may appear in quotation marks. A verified paraphrase must never be quoted.
+9. **Experience-first selection.** Select a verified experience before selecting praise. Every praise item used must corroborate that experience or a job-critical competency; generic praise that adds no proof is omitted.
 
 ## Selection Workflow
 
@@ -45,6 +53,21 @@ When another skill (linkedin-profile-optimizer, github-application-document-stan
    - One-pager / capabilities sheet: 6 to 8 headline-tier entries only.
 4. **Pull eligible quotes.** Filter `commendation_quotes` the same way. For a cover letter, attempt to select one entry with `nominator_role == "supervisor"` and one with `nominator_role == "citizen"`. If only one role is available for that profile, use one quote. Never use two from the same role.
 5. **Pull the training hours figure.** Always cite `training_hours_total.documented_hours` rather than rounding or inventing.
+
+## Praise Evidence Crosswalk
+
+After filtering the structured catalog:
+
+1. Open `awards_comm_perf_reviews.md`.
+2. Match the job requirement to a verified experience anchor.
+3. Match that experience to an eligible award, review excerpt, commendation, or stakeholder
+   comment.
+4. Prefer the most specific, outcome-linked, non-duplicative item.
+5. Confirm the quote-status label and privacy controls.
+6. For public citations, use only a sanitized TroyHokanson.com evidence card that passed the
+   publication gate. Never cite a private Drive, Notion, personnel, or email source.
+7. Preserve unresolved crosswalks as unresolved. Do not infer that an unattributed praise item
+   belongs to a known case.
 
 ## Quote Insertion Standard
 
