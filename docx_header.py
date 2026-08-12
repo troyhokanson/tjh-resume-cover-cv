@@ -238,6 +238,7 @@ def build_navy_header(
         paragraph._p.getparent().remove(paragraph._p)
 
     name_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    shade_paragraph(name_p, "0D1B2A")
     content_width = (
         section.page_width.inches
         - section.left_margin.inches
@@ -254,6 +255,7 @@ def build_navy_header(
 
     contact_p = header.add_paragraph()
     contact_p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    shade_paragraph(contact_p, "0D1B2A")
     set_paragraph_format(contact_p, before=4, after=0, line=1.0)
     separator = " | "
     visible_index = 0
