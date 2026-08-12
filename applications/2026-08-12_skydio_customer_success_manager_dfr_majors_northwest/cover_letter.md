@@ -1,11 +1,27 @@
-# Cover Letter Source
+# Troy Hokanson - Cover Letter
 
-Skydio's DFR Customer Success role is where public-safety operations, connected technology, and organizational change meet. That is the work I know. During 25 years in Minnesota law enforcement, I used fleet video, body-worn cameras, ALPR, communications systems, and digital-evidence platforms from the operator and investigator side of the workflow. I understand what earns trust with chiefs, supervisors, IT teams, and officers. I also know what causes adoption to stall after a promising launch.
+Target: Skydio, Customer Success Manager DFR Majors - Northwest
 
-My strongest match is the ability to understand an agency's current operation, identify what is getting in the way, and help different stakeholders move toward a workable process. As Lakeville Police Department's representative and digital forensics subject-matter resource in a ten-agency task force, I coordinated examinations and priorities across investigators, supervisors, technical personnel, and prosecutors. In 2020, I processed 5,304 GB of digital evidence using several platforms and converted technical findings into decisions non-technical audiences could use.
+```text
+Troy Hokanson
+Lakeville, MN | 612.352.8647 | TroyHokanson@iCloud.com | linkedin.com/in/troyhokanson | troyhokanson.com
 
-I have also built adoption programs rather than simply used the tools. From 2007 to 2010, I led an agency-side ALPR program, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, BCA CJIS, and Lakeville IT around the nightly hotlist workflow. Later, I acquired and configured our initial Cellebrite UFED and created an electronic-crimes training resource with practical templates and provider guidance. Those projects required ownership, technical translation, stakeholder follow-through, and a willingness to build structure where none existed.
+August 12, 2026
+Skydio
+Re: Customer Success Manager DFR Majors - Northwest
 
-Training and change management have been constants throughout my career. I spent 18 years as a Field Training Officer and 18 years teaching Criminal Justice remotely. Both roles required me to determine what the user understood, adjust the explanation, and follow through until the person could apply the process independently. My recent real estate work added private-sector client management through $3.2 million in completed residential sales.
+Skydio's Northwest DFR role is unusually close to the work I want to do next. I spent 25 years in Minnesota public safety using, introducing, and helping others adopt technology under real operational pressure. The part of the posting that stands out to me is not the drone itself. It is the responsibility to take a customer's use case, manage implementation, solve adoption problems, and stay accountable until the technology becomes useful in daily operations.
 
-DFR is a new product category for me, but the public-safety mission, users, evidence consequences, and implementation realities are not. I am comfortable with the listed travel expectations and prepared to obtain FAA Part 107 certification. I am based in Minnesota and anticipate relocating to southwest Washington in 2027. Both locations are within the Northwest territory. I would welcome the opportunity to bring field-tested judgment, technical credibility, and disciplined customer follow-through to Skydio's public-safety partners.
+That pattern has followed me throughout my career. From 2007 through 2010, I helped develop and support an agency ALPR partnership with Target, including agency-side work with Genetec AutoVu in 2007. The project required translating patrol and investigative needs into a workflow that officers could actually use. During a later electronic-crimes assignment, I acquired and configured our initial Cellebrite UFED and built a structured investigator resource folder with preservation, subpoena, search-warrant, and service-provider materials. The goal was not to own a new tool. The goal was to make the workflow repeatable enough that other investigators could use it correctly without starting over every time.
+
+I have also taken ownership when the work was not neatly assigned. In one time-sensitive digital investigation, I self-initiated the case and reported in outside normal hours because evidence could disappear if nobody moved quickly. I preserved the available digital evidence, built the legal-process path, coordinated the examination, documented the work, and carried the package forward for prosecution. In another high-priority encrypted-email matter, I served as the agency focal point and coordinated across international and federal partners to obtain technical records under a tight timeline. Those cases reinforced the same lesson I see in Skydio's posting: implementation succeeds when one person owns the details, keeps the stakeholders connected, and does not let schedule or technical friction become somebody else's problem.
+
+Training and adoption are equally familiar. I served 18 years as a Field Training Officer and 18 years as a remote adjunct Criminal Justice faculty member. I also supported daily users across a ten-agency electronic-crimes task force and personally processed 5,304 GB of digital evidence in 2020. In each setting, the work required me to understand what the user was trying to accomplish, explain the technology in plain language, adjust when the first approach did not work, and create documentation that made the next problem easier to solve.
+
+I have not owned SaaS renewals, ARR, NRR, Quarterly Business Reviews, or a formal enterprise customer book, and I have not operated a commercial UAS program. Those are real gaps. My relevant strengths are public-safety credibility, technology implementation from the agency side, project ownership, user instruction, workflow development, technical problem-solving, and executive-ready communication. I am developing DFR domain knowledge, can obtain FAA Part 107, and the approximately 40% travel requirement is workable for me. I am currently in Minnesota and plan to relocate to southwest Washington, both within the Northwest account footprint listed for this role.
+
+Skydio is building technology for the same public-safety professionals I spent my career working beside. I would like to help those agencies move from purchase to confident daily use.
+
+Respectfully,
+Troy Hokanson
+```
