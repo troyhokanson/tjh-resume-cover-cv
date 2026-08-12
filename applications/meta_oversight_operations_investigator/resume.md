@@ -6,7 +6,7 @@ Lakeville, MN | 612-352-8647 | TroyHokanson@iCloud.com | linkedin.com/in/troyhok
 
 ## Professional Summary
 
-Twenty-five-year medically retired Minnesota detective, digital forensic examiner, trainer, and nine-year U.S. Army veteran with experience resolving complex, sensitive, and time-critical matters that required independent judgment, multi-system investigation, cross-functional coordination, and defensible written findings. Led major fraud and digital-evidence investigations, supported approximately 10 partner agencies, and processed 5,304 GB of digital evidence in 2020. Active daily user of AI tools for research, prompt development, document review, workflow design, and quality control, with a disciplined practice of verifying outputs and keeping human judgment accountable.
+Medically retired Minnesota law-enforcement officer, digital forensic examiner, trainer, and U.S. Army veteran with 25 years of sworn service resolving complex, sensitive, and time-critical matters that required independent judgment, multi-system investigation, cross-functional coordination, and defensible written findings. Led major fraud and digital-evidence investigations, supported partner agencies within a ten-agency task-force structure, and personally processed 5,304 GB of digital evidence in 2020. Active daily user of AI tools for research, prompt development, document review, workflow design, and quality control, with a disciplined practice of verifying outputs and keeping human judgment accountable.
 
 ## Core Qualifications
 
@@ -30,7 +30,7 @@ November 1998 to May 2024
 
 - Managed complex investigations and urgent escalations from initial triage through evidence collection, analysis, partner coordination, written findings, and final resolution, often with incomplete information and competing priorities.
 - Connected signals across devices, cloud accounts, communications records, financial records, social media, public records, witness accounts, and law-enforcement systems to establish timelines, test competing explanations, and identify root causes.
-- Led a multi-victim Business Email Compromise investigation involving international transfers and multiple financial institutions. The broader prosecution documented more than $360,000 in victim losses, $295,704.11 in court-ordered restitution, and a 15-year federal sentence.
+- Led a multi-victim Business Email Compromise investigation involving international transfers and multiple financial institutions. The case documented more than $360,000 in victim losses, resulted in a felony conviction, and produced written recognition from an Assistant Dakota County Attorney.
 - Served as a digital forensics resource for approximately 10 partner agencies. Processed 5,304 GB of digital evidence in 2020 using Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, telecommunications records, social media returns, and OSINT.
 - Prepared search warrant affidavits, investigative reports, case summaries, evidence timelines, and leadership briefings that translated technical and factual complexity into clear decisions and accountable next steps.
 - Identified recurring investigative gaps and built practical resources, including example legal-process documents, service-provider references, preservation guidance, and repeatable investigator workflows.
@@ -84,7 +84,7 @@ September 1994 to February 1998
 
 **Associate of Arts, Criminal Justice, Magna Cum Laude** | St. Cloud State University, St. Cloud, MN | 1996
 
-**U.S. Army and Minnesota Army National Guard** | Nine years, Infantry, Armor Crewman, Truck Driver, Military Police | Army Achievement Medal | Army Good Conduct Medal
+**U.S. Army and Minnesota Army National Guard** | Infantry, Armor Crewman, Transportation, Military Police | Army Achievement Medal | Army Good Conduct Medal
 
 **Selected Development** | Certified Fraud Examiner credential in progress | Certified Cyber Crime Examiner | Cellebrite training | FBI CAST-V | BCA Supervision and Management Certificate | First Aid, CPR and AED, current
 

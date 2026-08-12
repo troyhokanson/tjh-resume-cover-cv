@@ -6,7 +6,7 @@
 
 ## Professional Summary
 
-Twenty-five-year medically retired Minnesota detective and digital forensic examiner with nine years of U.S. Army service, including Military Police, Armor, Infantry, and campus public safety leadership before sworn service. Built a career around theft, fraud, check forgery, organized retail theft patterns, evidence documentation, interviews, safety response, and law enforcement partnerships. Worked closely with loss prevention and asset protection teams from Mills Fleet Farm, Target, Walmart, Cub Foods, Kwik Trip, Speedway, and other retailers during patrol and investigations. Experienced trainer and team leader with 18 years as an adjunct Criminal Justice faculty member, 19 years as a Field Training Officer, and prior campus security leadership experience supervising public safety staff and event security. CFE credential in progress through ACFE.
+Medically retired Minnesota law-enforcement officer and digital forensic examiner with 25 years of sworn service and prior U.S. Army experience in Military Police, Armor, Infantry, and transportation assignments. Built a career around theft, fraud, check forgery, organized retail theft patterns, evidence documentation, interviews, safety response, and law enforcement partnerships. Worked closely with loss prevention and asset protection teams from Mills Fleet Farm, Target, Walmart, Cub Foods, Kwik Trip, Speedway, and other retailers during patrol and investigations. Experienced trainer and team leader with 18 years as an adjunct Criminal Justice faculty member, 19 years as a Field Training Officer, and prior campus security leadership experience supervising public safety staff and event security. CFE credential in progress through ACFE.
 
 ## Core Strengths
 
@@ -38,7 +38,7 @@ November 1998 to May 2024
 * Served on SWAT from 2005 to 2011 and Crime Scene Unit from 2013 to 2018, strengthening incident command, scene control, evidence preservation, and high-risk decision-making.
 * Processed digital evidence using Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, phone records, external media review, social media, and OSINT to support criminal investigations and prosecutor review.
 * Processed 5,304 GB of digital evidence in 2020 while assigned to electronic crimes and digital forensics work.
-* Investigated a multi-victim Business Email Compromise case with more than $360,000 in documented victim losses, $295,704.11 in court-ordered restitution, and a 15-year federal sentence.
+* Led a multi-victim Business Email Compromise investigation with more than $360,000 in documented victim losses, a felony conviction, and written recognition from an Assistant Dakota County Attorney.
 
 ### Dakota County Electronic Crimes Task Force, Dakota County, Minnesota
 **Task Force Detective and Lakeville Police Department SME**  
@@ -79,7 +79,7 @@ College period
 **Infantry, Armor Crewman, Truck Driver, Military Police**  
 1989 to 1998
 
-* Served nine years across the U.S. Army Reserve, Active Duty Army, and Minnesota Army National Guard.
+* Served in the U.S. Army Reserve, Active Duty Army, and Minnesota Army National Guard in Infantry, Armor, transportation, and Military Police assignments.
 * Served as an Active Duty Armor Crewman on the M1A1 Main Battle Tank from 1991 to 1994.
 * Served as a Military Police Soldier with the Minnesota Army National Guard from 1995 to 1998, including Camp Ripley security and law enforcement support duties.
 * Earned Army Achievement Medal, Army Good Conduct Medal, and Secret clearance in 1992.

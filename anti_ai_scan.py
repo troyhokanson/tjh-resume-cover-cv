@@ -5,7 +5,7 @@ Codifies the hard safeguards from VOICE_STANDARD.md, ROLE_ADAPTATION_STANDARD.md
 PROFILES.md, and PRIVACY_STANDARD.md. Run BEFORE share_file on any resume, cover letter,
 CV, recruiter packet, bio, or one-pager.
 
-Voice baseline: 54-year-old Gen-X medically retired Minnesota detective,
+Voice baseline: Gen-X medically retired Minnesota law-enforcement officer,
 M.A. (GPA 3.94), 18 years adjunct teaching, empathetic + investigator-precise.
 """
 
@@ -106,6 +106,31 @@ PTSD_TERMS_ICAC_GATED = [
     "child exploitation",
     "ICAC",
 ]
+
+
+# Factual-integrity hard blocks. These phrases represent known career-fact drift or
+# previously conflated case outcomes. They are checked independently of voice style.
+FACTUAL_HARD_BLOCKS = (
+    (
+        re.compile(r"\b25 years? as (?:a )?(?:Minnesota )?detective\b", re.IGNORECASE),
+        "25 years describes total law-enforcement service, not detective tenure",
+    ),
+    (
+        re.compile(r"\b(?:nine|9)[- ]years?(?: of)?(?: U\.S\.)? Army\b", re.IGNORECASE),
+        "military service must use the exact verified duration or omit the duration",
+    ),
+    (
+        re.compile(r"\b54[- ]year[- ]old\b", re.IGNORECASE),
+        "do not hardcode a changing age in reusable application content",
+    ),
+)
+
+_BEC_CONTEXT_PATTERN = re.compile(
+    r"Business Email Compromise|\bBEC\b", re.IGNORECASE
+)
+_UNVERIFIED_BEC_OUTCOME_PATTERN = re.compile(
+    r"295,704\.11|15[- ]year federal sentence", re.IGNORECASE
+)
 
 
 # =========================================================================
@@ -328,6 +353,17 @@ def scan_text(
         pattern = re.escape(p).replace(r"\'", r"[''']")
         if re.search(rf"(?<![A-Za-z]){pattern}(?![A-Za-z])", body, re.IGNORECASE):
             failures.append(f"[L1] Forbidden phrase: '{p}'")
+
+    for pattern, explanation in FACTUAL_HARD_BLOCKS:
+        if pattern.search(body):
+            failures.append(f"[L1:FACT] {explanation}.")
+
+    if _BEC_CONTEXT_PATTERN.search(body) and _UNVERIFIED_BEC_OUTCOME_PATTERN.search(body):
+        failures.append(
+            "[L1:FACT] BEC outcome conflation found. Use verified victim losses exceeding "
+            "$360,000, a felony conviction, and written prosecutor recognition; do not "
+            "assign the unverified restitution figure or a separate federal sentence to BEC."
+        )
 
     for p in PROFILE_RULES[profile]["banned_phrases"]:
         pattern = re.escape(p).replace(r"\'", r"[''']")

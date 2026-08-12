@@ -4,7 +4,7 @@
 
 ## Professional Summary
 
-Twenty-five-year medically retired Minnesota detective and digital forensic examiner with 5.5 years assigned full time to complex felony investigations and a 10-agency electronic crimes task force. Developed prosecution-ready cases involving wire fraud, identity theft, transaction card fraud, business email compromise, forgery, theft by swindle, and vulnerable-adult financial exploitation. Traced relationships across people, accounts, devices, communications, addresses, businesses, and financial records; produced detailed reports, search-warrant affidavits, case summaries, and briefings for prosecutors and partner agencies. A major business email compromise investigation documented more than $360,000 in victim losses, produced $295,704.11 in court-ordered restitution, and contributed to a 15-year federal sentence. Advanced Excel user, experienced with investigative databases and OSINT, and currently building SQL competency. U.S. citizen and nine-year Army veteran able to obtain federal suitability credentials.
+Medically retired Minnesota law-enforcement officer and digital forensic examiner with 25 years of sworn service, including 5.5 years assigned full time to complex felony investigations and a ten-agency electronic crimes task force. Developed prosecution-ready cases involving wire fraud, identity theft, transaction-card fraud, Business Email Compromise, forgery, theft by swindle, and vulnerable-adult financial exploitation. Traced relationships across people, accounts, devices, communications, addresses, businesses, and financial records; produced detailed reports, search-warrant affidavits, case summaries, and briefings for prosecutors and partner agencies. A major Business Email Compromise investigation documented more than $360,000 in victim losses, resulted in a felony conviction, and produced written recognition from an Assistant Dakota County Attorney. Advanced Excel user, experienced with investigative databases and OSINT, and currently building SQL competency. U.S. citizen and Army veteran able to obtain federal suitability credentials.
 
 ## Core Qualifications
 
@@ -43,7 +43,7 @@ Twenty-five-year medically retired Minnesota detective and digital forensic exam
 ### U.S. Army Veteran
 **1989-1998**
 
-- Completed nine years of honorable service in Infantry, Armor, Transportation, and Military Police assignments. Held a Secret clearance during active service and earned the Army Achievement Medal and Good Conduct Medal.
+- Completed honorable U.S. Army service in Infantry, Armor, transportation, and Military Police assignments. Held a Secret clearance during active service and earned the Army Achievement Medal and Good Conduct Medal.
 
 ## Education
 
