@@ -559,64 +559,17 @@ Written Commendations (20+)
 
 ---
 
-## Performance Review Evidence -- Sanitized and Application-Approved
+## Awards, Commendations, and Performance Reviews -- Routing Rule
 
-Scope: 2019 and 2020 annual performance reviews. Original personnel documents remain private
-in Google Drive. This public source contains only de-identified, application-safe facts.
+Locked award names, years, and the 20+ written-commendation count remain in this file.
+For application-safe quotations, annual-review excerpts, informal commendations, selection
+rules, experience crosswalks, and public citation controls, use:
 
-Do not add supervisor names, raw review quotations, case numbers, subject or victim identifiers,
-or direct links to the private source documents.
+`awards_comm_perf_reviews.md`
 
-### Approved Reusable Facts
-
-- The 2019 evaluation rated Troy "Exceeds Standards" for initiative and for self-initiated
-  work during non-demand time.
-- The 2020 supervisor narrative described Troy as a digital-forensics subject-matter expert
-  and peer resource, a thorough investigator, a hard worker, and a collaborative teammate
-  who prepared cases carefully for prosecution.
-- The 2019 review documented Troy's goal of building a structured investigator resource
-  system. He later completed a package of preservation-request, administrative-subpoena,
-  search-warrant, provider-guidance, and related reference materials to reduce the learning
-  curve for investigators new to electronic-crimes work.
-- The 2019 review referenced a written commendation for a commercial-burglary investigation
-  that integrated physical evidence, forensic analysis, provider legal process, and digital
-  evidence and resulted in a felony conviction. Use the sanitized CASE_BANK.md entry for
-  details; do not expose the case number or subject name.
-
-### Approved Application Language
-
-- "Earned Exceeds Standards ratings for initiative and self-directed work."
-- "Recognized by a supervisor as a digital-forensics subject-matter expert and peer resource
-  known for thorough case preparation, hard work, and collaboration."
-- "Turned an identified investigator-onboarding need into a structured electronic-crimes
-  resource system with repeatable legal-process templates and provider guidance."
-
-Use a maximum of one or two of these statements in a tailored document. Select the evidence
-that directly supports the target role rather than stacking all review praise into one paragraph.
-
-### Supporting Examples -- Interview or Cover-Letter Use
-
-The reviews also support the following de-identified examples when relevant:
-
-- Outside-agency praise for persistence in an electronic-crimes investigation.
-- Victim feedback crediting Troy's follow-through with helping bring a long-running fraud
-  matter to closure.
-- An empathy and service example in which Troy made an extra effort to preserve and return
-  irreplaceable family files from seized digital media.
-
-Paraphrase these examples. Do not publish raw quotations or identifying details.
-
-### Related Written Commendation -- Patrol, Not an Annual Review
-
-A December 2013 email from a patrol sergeant praised Troy's self-initiated fraud-case
-follow-up while he was assigned to patrol. Treat this as a separate written commendation
-and patrol-era initiative example; do not attribute it to the 2019 or 2020 annual reviews.
-See CASE_BANK.md for the sanitized case summary.
-
-### Evidence Gap
-
-Only the 2019 and 2020 annual reviews have been verified for this section. Earlier or later
-reviews should be added only after the source document is located and checked.
+Do not select quotations directly from raw personnel records or the structured extraction
+catalog. The praise evidence file controls quote status, reviewer-name suppression, role
+relevance, and the link to the underlying verified experience.
 
 ---
 
@@ -764,6 +717,6 @@ script, not this file.
   filed 03/21/2011)."
   New language in quick-reference table: "Occupational fraud (employee credit card
   misuse, ~$80K); Lakeville Park Theft."
-- 2026-08-12: Added sanitized 2019-2020 performance-review evidence and an explicit
-  separation rule for the December 2013 patrol-sergeant commendation. Source originals remain
-  private in Google Drive; public application language excludes names, identifiers, and raw text.
+- 2026-08-12: Added a routing rule for awards, commendations, and performance reviews.
+  Application-safe quotes, experience crosswalks, and public citation controls now live in
+  awards_comm_perf_reviews.md. Source originals remain private.
