@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "skill": "build-troy-application",
   "candidate": "Troy J. Hokanson",
   "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
@@ -61,7 +61,11 @@
         "verified_evidence_reviewed",
         "candidate_separation_passed",
         "privacy_filter_passed",
-        "unsupported_claims_removed"
+        "unsupported_claims_removed",
+        "praise_evidence_checked_when_relevant",
+        "selected_praise_linked_to_verified_experience",
+        "quote_verbatim_status_checked",
+        "reviewer_identity_suppressed"
       ]
     },
     {
@@ -117,7 +121,8 @@
         "validation_report_saved_to_drive",
         "github_metadata_updated",
         "notion_record_updated",
-        "cross_system_links_confirmed"
+        "cross_system_links_confirmed",
+        "public_evidence_citation_gate_passed_or_not_applicable"
       ]
     }
   ],
