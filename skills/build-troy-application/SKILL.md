@@ -52,6 +52,7 @@ Before drafting, read the current repository versions of all applicable standard
 - `TRAINING_CONSTANTS.md`
 - `DOCX_NODE_STANDARD.md`
 - `CASE_BANK.md`
+- `awards_comm_perf_reviews.md`
 - `PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md` when relevant
 - `anti_ai_scan.py`
 - `validate_application_packet.py`
@@ -135,6 +136,29 @@ Evidence priority:
 5. User statements requiring confirmation
 
 Use only the minimum evidence necessary for the role. Protect private, sensitive, sealed, or trauma-heavy material.
+
+
+### Praise-to-Experience Crosswalk
+
+When a job requirement could be strengthened by an award, commendation, stakeholder comment,
+or annual-review excerpt:
+
+1. Open `awards_comm_perf_reviews.md`.
+2. Select the verified experience first.
+3. Search the crosswalk for praise tied to that experience or competency.
+4. Rank the eligible item for direct relevance, proof strength, specificity, distinctiveness,
+   recency, duplication, and privacy risk.
+5. Use direct quotation marks only when the entry is `verified_verbatim` or
+   `verified_excerpt`.
+6. Suppress reviewer names and protected identifiers. Attribute by role or source type only.
+7. Use no direct praise quotes in resumes or CVs. A cover letter normally uses zero or one;
+   never exceed the quote limits in the credentials library.
+8. If a public citation materially improves credibility, link only to a sanitized
+   TroyHokanson.com evidence card that has passed the publication gate in the praise file.
+   Never link application materials to private source records.
+
+Praise corroborates the experience; it does not replace the experience or prove a claim that
+the underlying evidence does not support.
 
 ### Phase 5: Drafting
 
