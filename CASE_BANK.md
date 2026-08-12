@@ -35,6 +35,9 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 | 2 | Occupational Fraud / Office Manager | Offense: 03/15/2008, Filed: 03/21/2011 | Occupational fraud, theft by swindle | ~$80,000 in unauthorized charges | Felony conviction (Theft by Swindle); restitution ordered; early probation discharge 07/20/2021; expungement denied 02/11/2022 |
 | 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
 | 4 | Commercial Burglary / Google Search Warrant | Offense: 09/29/2016, Sentenced: 01/15/2020 | Burglary 2nd Degree (Possess Tool), physical and digital evidence convergence | Commercial burglary of a Lakeville bar; cash box recovered | Felony conviction; 30-month commitment stayed 10 years; 90-day jail/work release; 10-year supervised probation; $1,850 restitution; gambling treatment ordered; no-casino condition |
+| 5 | Time-Sensitive Online Exploitation | 2019 | Online exploitation, digital evidence preservation, forensic analysis | Proactive ownership under evidence-loss risk | Three felony convictions; executed sentence up to 78 months |
+| 6 | High-Volume Multi-Device Investigation | 2017 | Child-exploitation investigation, digital forensics | Large, complex digital evidence set | Arrest outcome |
+| 7 | Multi-Jurisdiction Homicide Digital Evidence | 2021 | Homicide, legal process, digital evidence, multi-agency coordination | Volatile evidence and multiple jurisdictions | First-degree murder convictions; life without parole |
 
 ---
 
@@ -177,6 +180,85 @@ In a commercial burglary investigation, I collected physical evidence at the sce
 - That search history established consciousness of guilt and directly tied the suspect to the investigation
 - Conviction: Burglary 2nd Degree (Felony, MN 609.582.2(a)(4)); 30-month commitment stayed 10 years; 90-day jail/work release; 10-year supervised probation through 01/15/2030; $1,850 restitution; court-ordered gambling assessment and treatment; no-casino condition; 60-day electronic home monitoring
 - Court-imposed no-casino condition and mandatory gambling treatment validate the behavioral intelligence developed through the canvass — the investigative read on the suspect proved accurate
+
+---
+
+## Case 5: Time-Sensitive Online-Exploitation Investigation
+
+**Public-safe case type:** Online exploitation, digital evidence preservation, forensic analysis  
+**Public-safe role:** Investigating officer and digital forensic examiner  
+**Outcome:** Official court records confirm three felony convictions and concurrent executed sentences of 36, 48, and 78 months  
+**TAGS:** `digital-forensics` `email-preservation` `search-warrant` `self-initiated-followup` `felony-conviction` `prison` `analyst-intelligence` `vendor-solutions`
+
+### Resume Bullet
+
+Proactively identified and took ownership of a time-sensitive online-exploitation investigation, initiated rapid evidence-preservation steps, coordinated lawful collection, and completed digital forensic analysis; official court records confirm three felony convictions and an executed sentence of up to 78 months.
+
+### Cover Letter Paragraph
+
+In one time-sensitive online-exploitation matter, I recognized the risk that digital evidence could disappear and took responsibility for moving the work forward. I initiated preservation steps, coordinated lawful acquisition, and completed the forensic analysis needed to turn fragmented device and cloud evidence into a defensible case. The matter resulted in three felony convictions and an executed sentence of up to 78 months.
+
+### Interview Talking Points
+
+- Recognized evidence-loss risk through proactive review
+- Took ownership and moved preservation and legal process forward
+- Coordinated device and cloud evidence workstreams
+- Maintained a defensible record through forensic analysis and prosecution support
+- Use neutral terms such as online exploitation and unlawful image-related evidence
+- Keep all names, identifiers, victim information, provider account details, and raw evidence descriptions private
+
+---
+
+## Case 6: High-Volume Multi-Device Investigation
+
+**Public-safe case type:** Child-exploitation investigation, multi-device digital forensics  
+**Public-safe role:** Lead investigator and examiner  
+**Outcome:** Agency records document an arrest outcome  
+**Verification note:** The case linkage and role are source-verified. The exact device count and terabyte volume remain user-confirmed pending recovery of the original forensic report.  
+**TAGS:** `digital-forensics` `search-warrant` `multi-agency` `analyst-intelligence` `vendor-solutions`
+
+### Resume Bullet
+
+Led the investigative and forensic work on a high-volume, multi-device child-exploitation matter, organizing complex digital evidence, maintaining defensible documentation, and carrying the work through an arrest outcome.
+
+### Cover Letter Paragraph
+
+I have also managed a high-volume, multi-device digital investigation where the challenge was not simply technical extraction. The work required creating structure around a large evidence set, setting priorities, preserving defensibility, and communicating progress clearly enough for investigators and prosecutors to act on it.
+
+### Interview Talking Points
+
+- Created structure around a large, complex evidence set
+- Prioritized review and documented decisions
+- Maintained chain of custody and defensibility
+- Communicated progress and findings to investigative stakeholders
+- Use high-volume until the original report verifies an exact device count or data volume
+
+---
+
+## Case 7: Multi-Jurisdiction Homicide Digital-Evidence Support
+
+**Public-safe case type:** Homicide, legal process, digital evidence, multi-agency coordination  
+**Public-safe role:** Digital forensic examiner and investigative support; formally noticed trial witness  
+**Outcome:** Official county records confirm first-degree murder convictions and life imprisonment without parole  
+**Verification note:** A retrospective summary supports the methods. An official trial notice and county outcome release independently confirm participation and outcome. Do not publish an exact warrant count until primary records are located.  
+**TAGS:** `digital-forensics` `search-warrant` `social-media-investigation` `multi-agency` `county-attorney-referral` `felony-conviction` `prison` `analyst-intelligence` `vendor-solutions`
+
+### Resume Bullet
+
+Provided digital-forensic and investigative support in a multi-jurisdiction homicide case involving legal process, volatile digital evidence, and social-media preservation; the prosecution obtained first-degree murder convictions and a sentence of life without parole.
+
+### Cover Letter Paragraph
+
+In a major homicide investigation spanning multiple scenes and agencies, I supported legal process, digital-evidence preservation, forensic analysis, and the translation of technical findings into an actionable investigative record. The work demanded urgency without sacrificing documentation or evidentiary integrity, and I was later formally noticed as a trial witness.
+
+### Interview Talking Points
+
+- Coordinated legal-process and digital-evidence work across a multi-agency investigation
+- Supported preservation of volatile device and social-media evidence
+- Translated technical findings for investigators and prosecutors
+- Maintained evidentiary integrity under time pressure
+- Was formally noticed as a trial witness
+- Use the conservative supported role and do not claim lead-investigator status or an exact warrant count without primary-source confirmation
 
 ---
 
