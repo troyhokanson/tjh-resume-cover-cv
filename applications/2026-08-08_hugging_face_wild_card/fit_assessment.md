@@ -23,7 +23,7 @@ The primary lane reflects Troy's investigation, digital-evidence, OSINT, analyti
 | Collaboration with an open AI community | Gap | Troy has extensive teaching and cross-agency collaboration, but no established record as an open-source ML maintainer or Hugging Face community contributor. |
 | Open-source technical depth | Gap | Troy does not have professional Python, ML engineering, model training, or framework-maintenance experience. |
 | Remote collaboration | Direct | Eighteen years teaching Criminal Justice remotely, plus current source-controlled and connected-tool workflows. |
-| Public-sector and nontechnical user perspective | Direct | Twenty-five years in public safety, extensive digital-evidence work, 18 years as a Field Training Officer, and 18 years teaching adult learners. |
+| Public-sector and nontechnical user perspective | Direct | Twenty-five years in public safety, extensive digital-evidence work, 19 years as a Field Training Officer, and 18 years teaching adult learners. |
 
 ## Strongest contribution thesis
 

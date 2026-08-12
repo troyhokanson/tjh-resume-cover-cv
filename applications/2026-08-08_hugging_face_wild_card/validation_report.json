@@ -1,8 +1,13 @@
 {
   "application": "Hugging Face Wild Card",
-  "validation_date": "2026-08-08",
+  "validation_date": "2026-08-12",
   "profile": "analyst-intelligence",
   "status": "passed_with_documented_ats_exception",
+  "post_submission_correction": {
+    "source_archive_corrected": true,
+    "revised_documents_resubmitted": false,
+    "notes": "Corrected factual, privacy and formatting defects in the repository archive after the August 8 submission. No resubmission is claimed."
+  },
   "resume": {
     "pages": 2,
     "validator_passed": true,
