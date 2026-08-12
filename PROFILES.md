@@ -80,32 +80,10 @@ Lean into Troy's 5.5 years of hands-on Cellebrite / Magnet AXIOM / FTK / X-Ways 
 - Field Fraud Investigator (insurance carrier)
 - Fraud Examiner (claims-side, carrier-side)
 - Special Investigator (PBM, healthcare insurer)
-- Claims Investigator / Claims Fraud Investigator
-- Claims File Auditor / Claims Quality Auditor / Claims Quality Analyst
-- Claims Review Specialist where evidence review, fraud indicators, documentation, or investigative findings are central
-- Claims Adjuster Trainee / Associate Claims Adjuster in auto, casualty, liability, or general claims when prior carrier experience is not required
 
 ### Voice emphasis
 
 Lean into the 6.5 years of investigation experience, the documented restitution dollar amounts, the multi-victim case framing, the working-with-prosecutors framing, and the cooperation-with-task-forces framing (Dakota County, FBI, USPS, BCA). Lean into the CFE in progress. Lean into the empathy. SIU hiring managers are former cops and former adjusters. They read like cops. The voice should land plain, procedural, and outcome-focused.
-
-For claims-audit and entry-adjuster postings, treat Troy's evidence as transferable unless the posting is primarily an SIU investigation. Use accident and loss-scene investigation, interviewing, conflicting-account resolution, document and evidence review, fraud-pattern recognition, factual reporting, litigation preparation, customer communication, and independent caseload management as the bridge. Never imply prior carrier claim ownership, coverage interpretation, reserve authority, settlement negotiation, claims-system experience, medical coding, Xactimate, estimating, or an adjuster license.
-
-### Claims-role targeting guardrails
-
-Retain for review:
-- Claims investigation, claim-file quality review, claims audit, fraud referral review, and adjuster-trainee roles that accept investigative, legal, public-safety, military, or customer-service experience.
-- Auto, general casualty, liability, and property-damage roles whose employer provides training and permits required licensing after hire.
-- Individual-contributor roles where interviews, statements, evidence review, documentation, liability analysis, fraud indicators, or litigation support are material duties.
-
-Apply a serious penalty or reject when required:
-- An active adjuster license is required at application and the posting provides no obtain-after-hire or reciprocity path.
-- Multiple years of direct claim ownership, coverage decisions, reserving, negotiation, settlement authority, carrier systems, medical coding, medical-record auditing, Xactimate, construction estimating, workers' compensation, or complex bodily-injury handling are hard requirements.
-- Premium auditor roles centered on payroll, accounting records, classifications, or onsite business audits unless explicitly trainee-level.
-- Catastrophe or field-property roles centered on roof/ladder inspections, heavy territory travel, deployment, construction estimating, or Xactimate.
-- Medical claims audit roles that require clinical credentials, coding certification, utilization review, or direct healthcare-claims experience.
-
-Do not reject a relevant posting merely because it mentions adjusters, underwriters, attorneys, providers, medical records, or Xactimate as collaborators or contextual systems. Reject unsupported requirements, not incidental words.
 
 ### Required framing elements (in addition to Layer 1)
 
