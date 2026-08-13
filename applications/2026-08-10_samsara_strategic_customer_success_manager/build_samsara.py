@@ -33,19 +33,19 @@ STEEL = RGBColor(0x2D, 0x6A, 0x9F)
 
 RESUME = {
     "summary": (
-        "Public-safety technology practitioner, instructor, and client-facing professional with "
-        "25 years of public service, 18 years of remote college teaching, and recent residential "
-        "real estate client service. Experienced in helping people adopt technical workflows, "
-        "resolving operational barriers, and explaining complex systems to executives, supervisors, "
-        "and daily users. Direct experience includes fleet video, body-worn cameras, ALPR, mobile "
-        "and computer forensics, and Microsoft 365. Seeking to apply that end-user perspective to "
-        "customer success for Samsara's IoT platform serving physical operations."
+        "Customer-facing technology and operations professional with 25 years of public-safety "
+        "service, 18 years of remote college instruction, and recent private-sector client management. "
+        "Led an agency-side $40,000 Genetec AutoVu ALPR implementation, coordinated technical priorities "
+        "across a ten-agency task force, and helped daily users adopt fleet video, mobile forensics, "
+        "communications, and digital-evidence workflows. Translates operational needs into practical "
+        "training, documented processes, and clear decisions for executives, technical partners, and "
+        "frontline users."
     ),
     "capabilities": (
-        "Customer adoption and enablement | Operational workshops | Objectives, metrics, and timelines | "
-        "Workflow assessment | Stakeholder relationship management | Executive and day-to-day user communication | Technical "
-        "translation | Issue resolution and escalation | Change support | Public-safety fleet "
-        "and video workflows | Digital evidence systems | Microsoft 365"
+        "Customer adoption and enablement | Operational discovery and workshops | Workflow assessment "
+        "and change | Technical implementation support | Stakeholder alignment | Executive and frontline "
+        "communication | Vendor, IT, and agency coordination | Issue resolution and escalation | Training "
+        "and mentoring | Fleet video, ALPR, and digital evidence | Microsoft 365"
     ),
     "page1_jobs": [
         {
@@ -54,8 +54,7 @@ RESUME = {
             "employer": "Residential Real Estate | South Metro Minnesota",
             "bullets": [
                 "Managed client relationships from initial consultation through negotiation, inspection, financing, title, and closing; completed $3.2M in residential sales during the transition from law enforcement.",
-                "Coordinated buyers, sellers, lenders, inspectors, appraisers, title professionals, and cooperating agents to identify barriers, clarify decisions, and keep complex transactions moving.",
-                "Explained market data, contract obligations, inspection findings, and next steps in plain language so clients could make informed decisions under time pressure.",
+                "Coordinated clients, lenders, inspectors, appraisers, title professionals, and other agents to identify barriers, explain options, and keep time-sensitive transactions moving.",
             ],
         },
         {
@@ -63,27 +62,18 @@ RESUME = {
             "dates": "January 2022 - May 2024",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Returned to frontline operations after a specialized assignment, using Axon Body 3, Axon Fleet 2, Motorola radios, Microsoft 365, and related systems in daily patrol workflows.",
-                "Helped officers and supervisors work through policy, evidence, and technology questions while maintaining safety, documentation, and public-service standards.",
+                "Used synchronized Axon Body 3 and Fleet 2 systems, Motorola radios, Microsoft 365, and related tools in daily patrol and evidence workflows.",
+                "Helped officers and supervisors resolve policy, evidence, and technology questions while maintaining safety, documentation, and public-service standards.",
             ],
         },
         {
             "title": "Detective / Digital Forensic Examiner",
-            "dates": "June 2017 - December 2021",
-            "employer": "Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Department | Minnesota",
+            "dates": "September 2016 - December 2021",
+            "employer": "Lakeville Police Department and Dakota County Electronic Crimes Task Force | Minnesota",
             "bullets": [
-                "Served as the Lakeville Police Department representative and digital forensics subject-matter resource in a ten-agency task force, coordinating examinations, priorities, and technical guidance across partner agencies.",
-                "Processed 5,304 GB of digital evidence in 2020 through Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; converted technical findings into reports and briefings for investigators, supervisors, and legal decision-makers.",
-                "Supported daily users through complex device and evidence questions, selected fit-for-purpose tools, documented workflows, and found another technical path when the initial approach did not answer the investigative question.",
-            ],
-        },
-        {
-            "title": "Detective / Electronic Crimes Unit",
-            "dates": "September 2016 - June 2017",
-            "employer": "Lakeville Police Department | Lakeville, Minnesota",
-            "bullets": [
-                "Acquired and configured the unit's initial Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case workflows.",
-                "Built a structured training resource with templates for preservation requests, administrative subpoenas, and search warrants, plus service-provider reference information that reduced the learning curve for investigators new to electronic-crime work.",
+                "Assigned to the ten-agency task force from June 2017 through December 2021, coordinating priorities, technical guidance, and examination support across partner agencies.",
+                "Processed 5,304 GB of digital evidence in 2020 using Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; converted technical findings into reports and briefings for investigators, supervisors, and legal decision-makers.",
+                "Acquired and configured the unit's initial Cellebrite UFED, built repeatable training resources, and supported daily users through complex device and evidence questions.",
             ],
         },
     ],
@@ -93,9 +83,9 @@ RESUME = {
             "dates": "November 1998 - August 2016",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Served 18 years as a Field Training Officer, coaching officers through policy, technology, documentation, communication, and sound decisions in changing operational conditions.",
-                "Worked with Genetec on an agency-side AutoVu ALPR project in 2007, contributing operational and investigative input to implementation and user adoption.",
-                "Received more than 20 written commendations during 25 years of sworn service.",
+                "Served as agency-side operational lead for a roughly $40,000 Target-funded Genetec AutoVu ALPR project, coordinating the use case with Target, department leadership, city IT, BCA CJIS, and Genetec.",
+                "Helped establish the secure garage Wi-Fi workflow for nightly records updates and worked with Genetec to troubleshoot camera and connectivity issues during implementation and use.",
+                "Served 19 years as a Field Training Officer and held supplemental assignments in reserve officer development, park ranger hiring and training, and juvenile traffic-diversion instruction.",
             ],
         },
         {
@@ -104,7 +94,6 @@ RESUME = {
             "employer": "University of Phoenix | Remote, concurrent with sworn service",
             "bullets": [
                 "Taught undergraduate Criminal Justice courses remotely for 18 years, converting complex legal, investigative, and technical subjects into structured lessons for adult learners.",
-                "Provided clear written feedback, managed competing course demands, and adjusted explanations when students needed a different path to the learning objective.",
                 "Received the Phoenix500 Faculty Excellence Award in 2020 and 2021 and a Faculty of the Year nomination in 2021.",
             ],
         },
@@ -122,49 +111,38 @@ RESUME = {
 
 COVER_PARAGRAPHS = [
     (
-        "Samsara's Strategic Customer Success Manager role sits at the point where safety technology, "
-        "daily fleet operations, and organizational change meet. That combination is familiar to me. "
-        "During 25 years in Minnesota public safety, I used fleet video, body-worn cameras, ALPR, "
-        "communications systems, and digital-evidence platforms from the end-user side of the workflow. "
-        "I saw how a sound product can improve safety and accountability, and I also saw how quickly "
-        "adoption stalls when training, workflow, or communication does not keep pace with the technology. "
-        "Setting objectives, metrics, and timelines while removing barriers is familiar work, even though "
-        "Samsara's joint success-plan framework would be new to me."
+        "Samsara's Strategic Customer Success Manager role is about understanding physical "
+        "operations, removing barriers, and helping large fleet customers get measurable value from "
+        "safety technology. That is why I am applying. I have spent much of my career on the customer "
+        "side of connected systems, where a product succeeds only when it works in the field and users "
+        "trust the workflow."
     ),
     (
-        "My strongest match is the ability to understand an operation, identify what is getting in the way, "
-        "and help different stakeholders move toward a workable process. As the Lakeville Police Department "
-        "representative and digital forensics subject-matter resource in a ten-agency task force, I coordinated "
-        "examinations and priorities across investigators, supervisors, technical personnel, and legal "
-        "decision-makers. In 2020, I processed 5,304 GB of digital evidence using several platforms, then "
-        "converted the technical findings into reports and briefings that non-technical audiences could use. "
-        "Earlier, I worked with Genetec on an agency-side AutoVu ALPR project and helped investigators adopt "
-        "a new Cellebrite workflow."
+        "In 2007, I served as agency-side operational lead for a roughly $40,000 Target-funded Genetec "
+        "AutoVu ALPR project. I coordinated Target, department leadership, city IT, BCA CJIS, and Genetec, "
+        "helped establish secure Wi-Fi for nightly records updates, and worked with Genetec on camera and "
+        "connectivity problems. That was hands-on discovery, implementation, adoption, vendor coordination, "
+        "and field troubleshooting."
     ),
     (
-        "Teaching and mentoring have been a constant part of my career. I spent 18 years as a remote adjunct "
-        "Criminal Justice faculty member and 18 years as a Field Training Officer. Both roles required more "
-        "than presenting information. I had to determine what the learner or officer understood, adjust the "
-        "explanation, set clear expectations, and follow through until the person could apply the process "
-        "independently. I also built a structured electronic-crimes training resource that gave investigators "
-        "practical templates and provider information rather than leaving them to start from scratch."
+        "Later, as Lakeville's representative on a ten-agency electronic crimes task force, I coordinated "
+        "technical priorities, personally processed 5,304 GB of digital evidence in 2020, and translated "
+        "findings for supervisors and legal decision-makers. Nineteen years as a Field Training Officer and "
+        "18 years teaching remotely taught me to assess what users understand, adjust the explanation, "
+        "document the process, and follow through."
     ),
     (
-        "My recent residential real estate work added direct client management in a private-sector setting. "
-        "I completed $3.2M in sales while coordinating clients, lenders, inspectors, appraisers, title "
-        "professionals, and other agents through time-sensitive transactions. That work strengthened my "
-        "ability to manage competing priorities, explain difficult information plainly, and keep people "
-        "moving when an issue threatened the timeline."
+        "Real estate added private-sector client management. I completed $3.2M in sales while coordinating "
+        "clients and transaction partners through time-sensitive decisions. The work required honest "
+        "conversations, careful priority management, and steady communication when a problem threatened "
+        "the timeline."
     ),
     (
-        "Samsara's combination of video-based safety, telematics, connected workflows, and equipment monitoring "
-        "is close enough to systems I have used that I understand the operational questions customers will ask, "
-        "while still leaving plenty for me to learn. I have not held a formal Strategic Customer Success Manager "
-        "title or owned an Enterprise SaaS or Fortune 500 customer portfolio, renewals, ARR, NRR, or "
-        "executive business reviews. This would be a deliberate "
-        "transition, and I would not pretend otherwise. What I can offer is long-tested judgment under pressure, "
-        "technical credibility with day-to-day users, experience improving adoption and training, and the discipline "
-        "to build trust across very different stakeholders. I am prepared for the stated 25-40% customer travel."
+        "I have not owned an Enterprise SaaS portfolio or formal renewal targets, and I will not dress up "
+        "adjacent work as direct CSM tenure. The fit rests on customer-side implementation, technical "
+        "credibility, executive communication, training, and long-tested judgment when operations and "
+        "technology do not line up cleanly. Samsara's Video-Based Safety, Vehicle Telematics, and Connected "
+        "Workflows products make this a transition worth pursuing."
     ),
 ]
 
@@ -224,6 +202,9 @@ def prepare_document(doc_type: str) -> Document:
     docx_header.NAME_FONT = FONT
     docx_header.CONTACT_FONT = FONT
     docx_header.BODY_FONT = FONT
+    docx_header.CONTACT_PARTS = [
+        item for item in docx_header.CONTACT_PARTS if item[0] != docx_header.TROY_LOCATION
+    ]
     build_navy_header(
         doc,
         body_top_margin_inches=top,
@@ -323,9 +304,9 @@ def build_resume() -> Path:
     add_section_heading(doc, "Selected Training and Credentials")
     add_body_paragraph(
         doc,
-        "BCA Law Enforcement Supervision and Management, 98 hours | Cellebrite Certified "
-        "Operator and Physical Analyst training | NW3C cybercrime investigation training | "
-        "FBI cellular analysis training | Field Training Officer, 18 years",
+        "University of Phoenix Certified Advanced Facilitator | BCA Law Enforcement Supervision "
+        "and Management, 98 hours | Cellebrite Certified Operator and Physical Analyst training | "
+        "NW3C cybercrime investigation training",
         size=9.75,
         after=0,
     )
@@ -345,11 +326,9 @@ def add_cover_line(doc: Document, text: str, *, after=0, bold=False) -> None:
 
 def build_cover() -> Path:
     doc = prepare_document("cover")
-    add_cover_line(doc, "August 10, 2026", after=8)
+    add_cover_line(doc, "August 13, 2026", after=8)
     add_cover_line(doc, "Hiring Manager")
-    add_cover_line(doc, "Samsara, Inc.")
-    add_cover_line(doc, "1 De Haro St")
-    add_cover_line(doc, "San Francisco, CA 94103", after=9)
+    add_cover_line(doc, "Samsara, Inc.", after=9)
     add_cover_line(doc, "Dear Hiring Manager,", after=9)
 
     for paragraph in COVER_PARAGRAPHS:
