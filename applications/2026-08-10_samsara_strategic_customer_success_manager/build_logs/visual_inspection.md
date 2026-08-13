@@ -1,15 +1,15 @@
 # Visual Inspection
 
-Inspected at original resolution on August 10, 2026. Resume reinspected after adding the Associate of Arts GPA of 3.50.
+Inspected at original resolution on August 13, 2026 after the Samsara v3 redraft.
 
 ## Resume
 
-- Page 1: PASS. Full-bleed navy header and gold rule are intact. Contact line, headings, bullets, dates, and page transition render cleanly. No clipping, overlap, orphaned heading, or margin issue.
-- Page 2: PASS. Repeated header is intact. The Associate of Arts entry displays `GPA: 3.50` consistently with the MA and BA entries. Experience, education, and training sections remain balanced and legible. No clipping, overlap, orphaned heading, or excessive bottom whitespace.
+- Page 1: PASS. Full-bleed navy header and gold rule are intact. The contact line contains phone, email, LinkedIn, and portfolio with no city line. Summary, capabilities, and experience render cleanly. No clipping, overlap, orphaned heading, or margin issue.
+- Page 2: PASS. The page opens cleanly with Additional Experience. The Genetec AutoVu implementation, Field Training Officer service, adjunct teaching, Army service, education, and selected training remain balanced and legible. No clipping, overlap, orphaned heading, or margin issue.
 
 ## Cover letter
 
-- Page 1: PASS. Full-bleed header, address block, salutation, five body paragraphs, closing, and signature render cleanly on one US Letter page. No clipping, overlap, orphaned line, or malformed spacing.
+- Page 1: PASS. Full-bleed header, address block, salutation, five body paragraphs, closing, and signature render cleanly on one US Letter page. The candid Enterprise SaaS gap statement remains visible without crowding. No clipping, overlap, orphaned line, or malformed spacing.
 
 ## Structural confirmation
 

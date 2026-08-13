@@ -4,7 +4,7 @@
   "pdf": "applications/2026-08-10_samsara_strategic_customer_success_manager/output/Hokanson_Cover_Samsara_Strategic_Customer_Success_Manager.pdf",
   "docx": "applications/2026-08-10_samsara_strategic_customer_success_manager/output/Hokanson_Cover_Samsara_Strategic_Customer_Success_Manager.docx",
   "header_pngs": [
-    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_cover_v2/page-1.png"
+    "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_cover_v5/page-1.png"
   ],
   "passed": true,
   "failed_error_count": 0,
@@ -122,7 +122,7 @@
       "name": "pagination.page_1.orphan_heading_tail",
       "passed": true,
       "severity": "error",
-      "detail": "tail: for the stated 25-40% customer travel. | Respectfully, | Troy Hokanson"
+      "detail": "tail: Workflows products make this a transition worth pursuing. | Respectfully, | Troy Hokanson"
     },
     {
       "name": "font.garamond_family_present",
@@ -158,7 +158,7 @@
       "name": "pagination.keep_with_next_present",
       "passed": true,
       "severity": "error",
-      "detail": "31 keepNext marker(s)"
+      "detail": "29 keepNext marker(s)"
     },
     {
       "name": "pagination.explicit_or_structural_page_breaks_detected",
@@ -194,7 +194,7 @@
       "name": "render.header_png_exists",
       "passed": true,
       "severity": "info",
-      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_cover_v2/page-1.png"
+      "detail": "applications/2026-08-10_samsara_strategic_customer_success_manager/rendered_cover_v5/page-1.png"
     },
     {
       "name": "render.header_top_left_right_navy",

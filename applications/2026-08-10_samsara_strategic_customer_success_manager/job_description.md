@@ -8,7 +8,7 @@
 - Travel: 25-40%
 - Annual OTE: $111,562.50-$168,750
 - Official URL: https://www.samsara.com/company/careers/roles/7398075
-- Availability verified: August 10, 2026
+- Availability verified: August 13, 2026
 - Posting date: Official posting does not state a date. Built In reported posted and reposted 10 days before August 10, 2026.
 
 ## Role purpose
@@ -47,4 +47,3 @@ Work with Samsara's largest fleet customers after the Services handoff, understa
 ## Company and product context
 
 Samsara provides a Connected Operations cloud platform for organizations with physical operations. Products include video-based safety, vehicle telematics, apps and driver workflows, and equipment monitoring. The role serves large fleet customers and depends on adoption, workflow change, executive alignment, cross-functional coordination, and measurable customer outcomes.
-

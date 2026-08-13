@@ -1,0 +1,30 @@
+ATS TRUTH-SAFE AUDIT
+Role: Strategic Customer Success Manager, Samsara (JR10500)
+Profile: customer-success
+Review date: 2026-08-13
+Result: PASS
+
+SUPPORTED PRIORITY LANGUAGE PRESENT
+- customer adoption
+- fleet customers
+- physical operations
+- safety technology
+- operational discovery and workshops
+- workflow assessment and change
+- technical implementation support
+- stakeholder alignment
+- executive and frontline communication
+- vendor coordination
+- issue resolution and escalation
+- training and mentoring
+- private-sector client management
+- Microsoft 365
+
+UNSUPPORTED REQUIREMENTS DELIBERATELY EXCLUDED
+- owned Enterprise SaaS or Fortune 500 customer portfolio
+- renewal, ARR, NRR, churn, or customer-health ownership
+- QBR or executive business review ownership
+- direct Samsara platform experience
+
+NOTE
+The repository's legacy extractor does not define a customer-success keyword profile and can promote low-signal job-description fragments. This audit uses posting-priority language only where Troy has verified supporting evidence. The automatic privacy, voice, typography, header, and pagination validator passed separately with zero errors and zero warnings.
