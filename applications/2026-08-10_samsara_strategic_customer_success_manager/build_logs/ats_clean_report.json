@@ -1,0 +1,35 @@
+{
+  "role": "Strategic Customer Success Manager",
+  "employer": "Samsara",
+  "requisition": "JR10500",
+  "profile": "customer-success",
+  "review_date": "2026-08-13",
+  "passed": true,
+  "method": "truth-safe manual keyword review plus repository validation",
+  "supported_priority_terms": [
+    "customer adoption",
+    "fleet customers",
+    "physical operations",
+    "safety technology",
+    "operational discovery",
+    "workshops",
+    "workflow assessment and change",
+    "technical implementation support",
+    "stakeholder alignment",
+    "executive communication",
+    "frontline communication",
+    "vendor coordination",
+    "issue resolution and escalation",
+    "training and mentoring",
+    "client management",
+    "Microsoft 365"
+  ],
+  "unsupported_terms_deliberately_excluded": [
+    "owned Enterprise SaaS portfolio",
+    "Fortune 500 customer portfolio",
+    "renewal ownership",
+    "ARR or NRR ownership",
+    "QBR or executive business review ownership",
+    "direct Samsara platform experience"
+  ]
+}
