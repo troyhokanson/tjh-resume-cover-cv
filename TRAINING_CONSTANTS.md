@@ -70,23 +70,26 @@ Notes:          Instructor-led, in-person. Coincides with DCECTF tenure.
                 Previous entry of 24 hours was incorrect -- do not use.
 ```
 
-### FBI CAST -- Basic Cell Site Analysis and Call Detail Records
+### FBI CAST-V -- Basic Cell Site Analysis and Call Detail Records
 ```
 Course:         Basic Cell Site Analysis and Call Detail Records
+Program:        FBI CAST-V
 Provider:       FBI Cellular Analysis Survey Team (CAST)
 Location:       Arden Hills, MN
 Year:           2017
 Hours:          16
-Display:        "FBI CAST -- Basic Cell Site Analysis and Call Detail Records,
+Display:        "FBI CAST-V: Basic Cell Site Analysis and Call Detail Records,
                 16 hours, Arden Hills, MN, 2017"
-Short display:  "FBI CAST: Cell Site Analysis and CDR, 16 hours, 2017"
-Notes:          FBI CAST training is a law-enforcement-only program. The full course
+Short display:  "FBI CAST-V: Cell Site Analysis and CDR, 16 hours, 2017"
+Notes:          Preserve the CAST-V designation in all formal displays.
+                FBI CAST training is a law-enforcement-only program. The full course
                 title is "Basic Cell Site Analysis and Call Detail Records."
                 Do NOT abbreviate the course title to just "Cell Site Analysis" --
                 the CDR component is equally significant and must appear.
                 This training directly supports ZetX TRAXi usage in CDR analysis.
                 Arden Hills, MN is a confirmed location (BCA campus area).
                 16 hours confirmed by Troy Hokanson on 2026-06-14.
+                CAST-V designation corrected by Troy Hokanson on 2026-08-14.
 ```
 
 ### X-Ways Forensics Training
@@ -153,7 +156,7 @@ USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
 | Course | Provider | Location | Year | Hours | Use Case |
 |---|---|---|---|---|---|
 | FTK Bootcamp | AccessData | St. Paul, MN | 2017 | 21 | Full-disk forensic analysis |
-| FBI CAST: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 | Cell site / CDR analysis |
+| FBI CAST-V: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 | Cell site / CDR analysis |
 | X-Ways Forensics Training | X-Ways Software Technology AG | Chicago, IL | 2018 | 32 | Deep forensic examination |
 | osTriage Training | OJJDP | Online | 2020 | 3 | Incident response, memory and artifact capture |
 
@@ -162,14 +165,14 @@ USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
 ## Hour Count Rules
 
 - FTK Bootcamp: 21 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
-- FBI CAST: 16 hours confirmed (Troy Hokanson, 2026-06-14).
+- FBI CAST-V: 16 hours confirmed (Troy Hokanson, 2026-06-14).
 - X-Ways Training: 32 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
 - osTriage / OJJDP: 3 hours confirmed (Troy Hokanson, 2026-06-14).
 - Never estimate or fabricate training hours.
 - When aggregating total training hours for a resume stat, only include confirmed
   hour counts.
 - All four courses fully confirmed. Confirmed aggregate total: 72 hours
-  (21 FTK + 16 FBI CAST + 32 X-Ways + 3 osTriage).
+  (21 FTK + 16 FBI CAST-V + 32 X-Ways + 3 osTriage).
 - Note on osTriage: 3 hours is a short course. Omit the hour count in
   space-constrained contexts (one-page resume) unless explicitly requested.
 
@@ -180,8 +183,9 @@ USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
 - Cellebrite certs: always note lapsed status in internal records but do NOT
   prominently flag as lapsed in application materials unless directly asked.
   Listing the credential with the last active year (2020) is accurate and appropriate.
-- FBI CAST: always include both components of the course title (cell site analysis
-  AND call detail records) -- the CDR component is a distinct and valued skill.
+- FBI CAST-V: always preserve the CAST-V designation and include both components
+  of the course title (cell site analysis AND call detail records); the CDR component
+  is a distinct and valued skill.
 - FTK Bootcamp: provider at time of training was AccessData -- use that name for
   the 2017 reference, not the current owner Exterro.
 - osTriage: always use lowercase o, capital T in all references.
@@ -224,3 +228,7 @@ with this file is wrong -- fix the build script, not this file.
   Added verb guidance: triaged, captured, collected, preserved (not analyzed/examined).
   Added use-case column to Training Courses Quick Reference Table.
   Updated Credential Display Rules to include osTriage framing instruction.
+
+- 2026-08-14: Corrected the program designation to FBI CAST-V and locked that
+  designation for all future formal displays; course title, date, location, and
+  16-hour count remain unchanged.
