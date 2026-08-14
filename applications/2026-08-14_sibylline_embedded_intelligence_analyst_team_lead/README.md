@@ -7,24 +7,50 @@
 **Salary:** $120,000-$130,000  
 **Primary lane:** analyst-intelligence  
 **Secondary lane:** corporate-security / program leadership  
-**Fit score:** 80/100  
-**Priority:** High-priority credible stretch  
+**Fit score:** 84/100  
+**Priority:** Tier 1 - high-priority credible stretch  
 **Workflow status:** Exception
 
-## Why this is an exception
+## Why this is stronger than the first build
 
-The resume and cover letter were drafted from current repository standards, rendered, visually inspected, and passed local anti-AI, privacy, factual, contact, education, and ATS checks. The current repository anti-AI rules were retrieved and applied. However, the repository was not available as an executable local checkout in the document runtime, so `validate_application_packet.py` could not be executed directly. Per the application completion gate, the package is not labeled Ready to Submit until that direct validation exception is cleared.
+The rebuilt packet is evidence-led rather than chronology-led. The Team Lead case now explicitly connects:
 
-## Material fit assessment
+- 18 years of Field Training Officer coaching, review, standards enforcement, and corrective feedback
+- 18 years of remote Criminal Justice instruction and written evaluation
+- 98 hours of BCA Supervision and Management development
+- a $40,000 Genetec AutoVu ALPR implementation across Target, BCA CJIS, Genetec, and city IT
+- electronic-crimes investigator resource development and training-oriented program work
+- multiple sanitized, outcome-backed analytical case examples
+- peer-resource / digital-forensics SME recognition
+- FBI CAST-V cell-site/CDR training and ZetX TRAXi
+- current AI and knowledge-work use of ChatGPT, Codex, Claude, Claude Code, Gemini, NotebookLM, Notion, Google Drive, GitHub, and Microsoft 365
 
-The application is a credible adjacent-background match. Strongest evidence includes all-source investigative methods, OSINT, time-sensitive triage, written analytical products, stakeholder briefings, quality review, 19 years of Field Training Officer coaching, workflow development, ten-agency task-force coordination, and 18 years of remote Criminal Justice teaching. The principal gap is the absence of a verified three-year period of formal corporate direct-report management and performance-management authority. Direct corporate/geopolitical intelligence tenure and Dataminr experience are also not claimed.
+The primary remaining gap is no verified three-year period of conventional corporate direct-report management or performance-management authority. Direct corporate/geopolitical intelligence tenure and Dataminr experience are not claimed.
+
+## Formatting rebuild
+
+The DOCX/PDF packet was rebuilt to the current GitHub document-design standard:
+
+- full-bleed navy header on every page
+- 26-point white Garamond-family name
+- restrained gold rule and contact row
+- Garamond-family body typography
+- steel-blue section headings with gold underline
+- improved section spacing and page balance
+- two-page resume and one-page cover letter
+- no orphaned job or section headings
+- all final PDF pages rendered and visually inspected
+
+## Why this remains an exception
+
+The current repository standards and validation logic were reviewed, and equivalent local anti-AI, privacy, factual, contact, typography, header-render, pagination, education, ATS-oriented, and visual checks passed. However, the repository was not available as an executable local checkout in the document runtime, so `validate_application_packet.py` could not be executed directly. Per the completion gate, the package remains Drafting / Exception rather than Ready to Submit until that direct-validation exception is cleared.
 
 ## Package contents
 
 - `job_description.md` - sourced, detailed paraphrase of the live posting
-- `fit_assessment.md` - evidence-based fit and gap analysis
-- `evidence_matrix.md` - requirement-to-evidence crosswalk
-- `resume.md` - targeted ATS resume source
-- `cover_letter.md` - targeted cover letter source
-- `validation_summary.md` - QA and exception record
-- `application_metadata.json` - workflow metadata
+- `fit_assessment.md` - updated 84/100 evidence-based fit and gap analysis
+- `evidence_matrix.md` - expanded requirement-to-evidence crosswalk
+- `resume.md` - rebuilt targeted resume source
+- `cover_letter.md` - rebuilt targeted cover letter source
+- `validation_summary.md` - updated QA and exception record
+- `application_metadata.json` - current workflow metadata
