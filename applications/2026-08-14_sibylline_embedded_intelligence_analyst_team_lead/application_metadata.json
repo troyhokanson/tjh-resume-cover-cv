@@ -1,0 +1,40 @@
+{
+  "candidate": "Troy Hokanson",
+  "employer": "Sibylline Americas",
+  "role": "Embedded Intelligence Analyst - Team Lead",
+  "job_id": "Indeed job key 79b89de190d4f6f3",
+  "job_url": "https://www.indeed.com/viewjob?jk=79b89de190d4f6f3",
+  "location": "United States",
+  "work_mode": "Remote",
+  "salary": "$120,000-$130,000",
+  "posted_date": "2026-07-16 (third-party mirror; live Indeed page does not display original date)",
+  "primary_lane": "analyst-intelligence",
+  "secondary_lanes": ["corporate-security", "program-leadership"],
+  "fit_score": 80,
+  "priority": "High-priority credible stretch",
+  "status": "exception",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1sxrq2937pa1XGt8XbxhfO0Xycof8ORhA",
+  "notion_record": "",
+  "documents": {
+    "resume_docx": "complete",
+    "resume_pdf": "complete",
+    "cover_letter_docx": "complete",
+    "cover_letter_pdf": "complete",
+    "job_description_archive": "complete",
+    "fit_assessment": "complete",
+    "validation_summary": "complete"
+  },
+  "qa": {
+    "anti_ai": "pass using retrieved repo logic in local harness",
+    "privacy": "pass",
+    "factual": "pass",
+    "contact": "pass",
+    "education": "pass",
+    "ats": "pass",
+    "pdf_visual": "pass",
+    "validate_application_packet_py": "not executed directly - runtime exception"
+  },
+  "exceptions": [
+    "validate_application_packet.py could not be executed directly because the repository was not available as a local executable checkout in the document runtime."
+  ]
+}
