@@ -60,7 +60,8 @@ Use accurate terminology. Distinguish true OSINT from provider/legal-process int
 - Proactively recognized an unowned, time-sensitive investigation and took ownership.
 - Initiated provider preservation before suspect contact, coordinated lawful cloud collection, and sequenced interview/device seizure to reduce evidence-destruction risk.
 - Recovered deleted digital evidence through forensic data carving and corroborated it against cloud-account artifacts.
-- Official court records confirm three felony convictions and an executed sentence of up to 78 months.
+- Official court records confirm three felony convictions. The original sentencing reached 78 months, but after appellate remand limited to the sentencing calculation, the final amended longest concurrent executed term was **60 months**.
+- District-court defense counsel mounted a contested suppression challenge to the interview and derivative evidence; keep that distinct from the later Court of Appeals sentencing case, which was handled by appellate public-defender counsel.
 - **Technical guardrail:** private sources currently conflict on SD card vs. SIM card. Do not name the storage medium until the original forensic report resolves it.
 - Best competencies: proactive ownership, intelligence-led investigation, evidence-loss assessment, preservation, forensic recovery, cloud/device corroboration.
 
