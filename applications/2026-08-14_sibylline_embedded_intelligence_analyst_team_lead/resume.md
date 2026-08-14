@@ -2,72 +2,68 @@
 612-352-8647 | TroyHokanson@iCloud.com | linkedin.com/in/troyhokanson | troyhokanson.com
 
 ## PROFESSIONAL SUMMARY
-Investigations professional with 25 years of sworn public-safety experience, including 5.5 years in detective and digital-forensics assignments and 19 years as a Field Training Officer. Built cases and analytical products from public records, social-media research, commercial databases, digital evidence, financial records, geospatial and call-detail data, interviews, and partner-agency reporting. Experienced with time-sensitive triage, complex investigations, quality review, coaching, workflow documentation, and briefings for leaders, prosecutors, and partner agencies. Master of Arts in Police Leadership, Administration and Education, plus 18 years teaching Criminal Justice remotely.
+Investigations and intelligence professional with 25 years of sworn public-safety service, including 5.5 years in detective and digital-forensics assignments. Experience leading complex all-source investigations, coaching and quality-reviewing others' work, building repeatable workflows, and translating technical findings for decision-makers. Leadership foundation includes 18 years as a Field Training Officer, 18 years teaching Criminal Justice remotely, 98 hours of formal BCA supervision and management development, and a master's degree in Police Leadership, Administration and Education.
 
-## INTELLIGENCE AND ANALYTICAL CAPABILITIES
-All-Source Research | OSINT Collection | Threat and Incident Triage | Investigative Analysis | Pattern Recognition | Link and Relationship Analysis | Written Intelligence Products | Stakeholder Briefings | Quality Assurance | Coaching and Mentoring | SOP and Workflow Development | Cross-Functional Coordination | Digital Evidence | Microsoft 365
+## LEADERSHIP, QUALITY AND PROGRAM DEVELOPMENT
+- Field Training Officer for 18 years, coaching new officers on judgment, report quality, policy, evidence handling, escalation decisions, and professional communication while reviewing work and giving corrective feedback.
+- Adjunct Criminal Justice faculty for 18 years in a remote environment, evaluating written analysis, explaining complex legal and investigative concepts, and maintaining consistent standards; Phoenix500 Faculty Excellence Awards in 2020 and 2021.
+- Led the agency side of a $40,000 Target and Blue grant implementation of Genetec AutoVu ALPR, coordinating Target, BCA CJIS, Genetec, and city IT on nightly hotlist integration, field deployment, troubleshooting, and user adoption.
+- Developed a reusable electronic-crimes investigator resource package with preservation, subpoena, search-warrant, and provider-reference materials to reduce the learning curve and improve consistency for investigators new to digital evidence workflows.
+- Developed and implemented training-oriented programs and resources during collateral assignments, including Park Ranger hiring and training development and investigator enablement projects.
+
+## SELECTED INTELLIGENCE AND INVESTIGATION EVIDENCE
+- Proactively took ownership of a time-sensitive digital investigation, preserved cloud evidence before suspect contact, sequenced interview and device seizure to reduce evidence-loss risk, recovered deleted digital artifacts, and corroborated them against provider records. Three felony convictions remained intact after appellate review, with a final longest concurrent executed term of 60 months.
+- Led a multi-victim Business Email Compromise investigation using public business records, shell-company analysis, financial tracing, and cross-case pattern recognition. Verified victim losses exceeded $360,000, the case closed with a felony conviction, and an Assistant Dakota County Attorney issued a written commendation for documentation and legal coordination.
+- Integrated physical evidence, surveillance, behavioral leads, and Google account data in a commercial burglary investigation, preserving the cloud account before warrant service and converting multiple evidence streams into a defensible timeline. A written commendation recognized persistence and successful prosecution.
+- Built a computer matrix to organize a complex burglary and forgery series, helping investigators connect cases and charging evidence. A written commendation specifically recognized the structured analytical work.
 
 ## PROFESSIONAL EXPERIENCE
+### Detective / Digital Forensic Examiner
+Dakota County Electronic Crimes Task Force (DCECTF), assigned from Lakeville Police Department | June 2017 to December 2021
+- Served as Lakeville's representative and digital-forensics subject-matter resource in a ten-agency task-force structure, supporting Lakeville and partner-agency investigations while personally processing 5,304 GB of digital evidence in 2020.
+- Developed and corroborated leads across public social media, LexisNexis Accurint, public and business records, provider legal process, interviews, financial information, device evidence, and call-detail/location data.
+- Produced warrants, case summaries, timelines, investigative reports, and briefings for prosecutors, command staff, and partner agencies, with emphasis on evidence quality, uncertainty, escalation, and defensibility.
+
+### Detective / Electronic Crimes Unit (ECU)
+Lakeville Police Department | September 2016 to June 2017
+- Built investigator enablement resources for electronic-crime workflows, acquired and configured the unit's initial Cellebrite UFED, and served as a bridge between Lakeville investigators and the regional electronic-crimes task force.
+
+### Police Officer / Field Training Officer / Investigator
+Lakeville Police Department | November 1998 to May 2024
+- Served across patrol, two investigative rotations, Field Training, crime-scene, tactical, probation-liaison, and other specialized assignments; returned to patrol from January 2022 through medical retirement in May 2024.
+- Coached officers and supported peers across high-accountability operational environments, including report review, evidence decisions, case follow-up, and escalation under time pressure.
+- During an earlier investigative rotation, assembled receipt and transaction evidence in an occupational fraud investigation involving approximately $80,000 in unauthorized company-card charges, resulting in a felony Theft by Swindle conviction and court-ordered restitution.
+
+### Adjunct Faculty / Criminal Justice
+University of Phoenix | Remote | March 2007 to October 2025, concurrent with sworn service
+- Taught undergraduate Criminal Justice courses remotely for 18 years, evaluated written work, provided structured feedback, and explained investigative, legal, ethics, and evidence concepts to learners with varied experience.
+
 ### Real Estate Consultant (Referral-Only as of March 2026)
 eXp Realty / KW Select | South Metro MN | June 2024 to March 2026
 - Closed $3.2M in residential sales during a career transition, coordinating clients and transaction partners through time-sensitive decisions, documentation, and changing priorities.
 
-### Police Officer
-Lakeville Police Department | Lakeville, MN | January 2022 to May 2024
-- Managed high-priority incidents, coordinated field response and follow-up, evaluated developing information under time pressure, and documented decisions for supervisors and partner personnel.
-- Continued Field Training Officer responsibilities through 2023, coaching new officers on judgment, policy, report quality, documentation, and escalation decisions.
-
-### Detective / Digital Forensic Examiner
-Dakota County Electronic Crimes Task Force (DCECTF), assigned from Lakeville Police Department | Lakeville, MN | June 2017 to December 2021
-- Conducted complex digital investigations and forensic examinations within a ten-agency task-force structure, personally processing 5,304 GB of digital evidence in 2020 across Lakeville and partner-agency casework.
-- Developed leads through public social-media research, LexisNexis Accurint, public and business records, provider records obtained through legal process, call-detail and location data, and device evidence, then corroborated identities, relationships, timelines, and behavior across independent sources.
-- Prepared search-warrant affidavits, case summaries, timelines, investigative reports, and briefings for prosecutors, command staff, and partner agencies, translating technical findings for audiences who were not present for the investigation.
-- Triaged time-sensitive evidence-loss risks, initiated preservation, coordinated legal process and partner support, and escalated urgent findings while maintaining chain-of-custody and documentation standards.
-- Served as Lakeville's digital-forensics SME within the task-force structure and provided technical guidance to investigators on device, account, and digital-evidence questions across agency lines.
-
-### Detective / Electronic Crimes Unit (ECU)
-Lakeville Police Department | Lakeville, MN | September 2016 to June 2017
-- Built an investigator resource package with preservation-request, administrative-subpoena, and search-warrant templates plus provider reference data, improving consistency for investigators new to electronic-crime workflows.
-- Acquired and configured the unit's initial Cellebrite UFED and served as a bridge between Lakeville investigators and the regional electronic-crimes task force.
-
-### Police Officer / Field Training Officer (FTO)
-Lakeville Police Department | Lakeville, MN | June 2011 to August 2016
-- Coached new officers in field decision-making, report writing, policy application, evidence handling, and professional communication, reviewing work and providing specific corrective feedback.
-
-### Police Officer / Investigator (First Investigative Rotation)
-Lakeville Police Department | Lakeville, MN | March 2010 to May 2011
-- Investigated financial and property crimes, including an occupational fraud matter involving approximately $80,000 in unauthorized company-card charges, and assembled records, receipts, timelines, and a prosecution-ready case package.
-
-### Police Officer / Field Training Officer (FTO)
-Lakeville Police Department | Lakeville, MN | November 1998 to February 2010
-- Led the agency side of a $40,000 Target + Blue grant project for Genetec AutoVu ALPR, coordinating Target, BCA CJIS, Genetec, and city IT on nightly hotlist integration, field implementation, and troubleshooting.
-
-### Adjunct Faculty / Criminal Justice
-University of Phoenix | Remote | March 2007 to October 2025, concurrent with sworn service
-- Taught undergraduate Criminal Justice courses remotely for 18 years, explaining complex investigative, legal, and evidence concepts to students with varied experience levels.
-- Evaluated written assignments, provided structured feedback, and maintained consistent academic standards; received Phoenix500 Faculty Excellence Awards in 2020 and 2021.
-
 ### U.S. Army
-8 years 3 months: Reserve (11B Infantry), Active Duty (19K Armor), MN Army National Guard (88M Motor Transport; 95B Military Police). Honorably Discharged.
+8 years 3 months | Reserve 11B Infantry, Active Duty 19K Armor, MN Army National Guard 88M Motor Transport and 95B Military Police | Honorably Discharged
 
-## METHODS AND TOOLS
-OSINT and research: Public social-media research, public and business records, LexisNexis Accurint, identity and relationship resolution, evidence preservation, ZetX TRAXi.
-Digital forensics: Cellebrite UFED, Magnet AXIOM, AccessData Forensic Toolkit (FTK), FTK Imager, X-Ways Forensics, GrayKey, osTriage.
-Productivity: Microsoft Office 365 (Word, Excel, Outlook, Teams).
+## METHODS, TECHNOLOGY AND AI WORKFLOW
+**Intelligence and geospatial:** OSINT, public and business records, LexisNexis Accurint, link and pattern analysis, timeline development, FBI CAST-V cell-site/CDR methods, ZetX TRAXi.  
+**Digital forensics:** Cellebrite UFED, Magnet AXIOM, AccessData Forensic Toolkit (FTK), FTK Imager, X-Ways Forensics, GrayKey, osTriage.  
+**AI and knowledge-work stack:** ChatGPT, Codex, Claude, Claude Code, Gemini, NotebookLM, Notion, Google Drive, GitHub, Microsoft 365.
 
-## RELEVANT TRAINING AND CREDENTIALS
-- Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018, 2020.
-- FBI CAST: Cell Site Analysis and CDR, 16 hours, 2017 | X-Ways Forensics Training, 32 hours, Chicago, 2018 | Forensic Toolkit (FTK) Bootcamp, AccessData, 21 hours, St. Paul, MN, 2017.
+## RELEVANT TRAINING AND LEADERSHIP DEVELOPMENT
+- BCA Supervision and Management series, 98 hours, including Principles and Practices of Supervision, Mentoring and Coaching, Impact and Influence, Supervisor Survival, Legal Latitude, Strategies for Stress, and Ethical Ends in Public Safety Management.
+- FBI CAST-V: Basic Cell Site Analysis and Call Detail Records, 16 hours, 2017; X-Ways Forensics Training, 32 hours, 2018; Forensic Toolkit (FTK) Bootcamp, AccessData, 21 hours, 2017.
+- Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018 and 2020.
 
 ## EDUCATION
-Master of Arts, Police Leadership, Administration and Education  
+**Master of Arts, Police Leadership, Administration and Education**  
 University of St. Thomas, St. Paul, MN  
 GPA: 3.94 | 2005
 
-Bachelor of Arts, Criminal Justice, Magna Cum Laude  
+**Bachelor of Arts, Criminal Justice, Magna Cum Laude**  
 St. Cloud State University, St. Cloud, MN  
 GPA: 3.51 | 1998
 
-Associate of Arts, Criminal Justice, Magna Cum Laude  
+**Associate of Arts, Criminal Justice, Magna Cum Laude**  
 St. Cloud State University, St. Cloud, MN  
 GPA: 3.50 | 1996
