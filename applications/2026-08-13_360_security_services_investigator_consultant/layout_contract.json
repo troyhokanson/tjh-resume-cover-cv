@@ -1,0 +1,37 @@
+{
+  "application": "360 Security Services Investigator / Investigations and Training Consultant Talent Submission",
+  "profile": "corporate-security-investigations",
+  "secondary_profile": "dfir-cyber",
+  "page_size": "US Letter portrait",
+  "resume": {
+    "pages": 2,
+    "margins_inches": {"top": 1.46, "bottom": 0.55, "left": 0.65, "right": 0.65},
+    "body_font": "EB Garamond",
+    "body_size_pt": 10.25,
+    "line_spacing": 1.05,
+    "section_heading_size_pt": 11,
+    "job_heading_size_pt": 10.5,
+    "job_subheading_size_pt": 9.75,
+    "section_spacing_pt": {"before": 14, "after": 6},
+    "entry_spacing_pt": {"before": 8, "job_title_after": 2, "employer_after": 4},
+    "bullet_indent_inches": {"left": 0.22, "hanging": 0.14},
+    "bullet_after_pt": 2,
+    "pagination_controls": ["widow control", "keep section heading with next", "keep job title, employer line, and first bullet together"]
+  },
+  "header": {
+    "pattern": "locked navy/gold header",
+    "implementation": "docx_header.build_navy_header",
+    "height_inches": 1.28,
+    "name_size_pt": 26,
+    "contact_size_pt": 9.5,
+    "gold_rule_width_percent": 55
+  },
+  "content_rules": [
+    "ATS-readable single-column body",
+    "real Word bullet styles",
+    "all three education constants included",
+    "no claim that Troy or Boundary Ridge is licensed",
+    "case details sanitized",
+    "email serves as employer-requested brief message; no separate cover letter"
+  ]
+}
