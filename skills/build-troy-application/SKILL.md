@@ -1,6 +1,6 @@
 ---
 name: build-troy-application
-description: Canonical end-to-end application builder for Troy Hokanson. Triggers on @build-troy-application, career-application-builder, build my application, draft or update my resume, cover letter, CV, role-fit assessment, application packet, I am going to apply, let's give this role a shot, or any request to create or revise Troy's application materials. Orchestrates exact-job verification, GitHub standards, verified evidence, fit and gap analysis, ATS targeting, DOCX/PDF generation, anti-AI and privacy validation, visual inspection, Google Drive filing, GitHub packaging, Notion tracking, and completion reporting. This is the controlling skill; supporting skills provide evidence or specialist checks but may not bypass its gates.
+description: Canonical end-to-end application builder for Troy Hokanson. Triggers on @build-troy-application, career-application-builder, build my application, draft or update my resume, cover letter, CV, candidate profile, expert-network profile, contractor one-pager, role-fit assessment, application packet, I am going to apply, let's give this role a shot, or any request to create or revise Troy's application materials. Orchestrates exact-job verification, GitHub standards, verified evidence, fit and gap analysis, ATS targeting, DOCX/PDF generation, anti-AI and privacy validation, visual inspection, authorized Google Drive filing, GitHub packaging, Notion tracking, and completion reporting. This is the controlling skill; supporting skills provide evidence or specialist checks but may not bypass its gates.
 ---
 
 # Build Troy Application
@@ -21,11 +21,11 @@ Authoritative repository:
 troyhokanson/tjh-resume-cover-cv
 ```
 
-Never use Melissa Hokanson's facts, documents, repository, metrics, application records, or role guidance. Melissa's workflow remains separate in `troy-hokanson/auditorsearchbot`.
+Never use Melissa Hokanson's facts, documents, repository, metrics, application records, or role guidance. Melissa's workflow remains separate in `troy-hokanson/auditorsearchbot` and `build-melissa-application`.
 
 ## Trigger Behavior
 
-Any request to draft, create, update, tailor, rebuild, or review Troy's resume, cover letter, CV, role-fit assessment, or application packet automatically starts this full workflow. The user does not need to separately request GitHub review, Drive filing, Notion tracking, or validation.
+Any request to draft, create, update, tailor, rebuild, or review Troy's resume, cover letter, CV, candidate profile, one-pager, role-fit assessment, or application packet automatically starts the applicable drafting and validation workflow. GitHub, Drive, and Notion writes occur only when the user authorizes those systems for the request.
 
 Recognized entry points include:
 
@@ -41,7 +41,10 @@ Recognized entry points include:
 
 Before drafting, read the current repository versions of all applicable standards. At minimum:
 
+- `HEADER_STANDARD.md`
+- `CONTACT_STANDARD.md`
 - `VOICE_STANDARD.md`
+- `ROLE_FAMILIES.md`
 - `ROLE_ADAPTATION_STANDARD.md`
 - `PROFILE_SELECTOR.md`
 - `PROFILES.md`
@@ -65,6 +68,8 @@ Load relevant supporting skills when needed, including:
 - any current role-family, evidence, document, ATS, or routing skills found in the repository
 
 Repository content controls over memory. When a conflict exists, pause the affected claim, identify the conflicting sources, and use the safest verified wording until resolved.
+
+Use `references/standards-map.md` for precedence. Do not describe Troy's strategy as a single-role pivot; select from the canonical role families.
 
 ## Required Workflow
 
@@ -91,6 +96,8 @@ If the official posting cannot be confirmed, keep the application in `Researchin
 
 ### Phase 2: Application Workspace
 
+Perform cross-system workspace creation only when the user has authorized Drive, GitHub, and Notion for the request. Otherwise keep the package local and mark those publication checks not authorized.
+
 Create or confirm the dated Google Drive folder under `09_Applications` using:
 
 ```text
@@ -105,7 +112,7 @@ Create or locate one matching Notion Applications record. Do not create duplicat
 
 ### Phase 3: Role Lane and Fit Analysis
 
-Select the primary role lane using `PROFILE_SELECTOR.md` and `ROLE_ADAPTATION_STANDARD.md`. Record secondary lanes only when they materially improve evidence selection.
+Select the primary role family using `ROLE_FAMILIES.md`, `PROFILE_SELECTOR.md`, and `ROLE_ADAPTATION_STANDARD.md` when present. Record secondary families only when they materially improve evidence selection.
 
 Evaluate:
 
@@ -216,6 +223,8 @@ Required deliverables unless the role explicitly does not call for one:
 
 Use the repository naming convention and preserve ATS-readable document structure.
 
+For candidate profiles, expert-network profiles, contractor profiles, and other one-pagers, use `profile_one_pager.py`. It delegates the locked header to `docx_header.py` and reads spacing minimums from `workflow_contract.json`. Center the document title and focus line below the header; edit content before compressing the minimum spacing.
+
 ### Phase 7: Validation
 
 Run all applicable checks:
@@ -253,7 +262,7 @@ A script reporting success is not a substitute for visual inspection.
 
 ### Phase 9: Cross-System Publication
 
-After validation and visual QA:
+After validation and visual QA, and only for systems the user authorized:
 
 - save final DOCX and PDF files to the dated Drive folder
 - save the job description and validation report to Drive
@@ -262,7 +271,7 @@ After validation and visual QA:
 - link Drive and GitHub in Notion
 - record status, fit score, priority, role lane, document completion, recruiter/contact, next action, and follow-up date when known
 
-Never claim a write succeeded unless the connector confirms it.
+Never claim a write succeeded unless the connector confirms it and a read-back verifies the intended destination and content.
 
 ### Phase 10: Completion Gate
 
@@ -277,10 +286,10 @@ An application may be labeled `Ready to Submit` only when all applicable items a
 - cover letter complete
 - validation passed
 - every PDF page visually inspected
-- Drive folder confirmed
-- final files saved to Drive
-- Notion record confirmed
-- GitHub package confirmed
+- Drive folder confirmed or not authorized
+- final files saved to Drive or not authorized
+- Notion record confirmed or not authorized
+- GitHub package confirmed or not authorized
 - remaining user action is only review and submission
 
 If any item fails, status remains `Researching`, `Drafting`, or `Exception`.
@@ -318,6 +327,8 @@ Never include Troy's POST number, badge number, personnel identifiers, Social Se
 Apply all current GitHub privacy and prohibited-content rules. Uploaded raw records may contain protected information and must be sanitized before any GitHub or public-facing use.
 
 Use trauma-heavy evidence only when essential to the role and allowed by the current evidence-selection rules. Prefer accurate capability language over unnecessary case detail.
+
+Do not weaken Windows Security or Application Control to run a document tool. Use an allowed renderer or validator and report blocked coverage honestly.
 
 ## Application Metadata Contract
 

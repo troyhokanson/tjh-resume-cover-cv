@@ -1,0 +1,4 @@
+interface:
+  display_name: "Career Application Builder"
+  short_description: "Alias for Troy application workflow"
+  default_prompt: "Use $career-application-builder to build Troy application materials through the canonical workflow."
