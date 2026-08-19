@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build Troy Application"
+  short_description: "Build consistent Troy career documents"
+  default_prompt: "Use $build-troy-application to create a polished, evidence-safe Troy application document."

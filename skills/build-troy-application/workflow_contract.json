@@ -135,6 +135,8 @@
     "major_entry_before": 160,
     "job_title_after": 40,
     "employer_line_after": 80,
+    "body_paragraph_after": 80,
+    "bullet_after": 40,
     "cover_letter_paragraph_after": 120,
     "compression_rule": "Edit or remove content before reducing any minimum spacing, body font size, or approved page margin."
   },
