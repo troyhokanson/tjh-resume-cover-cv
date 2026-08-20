@@ -12,7 +12,7 @@
 | Case management and deadlines | Direct | Multi-case investigative workload, legal process, preservation deadlines, evidence tracking, and trial preparation | Resume |
 | Axon product familiarity | Direct | Axon Body 3, Fleet 2, and Evidence end-user workflows | Summary, resume, cover |
 | Strategic stakeholder relationships | Direct | Lakeville representative in ten-agency task force; cross-agency technical and legal coordination | Resume and cover |
-| Adoption and implementation | Transferable | Agency-side Genetec AutoVu program; initial Cellebrite UFED configuration; investigator resource development | Resume and cover |
+| Adoption and implementation | Transferable | Agency-side Genetec AutoVu program; Cellebrite UFED end-user experience; investigator resource development | Resume and cover |
 | Leadership and customer guidance | Direct/transferable | BCA Law Enforcement Supervision & Management Program, 98 hours; University of Phoenix Certified Advanced Facilitator; 19 years FTO; 18 years remote Criminal Justice faculty | Resume and cover |
 | Cybercrime and digital-evidence credentials | Direct | NW3C Certified Cybercrime Investigator (CCCI), No. 4793; Cellebrite CCLO/CCPA through 2020; BCA Forensic Science Partners, 58 hours; BCA Certified Crime Scene Technician | Resume |
 | Candor, care, de-escalation, and difficult stakeholder interactions | Direct/transferable | User-confirmed Crisis Intervention Team (CIT) training, 8 hours, with classroom and scenario-based practice; Conflict Management & Mediation Training and Implicit Bias / Community Diversity training, 2022 | Resume |
