@@ -1,0 +1,14 @@
+{
+  "candidate": "Troy Hokanson",
+  "asset_type": "General Online Resume",
+  "intended_use": ["LinkedIn", "Indeed", "ZipRecruiter", "general recruiter outreach", "online job boards"],
+  "role_profile": "adaptive",
+  "status": "Master Asset",
+  "source_date": "2026-08-17",
+  "updated_date": "2026-08-19",
+  "drive_folder": "https://drive.google.com/drive/folders/1RkfJhuvQYRtJzwvAeUv-jJvk5L1NNYms",
+  "resume_docx": "Troy_Hokanson_General_Online_Resume.docx",
+  "resume_pdf": "Troy_Hokanson_General_Online_Resume.pdf",
+  "portfolio": "https://TroyHokanson.com",
+  "notes": "General reusable resume asset, not tied to a specific employer or requisition. Mercor description intentionally remains general due to platform confidentiality restrictions. Contact values are injected at build time from config.py and are not hardcoded in this public package."
+}
