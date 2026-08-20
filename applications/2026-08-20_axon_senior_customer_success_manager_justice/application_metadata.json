@@ -1,0 +1,24 @@
+{
+  "candidate": "Troy Hokanson",
+  "employer": "Axon Enterprise, Inc.",
+  "role": "Sr Customer Success Manager - Justice",
+  "requisition": "7871599003",
+  "official_url": "https://job-boards.greenhouse.io/axon/jobs/7871599003",
+  "verified_live_date": "2026-08-20",
+  "fit_score": 85,
+  "priority": "Tier 1",
+  "primary_lane": "customer-success",
+  "secondary_lane": "vendor-solutions",
+  "validation": {
+    "resume": "passed",
+    "cover_letter": "passed",
+    "visual_inspection": "passed",
+    "truth_safe_ats_review": "passed"
+  },
+  "google_drive_folder_name": "2026-08-20 Axon Sr Customer Success Manager Justice",
+  "notion_record_title": "Sr Customer Success Manager - Justice",
+  "github_branch": "agent/axon-justice-csm-application",
+  "github_pull_request": "https://github.com/troyhokanson/tjh-resume-cover-cv/pull/39",
+  "portfolio_link_included": false,
+  "submission_status": "not submitted"
+}
