@@ -4,7 +4,7 @@
   "pdf": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.pdf",
   "docx": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.docx",
   "header_pngs": [
-    "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_training_v4/cover-1.png"
+    "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_truthfix_v5/cover-1.png"
   ],
   "passed": true,
   "failed_error_count": 0,
@@ -194,7 +194,7 @@
       "name": "render.header_png_exists",
       "passed": true,
       "severity": "info",
-      "detail": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_training_v4/cover-1.png"
+      "detail": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_truthfix_v5/cover-1.png"
     },
     {
       "name": "render.header_top_left_right_navy",
