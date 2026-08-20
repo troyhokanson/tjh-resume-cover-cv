@@ -9,8 +9,8 @@ import fitz
 
 APP_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = APP_DIR / "output"
-RESUME_RENDER_DIR = OUTPUT_DIR / "rendered_training_v4"
-COVER_RENDER_DIR = OUTPUT_DIR / "rendered_training_v3_cover"
+RESUME_RENDER_DIR = OUTPUT_DIR / "rendered_truthfix_v5"
+COVER_RENDER_DIR = OUTPUT_DIR / "rendered_truthfix_v5_cover"
 NAVY = (13 / 255, 27 / 255, 42 / 255)
 GOLD = (201 / 255, 168 / 255, 76 / 255)
 HEADER_HEIGHT = 92.16
