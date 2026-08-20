@@ -96,7 +96,7 @@ RESUME = {
             "dates": "September 2016 - June 2017",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Acquired and configured the unit's initial Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case and disclosure workflows.",
+                "Used the unit's existing Cellebrite UFED in electronic-crimes investigations and helped investigators integrate mobile-device evidence into case and disclosure workflows.",
                 "Built a structured investigator resource with preservation, subpoena, search-warrant, and service-provider templates that reduced the learning curve and created a more consistent legal-process workflow.",
             ],
         },
@@ -144,8 +144,8 @@ COVER_PARAGRAPHS = [
         "translated technical findings into reports and briefings that supported charging, discovery, and case decisions."
     ),
     (
-        "I also know what it takes to make a new workflow usable. I acquired and configured our initial Cellebrite "
-        "UFED and built an investigator resource with preservation, subpoena, search-warrant, and provider templates. "
+        "I also know what it takes to make a technical workflow usable. I used Cellebrite UFED in electronic-crimes "
+        "investigations and built an investigator resource with preservation, subpoena, search-warrant, and provider templates. "
         "Earlier, I led an agency-side ALPR program that brought Genetec, state CJIS personnel, city IT, department "
         "leadership, and daily users together around implementation and adoption. Both projects required clear ownership, "
         "steady follow-through, and practical answers when technical and operational priorities did not line up cleanly. "
