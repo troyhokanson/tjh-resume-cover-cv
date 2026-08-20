@@ -13,6 +13,7 @@ Date: August 20, 2026
 - Selected training and certifications remain readable and ATS-extractable, including the NW3C CCCI, 98-hour BCA management program, Certified Advanced Facilitator, Cellebrite CCLO/CCPA, BCA forensic-science credentials, and CIT de-escalation training.
 - Education remains readable and separated from training and experience.
 - The locked contact row includes phone, canonical email, LinkedIn, and `troyhokanson.com` without clipping.
+- The corrected Cellebrite wording renders cleanly and credits only verified end-user UFED use and investigator-resource development. No initial acquisition or configuration claim remains.
 
 ## Cover letter
 
