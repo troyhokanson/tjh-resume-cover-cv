@@ -15,7 +15,7 @@
 
 ## Positioning
 
-Lead with justice-sector workflow depth, digital evidence, Axon end-user experience, prosecutor and court coordination, adoption, training, escalation management, and technical translation. Do not claim employment inside a prosecutor or public defender office, ownership of SaaS renewals, ARR, NRR, QBRs, CRM expertise, or a commercial book of business.
+Lead with justice-sector workflow depth, digital evidence, Axon end-user experience, prosecutor and court coordination, adoption, training, escalation management, and technical translation. Reinforce the customer-success case with the 98-hour BCA management program, Certified Advanced Facilitator designation, NW3C CCCI, Cellebrite CCLO/CCPA, BCA forensic-science credentials, and scenario-based CIT de-escalation training. Do not claim employment inside a prosecutor or public defender office, ownership of SaaS renewals, ARR, NRR, QBRs, CRM expertise, or a commercial book of business.
 
 ## Package contents
 
