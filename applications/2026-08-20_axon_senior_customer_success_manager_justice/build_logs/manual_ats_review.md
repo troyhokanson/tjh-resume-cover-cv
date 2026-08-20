@@ -6,7 +6,7 @@ Role: Sr Customer Success Manager - Justice, Axon (7871599003)
 
 PASS. The resume and cover letter use the posting's priority language where Troy has direct or clearly transferable evidence. The packet leads with Axon end-user experience, justice stakeholder engagement, digital-evidence and disclosure workflows, implementation support, user enablement, success planning, progress tracking, escalation management, training, and cross-functional coordination.
 
-Supported terms represented in the packet include justice stakeholder engagement, discovery and disclosure, digital evidence management, case and project coordination, customer adoption and enablement, success planning, progress tracking, escalation management, implementation support, training, executive and technical communication, prosecutors, courts, county Community Corrections, Axon Body 3, Axon Fleet 2, and Axon Evidence.
+Supported terms represented in the packet include justice stakeholder engagement, discovery and disclosure, digital evidence management, case and project coordination, customer adoption and enablement, success planning, progress tracking, escalation management, implementation support, training, executive and technical communication, prosecutors, courts, county Community Corrections, Axon Body 3, Axon Fleet 2, and Axon Evidence. The credentials section adds truthful evidence for leadership development, facilitation, cybercrime, digital-evidence systems, de-escalation, mediation, and inclusive stakeholder engagement.
 
 ## Deliberately excluded as unsupported claims
 
