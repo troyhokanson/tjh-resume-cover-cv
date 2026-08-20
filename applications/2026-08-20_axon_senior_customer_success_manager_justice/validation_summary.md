@@ -26,3 +26,7 @@ The locked four-item contact row is present in both final document headers: phon
 ## Selected training alignment
 
 The redraft documents the 98-hour BCA Law Enforcement Supervision & Management Program, University of Phoenix Certified Advanced Facilitator designation, NW3C Certified Cybercrime Investigator credential, Cellebrite CCLO/CCPA training and recertification through 2020, BCA forensic-science credentials, user-confirmed eight-hour Crisis Intervention Team training with scenario-based de-escalation practice, and 2022 conflict-management and community-diversity training. Education remains a separate section.
+
+## Factual correction
+
+The packet does not claim that Troy acquired, configured, introduced, or established the unit's initial Cellebrite UFED. A prior detective began the ECU program and acquired the initial UFED before Troy's assignment. The application now states only Troy's verified end-user experience with the existing Cellebrite UFED and his separate investigator-resource development work.
