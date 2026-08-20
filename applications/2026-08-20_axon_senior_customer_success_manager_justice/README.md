@@ -11,7 +11,7 @@
 **Secondary lane:** vendor-solutions  
 **Fit score:** 85/100  
 **Priority:** Tier 1  
-**Workflow status:** Validated; draft PR pending review; not yet submitted
+**Workflow status:** Submitted August 20, 2026; draft PR pending review
 
 ## Positioning
 
@@ -36,4 +36,4 @@ Generated DOCX and PDF files are stored in Google Drive rather than GitHub.
 - Google Drive folder: `2026-08-20 Axon Sr Customer Success Manager Justice`
 - Notion record: `Sr Customer Success Manager - Justice`
 - GitHub: draft PR 39 on `agent/axon-justice-csm-application`
-- Submission status: not yet submitted
+- Submission status: submitted August 20, 2026; confirmed directly by Troy
