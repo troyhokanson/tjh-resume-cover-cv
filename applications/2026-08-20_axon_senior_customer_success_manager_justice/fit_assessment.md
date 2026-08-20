@@ -24,6 +24,7 @@ Apply immediately. Estimated fit: **85/100**.
 - Lakeville representative and digital-forensics subject-matter resource in a ten-agency task force.
 - Personally processed 5,304 GB of digital evidence in 2020 while maintaining defensible examination records and communicating results.
 - Nineteen years as a Field Training Officer and 18 years teaching Criminal Justice remotely.
+- Formal preparation includes the 98-hour BCA Law Enforcement Supervision & Management Program, University of Phoenix Certified Advanced Facilitator designation, NW3C Certified Cybercrime Investigator credential, Cellebrite CCLO/CCPA training and recertification through 2020, BCA forensic-science credentials, eight hours of Crisis Intervention Team training with scenario-based de-escalation practice, and 2022 conflict-management and community-diversity training.
 - Agency-side technology adoption work involving Genetec AutoVu, BCA CJIS, city IT, department leadership, and daily users.
 
 ## Genuine gaps
