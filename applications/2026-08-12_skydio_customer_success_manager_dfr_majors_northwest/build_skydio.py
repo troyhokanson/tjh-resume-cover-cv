@@ -78,7 +78,7 @@ RESUME = {
             "dates": "September 2016 - June 2017",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Acquired and configured the unit's initial Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case workflows.",
+                "Used the unit's existing Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case workflows.",
                 "Built a structured training resource with templates for preservation requests, administrative subpoenas, and search warrants, plus service-provider reference information that reduced the learning curve for investigators new to electronic-crime work.",
             ],
         },
@@ -132,7 +132,7 @@ COVER_PARAGRAPHS = [
         "I have also built adoption programs rather than simply used the tools. From 2007 to 2010, I led an "
         "agency-side ALPR program, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, "
         "BCA CJIS, and Lakeville IT around the nightly hotlist workflow. Later, I acquired and configured our "
-        "initial Cellebrite UFED and created an electronic-crimes training resource with practical templates "
+        "existing Cellebrite UFED and created an electronic-crimes training resource with practical templates "
         "and provider guidance. Those projects required ownership, technical translation, stakeholder follow-through, "
         "and a willingness to build structure where none existed."
     ),
