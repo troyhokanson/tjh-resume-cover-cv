@@ -1,0 +1,50 @@
+{
+  "application": "Axon Sr Customer Success Manager - Justice",
+  "profile": "customer-success",
+  "secondary_profile": "vendor-solutions",
+  "page_size": "US Letter portrait",
+  "resume": {
+    "pages": 2,
+    "margins_inches": {"top": 1.46, "bottom": 0.55, "left": 0.65, "right": 0.65},
+    "body_font": "EB Garamond",
+    "body_size_pt": 10.25,
+    "line_spacing": 1.05,
+    "section_before_pt": 14,
+    "section_after_pt": 6,
+    "job_before_pt": 8,
+    "job_after_pt": 2,
+    "bullet_left_indent_inches": 0.22,
+    "bullet_hanging_indent_inches": 0.14
+  },
+  "cover_letter": {
+    "pages": 1,
+    "margins_inches": {"top": 1.52, "bottom": 0.68, "left": 0.78, "right": 0.78},
+    "body_font": "EB Garamond",
+    "body_size_pt": 10.5,
+    "line_spacing": 1.05,
+    "paragraph_after_pt": 8,
+    "signature_gap_pt": 38
+  },
+  "header": {
+    "pattern": "locked navy/gold header",
+    "implementation": "docx_header.build_navy_header",
+    "name_font": "EB Garamond",
+    "name_size_pt": 26,
+    "navy": "#0D1B2A",
+    "gold": "#C9A84C"
+  },
+  "pagination": {
+    "widow_control": true,
+    "keep_section_heading_with_next": true,
+    "keep_job_heading_with_next": true,
+    "forced_resume_break": "before Additional Experience",
+    "no_orphan_headings": true
+  },
+  "content_rules": [
+    "ATS-readable single-column body",
+    "real Word bullet styles",
+    "education separated from training",
+    "no unsupported SaaS portfolio, adoption-dashboard, QBR, renewal, ARR, NRR, CRM, prosecutor-office, or public-defender-office claims",
+    "all case language sanitized"
+  ]
+}
