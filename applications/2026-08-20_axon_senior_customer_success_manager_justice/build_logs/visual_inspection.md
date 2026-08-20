@@ -10,7 +10,9 @@ Date: August 20, 2026
 - Page break occurs before Additional Experience.
 - No orphan heading, split job heading, clipped line, overlap, or accidental blank page.
 - County Probation Liaison evidence fits without crowding the page.
-- Education remains readable and separated from experience.
+- Selected training and certifications remain readable and ATS-extractable, including the NW3C CCCI, 98-hour BCA management program, Certified Advanced Facilitator, Cellebrite CCLO/CCPA, BCA forensic-science credentials, and CIT de-escalation training.
+- Education remains readable and separated from training and experience.
+- The locked contact row includes phone, canonical email, LinkedIn, and `troyhokanson.com` without clipping.
 
 ## Cover letter
 
