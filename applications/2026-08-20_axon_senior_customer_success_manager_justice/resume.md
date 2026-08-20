@@ -55,6 +55,15 @@ University of Phoenix | Remote, concurrent with sworn service
 ### U.S. Army | 8 years 3 months
 Reserve, Active Duty, and Minnesota Army National Guard | Honorably Discharged
 
+## Training and Certifications
+
+- NW3C Certified Cybercrime Investigator (CCCI), No. 4793, January 2023.
+- BCA Law Enforcement Supervision & Management Program, 98 hours, including supervision, mentoring and coaching, influence, legal latitude, stress management, and ethics.
+- University of Phoenix Certified Advanced Facilitator.
+- Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018, 2020.
+- BCA Forensic Science Partners, 58 hours, 2013; BCA Certified Crime Scene Technician.
+- Crisis Intervention Team (CIT) training, 8 hours, including classroom instruction and scenario-based de-escalation practice; Conflict Management & Mediation Training, 2 hours, 2022; Implicit Bias / Community Diversity, 4 hours, 2022.
+
 ## Education
 
 **Master of Arts, Police Leadership, Administration and Education**  
