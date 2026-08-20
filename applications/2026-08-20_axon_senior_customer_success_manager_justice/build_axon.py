@@ -45,6 +45,14 @@ RESUME = {
         "Escalation management | Implementation support | Training and presentations | Executive and technical communication | "
         "Axon Body 3, Fleet 2, and Evidence | Cellebrite, Magnet AXIOM, X-Ways, FTK, and GrayKey"
     ),
+    "training": [
+        "NW3C Certified Cybercrime Investigator (CCCI), No. 4793, January 2023.",
+        "BCA Law Enforcement Supervision & Management Program, 98 hours, including supervision, mentoring and coaching, influence, legal latitude, stress management, and ethics.",
+        "University of Phoenix Certified Advanced Facilitator.",
+        "Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018, 2020.",
+        "BCA Forensic Science Partners, 58 hours, 2013; BCA Certified Crime Scene Technician.",
+        "Crisis Intervention Team (CIT) training, 8 hours, including classroom instruction and scenario-based de-escalation practice; Conflict Management & Mediation Training, 2 hours, 2022; Implicit Bias / Community Diversity, 4 hours, 2022.",
+    ],
     "page1_jobs": [
         {
             "title": "Generalist Expert",
@@ -140,7 +148,9 @@ COVER_PARAGRAPHS = [
         "UFED and built an investigator resource with preservation, subpoena, search-warrant, and provider templates. "
         "Earlier, I led an agency-side ALPR program that brought Genetec, state CJIS personnel, city IT, department "
         "leadership, and daily users together around implementation and adoption. Both projects required clear ownership, "
-        "steady follow-through, and practical answers when technical and operational priorities did not line up cleanly."
+        "steady follow-through, and practical answers when technical and operational priorities did not line up cleanly. "
+        "That experience is backed by 98 hours in the BCA Law Enforcement Supervision & Management Program and the "
+        "NW3C Certified Cybercrime Investigator credential."
     ),
     (
         "I have not worked inside a prosecutor or public defender office, and I would not represent my background that "
@@ -213,12 +223,12 @@ def prepare_document(doc_type: str) -> Document:
     docx_header.NAME_FONT = FONT
     docx_header.CONTACT_FONT = FONT
     docx_header.BODY_FONT = FONT
-    # Application gate: omit location from the contact row and omit the public
-    # portfolio until the known factual conflicts in that site are corrected.
+    # Locked application header: phone, canonical email, LinkedIn, and portfolio.
+    # Location remains excluded from the contact row.
     docx_header.CONTACT_PARTS = [
         item
         for item in docx_header.CONTACT_PARTS
-        if item[0] not in {docx_header.TROY_LOCATION, "troyhokanson.com"}
+        if item[0] != docx_header.TROY_LOCATION
     ]
     build_navy_header(
         doc,
@@ -245,23 +255,23 @@ def add_body_paragraph(doc: Document, text: str, *, size=10.25, after=4) -> None
     set_run_font(p.add_run(text), size)
 
 
-def add_job(doc: Document, job: dict) -> None:
+def add_job(doc: Document, job: dict, *, compact: bool = False) -> None:
     p = doc.add_paragraph()
-    set_paragraph(p, before=8, after=2, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["title"]), 10.5, bold=True)
-    set_run_font(p.add_run(" | " + job["dates"]), 10.0, bold=True, color=GRAY)
+    set_paragraph(p, before=6 if compact else 8, after=2, line=1.0, keep_next=True, keep_together=True)
+    set_run_font(p.add_run(job["title"]), 10.25 if compact else 10.5, bold=True)
+    set_run_font(p.add_run(" | " + job["dates"]), 9.75 if compact else 10.0, bold=True, color=GRAY)
 
     p = doc.add_paragraph()
-    set_paragraph(p, before=0, after=4, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["employer"]), 9.75, italic=True, color=GRAY)
+    set_paragraph(p, before=0, after=3 if compact else 4, line=1.0, keep_next=True, keep_together=True)
+    set_run_font(p.add_run(job["employer"]), 9.5 if compact else 9.75, italic=True, color=GRAY)
 
     for index, bullet in enumerate(job["bullets"]):
         p = doc.add_paragraph(style="List Bullet")
         set_paragraph(
             p,
             before=0,
-            after=2,
-            line=1.05,
+            after=1 if compact else 2,
+            line=1.0 if compact else 1.05,
             keep_together=True,
             keep_next=False,
         )
@@ -269,17 +279,25 @@ def add_job(doc: Document, job: dict) -> None:
         p.paragraph_format.first_line_indent = Inches(-0.14)
         for run in p.runs:
             run.text = ""
-        set_run_font(p.add_run(bullet), 10.25)
+        set_run_font(p.add_run(bullet), 9.9 if compact else 10.25)
 
 
 def add_degree(doc: Document, lines: list[str]) -> None:
     p = doc.add_paragraph()
-    set_paragraph(p, before=5, after=2, line=1.0, keep_together=True)
-    for index, line in enumerate(lines):
-        run = p.add_run(line)
-        set_run_font(run, 9.75, bold=index == 0)
-        if index < len(lines) - 1:
-            run.add_break()
+    set_paragraph(p, before=3, after=1, line=1.0, keep_together=True)
+    set_run_font(p.add_run(lines[0]), 9.35, bold=True)
+    if len(lines) > 1:
+        set_run_font(p.add_run(" | " + lines[1]), 9.35)
+
+
+def add_training_item(doc: Document, text: str) -> None:
+    p = doc.add_paragraph(style="List Bullet")
+    set_paragraph(p, before=0, after=1, line=1.0, keep_together=True)
+    p.paragraph_format.left_indent = Inches(0.22)
+    p.paragraph_format.first_line_indent = Inches(-0.14)
+    for run in p.runs:
+        run.text = ""
+    set_run_font(p.add_run(text), 9.5)
 
 
 def build_resume() -> Path:
@@ -294,26 +312,24 @@ def build_resume() -> Path:
 
     add_section_heading(doc, "Additional Experience", page_break_before=True)
     for job in RESUME["page2_jobs"]:
-        add_job(doc, job)
+        add_job(doc, job, compact=True)
+
+    add_section_heading(doc, "Training and Certifications")
+    for item in RESUME["training"]:
+        add_training_item(doc, item)
 
     add_section_heading(doc, "Education")
     add_degree(doc, [
         "Master of Arts, Police Leadership, Administration and Education",
-        "University of St. Thomas, St. Paul, MN",
-        "GPA: 3.94",
-        "2005",
+        "University of St. Thomas, St. Paul, MN | GPA: 3.94 | 2005",
     ])
     add_degree(doc, [
         "Bachelor of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.51",
-        "1998",
+        "St. Cloud State University, St. Cloud, MN | GPA: 3.51 | 1998",
     ])
     add_degree(doc, [
         "Associate of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.50",
-        "1996",
+        "St. Cloud State University, St. Cloud, MN | GPA: 3.50 | 1996",
     ])
 
     output = OUTPUT_DIR / "Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.docx"
