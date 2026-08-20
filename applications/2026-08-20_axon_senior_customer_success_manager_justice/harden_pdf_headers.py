@@ -9,7 +9,8 @@ import fitz
 
 APP_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = APP_DIR / "output"
-RENDER_DIR = OUTPUT_DIR / "rendered_v2"
+RESUME_RENDER_DIR = OUTPUT_DIR / "rendered_training_v4"
+COVER_RENDER_DIR = OUTPUT_DIR / "rendered_training_v3_cover"
 NAVY = (13 / 255, 27 / 255, 42 / 255)
 GOLD = (201 / 255, 168 / 255, 76 / 255)
 HEADER_HEIGHT = 92.16
@@ -27,12 +28,13 @@ def harden(source: Path, destination: Path) -> None:
     bold = fitz.Font(fontfile=str(BOLD_FONT))
     contact_text = (
         "612-352-8647 | TroyHokanson@iCloud.com | "
-        "https://linkedin.com/in/troyhokanson"
+        "https://linkedin.com/in/troyhokanson | troyhokanson.com"
     )
     links = [
         ("612-352-8647", "tel:6123528647"),
         ("TroyHokanson@iCloud.com", "mailto:TroyHokanson@iCloud.com"),
         ("https://linkedin.com/in/troyhokanson", "https://linkedin.com/in/troyhokanson"),
+        ("troyhokanson.com", "https://troyhokanson.com"),
     ]
     for page in document:
         width = page.rect.width
@@ -86,11 +88,11 @@ def harden(source: Path, destination: Path) -> None:
 def main() -> None:
     files = [
         (
-            RENDER_DIR / "resume" / "Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.pdf",
+            RESUME_RENDER_DIR / "Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.pdf",
             OUTPUT_DIR / "Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.pdf",
         ),
         (
-            RENDER_DIR / "cover" / "Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.pdf",
+            COVER_RENDER_DIR / "Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.pdf",
             OUTPUT_DIR / "Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.pdf",
         ),
     ]
