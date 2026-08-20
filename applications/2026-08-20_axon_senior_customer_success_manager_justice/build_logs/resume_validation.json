@@ -4,8 +4,7 @@
   "pdf": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.pdf",
   "docx": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.docx",
   "header_pngs": [
-    "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png/resume/page-1.png",
-    "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png/resume/page-2.png"
+    "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_training_v4/resume-1.png"
   ],
   "passed": true,
   "failed_error_count": 0,
@@ -129,7 +128,7 @@
       "name": "pagination.page_2.orphan_heading_tail",
       "passed": true,
       "severity": "error",
-      "detail": "tail: St. Cloud State University, St. Cloud, MN | GPA: 3.50 | 1996"
+      "detail": "tail: | 2005 | Bachelor of Arts, Criminal Justice, Magna Cum Laude | St. Cloud State University, St. Cloud, MN | GPA: 3.51 | 1998 | Associate of Arts, Criminal Justice, Magna Cum Laude | St. Cloud State University, St. Cloud, MN | GPA: 3.50 | 1996"
     },
     {
       "name": "font.garamond_family_present",
@@ -165,7 +164,7 @@
       "name": "pagination.keep_with_next_present",
       "passed": true,
       "severity": "error",
-      "detail": "58 keepNext marker(s)"
+      "detail": "65 keepNext marker(s)"
     },
     {
       "name": "pagination.explicit_or_structural_page_breaks_detected",
@@ -201,19 +200,7 @@
       "name": "render.header_png_exists",
       "passed": true,
       "severity": "info",
-      "detail": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png/resume/page-1.png"
-    },
-    {
-      "name": "render.header_top_left_right_navy",
-      "passed": true,
-      "severity": "error",
-      "detail": "sampled edge pixels: [(13, 27, 42), (13, 27, 42), (13, 27, 42)], expected near (13, 27, 42)"
-    },
-    {
-      "name": "render.header_png_exists",
-      "passed": true,
-      "severity": "info",
-      "detail": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png/resume/page-2.png"
+      "detail": "applications/2026-08-20_axon_senior_customer_success_manager_justice/output/final_png_training_v4/resume-1.png"
     },
     {
       "name": "render.header_top_left_right_navy",
