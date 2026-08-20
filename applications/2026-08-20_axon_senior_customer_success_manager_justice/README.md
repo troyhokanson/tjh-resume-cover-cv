@@ -3,7 +3,7 @@
 **Candidate:** Troy Hokanson  
 **Date:** August 20, 2026  
 **Requisition:** 7871599003  
-**Location:** Oregon-Remote; Washington; San Francisco, California; Scottsdale, Arizona  
+**Location:** Oregon-Remote; San Francisco, California, United States; Scottsdale, Arizona, United States; Washington, United States  
 **Work mode:** Remote, West Coast  
 **Travel:** 30-35%  
 **Base pay:** $86,250-$138,000 plus bonus and stock  
