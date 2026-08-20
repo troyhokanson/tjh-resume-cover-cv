@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "candidate": "Troy Hokanson",
+  "employer": "Advize",
+  "role": "Senior Fraud Investigator",
+  "job_id": null,
+  "job_url": null,
+  "created_date": "2026-08-20",
+  "applied_date": null,
+  "status": "Drafting",
+  "fit_score": 61,
+  "priority": "Tier 3",
+  "work_mode": "Remote",
+  "signature_decision": "Typed name only",
+  "notion": {"record_url": null, "record_complete": false},
+  "google_drive": {
+    "folder_url": "https://drive.google.com/drive/folders/1JxtHYAsielynvPVv_EbFHnNn-8do0E_A",
+    "folder_path": "09_Applications/Troy Applications/2026-08-20 Advize Senior Fraud Investigator",
+    "upload_complete": true
+  },
+  "github": {
+    "repository": "troyhokanson/tjh-resume-cover-cv",
+    "package_path": "applications/2026-08-20_advize_senior_fraud_investigator",
+    "commit_sha": null,
+    "branch": "agent/advize-senior-fraud-investigator",
+    "package_url": "https://github.com/troyhokanson/tjh-resume-cover-cv/tree/agent/advize-senior-fraud-investigator/applications/2026-08-20_advize_senior_fraud_investigator"
+  },
+  "artifacts": {
+    "job_description": "job_description.md",
+    "resume_md": "resume.md",
+    "cover_letter_md": "cover_letter.md",
+    "resume_docx": "output/Hokanson_Resume_Advize_Senior_Fraud_Investigator.docx",
+    "resume_pdf": "output/Hokanson_Resume_Advize_Senior_Fraud_Investigator.pdf",
+    "cover_letter_docx": "output/Hokanson_Cover_Advize_Senior_Fraud_Investigator.docx",
+    "cover_letter_pdf": "output/Hokanson_Cover_Advize_Senior_Fraud_Investigator.pdf",
+    "qa_report": "build_logs/validation_summary.md"
+  },
+  "automation": {
+    "last_sync_at": "2026-08-20",
+    "last_sync_status": "partial",
+    "errors": ["Exact screenshot job URL and requisition are unresolved."]
+  }
+}

@@ -1,0 +1,89 @@
+ATS Audit Report
+Profile: siu-fraud
+Coverage: 8.8% (7/80)
+Floor target: 85%
+Meets floor: NO -- ACTION REQUIRED
+
+FOUND TERMS:
+  + complex fraud
+  + defensible reports
+  + fraud investigation
+  + fraud investigations
+  + fraud investigator
+  + law enforcement
+  + senior fraud
+
+MISSING TERMS (review for injection or flag as overclaim):
+  - ability data
+  - abuse patterns
+  - actions review
+  - advanced analytical
+  - advize united
+  - analysis pattern
+  - analytical ability
+  - analytics tools
+  - analyze claim
+  - audit methods
+  - audit teams
+  - case building
+  - charges interpret
+  - citation guidance
+  - claim data
+  - claims environments
+  - clear defensible
+  - complex schemes
+  - compliance actions
+  - corporate integrity
+  - corrective actions
+  - data analysis
+  - document findings
+  - documenting complex
+  - enforcement recovery
+  - environments analyze
+  - established audit
+  - evidence document
+  - experience detecting
+  - financial settings
+  - fraud prevention
+  - fraud waste
+  - full time
+  - gather evidence
+  - guidance recommend
+  - healthcare billing
+  - identify fraud
+  - improve fraud
+  - include strong
+  - integrity matters
+  - internal audit
+  - interpret policies
+  - investigator advize
+  - lead complex
+  - legal partners
+  - matters qualifications
+  - methods collaborate
+  - next steps
+  - patterns using
+  - prepare clear
+  - prevention skills
+  - prevention strategies
+  - provide input
+  - provider next
+  - qualifications include
+  - recommend corrective
+  - records validate
+  - regulatory legal
+  - remote full
+  - reports supporting
+  - review records
+  - settings advanced
+  - states remote
+  - steps improve
+  - strategies support
+  - strong fraud
+  - support case
+  - supporting enforcement
+  - teams legal
+  - time lead
+  - united states
+  - using analytics
+  - validate charges

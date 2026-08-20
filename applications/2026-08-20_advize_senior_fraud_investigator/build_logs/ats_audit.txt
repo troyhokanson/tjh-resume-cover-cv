@@ -1,0 +1,89 @@
+ATS Audit Report
+Profile: siu-fraud
+Coverage: 6.2% (5/80)
+Floor target: 85%
+Meets floor: NO -- ACTION REQUIRED
+
+FOUND TERMS:
+  + complex fraud
+  + fraud investigations
+  + fraud investigator
+  + law enforcement
+  + senior fraud
+
+MISSING TERMS (review for injection or flag as overclaim):
+  - abuse patterns
+  - advize comparator
+  - advize screenshot
+  - advize senior
+  - advizehealth com
+  - applying analytics
+  - audit legal
+  - audit methods
+  - august screenshot
+  - careers investigator
+  - claim data
+  - claims environments
+  - client partners
+  - com careers
+  - com jobs
+  - comparator https
+  - compliance decisions
+  - current linkedin
+  - current live
+  - daily work
+  - date august
+  - decisions daily
+  - description shown
+  - displayed current
+  - employer advize
+  - employment type
+  - enforcement recovery
+  - fraud waste
+  - full time
+  - gathering evidence
+  - healthcare billing
+  - https advizehealth
+  - https www
+  - includes reviewing
+  - investigator current
+  - investigator employer
+  - investigator investigator
+  - investigator leads
+  - investigator verification
+  - jobs view
+  - leads complex
+  - linkedin com
+  - linkedin job
+  - linkedin title
+  - linkedin url
+  - location united
+  - methods gathering
+  - official advize
+  - patterns applying
+  - payment integrity
+  - post payment
+  - pre payment
+  - remote screenshot
+  - reviewing claim
+  - role description
+  - screenshot employment
+  - screenshot job
+  - screenshot location
+  - screenshot title
+  - stated role
+  - stated travel
+  - states remote
+  - supplied screenshots
+  - support enforcement
+  - time screenshot
+  - title investigator
+  - title senior
+  - type full
+  - united states
+  - url https
+  - verification date
+  - view official
+  - work includes
+  - writing reports
+  - www linkedin

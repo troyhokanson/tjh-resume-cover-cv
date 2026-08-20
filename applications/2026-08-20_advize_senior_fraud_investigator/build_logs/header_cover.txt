@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "image": "applications/2026-08-20_advize_senior_fraud_investigator/rendered/cover/page-1.png",
+  "metrics": {
+    "image_size": [
+      1547,
+      2002
+    ],
+    "header_bottom_px": 232,
+    "header_height_inches_estimate": 1.2802,
+    "page_center_x": 773.0,
+    "composition_bbox": [
+      320,
+      55,
+      1226,
+      171
+    ],
+    "name_bbox": [
+      558,
+      55,
+      988,
+      118
+    ],
+    "accent_bbox": [
+      320,
+      129,
+      1226,
+      167
+    ],
+    "composition_horizontal_error_px": 0.0,
+    "name_horizontal_error_px": 0.0,
+    "accent_horizontal_error_px": 0.0,
+    "composition_vertical_offset_fraction": -0.012876
+  },
+  "failures": []
+}

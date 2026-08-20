@@ -1,0 +1,60 @@
+{
+  "layout_contract": "/workspace/scratch/94e46028afe5/repo/applications/2026-08-20_advize_senior_fraud_investigator/layout_contract.json",
+  "documents": [
+    {
+      "path": "/workspace/scratch/94e46028afe5/repo/applications/2026-08-20_advize_senior_fraud_investigator/output/Hokanson_Resume_Advize_Senior_Fraud_Investigator.docx",
+      "document_type": "resume",
+      "paragraph_count": 51,
+      "bullet_paragraph_count": 21,
+      "keep_with_next_count": 24,
+      "margins_inches": {
+        "left": 0.65,
+        "right": 0.65,
+        "bottom": 0.55,
+        "top": 1.46
+      },
+      "checks": {
+        "us_letter": true,
+        "margins_match": true,
+        "header_part_present": true,
+        "real_list_style_present": true,
+        "keep_with_next_present": true,
+        "garamond_present": true,
+        "calibri_absent": true,
+        "aptos_absent": true,
+        "arial_absent": true,
+        "contact_hyperlinks_present": true,
+        "city_omitted_from_header": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/workspace/scratch/94e46028afe5/repo/applications/2026-08-20_advize_senior_fraud_investigator/output/Hokanson_Cover_Advize_Senior_Fraud_Investigator.docx",
+      "document_type": "cover",
+      "paragraph_count": 13,
+      "bullet_paragraph_count": 0,
+      "keep_with_next_count": 1,
+      "margins_inches": {
+        "left": 0.78,
+        "right": 0.78,
+        "bottom": 0.68,
+        "top": 1.52
+      },
+      "checks": {
+        "us_letter": true,
+        "margins_match": true,
+        "header_part_present": true,
+        "real_list_style_present": true,
+        "keep_with_next_present": true,
+        "garamond_present": true,
+        "calibri_absent": true,
+        "aptos_absent": true,
+        "arial_absent": true,
+        "contact_hyperlinks_present": true,
+        "city_omitted_from_header": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}

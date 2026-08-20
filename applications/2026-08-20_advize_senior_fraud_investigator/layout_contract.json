@@ -1,0 +1,55 @@
+{
+  "application": "Advize Senior Fraud Investigator",
+  "profile": "siu-fraud",
+  "design_system": "Troy locked navy/gold application standard",
+  "page_size": "US Letter portrait",
+  "resume": {
+    "pages": 2,
+    "margins_inches": {"top": 1.46, "bottom": 0.55, "left": 0.65, "right": 0.65},
+    "body_font": "EB Garamond",
+    "body_size_pt": 10.25,
+    "line_spacing": 1.05,
+    "section_heading_before_pt": 8,
+    "section_heading_after_pt": 4,
+    "job_heading_before_pt": 5,
+    "job_heading_after_pt": 0,
+    "bullet_after_pt": 2,
+    "bullet_left_indent_inches": 0.22,
+    "bullet_hanging_indent_inches": 0.14
+  },
+  "cover_letter": {
+    "pages": 1,
+    "margins_inches": {"top": 1.52, "bottom": 0.68, "left": 0.78, "right": 0.78},
+    "body_font": "EB Garamond",
+    "body_size_pt": 10.5,
+    "line_spacing": 1.05,
+    "date_after_pt": 8,
+    "address_block_after_pt": 9,
+    "salutation_after_pt": 9,
+    "paragraph_after_pt": 8,
+    "closing_before_pt": 5,
+    "signature_gap_pt": 38
+  },
+  "header": {
+    "pattern": "locked navy/gold header",
+    "implementation": "docx_header.build_navy_header",
+    "height_inches": 1.28,
+    "name_font": "EB Garamond",
+    "name_size_pt": 26,
+    "name_color": "#FFFFFF",
+    "navy": "#0D1B2A",
+    "gold": "#C9A84C",
+    "rule_width_percent": 55,
+    "contact_size_pt": 9.5,
+    "city_line_included": false,
+    "required_last_item": "troyhokanson.com"
+  },
+  "pagination": {
+    "widow_control": true,
+    "keep_with_next": ["section_heading", "job_heading", "job_subheading"],
+    "resume_page_break_before": "Additional Experience",
+    "orphan_headings_allowed": false
+  },
+  "signature_decision": "Typed name only"
+}
+
