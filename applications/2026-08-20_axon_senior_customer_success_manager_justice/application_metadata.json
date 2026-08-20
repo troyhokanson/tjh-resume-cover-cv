@@ -19,6 +19,15 @@
   "notion_record_title": "Sr Customer Success Manager - Justice",
   "github_branch": "agent/axon-justice-csm-application",
   "github_pull_request": "https://github.com/troyhokanson/tjh-resume-cover-cv/pull/39",
-  "portfolio_link_included": false,
+  "portfolio_link_included": true,
+  "selected_training": [
+    "NW3C Certified Cybercrime Investigator (CCCI), No. 4793, January 2023",
+    "BCA Law Enforcement Supervision & Management Program, 98 hours",
+    "University of Phoenix Certified Advanced Facilitator",
+    "Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), recertified through 2020",
+    "BCA Forensic Science Partners, 58 hours, and BCA Certified Crime Scene Technician",
+    "Crisis Intervention Team (CIT) training, 8 hours, with classroom and scenario-based de-escalation practice",
+    "Conflict Management & Mediation and Implicit Bias / Community Diversity training, 2022"
+  ],
   "submission_status": "not submitted"
 }
