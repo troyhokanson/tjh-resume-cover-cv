@@ -36,7 +36,7 @@ Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Depar
 ### Detective / Electronic Crimes Unit | September 2016 - June 2017
 Lakeville Police Department | Lakeville, Minnesota
 
-- Acquired and configured the unit's initial Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case and disclosure workflows.
+- Used the unit's existing Cellebrite UFED in electronic-crimes investigations and helped investigators integrate mobile-device evidence into case and disclosure workflows.
 - Built a structured investigator resource with preservation, subpoena, search-warrant, and service-provider templates that reduced the learning curve and created a more consistent legal-process workflow.
 
 ### Police Officer / Field Training Officer | November 1998 - August 2016
