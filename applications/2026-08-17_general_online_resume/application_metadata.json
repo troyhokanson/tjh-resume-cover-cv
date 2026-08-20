@@ -7,8 +7,10 @@
   "source_date": "2026-08-17",
   "updated_date": "2026-08-19",
   "drive_folder": "https://drive.google.com/drive/folders/1RkfJhuvQYRtJzwvAeUv-jJvk5L1NNYms",
-  "resume_docx": "Troy_Hokanson_General_Online_Resume.docx",
-  "resume_pdf": "Troy_Hokanson_General_Online_Resume.pdf",
+  "preferred_online_upload_docx": "Troy_Hokanson_General_Online_ATS_Resume.docx",
+  "preferred_online_upload_pdf": "Troy_Hokanson_General_Online_ATS_Resume.pdf",
+  "branded_resume_docx": "Troy_Hokanson_General_Online_Resume.docx",
+  "branded_resume_pdf": "Troy_Hokanson_General_Online_Resume.pdf",
   "portfolio": "https://TroyHokanson.com",
-  "notes": "General reusable resume asset, not tied to a specific employer or requisition. Mercor description intentionally remains general due to platform confidentiality restrictions. Contact values are injected at build time from config.py and are not hardcoded in this public package."
+  "notes": "General reusable resume asset, not tied to a specific employer or requisition. Use the ATS version for LinkedIn, Indeed, ZipRecruiter, and parsing-heavy portals. Use the branded version for direct recruiter or human-facing delivery. Mercor description intentionally remains general due to platform confidentiality restrictions. Contact values are injected at build time from config.py and are not hardcoded in this public package."
 }
