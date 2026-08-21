@@ -1,0 +1,44 @@
+ATS Audit Report
+Profile: analyst-intelligence
+Coverage: 100.0% (35/35)
+Floor target: 85%
+Meets floor: YES
+
+FOUND TERMS:
+  + adverse information
+  + analytical reporting
+  + analytical writing
+  + background investigation
+  + background research
+  + behavioral assessment
+  + business email
+  + business records
+  + digital evidence
+  + employment screening
+  + fcra screening
+  + felony conviction
+  + financial information
+  + financial tracing
+  + human resources
+  + identity resolution
+  + information security
+  + insider threat
+  + investigation methods
+  + legal handoff
+  + osint analyst
+  + pattern recognition
+  + personnel risk
+  + prosecutor commendation
+  + provider records
+  + public records
+  + public social
+  + repeatable scoring
+  + research playbooks
+  + risk determination
+  + sensitive data
+  + source corroboration
+  + source reliability
+  + source verification
+  + timely escalation
+
+MISSING TERMS (review for injection or flag as overclaim):

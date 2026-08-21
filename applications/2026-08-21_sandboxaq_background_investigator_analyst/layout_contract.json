@@ -1,0 +1,41 @@
+{
+  "standards_revision": "6ac88b9895ceca2a56c249786bd0cd9eb448a30b",
+  "page": {
+    "size": "US Letter",
+    "width_inches": 8.5,
+    "height_inches": 11,
+    "orientation": "portrait"
+  },
+  "header": {
+    "implementation": "docx_header.build_navy_header with renderer-stable full-width table geometry",
+    "location": "Word header section",
+    "height_inches": 1.28,
+    "background": "#0D1B2A full bleed",
+    "name": "EB Garamond 26 pt bold white",
+    "rule": "#C9A84C 0.9 pt, 55 percent page width",
+    "contact": "EB Garamond 10 pt gold, centered, no city line",
+    "subtitle": "none"
+  },
+  "resume": {
+    "margins_inches": {"left": 0.65, "right": 0.65, "top": 1.46, "bottom": 0.55},
+    "body_font": "EB Garamond 10.25 pt",
+    "line_spacing": "1.03 for bullets; 1.05 for summary and capabilities",
+    "section_heading": "EB Garamond 11 pt bold steel blue with gold underline",
+    "section_spacing_points": {"before": 10, "after": 4},
+    "entry_spacing_points": {"before": 6, "title_after": 1, "employer_after": 2},
+    "bullet": {"left_indent_inches": 0.22, "first_line_indent_inches": -0.14, "after_points": 1},
+    "target_pages": 2,
+    "widow_orphan_controls": "enabled; headings, employer lines, and job blocks kept with following content"
+  },
+  "cover_letter": {
+    "margins_inches": {"left": 0.78, "right": 0.78, "top": 1.52, "bottom": 0.68},
+    "body_font": "EB Garamond 10.25 pt",
+    "line_spacing": 1.0,
+    "paragraph_after_points": 3,
+    "closing_before_points": 5,
+    "signature_gap_points": 8,
+    "target_pages": 1,
+    "widow_orphan_controls": "enabled; paragraphs kept together where possible"
+  },
+  "compression_rule": "Edit or remove weaker content before reducing font, margins, or minimum spacing."
+}
