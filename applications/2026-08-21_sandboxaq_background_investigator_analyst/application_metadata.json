@@ -14,9 +14,14 @@
   "role_family": "Background Investigator",
   "fit_score": 86,
   "priority": "Tier 1",
-  "status": "packet_validated",
-  "google_drive_folder": "Stored outside public repository",
-  "notion_record": "Tracked outside public repository",
+  "status": "filed_private_public_git_pending_approval",
+  "google_drive_folder": "https://drive.google.com/drive/folders/1bITbPIUh1OU5ZDVM8Ih3ndrPu0sFkXf4",
+  "notion_record": "https://app.notion.com/p/3c3a574973a981c5bfa4dcef46d5c55e",
+  "git": {
+    "branch": "application/sandboxaq-background-investigator-analyst",
+    "local_commit": "87b5ace",
+    "publication": "Pending explicit approval because the destination repository is public"
+  },
   "documents": {
     "resume_markdown": "resume.md",
     "cover_letter_markdown": "cover_letter.md",
