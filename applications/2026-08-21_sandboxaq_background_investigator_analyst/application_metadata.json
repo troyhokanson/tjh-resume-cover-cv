@@ -1,0 +1,42 @@
+{
+  "candidate": "Troy Hokanson",
+  "employer": "SandboxAQ",
+  "role": "Background Investigator / Analyst",
+  "job_id": "20fb831b-1b7d-46bb-9fdf-9e30fb68424a",
+  "job_url": "https://jobs.ashbyhq.com/sandboxaq/20fb831b-1b7d-46bb-9fdf-9e30fb68424a",
+  "location": "United States",
+  "work_mode": "Remote",
+  "salary": "$118,400-$222,000, multiple ranges",
+  "posted_date": "2026-08-21",
+  "travel": "Not stated",
+  "primary_lane": "corporate-security-investigations",
+  "secondary_lanes": ["analyst-intelligence"],
+  "role_family": "Background Investigator",
+  "fit_score": 86,
+  "priority": "Tier 1",
+  "status": "ready_to_submit",
+  "google_drive_folder": "Stored outside public repository",
+  "notion_record": "Tracked outside public repository",
+  "git": {
+    "branch": "application/sandboxaq-background-investigator-analyst",
+    "pull_request": 41
+  },
+  "documents": {
+    "resume_markdown": "resume.md",
+    "cover_letter_markdown": "cover_letter.md",
+    "resume_docx": "output/Hokanson_Resume_SandboxAQ_Background_Investigator_Analyst.docx",
+    "resume_pdf": "output/Hokanson_Resume_SandboxAQ_Background_Investigator_Analyst.pdf",
+    "cover_letter_docx": "output/Hokanson_Cover_SandboxAQ_Background_Investigator_Analyst.docx",
+    "cover_letter_pdf": "output/Hokanson_Cover_SandboxAQ_Background_Investigator_Analyst.pdf"
+  },
+  "qa": {
+    "profile": "corporate-security-investigations",
+    "allow_icac": false,
+    "repository_revision": "6ac88b9895ceca2a56c249786bd0cd9eb448a30b",
+    "resume_pages": 2,
+    "cover_pages": 1,
+    "ats_coverage_percent": 100,
+    "validation_passed": true
+  },
+  "exceptions": []
+}
