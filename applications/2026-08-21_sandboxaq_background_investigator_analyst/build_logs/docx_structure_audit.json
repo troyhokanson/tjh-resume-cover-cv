@@ -1,8 +1,8 @@
 {
-  "layout_contract": "/workspace/scratch/76559e84ce20/repo/applications/2026-08-21_sandboxaq_background_investigator_analyst/layout_contract.json",
+  "layout_contract": "applications/2026-08-21_sandboxaq_background_investigator_analyst/layout_contract.json",
   "documents": [
     {
-      "path": "/workspace/scratch/76559e84ce20/repo/applications/2026-08-21_sandboxaq_background_investigator_analyst/output/Hokanson_Resume_SandboxAQ_Background_Investigator_Analyst.docx",
+      "path": "applications/2026-08-21_sandboxaq_background_investigator_analyst/output/Hokanson_Resume_SandboxAQ_Background_Investigator_Analyst.docx",
       "document_type": "resume",
       "section_count": 1,
       "paragraph_count": 43,
@@ -29,7 +29,7 @@
       "passed": true
     },
     {
-      "path": "/workspace/scratch/76559e84ce20/repo/applications/2026-08-21_sandboxaq_background_investigator_analyst/output/Hokanson_Cover_SandboxAQ_Background_Investigator_Analyst.docx",
+      "path": "applications/2026-08-21_sandboxaq_background_investigator_analyst/output/Hokanson_Cover_SandboxAQ_Background_Investigator_Analyst.docx",
       "document_type": "cover",
       "section_count": 1,
       "paragraph_count": 11,
