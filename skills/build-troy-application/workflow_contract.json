@@ -168,13 +168,24 @@
   "rejection_cleanup_rule": {
     "trigger": "troy_confirms_rejection_or_no_thank_you",
     "application_status": "rejected",
+    "require_single_matching_application_record": true,
+    "prefer_stored_calendar_event_id": true,
+    "require_unique_application_identity_and_status_followup_purpose": true,
+    "employer_or_title_only_match_prohibited": true,
     "clear_status_followup_next_action": true,
     "delete_related_outlook_application_followups": true,
+    "rejection_confirmation_authorizes_matched_status_followup_deletion": true,
+    "ambiguous_or_multiple_match_action": "do_not_delete_and_report",
+    "duplicate_application_record_action": "do_not_delete_and_report",
+    "mixed_purpose_event_action": "preserve",
+    "recurring_series_action": "preserve_without_explicit_direction",
     "preserve": [
       "interviews",
       "legal_deadlines",
       "benefits_deadlines",
-      "unrelated_appointments"
+      "mixed_purpose_events",
+      "unrelated_appointments",
+      "recurring_series"
     ],
     "require_source_date_when_available": true,
     "allow_user_confirmation_when_message_unavailable": true,
