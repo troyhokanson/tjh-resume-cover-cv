@@ -296,6 +296,17 @@ If any item fails, status remains `Researching`, `Drafting`, or `Exception`.
 
 Never mark `Submitted` until Troy confirms submission or a submission confirmation is received.
 
+## Rejection Cleanup Rule
+
+When Troy confirms a rejection or no-thank-you decision:
+
+- set the matching application record to `Rejected`;
+- remove any pending next-action date that exists only for application-status follow-up;
+- automatically delete related application-status follow-up reminders from Outlook Calendar; and
+- preserve interviews, legal or benefits deadlines, and unrelated appointments unless Troy explicitly directs otherwise.
+
+Record the rejection source and date when available. If the source message cannot be retrieved, state that the status is based on Troy's confirmation. Verify both the application record and calendar cleanup before reporting completion.
+
 ## Exception Handling
 
 Routine, reversible work should continue without asking for separate approval. Pause only for:
