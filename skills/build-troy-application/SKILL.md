@@ -300,10 +300,15 @@ Never mark `Submitted` until Troy confirms submission or a submission confirmati
 
 When Troy confirms a rejection or no-thank-you decision:
 
-- set the matching application record to `Rejected`;
-- remove any pending next-action date that exists only for application-status follow-up;
-- automatically delete related application-status follow-up reminders from Outlook Calendar; and
-- preserve interviews, legal or benefits deadlines, and unrelated appointments unless Troy explicitly directs otherwise.
+- positively identify one matching application record, using the job ID when available;
+- set that record to `Rejected`;
+- remove a pending next-action date only when it exists solely for application-status follow-up;
+- delete only the Outlook event positively identified as that application's status-follow-up reminder; and
+- preserve interviews, legal or benefits deadlines, mixed-purpose events, unrelated appointments, and recurring series unless Troy explicitly directs otherwise.
+
+Use a stored calendar event ID when available. Otherwise require one unique event whose application-status-follow-up purpose and application identity are clear from the candidate, employer, exact job title, and job ID when available. Employer name or job title alone is never sufficient.
+
+Troy's confirmed rejection authorizes deletion only of the positively matched application-status follow-up under this rule. If application records are duplicated, multiple calendar events could match, an event serves more than one purpose, or recurring-series scope is uncertain, do not delete the event; report the ambiguity for Troy's decision.
 
 Record the rejection source and date when available. If the source message cannot be retrieved, state that the status is based on Troy's confirmation. Verify both the application record and calendar cleanup before reporting completion.
 
