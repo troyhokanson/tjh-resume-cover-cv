@@ -11,7 +11,8 @@ This repo separates hard safeguards from role-specific authoring choices:
 5. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
 6. **Case evidence and ECTF crosswalk control** — CASE_EVIDENCE_REVIEW_STANDARD.md requires exact source matching, role reconciliation, duplicate-view control, and an explicit unresolved status when an ECTF number cannot be verified.
 7. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
-8. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
+8. **SLED transition and application privacy** — SLED_TRANSITION_HIRING_BENCHMARK.md calibrates verified former-practitioner and military pathways; APPLICATION_SELF_IDENTIFICATION_STANDARD.md keeps protected traits out of scoring and materials.
+9. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
 
 Seven primary lanes are defined: `vendor-solutions`, `siu-fraud`, `analyst-intelligence`, `corporate-security-investigations`, `customer-success`, `technical-account-management`, and `dfir-cyber`. The scanner uses `adaptive` if no lane is supplied, but each final application should log a selected primary lane.
 
@@ -131,9 +132,11 @@ tjh-resume-cover-cv/
 │   └── README.md                            # Font installation guide, EB Garamond, Inter
 ├── tests/
 │   ├── test_anti_ai_scan.py                 # Unit tests for scan rules
-│   └── test_config.py                       # Tests for env-var loading and safe fallbacks
+│   ├── test_config.py                       # Tests for env-var loading and safe fallbacks
+│   └── test_sled_transition_signals.py      # Transition-signal and privacy regression tests
 ├── standards/
 │   ├── document_design_standard.json        # Machine-readable visual/body/pagination standard
+│   ├── sled_transition_signal_matrix.json   # Bounded SLED transition and employer-pathway calibration
 │   └── body_typography_pagination_standard.md # Human-readable body typography standard
 ├── CASE_BANK.md                             # Source-of-truth case examples
 ├── CASE_EVIDENCE_REVIEW_STANDARD.md          # Mandatory case-source and ECTF crosswalk workflow
@@ -143,6 +146,9 @@ tjh-resume-cover-cv/
 ├── PRIVACY_STANDARD.md                      # Privacy suppression rules
 ├── PROFILES.md                              # Layer 2 profile definitions
 ├── PROFILE_SELECTOR.md                      # Decision tree, pick the right profile from a job posting
+├── SLED_TRANSITION_HIRING_BENCHMARK.md       # Incumbent-pathway evidence and role-family calibration
+├── APPLICATION_SELF_IDENTIFICATION_STANDARD.md # Protected-data and disclosure defaults
+├── validate_sled_transition_signals.py       # Validator for transition and privacy configuration
 ├── SYSTEM_PROMPT.md                         # Copy-paste system prompt for custom AI setups
 ├── PLATFORM_SETUP.md                        # Configure ChatGPT, Claude, Gemini, etc.
 └── chatgpt_action_schema.json               # OpenAPI schema for ChatGPT Actions
@@ -217,6 +223,10 @@ Every build script must finish by rendering the DOCX, rendering page PNGs, and r
 - `CASE_EVIDENCE_REVIEW_STANDARD.md` — mandatory source hierarchy, role verification, privacy controls, and exact ECTF crosswalk workflow for every relevant case review.
 - `anti_ai_scan.py` — voice and anti-AI rules. Still required, but now called through the full validator.
 - `ROLE_ADAPTATION_STANDARD.md` — posting-led identity, wording, structure, evidence, and format choices.
+- `SLED_TRANSITION_HIRING_BENCHMARK.md` — verified incumbent transition pathways, role-family evidence selection, and bounded company tiers.
+- `APPLICATION_SELF_IDENTIFICATION_STANDARD.md` — optional EEO/disability/demographic decisions, accommodation timing, and protected-data firewall.
+- `standards/sled_transition_signal_matrix.json` — machine-readable SLED signal weights, employer evidence, caps, and hard-gap controls.
+- `validate_sled_transition_signals.py` — regression validator for the transition calibration.
 - `VOICE_STANDARD.md` — direct, precise, human voice rules.
 - `PRIVACY_STANDARD.md` — privacy and identifier suppression rules.
 - `requirements.txt` — Python dependencies.
