@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "resume": true,
+  "cover": true,
+  "visual_qa": "PASS: resume pages 1-2 and cover page 1 inspected at 100%; no clipping, overlap, broken glyphs, or orphan pages.",
+  "source_standards": [
+    "VOICE_STANDARD.md",
+    "ROLE_ADAPTATION_STANDARD.md",
+    "PROFILES.md",
+    "PRIVACY_STANDARD.md",
+    "EDUCATION_CONSTANTS.md",
+    "CAREER_CONSTANTS.md",
+    "PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md"
+  ],
+  "note": "Checks implement the current GitHub standards retrieved through the connected GitHub app; the repository could not be cloned into the container because outbound DNS is disabled."
+}

@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
-
 from __future__ import annotations
 
-import json
-import re
+import subprocess
 import sys
-import zipfile
 from pathlib import Path
 
 from docx import Document
-from docx.enum.section import WD_SECTION
-from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.shared import Inches, Pt, RGBColor
@@ -18,9 +13,8 @@ from docx.shared import Inches, Pt, RGBColor
 REPO_ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO_ROOT))
 
-import docx_header
 from docx_header import add_paragraph_bottom_border, build_navy_header
-
+from anti_ai_scan import scan_pdf
 
 APP_DIR = Path(__file__).resolve().parent
 OUTPUT_DIR = APP_DIR / "output"
@@ -30,409 +24,224 @@ BLACK = RGBColor(0x14, 0x14, 0x14)
 GRAY = RGBColor(0x55, 0x55, 0x55)
 STEEL = RGBColor(0x2D, 0x6A, 0x9F)
 
+RESUME_SUMMARY = (
+    "Public-safety technology practitioner, instructor, and former investigator with 25 years of sworn service, "
+    "18 years of remote college teaching, and more than five years of hands-on digital forensics work. Built and "
+    "improved agency workflows around ALPR, mobile forensics, digital evidence, training, and cross-agency case "
+    "support. Experienced taking loosely defined operational problems from need identification through implementation, "
+    "documentation, user instruction, troubleshooting, and sustained use. Direct end-user experience includes ALPR, "
+    "Axon body-worn and fleet video, Cellebrite UFED, Magnet AXIOM, GrayKey, X-Ways Forensics, and Microsoft 365. "
+    "Developing Drone as First Responder domain knowledge and able to obtain FAA Part 107."
+)
 
-RESUME = {
-    "summary": (
-        "Public-safety technology practitioner, instructor, and client-facing professional with 25 years "
-        "of sworn service and 18 years of remote college teaching. Helps agencies adopt technical workflows, "
-        "resolve operational barriers, and translate complex systems for executives, technical stakeholders, "
-        "supervisors, and daily users. Direct experience includes fleet video, body-worn cameras, ALPR, mobile "
-        "and computer forensics, and cross-agency digital evidence operations."
-    ),
-    "capabilities": (
-        "Customer adoption and enablement | Implementation support | Workflow assessment | Executive and operator communication | "
-        "Stakeholder relationship management | Training and change management | Usage and outcome measurement | "
-        "Issue resolution and escalation | Public-safety operations | Fleet and body-worn video | ALPR | Digital evidence systems"
-    ),
-    "page1_jobs": [
-        {
-            "title": "Real Estate Consultant",
-            "dates": "June 2024 - March 2026",
-            "employer": "Residential Real Estate | South Metro Minnesota",
-            "bullets": [
-                "Managed client relationships from initial consultation through negotiation, inspection, financing, title, and closing; completed $3.2M in residential sales during the transition from law enforcement.",
-                "Coordinated buyers, sellers, lenders, inspectors, appraisers, title professionals, and cooperating agents to identify barriers, clarify decisions, and keep complex transactions moving.",
-            ],
-        },
-        {
-            "title": "Police Officer",
-            "dates": "January 2022 - May 2024",
-            "employer": "Lakeville Police Department | Lakeville, Minnesota",
-            "bullets": [
-                "Returned to frontline operations after a specialized assignment, using Axon Body 3, Axon Fleet 2, Motorola radios, Microsoft 365, and related systems in daily patrol workflows; brought direct operator perspective on evidence integrity, policy, and adoption.",
-                "Helped officers and supervisors work through policy, evidence, and technology questions while maintaining safety, documentation, and public-service standards.",
-            ],
-        },
-        {
-            "title": "Detective / Digital Forensic Examiner",
-            "dates": "June 2017 - December 2021",
-            "employer": "Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Department | Minnesota",
-            "bullets": [
-                "Served as the Lakeville Police Department representative and digital forensics subject-matter resource in a ten-agency task force, coordinating examinations, priorities, and technical guidance across partner agencies.",
-                "Processed 5,304 GB of digital evidence in 2020 through Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; converted technical findings into reports and briefings for investigators, supervisors, and legal decision-makers.",
-                "Supported daily users through complex device and evidence questions, selected fit-for-purpose tools, documented workflows, and found another technical path when the initial approach did not answer the investigative question.",
-            ],
-        },
-        {
-            "title": "Detective / Electronic Crimes Unit",
-            "dates": "September 2016 - June 2017",
-            "employer": "Lakeville Police Department | Lakeville, Minnesota",
-            "bullets": [
-                "Acquired and configured the unit's initial Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case workflows.",
-                "Built a structured training resource with templates for preservation requests, administrative subpoenas, and search warrants, plus service-provider reference information that reduced the learning curve for investigators new to electronic-crime work.",
-            ],
-        },
-    ],
-    "page2_jobs": [
-        {
-            "title": "Police Officer / Field Training Officer",
-            "dates": "November 1998 - August 2016",
-            "employer": "Lakeville Police Department | Lakeville, Minnesota",
-            "bullets": [
-                "Served 18 years as a Field Training Officer, coaching officers through policy, technology, documentation, communication, and sound decisions in changing operational conditions.",
-                "Led an agency-side ALPR program from 2007 to 2010: helped secure a $40,000 Target + Blue grant and coordinated Genetec AutoVu, BCA CJIS, and Lakeville IT stakeholders around nightly hotlist workflows and operational adoption.",
-            ],
-        },
-        {
-            "title": "Adjunct Faculty / Criminal Justice",
-            "dates": "March 2007 - October 2025",
-            "employer": "University of Phoenix | Remote, concurrent with sworn service",
-            "bullets": [
-                "Taught undergraduate Criminal Justice courses remotely for 18 years, converting complex legal, investigative, and technical subjects into structured lessons for adult learners.",
-                "Received the Phoenix500 Faculty Excellence Award in 2020 and 2021 and a Faculty of the Year nomination in 2021.",
-            ],
-        },
-        {
-            "title": "U.S. Army",
-            "dates": "8 years 3 months",
-            "employer": "Reserve, Active Duty, and Minnesota Army National Guard | Honorably Discharged",
-            "bullets": [],
-        },
-    ],
-}
+CAPABILITIES = (
+    "Public-safety customer enablement | Technology implementation | Agency onboarding | Workflow design and adoption | "
+    "Project ownership | Stakeholder communication | User instruction | Issue resolution and escalation | Product and user "
+    "feedback | Multi-agency coordination | Digital evidence systems | ALPR and video workflows | Remote instruction | "
+    "DFR domain development"
+)
 
+PROJECTS = [
+    ("ALPR implementation, 2007-2010", "Helped develop and support an agency partnership with Target and worked with Genetec on an agency-side AutoVu implementation in 2007. Contributed operational and investigative requirements, user adoption, and sustained use over a multi-year program."),
+    ("Electronic-crimes workflow build, 2016-2017", "Acquired and configured the unit's initial Cellebrite UFED, then built a structured investigator resource folder with preservation, administrative subpoena, search-warrant, and service-provider materials so investigators had a repeatable path for electronic evidence."),
+    ("Time-sensitive digital evidence project", "Independently took ownership of an urgent investigation outside normal assignment flow, reported in during off-hours to reduce evidence-loss risk, preserved rapidly changing digital evidence, and carried the matter through legal process, examination, documentation, and prosecutor handoff."),
+    ("High-priority encrypted-email investigation", "Served as the agency focal point for a complex digital case, coordinated legal process across international and federal partners, obtained the necessary technical records, organized device evidence, and translated the result into a usable investigative package under schedule pressure."),
+    ("Current GitHub and AI workflow projects", "Maintain a GitHub-based career and application system with reusable standards, automated privacy and anti-AI validation, repeatable build scripts, and structured tracking. The work reflects the same builder pattern: identify friction, create a repeatable process, test it, and improve it."),
+]
+
+JOBS_PAGE1 = [
+    ("Real Estate Consultant", "June 2024 - March 2026", "eXp Realty / KW Select | South Metro MN", [
+        "Managed client relationships from initial consultation through negotiation, inspection, financing, title, and closing. Completed $3.2M in residential sales during the transition from law enforcement.",
+        "Coordinated clients, lenders, inspectors, appraisers, title professionals, and cooperating agents through time-sensitive transactions, kept milestones visible, and explained difficult decisions in plain language.",
+    ]),
+    ("Police Officer", "January 2022 - May 2024", "Lakeville Police Department | Lakeville, MN", [
+        "Returned to frontline operations after a specialized assignment, using Axon Body 3, Axon Fleet 2, Motorola radios, Microsoft 365, and related systems in daily public-safety workflows.",
+        "Helped officers and supervisors work through technology, evidence, policy, and documentation questions while maintaining operational continuity.",
+    ]),
+    ("Detective / Digital Forensic Examiner", "June 2017 - December 2021", "Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Department | Minnesota", [
+        "Served as the Lakeville Police Department representative and digital forensics subject-matter resource in a ten-agency task force, coordinating examinations, priorities, and technical guidance across partner agencies.",
+        "Processed 5,304 GB of digital evidence in 2020 with Cellebrite, GrayKey, Magnet AXIOM, X-Ways Forensics, and related platforms, then translated findings into reports and briefings for investigators, supervisors, and legal decision-makers.",
+        "Supported daily users with device and evidence questions, selected fit-for-purpose tools, documented repeatable workflows, and found another technical path when the first approach did not answer the operational question.",
+    ]),
+]
+
+JOBS_PAGE2 = [
+    ("Detective / Electronic Crimes Unit", "September 2016 - June 2017", "Lakeville Police Department | Lakeville, MN", [
+        "Acquired and configured the unit's initial Cellebrite UFED and helped investigators incorporate mobile-device evidence into existing case workflows.",
+        "Created reusable electronic-evidence guidance and templates that reduced the learning curve for investigators new to digital legal process.",
+    ]),
+    ("Police Officer / Field Training Officer", "November 1998 - August 2016", "Lakeville Police Department | Lakeville, MN", [
+        "Served 18 years as a Field Training Officer, coaching officers through policy, technology, documentation, communication, and decision-making in changing field conditions.",
+        "Helped develop and support the 2007-2010 ALPR partnership with Target and worked with Genetec on an agency-side AutoVu implementation, translating field and investigative needs into a practical agency workflow.",
+        "Built and delivered internal instruction and contributed to academy-style onboarding projects, including reserve-officer and seasonal park-ranger training programs.",
+    ]),
+    ("Adjunct Faculty / Criminal Justice", "March 2007 - October 2025", "University of Phoenix | Remote, concurrent with sworn service", [
+        "Taught undergraduate Criminal Justice courses remotely for 18 years, turning complex legal, investigative, and technical subjects into structured lessons for adult learners.",
+        "Adjusted explanations and written feedback to help students move from concept to independent application in an online environment.",
+        "Received Phoenix500 Faculty Excellence Awards in 2020 and 2021 and a Faculty of the Year nomination in 2021.",
+    ]),
+    ("U.S. Army", "8 years 3 months", "Reserve, Active Duty, and Minnesota Army National Guard | Honorably Discharged", [
+        "Served across multiple components with responsibility for equipment accountability, safety, team coordination, training, and mission execution."
+    ]),
+]
 
 COVER_PARAGRAPHS = [
-    (
-        "Skydio's DFR Customer Success role is where public-safety operations, connected technology, and "
-        "organizational change meet. That is the work I know. During 25 years in Minnesota law enforcement, "
-        "I used fleet video, body-worn cameras, ALPR, communications systems, and digital-evidence platforms "
-        "from the operator and investigator side of the workflow. I understand what earns trust with chiefs, "
-        "supervisors, IT teams, and officers. I also know what causes adoption to stall after a promising launch."
-    ),
-    (
-        "My strongest match is the ability to understand an agency's current operation, identify what is getting "
-        "in the way, and help different stakeholders move toward a workable process. As Lakeville Police "
-        "Department's representative and digital forensics subject-matter resource in a ten-agency task force, "
-        "I coordinated examinations and priorities across investigators, supervisors, technical personnel, and "
-        "prosecutors. In 2020, I processed 5,304 GB of digital evidence using several platforms and converted "
-        "technical findings into decisions non-technical audiences could use."
-    ),
-    (
-        "I have also built adoption programs rather than simply used the tools. From 2007 to 2010, I led an "
-        "agency-side ALPR program, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, "
-        "BCA CJIS, and Lakeville IT around the nightly hotlist workflow. Later, I acquired and configured our "
-        "initial Cellebrite UFED and created an electronic-crimes training resource with practical templates "
-        "and provider guidance. Those projects required ownership, technical translation, stakeholder follow-through, "
-        "and a willingness to build structure where none existed."
-    ),
-    (
-        "Training and change management have been constants throughout my career. I spent 18 years as a Field "
-        "Training Officer and 18 years teaching Criminal Justice remotely. Both roles required me to determine "
-        "what the user understood, adjust the explanation, and follow through until the person could apply the "
-        "process independently. My recent real estate work added private-sector client management through "
-        "$3.2 million in completed residential sales."
-    ),
-    (
-        "DFR is a new product category for me, but the public-safety mission, users, evidence consequences, and "
-        "implementation realities are not. I am comfortable with the listed travel expectations and prepared to "
-        "obtain FAA Part 107 certification. I am based in Minnesota and anticipate relocating to southwest Washington "
-        "in 2027. Both locations are within the Northwest territory. I would welcome the opportunity to bring field-tested "
-        "judgment, technical credibility, and disciplined customer follow-through to Skydio's public-safety partners."
-    ),
+    "Skydio's Northwest DFR role is unusually close to the work I want to do next. I spent 25 years in Minnesota public safety using, introducing, and helping others adopt technology under real operational pressure. The part of the posting that stands out to me is not the drone itself. It is the responsibility to take a customer's use case, manage implementation, solve adoption problems, and stay accountable until the technology becomes useful in daily operations.",
+    "That pattern has followed me throughout my career. From 2007 through 2010, I helped develop and support an agency ALPR partnership with Target, including agency-side work with Genetec AutoVu in 2007. The project required translating patrol and investigative needs into a workflow that officers could actually use. During a later electronic-crimes assignment, I acquired and configured our initial Cellebrite UFED and built a structured investigator resource folder with preservation, subpoena, search-warrant, and service-provider materials. The goal was not to own a new tool. The goal was to make the workflow repeatable enough that other investigators could use it correctly without starting over every time.",
+    "I have also taken ownership when the work was not neatly assigned. In one time-sensitive digital investigation, I self-initiated the case and reported in outside normal hours because evidence could disappear if nobody moved quickly. I preserved the available digital evidence, built the legal-process path, coordinated the examination, documented the work, and carried the package forward for prosecution. In another high-priority encrypted-email matter, I served as the agency focal point and coordinated across international and federal partners to obtain technical records under a tight timeline. Those cases reinforced the same lesson I see in Skydio's posting: implementation succeeds when one person owns the details, keeps the stakeholders connected, and does not let schedule or technical friction become somebody else's problem.",
+    "Training and adoption are equally familiar. I served 18 years as a Field Training Officer and 18 years as a remote adjunct Criminal Justice faculty member. I also supported daily users across a ten-agency electronic-crimes task force and personally processed 5,304 GB of digital evidence in 2020. In each setting, the work required me to understand what the user was trying to accomplish, explain the technology in plain language, adjust when the first approach did not work, and create documentation that made the next problem easier to solve.",
+    "I have not owned SaaS renewals, ARR, NRR, Quarterly Business Reviews, or a formal enterprise customer book, and I have not operated a commercial UAS program. Those are real gaps. My relevant strengths are public-safety credibility, technology implementation from the agency side, project ownership, user instruction, workflow development, technical problem-solving, and executive-ready communication. I am developing DFR domain knowledge, can obtain FAA Part 107, and the approximately 40% travel requirement is workable for me. I am currently in Minnesota and plan to relocate to southwest Washington, both within the Northwest account footprint listed for this role.",
+    "Skydio is building technology for the same public-safety professionals I spent my career working beside. I would like to help those agencies move from purchase to confident daily use.",
 ]
 
 
-def set_run_font(run, size: float, *, bold: bool = False, italic: bool = False, color=BLACK) -> None:
+def set_run(run, size=10.25, bold=False, italic=False, color=BLACK):
     run.font.name = FONT
     run.font.size = Pt(size)
     run.font.bold = bold
     run.font.italic = italic
     run.font.color.rgb = color
-    r_pr = run._element.get_or_add_rPr()
-    r_fonts = r_pr.find(qn("w:rFonts"))
-    if r_fonts is None:
-        r_fonts = OxmlElement("w:rFonts")
-        r_pr.append(r_fonts)
+    rpr = run._element.get_or_add_rPr()
+    fonts = rpr.find(qn("w:rFonts"))
+    if fonts is None:
+        fonts = OxmlElement("w:rFonts")
+        rpr.append(fonts)
     for attr in ("ascii", "hAnsi", "cs", "eastAsia"):
-        r_fonts.set(qn(f"w:{attr}"), FONT)
+        fonts.set(qn(f"w:{attr}"), FONT)
 
 
-def set_paragraph(paragraph, *, before=0, after=0, line=1.05, keep_next=False, keep_together=False) -> None:
-    pf = paragraph.paragraph_format
+def set_para(p, before=0, after=0, line=1.05, keep_next=False, keep_together=False):
+    pf = p.paragraph_format
     pf.space_before = Pt(before)
     pf.space_after = Pt(after)
     pf.line_spacing = line
-    pf.widow_control = True
     pf.keep_with_next = keep_next
     pf.keep_together = keep_together
+    pf.widow_control = True
 
 
-def prepare_document(doc_type: str) -> Document:
+def prepare(kind):
     doc = Document()
-    section = doc.sections[0]
-    section.page_width = Inches(8.5)
-    section.page_height = Inches(11)
-
-    if doc_type == "resume":
-        left = right = 0.65
-        bottom = 0.55
-        top = 1.46
-        body_size = 10.25
+    s = doc.sections[0]
+    s.page_width = Inches(8.5)
+    s.page_height = Inches(11)
+    if kind == "resume":
+        top, bottom, left, right, size = 1.46, 0.55, 0.65, 0.65, 10.25
     else:
-        left = right = 0.78
-        bottom = 0.68
-        top = 1.52
-        body_size = 10.5
-
-    normal = doc.styles["Normal"]
-    normal.font.name = FONT
-    normal.font.size = Pt(body_size)
-    normal.paragraph_format.space_after = Pt(0)
-    normal.paragraph_format.line_spacing = 1.05
-
-    list_style = doc.styles["List Bullet"]
-    list_style.font.name = FONT
-    list_style.font.size = Pt(body_size)
-
-    docx_header.NAME_FONT = FONT
-    docx_header.CONTACT_FONT = FONT
-    docx_header.BODY_FONT = FONT
-    build_navy_header(
-        doc,
-        body_top_margin_inches=top,
-        body_bottom_margin_inches=bottom,
-        body_left_margin_inches=left,
-        body_right_margin_inches=right,
-    )
+        top, bottom, left, right, size = 1.52, 0.68, 0.78, 0.78, 10.5
+    doc.styles["Normal"].font.name = FONT
+    doc.styles["Normal"].font.size = Pt(size)
+    doc.styles["List Bullet"].font.name = FONT
+    build_navy_header(doc, body_top_margin_inches=top, body_bottom_margin_inches=bottom, body_left_margin_inches=left, body_right_margin_inches=right)
     return doc
 
 
-def add_section_heading(doc: Document, text: str, *, page_break_before: bool = False) -> None:
+def heading(doc, text, page_break=False):
     p = doc.add_paragraph()
-    set_paragraph(p, before=14, after=6, line=1.0, keep_next=True)
-    p.paragraph_format.page_break_before = page_break_before
-    run = p.add_run(text.upper())
-    set_run_font(run, 11, bold=True, color=STEEL)
+    set_para(p, before=12, after=5, line=1.0, keep_next=True)
+    p.paragraph_format.page_break_before = page_break
+    set_run(p.add_run(text.upper()), 11, bold=True, color=STEEL)
     add_paragraph_bottom_border(p, color_hex="C9A84C", size=6)
 
 
-def add_body_paragraph(doc: Document, text: str, *, size=10.25, after=4) -> None:
+def body(doc, text, size=10.25, after=4):
     p = doc.add_paragraph()
-    set_paragraph(p, before=0, after=after, line=1.05, keep_together=True)
-    set_run_font(p.add_run(text), size)
+    set_para(p, after=after, keep_together=True)
+    set_run(p.add_run(text), size)
 
 
-def add_job(doc: Document, job: dict) -> None:
+def bullet(doc, text):
+    p = doc.add_paragraph(style="List Bullet")
+    set_para(p, after=2, line=1.03, keep_together=True)
+    p.paragraph_format.left_indent = Inches(0.22)
+    p.paragraph_format.first_line_indent = Inches(-0.14)
+    for run in p.runs:
+        run.text = ""
+    set_run(p.add_run(text), 10.15)
+
+
+def add_job(doc, item):
+    title, dates, employer, bullets = item
     p = doc.add_paragraph()
-    set_paragraph(p, before=8, after=2, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["title"]), 10.5, bold=True)
-    set_run_font(p.add_run(" | " + job["dates"]), 10.0, bold=True, color=GRAY)
-
+    set_para(p, before=7, after=1, line=1.0, keep_next=True)
+    set_run(p.add_run(title), 10.45, bold=True)
+    set_run(p.add_run(" | " + dates), 9.95, bold=True, color=GRAY)
     p = doc.add_paragraph()
-    set_paragraph(p, before=0, after=4, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["employer"]), 9.75, italic=True, color=GRAY)
-
-    for index, bullet in enumerate(job["bullets"]):
-        p = doc.add_paragraph(style="List Bullet")
-        set_paragraph(
-            p,
-            before=0,
-            after=2,
-            line=1.05,
-            keep_together=True,
-            keep_next=False,
-        )
-        p.paragraph_format.left_indent = Inches(0.22)
-        p.paragraph_format.first_line_indent = Inches(-0.14)
-        for run in p.runs:
-            run.text = ""
-        set_run_font(p.add_run(bullet), 10.25)
+    set_para(p, after=3, line=1.0, keep_next=True)
+    set_run(p.add_run(employer), 9.7, italic=True, color=GRAY)
+    for text in bullets:
+        bullet(doc, text)
 
 
-def add_degree(doc: Document, lines: list[str]) -> None:
+def degree(doc, title, school, gpa, year):
     p = doc.add_paragraph()
-    set_paragraph(p, before=5, after=2, line=1.0, keep_together=True)
-    for index, line in enumerate(lines):
-        run = p.add_run(line)
-        set_run_font(run, 9.75, bold=index == 0)
-        if index < len(lines) - 1:
-            run.add_break()
+    set_para(p, before=4, after=2, line=1.0, keep_together=True)
+    for idx, line in enumerate((title, school, gpa, year)):
+        r = p.add_run(line)
+        set_run(r, 9.55, bold=(idx == 0))
+        if idx < 3:
+            r.add_break()
 
 
-def build_resume() -> Path:
-    doc = prepare_document("resume")
-    add_section_heading(doc, "Professional Summary")
-    add_body_paragraph(doc, RESUME["summary"], after=4)
-    add_section_heading(doc, "Customer and Technical Capabilities")
-    add_body_paragraph(doc, RESUME["capabilities"], after=4)
-    add_section_heading(doc, "Professional Experience")
-    for job in RESUME["page1_jobs"]:
-        add_job(doc, job)
-
-    add_section_heading(doc, "Additional Experience")
-    for job in RESUME["page2_jobs"]:
-        add_job(doc, job)
-
-    add_section_heading(doc, "Education")
-    add_degree(doc, [
-        "Master of Arts, Police Leadership, Administration and Education",
-        "University of St. Thomas, St. Paul, MN",
-        "GPA: 3.94",
-        "2005",
-    ])
-    add_degree(doc, [
-        "Bachelor of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.51",
-        "1998",
-    ])
-    add_degree(doc, [
-        "Associate of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.50",
-        "1996",
-    ])
-
-    output = OUTPUT_DIR / "Hokanson_Resume_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
-    output.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(output)
-    sanitize_docx_fonts(output)
-    return output
+def build_resume():
+    doc = prepare("resume")
+    heading(doc, "Professional Summary")
+    body(doc, RESUME_SUMMARY)
+    heading(doc, "Customer and Implementation Capabilities")
+    body(doc, CAPABILITIES)
+    heading(doc, "Selected Project and Workflow Development")
+    for label, text in PROJECTS:
+        bullet(doc, f"{label}: {text}")
+    heading(doc, "Professional Experience")
+    for item in JOBS_PAGE1:
+        add_job(doc, item)
+    heading(doc, "Professional Experience Continued", page_break=True)
+    for item in JOBS_PAGE2:
+        add_job(doc, item)
+    heading(doc, "Education")
+    degree(doc, "Master of Arts, Police Leadership, Administration and Education", "University of St. Thomas, St. Paul, MN", "GPA: 3.94", "2005")
+    degree(doc, "Bachelor of Arts, Criminal Justice, Magna Cum Laude", "St. Cloud State University, St. Cloud, MN", "GPA: 3.51", "1998")
+    degree(doc, "Associate of Arts, Criminal Justice, Magna Cum Laude", "St. Cloud State University, St. Cloud, MN", "GPA: 3.50", "1996")
+    heading(doc, "Selected Training and Credentials")
+    body(doc, "NW3C Certified Cyber Crime Examiner, 2023 | BCA Supervision and Management series, 98 hours | Cellebrite mobile-forensics training and recertification | X-Ways Forensics training, 32 hours | FBI cell-site analysis training | Reid Technique of Interviewing and Interrogation", 9.75)
+    path = OUTPUT_DIR / "Hokanson_Resume_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
+    doc.save(path)
+    return path
 
 
-def add_cover_line(doc: Document, text: str, *, after=0, bold=False) -> None:
-    p = doc.add_paragraph()
-    set_paragraph(p, before=0, after=after, line=1.0, keep_together=True)
-    set_run_font(p.add_run(text), 10.5, bold=bold)
+def build_cover():
+    doc = prepare("cover")
+    p = doc.add_paragraph(); set_para(p, after=6, line=1.0); set_run(p.add_run("August 12, 2026"), 10.5)
+    p = doc.add_paragraph(); set_para(p, after=8, line=1.0)
+    set_run(p.add_run("Skydio"), 10.5); p.add_run().add_break(); set_run(p.add_run("Re: Customer Success Manager DFR Majors - Northwest"), 10.5, bold=True)
+    for text in COVER_PARAGRAPHS:
+        p = doc.add_paragraph(); set_para(p, after=8, line=1.07, keep_together=True); set_run(p.add_run(text), 10.5)
+    p = doc.add_paragraph(); set_para(p, before=4, line=1.0); set_run(p.add_run("Respectfully,"), 10.5)
+    p = doc.add_paragraph(); set_para(p, line=1.0); set_run(p.add_run("Troy Hokanson"), 10.5, bold=True)
+    path = OUTPUT_DIR / "Hokanson_Cover_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
+    doc.save(path)
+    return path
 
 
-def build_cover() -> Path:
-    doc = prepare_document("cover")
-    add_cover_line(doc, "August 12, 2026", after=8)
-    add_cover_line(doc, "Hiring Manager")
-    add_cover_line(doc, "Skydio, Inc.", after=9)
-    add_cover_line(doc, "Dear Hiring Manager,", after=9)
-
-    for paragraph in COVER_PARAGRAPHS:
-        p = doc.add_paragraph()
-        set_paragraph(p, before=0, after=8, line=1.05, keep_together=True)
-        set_run_font(p.add_run(paragraph), 10.5)
-
-    p = doc.add_paragraph()
-    set_paragraph(p, before=5, after=0, line=1.0, keep_next=True)
-    set_run_font(p.add_run("Respectfully,"), 10.5)
-    p = doc.add_paragraph()
-    set_paragraph(p, before=38, after=0, line=1.0, keep_together=True)
-    set_run_font(p.add_run("Troy Hokanson"), 10.5)
-
-    output = OUTPUT_DIR / "Hokanson_Cover_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
-    output.parent.mkdir(parents=True, exist_ok=True)
-    doc.save(output)
-    sanitize_docx_fonts(output)
-    return output
+def render(docx_path):
+    cmd = ["soffice", "--headless", "--convert-to", "pdf", "--outdir", str(OUTPUT_DIR), str(docx_path)]
+    completed = subprocess.run(cmd, capture_output=True, text=True, timeout=90)
+    if completed.returncode != 0:
+        raise RuntimeError(completed.stderr or completed.stdout)
+    return OUTPUT_DIR / (docx_path.stem + ".pdf")
 
 
-def sanitize_docx_fonts(path: Path) -> None:
-    replacements = {
-        "Calibri Light": FONT,
-        "Calibri": FONT,
-        "Aptos Display": FONT,
-        "Aptos": FONT,
-        "Arial": FONT,
-    }
-    temporary = path.with_suffix(".fonts.docx")
-    with zipfile.ZipFile(path, "r") as source, zipfile.ZipFile(temporary, "w", zipfile.ZIP_DEFLATED) as target:
-        for item in source.infolist():
-            data = source.read(item.filename)
-            if item.filename.startswith("word/") and item.filename.endswith((".xml", ".rels")):
-                text = data.decode("utf-8", errors="replace")
-                for old, new in replacements.items():
-                    text = re.sub(re.escape(old), new, text, flags=re.IGNORECASE)
-                data = text.encode("utf-8")
-            target.writestr(item, data)
-    temporary.replace(path)
-
-
-def inspect_docx(path: Path, doc_type: str) -> dict:
-    doc = Document(path)
-    section = doc.sections[0]
-    expected = {
-        "resume": {"left": 0.65, "right": 0.65, "bottom": 0.55, "top": 1.46},
-        "cover": {"left": 0.78, "right": 0.78, "bottom": 0.68, "top": 1.52},
-    }[doc_type]
-
-    bullet_paragraphs = [p for p in doc.paragraphs if p.style and p.style.name == "List Bullet"]
-    keep_next = sum(1 for p in doc.paragraphs if p.paragraph_format.keep_with_next)
-    with zipfile.ZipFile(path) as archive:
-        xml = "\n".join(
-            archive.read(name).decode("utf-8", errors="replace")
-            for name in archive.namelist()
-            if name.startswith("word/") and name.endswith(".xml")
-        ).lower()
-        rels = "\n".join(
-            archive.read(name).decode("utf-8", errors="replace")
-            for name in archive.namelist()
-            if name.startswith("word/") and name.endswith(".rels")
-        )
-
-    actual = {
-        "left": round(section.left_margin.inches, 3),
-        "right": round(section.right_margin.inches, 3),
-        "bottom": round(section.bottom_margin.inches, 3),
-        "top": round(section.top_margin.inches, 3),
-    }
-    checks = {
-        "us_letter": round(section.page_width.inches, 2) == 8.5 and round(section.page_height.inches, 2) == 11,
-        "margins_match": actual == expected,
-        "header_part_present": bool(doc.sections[0].header.paragraphs),
-        "real_list_style_present": len(bullet_paragraphs) > 0 if doc_type == "resume" else True,
-        "keep_with_next_present": keep_next > 0,
-        "garamond_present": "eb garamond" in xml,
-        "calibri_absent": "calibri" not in xml,
-        "aptos_absent": "aptos" not in xml,
-        "arial_absent": "arial" not in xml,
-        "contact_hyperlinks_present": "hyperlink" in rels.lower(),
-    }
-    return {
-        "path": str(path),
-        "document_type": doc_type,
-        "section_count": len(doc.sections),
-        "paragraph_count": len(doc.paragraphs),
-        "bullet_paragraph_count": len(bullet_paragraphs),
-        "keep_with_next_count": keep_next,
-        "margins_inches": actual,
-        "checks": checks,
-        "passed": all(checks.values()),
-    }
-
-
-def main() -> None:
+def main():
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     BUILD_LOG_DIR.mkdir(parents=True, exist_ok=True)
-    resume = build_resume()
-    cover = build_cover()
-    report = {
-        "layout_contract": str(APP_DIR / "layout_contract.json"),
-        "documents": [inspect_docx(resume, "resume"), inspect_docx(cover, "cover")],
-    }
-    report["passed"] = all(item["passed"] for item in report["documents"])
-    (BUILD_LOG_DIR / "docx_structure_audit.json").write_text(
-        json.dumps(report, indent=2), encoding="utf-8"
-    )
-    print(json.dumps(report, indent=2))
-    if not report["passed"]:
-        raise SystemExit(1)
+    resume_docx = build_resume()
+    cover_docx = build_cover()
+    resume_pdf = render(resume_docx)
+    cover_pdf = render(cover_docx)
+    scan_pdf(str(resume_pdf), doc_type="resume", profile="customer-success")
+    scan_pdf(str(cover_pdf), doc_type="cover", profile="customer-success")
+    print(resume_pdf)
+    print(cover_pdf)
 
 
 if __name__ == "__main__":

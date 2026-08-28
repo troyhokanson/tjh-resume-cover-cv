@@ -1,24 +1,24 @@
-# Fit Assessment
+# Skydio CSM DFR Majors - Northwest Fit Assessment
 
-## Recommendation
+**Fit score: 82/100**
 
-Apply. Estimated fit: 82/100.
+## Positioning
+Troy should be presented as a public-safety technology implementer and workflow builder who can translate agency needs into adoption, training, documentation, and sustained operational use.
 
-## Strongest matches
+## Strongest evidence
+- 2007-2010 Target ALPR project: multi-year technology implementation and adoption.
+- 2016-2017 Cellebrite rollout: acquired/configured hardware/software and built a repeatable legal-process/training workflow.
+- Self-initiated time-sensitive digital case: ownership, preservation, schedule pressure, end-to-end project management.
+- High-priority encrypted-email case: technical problem-solving and cross-functional/international coordination.
+- 18 years FTO + 18 years remote adjunct teaching: onboarding, instruction, feedback, adoption.
+- Ten-agency task force: stakeholder management and technical translation.
+- Current GitHub/AI workflow projects: process design, reusable standards, automation, validation, iteration.
 
-- 25 years of direct public-safety operating credibility with command staff, supervisors, investigators, patrol officers, prosecutors, and partner agencies.
-- Agency-side technology implementation through the 2007-2010 Genetec AutoVu ALPR program, including a $40,000 Target + Blue grant and coordination with BCA CJIS and Lakeville IT.
-- Eighteen years each as a Field Training Officer and remote adjunct faculty member, demonstrating enablement, change support, and independent user development.
-- Ten-agency digital-forensics work requiring technical escalation, competing priorities, documentation, and translation of complex findings.
-- Direct use of Axon Body 3 and Fleet 2, with a grounded understanding of connected public-safety technology and digital-evidence consequences.
-- Minnesota is in the territory now; anticipated southwest Washington relocation would remain in the territory.
+## Real gaps
+- No formal SaaS CSM title or enterprise book.
+- No ARR/NRR, QBR, renewal quota, or expansion ownership.
+- No commercial UAS deployment history.
+- Part 107 not yet held.
 
-## Gaps to handle candidly
-
-- No direct commercial UAS or DFR deployment experience.
-- No verified ownership of SaaS renewals, ARR, NRR, QBRs, or a formal customer portfolio.
-- FAA Part 107 is not yet held; candidate is prepared to obtain it.
-
-## Positioning decision
-
-Lead with adoption, implementation, training, operator trust, and public-safety workflow expertise. Do not claim classic SaaS portfolio ownership or drone expertise. Treat travel as accepted and keep temporary surgical recovery out of the written application.
+## Decision
+Apply. The SLED/public-safety requirement materially improves the fit, and the Northwest territory aligns with the planned relocation. Travel at approximately 40% is at the upper acceptable boundary and should be treated as a real quality-of-life factor rather than minimized.
