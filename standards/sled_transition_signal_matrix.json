@@ -1,0 +1,410 @@
+{
+  "schema_version": "1.0",
+  "last_validated": "2026-08-28",
+  "candidate": "Troy J. Hokanson",
+  "purpose": "Calibrate public-safety vendor role fit using verified transition signals after hard eligibility and requirement matching. These points are evidence-prioritization aids, not interview probabilities.",
+  "method": {
+    "sequence": [
+      "hard_eligibility",
+      "role_requirement_fit",
+      "transition_signal_calibration",
+      "hard_gap_control",
+      "fit_zone_and_recommendation"
+    ],
+    "weight_scale": {
+      "0": "irrelevant",
+      "1": "minor supporting signal",
+      "2": "useful transferable signal",
+      "3": "strong role-relevant signal",
+      "4": "primary evidence for this role family"
+    },
+    "rule": "A transition signal may improve prioritization but may never override a hard requirement or convert transferable experience into direct vendor, SaaS, sales, administration, or implementation experience."
+  },
+  "protected_data_policy": {
+    "never_score": true,
+    "protected_traits": [
+      "disability_status",
+      "race",
+      "ethnicity",
+      "sex",
+      "sexual_orientation",
+      "gender_identity",
+      "religion",
+      "genetic_information"
+    ],
+    "points": 0,
+    "storage_rule": "Do not store self-identification answers in job-fit records, public repositories, application notes, or outcome analytics.",
+    "application_default": "When an optional pre-employment demographic survey offers a decline option and Troy prefers privacy, select the explicit decline or I-do-not-wish-to-answer option. Never state that no disability exists if that would be untrue.",
+    "accommodation_rule": "Request an application or interview accommodation only when needed and disclose the functional accommodation required, not an unnecessary diagnosis or rating.",
+    "exceptions": [
+      "A separately approved and documented federal Schedule A or veterans-preference application path",
+      "A disability-targeted recruiting program Troy affirmatively chooses to use",
+      "A required accommodation for the application or interview process"
+    ]
+  },
+  "candidate_signals": {
+    "former_sworn_public_safety": {
+      "evidence_status": "direct",
+      "verified_evidence": "25 years of sworn Minnesota law-enforcement service",
+      "claim_boundary": "Agency credibility and operational workflow knowledge; not vendor employment or SaaS account ownership."
+    },
+    "detective_investigator": {
+      "evidence_status": "direct",
+      "verified_evidence": "Detective rotations in 2010-2011 and 2016-2021, including electronic-crimes and multi-agency task-force work",
+      "claim_boundary": "Supports investigative discovery, workflow translation, case communication, and stakeholder coordination; not formal consulting tenure."
+    },
+    "crime_scene_unit": {
+      "evidence_status": "direct",
+      "verified_evidence": "Crime Scene Unit on-call member, 2013-2018",
+      "claim_boundary": "Physical evidence collection, scene documentation, and chain of custody; not a full-time crime-lab position."
+    },
+    "digital_forensic_examiner": {
+      "evidence_status": "direct",
+      "verified_evidence": "5.5 years of electronic-crimes and digital-forensic work",
+      "claim_boundary": "Direct examiner and agency-user expertise; not vendor-side product implementation or software engineering."
+    },
+    "adult_instructor_and_fto": {
+      "evidence_status": "direct",
+      "verified_evidence": "Field Training Officer experience and 18 years of concurrent adjunct teaching",
+      "claim_boundary": "Supports training, enablement, adoption, workshops, and technical translation; not an automatic claim of SaaS customer ownership."
+    },
+    "agency_side_technology_project": {
+      "evidence_status": "direct_agency_side",
+      "verified_evidence": "Agency-side Genetec AutoVu ALPR evaluation, acquisition, implementation, workflow, and grant-program involvement",
+      "claim_boundary": "Describe as agency-side project and adoption experience, never vendor-side implementation employment."
+    },
+    "cad_rms_end_user": {
+      "evidence_status": "direct_end_user",
+      "verified_evidence": "Extensive patrol and detective use of TriTech Inform CAD/mapping and CentralSquare Records Enterprise/field-reporting workflows",
+      "claim_boundary": "Do not claim CAD/RMS administration, configuration, interface engineering, or implementation ownership."
+    },
+    "axon_connected_workflow_end_user": {
+      "evidence_status": "direct_end_user",
+      "verified_evidence": "Axon Body 3 and Fleet 3 evidence capture connected to Axon Evidence (Evidence.com) review, management, retrieval, and case use",
+      "claim_boundary": "Do not claim Evidence.com administration, retention-policy configuration, system ownership, or implementation of Axon DFR."
+    },
+    "us_army_veteran": {
+      "evidence_status": "direct",
+      "verified_evidence": "U.S. Army, 8 years 3 months, honorably discharged",
+      "claim_boundary": "Always identify as veteran. Do not use protected-veteran or VEVRAA language without separate verification."
+    },
+    "military_police_95b": {
+      "evidence_status": "direct_service",
+      "verified_evidence": "MN Army National Guard, MOS 95B Military Police, October 1995-October 1998",
+      "claim_boundary": "Supports public-safety mission familiarity and field operations; do not infer civilian investigative credentials or current certification."
+    },
+    "combat_arms_11b_19k": {
+      "evidence_status": "direct_service",
+      "verified_evidence": "Army Reserve 11B Infantry and Active Duty 19K Armor service",
+      "claim_boundary": "Translate only to mission execution, safety, accountability, adaptability, and field operations when the posting values them; no generic technical or sales bonus."
+    },
+    "motor_transport_88m": {
+      "evidence_status": "direct_service",
+      "verified_evidence": "MN Army National Guard, MOS 88M Motor Transport, April 1994-April 1995",
+      "claim_boundary": "Use only for fleet, deployment, logistics, equipment-accountability, or field-operations relevance."
+    }
+  },
+  "role_family_weights": {
+    "implementation_professional_services": {
+      "former_sworn_public_safety": 2,
+      "detective_investigator": 2,
+      "crime_scene_unit": 2,
+      "digital_forensic_examiner": 3,
+      "adult_instructor_and_fto": 3,
+      "agency_side_technology_project": 4,
+      "cad_rms_end_user": 3,
+      "axon_connected_workflow_end_user": 3,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 1,
+      "motor_transport_88m": 1
+    },
+    "customer_success_tam": {
+      "former_sworn_public_safety": 3,
+      "detective_investigator": 2,
+      "crime_scene_unit": 1,
+      "digital_forensic_examiner": 3,
+      "adult_instructor_and_fto": 3,
+      "agency_side_technology_project": 2,
+      "cad_rms_end_user": 2,
+      "axon_connected_workflow_end_user": 3,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 1,
+      "motor_transport_88m": 0
+    },
+    "solutions_pre_sales": {
+      "former_sworn_public_safety": 3,
+      "detective_investigator": 3,
+      "crime_scene_unit": 2,
+      "digital_forensic_examiner": 4,
+      "adult_instructor_and_fto": 3,
+      "agency_side_technology_project": 3,
+      "cad_rms_end_user": 3,
+      "axon_connected_workflow_end_user": 3,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 0,
+      "motor_transport_88m": 0
+    },
+    "training_enablement": {
+      "former_sworn_public_safety": 3,
+      "detective_investigator": 3,
+      "crime_scene_unit": 3,
+      "digital_forensic_examiner": 4,
+      "adult_instructor_and_fto": 4,
+      "agency_side_technology_project": 2,
+      "cad_rms_end_user": 2,
+      "axon_connected_workflow_end_user": 3,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 1,
+      "motor_transport_88m": 0
+    },
+    "forensic_customer_delivery": {
+      "former_sworn_public_safety": 2,
+      "detective_investigator": 4,
+      "crime_scene_unit": 3,
+      "digital_forensic_examiner": 4,
+      "adult_instructor_and_fto": 3,
+      "agency_side_technology_project": 2,
+      "cad_rms_end_user": 0,
+      "axon_connected_workflow_end_user": 2,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 0,
+      "motor_transport_88m": 0
+    },
+    "field_deployment": {
+      "former_sworn_public_safety": 3,
+      "detective_investigator": 1,
+      "crime_scene_unit": 2,
+      "digital_forensic_examiner": 1,
+      "adult_instructor_and_fto": 2,
+      "agency_side_technology_project": 4,
+      "cad_rms_end_user": 2,
+      "axon_connected_workflow_end_user": 2,
+      "military_police_95b": 2,
+      "combat_arms_11b_19k": 2,
+      "motor_transport_88m": 2
+    },
+    "project_program_delivery": {
+      "former_sworn_public_safety": 2,
+      "detective_investigator": 2,
+      "crime_scene_unit": 2,
+      "digital_forensic_examiner": 2,
+      "adult_instructor_and_fto": 3,
+      "agency_side_technology_project": 4,
+      "cad_rms_end_user": 2,
+      "axon_connected_workflow_end_user": 2,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 1,
+      "motor_transport_88m": 1
+    },
+    "sales_account_management": {
+      "former_sworn_public_safety": 3,
+      "detective_investigator": 2,
+      "crime_scene_unit": 1,
+      "digital_forensic_examiner": 2,
+      "adult_instructor_and_fto": 2,
+      "agency_side_technology_project": 2,
+      "cad_rms_end_user": 2,
+      "axon_connected_workflow_end_user": 2,
+      "military_police_95b": 1,
+      "combat_arms_11b_19k": 0,
+      "motor_transport_88m": 0
+    }
+  },
+  "employer_pathway_tiers": {
+    "A": {
+      "points": 3,
+      "definition": "Official public evidence of multiple relevant former-practitioner or veteran transition paths into the target role families."
+    },
+    "B": {
+      "points": 2,
+      "definition": "Official evidence of at least one relevant transition path or a strong veteran/public-safety hiring program, but role-family evidence is narrower."
+    },
+    "C": {
+      "points": 0,
+      "definition": "Candidate product/domain fit only; no verified incumbent transition evidence yet."
+    }
+  },
+  "employer_evidence": [
+    {
+      "employer": "Axon",
+      "tier": "A",
+      "verified_pathways": ["retired officer to professional-services project manager", "former officer to customer success", "veterans to customer success, program management, and logistics"],
+      "priority_role_families": ["implementation_professional_services", "customer_success_tam", "training_enablement", "project_program_delivery"],
+      "source_urls": [
+        "https://www.axon.com/resources/family-first-series-letting-them-in",
+        "https://www.axon.com/blog/women-who-served-women-who-lead",
+        "https://www.axon.com/news/career-advice-from-5-axon-veterans",
+        "https://www.axon.com/blog/how-mission-driven-veterans-came-to-find-a-home-at-axon"
+      ]
+    },
+    {
+      "employer": "Magnet Forensics",
+      "tier": "A",
+      "verified_pathways": ["military and law-enforcement veteran, detective, computer examiner, FTO, and instructor to trainer", "former detectives to training and forensic consulting"],
+      "priority_role_families": ["forensic_customer_delivery", "training_enablement", "customer_success_tam", "solutions_pre_sales"],
+      "source_urls": [
+        "https://www.magnetforensics.com/blog/meet-magnet-forensics-training-team-larry-mcclain/",
+        "https://www.magnetforensics.com/blog/meet-the-magnet-forensics-training-team-david-hammersley/",
+        "https://www.magnetforensics.com/blog/that-one-artifact-mapping-the-where-proving-the-why/"
+      ]
+    },
+    {
+      "employer": "Mark43",
+      "tier": "A",
+      "verified_pathways": ["former officers and dispatchers across customer success, sales, engineering, and product", "retired investigator and system buyer to solutions architecture", "Army veteran to deployments"],
+      "priority_role_families": ["solutions_pre_sales", "implementation_professional_services", "customer_success_tam", "project_program_delivery"],
+      "source_urls": [
+        "https://mark43.com/press/forbes-why-former-first-responders-and-public-safety-officials-make-great-technology-leaders/",
+        "https://mark43.com/resources/blog/three-questions-with-a-former-cop-fred-marziano/",
+        "https://mark43.com/resources/blog/trading-one-uniform-for-the-next-veterans-serving-as-first-responders/"
+      ]
+    },
+    {
+      "employer": "Flock Safety",
+      "tier": "A",
+      "verified_pathways": ["former law-enforcement officer to product implementation, project management, and operations leadership", "implementation specialist to deployment and operations leadership"],
+      "priority_role_families": ["implementation_professional_services", "field_deployment", "project_program_delivery", "customer_success_tam"],
+      "source_urls": [
+        "https://www.flocksafety.com/blog/unlocking-a-career-defining-experience-with-flock-safety"
+      ]
+    },
+    {
+      "employer": "LexisNexis Risk Solutions",
+      "tier": "A",
+      "verified_pathways": ["former sworn and civilian law-enforcement SMEs in public-safety SIU", "detectives and digital-intelligence specialists in investigative consulting"],
+      "priority_role_families": ["forensic_customer_delivery", "training_enablement", "solutions_pre_sales", "customer_success_tam"],
+      "source_urls": [
+        "https://risk.lexisnexis.com/law-enforcement-and-public-safety/public-safety-investigative-services-and-consulting/meet-the-public-safety-special-investigations-unit"
+      ]
+    },
+    {
+      "employer": "SoundThinking",
+      "tier": "A",
+      "verified_pathways": ["former police officer to public-safety software sales leadership", "former campus police chief to customer-success leadership", "former officer to sales-solutions leadership"],
+      "priority_role_families": ["customer_success_tam", "solutions_pre_sales", "training_enablement", "sales_account_management"],
+      "source_urls": [
+        "https://www.soundthinking.com/press-releases/shotspotter-announces-three-new-vice-presidents-with-focus-on-customer-success-and-increased-sales-capacity/",
+        "https://www.soundthinking.com/blog/why-strategic-policing-matters/",
+        "https://go.soundthinking.com/webinar-campus-safety-leaders-during-critical-incident"
+      ]
+    },
+    {
+      "employer": "Cellebrite",
+      "tier": "B",
+      "verified_pathways": ["former detectives and mobile-forensics practitioners to training and forensic engineering"],
+      "priority_role_families": ["forensic_customer_delivery", "training_enablement", "solutions_pre_sales"],
+      "source_urls": [
+        "https://cellebrite.com/en/training/our-trainers/",
+        "https://cellebrite.com/en/blog/fake-or-real-detecting-ai-images-from-a-forensic-lens/"
+      ]
+    },
+    {
+      "employer": "Tyler Technologies",
+      "tier": "B",
+      "verified_pathways": ["official statement that Tyler hires former dispatchers, sworn officers, fire personnel, and other practitioners to help build public-safety software"],
+      "priority_role_families": ["implementation_professional_services", "customer_success_tam", "training_enablement", "solutions_pre_sales"],
+      "source_urls": [
+        "https://www.tylertech.com/resources/blog-articles/three-ways-tyler-honors-empowers-law-enforcement-officers"
+      ]
+    },
+    {
+      "employer": "Versaterm",
+      "tier": "B",
+      "verified_pathways": ["official profiles of employees with former law-enforcement and military careers"],
+      "priority_role_families": ["implementation_professional_services", "customer_success_tam", "training_enablement", "project_program_delivery"],
+      "source_urls": [
+        "https://www.versaterm.com/resource/empowering-the-future-women-in-policing-share-their-journeys/"
+      ]
+    },
+    {
+      "employer": "Motorola Solutions",
+      "tier": "B",
+      "verified_pathways": ["formal military-transition and veteran recruiting evidence; public-safety mission and product alignment"],
+      "priority_role_families": ["implementation_professional_services", "field_deployment", "customer_success_tam", "project_program_delivery"],
+      "source_urls": [
+        "https://www.motorolasolutions.com/en_us/about/careers.html",
+        "https://www.motorolasolutions.com/content/dam/msi/investors/doc_events/2023/05/05_16-23_annual_meeting/msi-2023_proxy_statement.pdf"
+      ]
+    },
+    {
+      "employer": "CentralSquare Technologies",
+      "tier": "C",
+      "verified_pathways": ["candidate CAD/RMS product-family fit only; incumbent transition pathway not yet verified"],
+      "priority_role_families": ["implementation_professional_services", "customer_success_tam", "training_enablement"],
+      "source_urls": []
+    },
+    {
+      "employer": "Genetec",
+      "tier": "C",
+      "verified_pathways": ["candidate AutoVu agency-side implementation and ALPR workflow fit only; incumbent transition pathway not yet verified"],
+      "priority_role_families": ["solutions_pre_sales", "implementation_professional_services", "customer_success_tam"],
+      "source_urls": []
+    },
+    {
+      "employer": "Skydio / BRINC / DroneSense",
+      "tier": "C",
+      "verified_pathways": ["public-safety and DFR mission fit only; do not award pathway points without employer-specific evidence"],
+      "priority_role_families": ["customer_success_tam", "implementation_professional_services", "field_deployment", "training_enablement"],
+      "source_urls": []
+    }
+  ],
+  "caps": {
+    "transition_signal_total": 12,
+    "military_signal_total": 3,
+    "employer_pathway_total": 3,
+    "protected_trait_total": 0
+  },
+  "hard_gap_controls": [
+    {
+      "gap": "location_or_work_authorization",
+      "severity": "hard_block",
+      "rule": "Exclude unless the posting explicitly permits Troy's approved residence and work arrangement."
+    },
+    {
+      "gap": "mandatory_clearance_or_license",
+      "severity": "hard_block",
+      "rule": "Exclude when a currently held credential is mandatory and not verified."
+    },
+    {
+      "gap": "formal_saas_implementation_years",
+      "severity": "major",
+      "rule": "Agency-side rollout and workflow adoption remain transferable; do not relabel them as vendor-side SaaS implementations."
+    },
+    {
+      "gap": "quota_carrying_sales",
+      "severity": "major",
+      "rule": "Public-safety credibility and real-estate sales do not erase a hard quota or enterprise-sales requirement."
+    },
+    {
+      "gap": "deep_sql_api_or_software_engineering",
+      "severity": "major",
+      "rule": "Exclude or mark stretch when hands-on engineering depth is mandatory."
+    },
+    {
+      "gap": "platform_administration_or_configuration",
+      "severity": "major",
+      "rule": "End-user experience is direct user evidence, not administration or configuration."
+    },
+    {
+      "gap": "uas_or_part_107",
+      "severity": "major",
+      "rule": "DFR mission fit does not establish UAS flight experience or Part 107 certification."
+    },
+    {
+      "gap": "people_management",
+      "severity": "moderate",
+      "rule": "Manager titles remain viable only when the work is individual-contributor implementation, program, or customer delivery unless direct reports are not required."
+    },
+    {
+      "gap": "excessive_travel_or_compensation",
+      "severity": "moderate",
+      "rule": "Apply Troy's stated travel and compensation preferences after role fit, and flag exceptions explicitly."
+    }
+  ],
+  "fit_zones": {
+    "direct": "Core requirements are met with direct evidence; transition signals explain domain advantage.",
+    "near": "Core outcome is credible with mostly direct evidence and bounded transferable gaps.",
+    "targeted_stretch": "One material but learnable gap remains; pathway evidence and adjacent experience justify a selective application.",
+    "no_go": "A hard block or multiple major gaps remain; transition identity cannot rescue the fit."
+  }
+}
