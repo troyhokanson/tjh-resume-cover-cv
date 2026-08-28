@@ -8,8 +8,12 @@ For law-enforcement technology, SLED, public-safety SaaS, digital evidence, ALPR
 
 - [`SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md`](./SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md)
 - [`PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md`](./PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md)
+- [`SLED_TRANSITION_HIRING_BENCHMARK.md`](./SLED_TRANSITION_HIRING_BENCHMARK.md)
+- [`APPLICATION_SELF_IDENTIFICATION_STANDARD.md`](./APPLICATION_SELF_IDENTIFICATION_STANDARD.md)
 
-The strategy file defines target companies, role families, remote rules, and travel limits. The technology inventory defines Troy's exact product experience, primary-versus-supplemental workflows, and permitted proficiency language.
+The strategy file defines target companies, role families, remote rules, and travel limits. The technology inventory defines Troy's exact product experience, primary-versus-supplemental workflows, and permitted proficiency language. The transition benchmark calibrates verified former-practitioner and military signals after hard requirements are evaluated. The self-identification standard keeps protected traits out of scoring and application materials.
+
+For these roles, use this order: select the profile; verify location, travel, compensation, and mandatory credentials; classify each material requirement as direct, transferable, unsupported, or unknown; apply the transition matrix; enforce gap controls; assign Direct, Near, Targeted Stretch, or No-Go. Never report the calibration as an interview probability.
 
 If the role is genuinely ambiguous, use **`adaptive`** for the initial scan, document the uncertainty, and choose the primary lane before final delivery. Do not silently force the role into `vendor-solutions`.
 
