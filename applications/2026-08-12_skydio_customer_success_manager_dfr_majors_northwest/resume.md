@@ -10,7 +10,7 @@ Public-safety technology practitioner, instructor, and client-facing professiona
 - Used Axon Body 3, Axon Fleet 2, Motorola radios, Microsoft 365, and related systems in daily patrol operations.
 - Served as Lakeville Police Department representative and digital-forensics subject-matter resource in a ten-agency task force.
 - Processed 5,304 GB of digital evidence in 2020 and translated technical findings for investigators, supervisors, and legal decision-makers.
-- Acquired and configured the Electronic Crimes Unit's initial Cellebrite UFED and built a structured investigator training resource.
+- Used the Electronic Crimes Unit's existing Cellebrite UFED and built a structured investigator training resource.
 - Served 18 years as a Field Training Officer and 18 years as remote adjunct Criminal Justice faculty.
 - Led a 2007-2010 agency ALPR program, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, BCA CJIS, and Lakeville IT.
 

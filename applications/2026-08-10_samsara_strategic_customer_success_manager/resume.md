@@ -27,7 +27,7 @@ Lakeville Police Department and Dakota County Electronic Crimes Task Force | Min
 
 - Assigned to the ten-agency task force from June 2017 through December 2021, coordinating priorities, technical guidance, and examination support across partner agencies.
 - Processed 5,304 GB of digital evidence in 2020 using Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; converted technical findings into reports and briefings for investigators, supervisors, and legal decision-makers.
-- Acquired and configured the unit's initial Cellebrite UFED, built repeatable training resources, and supported daily users through complex device and evidence questions.
+- Used the unit's existing Cellebrite UFED, built repeatable training resources, and supported daily users through complex device and evidence questions.
 
 ## Additional Experience
 

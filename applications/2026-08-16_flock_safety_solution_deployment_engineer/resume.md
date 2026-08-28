@@ -18,7 +18,7 @@ Technical solution design and deployment | Pre-sales and implementation support 
 
 ### Electronic Crimes Unit Capability Build | Lakeville Police Department | 2016-2017
 
-- Acquired and configured the unit's initial Cellebrite UFED capability and built reusable preservation, subpoena, search-warrant, and service-provider guidance for investigators, converting recurring technical questions into documented workflows.
+- Used the unit's existing Cellebrite UFED capability and built reusable preservation, subpoena, search-warrant, and service-provider guidance for investigators, converting recurring technical questions into documented workflows.
 
 ## Professional Experience
 

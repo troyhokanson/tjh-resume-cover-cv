@@ -16,7 +16,7 @@ Compensation: $70,000-$94,000 base plus equity, based on the structured field in
 
 ## Application strategy
 
-This packet leads with verified agency-side public-safety technology implementation rather than generic law-enforcement experience. Primary evidence includes the Genetec AutoVu ALPR implementation, initial Cellebrite UFED capability build, multi-agency digital-forensics troubleshooting and documentation, Field Training Officer experience, remote university instruction, and current Python/GitHub Actions workflow projects.
+This packet leads with verified agency-side public-safety technology implementation rather than generic law-enforcement experience. Primary evidence includes the Genetec AutoVu ALPR implementation, Cellebrite UFED end-user experience, investigator workflow documentation, multi-agency digital-forensics troubleshooting, Field Training Officer experience, remote university instruction, and current Python/GitHub Actions workflow projects.
 
 ## Fit assessment
 

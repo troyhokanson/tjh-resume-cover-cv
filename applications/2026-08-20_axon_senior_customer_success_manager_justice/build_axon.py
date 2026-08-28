@@ -33,25 +33,42 @@ STEEL = RGBColor(0x2D, 0x6A, 0x9F)
 
 RESUME = {
     "summary": (
-        "Public-safety technology practitioner, instructor, and client-facing professional with 25 years "
-        "of sworn service and 18 years of remote college teaching. Helps agencies adopt technical workflows, "
-        "resolve operational barriers, and translate complex systems for executives, technical stakeholders, "
-        "supervisors, and daily users. Direct experience includes fleet video, body-worn cameras, ALPR, mobile "
-        "and computer forensics, and cross-agency digital evidence operations."
+        "Justice-sector and public-safety technology professional with 25 years of sworn service, "
+        "5.5 years in electronic crimes and digital forensics, and 18 years of remote college teaching. "
+        "Worked across law enforcement, prosecutors, courts, technical personnel, and partner agencies to "
+        "manage digital evidence, legal process, case priorities, training, and time-sensitive escalations. "
+        "Direct Axon end-user experience includes Body 3, Fleet 2, and Evidence workflows."
     ),
     "capabilities": (
-        "Customer adoption and enablement | Implementation support | Workflow assessment | Executive and operator communication | "
-        "Stakeholder relationship management | Training and change management | Usage and outcome measurement | "
-        "Issue resolution and escalation | Public-safety operations | Fleet and body-worn video | ALPR | Digital evidence systems"
+        "Justice stakeholder engagement | Discovery and disclosure workflows | Digital evidence management | "
+        "Case and project coordination | Customer adoption and enablement | Success planning and progress tracking | "
+        "Escalation management | Implementation support | Training and presentations | Executive and technical communication | "
+        "Axon Body 3, Fleet 2, and Evidence | Cellebrite, Magnet AXIOM, X-Ways, FTK, and GrayKey"
     ),
+    "training": [
+        "NW3C Certified Cybercrime Investigator (CCCI), No. 4793, January 2023.",
+        "BCA Law Enforcement Supervision & Management Program, 98 hours, including supervision, mentoring and coaching, influence, legal latitude, stress management, and ethics.",
+        "University of Phoenix Certified Advanced Facilitator.",
+        "Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018, 2020.",
+        "BCA Forensic Science Partners, 58 hours, 2013; BCA Certified Crime Scene Technician.",
+        "Crisis Intervention Team (CIT) training, 8 hours, including classroom instruction and scenario-based de-escalation practice; Conflict Management & Mediation Training, 2 hours, 2022; Implicit Bias / Community Diversity, 4 hours, 2022.",
+    ],
     "page1_jobs": [
+        {
+            "title": "Generalist Expert",
+            "dates": "August 2026 - Present",
+            "employer": "Mercor | Remote independent contractor",
+            "bullets": [
+                "Complete paid AI project work involving close reading, source validation, written analysis, and adherence to confidential task requirements.",
+            ],
+        },
         {
             "title": "Real Estate Consultant",
             "dates": "June 2024 - March 2026",
-            "employer": "Residential Real Estate | South Metro Minnesota",
+            "employer": "eXp Realty / KW Select | South Metro Minnesota",
             "bullets": [
                 "Managed client relationships from initial consultation through negotiation, inspection, financing, title, and closing; completed $3.2M in residential sales during the transition from law enforcement.",
-                "Coordinated buyers, sellers, lenders, inspectors, appraisers, title professionals, and cooperating agents to identify barriers, clarify decisions, and keep complex transactions moving.",
+                "Coordinated clients and transaction partners through deadlines, competing priorities, documentation issues, and escalations while keeping each party informed of decisions and next steps.",
             ],
         },
         {
@@ -59,8 +76,8 @@ RESUME = {
             "dates": "January 2022 - May 2024",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Returned to frontline operations after a specialized assignment, using Axon Body 3, Axon Fleet 2, Motorola radios, Microsoft 365, and related systems in daily patrol workflows; brought direct operator perspective on evidence integrity, policy, and adoption.",
-                "Helped officers and supervisors work through policy, evidence, and technology questions while maintaining safety, documentation, and public-service standards.",
+                "Used Axon Body 3, Axon Fleet 2, and Evidence workflows in daily patrol operations and relied on the resulting video and digital records for reports, investigations, disclosure, and courtroom preparation.",
+                "Helped officers and supervisors resolve policy, evidence, documentation, and technology questions in time-sensitive operating conditions.",
             ],
         },
         {
@@ -68,29 +85,29 @@ RESUME = {
             "dates": "June 2017 - December 2021",
             "employer": "Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Department | Minnesota",
             "bullets": [
-                "Served as the Lakeville Police Department representative and digital forensics subject-matter resource in a ten-agency task force, coordinating examinations, priorities, and technical guidance across partner agencies.",
-                "Processed 5,304 GB of digital evidence in 2020 through Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; converted technical findings into reports and briefings for investigators, supervisors, and legal decision-makers.",
-                "Supported daily users through complex device and evidence questions, selected fit-for-purpose tools, documented workflows, and found another technical path when the initial approach did not answer the investigative question.",
-            ],
-        },
-        {
-            "title": "Detective / Electronic Crimes Unit",
-            "dates": "September 2016 - June 2017",
-            "employer": "Lakeville Police Department | Lakeville, Minnesota",
-            "bullets": [
-                "Used the unit's existing Cellebrite UFED and helped investigators integrate mobile-device evidence into existing case workflows.",
-                "Built a structured training resource with templates for preservation requests, administrative subpoenas, and search warrants, plus service-provider reference information that reduced the learning curve for investigators new to electronic-crime work.",
+                "Served as Lakeville's representative and digital-forensics subject-matter resource in a ten-agency task force, coordinating examination priorities, legal-process needs, and technical guidance across investigators, supervisors, prosecutors, and partner agencies.",
+                "Personally processed 5,304 GB of digital evidence in 2020 using Cellebrite, GrayKey, Magnet AXIOM, X-Ways, and related platforms; maintained defensible records and translated findings for charging, discovery, and case decisions.",
             ],
         },
     ],
     "page2_jobs": [
         {
+            "title": "Detective / Electronic Crimes Unit",
+            "dates": "September 2016 - June 2017",
+            "employer": "Lakeville Police Department | Lakeville, Minnesota",
+            "bullets": [
+                "Used the unit's existing Cellebrite UFED in electronic-crimes investigations and helped investigators integrate mobile-device evidence into case and disclosure workflows.",
+                "Built a structured investigator resource with preservation, subpoena, search-warrant, and service-provider templates that reduced the learning curve and created a more consistent legal-process workflow.",
+            ],
+        },
+        {
             "title": "Police Officer / Field Training Officer",
             "dates": "November 1998 - August 2016",
             "employer": "Lakeville Police Department | Lakeville, Minnesota",
             "bullets": [
-                "Served 18 years as a Field Training Officer, coaching officers through policy, technology, documentation, communication, and sound decisions in changing operational conditions.",
-                "Led an agency-side ALPR program from 2007 to 2010: helped secure a $40,000 Target + Blue grant and coordinated Genetec AutoVu, BCA CJIS, and Lakeville IT stakeholders around nightly hotlist workflows and operational adoption.",
+                "Served 19 years as a Field Training Officer, coaching officers through policy, technology, report writing, evidence handling, courtroom preparation, and sound decisions in changing conditions.",
+                "Led an agency-side ALPR program from 2007 to 2010, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, BCA CJIS, city IT, leadership, and daily users around implementation and adoption.",
+                "Selected as one of two officers to launch the 2012 Probation Liaison Officer Program with Dakota County Community Corrections; strengthened communication, supported joint compliance and warrant work, and earned written recognition from department leadership and a county probation officer.",
             ],
         },
         {
@@ -98,8 +115,8 @@ RESUME = {
             "dates": "March 2007 - October 2025",
             "employer": "University of Phoenix | Remote, concurrent with sworn service",
             "bullets": [
-                "Taught undergraduate Criminal Justice courses remotely for 18 years, converting complex legal, investigative, and technical subjects into structured lessons for adult learners.",
-                "Received the Phoenix500 Faculty Excellence Award in 2020 and 2021 and a Faculty of the Year nomination in 2021.",
+                "Taught undergraduate Criminal Justice courses remotely for 18 years, converting legal, investigative, ethical, and technical subjects into structured instruction for adult learners.",
+                "Received Phoenix500 Faculty Excellence recognition in 2020 and 2021 and the John Sperling Distinguished Faculty Award in 2024.",
             ],
         },
         {
@@ -114,41 +131,39 @@ RESUME = {
 
 COVER_PARAGRAPHS = [
     (
-        "Skydio's DFR Customer Success role is where public-safety operations, connected technology, and "
-        "organizational change meet. That is the work I know. During 25 years in Minnesota law enforcement, "
-        "I used fleet video, body-worn cameras, ALPR, communications systems, and digital-evidence platforms "
-        "from the operator and investigator side of the workflow. I understand what earns trust with chiefs, "
-        "supervisors, IT teams, and officers. I also know what causes adoption to stall after a promising launch."
+        "Axon's Justice Senior Customer Success Manager role is a direct match for the work I know from the "
+        "end-user side of the workflow. I used Axon Body 3, Fleet 2, and Evidence as an officer, relied on the "
+        "resulting evidence as an investigator, and understand the policy, activation, disclosure, and courtroom "
+        "consequences when connected evidence systems work well or create friction."
     ),
     (
-        "My strongest match is the ability to understand an agency's current operation, identify what is getting "
-        "in the way, and help different stakeholders move toward a workable process. As Lakeville Police "
-        "Department's representative and digital forensics subject-matter resource in a ten-agency task force, "
-        "I coordinated examinations and priorities across investigators, supervisors, technical personnel, and "
-        "prosecutors. In 2020, I processed 5,304 GB of digital evidence using several platforms and converted "
-        "technical findings into decisions non-technical audiences could use."
+        "My justice-sector experience was built across 25 years in Minnesota law enforcement, including 5.5 years "
+        "in electronic crimes and digital forensics. As Lakeville's representative in a ten-agency task force, I "
+        "coordinated examination priorities and legal-process needs with investigators, supervisors, prosecutors, "
+        "technical personnel, and partner agencies. I personally processed 5,304 GB of digital evidence in 2020 and "
+        "translated technical findings into reports and briefings that supported charging, discovery, and case decisions."
     ),
     (
-        "I have also built adoption programs rather than simply used the tools. From 2007 to 2010, I led an "
-        "agency-side ALPR program, helped secure a $40,000 Target + Blue grant, and coordinated Genetec AutoVu, "
-        "BCA CJIS, and Lakeville IT around the nightly hotlist workflow. Later, I acquired and configured our "
-        "existing Cellebrite UFED and created an electronic-crimes training resource with practical templates "
-        "and provider guidance. Those projects required ownership, technical translation, stakeholder follow-through, "
-        "and a willingness to build structure where none existed."
+        "I also know what it takes to make a technical workflow usable. I used Cellebrite UFED in electronic-crimes "
+        "investigations and built an investigator resource with preservation, subpoena, search-warrant, and provider templates. "
+        "Earlier, I led an agency-side ALPR program that brought Genetec, state CJIS personnel, city IT, department "
+        "leadership, and daily users together around implementation and adoption. Both projects required clear ownership, "
+        "steady follow-through, and practical answers when technical and operational priorities did not line up cleanly. "
+        "That experience is backed by 98 hours in the BCA Law Enforcement Supervision & Management Program and the "
+        "NW3C Certified Cybercrime Investigator credential."
     ),
     (
-        "Training and change management have been constants throughout my career. I spent 18 years as a Field "
-        "Training Officer and 18 years teaching Criminal Justice remotely. Both roles required me to determine "
-        "what the user understood, adjust the explanation, and follow through until the person could apply the "
-        "process independently. My recent real estate work added private-sector client management through "
-        "$3.2 million in completed residential sales."
+        "I have not worked inside a prosecutor or public defender office, and I would not represent my background that "
+        "way. I was, however, selected as one of two officers to launch a Probation Liaison Officer Program with Dakota "
+        "County Community Corrections. Written recognition from both department leadership and a county probation officer "
+        "confirms that the work improved communication and operational follow-through. In the county task-force setting, "
+        "routine access to County Attorney personnel made prosecutor coordination part of the daily case workflow."
     ),
     (
-        "DFR is a new product category for me, but the public-safety mission, users, evidence consequences, and "
-        "implementation realities are not. I am comfortable with the listed travel expectations and prepared to "
-        "obtain FAA Part 107 certification. I am based in Minnesota and anticipate relocating to southwest Washington "
-        "in 2027. Both locations are within the Northwest territory. I would welcome the opportunity to bring field-tested "
-        "judgment, technical credibility, and disciplined customer follow-through to Skydio's public-safety partners."
+        "I currently live in Minnesota and plan to relocate to southwest Washington in 2027. I can work West Coast hours "
+        "immediately and am comfortable with the role's 30-35 percent travel expectation. Axon Justice would let me apply "
+        "field-tested evidence judgment, product familiarity, and disciplined customer follow-through to the prosecutors "
+        "and public defenders responsible for moving cases fairly and on time."
     ),
 ]
 
@@ -208,6 +223,13 @@ def prepare_document(doc_type: str) -> Document:
     docx_header.NAME_FONT = FONT
     docx_header.CONTACT_FONT = FONT
     docx_header.BODY_FONT = FONT
+    # Locked application header: phone, canonical email, LinkedIn, and portfolio.
+    # Location remains excluded from the contact row.
+    docx_header.CONTACT_PARTS = [
+        item
+        for item in docx_header.CONTACT_PARTS
+        if item[0] != docx_header.TROY_LOCATION
+    ]
     build_navy_header(
         doc,
         body_top_margin_inches=top,
@@ -233,23 +255,23 @@ def add_body_paragraph(doc: Document, text: str, *, size=10.25, after=4) -> None
     set_run_font(p.add_run(text), size)
 
 
-def add_job(doc: Document, job: dict) -> None:
+def add_job(doc: Document, job: dict, *, compact: bool = False) -> None:
     p = doc.add_paragraph()
-    set_paragraph(p, before=8, after=2, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["title"]), 10.5, bold=True)
-    set_run_font(p.add_run(" | " + job["dates"]), 10.0, bold=True, color=GRAY)
+    set_paragraph(p, before=6 if compact else 8, after=2, line=1.0, keep_next=True, keep_together=True)
+    set_run_font(p.add_run(job["title"]), 10.25 if compact else 10.5, bold=True)
+    set_run_font(p.add_run(" | " + job["dates"]), 9.75 if compact else 10.0, bold=True, color=GRAY)
 
     p = doc.add_paragraph()
-    set_paragraph(p, before=0, after=4, line=1.0, keep_next=True, keep_together=True)
-    set_run_font(p.add_run(job["employer"]), 9.75, italic=True, color=GRAY)
+    set_paragraph(p, before=0, after=3 if compact else 4, line=1.0, keep_next=True, keep_together=True)
+    set_run_font(p.add_run(job["employer"]), 9.5 if compact else 9.75, italic=True, color=GRAY)
 
     for index, bullet in enumerate(job["bullets"]):
         p = doc.add_paragraph(style="List Bullet")
         set_paragraph(
             p,
             before=0,
-            after=2,
-            line=1.05,
+            after=1 if compact else 2,
+            line=1.0 if compact else 1.05,
             keep_together=True,
             keep_next=False,
         )
@@ -257,17 +279,25 @@ def add_job(doc: Document, job: dict) -> None:
         p.paragraph_format.first_line_indent = Inches(-0.14)
         for run in p.runs:
             run.text = ""
-        set_run_font(p.add_run(bullet), 10.25)
+        set_run_font(p.add_run(bullet), 9.9 if compact else 10.25)
 
 
 def add_degree(doc: Document, lines: list[str]) -> None:
     p = doc.add_paragraph()
-    set_paragraph(p, before=5, after=2, line=1.0, keep_together=True)
-    for index, line in enumerate(lines):
-        run = p.add_run(line)
-        set_run_font(run, 9.75, bold=index == 0)
-        if index < len(lines) - 1:
-            run.add_break()
+    set_paragraph(p, before=3, after=1, line=1.0, keep_together=True)
+    set_run_font(p.add_run(lines[0]), 9.35, bold=True)
+    if len(lines) > 1:
+        set_run_font(p.add_run(" | " + lines[1]), 9.35)
+
+
+def add_training_item(doc: Document, text: str) -> None:
+    p = doc.add_paragraph(style="List Bullet")
+    set_paragraph(p, before=0, after=1, line=1.0, keep_together=True)
+    p.paragraph_format.left_indent = Inches(0.22)
+    p.paragraph_format.first_line_indent = Inches(-0.14)
+    for run in p.runs:
+        run.text = ""
+    set_run_font(p.add_run(text), 9.5)
 
 
 def build_resume() -> Path:
@@ -280,31 +310,29 @@ def build_resume() -> Path:
     for job in RESUME["page1_jobs"]:
         add_job(doc, job)
 
-    add_section_heading(doc, "Additional Experience")
+    add_section_heading(doc, "Additional Experience", page_break_before=True)
     for job in RESUME["page2_jobs"]:
-        add_job(doc, job)
+        add_job(doc, job, compact=True)
+
+    add_section_heading(doc, "Training and Certifications")
+    for item in RESUME["training"]:
+        add_training_item(doc, item)
 
     add_section_heading(doc, "Education")
     add_degree(doc, [
         "Master of Arts, Police Leadership, Administration and Education",
-        "University of St. Thomas, St. Paul, MN",
-        "GPA: 3.94",
-        "2005",
+        "University of St. Thomas, St. Paul, MN | GPA: 3.94 | 2005",
     ])
     add_degree(doc, [
         "Bachelor of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.51",
-        "1998",
+        "St. Cloud State University, St. Cloud, MN | GPA: 3.51 | 1998",
     ])
     add_degree(doc, [
         "Associate of Arts, Criminal Justice, Magna Cum Laude",
-        "St. Cloud State University, St. Cloud, MN",
-        "GPA: 3.50",
-        "1996",
+        "St. Cloud State University, St. Cloud, MN | GPA: 3.50 | 1996",
     ])
 
-    output = OUTPUT_DIR / "Hokanson_Resume_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
+    output = OUTPUT_DIR / "Hokanson_Resume_Axon_Sr_Customer_Success_Manager_Justice.docx"
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)
     sanitize_docx_fonts(output)
@@ -319,9 +347,9 @@ def add_cover_line(doc: Document, text: str, *, after=0, bold=False) -> None:
 
 def build_cover() -> Path:
     doc = prepare_document("cover")
-    add_cover_line(doc, "August 12, 2026", after=8)
+    add_cover_line(doc, "August 20, 2026", after=8)
     add_cover_line(doc, "Hiring Manager")
-    add_cover_line(doc, "Skydio, Inc.", after=9)
+    add_cover_line(doc, "Axon Enterprise, Inc.", after=9)
     add_cover_line(doc, "Dear Hiring Manager,", after=9)
 
     for paragraph in COVER_PARAGRAPHS:
@@ -336,7 +364,7 @@ def build_cover() -> Path:
     set_paragraph(p, before=38, after=0, line=1.0, keep_together=True)
     set_run_font(p.add_run("Troy Hokanson"), 10.5)
 
-    output = OUTPUT_DIR / "Hokanson_Cover_Skydio_Customer_Success_Manager_DFR_Northwest.docx"
+    output = OUTPUT_DIR / "Hokanson_Cover_Axon_Sr_Customer_Success_Manager_Justice.docx"
     output.parent.mkdir(parents=True, exist_ok=True)
     doc.save(output)
     sanitize_docx_fonts(output)

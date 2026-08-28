@@ -1,0 +1,38 @@
+{
+  "candidate": "Troy Hokanson",
+  "employer": "Axon Enterprise, Inc.",
+  "role": "Sr Customer Success Manager - Justice",
+  "requisition": "7871599003",
+  "official_url": "https://job-boards.greenhouse.io/axon/jobs/7871599003",
+  "verified_live_date": "2026-08-20",
+  "official_description_archive": "Complete official posting text supplied by Troy on 2026-08-20 and preserved in job_description.md",
+  "fit_score": 85,
+  "priority": "Tier 1",
+  "primary_lane": "customer-success",
+  "secondary_lane": "vendor-solutions",
+  "validation": {
+    "resume": "passed",
+    "cover_letter": "passed",
+    "visual_inspection": "passed",
+    "truth_safe_ats_review": "passed"
+  },
+  "google_drive_folder_name": "2026-08-20 Axon Sr Customer Success Manager Justice",
+  "notion_record_title": "Sr Customer Success Manager - Justice",
+  "github_branch": "agent/axon-justice-csm-application",
+  "github_pull_request": "https://github.com/troyhokanson/tjh-resume-cover-cv/pull/39",
+  "portfolio_link_included": true,
+  "truth_correction": "A prior detective began the ECU Cellebrite program and acquired the initial UFED before Troy's assignment; Troy is credited only with verified end-user use and investigator-resource development.",
+  "selected_training": [
+    "NW3C Certified Cybercrime Investigator (CCCI), No. 4793, January 2023",
+    "BCA Law Enforcement Supervision & Management Program, 98 hours",
+    "University of Phoenix Certified Advanced Facilitator",
+    "Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), recertified through 2020",
+    "BCA Forensic Science Partners, 58 hours, and BCA Certified Crime Scene Technician",
+    "Crisis Intervention Team (CIT) training, 8 hours, with classroom and scenario-based de-escalation practice",
+    "Conflict Management & Mediation and Implicit Bias / Community Diversity training, 2022"
+  ],
+  "submission_status": "submitted",
+  "submission_date": "2026-08-20",
+  "submission_confirmation_source": "Troy confirmed directly in conversation",
+  "submission_confirmation_number": null
+}

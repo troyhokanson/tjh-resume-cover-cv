@@ -26,7 +26,7 @@ Dakota County Electronic Crimes Task Force (DCECTF), assigned from Lakeville Pol
 
 ### Detective / Electronic Crimes Unit (ECU)
 Lakeville Police Department | September 2016 to June 2017
-- Built investigator enablement resources for electronic-crime workflows, acquired and configured the unit's initial Cellebrite UFED, and served as a bridge between Lakeville investigators and the regional electronic-crimes task force.
+- Built investigator enablement resources for electronic-crime workflows, used the unit's existing Cellebrite UFED, and served as a bridge between Lakeville investigators and the regional electronic-crimes task force.
 
 ### Police Officer / Field Training Officer / Investigator
 Lakeville Police Department | November 1998 to May 2024

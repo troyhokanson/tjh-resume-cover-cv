@@ -59,7 +59,7 @@ Secondary lane: Public Safety Implementation / Professional Services.
 Strongest verified evidence:
 - Genetec AutoVu ALPR implementation with a $40,000 Target + Blue grant.
 - Coordination with Genetec, BCA CJIS, municipal IT, funding stakeholders, and field users.
-- Initial Cellebrite UFED acquisition/configuration and investigator workflow documentation.
+- Cellebrite UFED end-user experience and investigator workflow documentation.
 - Ten-agency digital-forensics work with 5,304 GB personally processed in 2020.
 - 19 years as a Field Training Officer and 18 years as remote adjunct faculty.
 - Phoenix500 Faculty Excellence Awards, 2020 and 2021.

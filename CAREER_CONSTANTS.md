@@ -130,12 +130,15 @@ Location:   Lakeville, MN
 Dates:      September 2016 - June 2017
 Notes:      The ECU was established by a prior detective before Troy's assignment.
             Troy did NOT establish the unit -- do not use "established ECU" language.
+            The prior detective also began the Cellebrite program and acquired the
+            unit's initial Cellebrite UFED before Troy's assignment. Troy did NOT
+            acquire or configure the unit's initial UFED. Never make that claim.
             Troy's primary infrastructure contribution: developed the unit's investigator
             training folder -- a structured resource package containing templates for
             administrative subpoenas, preservation requests, and search warrants, coupled
             with ISP and ESP reference data to reduce the learning curve for investigators
             new to electronic crimes work.
-            Acquired and configured initial Cellebrite UFED.
+            Used the existing Cellebrite UFED in electronic-crimes investigations.
             Served as bridge between patrol/investigations and the DCECTF task force.
             DO NOT combine with DCECTF dates above into a single block.
             DO NOT credit Troy with founding or establishing the ECU.
@@ -254,8 +257,10 @@ ZetX (TRAXi / Traxx)
 
 Cellebrite UFED
   Category:   Mobile device forensics
-  Usage:      Acquired and configured initial unit during ECU assignment (2016).
-              Used for mobile device extraction and analysis throughout ECU/DCECTF tenure.
+  Usage:      Used for mobile device extraction and analysis throughout ECU/DCECTF tenure.
+              The initial unit was acquired and the program was begun by a prior
+              detective before Troy's assignment. Do not credit Troy with acquisition,
+              initial configuration, or creation of the Cellebrite program.
   Display:    "Cellebrite UFED" (full form); "Cellebrite" (abbreviated) -- both acceptable.
 
 Magnet AXIOM
@@ -709,8 +714,10 @@ script, not this file.
   search warrants, coupled with ISP/ESP reference data to reduce the learning curve
   for investigators new to electronic crimes work.
   Added hard enforcement note: DO NOT credit Troy with founding or establishing the ECU.
-  Updated Cellebrite UFED entry in CONFIRMED tools to reflect "acquired and configured
-  initial unit during ECU assignment" (not "during ECU establishment").
+  Updated Cellebrite UFED entry in CONFIRMED tools to reflect the information then available.
+- 2026-08-20: CRITICAL CORRECTION -- a prior detective began the ECU Cellebrite program
+  and acquired the initial UFED before Troy's assignment. Removed all authorization to
+  claim Troy acquired, configured, or introduced the unit's initial UFED.
 - 2026-06-14 (commit 6): CRITICAL CORRECTION -- BEC case jurisdiction and sentence.
   The BEC / Shell Companies case was prosecuted by Ramsey County.
   It is NOT a federal case and did NOT result in a federal sentence.
