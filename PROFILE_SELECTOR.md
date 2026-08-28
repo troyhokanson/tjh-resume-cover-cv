@@ -99,7 +99,7 @@ If the JD is heavy on:
 - **customer adoption, onboarding, account health, customer outcomes, enablement, retention, relationship plan** -> `customer-success`
 - **technical account, escalation, implementation support, integration, troubleshooting, service delivery, technical enablement** -> `technical-account-management`
 - **public safety, SLED, law enforcement, CJIS, ALPR, body-worn camera, fleet video, digital evidence, RTCC, CAD, RMS, dispatch, DFR, UAS, customer agency, command staff, patrol workflow** -> strong `vendor-solutions` signal when paired with customer-facing duties
-- **Axon Body 3, Axon Fleet 2, TASER X26, Motorola mobile radio, portable radio, mission-critical communications, Whelen, emergency vehicle equipment** -> `vendor-solutions` for training, customer success, implementation, solutions, field applications, or agency-advisory duties
+- **Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com), TASER X26, Motorola mobile radio, portable radio, mission-critical communications, Whelen, emergency vehicle equipment** -> `vendor-solutions` for training, customer success, implementation, solutions, field applications, or agency-advisory duties
 - **Accurint, Accurint One, Accurint Virtual Crime Center, Accurint TraX, ZetX, geolocation, cellular records, Google Earth, investigative trainer** -> `vendor-solutions` for training, customer, solutions, product, account, and service-delivery duties; `analyst-intelligence` for analyst-only duties
 - **Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, BlackLight, MacQuisition, FTK, X-Ways, TALINO, RECON, Tableau write blocker, mobile forensics, forensic examiner** -> `dfir-cyber` when examination is the primary output; `technical-account-management` when technical customer ownership is primary; `vendor-solutions` when demos or pre-sales are primary
 - **recorded statement, EUO, claim file, indicator review, NICB, restitution, charged out, plea, victim, premium** -> `siu-fraud`
@@ -150,7 +150,7 @@ If the profile selection produces fewer than three usable certs or documented ex
 
 Profile-to-cert and experience coverage rough floor:
 
-- `vendor-solutions` -> at least three of: Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, FTK, X-Ways, TALINO, Tableau write blockers, LexisNexis Accurint, ZetX / Accurint TraX, cell-site analysis, Google Earth, Axon Body 3, Axon Fleet 2, Motorola radios, Genetec AutoVu agency-side project, NW3C CCCI, adjunct teaching, FTO, reserve academy development, BCA Law Enforcement Supervision & Management.
+- `vendor-solutions` -> at least three of: Cellebrite Touch 2, UFED 4PC, Physical Analyzer, GrayKey, Magnet AXIOM, FTK, X-Ways, TALINO, Tableau write blockers, LexisNexis Accurint, ZetX / Accurint TraX, cell-site analysis, Google Earth, Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com), Motorola radios, Genetec AutoVu agency-side project, NW3C CCCI, adjunct teaching, FTO, reserve academy development, BCA Law Enforcement Supervision & Management.
 - `siu-fraud` -> at least three of: NW3C CCCI, Reid Technique, Financial Crimes Investigation, Show Me the Money / TCORCA Forensic Accounting, Business Email Compromise case, CFE in progress.
 - `analyst-intelligence` -> at least three of: NW3C CCCI, OSINT training, Accurint, ZetX / Accurint TraX, cell-site / historical cellular analysis, investigative writing / report writing training, Master's in Police Leadership, adjunct teaching as writing-for-audiences proof.
 - `corporate-security-investigations` -> at least three of: Reid Technique, search warrant training, threat / crisis response training, workplace violence / active shooter response, Cellebrite / FTK / X-Ways, NW3C cybercrime, forensic accounting, BCA supervision and management.
@@ -199,7 +199,7 @@ evidence_pack:
 - **Cellebrite role** -> lead with Touch 2, UFED 4PC, Physical Analyzer, task-force workflow, warrants, reporting, and courtroom use.
 - **Magnet Forensics role** -> lead with GrayKey in the primary mobile workflow and AXIOM as a targeted supplemental platform when app artifacts or presentation benefited from another analytical path.
 - **Genetec AutoVu role** -> lead with agency-side AutoVu ALPR project involvement in 2007; do not imply current certification or system-administrator experience.
-- **Axon role** -> lead with Body 3, Fleet 2, TASER X26, patrol, evidence, investigations, and training; do not imply personal operation or implementation of newer Axon DFR systems.
+- **Axon role** -> lead with Body 3, Fleet 3, Axon Evidence (Evidence.com), TASER X26, patrol, evidence, investigations, and training; frame these as direct operator/end-user and investigative-workflow experience, and do not imply Evidence.com administration or personal operation or implementation of newer Axon DFR systems.
 - **Geolocation Investigations Analyst at LexisNexis Risk Solutions** -> `analyst-intelligence` when case analysis is primary; use `vendor-solutions` if the role primarily trains or supports customers.
 - **DFR role requiring Part 107 within a stated onboarding period** -> potentially viable; state willingness to earn it. Do not claim certification before completion.
 - **DFR role requiring extensive logged flight time or advanced aviation credentials** -> likely gap; score cautiously.

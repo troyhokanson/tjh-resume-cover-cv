@@ -19,7 +19,7 @@ Left column: domain label (bold). Right column: comma-separated skills string.
 | **Interviewing and Interrogation** | Reid Technique, cognitive interviewing, recorded statement management, witness coordination, victim-sensitive interviewing |
 | **Intelligence and Analysis** | Criminal intelligence analysis, link analysis, pattern recognition, threat assessment, i2 Analyst Notebook, geospatial mapping, OSINT tools |
 | **Legal and Compliance** | Search warrant preparation, criminal case referral, subpoena management, chain of custody, court testimony, expert witness, Minnesota Rules of Criminal Procedure |
-| **Technology and Platforms** | Axon Evidence, Microsoft 365, SharePoint, case management systems, SQL basics, Python basics, AI-assisted research tools |
+| **Technology and Platforms** | Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com), Microsoft 365, SharePoint, case management systems, SQL basics, Python basics, AI-assisted research tools |
 
 ---
 
@@ -41,7 +41,7 @@ Left column: domain label (bold). Right column: comma-separated skills string.
 When generating a plain-text ATS version, render skills as a flat pipe-delimited list:
 
 ```
-Insurance Fraud Detection | SIU Case Management | Financial Crime Analysis | Workers Compensation Fraud | Healthcare Fraud | Identity Theft Investigation | Asset Tracing | Cellebrite UFED (CCLO/CCPA) | Mobile Device Extraction | Cell-Site Analysis | Location Data Interpretation | Social Media OSINT | Dark Web Investigation | Reid Technique | Cognitive Interviewing | Recorded Statement Management | Criminal Intelligence Analysis | Link Analysis | i2 Analyst Notebook | Geospatial Mapping | Search Warrant Preparation | Criminal Case Referral | Court Testimony | Expert Witness | Axon Evidence | Microsoft 365 | SharePoint | AI-Assisted Research Tools
+Insurance Fraud Detection | SIU Case Management | Financial Crime Analysis | Workers Compensation Fraud | Healthcare Fraud | Identity Theft Investigation | Asset Tracing | Cellebrite UFED (CCLO/CCPA) | Mobile Device Extraction | Cell-Site Analysis | Location Data Interpretation | Social Media OSINT | Dark Web Investigation | Reid Technique | Cognitive Interviewing | Recorded Statement Management | Criminal Intelligence Analysis | Link Analysis | i2 Analyst Notebook | Geospatial Mapping | Search Warrant Preparation | Criminal Case Referral | Court Testimony | Expert Witness | Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com) | Microsoft 365 | SharePoint | AI-Assisted Research Tools
 ```
 
 ---

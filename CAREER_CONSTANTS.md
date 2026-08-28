@@ -331,6 +331,31 @@ osTriage
   Display:    "osTriage" -- correct product spelling (lowercase o, capital T).
               Do NOT spell as "OsTriage" or "ostriage."
 
+Axon Body 3
+  Category:   Body-worn camera / digital-evidence capture
+  Usage:      Direct operational end-user use in patrol work as part of the connected
+              Axon capture-and-evidence workflow.
+  Display:    "Axon Body 3" -- use the exact product name.
+  Boundary:   Do not claim device administration, implementation ownership, or configuration.
+
+Axon Fleet 3
+  Category:   In-car / squad-camera video and digital-evidence capture
+  Usage:      Direct operational end-user use in patrol work as part of the connected
+              Axon capture-and-evidence workflow.
+  Display:    "Axon Fleet 3" -- use the exact product name; "squad camera" is acceptable
+              operational language when the model is not needed.
+  Correction: Fleet 3 controls. Do not list Fleet 2 as Troy's platform.
+
+Axon Evidence (Evidence.com)
+  Category:   Digital evidence management
+  Usage:      Direct operational end-user use across patrol and investigative workflows
+              for review, management, retrieval, and case-related evidentiary use of
+              recordings captured by Axon Body 3 and Axon Fleet 3.
+  Display:    "Axon Evidence (Evidence.com)" on first reference; "Axon Evidence" or
+              "Evidence.com" afterward when context is clear.
+  Boundary:   Do not claim system administration, retention-policy configuration,
+              technical implementation ownership, or system ownership.
+
 Microsoft Office 365 (Word, Excel, Outlook, Teams)
   Category:   Productivity / documentation
   Usage:      Standard proficiency; used throughout career for reports, data tracking,
@@ -591,6 +616,9 @@ relevance, and the link to the underlying verified experience.
 | RECON Imager (Sumuri) | Mac forensic imaging | ECU / DCECTF |
 | Blacklight (BlackBag) | Mac / iOS forensic analysis | ECU / DCECTF |
 | osTriage | Live Windows triage | ECU / DCECTF |
+| Axon Body 3 | Body-worn camera / evidence capture | Patrol, approximately 2021-2024 |
+| Axon Fleet 3 | In-car / squad-camera video | Patrol, approximately 2021-2024 |
+| Axon Evidence (Evidence.com) | Digital evidence management | Patrol and investigations, approximately 2021-2024 |
 | Microsoft Office 365 | Productivity / documentation | Full career |
 
 ---
@@ -720,3 +748,4 @@ script, not this file.
 - 2026-08-12: Added a routing rule for awards, commendations, and performance reviews.
   Application-safe quotes, experience crosswalks, and public citation controls now live in
   awards_comm_perf_reviews.md. Source originals remain private.
+- 2026-08-28: Troy directly confirmed the connected Axon workflow: Body 3 and Fleet 3 capture with Axon Evidence (Evidence.com) for operational and investigative digital-evidence use. Fleet 3 supersedes the earlier Fleet 2 references. Added explicit end-user versus administration/implementation boundaries.

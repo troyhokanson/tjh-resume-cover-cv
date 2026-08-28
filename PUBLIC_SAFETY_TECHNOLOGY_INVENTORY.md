@@ -1,7 +1,7 @@
 # Troy Hokanson — Public Safety Technology Inventory
 
 **Status:** Canonical experience inventory for public-safety vendor applications  
-**Last updated:** July 17, 2026  
+**Last updated:** August 28, 2026  
 **Primary profile:** `vendor-solutions`  
 **Read with:** [`SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md`](./SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md), [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md), [`PROFILES.md`](./PROFILES.md), and [`CAREER_CONSTANTS.md`](./CAREER_CONSTANTS.md)
 
@@ -155,7 +155,8 @@ The accurate computer-forensics progression is:
 | Vendor / product | Experience level | Documented context | Application value |
 |---|---:|---|---|
 | **Axon Body 3** | D2 | Direct body-worn-camera use in patrol operations | Strengthens Axon customer success, training, implementation, evidence, product-adoption, and public-safety strategy fit |
-| **Axon Fleet 2** | D2 | Direct in-car/squad-camera use; `squad camera` is acceptable operational language | Strengthens Axon fleet-video, evidence, implementation, training, and customer-workflow fit |
+| **Axon Fleet 3** | D2 | Direct in-car/squad-camera use; `squad camera` is acceptable operational language | Strengthens Axon fleet-video, evidence, implementation, training, and customer-workflow fit |
+| **Axon Evidence (Evidence.com)** | D1 | Direct operational end-user use of the connected digital-evidence workflow for recordings captured by Body 3 and Fleet 3, including review, management, retrieval, and case-related evidentiary use | Strengthens Axon Evidence, customer success, implementation support, training, professional-services, product-adoption, and digital-evidence roles |
 | **TASER X26** | D2 | Direct duty use and operational familiarity with conducted-energy-weapon workflows | Supports Axon training, customer adoption, implementation, program, and public-safety advisory roles; describe as historical product use |
 | **Motorola mobile/squad radios** | D2 | Direct patrol-vehicle communications use | Strengthens Motorola Solutions customer, implementation, training, field-operations, and public-safety advisory fit |
 | **Motorola portable radios** | D2 | Direct field communications use across patrol and tactical/public-safety operations | Strengthens Motorola Solutions and mission-critical communications roles |
@@ -164,9 +165,11 @@ The accurate computer-forensics progression is:
 
 ### Axon positioning rule
 
-Axon is not merely an adjacent vendor target. Troy has direct end-user experience with **Axon Body 3, Axon Fleet 2, and TASER X26**, plus digital-evidence, patrol, investigations, SWAT, Field Training Officer, and classroom-training experience.
+Axon is not merely an adjacent vendor target. Troy has direct end-user experience with **Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com), and TASER X26**, plus digital-evidence, patrol, investigations, SWAT, Field Training Officer, and classroom-training experience.
 
-> I used Axon technology as an officer, relied on the resulting evidence as an investigator, trained officers in operational workflows, and understand the policy, activation, documentation, disclosure, and courtroom consequences when connected public-safety technology succeeds or fails.
+> I used Axon Body 3 and Fleet 3 as an officer, worked with the resulting recordings in Axon Evidence (Evidence.com) during patrol and investigative workflows, trained officers in operational practices, and understand the policy, activation, documentation, disclosure, and courtroom consequences when connected public-safety technology succeeds or fails.
+
+Treat this as direct operator/end-user and investigative-workflow experience. Do not imply Evidence.com administration, retention-policy configuration, technical implementation ownership, or system ownership.
 
 Do not imply personal implementation or operation of the local agency's newer Axon DFR systems.
 
@@ -203,7 +206,7 @@ Genetec should be treated as an upper-Tier-2/high-priority target for AutoVu / A
 
 | Company | Why the fit is stronger |
 |---|---|
-| **Axon** | Direct use of Body 3, Fleet 2, and TASER X26; patrol, evidence, investigations, training, SWAT, and current DFR awareness |
+| **Axon** | Direct use of Body 3, Fleet 3, Axon Evidence (Evidence.com), and TASER X26; patrol, evidence, investigations, training, SWAT, and current DFR awareness |
 | **LexisNexis Risk Solutions** | Direct Accurint and ZetX / Accurint TraX use; cellular/geolocation investigations; Google Earth; teaching |
 | **Cellebrite** | Primary use of Touch 2, UFED 4PC, and Physical Analyzer plus Apple/Mac forensic workflows, task-force work, and courtroom experience |
 | **Magnet Forensics** | GrayKey in the primary mobile workflow and AXIOM becoming increasingly primary toward the end for artifact-centered analysis and presentation |
@@ -281,7 +284,7 @@ Always explain that FTK was primary early and later became a backup as X-Ways an
 - `Used Cellebrite Touch 2, UFED 4PC, Physical Analyzer, and GrayKey as the primary mobile-forensics workflow.`
 - `Supplemented the Cellebrite mobile workflow with Magnet AXIOM or Apple/Mac forensic tools when artifact recovery, parsing, organization, presentation, or acquisition required another path.`
 - `Agency-side experience working with Genetec on an AutoVu ALPR project in 2007.`
-- `Used Axon Body 3 and Axon Fleet 2 in operational patrol workflows and relied on digital video evidence during investigations.`
+- `Used Axon Body 3 and Axon Fleet 3 in operational patrol workflows and used Axon Evidence (Evidence.com) to review and manage the resulting digital evidence for case-related use.`
 - `Operated SUMURI TALINO forensic workstations and OpenText Tableau hardware write blockers in digital-forensics workflows.`
 - `Brief hands-on exposure to SUMURI RECON before rotating out of investigations.`
 
@@ -303,7 +306,7 @@ Always explain that FTK was primary early and later became a backup as X-Ways an
 
 ### Product and vendor keywords
 
-`X-Ways Forensics`, `Magnet AXIOM`, `AccessData FTK`, `FTK Imager`, `Exterro`, `Cellebrite Touch 2`, `UFED 4PC`, `Physical Analyzer`, `GrayKey`, `BlackLight`, `MacQuisition`, `Axon Body 3`, `Axon Fleet 2`, `body-worn camera`, `fleet video`, `TASER X26`, `Genetec`, `AutoVu`, `ALPR`, `Motorola Solutions`, `Whelen`, `TALINO`, `SUMURI`, `RECON`, `Tableau Forensic`, `write blocker`, `Griffeye`, `Accurint`, `Accurint TraX`, `ZetX`
+`X-Ways Forensics`, `Magnet AXIOM`, `AccessData FTK`, `FTK Imager`, `Exterro`, `Cellebrite Touch 2`, `UFED 4PC`, `Physical Analyzer`, `GrayKey`, `BlackLight`, `MacQuisition`, `Axon Body 3`, `Axon Fleet 3`, `Axon Evidence`, `Evidence.com`, `body-worn camera`, `fleet video`, `TASER X26`, `Genetec`, `AutoVu`, `ALPR`, `Motorola Solutions`, `Whelen`, `TALINO`, `SUMURI`, `RECON`, `Tableau Forensic`, `write blocker`, `Griffeye`, `Accurint`, `Accurint TraX`, `ZetX`
 
 ### Workflow keywords
 

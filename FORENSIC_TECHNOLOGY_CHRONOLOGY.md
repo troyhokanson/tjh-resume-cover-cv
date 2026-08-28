@@ -1,7 +1,7 @@
 # Troy Hokanson — Forensic Technology Chronology
 
 **Status:** Canonical chronology for forensic tools, hardware, mobile workflows, ALPR, and patrol-camera experience  
-**Last updated:** July 17, 2026  
+**Last updated:** August 28, 2026  
 **Read with:** [`PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md`](./PUBLIC_SAFETY_TECHNOLOGY_INVENTORY.md), [`SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md`](./SLED_PUBLIC_SAFETY_VENDOR_STRATEGY.md), and [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md)
 
 ---
@@ -158,13 +158,15 @@ Do not overstate the role as laboratory accreditation management, formal calibra
 - Lakeville Police Department adopted synchronized Axon body-worn and fleet-camera systems around 2021–2022.
 - Troy directly used:
   - Axon Body 3
-  - Axon Fleet 2
+  - Axon Fleet 3
 - Body-worn and in-car/fleet video were synchronized as part of the operational workflow.
+- Troy used Axon Evidence (Evidence.com) as the connected digital-evidence system for recordings captured by Body 3 and Fleet 3, including review, management, retrieval, and case-related evidentiary use.
+- This is direct operator/end-user and investigative-workflow experience; do not claim Evidence.com administration, retention-policy configuration, technical implementation ownership, or system ownership.
 - Exact implementation date should be verified against Lakeville records before using a precise month or year in a public-facing document.
 
 ### Permitted wording
 
-- `Used synchronized Axon Body 3 and Fleet 2 systems after Lakeville's approximately 2021–2022 deployment.`
+- `Used synchronized Axon Body 3 and Fleet 3 systems with Axon Evidence (Evidence.com) as the connected review and digital-evidence workflow after Lakeville's approximately 2021–2022 deployment.`
 
 ---
 
@@ -251,7 +253,7 @@ This is not merely product familiarity. It demonstrates:
 
 - Exact Tableau model number
 - Exact TALINO tower and laptop models
-- Exact Axon Body 3 and Fleet 2 deployment date at Lakeville
+- Exact Axon Body 3 and Fleet 3 deployment date at Lakeville
 - Representative cases illustrating AXIOM use for iPhones, app artifacts, messaging data, and Macs
 - Any Target Corporation grant document, Genetec invoice, project memo, CJIS correspondence, Wi-Fi implementation record, or ALPR training material
 - Exact dates when GrayKey entered and left the workflow

@@ -1,7 +1,7 @@
 # Troy Hokanson — Remote-First SLED Public Safety Vendor Strategy
 
 **Status:** Active career-strategy source of truth  
-**Last validated:** July 17, 2026  
+**Last validated:** August 28, 2026  
 **Primary profile:** `vendor-solutions`  
 **Related files:** [`PROFILES.md`](./PROFILES.md), [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md), [`JD_CONTEXT_ENGINE.md`](./JD_CONTEXT_ENGINE.md), [`CAREER_CONSTANTS.md`](./CAREER_CONSTANTS.md), [`CASE_BANK.md`](./CASE_BANK.md)
 
@@ -271,7 +271,7 @@ These companies have the strongest combination of law-enforcement focus, role-fa
 | Company | Remote label | Primary fit | Priority role families |
 |---|---:|---|---|
 | **Flock Safety** | R1 | ALPR, integrated public-safety technology, RTCC, DFR, customer adoption | Customer Success, TAM, Training, Implementation, DFR, Public Safety Strategy, Customer Experience |
-| **Axon** | R1 | Body-worn camera, fleet video, evidence, real-time operations, DFR, training | Customer Success, Solutions, Professional Services, Training, Technical Account, Public Safety Strategy, DFR |
+| **Axon** | R1 | Direct Axon Body 3, Axon Fleet 3, and Axon Evidence (Evidence.com) workflow experience; body-worn camera, fleet video, evidence, real-time operations, DFR, and training | Customer Success, Solutions, Professional Services, Training, Technical Account, Public Safety Strategy, DFR |
 | **LexisNexis Risk Solutions — Government / Public Safety** | R1 | Accurint, Accurint One, Accurint Virtual Crime Center, ZetX / Accurint TraX, investigative analytics | Investigative Trainer, Geolocation Analyst, Solutions Consultant, Product, Service Delivery, Account Management, Public Safety SIU |
 
 #### Why LexisNexis is now a top-tier target
@@ -392,13 +392,15 @@ Do not overstate:
 
 Lead with:
 
+- Direct operational use of Axon Body 3 and Axon Fleet 3, with Axon Evidence (Evidence.com) as the connected digital-evidence workflow
+- Patrol and investigative use of the resulting recordings for evidence review, management, retrieval, and case-related evidentiary work
 - Body-worn and squad-camera workflow understanding
 - Digital-evidence preservation, review, disclosure, and courtroom use
 - Patrol, investigations, SWAT, training, and command-staff credibility
 - Ability to connect devices, policy, evidence, training, and adoption
 - Local-agency awareness of Axon DFR acquisition
 
-Do not imply personal implementation of the local Axon DFR systems.
+Treat the Body 3, Fleet 3, and Evidence.com experience as operator/end-user and investigative-workflow experience. Do not imply Evidence.com administration, retention-policy configuration, technical implementation ownership, system ownership, or personal implementation of the local Axon DFR systems.
 
 ### LexisNexis Risk Solutions
 
@@ -469,7 +471,7 @@ A job scanner should mark a position as a likely public-safety vendor match when
 
 #### Law-enforcement technology
 
-`ALPR`, `LPR`, `body-worn camera`, `BWC`, `fleet camera`, `in-car video`, `digital evidence`, `RTCC`, `real-time crime center`, `CAD`, `RMS`, `dispatch`, `public safety`, `law enforcement`, `SLED`, `CJIS`, `evidence management`, `crime analysis`
+`Axon Body 3`, `Axon Fleet 3`, `Axon Evidence`, `Evidence.com`, `ALPR`, `LPR`, `body-worn camera`, `BWC`, `fleet camera`, `in-car video`, `digital evidence`, `RTCC`, `real-time crime center`, `CAD`, `RMS`, `dispatch`, `public safety`, `law enforcement`, `SLED`, `CJIS`, `evidence management`, `crime analysis`
 
 #### DFR and drones
 

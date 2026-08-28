@@ -34,6 +34,7 @@ University of Phoenix | Remote | March 2007 - October 2025
 ### Police Officer
 Lakeville Police Department | Lakeville, MN | January 2022 - May 2024
 - Returned to patrol after the electronic-crimes assignment and continued field investigation, report writing, public contact, officer coaching, and technology-supported case work through retirement.
+- Used Axon Body 3 and Fleet 3 with Axon Evidence (Evidence.com) in a connected patrol and investigative digital-evidence workflow.
 
 ### Detective / Digital Forensic Examiner
 Dakota County Electronic Crimes Task Force (DCECTF), assigned from Lakeville Police Department | June 2017 - December 2021
@@ -78,7 +79,7 @@ Association of Certified Fraud Examiners (ACFE), member, 2026-Present | High Tec
 
 **Digital forensics:** Cellebrite UFED, 4PC and Physical Analyzer; Magnet AXIOM; AccessData Forensic Toolkit (FTK) and FTK Imager; X-Ways Forensics; GrayKey; MacQuisition; RECON for macOS and RECON Imager; Blacklight; osTriage.
 
-**Investigative and public safety:** LexisNexis Accurint; ZetX TRAXi; Genetec AutoVu ALPR; Axon Body 3, Fleet 2 and Evidence; Motorola radios; Getac mobile computing.
+**Investigative and public safety:** LexisNexis Accurint; ZetX TRAXi; Genetec AutoVu ALPR; Axon Body 3, Axon Fleet 3, and Axon Evidence (Evidence.com); Motorola radios; Getac mobile computing.
 
 **Current AI and technical work:** generative AI evaluation, prompt development, source validation, GitHub, GitHub Actions, Python basics, APIs, Notion, Google Drive, and Microsoft 365.
 
