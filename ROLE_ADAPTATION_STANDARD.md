@@ -17,6 +17,7 @@ These requirements never change:
 - Every claim must be true and traceable to Troy's verified experience, education, training, case outcomes, or tools.
 - Never invent metrics, titles, certifications, software proficiency, responsibilities, dates, or customer outcomes.
 - Apply the privacy and PTSD-scope hard blocks.
+- Keep disability, race, ethnicity, sex, sexual orientation, gender identity, religion, and other protected traits out of job-fit scoring and application materials unless Troy expressly approves a narrow, lawful use under `APPLICATION_SELF_IDENTIFICATION_STANDARD.md`.
 - Omit the entire POST / peace-officer licensing credential and all licensing identifiers.
 - Do not expose case subjects, victims, internal case numbers, badge numbers, or private identifiers.
 - Be honest about developing skills and credentials in progress.
@@ -46,12 +47,20 @@ There is no mandatory detective-led opener. There is no requirement to mention m
 
 1. Read the entire posting and identify the role's primary outcomes, audience, tools, seniority, and industry.
 2. Select one primary lane below. Note a secondary lane only when the role is genuinely hybrid.
-3. Identify the five to eight strongest verified matches and the most important gaps.
-4. Choose an industry-appropriate resume architecture and vocabulary.
-5. Draft freely within the truth and privacy boundaries.
-6. Run the ATS, privacy, and factual verification gates.
-7. Read the final document as a hiring manager in that lane. Remove terminology imported from an unrelated lane.
-8. Record the selected lane and rationale in the build log.
+3. For a SLED or public-safety vendor role, run `SLED_TRANSITION_HIRING_BENCHMARK.md` after hard requirements and before choosing evidence.
+4. Identify the five to eight strongest verified matches and the most important gaps.
+5. Choose an industry-appropriate resume architecture and vocabulary.
+6. Draft freely within the truth and privacy boundaries.
+7. Apply `APPLICATION_SELF_IDENTIFICATION_STANDARD.md` to optional demographic, disability, veteran, diversity, and accommodation questions.
+8. Run the ATS, privacy, and factual verification gates.
+9. Read the final document as a hiring manager in that lane. Remove terminology imported from an unrelated lane.
+10. Record the selected lane and rationale in the build log.
+
+## Transition-identity rule
+
+Lead with the role's business outcome, not a badge, retirement label, MOS, disability, or demographic identity. Former sworn service, detective work, Crime Scene Unit duty, digital-forensic examination, teaching, and Army service may be selected when they prove the outcome the employer needs. Their prominence must follow the posting and the bounded weights in `standards/sled_transition_signal_matrix.json`.
+
+For Army service, preserve the exact 8 years 3 months and verified MOS history. Translate 95B, 11B, 19K, and 88M only into posting-relevant capabilities; never use a generic veteran label to fill a technical, sales, administration, certification, or management gap.
 
 ## Role lanes
 
