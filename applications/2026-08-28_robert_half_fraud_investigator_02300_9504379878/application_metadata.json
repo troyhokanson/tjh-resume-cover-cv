@@ -26,7 +26,7 @@
   "notion_record": "Tracked outside public repository",
   "git": {
     "branch": "application/2026-08-28-robert-half-fraud-investigator",
-    "pull_request": null,
+    "pull_request": 43,
     "package_path": "applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878"
   },
   "documents": {
