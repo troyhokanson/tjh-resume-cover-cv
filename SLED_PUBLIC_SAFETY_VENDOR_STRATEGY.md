@@ -3,7 +3,7 @@
 **Status:** Active career-strategy source of truth  
 **Last validated:** August 28, 2026  
 **Primary profile:** `vendor-solutions`  
-**Related files:** [`PROFILES.md`](./PROFILES.md), [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md), [`JD_CONTEXT_ENGINE.md`](./JD_CONTEXT_ENGINE.md), [`CAREER_CONSTANTS.md`](./CAREER_CONSTANTS.md), [`CASE_BANK.md`](./CASE_BANK.md)
+**Related files:** [`PROFILES.md`](./PROFILES.md), [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md), [`JD_CONTEXT_ENGINE.md`](./JD_CONTEXT_ENGINE.md), [`CAREER_CONSTANTS.md`](./CAREER_CONSTANTS.md), [`CASE_BANK.md`](./CASE_BANK.md), [`SLED_TRANSITION_HIRING_BENCHMARK.md`](./SLED_TRANSITION_HIRING_BENCHMARK.md), [`APPLICATION_SELF_IDENTIFICATION_STANDARD.md`](./APPLICATION_SELF_IDENTIFICATION_STANDARD.md)
 
 ---
 
@@ -116,6 +116,16 @@ Use careful wording and never imply hands-on operation unless documented:
 - Real-time crime-center and integrated intelligence concepts
 - DFR concepts, agency adoption, policy, training, aviation, evidence, and operational-response workflows
 - Troy's local agency has purchased Flock camera technology and two Axon DFR solutions; this is market and local-agency context, not a claim that Troy personally implemented or operated those systems
+
+### Transition-pathway calibration
+
+For every live SLED vendor role, run [the transition benchmark](./SLED_TRANSITION_HIRING_BENCHMARK.md) and its [machine-readable matrix](./standards/sled_transition_signal_matrix.json) only after hard eligibility and requirement matching.
+
+- Tier A employer-pathway evidence may strengthen an otherwise credible role; it never rescues a hard block.
+- Former sworn service, detective work, Crime Scene Unit duty, digital-forensic examination, FTO, and adjunct teaching receive different weights by role family.
+- Army service is role-dependent: 95B supports public-safety and field missions; 11B/19K supports field execution, safety, accountability, and adaptability; 88M supports fleet, logistics, and deployment. The total military contribution is capped.
+- Protected traits—including disability, race, ethnicity, sex, sexual orientation, and gender identity—always contribute zero points and are handled only by the application self-identification standard.
+- Employer biographies demonstrate a transition path, not a hiring guarantee or causal interview probability.
 
 ---
 
