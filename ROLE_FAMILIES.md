@@ -24,6 +24,10 @@ This is the canonical role-family taxonomy for job discovery, application tracki
 - Public-safety vendor roles require either a recognized employer or clear public-safety, justice, emergency-response, or investigative-technology domain evidence.
 - Trust and Safety roles involving routine exposure to graphic, CSAM, or violent-extremist content remain excluded unless Troy explicitly changes that boundary.
 - Keep generic SaaS sales, generic support, and generic project-management noise out of the priority queue unless the employer, product, mission, or role requirements create a specific evidence-backed fit.
+- For SLED vendor roles, apply [`standards/sled_transition_signal_matrix.json`](./standards/sled_transition_signal_matrix.json) only after hard eligibility and material requirement matching.
+- Employer transition evidence is a bounded pathway signal, not proof of why an incumbent was hired and not a guarantee of an interview.
+- Military signals are MOS- and duty-relevant and capped. They may not satisfy unsupported SaaS, CRM, quota, API, integration, administration, certification, or people-management requirements.
+- Protected traits contribute zero points and must not be stored in application analytics; follow [`APPLICATION_SELF_IDENTIFICATION_STANDARD.md`](./APPLICATION_SELF_IDENTIFICATION_STANDARD.md).
 - Every live application should have a Notion record, a dedicated Google Drive folder, and a GitHub package when reusable source or build code exists.
 
 ## Cross-system field names
