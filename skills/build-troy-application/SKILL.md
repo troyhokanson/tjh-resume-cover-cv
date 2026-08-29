@@ -50,6 +50,7 @@ Before drafting, read the current repository versions of all applicable standard
 - `PROFILE_SELECTOR.md`
 - `PROFILES.md`
 - `PRIVACY_STANDARD.md`
+- `PUBLIC_PROFILE_CONTRACT.json`
 - `EDUCATION_CONSTANTS.md`
 - `CAREER_CONSTANTS.md`
 - `SKILLS_CONSTANTS.md`
@@ -66,6 +67,7 @@ Load relevant supporting skills when needed, including:
 
 - `skills/troy-credentials-library/SKILL.md`
 - `skills/cert-comm-extractor/SKILL.md`
+- `skills/maintain-troy-public-profile/SKILL.md` when a durable public fact, chronology, credential, privacy rule, or public evidence citation may change
 - any current role-family, evidence, document, ATS, or routing skills found in the repository
 
 Repository content controls over memory. When a conflict exists, pause the affected claim, identify the conflicting sources, and use the safest verified wording until resolved.
@@ -278,6 +280,8 @@ After validation and visual QA, and only for systems the user authorized:
 - link Drive and GitHub in Notion
 - record status, fit score, priority, role lane, document completion, recruiter/contact, next action, and follow-up date when known
 
+If the work establishes or corrects a durable public fact, chronology, credential, privacy rule, or public evidence citation, invoke `maintain-troy-public-profile` as a separate alignment step. Compare the approved claim with TroyHokanson.com, LinkedIn, and the relevant Notion portfolio record. Route website work only to `troyhokanson/troyhokanson.github.io`. Record ordinary role-specific tailoring as not applicable. Application-workspace authorization does not by itself authorize a public website or LinkedIn change.
+
 Never claim a write succeeded unless the connector confirms it and a read-back verifies the intended destination and content.
 
 ### Phase 10: Completion Gate
@@ -297,6 +301,7 @@ An application may be labeled `Ready to Submit` only when all applicable items a
 - final files saved to Drive or not authorized
 - Notion record confirmed or not authorized
 - GitHub package confirmed or not authorized
+- public-profile alignment checked or recorded not applicable
 - remaining user action is only review and submission
 
 If any item fails, status remains `Researching`, `Drafting`, or `Exception`.
@@ -399,6 +404,7 @@ After each build, report:
 - Drive folder status
 - Notion record status
 - GitHub package status
+- public-profile alignment status
 - application status
 - remaining user action
 
