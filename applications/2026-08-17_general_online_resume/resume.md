@@ -4,7 +4,7 @@
 
 ## Professional Summary
 
-Senior investigations and digital-forensics professional with 25 years of sworn law-enforcement service, 18 years as remote university faculty, and current paid AI project experience. Background includes fraud and financial investigations, digital evidence, public-safety technology, investigative research, adult instruction, and cross-agency work. Work has centered on evidence-led analysis, clear documentation, and explaining technical findings to decision-makers who were not present for the investigation.
+Senior investigations and digital-forensics professional with 25 years of sworn law-enforcement service, 6.5 years across two investigative rotations, 5.5 years in digital forensics during the second rotation, 18 years as remote university faculty, and current paid AI project experience. Background includes fraud and financial investigations, digital evidence, public-safety technology, investigative research, adult instruction, and cross-agency work. Work has centered on evidence-led analysis, clear documentation, and explaining technical findings to decision-makers who were not present for the investigation.
 
 ## Core Capabilities
 
@@ -18,12 +18,13 @@ Fraud and financial investigations | Digital forensics and electronic evidence |
 
 ## Professional Experience
 
-### Generalist Expert
-Mercor | Remote | August 2026 - Present
-- Independent contractor supporting AI-related project work under platform confidentiality requirements. Completed paid project work and participates in the platform matching process for additional assignments.
+### Independent Professional
+Remote | April 2026 - Present
+- Completes paid AI project work, including independent-contractor assignments through Mercor beginning in August 2026, under platform confidentiality requirements.
+- Develops current capability in generative AI evaluation, prompt development, source validation, GitHub workflows, Python basics, APIs, Notion, and Google Drive.
 
-### Real Estate Consultant (Referral-Only as of March 2026)
-eXp Realty / KW Select | South Metro MN | June 2024 - March 2026
+### Real Estate Consultant
+eXp Realty / KW Select | South Metro MN | June 2024 - June 2026
 - Closed $3.2 million in residential sales while managing client discovery, requirements, negotiation, transaction coordination, documentation, and follow-up.
 
 ### Adjunct Faculty / Criminal Justice
@@ -79,7 +80,7 @@ Association of Certified Fraud Examiners (ACFE), member, 2026-Present | High Tec
 
 **Digital forensics:** Cellebrite UFED, 4PC and Physical Analyzer; Magnet AXIOM; AccessData Forensic Toolkit (FTK) and FTK Imager; X-Ways Forensics; GrayKey; MacQuisition; RECON for macOS and RECON Imager; Blacklight; osTriage.
 
-**Investigative and public safety:** LexisNexis Accurint; ZetX TRAXi; Genetec AutoVu ALPR; Axon Body 3, Axon Fleet 3, and Axon Evidence (Evidence.com); Motorola radios; Getac mobile computing.
+**Investigative and public safety:** LexisNexis Accurint, 6.5 years of direct investigative use across both investigative rotations; ZetX TRAXi; Genetec AutoVu ALPR; Axon Body 3, Axon Fleet 3, and Axon Evidence (Evidence.com); Motorola radios; Getac mobile computing.
 
 **Current AI and technical work:** generative AI evaluation, prompt development, source validation, GitHub, GitHub Actions, Python basics, APIs, Notion, Google Drive, and Microsoft 365.
 
@@ -93,7 +94,7 @@ Association of Certified Fraud Examiners (ACFE), member, 2026-Present | High Tec
 
 ## Credentials and Selected Training
 
-**Credentials:** Certified Fraud Examiner (CFE), actively pursuing through ACFE, 2026; Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
+**Credentials:** Certified Fraud Examiner (CFE) candidate, ACFE application approved and examination preparation in progress, 2026; Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
 
 **Digital-forensics training:** Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018, 2020. X-Ways Forensics Training, 32 hours, Chicago, 2018.
 

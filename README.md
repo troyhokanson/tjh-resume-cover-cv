@@ -257,6 +257,7 @@ Add these secrets under Settings → Secrets and variables → Actions:
 - `TROY_LOCATION`
 - `TROY_LINKEDIN`
 - `TROY_PORTFOLIO`
+- `TROY_PRIVATE_CASE_DENYLIST` (optional pipe-delimited privacy denylist; store values only as a secret)
 
 ---
 

@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import re
 
 
@@ -61,3 +62,104 @@ def test_scanner_blocks_known_fact_drift_and_bec_conflation():
         doc_type="cover",
     )
     assert any("BEC outcome conflation" in item for item in bec)
+
+
+def test_scanner_uses_private_case_denylist_without_public_values(monkeypatch):
+    from anti_ai_scan import scan_text
+
+    monkeypatch.setenv("TROY_PRIVATE_CASE_DENYLIST", "Example Private Subject")
+    private_name = scan_text(
+        "The investigation concerned Example Private Subject.", doc_type="cover"
+    )
+    named_judge = scan_text(
+        "Judge Example Privateperson denied the motion.", doc_type="cover"
+    )
+
+    assert any("private case-denylist term" in item for item in private_name)
+    assert any("Named judicial officer" in item for item in named_judge)
+    assert all("Example Private Subject" not in item for item in private_name)
+
+
+def test_current_chronology_and_investigative_tenure_are_locked():
+    career = (ROOT / "CAREER_CONSTANTS.md").read_text(encoding="utf-8")
+
+    assert "### Independent Professional" in career
+    assert "Dates:      April 2026 - Present" in career
+    assert "Dates:      June 2024 - June 2026" in career
+    assert "license ended June 30, 2026" in career
+    assert "6.5 years (March 2010 - May 2011 and September 2016 - December 2021)" in career
+    assert "5.5 years (September 2016 - December 2021)" in career
+    assert "6.5 years of direct investigative use across both investigative rotations" in career
+
+    for stale in ("Referral-Only", "referral-only", "June 2024 - March 2026"):
+        assert stale not in career
+
+
+def test_skills_constants_exclude_unverified_capabilities():
+    skills = (ROOT / "SKILLS_CONSTANTS.md").read_text(encoding="utf-8").lower()
+
+    assert "i2 analyst" not in skills
+    assert "dark web investigation" not in skills
+    assert "digital-evidence preservation" in skills
+    assert "public-record research" in skills
+
+
+def test_credentials_catalog_uses_verified_ccci_issue_date():
+    catalog = json.loads(
+        (ROOT / "skills" / "troy-credentials-library" / "credentials_catalog.json")
+        .read_text(encoding="utf-8")
+    )
+    ccci = next(
+        item
+        for item in catalog["certifications"]["digital_forensics"]
+        if item["id"] == "DF-001"
+    )
+
+    assert ccci["credential_id"] == "4793"
+    assert ccci["month_year"] == "01/2023"
+    assert "year" not in ccci
+
+    for quote in catalog["commendation_quotes"]:
+        assert "case_file" not in quote
+        assert "nominator" not in quote
+
+
+def test_general_online_resume_uses_current_reusable_facts():
+    resume = (
+        ROOT / "applications" / "2026-08-17_general_online_resume" / "resume.md"
+    ).read_text(encoding="utf-8")
+
+    assert "### Independent Professional" in resume
+    assert "Remote | April 2026 - Present" in resume
+    assert "South Metro MN | June 2024 - June 2026" in resume
+    assert "6.5 years of direct investigative use across both investigative rotations" in resume
+    assert "ACFE application approved and examination preparation in progress" in resume
+    assert "Referral-Only" not in resume
+    assert "June 2024 - March 2026" not in resume
+
+
+def test_public_case_bank_enforces_sanitized_external_use():
+    case_bank = (ROOT / "CASE_BANK.md").read_text(encoding="utf-8")
+    lower = case_bank.lower()
+
+    assert "**External-use gate:**" in case_bank
+    assert "an executed sentence of up to 78 months" in case_bank
+    assert "concurrent executed sentences of 36, 48, and 78 months" not in case_bank
+    assert "Control #" not in case_bank
+    assert "Case No." not in case_bank
+
+    for blocked in (
+        "homicide",
+        "death investigation",
+        "lethal force",
+        "sexual assault",
+        "criminal sexual conduct",
+        "human trafficking",
+        "csam",
+        "child sexual",
+        "child abuse",
+        "child exploitation",
+        "child-exploitation",
+        "icac",
+    ):
+        assert blocked not in lower

@@ -3,7 +3,11 @@
 **Candidate:** Troy Hokanson  
 **Asset:** General Online Resume  
 **Profile:** adaptive  
-**Status:** PASS for generated DOCX/PDF content and visual QA
+**Status:** STALE - source corrected on 2026-08-29; DOCX/PDF regeneration and full validation required
+
+The prior generated files passed the checks recorded below, but they predate corrections to
+the current chronology, investigations duration, Accurint duration, and CFE wording. Do not
+reuse or distribute them until the source has been rebuilt and every downstream check passes.
 
 ## Standards reviewed
 
@@ -36,7 +40,7 @@
 - Garamond-family typography confirmed using EB Garamond in the rendered environment.
 - Education constants confirmed for MA, BA, and AA.
 - U.S. Army duration confirmed as 8 years 3 months.
-- Mercor wording intentionally kept general because of platform confidentiality restrictions.
+- Mercor project wording intentionally kept general because of platform confidentiality restrictions.
 - Privacy scan found no POST number, badge number, case-control number, court number, DOB, SSN, or blocked case identifiers.
 - PTSD-scope terms and ICAC-gated terms were not used.
 - Anti-AI phrase and punctuation checks passed against the current repository rule set.
@@ -44,11 +48,13 @@
 
 ## Drive publication
 
-Confirmed folder: `2026-08-17 General Online Resume`
+Prior folder: `2026-08-17 General Online Resume`
 
 - Troy_Hokanson_General_Online_Resume.docx
 - Troy_Hokanson_General_Online_Resume.pdf
 - Troy_Hokanson_General_Online_Resume_Validation.md
+
+These files are superseded pending regeneration from the corrected source.
 
 ## Scope note
 
