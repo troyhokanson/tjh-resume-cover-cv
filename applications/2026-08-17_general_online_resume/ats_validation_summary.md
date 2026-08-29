@@ -9,7 +9,7 @@
 - Two-page DOCX and PDF confirmed.
 - One-line general headline and concise professional summary confirmed.
 - Selected verified metrics are front-loaded without forced or invented quantification.
-- Older relevant work is compressed into Earlier Public-Safety Experience.
+- Older relevant work is compressed into Earlier Public-Safety Experience while retaining canonical month-year employment dates.
 - Page-one name and approved four-item contact row are text-first and parsing-friendly.
 - No columns, tables, text boxes, icons, drawings, or page-one banner graphics are used.
 - Standard headings, single-column chronology, and Garamond-family typography are retained.
