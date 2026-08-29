@@ -184,7 +184,8 @@ Title:      Police Officer / Field Training Officer (FTO)
 Employer:   Lakeville Police Department
 Location:   Lakeville, MN
 Dates:      November 1998 - February 2010
-Notes:      Initial patrol period. FTO service spans 2004-2023. Do not publish a derived\n            18- or 19-year total until exact start and end dates are reconciled.
+Notes:      Initial patrol period. FTO service spans 2004-2023. Do not publish a derived
+            18- or 19-year total until exact start and end dates are reconciled.
             20+ written commendations. SWAT service begins in this block.
             MAAG Tactical Team on-call membership: 2005 - 2011 -- see Collateral Duties.
             ALPR / Target+Blue grant program: 2007 - 2010 -- see Collateral Duties.
@@ -645,7 +646,10 @@ script, not this file.
 
 ## Change Log
 
-- 2026-08-29: Blocked the disputed digital-evidence aggregate, cumulative training total,\n  and derived FTO year count from public and application use pending source reconciliation.\n  Use the FTO date range 2004-2023.\n- 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
+- 2026-08-29: Blocked the disputed digital-evidence aggregate, cumulative training total,
+  and derived FTO year count from public and application use pending source reconciliation.
+  Use the FTO date range 2004-2023.
+- 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
   umbrella entry for verified independent project work and professional development.
   Corrected Real Estate Consultant to June 2024 - June 2026, removed referral-only
   wording, and recorded that the real-estate license ended June 30, 2026.
