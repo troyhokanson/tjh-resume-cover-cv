@@ -73,16 +73,27 @@ of which case it belongs to.
 
 ## Employment Records (Reverse Chronological)
 
+### Independent Professional
+```
+Title:      Independent Professional
+Employer:   Self-directed / project-based professional work
+Location:   Remote
+Dates:      April 2026 - Present
+Notes:      Current umbrella entry for independent project work and professional development
+            in AI evaluation, investigative research, source validation, and workflow
+            automation. Do not substitute a platform-specific title unless a role, contract,
+            and dates are separately verified for public use.
+```
+
 ### Real Estate Consultant
 ```
-Title:      Real Estate Consultant (Referral-Only as of March 2026)
+Title:      Real Estate Consultant
 Employer:   eXp Realty / KW Select
 Location:   South Metro MN
-Dates:      June 2024 - March 2026
+Dates:      June 2024 - June 2026
 Notes:      Medical retirement from law enforcement May 2024. Closed $3.2M in residential
-            sales during transition. Currently referral-only while pursuing public-safety-
-            technology and investigative roles. Never list as primary employer -- always
-            frame as bridge role following medical retirement.
+            sales during transition. Real-estate license ended June 30, 2026. This is a
+            completed bridge role, not a current or referral-only position.
 ```
 
 ### Police Officer -- Return to Patrol
@@ -472,9 +483,10 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 | DCECTF abbreviated | DCECTF |
 | ECU reference | Electronic Crimes Unit (ECU), Lakeville Police Department |
 | Patrol / main employer | Lakeville Police Department |
+| Current professional entry | Independent Professional |
 | Real estate (full) | eXp Realty / KW Select |
+| Real estate status | Completed June 2026; license ended June 30, 2026 |
 | University (adjunct) | University of Phoenix |
-| Current real estate status | Referral-only with KW Select |
 | Graduate school | University of St. Thomas |
 | Undergraduate school | St. Cloud State University |
 | MAAG full reference | Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team |
@@ -491,7 +503,8 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 - Patrol return (January 2022 - May 2024) is always its own block -- never merged into DCECTF
 - First investigative rotation: March 2010 - May 2011
 - Second investigative rotation: September 2016 - December 2021 (ECU + DCECTF combined span)
-- Real estate end date is March 2026, not "Present"
+- Independent Professional start date is April 2026 and current status is "Present"
+- Real estate end date is June 2026, not March 2026 or "Present"; license ended June 30, 2026
 - University of Phoenix end date is October 2025, not "Present"
 - Medical retirement from sworn service: May 2024
 - CSU on-call: 2013 - 2018 (year-only acceptable for collateral duties)
@@ -633,6 +646,10 @@ script, not this file.
 
 ## Change Log
 
+- 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
+  umbrella entry for verified independent project work and professional development.
+  Corrected Real Estate Consultant to June 2024 - June 2026, removed referral-only
+  wording, and recorded that the real-estate license ended June 30, 2026.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
   Added Awards and Honors section. Canonical stats table added.

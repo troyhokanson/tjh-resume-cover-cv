@@ -6,9 +6,11 @@ Use this order when instructions appear to conflict:
 2. `PRIVACY_STANDARD.md` - public/private boundary and redaction requirements.
 3. `CONTACT_STANDARD.md` - contact values, display text, and hyperlink behavior.
 4. `ROLE_FAMILIES.md` - canonical private-sector career taxonomy.
-5. `VOICE_STANDARD.md` - tone, phrasing, and anti-AI review.
-6. `docx_header.py` and `pdf_header.py` - executable implementations of the locked standards.
-7. `DOCX_NODE_STANDARD.md` - implementation guidance for Node builders; it must conform to the files above.
+5. `ROLE_ADAPTATION_STANDARD.md` - posting-led identity, evidence selection, structure, and lane vocabulary.
+6. `RESUME_HEADLINE_SCANABILITY_STANDARD.md` - headline decision, summary density, length, recency, metrics, and ATS structure.
+7. `VOICE_STANDARD.md` - tone, phrasing, and anti-AI review.
+8. `docx_header.py` and `pdf_header.py` - executable implementations of the locked standards.
+9. `DOCX_NODE_STANDARD.md` - implementation guidance for Node builders; it must conform to the files above.
 
 ## Document routing
 

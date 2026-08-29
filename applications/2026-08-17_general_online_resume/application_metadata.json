@@ -1,16 +1,24 @@
 {
   "candidate": "Troy Hokanson",
   "asset_type": "General Online Resume",
-  "intended_use": ["LinkedIn", "Indeed", "ZipRecruiter", "general recruiter outreach", "online job boards"],
+  "intended_use": [
+    "Ladders",
+    "LinkedIn",
+    "Indeed",
+    "ZipRecruiter",
+    "general recruiter outreach",
+    "online job boards"
+  ],
   "role_profile": "adaptive",
   "status": "Master Asset",
   "source_date": "2026-08-17",
-  "updated_date": "2026-08-19",
+  "updated_date": "2026-08-29",
   "drive_folder": "https://drive.google.com/drive/folders/1RkfJhuvQYRtJzwvAeUv-jJvk5L1NNYms",
-  "preferred_online_upload_docx": "Troy_Hokanson_General_Online_ATS_Resume.docx",
-  "preferred_online_upload_pdf": "Troy_Hokanson_General_Online_ATS_Resume.pdf",
-  "branded_resume_docx": "Troy_Hokanson_General_Online_Resume.docx",
-  "branded_resume_pdf": "Troy_Hokanson_General_Online_Resume.pdf",
+  "default_headline": "Investigations and Digital Forensics | Fraud | Public Safety Technology",
+  "preferred_online_upload_docx": "Troy_Hokanson_General_Online_ATS_Resume_2026-08-29.docx",
+  "preferred_online_upload_pdf": "Troy_Hokanson_General_Online_ATS_Resume_2026-08-29.pdf",
+  "branded_resume_docx": "Troy_Hokanson_General_Online_Resume_2026-08-29.docx",
+  "branded_resume_pdf": "Troy_Hokanson_General_Online_Resume_2026-08-29.pdf",
   "portfolio": "https://TroyHokanson.com",
-  "notes": "General reusable resume asset, not tied to a specific employer or requisition. Use the ATS version for LinkedIn, Indeed, ZipRecruiter, and parsing-heavy portals. Use the branded version for direct recruiter or human-facing delivery. Mercor description intentionally remains general due to platform confidentiality restrictions. Contact values are injected at build time from config.py and are not hardcoded in this public package."
+  "notes": "General reusable resume asset, not tied to a specific employer or requisition. Use the ATS version for Ladders and parsing-heavy portals. Use the branded version for direct recruiter or human-facing delivery. The headline is the general default and must be adapted for targeted applications. Current chronology uses Independent Professional (April 2026-Present) and Real Estate Consultant (June 2024-June 2026). CFE status is candidate; ACFE application approved and examination preparation in progress. Contact values are injected at build time from config.py and are not hardcoded in this public package."
 }
