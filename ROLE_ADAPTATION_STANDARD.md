@@ -21,6 +21,7 @@ These requirements never change:
 - Do not expose case subjects, victims, internal case numbers, badge numbers, or private identifiers.
 - Be honest about developing skills and credentials in progress.
 - Produce an ATS-readable primary resume.
+- Apply `RESUME_HEADLINE_SCANABILITY_STANDARD.md` to non-federal resumes.
 - Match keywords only when Troy can support them.
 - Preserve Troy's natural voice: direct, specific, grounded, and human.
 
@@ -28,7 +29,7 @@ These requirements never change:
 
 After reviewing the complete job posting, the AI has discretion to choose:
 
-- The lead professional identity and opening sentence.
+- The wording of the role-aligned headline and opening sentence, within the headline standard.
 - Which parts of Troy's background receive prominence and which are shortened or omitted.
 - Resume section order, section names, bullet structure, and summary style.
 - Whether a summary, selected achievements section, technical skills section, core competencies section, or project section improves the document.
@@ -37,7 +38,7 @@ After reviewing the complete job posting, the AI has discretion to choose:
 - The most relevant verified outcomes and metrics.
 - Cover-letter narrative, paragraph structure, degree of warmth, and professional closing.
 - A plain ATS header or the branded navy/gold presentation header.
-- One-page or two-page length based on seniority, relevance, and content density.
+- One-page or two-page length based on seniority, relevance, and content density; two pages are acceptable for Troy's experience when both pages are relevant.
 - Whether a portfolio or sanitized work sample should be referenced.
 
 There is no mandatory detective-led opener. There is no requirement to mention military service, law enforcement, teaching, or a case metric in the first sentence. Those assets are used when they strengthen the match.
@@ -47,8 +48,8 @@ There is no mandatory detective-led opener. There is no requirement to mention m
 1. Read the entire posting and identify the role's primary outcomes, audience, tools, seniority, and industry.
 2. Select one primary lane below. Note a secondary lane only when the role is genuinely hybrid.
 3. Identify the five to eight strongest verified matches and the most important gaps.
-4. Choose an industry-appropriate resume architecture and vocabulary.
-5. Draft freely within the truth and privacy boundaries.
+4. Choose an industry-appropriate headline, resume architecture, and vocabulary.
+5. Draft freely within the truth, privacy, and scanability boundaries.
 6. Run the ATS, privacy, and factual verification gates.
 7. Read the final document as a hiring manager in that lane. Remove terminology imported from an unrelated lane.
 8. Record the selected lane and rationale in the build log.
@@ -154,7 +155,7 @@ Never blend every lane into one document.
 
 ## Formatting autonomy
 
-The primary upload must be ATS-readable, but it does not have to use a single visual template.
+The primary upload must be ATS-readable, but it does not have to use a single visual template. Follow `RESUME_HEADLINE_SCANABILITY_STANDARD.md` for the headline decision, opening-summary density, length, treatment of older experience, and verified metric placement.
 
 The AI may select:
 
