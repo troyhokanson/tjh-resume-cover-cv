@@ -59,8 +59,9 @@ Course:         Forensic Toolkit (FTK) Bootcamp
 Provider:       AccessData (now Exterro)
 Location:       St. Paul, MN
 Year:           2017
-Hours:          21
-Display:        "Forensic Toolkit (FTK) Bootcamp, AccessData, 21 hours, St. Paul, MN, 2017"
+Hours:          PENDING RECONCILIATION (21 versus 25)
+Display:        "Forensic Toolkit (FTK) Bootcamp, AccessData, St. Paul, MN, 2017"
+Public rule:    Omit the hour count until the primary certificate resolves the conflict.
 Notes:          Instructor-led, in-person. Coincides with DCECTF tenure.
                 Provider name at time of training was AccessData. Current owner is Exterro.
                 When listing provider, use "AccessData" for the 2017 reference --
@@ -155,7 +156,7 @@ USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
 
 | Course | Provider | Location | Year | Hours | Use Case |
 |---|---|---|---|---|---|
-| FTK Bootcamp | AccessData | St. Paul, MN | 2017 | 21 | Full-disk forensic analysis |
+| FTK Bootcamp | AccessData | St. Paul, MN | 2017 | Pending | Full-disk forensic analysis |
 | FBI CAST-V: Basic Cell Site Analysis and CDR | FBI CAST | Arden Hills, MN | 2017 | 16 | Cell site / CDR analysis |
 | X-Ways Forensics Training | X-Ways Software Technology AG | Chicago, IL | 2018 | 32 | Deep forensic examination |
 | osTriage Training | OJJDP | Online | 2020 | 3 | Incident response, memory and artifact capture |
@@ -164,15 +165,14 @@ USE-CASE (confirmed by Troy Hokanson, 2026-06-14):
 
 ## Hour Count Rules
 
-- FTK Bootcamp: 21 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
+- FTK Bootcamp: hour count blocked. GitHub records and the attached/connected training records conflict; verify the primary certificate before use.
 - FBI CAST-V: 16 hours confirmed (Troy Hokanson, 2026-06-14).
 - X-Ways Training: 32 hours confirmed (Troy Hokanson, 2026-06-14). Previous 24 was incorrect.
 - osTriage / OJJDP: 3 hours confirmed (Troy Hokanson, 2026-06-14).
 - Never estimate or fabricate training hours.
 - When aggregating total training hours for a resume stat, only include confirmed
   hour counts.
-- All four courses fully confirmed. Confirmed aggregate total: 72 hours
-  (21 FTK + 16 FBI CAST-V + 32 X-Ways + 3 osTriage).
+- Three individual hour counts remain confirmed. Do not publish a four-course aggregate while the FTK hour count is unresolved.
 - Note on osTriage: 3 hours is a short course. Omit the hour count in
   space-constrained contexts (one-page resume) unless explicitly requested.
 
@@ -215,9 +215,9 @@ with this file is wrong -- fix the build script, not this file.
 - 2026-06-14 (commit 2): VOIDED -- FBI CAST set to 16, FTK/X-Ways not yet corrected.
   Superseded entirely by commit 3.
 
-- 2026-06-14 (commit 3): All three in-person course hours corrected by Troy Hokanson.
-  FTK: 24 -> 21. X-Ways: 24 -> 32. FBI CAST confirmed at 16.
-  Confirmed aggregate: 69 hours.
+- 2026-06-14 (commit 3): Recorded then-current course-hour corrections.
+  This entry is superseded for FTK by the 2026-08-29 reconciliation hold.
+  X-Ways remains 32 hours and FBI CAST-V remains 16 hours.
 
 - 2026-06-14 (commit 4): osTriage hours confirmed by Troy Hokanson as 3.
   All four courses now fully confirmed. Aggregate: 72 hours.
@@ -232,3 +232,5 @@ with this file is wrong -- fix the build script, not this file.
 - 2026-08-14: Corrected the program designation to FBI CAST-V and locked that
   designation for all future formal displays; course title, date, location, and
   16-hour count remain unchanged.
+
+- 2026-08-29: Placed the FTK Bootcamp hour count on reconciliation hold after the current GitHub constant conflicted with the attached training history and connected evidence master. Public and application materials must omit the FTK hours and any dependent aggregate until the primary certificate is verified.
