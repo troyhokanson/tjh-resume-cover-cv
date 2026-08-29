@@ -138,8 +138,8 @@ tjh-resume-cover-cv/
 │   └── body_typography_pagination_standard.md # Human-readable body typography standard
 ├── CASE_BANK.md                             # Source-of-truth case examples
 ├── CASE_EVIDENCE_REVIEW_STANDARD.md          # Mandatory case-source and ECTF crosswalk workflow
-├── ROLE_ADAPTATION_STANDARD.md
-├── RESUME_HEADLINE_SCANABILITY_STANDARD.md              # Posting-led authoring and formatting autonomy
+├── ROLE_ADAPTATION_STANDARD.md              # Posting-led authoring and formatting autonomy
+├── RESUME_HEADLINE_SCANABILITY_STANDARD.md  # Headline, summary, length, recency, metrics, and ATS rules
 ├── HEADER_STANDARD.md                       # ATS and branded presentation layout options
 ├── VOICE_STANDARD.md                        # Voice, truth, and privacy guardrails
 ├── PRIVACY_STANDARD.md                      # Privacy suppression rules
