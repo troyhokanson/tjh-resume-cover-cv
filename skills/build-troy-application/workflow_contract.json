@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.4.0",
+  "schema_version": "1.5.0",
   "skill": "build-troy-application",
   "candidate": "Troy J. Hokanson",
   "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
@@ -128,7 +128,8 @@
         "github_metadata_updated",
         "notion_record_updated",
         "cross_system_links_confirmed",
-        "public_evidence_citation_gate_passed_or_not_applicable"
+        "public_evidence_citation_gate_passed_or_not_applicable",
+        "public_profile_alignment_checked_or_not_applicable"
       ]
     }
   ],
@@ -196,5 +197,14 @@
     "require_source_date_when_available": true,
     "allow_user_confirmation_when_message_unavailable": true,
     "verify_record_and_calendar_cleanup": true
+  },
+  "public_profile_alignment": {
+    "contract": "PUBLIC_PROFILE_CONTRACT.json",
+    "skill": "skills/maintain-troy-public-profile/SKILL.md",
+    "production_repository": "troyhokanson/troyhokanson.github.io",
+    "unused_duplicate_repository": "troy-hokanson/portfolio",
+    "trigger": "durable_public_fact_chronology_credential_privacy_rule_or_evidence_citation_changes",
+    "routine_role_specific_tailoring": "not_applicable",
+    "public_change_requires_separate_explicit_approval": true
   }
 }
