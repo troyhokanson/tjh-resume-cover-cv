@@ -58,7 +58,7 @@ Lakeville Police Department | Lakeville, MN | March 2010 - May 2011
 - Prepared search warrants, organized records, interviewed involved parties, coordinated with prosecutors, and wrote case files designed for defensible charging decisions.
 
 ### Earlier Public-Safety Experience
-Lakeville Police Department, 1998-2010 | St. Cloud State University Public Safety, 1994-1998
+Lakeville Police Department, November 1998 - February 2010 | St. Cloud State University Public Safety, September 1994 - February 1998
 - Handled patrol investigations, field training, technology implementation, and multi-agency coordination; served in SWAT and Reserve Liaison assignments and received the Mothers Against Drunk Driving Award in 2000.
 - Developed and coordinated a structured 50-hour public-safety officer training program and advanced through training coordinator, sergeant, and lieutenant roles at St. Cloud State University.
 
@@ -97,4 +97,3 @@ U.S. Army, 8 years 3 months; honorably discharged.
 Army Reserve, 11B Infantry, February 1989 - April 1991 | Active Duty, 19K Armor, April 1991 - April 1994
 
 Minnesota Army National Guard, 88M Motor Transport, April 1994 - April 1995 | 95B Military Police, October 1995 - October 1998
-

@@ -27,7 +27,7 @@
 ## Validation performed
 
 - One-line general headline confirmed below the contact block.
-- Summary scanability, verified metric placement, and relevance-based compression of earlier experience confirmed.
+- Summary scanability, verified metric placement, and relevance-based compression of earlier experience confirmed; canonical month-year employment dates are retained.
 - Current chronology confirmed: Independent Professional, April 2026-Present; Real Estate Consultant, June 2024-June 2026.
 - CFE candidate wording confirmed: ACFE application approved and examination preparation in progress.
 - CCCI No. 4793, 6.5 years of direct LexisNexis Accurint investigative use, Axon Fleet 3, and current Cellebrite wording confirmed.
