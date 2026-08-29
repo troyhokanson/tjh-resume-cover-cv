@@ -30,7 +30,7 @@
 - Summary scanability, verified metric placement, and relevance-based compression of earlier experience confirmed; canonical month-year employment dates are retained.
 - Current chronology confirmed: Independent Professional, April 2026-Present; Real Estate Consultant, June 2024-June 2026.
 - CFE candidate wording confirmed: ACFE application approved and examination preparation in progress.
-- CCCI No. 4793, 6.5 years of direct LexisNexis Accurint investigative use, Axon Fleet 3, and current Cellebrite wording confirmed.
+- CCCI title without a public identifier, 6.5 years of direct LexisNexis Accurint investigative use, Axon Fleet 3, and current Cellebrite wording confirmed.
 - Both ATS and branded versions are two pages.
 - Every PDF page was rendered and visually inspected.
 - ATS DOCX contains no columns, tables, text boxes, drawings, or inline shapes.
@@ -53,3 +53,5 @@
 ## Scope note
 
 This is a reusable general online resume asset, not a role-specific application. No cover letter or job description is applicable, and it should not be marked Submitted or Ready to Submit for any specific employer.
+
+- 2026-08-29 public-profile reconciliation: removed the disputed digital-evidence aggregate and suppressed the CCCI identifier in the general online resume.
