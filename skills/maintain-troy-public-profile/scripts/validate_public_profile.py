@@ -21,6 +21,11 @@ REQUIRED_BLOCKED_IDS = {
     "public_credential_identifiers",
 }
 TEXT_SUFFIXES = {".html", ".htm", ".md", ".txt", ".json", ".yml", ".yaml"}
+CONTROL_FILENAMES = {
+    "PUBLIC_PROFILE_CONTRACT.json",
+    "portfolio_contract.json",
+    "workflow_contract.json",
+}
 
 PROHIBITED_PUBLIC_PATTERNS = [
     ("credential identifier", re.compile(r"\bCredential\s+ID\b", re.IGNORECASE)),
@@ -50,11 +55,19 @@ def parse_args() -> argparse.Namespace:
 
 def iter_text_files(paths: list[Path]):
     for path in paths:
-        if path.is_file() and path.suffix.lower() in TEXT_SUFFIXES:
+        if (
+            path.is_file()
+            and path.name not in CONTROL_FILENAMES
+            and path.suffix.lower() in TEXT_SUFFIXES
+        ):
             yield path
         elif path.is_dir():
             for candidate in sorted(path.rglob("*")):
-                if candidate.is_file() and candidate.suffix.lower() in TEXT_SUFFIXES:
+                if (
+                    candidate.is_file()
+                    and candidate.name not in CONTROL_FILENAMES
+                    and candidate.suffix.lower() in TEXT_SUFFIXES
+                ):
                     yield candidate
 
 
