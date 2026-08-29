@@ -4,13 +4,14 @@ Use this order when instructions appear to conflict:
 
 1. `HEADER_STANDARD.md` - locked header placement, current colors, contact row, margins, and ATS rules.
 2. `PRIVACY_STANDARD.md` - public/private boundary and redaction requirements.
-3. `CONTACT_STANDARD.md` - contact values, display text, and hyperlink behavior.
-4. `ROLE_FAMILIES.md` - canonical private-sector career taxonomy.
-5. `ROLE_ADAPTATION_STANDARD.md` - posting-led identity, evidence selection, structure, and lane vocabulary.
-6. `RESUME_HEADLINE_SCANABILITY_STANDARD.md` - headline decision, summary density, length, recency, metrics, and ATS structure.
-7. `VOICE_STANDARD.md` - tone, phrasing, and anti-AI review.
-8. `docx_header.py` and `pdf_header.py` - executable implementations of the locked standards.
-9. `DOCX_NODE_STANDARD.md` - implementation guidance for Node builders; it must conform to the files above.
+3. `PUBLIC_PROFILE_CONTRACT.json` - approved public claims, blocked conflicts, publication gates, and canonical public surfaces.
+4. `CONTACT_STANDARD.md` - contact values, display text, and hyperlink behavior.
+5. `ROLE_FAMILIES.md` - canonical private-sector career taxonomy.
+6. `ROLE_ADAPTATION_STANDARD.md` - posting-led identity, evidence selection, structure, and lane vocabulary.
+7. `RESUME_HEADLINE_SCANABILITY_STANDARD.md` - headline decision, summary density, length, recency, metrics, and ATS structure.
+8. `VOICE_STANDARD.md` - tone, phrasing, and anti-AI review.
+9. `docx_header.py` and `pdf_header.py` - executable implementations of the locked standards.
+10. `DOCX_NODE_STANDARD.md` - implementation guidance for Node builders; it must conform to the files above.
 
 ## Document routing
 
@@ -20,6 +21,7 @@ Use this order when instructions appear to conflict:
 | Cover letter DOCX | Same locked header plus shared paragraph formatting |
 | Candidate or contractor one-pager | `profile_one_pager.py` plus shared header/body helpers |
 | Human-facing PDF | Export the validated DOCX when practical; otherwise use `pdf_header.py` |
+| Public portfolio | `troyhokanson/troyhokanson.github.io`, governed by `PUBLIC_PROFILE_CONTRACT.json` |
 | Portfolio evidence | Link only to reviewed public-safe evidence; keep originals in Drive/Notion |
 
 ## One-page spacing sequence
