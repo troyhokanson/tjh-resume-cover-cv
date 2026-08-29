@@ -14,7 +14,7 @@ Fraud and financial investigations | Digital forensics and electronic evidence |
 
 ## Selected Career Highlights
 
-- **5,304 GB** of digital evidence personally processed in 2020 within a ten-agency electronic-crimes task force, with examination records, chain of custody, quality control, and clear handoff to investigators and prosecutors.
+- Conducted digital-evidence examinations within a ten-agency electronic-crimes task force, maintaining examination records, chain of custody, quality control, and clear handoff to investigators and prosecutors.
 - **$360,000+** in verified victim losses documented in a multi-victim Business Email Compromise investigation that resulted in a felony conviction and written recognition from an assistant county attorney.
 - **$40,000** ALPR technology project led agency-side through Target + Blue, coordinating Genetec AutoVu, state CJIS requirements, municipal IT, funding, field workflow, and user adoption.
 
@@ -84,7 +84,7 @@ Association of Certified Fraud Examiners (ACFE), member, 2026-Present | High Tec
 
 ## Credentials and Selected Training
 
-**Credentials:** Certified Fraud Examiner (CFE) candidate; ACFE application approved and examination preparation in progress, 2026. Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
+**Credentials:** Certified Fraud Examiner (CFE) candidate; ACFE application approved and examination preparation in progress, 2026. Certified Cyber Crime Investigator (CCCI), January 2023.
 
 **Digital-forensics training:** Cellebrite Certified Logical Operator (CCLO) and Certified Physical Analyst (CCPA), 2016; recertified 2018 and 2020. X-Ways Forensics Training, 32 hours, 2018.
 
