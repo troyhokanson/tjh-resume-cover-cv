@@ -3,16 +3,17 @@
 **Candidate:** Troy Hokanson  
 **Asset:** General Online ATS Resume  
 **Profile:** adaptive  
-**Status:** PASS
+**Status:** PASS  
+**Updated:** 2026-08-29
 
 - Two-page DOCX and PDF confirmed.
-- DOCX and PDF were rendered and both pages visually inspected.
+- One-line general headline and concise professional summary confirmed.
+- Selected verified metrics are front-loaded without forced or invented quantification.
+- Older relevant work is compressed into Earlier Public-Safety Experience.
 - Page-one name and approved four-item contact row are text-first and parsing-friendly.
-- No columns, tables, icons, or page-one banner graphics are used in the ATS body.
-- Garamond-family typography is retained.
-- Education constants and exact U.S. Army service duration are present.
-- Mercor wording remains intentionally general because of platform confidentiality restrictions.
-- Current voice, privacy, factual, and punctuation checks passed.
-- Intended use: LinkedIn, Indeed, ZipRecruiter, and other parsing-heavy job boards.
-
-Files are stored in the existing Google Drive folder `2026-08-17 General Online Resume`.
+- No columns, tables, text boxes, icons, drawings, or page-one banner graphics are used.
+- Standard headings, single-column chronology, and Garamond-family typography are retained.
+- Current chronology, CFE candidate status, CCCI, Accurint duration, Axon Fleet 3, and current Cellebrite wording are present.
+- Both pages were rendered and visually inspected.
+- Voice, privacy, factual, and punctuation checks passed.
+- Intended use: Ladders, LinkedIn, Indeed, ZipRecruiter, and other parsing-heavy job boards.
