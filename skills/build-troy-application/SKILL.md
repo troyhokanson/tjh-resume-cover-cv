@@ -133,6 +133,10 @@ Evaluate:
 
 Use a defensible fit score. Do not inflate the score to justify applying.
 
+Read `CAREER_SEARCH_STRATEGY.json` before classifying or prioritizing a role. Classify the role as Direct, Core, Transferable, Reach, or Reject before calculating a numeric score. A mandatory direct-experience gap overrides keyword similarity and transferable fit. Requirements for unverified years of SaaS implementation, renewal or expansion ownership, carrier claims-file or SIU experience, an occupational license, production technical support or networking, cloud/SIEM/EDR/incident response, quota ownership, or people management prevent Tier 1 classification unless the posting independently establishes that the requirement is optional.
+
+Record transferable fit and interview probability as separate judgments. Never convert a high transferable-fit score into a high-probability recommendation without passing the direct-experience gate. For public-safety technology roles, use the focused identity: “Former Detective & Digital Forensic Examiner | Public-Safety Software Training, Technical Support & Evidence Workflows.” When overqualification or retention risk is material, state that Troy is intentionally pursuing a hands-on individual-contributor role.
+
 ### Phase 4: Evidence Retrieval
 
 Pull facts only from verified sources in GitHub, Google Drive, SharePoint/OneDrive when available, and Notion.
