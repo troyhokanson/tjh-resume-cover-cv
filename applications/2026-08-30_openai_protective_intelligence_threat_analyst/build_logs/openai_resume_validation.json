@@ -1,0 +1,212 @@
+{
+  "document_type": "resume",
+  "profile": "analyst-intelligence",
+  "pdf": "applications/2026-08-30_openai_protective_intelligence_threat_analyst/output/Troy_Hokanson_OpenAI_Protective_Intelligence_Resume_2026-08-30.pdf",
+  "docx": "applications/2026-08-30_openai_protective_intelligence_threat_analyst/output/Troy_Hokanson_OpenAI_Protective_Intelligence_Resume_2026-08-30.docx",
+  "header_pngs": [
+    "applications/2026-08-30_openai_protective_intelligence_threat_analyst/output/rendered_final2/Troy_Hokanson_OpenAI_Protective_Intelligence_Resume_2026-08-30/page-1.png"
+  ],
+  "passed": true,
+  "failed_error_count": 0,
+  "failed_warning_count": 0,
+  "checks": [
+    {
+      "name": "anti_ai_scan",
+      "passed": true,
+      "severity": "error",
+      "detail": "pass"
+    },
+    {
+      "name": "privacy.post_number",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.peace_officer_license",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.case_control_number",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.court_case_number",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.dob",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.ssn",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.homicide",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.death investigation",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.lethal force",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.sexual assault",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.criminal sexual conduct",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.blocked_term.human trafficking",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.icac_gated.CSAM",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.icac_gated.child sexual",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.icac_gated.child abuse",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.icac_gated.child exploitation",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "privacy.icac_gated.ICAC",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 hit(s)"
+    },
+    {
+      "name": "pagination.page_1.orphan_heading_tail",
+      "passed": true,
+      "severity": "error",
+      "detail": "tail: Police Officer / Investigator | Lakeville Police Department | March 2010-May 2011 | \uf0b7 Investigated financial and property crimes, including an occupational-fraud matter involving approximately $80,000 | in unauthorized company-card charges; organized records, conducted interviews, and prepared a defensible case file."
+    },
+    {
+      "name": "pagination.page_2.orphan_heading_tail",
+      "passed": true,
+      "severity": "error",
+      "detail": "tail: \uf0b7 Certified Fraud Examiner candidate; ACFE application approved and examination preparation in progress, 2026 | \uf0b7 Certified Cyber Crime Investigator (CCCI), January 2023 | \uf0b7 Cellebrite Certified Logical Operator and Certified Physical Analyst, 2016; recertified 2018 and 2020"
+    },
+    {
+      "name": "font.garamond_family_present",
+      "passed": true,
+      "severity": "error",
+      "detail": "Garamond-family font reference found"
+    },
+    {
+      "name": "font.disallowed_visible_default.aptos",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 XML occurrence(s)"
+    },
+    {
+      "name": "font.disallowed_visible_default.calibri",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 XML occurrence(s)"
+    },
+    {
+      "name": "font.disallowed_visible_default.calibri light",
+      "passed": true,
+      "severity": "error",
+      "detail": "0 XML occurrence(s)"
+    },
+    {
+      "name": "font.disallowed_visible_default.arial",
+      "passed": true,
+      "severity": "warning",
+      "detail": "0 XML occurrence(s)"
+    },
+    {
+      "name": "pagination.keep_with_next_present",
+      "passed": true,
+      "severity": "error",
+      "detail": "54 keepNext marker(s)"
+    },
+    {
+      "name": "pagination.explicit_or_structural_page_breaks_detected",
+      "passed": true,
+      "severity": "info",
+      "detail": "2 page-break marker(s) detected"
+    },
+    {
+      "name": "header.xml_header_section_present",
+      "passed": true,
+      "severity": "error",
+      "detail": "header XML found"
+    },
+    {
+      "name": "header.navy_color_in_header",
+      "passed": true,
+      "severity": "error",
+      "detail": "navy color found in header XML"
+    },
+    {
+      "name": "header.gold_color_in_header",
+      "passed": true,
+      "severity": "error",
+      "detail": "gold color found in header XML"
+    },
+    {
+      "name": "header.navy_not_in_body",
+      "passed": true,
+      "severity": "error",
+      "detail": "navy found only outside document body"
+    },
+    {
+      "name": "render.header_png_exists",
+      "passed": true,
+      "severity": "info",
+      "detail": "applications/2026-08-30_openai_protective_intelligence_threat_analyst/output/rendered_final2/Troy_Hokanson_OpenAI_Protective_Intelligence_Resume_2026-08-30/page-1.png"
+    },
+    {
+      "name": "render.header_top_left_right_navy",
+      "passed": true,
+      "severity": "error",
+      "detail": "sampled edge pixels: [(13, 27, 42), (13, 27, 42), (13, 27, 42)], expected near (13, 27, 42)"
+    }
+  ]
+}
