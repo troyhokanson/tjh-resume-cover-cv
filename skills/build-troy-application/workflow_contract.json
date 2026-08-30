@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5.0",
+  "schema_version": "1.6.0",
   "skill": "build-troy-application",
   "candidate": "Troy J. Hokanson",
   "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
@@ -52,7 +52,11 @@
         "primary_lane_selected",
         "fit_score_recorded",
         "gaps_recorded",
-        "hiring_manager_concerns_recorded"
+        "hiring_manager_concerns_recorded",
+        "career_search_strategy_reviewed",
+        "direct_vs_transferable_classification_recorded",
+        "mandatory_experience_gap_gate_passed",
+        "interview_probability_classification_recorded"
       ]
     },
     {
@@ -206,5 +210,20 @@
     "trigger": "durable_public_fact_chronology_credential_privacy_rule_or_evidence_citation_changes",
     "routine_role_specific_tailoring": "not_applicable",
     "public_change_requires_separate_explicit_approval": true
+  },
+  "interview_probability_gate": {
+    "strategy": "CAREER_SEARCH_STRATEGY.json",
+    "mandatory_direct_experience_overrides_keyword_score": true,
+    "tier_1_requires_no_material_mandatory_gap": true,
+    "transferable_fit_cannot_be_relabelled_direct": true,
+    "reach_roles_cannot_be_tier_1": true,
+    "record_required": [
+      "fit_zone",
+      "direct_evidence",
+      "transfer_bridge",
+      "material_gaps",
+      "hiring_manager_concerns",
+      "recommendation"
+    ]
   }
 }
