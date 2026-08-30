@@ -37,14 +37,13 @@ WHITE = RGBColor(0xFF, 0xFF, 0xFF)
 BLACK = RGBColor(0x14, 0x14, 0x14)
 GRAY = RGBColor(0x55, 0x55, 0x55)
 
-BODY_FONT = "Calibri"
-NAME_FONT = "Garamond"
-CONTACT_FONT = "Garamond"
+BODY_FONT = "EB Garamond"
+NAME_FONT = "EB Garamond"
+CONTACT_FONT = "EB Garamond"
 NAME = TROY_NAME or "Troy Hokanson"
 
 _phone_digits = TROY_PHONE.replace(".", "").replace("-", "").replace(" ", "")
 CONTACT_PARTS = [
-    (TROY_LOCATION, None),
     *([(TROY_PHONE, f"tel:{_phone_digits}")] if TROY_PHONE else []),
     (TROY_EMAIL, f"mailto:{TROY_EMAIL}"),
     (
@@ -320,6 +319,10 @@ def new_document():
     style = doc.styles["Normal"]
     style.font.name = BODY_FONT
     style.font.size = Pt(10.5)
+    style._element.rPr.rFonts.set(qn("w:ascii"), BODY_FONT)
+    style._element.rPr.rFonts.set(qn("w:hAnsi"), BODY_FONT)
+    style._element.rPr.rFonts.set(qn("w:cs"), BODY_FONT)
+    style._element.rPr.rFonts.set(qn("w:eastAsia"), BODY_FONT)
     return doc
 
 

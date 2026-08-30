@@ -29,6 +29,8 @@ def main() -> int:
             r'def add_section_heading\(',
             r'def add_bullet\(',
             r'def add_job_block\(',
+            r'BODY_FONT\s*=\s*"EB Garamond"',
+            r'CONTACT_PARTS\s*=\s*\[\s*\*\(\[\(TROY_PHONE',
         ),
         ROOT / "profile_one_pager.py": (
             r"from docx_header import",
