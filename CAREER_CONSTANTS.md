@@ -117,10 +117,9 @@ Notes:      Ten partner agencies. Troy served as the Lakeville Police Department
             and administrators came to Troy for guidance on mobile devices, tablets,
             computers, hard drives, USB storage, and other digital evidence questions.
             Within the task force structure, Troy conducted forensic examinations on
-            behalf of LPD and also performed examinations for other partner agencies --
-            the 5,304 GB figure reflects his total personal examination volume across
-            all agencies he worked for through the task force, not LPD cases alone and
-            not a task-force-wide aggregate.
+            behalf of LPD and also performed examinations for other partner agencies.
+            No aggregate examination-volume figure is currently approved for public or
+            application use while the underlying workbook totals are reconciled.
             DO NOT describe Troy as "lead examiner" or "task force lead" -- that
             overstates the role. Correct framing: "Lakeville PD representative and
             digital forensics SME assigned to the DCECTF," "agency digital forensics
@@ -182,7 +181,8 @@ Title:      Police Officer / Field Training Officer (FTO)
 Employer:   Lakeville Police Department
 Location:   Lakeville, MN
 Dates:      November 1998 - February 2010
-Notes:      Initial patrol period. 18 years total FTO service spans full career.
+Notes:      Initial patrol period. FTO service spans 2004-2023. Do not publish a derived
+            18- or 19-year total until exact start and end dates are reconciled.
             20+ written commendations. SWAT service begins in this block.
             MAAG Tactical Team on-call membership: 2005 - 2011 -- see Collateral Duties.
             ALPR / Target+Blue grant program: 2007 - 2010 -- see Collateral Duties.
@@ -566,9 +566,9 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Investigations across both rotations | 6.5 years (March 2010 - May 2011 and September 2016 - December 2021) |
 | Digital forensic / ECU + DCECTF combined | 5.5 years (September 2016 - December 2021) |
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
-| Digital evidence processed (2020) | 5,304 GB (Troy's total personal examination volume across all agencies he worked for through the task force -- not LPD-only, not a task-force-wide aggregate) |
+| Digital evidence processed (2020) | Aggregate total blocked pending source-workbook reconciliation; omit the volume from public and application materials. |
 | Task force partner agencies | Ten |
-| FTO service | 19 years (2004 - 2023) |
+| FTO service | 2004-2023; derived duration under reconciliation |
 | SWAT service | 5.5 years |
 | Adjunct faculty | 18 years (March 2007 - October 2025) |
 | Written commendations | 20+ |
@@ -576,7 +576,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | BEC restitution | PENDING CONFIRMATION -- do not use $295,704.11 for BEC; see HARD ENFORCEMENT RULES above |
 | BEC conviction jurisdiction | Ramsey County (NOT federal) |
 | Separate federal case sentence | 15 years, online-exploitation prosecution -- SEPARATE CASE from BEC |
-| Documented training hours | 1,238.75 |
+| Documented training hours | Cumulative lifetime total under reconciliation; do not publish an aggregate |
 | Investigation-relevant training hours | 512 (subset) |
 | ALPR grant value | $40,000 |
 
@@ -649,6 +649,9 @@ script, not this file.
 
 ## Change Log
 
+- 2026-08-29: Blocked the disputed digital-evidence aggregate, cumulative training total,
+  and derived FTO year count from public and application use pending source reconciliation.
+  Use the FTO date range 2004-2023.
 - 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
   umbrella entry for verified independent project work and professional development.
   Corrected Real Estate Consultant to June 2024 - June 2026, removed outdated status
@@ -697,12 +700,12 @@ script, not this file.
   SME. LPD personnel came to Troy for guidance on mobile devices, tablets, computers,
   hard drives, USB storage, and related digital evidence questions. He conducted forensic
   examinations on behalf of LPD within the DCECTF structure.
-  5,304 GB stat clarified as Troy's examination volume, not a task-force-wide figure.
+  prior aggregate-volume claim clarified as Troy's examination volume, not a task-force-wide figure.
   Added explicit "DO NOT describe as lead examiner" enforcement note in DCECTF block.
-  Updated Key Career Statistics table note on the 5,304 GB stat to match.
-- 2026-06-14 (commit 2): Corrected scope of 5,304 GB figure.
+  Updated Key Career Statistics table note on the prior aggregate-volume claim to match.
+- 2026-06-14 (commit 2): Corrected scope of prior aggregate-volume figure.
   Troy performed forensic examinations for LPD AND for other partner agencies within
-  the task force structure. The 5,304 GB figure is his total personal examination volume
+  the task force structure. The prior aggregate-volume figure is his total personal examination volume
   across all agencies he worked for through the DCECTF -- not LPD cases alone and not
   a task-force-wide aggregate.
 - 2026-06-14 (commit 3): Removed all em dashes (Unicode U+2014) from file.

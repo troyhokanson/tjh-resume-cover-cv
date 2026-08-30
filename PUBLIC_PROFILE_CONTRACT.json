@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.1.0",
+  "last_reviewed": "2026-08-30",
+  "candidate": "Troy J. Hokanson",
+  "authority": {
+    "career_repository": "troyhokanson/tjh-resume-cover-cv",
+    "privacy_standard": "PRIVACY_STANDARD.md",
+    "career_constants": "CAREER_CONSTANTS.md",
+    "training_constants": "TRAINING_CONSTANTS.md",
+    "primary_evidence_system": "Google Drive",
+    "status_and_decisions_system": "Notion"
+  },
+  "public_surfaces": {
+    "production_site": "https://troyhokanson.com",
+    "production_repository": "troyhokanson/troyhokanson.github.io",
+    "linkedin": "https://www.linkedin.com/in/troyhokanson",
+    "unused_duplicate_repository": {
+      "repository": "troy-hokanson/portfolio",
+      "role": "unused_duplicate",
+      "required_visibility": "private",
+      "verified_visibility": "private",
+      "verified_date": "2026-08-29",
+      "runtime_verification_required": true
+    }
+  },
+  "publication_policy": {
+    "private_evidence_default": true,
+    "raw_source_records_publication": "prohibited",
+    "public_release_requires": [
+      "privacy_review",
+      "sanitized_public_artifact",
+      "explicit_public_approval",
+      "public_access_verification"
+    ],
+    "prohibited_categories": [
+      "post_or_peace_officer_license_record",
+      "badge_or_personnel_identifier",
+      "credential_or_responder_identifier",
+      "license_effective_or_expiration_details",
+      "social_security_or_birth_data",
+      "protected_case_or_victim_information",
+      "private_address",
+      "signature_or_qr_code",
+      "raw_case_court_personnel_certificate_or_commendation_file",
+      "unreviewed_or_private_drive_link"
+    ]
+  },
+  "approved_public_claims": [
+    {
+      "id": "default_headline",
+      "public_text": "Former Detective & Digital Forensic Examiner | Public-Safety Software Training, Technical Support & Evidence Workflows",
+      "status": "approved",
+      "source": "CAREER_SEARCH_STRATEGY.json",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "general_online_resume",
+        "indeed"
+      ]
+    },
+    {
+      "id": "primary_positioning",
+      "public_text": "Former detective and digital-forensic examiner who helps public-safety organizations adopt technology, resolve evidence and workflow problems, train users, and communicate clearly under pressure. Intentionally pursuing a hands-on individual-contributor role.",
+      "status": "approved",
+      "source": "CAREER_SEARCH_STRATEGY.json",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "indeed",
+        "general_online_resume"
+      ]
+    },
+    {
+      "id": "current_role",
+      "public_text": "Independent Professional | April 2026-Present",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "notion",
+        "resume"
+      ]
+    },
+    {
+      "id": "real_estate_chronology",
+      "public_text": "Real Estate Consultant | June 2024-June 2026",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "notion",
+        "resume"
+      ]
+    },
+    {
+      "id": "law_enforcement_service",
+      "public_text": "25 years of sworn law-enforcement service; medically retired May 2024",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "investigations_duration",
+      "public_text": "6.5 years in investigative assignments",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "digital_forensics_duration",
+      "public_text": "5.5 years in digital forensics",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "field_training_service",
+      "public_text": "Field Training Officer, 2004-2023",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "military_service",
+      "public_text": "U.S. Army veteran; honorably discharged",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "cfe_status",
+      "public_text": "Certified Fraud Examiner (CFE) candidate; ACFE application approved and examination preparation in progress",
+      "status": "approved",
+      "source": "applications/2026-08-17_general_online_resume/Resume_Review_Decisions_2026-08-29.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "ccci_title",
+      "public_text": "Certified Cyber Crime Investigator (CCCI)",
+      "status": "approved_without_identifier",
+      "source": "applications/2026-08-17_general_online_resume/resume.md",
+      "surfaces": [
+        "website",
+        "linkedin"
+      ]
+    },
+    {
+      "id": "lexisnexis_accurint",
+      "public_text": "LexisNexis Accurint, 6.5 years of direct investigative use",
+      "status": "approved",
+      "source": "applications/2026-08-17_general_online_resume/Resume_Review_Decisions_2026-08-29.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "real_estate_sales",
+      "public_text": "$3.2 million in residential sales closed",
+      "status": "approved",
+      "source": "CAREER_CONSTANTS.md",
+      "surfaces": [
+        "website",
+        "linkedin",
+        "resume"
+      ]
+    },
+    {
+      "id": "bec_victim_losses",
+      "public_text": "$360,000+ in verified victim losses documented in a multi-victim Business Email Compromise investigation that resulted in a felony conviction",
+      "status": "approved_sanitized",
+      "source": "awards_comm_perf_reviews.md",
+      "surfaces": [
+        "website",
+        "resume",
+        "cover_letter"
+      ]
+    }
+  ],
+  "unresolved_or_blocked_claims": [
+    {
+      "id": "fto_duration",
+      "status": "blocked",
+      "reason": "GitHub sources conflict between 18 and 19 years.",
+      "safe_public_alternative": "Field Training Officer, 2004-2023"
+    },
+    {
+      "id": "ftk_bootcamp_hours",
+      "status": "blocked",
+      "reason": "The current training constant conflicts with the attached training history and connected evidence master. Verify the primary certificate before publishing hours.",
+      "safe_public_alternative": "Forensic Toolkit (FTK) Bootcamp, AccessData, 2017"
+    },
+    {
+      "id": "digital_evidence_volume",
+      "status": "blocked",
+      "reason": "The evidence-workbook totals remain under data-quality review.",
+      "safe_public_alternative": "Omit the aggregate volume."
+    },
+    {
+      "id": "cumulative_training_hours",
+      "status": "blocked",
+      "reason": "The cumulative totals remain unreconciled across current trackers.",
+      "safe_public_alternative": "List verified selected courses without a lifetime aggregate."
+    },
+    {
+      "id": "public_credential_identifiers",
+      "status": "prohibited",
+      "reason": "Public portfolio and LinkedIn surfaces must not display license, responder, personnel, or credential identifiers.",
+      "safe_public_alternative": "Use the approved credential title without an identifier."
+    }
+  ]
+}

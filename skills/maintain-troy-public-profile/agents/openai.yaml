@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maintain Troy Public Profile"
+  short_description: "Audit and synchronize Troy's public professional profile"
+  default_prompt: "Audit Troy's approved public profile across GitHub, TroyHokanson.com, LinkedIn, Notion, and Drive evidence, then prepare privacy-safe corrections."
