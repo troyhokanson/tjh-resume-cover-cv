@@ -10,6 +10,7 @@ M.A. (GPA 3.94), 18 years adjunct teaching, empathetic + investigator-precise.
 """
 
 from __future__ import annotations
+import os
 import re
 import sys
 from pathlib import Path
@@ -137,20 +138,19 @@ _UNVERIFIED_BEC_OUTCOME_PATTERN = re.compile(
 # PRIVACY STANDARD - CASE IDENTIFIER SUPPRESSION
 # =========================================================================
 
-SUPPRESSED_NAMES = [
-    "Condello Wall",
-    "Matt Garwood",
-    "Matthew Garwood",
-    "Matthew Scott Garwood",
-    "Arlene Perkkio",
-    "Perkkio",
-]
+def _private_case_denylist() -> tuple[str, ...]:
+    """Load private case terms without storing or logging them in this repository."""
+    raw = os.getenv("TROY_PRIVATE_CASE_DENYLIST", "")
+    return tuple(term.strip() for term in raw.split("|") if term.strip())
 
 _CONTROL_NUMBER_PATTERN = re.compile(r"Control\s*#\s*\d+", re.IGNORECASE)
 _COURT_CASE_PATTERN = re.compile(
     r"\b\d{2}[A-Z]{2}-[A-Z]{2}-\d{2}-\d{4}\b", re.IGNORECASE
 )
 _DOB_PATTERN = re.compile(r"\bDOB\s*[:\-]?\s*\d{2}/\d{2}/\d{4}\b", re.IGNORECASE)
+_NAMED_JUDGE_PATTERN = re.compile(
+    r"\bJudge\s+[A-Z][A-Za-z'\-]+(?:\s+[A-Z][A-Za-z'\-]+){0,2}\b"
+)
 
 _POST_LICENSE_REFERENCE_PATTERN = re.compile(
     r"\b(?:Minnesota\s+|MN\s+)?"
@@ -398,11 +398,11 @@ def scan_text(
                     "Pass allow_icac=True to permit for child-safety / ICAC role documents."
                 )
 
-    for name in SUPPRESSED_NAMES:
+    for name in _private_case_denylist():
         if re.search(rf"\b{re.escape(name)}\b", body, re.IGNORECASE):
             failures.append(
-                f"[L1:PRIVACY] Suppressed case identifier present: '{name}'. "
-                "Replace with role descriptor only. See PRIVACY_STANDARD.md Section 1."
+                "[L1:PRIVACY] A private case-denylist term is present. Replace it with a "
+                "role descriptor only. See PRIVACY_STANDARD.md Section 1."
             )
 
     if _CONTROL_NUMBER_PATTERN.search(body):
@@ -413,6 +413,11 @@ def scan_text(
 
     if _DOB_PATTERN.search(body):
         failures.append("[L1:PRIVACY] DOB string found. Omit entirely from application documents.")
+
+    if _NAMED_JUDGE_PATTERN.search(body):
+        failures.append(
+            "[L1:PRIVACY] Named judicial officer found. Use 'the court' and omit the name."
+        )
 
     if _POST_LICENSE_REFERENCE_PATTERN.search(body) or _POST_NUMBER_PATTERN.search(body):
         failures.append(

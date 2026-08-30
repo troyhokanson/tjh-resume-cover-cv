@@ -15,9 +15,9 @@ Left column: domain label (bold). Right column: comma-separated skills string.
 | Domain | Skills |
 |---|---|
 | **Fraud Investigation** | Insurance fraud detection, SIU case management, financial crime analysis, workers compensation fraud, healthcare fraud, identity theft investigation, asset tracing |
-| **Digital Forensics** | Cellebrite UFED (CCLO/CCPA), mobile device extraction, cell-site analysis, location data interpretation, social media OSINT, dark web investigation, NW3C cybercrime |
+| **Digital Forensics** | Cellebrite UFED (CCLO/CCPA), mobile device extraction, cell-site analysis, location data interpretation, social media OSINT, digital-evidence preservation, NW3C cybercrime |
 | **Interviewing and Interrogation** | Reid Technique, cognitive interviewing, recorded statement management, witness coordination, victim-sensitive interviewing |
-| **Intelligence and Analysis** | Criminal intelligence analysis, link analysis, pattern recognition, threat assessment, i2 Analyst Notebook, geospatial mapping, OSINT tools |
+| **Intelligence and Analysis** | Criminal intelligence analysis, public-record research, link analysis, pattern recognition, threat assessment, geospatial mapping, OSINT tools |
 | **Legal and Compliance** | Search warrant preparation, criminal case referral, subpoena management, chain of custody, court testimony, expert witness, Minnesota Rules of Criminal Procedure |
 | **Technology and Platforms** | Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com), Microsoft 365, SharePoint, case management systems, SQL basics, Python basics, AI-assisted research tools |
 
@@ -33,6 +33,9 @@ Left column: domain label (bold). Right column: comma-separated skills string.
 - If a specific role does not require a domain (e.g., a pure analyst role with no court testimony),
   that row may be omitted for that document only. The source table here remains unchanged.
 - Do NOT add a "Core Competencies" prose block above the table. The table is the section.
+- Named tools and platforms must also appear in the Confirmed Tools section of
+  `CAREER_CONSTANTS.md`. A verified method such as link analysis does not establish use of
+  any specific link-analysis product.
 
 ---
 
@@ -41,7 +44,7 @@ Left column: domain label (bold). Right column: comma-separated skills string.
 When generating a plain-text ATS version, render skills as a flat pipe-delimited list:
 
 ```
-Insurance Fraud Detection | SIU Case Management | Financial Crime Analysis | Workers Compensation Fraud | Healthcare Fraud | Identity Theft Investigation | Asset Tracing | Cellebrite UFED (CCLO/CCPA) | Mobile Device Extraction | Cell-Site Analysis | Location Data Interpretation | Social Media OSINT | Dark Web Investigation | Reid Technique | Cognitive Interviewing | Recorded Statement Management | Criminal Intelligence Analysis | Link Analysis | i2 Analyst Notebook | Geospatial Mapping | Search Warrant Preparation | Criminal Case Referral | Court Testimony | Expert Witness | Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com) | Microsoft 365 | SharePoint | AI-Assisted Research Tools
+Insurance Fraud Detection | SIU Case Management | Financial Crime Analysis | Workers Compensation Fraud | Healthcare Fraud | Identity Theft Investigation | Asset Tracing | Cellebrite UFED (CCLO/CCPA) | Mobile Device Extraction | Cell-Site Analysis | Location Data Interpretation | Social Media OSINT | Digital-Evidence Preservation | Reid Technique | Cognitive Interviewing | Recorded Statement Management | Criminal Intelligence Analysis | Public-Record Research | Link Analysis | Pattern Recognition | Threat Assessment | Geospatial Mapping | OSINT Tools | Search Warrant Preparation | Criminal Case Referral | Court Testimony | Expert Witness | Axon Body 3, Axon Fleet 3, Axon Evidence (Evidence.com) | Microsoft 365 | SharePoint | AI-Assisted Research Tools
 ```
 
 ---
@@ -50,3 +53,5 @@ Insurance Fraud Detection | SIU Case Management | Financial Crime Analysis | Wor
 
 - 2026-06-15: Created. Six-domain table established. ATS plain-text fallback added.
   CCCI and Cellebrite CCLO/CCPA reflected under Digital Forensics domain.
+- 2026-08-29: Removed two unsupported capability claims and added a cross-check requiring
+  every named tool or platform to appear in the confirmed-tools source of truth.

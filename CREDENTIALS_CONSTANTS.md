@@ -42,13 +42,15 @@ Issued: January 2023
 
 This credential belongs in the Certifications section when relevant to the target role.
 Display as: `Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023`.
+The structured catalog entry `DF-001` must use January 2023 as the credential issue date.
+Do not substitute the date of an earlier NW3C course for the credential issue date.
 
 ---
 
 ## Full Public-Facing Credentials Block
 
 ```
-Certified Fraud Examiner (CFE), actively pursuing through ACFE, 2026.
+Certified Fraud Examiner (CFE) candidate; ACFE application approved; examination preparation in progress, 2026.
 Certified Cyber Crime Investigator (CCCI) No. 4793, January 2023.
 BCA Certified Crime Scene Technician.
 Cellebrite CCLO and CCPA (2016, recertified 2020).
@@ -64,3 +66,5 @@ NW3C Cybercrime Investigation.
 - 2026-07-22: Removed all public-facing POST, peace-officer license, badge, and
   internal identifier details. Added a permanent rule to omit the entire licensing
   credential because Troy is not pursuing sworn law-enforcement roles.
+- 2026-08-29: Locked the CCCI catalog issue date to January 2023 and clarified current
+  CFE candidate status.

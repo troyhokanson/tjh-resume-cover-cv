@@ -3,8 +3,10 @@
 **Candidate:** Troy Hokanson  
 **Asset:** General Online ATS Resume  
 **Profile:** adaptive  
-**Status:** PASS  
-**Updated:** 2026-08-29
+**Status:** STALE - source corrected on 2026-08-29; regeneration and ATS revalidation required
+
+The checks below describe the prior generated ATS files. They do not apply to the corrected
+source until a new DOCX/PDF pair is generated and validated.
 
 - Two-page DOCX and PDF confirmed.
 - One-line general headline and concise professional summary confirmed.
@@ -17,3 +19,6 @@
 - Both pages were rendered and visually inspected.
 - Voice, privacy, factual, and punctuation checks passed.
 - Intended use: Ladders, LinkedIn, Indeed, ZipRecruiter, and other parsing-heavy job boards.
+
+Prior files are stored in the existing Google Drive folder `2026-08-17 General Online Resume`
+and are superseded pending regeneration.

@@ -33,24 +33,20 @@ The phrase "federal coordination" in CASE_BANK.md refers to investigative coordi
 only -- it does NOT mean the case was federally prosecuted.
 ```
 
-### RULE 2 -- Torres-Maldonado Case (15-Year Federal Sentence)
+### RULE 2 -- Separate Federal Case (15-Year Sentence)
 
 ```
-THE CORRECT SPELLING IS TORRES-MALDONADO.
-NOT "Torrens-Maldonado." NOT "Torrence-Maldonado." NOT any other variant.
-TORRES-MALDONADO. Always. Every document. Every reference. No exceptions.
-
-THE 15-YEAR FEDERAL SENTENCE BELONGS TO THE TORRES-MALDONADO CASE.
-THAT IS A CHILD PORNOGRAPHY FEDERAL PROSECUTION.
+THE 15-YEAR FEDERAL SENTENCE BELONGS TO A SEPARATE ONLINE-EXPLOITATION CASE.
 IT IS COMPLETELY SEPARATE FROM THE BEC CASE.
 
-DO NOT conflate the Torres-Maldonado 15-year federal sentence with the BEC case.
-DO NOT mention the 15-year sentence in any context other than the Torres-Maldonado case.
+DO NOT conflate that 15-year federal sentence with the BEC case.
+DO NOT publish the subject's name or other protected identifiers.
+DO NOT mention the 15-year sentence in any context other than the separate federal case.
 DO NOT use the figure "15 years" when describing BEC case outcomes.
 
-The Torres-Maldonado case is not yet in CASE_BANK.md as a full entry.
-Until it is added, do not use specific case details beyond the sentence length and
-federal prosecution status without confirmation from Troy.
+Until a sanitized entry is approved, do not use specific case details beyond the
+sentence length and federal prosecution status without confirmation from Troy and
+the current public-use gate.
 ```
 
 ### RULE 3 -- $295,704.11 Restitution Figure
@@ -76,13 +72,13 @@ of which case it belongs to.
 ### Independent Professional
 ```
 Title:      Independent Professional
-Employer:   Self-directed / project-based professional work
+Employer:   Independent
 Location:   Remote
 Dates:      April 2026 - Present
-Notes:      Current umbrella entry for independent project work and professional development
-            in AI evaluation, investigative research, source validation, and workflow
-            automation. Do not substitute a platform-specific title unless a role, contract,
-            and dates are separately verified for public use.
+Notes:      Standard current chronology entry. May include verified paid AI project work
+            and professional development when relevant to the target role. Do not imply
+            clients, contracts, consulting revenue, business ownership, or licensure.
+            The April-June 2026 overlap with the completed real-estate role is accurate.
 ```
 
 ### Real Estate Consultant
@@ -92,8 +88,9 @@ Employer:   eXp Realty / KW Select
 Location:   South Metro MN
 Dates:      June 2024 - June 2026
 Notes:      Medical retirement from law enforcement May 2024. Closed $3.2M in residential
-            sales during transition. Real-estate license ended June 30, 2026. This is a
-            completed bridge role, not a current or referral-only position.
+            sales during transition. The role concluded in June 2026 and the real-estate
+            license ended June 30, 2026. Do not imply ongoing referrals, active practice,
+            or active licensure after that date. Frame this as a completed bridge role.
 ```
 
 ### Police Officer -- Return to Patrol
@@ -252,9 +249,13 @@ the CONFIRMED section below. Never omit a tool from the PROHIBITED section.
 ```
 LexisNexis Accurint
   Category:   Investigative research / skip trace / subject background
-  Usage:      Used during law enforcement career for subject location, asset identification,
-              associate mapping, and background research on persons of interest.
-  Display:    "LexisNexis Accurint" (full form); "Accurint" (abbreviated) -- both acceptable.
+  Usage:      6.5 years of direct investigative use across both investigative rotations
+              for subject location, asset identification, associate mapping, and background
+              research on persons of interest.
+  Display:    "LexisNexis Accurint, 6.5 years of direct investigative use across both
+              investigative rotations" when duration is material or required.
+  Boundary:   Do not imply LexisNexis employment, platform administration, certification,
+              current-version expertise, or use outside the two investigative rotations.
 
 ZetX (TRAXi / Traxx)
   Category:   Cell site analysis / call detail record (CDR) mapping
@@ -503,8 +504,9 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 - Patrol return (January 2022 - May 2024) is always its own block -- never merged into DCECTF
 - First investigative rotation: March 2010 - May 2011
 - Second investigative rotation: September 2016 - December 2021 (ECU + DCECTF combined span)
-- Independent Professional start date is April 2026 and current status is "Present"
-- Real estate end date is June 2026, not March 2026 or "Present"; license ended June 30, 2026
+- Independent Professional: April 2026 - Present
+- Real estate end date is June 2026; license ended June 30, 2026
+- The April-June 2026 overlap between Independent Professional and Real Estate Consultant is accurate
 - University of Phoenix end date is October 2025, not "Present"
 - Medical retirement from sworn service: May 2024
 - CSU on-call: 2013 - 2018 (year-only acceptable for collateral duties)
@@ -519,7 +521,7 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 | Rotation | Dates | Key Cases |
 |---|---|---|
 | First | March 2010 - May 2011 | Occupational fraud (employee credit card misuse, ~$80K); Lakeville Park Theft |
-| Second (ECU + DCECTF) | September 2016 - December 2021 | BEC / Shell Companies; Garwood Burglary / Google Search Warrant |
+| Second (ECU + DCECTF) | September 2016 - December 2021 | BEC / Shell Companies; Commercial Burglary / Google Search Warrant |
 
 ---
 
@@ -561,6 +563,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 |---|---|
 | Total sworn service | 25 years (medically retired May 2024) |
 | Military service | 8 years 3 months (honorably discharged) |
+| Investigations across both rotations | 6.5 years (March 2010 - May 2011 and September 2016 - December 2021) |
 | Digital forensic / ECU + DCECTF combined | 5.5 years (September 2016 - December 2021) |
 | DCECTF specifically | 4.5 years (June 2017 - December 2021) |
 | Digital evidence processed (2020) | 5,304 GB (Troy's total personal examination volume across all agencies he worked for through the task force -- not LPD-only, not a task-force-wide aggregate) |
@@ -572,7 +575,7 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Real estate sales | $3.2M |
 | BEC restitution | PENDING CONFIRMATION -- do not use $295,704.11 for BEC; see HARD ENFORCEMENT RULES above |
 | BEC conviction jurisdiction | Ramsey County (NOT federal) |
-| Torres-Maldonado sentence | 15 years, federal, child pornography -- SEPARATE CASE from BEC |
+| Separate federal case sentence | 15 years, online-exploitation prosecution -- SEPARATE CASE from BEC |
 | Documented training hours | 1,238.75 |
 | Investigation-relevant training hours | 512 (subset) |
 | ALPR grant value | $40,000 |
@@ -615,7 +618,7 @@ relevance, and the link to the underlying verified experience.
 
 | Tool | Category | Era |
 |---|---|---|
-| LexisNexis Accurint | Subject research / skip trace | Full career |
+| LexisNexis Accurint | Subject research / skip trace | 6.5 years across both investigative rotations |
 | ZetX TRAXi | CDR / cell site mapping | Full career |
 | Cellebrite UFED | Mobile device forensics | ECU / DCECTF |
 | Magnet AXIOM | Artifact recovery and analysis | ECU / DCECTF |
@@ -648,7 +651,7 @@ script, not this file.
 
 - 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
   umbrella entry for verified independent project work and professional development.
-  Corrected Real Estate Consultant to June 2024 - June 2026, removed referral-only
+  Corrected Real Estate Consultant to June 2024 - June 2026, removed outdated status
   wording, and recorded that the real-estate license ended June 30, 2026.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
@@ -731,26 +734,22 @@ script, not this file.
 - 2026-06-14 (commit 6): CRITICAL CORRECTION -- BEC case jurisdiction and sentence.
   The BEC / Shell Companies case was prosecuted by Ramsey County.
   It is NOT a federal case and did NOT result in a federal sentence.
-  The 15-year sentence belongs to the Torres-Maldonado case (child pornography,
-  federal prosecution) -- a completely separate case from BEC.
+  The 15-year sentence belongs to a separate federal online-exploitation prosecution,
+  not the BEC case.
   The $295,704.11 restitution figure has NOT been confirmed as the BEC amount and
   must not be used for the BEC case until Troy confirms which case it belongs to.
   Added HARD ENFORCEMENT RULES section at the top of the file with three rules:
     Rule 1: BEC case is Ramsey County, not federal -- confirmed outcome language defined.
-    Rule 2: Torres-Maldonado 15-year sentence is federal child pornography -- never
-            conflate with BEC.
+    Rule 2: The separate 15-year federal sentence must never be conflated with BEC.
     Rule 3: $295,704.11 restitution figure is PENDING CONFIRMATION -- do not assign
             to BEC case.
   Updated Key Career Statistics table to flag BEC restitution as pending and add
   explicit jurisdiction and case-separation rows.
   This error has been noted more than once. The HARD ENFORCEMENT RULES section
   is positioned at the top of the file to ensure it is read before any drafting begins.
-- 2026-06-14 (commit 7): SPELLING CORRECTION -- Torres-Maldonado.
-  "Torrens-Maldonado" was a misspelling. The correct surname is Torres-Maldonado.
-  All 6 instances corrected: Rule 2 header, Rule 2 body (3 instances), Key Career
-  Statistics table, and Change Log entry for commit 6.
-  Rule 2 now includes an explicit spelling enforcement statement at the top of the block:
-  "The correct spelling is TORRES-MALDONADO. Not Torrens. Not Torrence. Always Torres."
+- 2026-08-29: PRIVACY CORRECTION -- Removed case-subject names from this public source
+  while preserving the verified separation between the BEC outcome and the unrelated
+  15-year federal sentence.
 - 2026-06-14 (commit 8): PRIVACY -- Removed suspect and victim company names from
   occupational fraud case in First Investigative Rotation block and Investigative
   Rotation Summary table.
