@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0.0",
+  "effective_date": "2026-08-30",
+  "candidate": "Troy J. Hokanson",
+  "purpose": "Prioritize interview probability for fully remote or approved hybrid work without overstating direct industry experience.",
+  "primary_market_identity": {
+    "headline": "Former Detective & Digital Forensic Examiner | Public-Safety Software Training, Technical Support & Evidence Workflows",
+    "positioning": "Former detective and digital-forensic examiner who helps public-safety organizations adopt technology, resolve evidence and workflow problems, train users, and communicate clearly under pressure.",
+    "retention_context": "Intentionally pursuing a hands-on individual-contributor role."
+  },
+  "effort_allocation": {
+    "primary_public_safety_training_support": 60,
+    "secondary_corporate_investigations_security_intelligence": 25,
+    "employment_safety_net_claims_bridge": 15
+  },
+  "role_families": {
+    "primary": [
+      "Public Safety Software Trainer",
+      "Digital Forensics Technical Support",
+      "Digital Evidence Specialist",
+      "Customer Delivery Specialist - Public Safety",
+      "Product Specialist - Public Safety or Digital Evidence",
+      "Customer Education Specialist",
+      "Implementation Associate - Public Safety",
+      "Professional Services Consultant - Public Safety",
+      "Law Enforcement Customer Support"
+    ],
+    "secondary": [
+      "Corporate Investigator",
+      "Corporate Security Analyst",
+      "Security Intelligence Analyst",
+      "Digital Forensic Examiner"
+    ],
+    "safety_net": [
+      "Claims Adjuster Trainee",
+      "Claims Investigator I",
+      "SIU Investigator I or Trainee"
+    ],
+    "reach_or_deprioritized": [
+      "SIU Investigator II or III requiring direct carrier claims experience",
+      "Senior Customer Success Manager owning renewals or expansion",
+      "Senior Implementation Consultant requiring full-cycle SaaS deployments",
+      "Solutions Architect or Sales Engineer requiring quota or presales ownership",
+      "Enterprise DFIR requiring current SIEM, EDR, cloud incident response, or reverse engineering",
+      "Loss Prevention or Asset Protection roles tied to stores, sites, or field territories"
+    ]
+  },
+  "probability_gate": {
+    "principle": "Mandatory direct-experience requirements override transferable fit and keyword similarity.",
+    "material_gaps_that_prevent_tier_1": [
+      "Required years owning full-cycle SaaS implementations",
+      "Required ownership of renewals, ARR, NRR, expansion, or a book of business",
+      "Required direct insurance claims-file ownership, EUOs, claims law, or carrier SIU tenure",
+      "Required active adjuster or other occupational license not already verified",
+      "Required production application-support, networking, cloud, SIEM, EDR, coding, reverse-engineering, or incident-response experience not already verified",
+      "Required sales quota, pipeline, or formal presales ownership",
+      "Required people-management scope not already verified"
+    ],
+    "classifications": {
+      "direct": "Verified function and relevant industry line; no material mandatory gap.",
+      "core": "Verified function; industry line is compatible or unspecified; no material mandatory gap.",
+      "transferable": "Credible evidence bridge exists, but industry, platform, or operating model differs.",
+      "reach": "One or more material mandatory gaps remain; do not score or label as Tier 1.",
+      "reject": "Hard requirement is unsupported and not realistically bridgeable for this search."
+    },
+    "tier_rules": {
+      "tier_1": "Direct or Core, score at least 78, no material mandatory gap, location/travel/pay acceptable.",
+      "tier_2": "Transferable, score at least 70, no hard disqualifier, explicit bridge and hiring concern recorded.",
+      "tier_3": "Human review only; lower probability or compensation/travel compromise.",
+      "reach": "Never relabel as Tier 1 solely because transferable skills or keywords produce a high score."
+    }
+  },
+  "application_operating_limits": {
+    "weekly_target": "8-10 genuinely qualified applications",
+    "freshness": "Prefer applications within 48 hours of posting.",
+    "customization_cap_minutes": 75,
+    "required_human_connection": "For each serious application, identify one defensible recruiter, hiring manager, team member, or former law-enforcement employee; draft outreach but do not send without approval.",
+    "follow_up": "One follow-up after 5-7 business days when appropriate, then continue the search.",
+    "incomplete_rule": "A packet in Drafting does not count as a completed application."
+  },
+  "source_and_privacy_rules": {
+    "official_posting_required": true,
+    "verified_evidence_required": true,
+    "direct_and_transferable_must_remain_distinct": true,
+    "protected_case_data_publication": "prohibited",
+    "medical_retirement_in_private_sector_marketing": "omit unless Troy explicitly requests it",
+    "public_updates_require_explicit_approval": true
+  }
+}
