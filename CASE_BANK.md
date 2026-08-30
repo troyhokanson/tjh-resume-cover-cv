@@ -1,11 +1,21 @@
 # CASE_BANK.md
 ## Troy J. Hokanson — Investigative Case Bank
 
-This file is the source of truth for quantified, outcome-verified case examples used in resumes, cover letters, and interview preparation. All entries follow VOICE_STANDARD.md rules: no em dashes, no semicolons in narrative text, no exclamation points, plain active voice, quantified outcomes only.
+This public file contains sanitized, reusable case-story patterns for resumes, cover letters,
+and interview preparation. Private evidence, identifiers, exact crosswalks, and source records
+belong in the approved private evidence system, not this repository. Every outcome and role
+claim must remain supported by the private evidence record and the current
+`CASE_EVIDENCE_REVIEW_STANDARD.md`.
 
-**Usage:** Pull the appropriate format variant (resume full, resume condensed, or cover letter) directly into documents. Do not paraphrase — use as written or update this file first.
+**External-use gate:** Never copy an entry into an application automatically. Recheck its
+verification and public-use status, select only the sanitized variant, enforce
+`PRIVACY_STANDARD.md`, and run the current PTSD-scope and role-profile validators. Content
+outside a selected role's permitted scope stays internal even when the underlying facts are
+verified.
 
-**Trigger phrase to add a new case:** Say "Add to CASE_BANK" followed by the case details. The AI will build the full structured entry, update the Case Index table, and commit the file.
+**Trigger phrase to add a new case:** Say "Add to CASE_BANK" followed by the case details. The
+AI will verify the private evidence, create only a sanitized public pattern here, update the
+Case Index, and keep all protected details outside the repository.
 
 ---
 
@@ -32,12 +42,12 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 | # | Case Label | Year | Type | Loss / Impact | Outcome |
 |---|---|---|---|---|---|
 | 1 | BEC / Shell Companies | ~2019-2021 | Financial crime, wire fraud, organized fraud | $360,000+ verified victim losses | Felony conviction, written commendation from an Assistant Dakota County Attorney |
-| 2 | Occupational Fraud / Office Manager | Offense: 03/15/2008, Filed: 03/21/2011 | Occupational fraud, theft by swindle | ~$80,000 in unauthorized charges | Felony conviction (Theft by Swindle); restitution ordered; early probation discharge 07/20/2021; expungement denied 02/11/2022 |
+| 2 | Occupational Fraud / Office Manager | 2008-2011 investigation | Occupational fraud, theft by swindle | ~$80,000 in unauthorized charges | Felony conviction; restitution ordered; later expungement request denied |
 | 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
-| 4 | Commercial Burglary / Google Search Warrant | Offense: 09/29/2016, Sentenced: 01/15/2020 | Burglary 2nd Degree (Possess Tool), physical and digital evidence convergence | Commercial burglary of a Lakeville bar; cash box recovered | Felony conviction; 30-month commitment stayed 10 years; 90-day jail/work release; 10-year supervised probation; $1,850 restitution; gambling treatment ordered; no-casino condition |
+| 4 | Commercial Burglary / Google Search Warrant | 2016-2020 | Commercial burglary, physical and digital evidence convergence | Stolen property recovered | Felony conviction; stayed sentence, supervised probation, restitution, and treatment conditions |
 | 5 | Time-Sensitive Online Exploitation | 2019 | Online exploitation, digital evidence preservation, forensic analysis | Proactive ownership under evidence-loss risk | Three felony convictions; executed sentence up to 78 months |
-| 6 | High-Volume Multi-Device Investigation | 2017 | Child-exploitation investigation, digital forensics | Large, complex digital evidence set | Arrest outcome |
-| 7 | Multi-Jurisdiction Homicide Digital Evidence | 2021 | Homicide, legal process, digital evidence, multi-agency coordination | Volatile evidence and multiple jurisdictions | First-degree murder convictions; life without parole |
+| 6 | High-Volume Multi-Device Investigation | 2017 | Sensitive online-safety investigation, digital forensics | Large, complex digital evidence set | Arrest outcome |
+| 7 | Multi-Jurisdiction Major-Case Digital Evidence | 2021 | Major-case legal process, digital evidence, multi-agency coordination | Volatile evidence and multiple jurisdictions | Trial convictions and a life sentence |
 
 ---
 
@@ -75,15 +85,12 @@ Among the complex fraud cases I led, one involved a multi-victim Business Email 
 
 ## Case 2 — Occupational Fraud / Office Manager
 
-**Case Reference:** Control #10001056, Case No. 19HA-CR-11-907, Dakota County District Court, 1st Judicial District
-**Offense Date:** March 15, 2008
-**Filed:** March 21, 2011
+**Private evidence reference:** Verified outside this public repository
+**Approximate period:** 2008-2011 investigation
 **Case Type:** Occupational fraud, theft by swindle (MN Statute 609.52.2(4), Felony)
-**Suspect:** [Name suppressed — public court record, withheld from application materials per PRIVACY_STANDARD]
-**Employer / Victim Business:** [Business name suppressed per PRIVACY_STANDARD]
 **Loss Amount:** Approximately $80,000 in personal charges made on a company credit card
 **Investigative Methods:** Physical receipt collection, financial transaction compilation in Excel, case package development, county attorney referral, subject declined to provide a statement
-**Outcome:** Convicted of Theft by Swindle (Felony); court-ordered restitution; restitution tracked through multiple court orders including an Amended Restitution Order (04/23/2018); early discharge from probation granted 07/20/2021; subsequent motion for expungement denied by the presiding judge on 02/11/2022, confirming the integrity and durability of the original case record. Case closed 02/11/2022.
+**Outcome:** Felony conviction for theft by swindle; court-ordered restitution; a later expungement request was denied, supporting the durability of the original case record.
 **TAGS:** `occupational-fraud` `theft-by-swindle` `credit-card-fraud` `financial-analysis` `receipt-analysis` `excel-summary` `county-attorney-referral` `felony-conviction` `restitution` `expungement-denied` `siu-fraud` `analyst-intelligence`
 
 ### Resume Bullet — Full
@@ -147,39 +154,32 @@ In one investigation, a suspect stole a victim's purse from a Lakeville city par
 
 ## Case 4 — Commercial Burglary / Google Search Warrant
 
-**Case Reference:** Control #16004659, Case No. 19HA-CR-18-2512, Dakota County District Court, 1st Judicial District
-**Offense Date:** September 29, 2016
-**Sentenced:** January 15, 2020
-**Case Type:** Burglary in the 2nd Degree — Possess Tool (MN Statute 609.582.2(a)(4), Felony); physical and digital evidence convergence
-**Suspect:** [Name suppressed — public court record, withheld from application materials per PRIVACY_STANDARD]
-**Loss Amount / Impact:** Commercial burglary of a Lakeville bar/business; CSU cash box stolen and recovered personally by the investigating detective the following morning along County Road 42 in Savage; restitution ordered at $1,850
-**Investigative Methods:** Video surveillance retrieval (victim business), physical evidence collection at scene, personal recovery of stolen cash box (County Road 42, Savage), suspect canvass at residence, lead development through family member (father indicated suspect's preference for gambling and possible location at a nearby casino), in-person coordination with casino security staff, video surveillance obtained from casino confirming suspect wearing matching clothing, Google email address identification and immediate preservation, Google search warrant authored and served, digital evidence analysis of search warrant return
-**Outcome:** Convicted, Burglary 2nd Degree (Felony). Sentenced 01/15/2020: 30-month commitment to MN Correctional Facility — St. Cloud, stayed 10 years; 90-day Dakota County Jail / Work Release; 10-year supervised probation (Dakota County Community Corrections, through 01/15/2030); $1,850 restitution; court-ordered gambling assessment and treatment; no-casino condition imposed; 60-day electronic alcohol home monitoring. Google search warrant return confirmed suspect had searched the victim business by name and searched the investigating detective by name.
+**Private evidence reference:** Verified outside this public repository
+**Approximate period:** 2016-2020
+**Case Type:** Commercial burglary, physical and digital evidence convergence
+**Investigative Methods:** Surveillance review, physical evidence collection, property recovery, provider preservation, cloud legal process, and forensic analysis
+**Outcome:** Official court records confirm a felony conviction, a stayed 30-month sentence, 10 years of supervised probation, and restitution.
 **TAGS:** `burglary` `video-surveillance` `physical-evidence-collection` `canvass` `casino-security-coordination` `photo-identification` `google-search-warrant` `email-preservation` `digital-evidence-analysis` `search-warrant` `interview` `felony-conviction` `stayed-sentence` `supervised-probation` `gambling-treatment-ordered` `restitution` `digital-forensics` `analyst-intelligence` `siu-fraud`
 
 ### Resume Bullet — Full
 
-Investigated a commercial burglary in which the suspect was identified through layered physical and digital evidence. Collected physical evidence at the scene, personally recovered the stolen cash box the following morning along County Road 42 in Savage, and obtained video surveillance from the business. A canvass at the suspect's residence produced a family lead indicating the suspect frequented a nearby casino. Traveled to the casino, coordinated with security staff, and obtained video confirming the suspect wearing clothing that matched the crime scene footage. Located and immediately preserved the suspect's Google email address, authored a search warrant, and the return produced documented searches of the victim business by name and searches of the investigating detective by name, directly connecting the suspect to the crime. The suspect was convicted of Burglary in the 2nd Degree, a felony, and sentenced to a stayed 30-month commitment with 10-year supervised probation, restitution, and court-ordered gambling treatment.
+Led a commercial burglary investigation that combined surveillance, physical evidence, provider preservation, cloud legal process, and forensic analysis into a defensible timeline. Official court records confirm a felony conviction, a stayed 30-month sentence, 10 years of supervised probation, and restitution.
 
 ### Resume Bullet — Condensed
 
-Closed a commercial burglary investigation through physical evidence collection, personal recovery of stolen property, casino security coordination, and a Google search warrant return that documented the suspect's searches of the victim business and the investigating detective by name; conviction resulted in a stayed 30-month felony sentence, 10-year supervised probation, and court-ordered gambling treatment.
+Closed a commercial burglary investigation by combining surveillance, physical evidence, provider preservation, cloud legal process, and forensic analysis. The case resulted in a felony conviction, a stayed sentence, supervised probation, and restitution.
 
 ### Cover Letter Paragraph
 
-In a commercial burglary investigation, I collected physical evidence at the scene and personally recovered the stolen cash box the following morning along a county road. A canvass of the suspect's residence produced a lead pointing to a nearby casino, where I coordinated with security staff and obtained video of the suspect in matching clothing. I located and immediately preserved his Google email address, authored a search warrant, and the return documented searches of the victim business by name and searches of me, the investigating detective, by name. The suspect was convicted of Burglary in the 2nd Degree and sentenced to a stayed 30-month commitment with 10 years of supervised probation and court-ordered gambling treatment. That case illustrated how rapidly digital evidence can confirm what physical and video evidence suggests.
+In a commercial burglary investigation, I combined surveillance, physical evidence, provider preservation, cloud legal process, and forensic analysis into a defensible timeline. That work showed how quickly digital evidence can corroborate physical and video evidence while preserving a clear record for prosecution. Official court records confirm a felony conviction, a stayed 30-month sentence, 10 years of supervised probation, and restitution.
 
 ### Interview Talking Points
 
-- Commercial burglary of a Lakeville bar/business; retrieved video surveillance from the scene at the outset
-- Collected physical evidence from the scene; personally recovered the stolen CSU cash box the next morning along County Road 42 in Savage
-- Canvassed the suspect's residence; father provided a behavioral lead indicating preference for gambling and a possible location at a nearby casino
-- Traveled to the casino, coordinated directly with casino security staff, and obtained video of the suspect wearing a Minnesota Gophers ball cap matching crime scene footage
-- Located the suspect's Google email address and preserved it immediately to prevent loss before the warrant was served
-- Authored a Google search warrant; return confirmed the suspect had searched the victim business by name and searched the investigating detective by name
-- That search history established consciousness of guilt and directly tied the suspect to the investigation
-- Conviction: Burglary 2nd Degree (Felony, MN 609.582.2(a)(4)); 30-month commitment stayed 10 years; 90-day jail/work release; 10-year supervised probation through 01/15/2030; $1,850 restitution; court-ordered gambling assessment and treatment; no-casino condition; 60-day electronic home monitoring
-- Court-imposed no-casino condition and mandatory gambling treatment validate the behavioral intelligence developed through the canvass — the investigative read on the suspect proved accurate
+- Combined surveillance, physical evidence, property recovery, and digital evidence
+- Preserved provider evidence before completing cloud legal process
+- Used forensic analysis to build a defensible evidentiary timeline
+- Kept protected locations, subject details, account data, and warrant-return specifics private
+- Use only the verified public outcome language above
 
 ---
 
@@ -187,7 +187,7 @@ In a commercial burglary investigation, I collected physical evidence at the sce
 
 **Public-safe case type:** Online exploitation, digital evidence preservation, forensic analysis  
 **Public-safe role:** Investigating officer and digital forensic examiner  
-**Outcome:** Official court records confirm three felony convictions and concurrent executed sentences of 36, 48, and 78 months  
+**Outcome:** Official court records confirm three felony convictions and an executed sentence of up to 78 months
 **TAGS:** `digital-forensics` `email-preservation` `search-warrant` `self-initiated-followup` `felony-conviction` `prison` `analyst-intelligence` `vendor-solutions`
 
 ### Resume Bullet
@@ -211,7 +211,7 @@ In one time-sensitive online-exploitation matter, I recognized the risk that dig
 
 ## Case 6: High-Volume Multi-Device Investigation
 
-**Public-safe case type:** Child-exploitation investigation, multi-device digital forensics  
+**Public-safe case type:** Sensitive online-safety investigation, multi-device digital forensics
 **Public-safe role:** Lead investigator and examiner  
 **Outcome:** Agency records document an arrest outcome  
 **Verification note:** The case linkage and role are source-verified. The exact device count and terabyte volume remain user-confirmed pending recovery of the original forensic report.  
@@ -219,7 +219,7 @@ In one time-sensitive online-exploitation matter, I recognized the risk that dig
 
 ### Resume Bullet
 
-Led the investigative and forensic work on a high-volume, multi-device child-exploitation matter, organizing complex digital evidence, maintaining defensible documentation, and carrying the work through an arrest outcome.
+Led the investigative and forensic work on a high-volume, multi-device online-safety matter, organizing complex digital evidence, maintaining defensible documentation, and carrying the work through an arrest outcome.
 
 ### Cover Letter Paragraph
 
@@ -235,21 +235,21 @@ I have also managed a high-volume, multi-device digital investigation where the 
 
 ---
 
-## Case 7: Multi-Jurisdiction Homicide Digital-Evidence Support
+## Case 7: Multi-Jurisdiction Major-Case Digital-Evidence Support
 
-**Public-safe case type:** Homicide, legal process, digital evidence, multi-agency coordination  
+**Public-safe case type:** Major-case legal process, digital evidence, multi-agency coordination
 **Public-safe role:** Digital forensic examiner and investigative support; formally noticed trial witness  
-**Outcome:** Official county records confirm first-degree murder convictions and life imprisonment without parole  
+**Outcome:** Official county records confirm trial convictions and a life sentence
 **Verification note:** A retrospective summary supports the methods. An official trial notice and county outcome release independently confirm participation and outcome. Do not publish an exact warrant count until primary records are located.  
 **TAGS:** `digital-forensics` `search-warrant` `social-media-investigation` `multi-agency` `county-attorney-referral` `felony-conviction` `prison` `analyst-intelligence` `vendor-solutions`
 
 ### Resume Bullet
 
-Provided digital-forensic and investigative support in a multi-jurisdiction homicide case involving legal process, volatile digital evidence, and social-media preservation; the prosecution obtained first-degree murder convictions and a sentence of life without parole.
+Provided digital-forensic and investigative support in a multi-jurisdiction major case involving legal process, volatile digital evidence, and social-media preservation. Official county records confirm trial convictions and a life sentence.
 
 ### Cover Letter Paragraph
 
-In a major homicide investigation spanning multiple scenes and agencies, I supported legal process, digital-evidence preservation, forensic analysis, and the translation of technical findings into an actionable investigative record. The work demanded urgency without sacrificing documentation or evidentiary integrity, and I was later formally noticed as a trial witness.
+In a major investigation spanning multiple scenes and agencies, I supported legal process, digital-evidence preservation, forensic analysis, and the translation of technical findings into an actionable investigative record. The work demanded urgency without sacrificing documentation or evidentiary integrity, and I was later formally noticed as a trial witness.
 
 ### Interview Talking Points
 
@@ -343,7 +343,9 @@ During patrol assignments between investigative rotations, I consistently self-i
 - **Case 4 usage note:** This case is strongest for demonstrating digital forensics capability, proactive evidence preservation, warrant authorship for digital accounts, and behavioral intelligence development through a field canvass. The Google search return with the detective's own name is a uniquely compelling interview detail — use it to illustrate consciousness of guilt and the value of digital evidence. The court-imposed no-casino condition validates the investigative read developed through the behavioral lead.
 - **Probation Liaison usage note:** Use for roles that value inter-agency coordination, compliance monitoring, or stakeholder relationship management. The program demonstrates that Troy was selected for leadership roles early in his career and received commendations from both internal command staff and external agency partners.
 - **Professional Conduct entry usage note:** Use the self-initiated fraud follow-up entry in any cover letter or interview context where autonomy, self-direction, or intrinsic motivation is relevant. It is most powerful when stated with the timeline: the commendation falls between two investigative rotations with no assignment requiring that level of effort. Do not cite the sergeant's name or the case number in application materials. The documented pattern is the credential, not the individual instance.
-- **Party name suppression:** All suspect names, judge names, officer/colleague names, probation officer names, and command staff names have been suppressed in application-facing content per PRIVACY_STANDARD. Victim business names have been replaced with role descriptions (e.g., "a Lakeville bar/business"). Internal metadata fields retain case reference and court docket numbers for verification purposes only.
+- **Party and identifier suppression:** Do not store subject names, reviewer names, victim names,
+  case references, court docket numbers, provider account data, or other protected identifiers in
+  this public file. Maintain exact verification links only in the approved private evidence system.
 
 ---
 

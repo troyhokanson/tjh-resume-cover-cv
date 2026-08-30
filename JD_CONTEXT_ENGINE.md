@@ -172,9 +172,9 @@ For each case in CASE_BANK.md, role is LEAD, SUPPORT, or OMIT per signal.
 | Case | Signal A (FWA/SIU) | Signal B (ACA/Marketplace) | Signal C (Intelligence) | Signal D (Digital Forensics) | Signal E (Corporate) | Signal F (LE/Gov) |
 |---|---|---|---|---|---|---|
 | Case 1 — BEC / Shell Companies | LEAD | SUPPORT | SUPPORT | SUPPORT | LEAD | LEAD |
-| Case 2 — Condello Wall / Occupational Fraud | SUPPORT | SUPPORT | SUPPORT | OMIT | LEAD | SUPPORT |
+| Case 2 — Occupational Fraud | SUPPORT | SUPPORT | SUPPORT | OMIT | LEAD | SUPPORT |
 | Case 3 — Park Theft / Multi-System ID | SUPPORT | OMIT | LEAD | SUPPORT | SUPPORT | SUPPORT |
-| Case 4 — Garwood / Google Search Warrant | SUPPORT | OMIT | SUPPORT | LEAD | SUPPORT | LEAD |
+| Case 4 — Commercial Burglary / Google Search Warrant | SUPPORT | OMIT | SUPPORT | LEAD | SUPPORT | LEAD |
 | Probation Liaison Program | SUPPORT | LEAD | SUPPORT | OMIT | SUPPORT | SUPPORT |
 | Self-Initiated Fraud Follow-Up (patrol) | LEAD | SUPPORT | SUPPORT | OMIT | LEAD | SUPPORT |
 
@@ -237,10 +237,10 @@ These rules override all other content selection decisions.
 3. **Never include the adjunct instructor stat in Signal A, B, D, or E documents.**
    It is only relevant when the JD asks for training, knowledge transfer, or instructional experience.
 
-4. **Never reference Case 4 (Garwood / Google Search Warrant) in Signal B documents.**
+4. **Never reference Case 4 (Commercial Burglary / Google Search Warrant) in Signal B documents.**
    The commercial burglary framing does not translate to ACA/healthcare program integrity context.
 
-5. **Never reference Case 2 (Condello Wall) in Signal D documents.**
+5. **Never reference Case 2 (Occupational Fraud) in Signal D documents.**
    The case has no digital component and creates a subject-matter mismatch for forensics roles.
 
 6. **Never stack more than three quantified outcomes in the summary.**

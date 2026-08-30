@@ -34,18 +34,18 @@ This is a hard block enforced by `anti_ai_scan.py`. No exceptions.
 
 ### 1A — Suspect / Subject Names
 - Full names of any suspect, subject, defendant, or person of interest
-- Partial names that are uniquely identifying (e.g., "Condello Wall," "Matt Garwood")
+- Partial names that are uniquely identifying
 - Aliases used in the case record
 
 **Permitted replacement:** Describe role only.
-- BLOCKED: "Condello Wall, office manager at MCI Paint and Drywall"
+- BLOCKED: "[named subject], office manager at [named business]"
 - PERMITTED: "an office manager at a local construction company"
-- BLOCKED: "Matthew Scott Garwood"
+- BLOCKED: "[full subject name]"
 - PERMITTED: "the subject" or "the suspect"
 
 ### 1B — Case Control Numbers
-- Internal department control numbers (e.g., "Control #10001056", "Control #16004659")
-- Court case numbers (e.g., "19HA-CR-11-907", "19HA-CR-18-2512")
+- Internal department control numbers
+- Court case numbers
 - Any alphanumeric string that functions as a unique case file identifier
 
 **Permitted replacement:** Omit entirely. The year, case type, and outcome are sufficient.
@@ -130,7 +130,7 @@ proof point for documentation integrity and case package quality. It may be refe
 but it must be framed in terms of what it demonstrates about the case record, not in
 terms of identifying the subject.
 
-**BLOCKED:** "Condello Wall's motion for expungement was denied by Judge Arlene Perkkio."
+**BLOCKED:** "[named subject]'s motion for expungement was denied by [named judge]."
 **PERMITTED:** "A subsequent motion for expungement filed by the subject was denied by the
 court in February 2022, confirming the integrity and durability of the original case record."
 
@@ -139,32 +139,28 @@ and its significance to documentation quality are fully retained.
 
 ---
 
-## Section 4 — CASE_BANK.md Internal Records vs. Application Output
+## Section 4 — Public Case Patterns vs. Private Evidence
 
-CASE_BANK.md is an **internal reference file only.** It intentionally contains full
-names, case numbers, DOBs, and judicial identifiers because it is the source of truth
-for interview preparation and legal accuracy. That level of detail is appropriate in
-a private repository used to prepare for interviews where the record may be verified.
+`CASE_BANK.md` is stored in this public repository and therefore contains sanitized
+patterns only. Full names, case numbers, DOBs, judicial identifiers, provider account
+data, exact crosswalks, and raw evidence belong in the approved private evidence system.
 
-**The rule is:** CASE_BANK.md is the source. Application documents are the output.
-The output must never reproduce the identifiers from the source.
+**The rule is:** private evidence supports the claim; `CASE_BANK.md` provides a sanitized
+candidate pattern; the final document still must pass the current role, verification,
+privacy, and PTSD-scope gates.
 
 When any AI agent or build script pulls content from CASE_BANK.md to generate a
-resume bullet, cover letter paragraph, or any application-facing text, it must
-run the output through the suppression rules in Section 1 before including it
-in the final document. The resume bullet variants and cover letter paragraph
-variants written directly in CASE_BANK.md are already written to this standard
-and may be used as-is. Do not pull from the case header blocks (Case Reference,
-Suspect Profile, etc.) and reproduce them verbatim in application documents.
+resume bullet, cover letter paragraph, or any application-facing text, it must recheck
+the private evidence status and run the output through the suppression rules in Section 1.
+No public case pattern is approved for automatic use merely because it exists in the file.
 
 ---
 
 ## Section 5 — Interview Context Exception
 
-Interview talking points in CASE_BANK.md are written for verbal preparation only.
-They may include fuller operational detail because they are spoken, not distributed,
-and they occur in a credentialed professional context where the record is being
-verified by a prospective employer.
+Interview talking points in `CASE_BANK.md` remain sanitized. Fuller operational detail
+may be reviewed from private evidence during interview preparation, but it must not be
+copied into this repository.
 
 Even in interview settings, do not volunteer a subject's full name, DOB, or
 current location. Reference the case by type and outcome. If the interviewer asks
@@ -183,21 +179,20 @@ COURT_CASE_PATTERN     = r'\d{2}[A-Z]{2}-[A-Z]{2}-\d{2}-\d{4}'
 DOB_PATTERN            = r'DOB\s*[:\-]?\s*\d{2}/\d{2}/\d{4}'
 ```
 
-Suspect name blocking is handled by maintaining a `SUPPRESSED_NAMES` list in
-`anti_ai_scan.py`. When a new case is added to CASE_BANK.md, the subject's name
-must also be added to `SUPPRESSED_NAMES` in the scanner.
+Known private names may be blocked at runtime through the local
+`TROY_PRIVATE_CASE_DENYLIST` environment variable. Store the pipe-delimited values only
+in the gitignored `.env` file or an approved secret store. Never place the values in
+source code, tests, comments, logs, or public workflow output.
 
-Current suppressed names (maintained in scanner, not repeated here for privacy):
-- Subject from Case 2 (occupational fraud)
-- Subject from Case 4 (commercial burglary)
-- Judicial names from Cases 2 and 4
+The scanner also blocks generic case-control, court-number, DOB, licensing-identifier,
+and named-judge patterns without requiring a private denylist value.
 
 ---
 
 ## Section 7 — When to Update This File
 
 Update this file when:
-- A new case is added to CASE_BANK.md (add subject name to scanner's SUPPRESSED_NAMES)
+- A new private case is reviewed (update the local denylist only when needed)
 - A new category of identifiable data is discovered in a document review
 - A role-specific exception is needed (e.g., a role that requires case citation as a work sample)
 - The legal or ethical landscape around case record publication changes

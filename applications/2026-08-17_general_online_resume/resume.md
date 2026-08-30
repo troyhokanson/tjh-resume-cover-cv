@@ -6,7 +6,7 @@
 
 ## Professional Summary
 
-Investigations and digital-forensics professional with 6.5 years in investigative assignments and 5.5 years in digital forensics, supported by 25 years of sworn law-enforcement service and 18 years teaching criminal justice online. Experience spans fraud, electronic evidence, public-safety technology, AI evaluation, and cross-agency work. Known for evidence-led analysis, defensible documentation, and translating technical findings for decision-makers.
+Senior investigations and digital-forensics professional with 25 years of sworn law-enforcement service, 6.5 years across two investigative rotations, 5.5 years in digital forensics during the second rotation, 18 years as remote university faculty, and current paid AI project experience. Background includes fraud and financial investigations, digital evidence, public-safety technology, investigative research, adult instruction, and cross-agency work. Work has centered on evidence-led analysis, clear documentation, and explaining technical findings to decision-makers who were not present for the investigation.
 
 ## Core Capabilities
 
@@ -22,7 +22,8 @@ Fraud and financial investigations | Digital forensics and electronic evidence |
 
 ### Independent Professional
 Remote | April 2026 - Present
-- Completes independent project work and professional development in AI evaluation, investigative research, source validation, and workflow automation, emphasizing evidence quality and clear documentation.
+- Completes paid AI project work, including independent-contractor assignments through Mercor beginning in August 2026, under platform confidentiality requirements.
+- Develops current capability in generative AI evaluation, prompt development, source validation, GitHub workflows, Python basics, APIs, Notion, and Google Drive.
 
 ### Real Estate Consultant
 eXp Realty / KW Select | South Metro MN | June 2024 - June 2026

@@ -3,8 +3,11 @@
 **Candidate:** Troy Hokanson  
 **Asset:** General Online Resume  
 **Profile:** adaptive  
-**Status:** PASS for generated DOCX/PDF content and visual QA  
-**Updated:** 2026-08-29
+**Status:** STALE - source corrected on 2026-08-29; DOCX/PDF regeneration and full validation required
+
+The prior generated files passed the checks recorded below, but they predate corrections to
+the current chronology, investigations duration, Accurint duration, and CFE wording. Do not
+reuse or distribute them until the source has been rebuilt and every downstream check passes.
 
 ## Standards reviewed
 
@@ -49,6 +52,8 @@
 - Troy_Hokanson_General_Online_Resume_2026-08-29.pdf
 - Troy_Hokanson_General_Online_Resume_2026-08-29_Validation.md
 - Resume_Review_Decisions_2026-08-29.md
+
+These files are superseded pending regeneration from the corrected source.
 
 ## Scope note
 
