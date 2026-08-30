@@ -5,13 +5,14 @@
 This repo separates hard safeguards from role-specific authoring choices:
 
 1. **Role adaptation and LLM autonomy** — ROLE_ADAPTATION_STANDARD.md requires posting-led wording, evidence, structure, and formatting for SIU, corporate security, customer success, technical account management, DFIR/cyber, intelligence, and solutions roles.
-2. **ATS and presentation formats** — HEADER_STANDARD.md supports a plain text-first ATS header or the navy/gold branded presentation header.
-3. **Body typography and pagination** — standards/body_typography_pagination_standard.md and standards/document_design_standard.json require Garamond-family body styling, steel-blue section headings with restrained gold rules, and no orphaned headings or job blocks.
-4. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
-5. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
-6. **Case evidence and ECTF crosswalk control** — CASE_EVIDENCE_REVIEW_STANDARD.md requires exact source matching, role reconciliation, duplicate-view control, and an explicit unresolved status when an ECTF number cannot be verified.
-7. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
-8. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
+2. **Headline and scanability** — RESUME_HEADLINE_SCANABILITY_STANDARD.md requires a truthful role-aligned headline by default, a concise opening, verified metric placement, relevance-based compression of older work, and readable one- or two-page length.
+3. **ATS and presentation formats** — HEADER_STANDARD.md supports a plain text-first ATS header or the navy/gold branded presentation header.
+4. **Body typography and pagination** — standards/body_typography_pagination_standard.md and standards/document_design_standard.json require Garamond-family body styling, steel-blue section headings with restrained gold rules, and no orphaned headings or job blocks.
+5. **Voice guardrails** — VOICE_STANDARD.md preserves Troy's direct, specific, human voice without forcing one career identity or opening formula.
+6. **PTSD-safe scope and privacy hard blocks** — PRIVACY_STANDARD.md and anti_ai_scan.py prohibit POST / peace-officer licensing identifiers, badge numbers, case identifiers, and other unnecessary public-facing data.
+7. **Case evidence and ECTF crosswalk control** — CASE_EVIDENCE_REVIEW_STANDARD.md requires exact source matching, role reconciliation, duplicate-view control, and an explicit unresolved status when an ECTF number cannot be verified.
+8. **ATS keyword coverage and truth** — ats_injector.py audits against the job description, but terms may be used only when supported by Troy's verified record.
+9. **Mandatory final validator** — validate_application_packet.py is the final delivery gate. A document is not ready unless this validator passes.
 
 Seven primary lanes are defined: `vendor-solutions`, `siu-fraud`, `analyst-intelligence`, `corporate-security-investigations`, `customer-success`, `technical-account-management`, and `dfir-cyber`. The scanner uses `adaptive` if no lane is supplied, but each final application should log a selected primary lane.
 
@@ -138,6 +139,7 @@ tjh-resume-cover-cv/
 ├── CASE_BANK.md                             # Source-of-truth case examples
 ├── CASE_EVIDENCE_REVIEW_STANDARD.md          # Mandatory case-source and ECTF crosswalk workflow
 ├── ROLE_ADAPTATION_STANDARD.md              # Posting-led authoring and formatting autonomy
+├── RESUME_HEADLINE_SCANABILITY_STANDARD.md  # Headline, summary, length, recency, metrics, and ATS rules
 ├── HEADER_STANDARD.md                       # ATS and branded presentation layout options
 ├── VOICE_STANDARD.md                        # Voice, truth, and privacy guardrails
 ├── PRIVACY_STANDARD.md                      # Privacy suppression rules

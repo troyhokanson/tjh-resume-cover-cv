@@ -484,10 +484,10 @@ Notes:      Always list as B.A., Criminal Justice Studies, St. Cloud State Unive
 | DCECTF abbreviated | DCECTF |
 | ECU reference | Electronic Crimes Unit (ECU), Lakeville Police Department |
 | Patrol / main employer | Lakeville Police Department |
-| Current chronology | Independent Professional |
+| Current professional entry | Independent Professional |
 | Real estate (full) | eXp Realty / KW Select |
+| Real estate status | Completed June 2026; license ended June 30, 2026 |
 | University (adjunct) | University of Phoenix |
-| Current real estate status | Completed June 2026; license ended June 30, 2026 |
 | Graduate school | University of St. Thomas |
 | Undergraduate school | St. Cloud State University |
 | MAAG full reference | Dakota County Mutual Aid Assistance Group (MAAG) Tactical Team |
@@ -649,6 +649,10 @@ script, not this file.
 
 ## Change Log
 
+- 2026-08-29: Added Independent Professional (April 2026 - Present) as the current
+  umbrella entry for verified independent project work and professional development.
+  Corrected Real Estate Consultant to June 2024 - June 2026, removed outdated status
+  wording, and recorded that the real-estate license ended June 30, 2026.
 - 2026-06-07: Initial creation. Corrected adjunct duration (18 years, not 19).
   Added eXp Realty to real estate entry. Split ECU and DCECTF into separate blocks.
   Added Awards and Honors section. Canonical stats table added.

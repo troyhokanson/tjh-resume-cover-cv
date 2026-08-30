@@ -46,6 +46,7 @@ Before drafting, read the current repository versions of all applicable standard
 - `VOICE_STANDARD.md`
 - `ROLE_FAMILIES.md`
 - `ROLE_ADAPTATION_STANDARD.md`
+- `RESUME_HEADLINE_SCANABILITY_STANDARD.md`
 - `PROFILE_SELECTOR.md`
 - `PROFILES.md`
 - `PRIVACY_STANDARD.md`
@@ -174,9 +175,14 @@ Draft an ATS-readable targeted resume and role-specific cover letter using verif
 Resume requirements:
 
 - match the selected role lane
+- include a one-line, truthful, role-aligned headline unless a documented exception applies
+- keep the opening summary to two to four lines of prose or no more than three concise bullets
 - use job-relevant vocabulary naturally
 - lead with the strongest transferable evidence
+- prioritize selected verified metrics where the placement reads naturally
 - preserve truthful titles and dates
+- give recent and relevant work the most detail; compress older relevant work instead of deleting it by age alone
+- allow one or two pages based on seniority and relevance; do not sacrifice approved readability to force one page
 - avoid keyword stuffing
 - avoid unsupported metrics
 - include TroyHokanson.com and the current approved contact information
@@ -236,6 +242,7 @@ Run all applicable checks:
 - contact-information check
 - education and credential constants check
 - ATS keyword and readability review
+- headline, summary, recency, verified-metric, and length checks from `RESUME_HEADLINE_SCANABILITY_STANDARD.md`
 - filename and package completeness check
 - paired delivery gate when available
 - `validate_application_packet.py`

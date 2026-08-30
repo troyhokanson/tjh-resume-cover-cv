@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3.0",
+  "schema_version": "1.4.0",
   "skill": "build-troy-application",
   "candidate": "Troy J. Hokanson",
   "authoritative_repository": "troyhokanson/tjh-resume-cover-cv",
@@ -48,6 +48,7 @@
       "required": true,
       "checks": [
         "current_github_standards_reviewed",
+        "resume_scanability_standard_reviewed",
         "primary_lane_selected",
         "fit_score_recorded",
         "gaps_recorded",
@@ -73,6 +74,10 @@
       "required": true,
       "checks": [
         "resume_markdown_complete",
+        "resume_headline_added_or_omission_recorded",
+        "summary_scanability_passed",
+        "verified_metrics_prioritized",
+        "older_experience_compressed_by_relevance",
         "cover_letter_markdown_complete",
         "resume_docx_complete",
         "resume_pdf_complete",
@@ -91,6 +96,7 @@
         "contact_information_passed",
         "education_constants_passed",
         "ats_review_passed",
+        "resume_scanability_passed",
         "application_packet_validator_passed",
         "delivery_gate_passed_or_not_applicable"
       ]
