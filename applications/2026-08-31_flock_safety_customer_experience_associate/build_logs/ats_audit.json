@@ -1,0 +1,27 @@
+{
+  "official_job_description": "job_description.md",
+  "supported_target_terms": {
+    "technical troubleshooting": true,
+    "hardware and software": true,
+    "phone and email support": true,
+    "cross-functional escalation": true,
+    "case ownership": true,
+    "documentation": true,
+    "knowledge resources": true,
+    "public safety": true,
+    "customer communication": true,
+    "concurrent prioritization": true
+  },
+  "supported_term_pass_rate": 1.0,
+  "truth_safe_gaps": [
+    "No verified commercial SaaS-support title or support-queue ownership metrics.",
+    "No verified live-chat support experience.",
+    "No verified Jira experience.",
+    "No verified Salesforce experience; omitted rather than inferred.",
+    "No verified SLA, ticket-volume, CSAT, or first-response-time metrics.",
+    "Weekend availability must be confirmed by Troy before submission."
+  ],
+  "keyword_stuffing_detected": false,
+  "assessment": "Pass. The packet covers the principal transferable duties and states the material support-platform gaps directly.",
+  "passed": true
+}

@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "image": "applications/2026-08-31_flock_safety_customer_experience_associate/output/final_render_resume/page-2.png",
+  "metrics": {
+    "image_size": [
+      1360,
+      1760
+    ],
+    "header_bottom_px": 204,
+    "header_height_inches_estimate": 1.2812,
+    "page_center_x": 679.5,
+    "composition_bbox": [
+      195,
+      48,
+      1164,
+      153
+    ],
+    "name_bbox": [
+      458,
+      48,
+      900,
+      104
+    ],
+    "accent_bbox": [
+      195,
+      117,
+      1163,
+      146
+    ],
+    "composition_horizontal_error_px": 0.0,
+    "name_horizontal_error_px": -0.5,
+    "accent_horizontal_error_px": -0.5,
+    "composition_vertical_offset_fraction": -0.007317
+  },
+  "failures": []
+}

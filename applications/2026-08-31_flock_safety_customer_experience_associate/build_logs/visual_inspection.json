@@ -1,0 +1,25 @@
+{
+  "inspection_date": "2026-08-31",
+  "method": "Original-resolution inspection of PNG renders generated from metadata-sanitized final PDFs",
+  "pages": [
+    {
+      "document": "resume",
+      "page": 1,
+      "result": "pass",
+      "notes": "Header, hierarchy, bullets, wrapping, and bottom clearance are clean."
+    },
+    {
+      "document": "resume",
+      "page": 2,
+      "result": "pass",
+      "notes": "Repeated header, experience, credentials, and education render without clipping or orphaning."
+    },
+    {
+      "document": "cover_letter",
+      "page": 1,
+      "result": "pass",
+      "notes": "One-page layout, six paragraphs, closing, and signature gap render cleanly."
+    }
+  ],
+  "passed": true
+}
