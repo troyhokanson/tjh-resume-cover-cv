@@ -113,11 +113,11 @@ Lean into the verified investigative assignments, documented victim-loss figures
 
 ### Worked example — cover-letter opener
 
-> Twenty-five years in Minnesota law enforcement shaped how I work a suspicious claim. I led a multi-victim Business Email Compromise investigation that documented more than $360,000 in victim losses and resulted in a felony conviction. The work also produced written recognition from a county prosecutor.
+> Twenty-five years in Minnesota law enforcement shaped how I work a suspicious claim. In a wire-fraud matter, I performed a write-blocked forensic acquisition, examined the image with FTK and Internet Evidence Finder, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 
 ### Worked example — resume bullet
 
-> Led a multi-victim Business Email Compromise investigation that documented more than $360,000 in victim losses, resulted in a felony conviction, and required coordination with local, state, and federal investigative partners.
+> Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 
 ---
 

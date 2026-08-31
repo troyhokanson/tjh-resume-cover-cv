@@ -13,7 +13,7 @@ Investigations and intelligence professional with 25 years of sworn public-safet
 
 ## SELECTED INTELLIGENCE AND INVESTIGATION EVIDENCE
 - Proactively took ownership of a time-sensitive digital investigation, preserved cloud evidence before suspect contact, sequenced interview and device seizure to reduce evidence-loss risk, recovered deleted digital artifacts, and corroborated them against provider records. Three felony convictions remained intact after appellate review, with a final longest concurrent executed term of 60 months.
-- Led a multi-victim Business Email Compromise investigation using public business records, shell-company analysis, financial tracing, and cross-case pattern recognition. Verified victim losses exceeded $360,000, the case closed with a felony conviction, and an Assistant Dakota County Attorney issued a written commendation for documentation and legal coordination.
+- Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 - Integrated physical evidence, surveillance, behavioral leads, and Google account data in a commercial burglary investigation, preserving the cloud account before warrant service and converting multiple evidence streams into a defensible timeline. A written commendation recognized persistence and successful prosecution.
 - Built a computer matrix to organize a complex burglary and forgery series, helping investigators connect cases and charging evidence. A written commendation specifically recognized the structured analytical work.
 

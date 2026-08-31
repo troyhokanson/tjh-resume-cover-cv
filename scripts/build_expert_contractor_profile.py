@@ -73,9 +73,9 @@ def build_profile() -> Path:
     )
     add_profile_bullet(
         doc,
-        "Led evidence-intensive criminal and fraud investigations, including a multi-victim "
-        "Business Email Compromise matter with more than $360,000 in verified losses, a felony "
-        "conviction, and written recognition from an assistant county attorney.",
+        "Performed a write-blocked forensic acquisition and FTK/IEF examination in a wire-fraud "
+        "matter, identified responsive artifacts, and produced report media for the police case "
+        "and the Minnesota Commerce Fraud Bureau.",
     )
     add_profile_bullet(
         doc,

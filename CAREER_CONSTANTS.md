@@ -11,26 +11,31 @@ recruiter packet, and bio. Never paraphrase, estimate, or hand-roll from memory.
 These rules have been violated in prior drafts. They are non-negotiable and must be checked
 before any resume, cover letter, bio, or application material is finalized.
 
-### RULE 1 -- BEC Case Jurisdiction (CRITICAL)
+### RULE 1 -- Wire-Fraud Case Evidence Layers (CRITICAL)
 
 ```
-THE BEC / SHELL COMPANIES CASE WAS A RAMSEY COUNTY PROSECUTION.
-IT IS NOT A FEDERAL CASE.
-IT DID NOT RESULT IN A FEDERAL SENTENCE.
+TROY'S PRIMARY FORENSIC REPORT IS THE AUTHORITY FOR HIS PERSONAL ACTIONS.
+OFFICIAL MINNESOTA COMMERCE AND APPELLATE RECORDS ARE THE AUTHORITY FOR THE
+BROADER PUBLIC CASE OUTCOME.
 
-DO NOT use the words "federal" or "federally" in any sentence that describes the BEC case.
-DO NOT pair the 15-year sentence with the BEC case under any circumstances.
-DO NOT imply that the BEC investigation resulted in a federal referral that produced a sentence.
+Verified personal contribution:
+  - Removed the submitted computer hard drive and connected it through a write blocker
+  - Created a bit-for-bit forensic image with FTK Imager
+  - Examined the image with FTK and Internet Evidence Finder
+  - Identified responsive artifacts and produced report media for the police case and
+    the Minnesota Commerce Fraud Bureau
 
-Correct outcome language for the BEC case:
-  - Felony conviction
-  - Verified victim losses exceeding $360,000
-  - Written commendation from an Assistant Dakota County Attorney
+Officially confirmed broader outcome, which must be explicitly attributed to public sources:
+  - More than $360,000 taken from three Minnesotans
+  - Two felony convictions
+  - Five years of probation
+  - $295,704.11 in restitution
+  - Convictions affirmed by the Minnesota Court of Appeals on April 27, 2020
 
-The BEC case involved federal coordination (federal agents were briefed during the
-investigation), but the prosecution and conviction were Ramsey County, not federal.
-The phrase "federal coordination" in CASE_BANK.md refers to investigative coordination
-only -- it does NOT mean the case was federally prosecuted.
+DO NOT state that Troy led the full case, traced the complete money flow, mapped a
+shell-company network, coordinated every victim or agency, caused the outcome, or
+received a case-specific commendation unless a primary source directly supports it.
+DO NOT pair the separate 15-year federal sentence with this matter.
 ```
 
 ### RULE 2 -- Separate Federal Case (15-Year Sentence)
@@ -49,20 +54,13 @@ sentence length and federal prosecution status without confirmation from Troy an
 the current public-use gate.
 ```
 
-### RULE 3 -- $295,704.11 Restitution Figure
+### RULE 3 -- $295,704.11 Restitution Attribution
 
 ```
-The $295,704.11 restitution figure appeared in prior drafts attributed to the BEC case.
-This figure has NOT been confirmed as the BEC restitution amount.
-DO NOT use $295,704.11 in any BEC case context until Troy confirms it.
-
-If restitution is referenced for the BEC case, use only confirmed language:
-  "Verified victim losses exceeding $360,000"
-  or
-  "Felony conviction; written commendation from an Assistant Dakota County Attorney"
-
-The $295,704.11 figure has been removed from all future drafts pending confirmation
-of which case it belongs to.
+The Minnesota Commerce Fraud Bureau's 2018 annual report confirms $295,704.11 in
+restitution in the broader Ling Zhou matter. It may be used only as an explicitly
+attributed public-case outcome. Do not present the restitution as an outcome Troy
+personally produced, and do not combine it with the separate 15-year federal sentence.
 ```
 
 ---
@@ -573,9 +571,9 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | Adjunct faculty | 18 years (March 2007 - October 2025) |
 | Written commendations | 20+ |
 | Real estate sales | $3.2M |
-| BEC restitution | PENDING CONFIRMATION -- do not use $295,704.11 for BEC; see HARD ENFORCEMENT RULES above |
-| BEC conviction jurisdiction | Ramsey County (NOT federal) |
-| Separate federal case sentence | 15 years, online-exploitation prosecution -- SEPARATE CASE from BEC |
+| Wire-fraud public outcome | Official Minnesota records: $360,000+ across three victims; two felony convictions; five years probation; $295,704.11 restitution; appeal affirmed April 27, 2020. Attribute to the public sources, not to Troy personally. |
+| Troy's wire-fraud contribution | Primary forensic report: write-blocked acquisition; FTK/IEF examination; responsive-artifact identification; report media for the police case and Commerce Fraud Bureau |
+| Separate federal case sentence | 15 years, online-exploitation prosecution -- never combine with the wire-fraud matter |
 | Documented training hours | Cumulative lifetime total under reconciliation; do not publish an aggregate |
 | Investigation-relevant training hours | 512 (subset) |
 | ALPR grant value | $40,000 |
@@ -739,20 +737,24 @@ script, not this file.
   It is NOT a federal case and did NOT result in a federal sentence.
   The 15-year sentence belongs to a separate federal online-exploitation prosecution,
   not the BEC case.
-  The $295,704.11 restitution figure has NOT been confirmed as the BEC amount and
-  must not be used for the BEC case until Troy confirms which case it belongs to.
+  At that time, the $295,704.11 restitution figure had not yet been confirmed.
   Added HARD ENFORCEMENT RULES section at the top of the file with three rules:
     Rule 1: BEC case is Ramsey County, not federal -- confirmed outcome language defined.
     Rule 2: The separate 15-year federal sentence must never be conflated with BEC.
-    Rule 3: $295,704.11 restitution figure is PENDING CONFIRMATION -- do not assign
-            to BEC case.
-  Updated Key Career Statistics table to flag BEC restitution as pending and add
-  explicit jurisdiction and case-separation rows.
+    Rule 3: restitution required public-source confirmation and careful attribution.
+  Superseded on 2026-08-31 when official Minnesota sources confirmed the figure as a
+  broader public-case outcome, not a personal performance result.
   This error has been noted more than once. The HARD ENFORCEMENT RULES section
   is positioned at the top of the file to ensure it is read before any drafting begins.
 - 2026-08-29: PRIVACY CORRECTION -- Removed case-subject names from this public source
   while preserving the verified separation between the BEC outcome and the unrelated
   15-year federal sentence.
+- 2026-08-31: EVIDENCE-LAYER CORRECTION -- The primary forensic report now controls
+  statements about Troy's personal actions. Official Minnesota Commerce and appellate
+  records confirm the broader loss, conviction, probation, restitution, and affirmed-
+  appeal facts. The $295,704.11 figure is confirmed only as an attributed public-case
+  outcome. Unsupported full-case leadership, shell-company mapping, complete financial
+  tracing, outcome-causation, and case-specific commendation claims were removed.
 - 2026-06-14 (commit 8): PRIVACY -- Removed suspect and victim company names from
   occupational fraud case in First Investigative Rotation block and Investigative
   Rotation Summary table.

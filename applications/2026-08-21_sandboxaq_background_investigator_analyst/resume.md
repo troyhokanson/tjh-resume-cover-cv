@@ -26,7 +26,7 @@ Dakota County Electronic Crimes Task Force, assigned from Lakeville Police Depar
 - Served as Lakeville Police Department's digital-forensics resource in a ten-agency task force, independently managing complex investigations with investigators, technical personnel, and attorneys.
 - Corroborated leads across social media, public and business records, LexisNexis Accurint, interviews, financial and provider records, and digital evidence, documenting uncertainty.
 - Processed 5,304 GB of digital evidence in 2020 using Cellebrite, GrayKey, X-Ways Forensics, and Magnet AXIOM. Converted communications and account records into findings for non-technical leaders.
-- Led a multi-victim Business Email Compromise investigation using business records, shell-company analysis, financial tracing, and cross-case patterns. Verified losses exceeded $360,000; the case closed with a felony conviction and a prosecutor commendation.
+- Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 
 ### Detective / Electronic Crimes Unit | September 2016 - June 2017
 Lakeville Police Department | Lakeville, Minnesota

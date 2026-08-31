@@ -129,8 +129,13 @@ FACTUAL_HARD_BLOCKS = (
 _BEC_CONTEXT_PATTERN = re.compile(
     r"Business Email Compromise|\bBEC\b", re.IGNORECASE
 )
-_UNVERIFIED_BEC_OUTCOME_PATTERN = re.compile(
-    r"295,704\.11|15[- ]year federal sentence", re.IGNORECASE
+_BEC_SENTENCE_CONFLATION_PATTERN = re.compile(
+    r"15[- ]year federal sentence|15 years?(?: in)? federal", re.IGNORECASE
+)
+_BEC_UNSUPPORTED_PERSONAL_CLAIM_PATTERN = re.compile(
+    r"(?:led|managed) (?:a |the )?(?:multi-victim )?(?:Business Email Compromise|BEC)"
+    r"|(?:Business Email Compromise|BEC).{0,180}(?:Assistant Dakota County Attorney|written commendation)",
+    re.IGNORECASE | re.DOTALL,
 )
 
 
@@ -358,11 +363,18 @@ def scan_text(
         if pattern.search(body):
             failures.append(f"[L1:FACT] {explanation}.")
 
-    if _BEC_CONTEXT_PATTERN.search(body) and _UNVERIFIED_BEC_OUTCOME_PATTERN.search(body):
+    if _BEC_CONTEXT_PATTERN.search(body) and _BEC_SENTENCE_CONFLATION_PATTERN.search(body):
         failures.append(
-            "[L1:FACT] BEC outcome conflation found. Use verified victim losses exceeding "
-            "$360,000, a felony conviction, and written prosecutor recognition; do not "
-            "assign the unverified restitution figure or a separate federal sentence to BEC."
+            "[L1:FACT] BEC outcome conflation found. The 15-year federal sentence belongs "
+            "to a separate matter and must not appear in a BEC or wire-fraud narrative."
+        )
+
+    if _BEC_UNSUPPORTED_PERSONAL_CLAIM_PATTERN.search(body):
+        failures.append(
+            "[L1:FACT] Unsupported BEC personal-role claim found. Use Troy's documented "
+            "write-blocked forensic acquisition and FTK/IEF examination; attribute the "
+            "broader outcome to official Minnesota public sources and omit the unsupported "
+            "case-specific commendation."
         )
 
     for p in PROFILE_RULES[profile]["banned_phrases"]:

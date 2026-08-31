@@ -35,9 +35,8 @@ def _cover(body: str) -> list[str]:
 
 def _clean_resume() -> str:
     return (
-        "Managed a multi-victim Business Email Compromise investigation that "
-        "documented more than $360,000 in victim losses and resulted in a "
-        "felony conviction."
+        "Performed write-blocked acquisition and FTK/IEF analysis of a computer "
+        "in a wire-fraud matter and identified responsive artifacts."
     )
 
 
@@ -45,8 +44,8 @@ def _clean_cover() -> str:
     return (
         "Twenty-five years in public service taught me that fraud erodes the "
         "trust between people and the systems designed to protect them. "
-        "My record includes a fraud investigation that documented more than "
-        "$360,000 in victim losses and resulted in a felony conviction.\n\nRespectfully,"
+        "Official Minnesota records separately confirm that a broader matter "
+        "involved more than $360,000 across three victims.\n\nRespectfully,"
     )
 
 
@@ -64,6 +63,20 @@ class TestCleanTextPasses:
     def test_bio_no_semicolon_passes(self):
         body = "Troy Hokanson is a medically retired Minnesota law-enforcement officer."
         assert scan_text(body, doc_type="bio") == []
+
+    def test_attributed_public_wire_fraud_outcome_passes(self):
+        body = (
+            "Official Minnesota records separately confirm that the broader wire-fraud "
+            "matter involved more than $360,000 across three victims, two felony "
+            "convictions, five years of probation, and $295,704.11 in restitution."
+        )
+        assert _resume(body) == []
+
+    def test_unsupported_bec_leadership_is_blocked(self):
+        violations = _resume(
+            "Led a multi-victim Business Email Compromise investigation to conviction."
+        )
+        assert any("Unsupported BEC personal-role claim" in item for item in violations)
 
 
 # ---------------------------------------------------------------------------
