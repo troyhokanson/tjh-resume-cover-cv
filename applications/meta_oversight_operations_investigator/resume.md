@@ -30,7 +30,7 @@ November 1998 to May 2024
 
 - Managed complex investigations and urgent escalations from initial triage through evidence collection, analysis, partner coordination, written findings, and final resolution, often with incomplete information and competing priorities.
 - Connected signals across devices, cloud accounts, communications records, financial records, social media, public records, witness accounts, and law-enforcement systems to establish timelines, test competing explanations, and identify root causes.
-- Led a multi-victim Business Email Compromise investigation involving international transfers and multiple financial institutions. The case documented more than $360,000 in victim losses, resulted in a felony conviction, and produced written recognition from an Assistant Dakota County Attorney.
+- Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 - Served as a digital forensics resource for approximately 10 partner agencies. Processed 5,304 GB of digital evidence in 2020 using Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, telecommunications records, social media returns, and OSINT.
 - Prepared search warrant affidavits, investigative reports, case summaries, evidence timelines, and leadership briefings that translated technical and factual complexity into clear decisions and accountable next steps.
 - Identified recurring investigative gaps and built practical resources, including example legal-process documents, service-provider references, preservation guidance, and repeatable investigator workflows.

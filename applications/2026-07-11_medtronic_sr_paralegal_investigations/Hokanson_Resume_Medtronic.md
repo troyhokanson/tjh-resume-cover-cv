@@ -14,7 +14,7 @@ Twenty-five-year medically retired Minnesota detective and digital forensic exam
 - Enterprise workflow adaptability through kvCORE and KW Command.
 
 ### Selected Results
-- Led a multi-jurisdiction business email compromise and wire-fraud investigation involving more than $360,000 in verified victim losses, three financial institutions, international fund movement, and coordination with Homeland Security Investigations and the Minnesota Department of Commerce Fraud Bureau. The matter resulted in a felony conviction and written commendation from an Assistant Dakota County Attorney.
+- Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 - Conducted an occupational fraud investigation involving approximately $80,000 in unauthorized company-card activity and built a chronological evidentiary record that supported felony charging.
 - Processed 5,304 GB of digital evidence in 2020 while maintaining chain of custody, examination records, and testimony-ready reporting.
 

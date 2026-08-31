@@ -41,45 +41,49 @@ Use these approved tags in the `TAGS:` field of each case. Add new tags to this 
 
 | # | Case Label | Year | Type | Loss / Impact | Outcome |
 |---|---|---|---|---|---|
-| 1 | BEC / Shell Companies | ~2019-2021 | Financial crime, wire fraud, organized fraud | $360,000+ verified victim losses | Felony conviction, written commendation from an Assistant Dakota County Attorney |
+| 1 | Wire-Fraud Forensic Examination | Report date 2018 | Computer forensics supporting a wire-fraud matter | Primary report documents Troy's forensic contribution | Official sources separately confirm $360,000+ across three victims, two felony convictions, five years of probation, $295,704.11 restitution, and an affirmed appeal |
 | 2 | Occupational Fraud / Office Manager | 2008-2011 investigation | Occupational fraud, theft by swindle | ~$80,000 in unauthorized charges | Felony conviction; restitution ordered; later expungement request denied |
 | 3 | Lakeville Park Theft / Multi-System ID Convergence | ~2010-2011 | Theft, credit card fraud, rapid multi-system identification | Purse, credit cards, and fraudulent purchases | Charged, convicted, sentenced to prison on parole violation; 36-year criminal history |
 | 4 | Commercial Burglary / Google Search Warrant | 2016-2020 | Commercial burglary, physical and digital evidence convergence | Stolen property recovered | Felony conviction; stayed sentence, supervised probation, restitution, and treatment conditions |
 | 5 | Time-Sensitive Online Exploitation | 2019 | Online exploitation, digital evidence preservation, forensic analysis | Proactive ownership under evidence-loss risk | Three felony convictions; executed sentence up to 78 months |
 | 6 | High-Volume Multi-Device Investigation | 2017 | Sensitive online-safety investigation, digital forensics | Large, complex digital evidence set | Arrest outcome |
 | 7 | Multi-Jurisdiction Major-Case Digital Evidence | 2021 | Major-case legal process, digital evidence, multi-agency coordination | Volatile evidence and multiple jurisdictions | Trial convictions and a life sentence |
+| 8 | Mobile-Device Analysis in Financial Transaction Card Fraud | Primary report on file | Mobile forensics supporting a financial-fraud matter | Responsive communications, application, location, log, cookie, note, and image artifacts documented | Broader charging, conviction, loss, recovery, and restitution outcome not verified |
 
 ---
 
-## Case 1 — Business Email Compromise / Shell Companies
+## Case 1 — Wire-Fraud Forensic Examination and Public-Outcome Context
 
-**Case Reference:** Internal Lakeville PD / DECO investigation, approximately 2019-2021
-**Case Type:** Financial crime, wire fraud, Business Email Compromise (BEC), organized fraud
-**Suspect Profile:** Multi-party scheme using shell companies and interstate wire transfers
-**Victim Loss:** Verified at more than $360,000 across multiple victims
-**Outcome:** Felony conviction; written commendation issued by an Assistant Dakota County Attorney for case documentation and legal coordination
-**Investigative Methods:** Financial transaction analysis, shell company mapping, multi-victim coordination, search warrants, administrative subpoenas, executive-level case reporting to county attorneys and federal agents
-**TAGS:** `BEC` `wire-fraud` `organized-fraud` `shell-company` `financial-analysis` `search-warrant` `subpoena` `multi-victim-coordination` `federal-coordination` `county-attorney-referral` `felony-conviction` `commendation` `siu-fraud` `analyst-intelligence`
+**Private primary evidence:** Troy's forensic report in Google Drive case folder 04
+**Case Type:** Computer forensics supporting a wire-fraud matter
+**Troy's Documented Contribution:** Removed the submitted hard drive, connected it through a write blocker, created a bit-for-bit image with FTK Imager, examined the image with FTK and Internet Evidence Finder, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau
+**Broader Public Outcome:** Official Minnesota Commerce and appellate records separately confirm more than $360,000 taken from three Minnesotans, two felony convictions, five years of probation, $295,704.11 in restitution, and an affirmed appeal
+**Attribution Boundary:** The public sources confirm the broader outcome. They do not establish that Troy led the full investigation, personally caused the outcome, mapped shell companies, traced the complete money flow, coordinated all victims or agencies, or received a case-specific commendation.
+**TAGS:** `wire-fraud` `computer-forensics` `write-blocker` `FTK` `IEF` `evidence-preservation` `forensic-reporting` `public-outcome-context` `siu-fraud` `analyst-intelligence`
+
+**Official Public Sources:**
+- Minnesota Commerce Fraud Bureau, 2018 Annual Report: https://www.lrl.mn.gov/docs/2019/mandated/190799.pdf
+- Minnesota Court of Appeals, *State v. Ling Zhou*, A19-0839, April 27, 2020: https://mn.gov/law-library-stat/archive/ctapun/2020/OPa190839-042720.pdf
 
 ### Resume Bullet — Full
 
-Among several complex financial crime investigations, one involved a multi-victim Business Email Compromise scheme with shell companies and interstate wire transfers that closed at felony conviction with verified victim losses exceeding $360,000. An Assistant Dakota County Attorney issued a written commendation for the documentation and legal coordination on that case.
+Performed a write-blocked forensic acquisition and FTK/IEF examination of a computer submitted in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau. Official Minnesota records separately confirm the broader matter involved more than $360,000 across three victims and two felony convictions.
 
 ### Resume Bullet — Condensed
 
-Led a multi-victim BEC investigation involving shell companies and interstate wire transfers that closed at felony conviction with verified victim losses exceeding $360,000 and earned a written commendation from an Assistant Dakota County Attorney.
+Performed write-blocked acquisition and FTK/IEF analysis in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 
 ### Cover Letter Paragraph
 
-Among the complex fraud cases I led, one involved a multi-victim Business Email Compromise scheme with shell companies and interstate wire transfers that closed at felony conviction with verified victim losses exceeding $360,000. An Assistant Dakota County Attorney issued a written commendation for the documentation and legal coordination on that case.
+In a wire-fraud matter, I removed the submitted hard drive, connected it through a write blocker, created and verified a forensic image, and used FTK and Internet Evidence Finder to identify responsive artifacts. I produced report media for the police case and the Minnesota Commerce Fraud Bureau. Official state records separately confirm the broader matter's outcome; I keep that public context distinct from my documented forensic contribution.
 
 ### Interview Talking Points
 
-- Received complaint, identified BEC pattern, traced wire transfers across multiple victim accounts
-- Mapped shell company structure to identify the full scope of the scheme
-- Drafted search warrants and administrative subpoenas that supported prosecutorial review
-- Produced executive-level case reports for county attorneys and federal agents
-- Case resulted in felony conviction and a written commendation for documentation quality
+- Preserved the original evidence through a write-blocked, bit-for-bit acquisition
+- Used FTK and Internet Evidence Finder to review the forensic image
+- Identified responsive artifacts and produced report media for the police case and Commerce Fraud Bureau
+- Attribute the broader loss, convictions, probation, restitution, and affirmed appeal only to official public sources
+- Do not claim full-case leadership, complete financial tracing, charging responsibility, or a case-specific commendation without primary attribution
 
 ---
 
@@ -331,11 +335,37 @@ During patrol assignments between investigative rotations, I consistently self-i
 
 ---
 
+## Case 8 — Mobile-Device Analysis in Financial Transaction Card Fraud
+
+**Private primary evidence:** Troy's mobile-forensics report in Google Drive case folder 14
+**Case Type:** Mobile-device forensics supporting a financial transaction card fraud investigation
+**Troy's Documented Contribution:** Isolated the smartphone, used the provided passcode within the authorized examination, completed and verified a Cellebrite extraction, reviewed communications, applications, locations, logs, cookies, notes, and images, bookmarked responsive artifacts, generated focused reports and screenshots, returned the original device to secure storage, and retained report media for the police case and task force
+**Outcome Boundary:** No official public source has been verified for charging, conviction, restitution, loss, recovery, or another broader outcome in this matter
+**TAGS:** `mobile-forensics` `Cellebrite` `financial-transaction-card-fraud` `evidence-preservation` `artifact-correlation` `forensic-reporting` `siu-fraud` `analyst-intelligence`
+
+### Resume Bullet
+
+Completed and verified an authorized Cellebrite smartphone extraction in a financial-fraud matter, correlated responsive communications, application, location, log, cookie, note, and image artifacts, and produced focused reports and screenshots for investigators.
+
+### Interview Talking Points
+
+- Isolate the device and preserve the original evidence
+- Complete and verify the authorized extraction
+- Correlate responsive artifacts across multiple data categories
+- Bookmark findings and produce focused, reviewable reports and screenshots
+- Return the original device to secure storage and keep the broader outcome labeled unverified
+
+### Privacy Boundary
+
+Do not disclose names, telephone numbers, account or card data, device identifiers, coordinates, protected case identifiers, or other private details. Do not claim organized-fraud leadership, a multi-victim network, financial tracing, charging, conviction, recovery, or a regional methodology without additional primary evidence.
+
+---
+
 ## Usage Notes
 
-- **"The" vs. "a":** Never write "the BEC case" or "the occupational fraud case" as though only one case exists. Always frame as "among several" or "one of several complex fraud cases I led."
-- **Commendation phrasing:** Always write "an Assistant Dakota County Attorney" not "the Assistant Dakota County Attorney."
-- **Dollar figures:** $360,000+ (verified victim losses, Case 1) and ~$80,000 (unauthorized charges, Case 2). Do not round up or inflate.
+- **Case 1 evidence layers:** Use the primary forensic report for Troy's actions. Attribute $360,000+, three victims, two felony convictions, five years of probation, $295,704.11 restitution, and the affirmed appeal to official Minnesota public sources.
+- **Case 1 prohibited claims:** Do not claim Troy led the entire matter, mapped shell companies, traced all funds, caused the public outcome, or received a case-specific commendation without a primary source.
+- **Dollar figures:** The $360,000+ and $295,704.11 figures are broader public-case outcomes, not personal performance metrics. Case 2's approximately $80,000 figure remains an alleged/unauthorized-charge amount under its own evidence record.
 - **Case 2 correct charge:** The convicted charge is Theft by Swindle (MN 609.52.2(4), Felony). The four Theft-Take/Use/Transfer counts were dismissed. Always use the convicted charge.
 - **Case 2 restitution:** The restitution was tracked through multiple court orders over several years, including an Amended Restitution Order in April 2018. Do not state a simple "paid in full" — the record shows a payment plan history.
 - **Expungement detail (Case 2):** Use when applying to roles that emphasize documentation integrity, regulatory audit readiness, or compliance package quality.

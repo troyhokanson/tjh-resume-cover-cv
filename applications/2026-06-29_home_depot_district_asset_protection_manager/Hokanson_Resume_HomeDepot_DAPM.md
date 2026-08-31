@@ -38,7 +38,7 @@ November 1998 to May 2024
 * Served on SWAT from 2005 to 2011 and Crime Scene Unit from 2013 to 2018, strengthening incident command, scene control, evidence preservation, and high-risk decision-making.
 * Processed digital evidence using Cellebrite UFED, Magnet AXIOM, FTK, X-Ways, GrayKey, phone records, external media review, social media, and OSINT to support criminal investigations and prosecutor review.
 * Processed 5,304 GB of digital evidence in 2020 while assigned to electronic crimes and digital forensics work.
-* Led a multi-victim Business Email Compromise investigation with more than $360,000 in documented victim losses, a felony conviction, and written recognition from an Assistant Dakota County Attorney.
+* Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 
 ### Dakota County Electronic Crimes Task Force, Dakota County, Minnesota
 **Task Force Detective and Lakeville Police Department SME**  

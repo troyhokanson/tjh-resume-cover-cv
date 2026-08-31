@@ -15,7 +15,7 @@ Fraud and financial investigations | Digital forensics and electronic evidence |
 ## Selected Career Highlights
 
 - Conducted digital-evidence examinations within a ten-agency electronic-crimes task force, maintaining examination records, chain of custody, quality control, and clear handoff to investigators and prosecutors.
-- **$360,000+** in verified victim losses documented in a multi-victim Business Email Compromise investigation that resulted in a felony conviction and written recognition from an assistant county attorney.
+- Performed write-blocked acquisition and FTK/IEF analysis of a computer in a wire-fraud matter, identified responsive artifacts, and produced report media for the police case and the Minnesota Commerce Fraud Bureau.
 - **$40,000** ALPR technology project led agency-side through Target + Blue, coordinating Genetec AutoVu, state CJIS requirements, municipal IT, funding, field workflow, and user adoption.
 
 ## Professional Experience

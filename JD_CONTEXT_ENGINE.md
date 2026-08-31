@@ -150,15 +150,15 @@ crime investigation, search warrant authorship for digital accounts, and case do
 ### Variant E — Corporate / Private Sector Investigation (Signal E dominant)
 "Medically retired Minnesota detective transitioning to corporate investigations with career experience in
 occupational fraud, Business Email Compromise, financial crime, and inter-agency collaboration. Investigated
-cases that collectively documented more than $440,000 in verified or alleged fraud losses with outcomes
-including felony convictions, court-ordered restitution, and a written commendation from a county attorney.
+cases that collectively documented more than $440,000 in verified or alleged fraud losses. In a wire-fraud
+matter, performed write-blocked acquisition and FTK/IEF analysis and produced responsive-artifact reports.
 CFE candidate."
 
 ### Variant F — LE / Government / Federal Contractor (Signal F dominant)
 "Medically retired Minnesota detective with field experience across patrol, two investigative rotations,
 digital forensics task force assignment, and a formal probation liaison program co-founded with Dakota County
-Community Corrections. Fraud case history spans BEC, occupational fraud, and multi-victim financial crime;
-one case drew a written commendation from an Assistant Dakota County Attorney. CFE candidate."
+Community Corrections. Fraud case history spans wire fraud, occupational fraud, and multi-victim financial
+crime; computer-forensics work includes write-blocked acquisition and FTK/IEF analysis. CFE candidate."
 
 ---
 
@@ -171,7 +171,7 @@ For each case in CASE_BANK.md, role is LEAD, SUPPORT, or OMIT per signal.
 
 | Case | Signal A (FWA/SIU) | Signal B (ACA/Marketplace) | Signal C (Intelligence) | Signal D (Digital Forensics) | Signal E (Corporate) | Signal F (LE/Gov) |
 |---|---|---|---|---|---|---|
-| Case 1 — BEC / Shell Companies | LEAD | SUPPORT | SUPPORT | SUPPORT | LEAD | LEAD |
+| Case 1 — Wire-Fraud Forensic Examination | LEAD | SUPPORT | SUPPORT | LEAD | SUPPORT | SUPPORT |
 | Case 2 — Occupational Fraud | SUPPORT | SUPPORT | SUPPORT | OMIT | LEAD | SUPPORT |
 | Case 3 — Park Theft / Multi-System ID | SUPPORT | OMIT | LEAD | SUPPORT | SUPPORT | SUPPORT |
 | Case 4 — Commercial Burglary / Google Search Warrant | SUPPORT | OMIT | SUPPORT | LEAD | SUPPORT | LEAD |
