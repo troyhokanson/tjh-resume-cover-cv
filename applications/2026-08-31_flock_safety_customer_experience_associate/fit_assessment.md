@@ -8,7 +8,11 @@ Classification: **Transferable**
 
 Priority: **Tier 2, strategic public-safety-technology bridge**
 
-Recommendation: **Apply with deliberate positioning.** The public-safety domain match, technical troubleshooting, documentation, teaching, and customer-facing work are credible. The tradeoffs are a $55,000 salary below Troy's target, weekend shifts, a junior title, no formal SaaS support role, no verified Jira experience, and a real overqualification or retention concern.
+Recommendation: **Apply with deliberate positioning.** The public-safety domain match, technical troubleshooting, documentation, teaching, and customer-facing work are credible. More importantly, the role can convert Troy's public-safety credibility into vendor-side SaaS support experience that strengthens later candidacy for higher-paying customer-success, implementation, and technical-account roles. The tradeoffs are a $55,000 salary below Troy's target, weekend shifts, a junior title, no formal SaaS support role, no verified Jira experience, and a real overqualification or retention concern.
+
+Direct role fit: **79/100**
+
+Strategic bridge value: **88/100**
 
 ## Score
 
@@ -21,6 +25,18 @@ Recommendation: **Apply with deliberate positioning.** The public-safety domain 
 | Work mode, schedule, and compensation | 10 | 6 | Fully remote work is favorable. Salary is $55,000 plus equity, well below the normal target. Troy acknowledged the required weekend commitment on August 31, 2026. |
 | Hiring risk | 5 | 3 | The strongest risk is that Flock may view Troy as overqualified or unlikely to remain in an associate-level support position. |
 | **Total** | **100** | **79** | **Credible bridge role, but not a direct SaaS-support match.** |
+
+## Strategic Career Value
+
+The 88/100 strategic-bridge score reflects what the role could add to Troy's record, not a claim that every day-one qualification is already present. Successful tenure at Flock would document:
+
+- Vendor-side ownership of customer inquiries and escalations.
+- Commercial support-queue, ticketing, response-time, and customer-experience metrics.
+- Practical Jira and Salesforce exposure if those tools are used in the assigned workflow.
+- Direct support of a public-safety SaaS and hardware platform.
+- A credible progression path toward Customer Success Manager, implementation, professional-services, or technical-account-management work.
+
+This value depends on staying long enough to produce measurable results and presenting genuine interest in frontline customer support. It does not erase the salary and overqualification risks.
 
 ## Strongest Evidence
 

@@ -4,6 +4,8 @@
 
 PASS for candidate review. The packet contains a two-page resume and a one-page cover letter. It is not marked submitted.
 
+Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value is **88/100** because successful tenure would add vendor-side public-safety SaaS support, ticketing, customer metrics, and escalation ownership to Troy's record.
+
 ## Verified role
 
 - Employer: Flock Safety
