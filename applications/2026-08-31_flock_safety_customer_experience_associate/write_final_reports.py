@@ -81,9 +81,11 @@ def main() -> None:
         "document_gate": "pass",
         "candidate_review_required": True,
         "submission_blockers": [
-            "Troy must confirm willingness and availability for required weekend shifts.",
             "Troy must approve the final wording and documents before submission.",
             "The GitHub draft pull request must be reviewed under the repository workflow; no merge is performed automatically.",
+        ],
+        "candidate_confirmations": [
+            "Required weekend commitment acknowledged on 2026-08-31.",
         ],
         "known_truth_safe_gaps": [
             "No verified Jira experience.",
@@ -146,6 +148,8 @@ def main() -> None:
 
 PASS for candidate review. The packet contains a two-page resume and a one-page cover letter. It is not marked submitted.
 
+Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value is **88/100** because successful tenure would add vendor-side public-safety SaaS support, ticketing, customer metrics, and escalation ownership to Troy's record.
+
 ## Verified role
 
 - Employer: Flock Safety
@@ -179,9 +183,9 @@ PASS for candidate review. The packet contains a two-page resume and a one-page 
 - ATS truth-safe coverage audit: PASS
 - Final packet validator: PASS with 0 errors and 0 warnings
 
-## Candidate decisions before submission
+## Candidate review before submission
 
-- Confirm willingness and availability for the required weekend schedule.
+- Weekend commitment acknowledged August 31, 2026; no longer an unresolved packet issue.
 - Approve the candid explanation of the Jira, live-chat, SaaS-title, and support-metric gaps.
 - Review and approve the final packet. No submission action has been taken.
 """
