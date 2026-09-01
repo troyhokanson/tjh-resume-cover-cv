@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "collection": "Military Service",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "army-service-1989-1998",
+      "title": "U.S. Army service history",
+      "category": "service_record",
+      "dates": "1989-02/1998-10",
+      "source": "CAREER_CONSTANTS.md:199-210 and 498-507",
+      "verification_status": "indexed",
+      "verified_facts": ["8 years 3 months total service", "Army Reserve 11B Infantry", "Active Duty 19K Armor", "Minnesota Army National Guard 88M Motor Transport and 95B Military Police", "Honorably Discharged"],
+      "competencies": ["public-service", "discipline", "teamwork", "military-police", "operations"],
+      "profiles": ["federal", "public-safety", "corporate-security", "management"],
+      "safe_claims": ["U.S. Army veteran with 8 years 3 months across Infantry, Armor, Transportation, and Military Police assignments; Honorably Discharged."],
+      "cautions": ["Never round to nine years.", "Do not use protected-veteran language."],
+      "related_archives": ["lakeville_programs", "real_estate"]
+    },
+    {
+      "id": "army-achievement-medal-1994",
+      "title": "Army Achievement Medal",
+      "category": "award",
+      "dates": "1994-04",
+      "source": "Google Drive original: Army Achievement Medal 01Apr1994 LTC Scott Feil.pdf",
+      "verification_status": "verified",
+      "verified_facts": ["Awarded for outstanding contribution, dedication, and meticulous attention to detail as loader for B-66, Bravo Company, 3d Battalion, 66th Armor"],
+      "competencies": ["attention-to-detail", "teamwork", "performance"],
+      "profiles": ["federal", "public-safety", "management"],
+      "safe_claims": ["Recipient of the Army Achievement Medal, April 1994."],
+      "cautions": [],
+      "related_archives": []
+    },
+    {
+      "id": "good-conduct-medal-1994",
+      "title": "Good Conduct Medal",
+      "category": "award",
+      "dates": "1994-04",
+      "source": "Direct confirmation from Troy Hokanson on 2026-07-16",
+      "verification_status": "user_confirmed",
+      "verified_facts": ["Good Conduct Medal awarded April 1994"],
+      "competencies": ["conduct", "reliability", "service"],
+      "profiles": ["federal", "public-safety"],
+      "safe_claims": ["Recipient of the Good Conduct Medal, April 1994."],
+      "cautions": ["Retain month/year unless the underlying record supports a specific day."],
+      "related_archives": []
+    },
+    {
+      "id": "andreotti-honor-guard-letter-1997",
+      "title": "Major General Andreotti Letter of Appreciation",
+      "category": "commendation",
+      "dates": "1997-08-26",
+      "source": "Google Drive original: 19970826 Letter of Appreciation MG Andreotti.pdf",
+      "verification_status": "verified",
+      "verified_facts": ["Recognized Honor Guard (Color Guard) professionalism and representation of the Minnesota National Guard at the Lindbergh Celebration Parade"],
+      "competencies": ["professionalism", "ceremonial-service", "public-representation"],
+      "profiles": ["federal", "public-safety", "community-engagement"],
+      "safe_claims": ["Received a 1997 Letter of Appreciation from Major General Eugene Andreotti for Honor Guard service."],
+      "cautions": [],
+      "related_archives": ["lakeville_programs"]
+    }
+  ]
+}
