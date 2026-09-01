@@ -2,7 +2,7 @@
 
 ## Outcome
 
-PASS for candidate review. The packet contains a two-page resume and a one-page cover letter. It is not marked submitted.
+PASS. The packet contains a two-page resume and a one-page cover letter. The application was submitted and confirmed through Flock Safety's official Ashby application system on August 31, 2026.
 
 Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value is **88/100** because successful tenure would add vendor-side public-safety SaaS support, ticketing, customer metrics, and escalation ownership to Troy's record.
 
@@ -19,7 +19,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 ## Evidence carried into the packet
 
 - $40,000 Target-funded Genetec AutoVu ALPR deployment with agency, city IT, BCA CJIS, vendor, data-synchronization, camera, and connectivity coordination
-- Initial Cellebrite UFED acquisition and configuration plus an investigator preservation, subpoena, search-warrant, and provider-guidance library
+- Initial Cellebrite UFED acquisition and configuration plus an investigator preservation, subpoena, search-warrant, and service-provider guidance library
 - Commercial-burglary case example combining surveillance, physical evidence, cloud legal process, and forensic analysis, resulting in a felony conviction and written supervisory recognition
 - 20+ written commendations, Phoenix500 Faculty Excellence Awards in 2020 and 2021, and a 2021 Faculty of the Year nomination
 - 18 years of remote college instruction and $3.2 million in residential transactions
@@ -39,8 +39,9 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - ATS truth-safe coverage audit: PASS
 - Final packet validator: PASS with 0 errors and 0 warnings
 
-## Candidate review before submission
+## Submission status
 
 - Weekend commitment acknowledged August 31, 2026; no longer an unresolved packet issue.
-- Approve the candid explanation of the Jira, live-chat, SaaS-title, and support-metric gaps.
-- Review and approve the final packet. No submission action has been taken.
+- Application submitted and confirmed August 31, 2026.
+- Submission confirmation is archived in the private Google Drive application folder.
+- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.
