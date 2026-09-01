@@ -1,13 +1,10 @@
 {
   "accepted_by": "Codex operator review",
   "accepted_date": "2026-08-31",
-  "packet_status": "Drafting",
+  "packet_status": "Submitted",
   "document_gate": "pass",
-  "candidate_review_required": true,
-  "submission_blockers": [
-    "Troy must approve the final wording and documents before submission.",
-    "The GitHub draft pull request must be reviewed under the repository workflow; no merge is performed automatically."
-  ],
+  "candidate_review_required": false,
+  "submission_blockers": [],
   "candidate_confirmations": [
     "Required weekend commitment acknowledged on 2026-08-31."
   ],
@@ -16,5 +13,9 @@
     "No verified commercial SaaS support title, live-chat support, or support-queue metrics.",
     "No verified Salesforce experience; it was omitted."
   ],
-  "passed": true
+  "passed": true,
+  "application_status": "Submitted",
+  "submission_confirmed_date": "2026-08-31",
+  "submission_evidence": "Official Flock Safety Ashby confirmation archived in private Google Drive application folder",
+  "repository_status": "Draft pull request pending review; repository publication status is independent of application submission."
 }
