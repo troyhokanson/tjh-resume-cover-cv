@@ -1,0 +1,24 @@
+{
+  "company": "OpenAI",
+  "role": "Protective Intelligence & Threat Analyst",
+  "job_id": "4ef8e8f4-a1ef-4d83-92cb-76463ec0a151",
+  "official_url": "https://openai.com/careers/protective-intelligence-and-threat-analyst-san-francisco/",
+  "application_url": "https://jobs.ashbyhq.com/openai/4ef8e8f4-a1ef-4d83-92cb-76463ec0a151/application",
+  "verified_date": "2026-08-30",
+  "status": "Drafting",
+  "fit_score": 76,
+  "priority": "Tier 2",
+  "primary_profile": "analyst-intelligence",
+  "secondary_profile": "corporate-security-investigations",
+  "salary": "$126,400-$225,000 plus equity",
+  "locations": ["San Francisco", "New York City", "Seattle", "Washington, DC", "US Remote"],
+  "work_mode": "Remote possible for the right candidate; office roles are hybrid three days per week",
+  "portfolio_link_included": false,
+  "blocking_dependencies": [
+    "PR #49 document-helper correction is not merged",
+    "Public portfolio contains stale career facts and is omitted",
+    "PR #48 public-profile governance changes remain unresolved"
+  ],
+  "next_action": "Review the draft packet, decide whether the stretch fit and occasional nights/weekends are acceptable, then resolve the document and portfolio dependencies before submission."
+}
+
