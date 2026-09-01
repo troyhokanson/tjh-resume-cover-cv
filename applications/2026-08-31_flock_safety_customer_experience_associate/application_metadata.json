@@ -20,7 +20,7 @@
   "strategic_bridge_score": 88,
   "classification": "Transferable",
   "priority": "Tier 2",
-  "status": "drafting",
+  "status": "submitted",
   "google_drive_folder": "",
   "notion_record": "",
   "github_branch": "applications/2026-08-31-flock-customer-experience-associate",
@@ -43,7 +43,7 @@
     "rendered_headers": "pass - resume pages 1-2 and cover page 1",
     "visual_inspection": "pass - all 3 pages inspected at original resolution",
     "final_validator": "pass - 0 errors and 0 warnings for resume and cover letter",
-    "operator_acceptance": "accepted for candidate review; not marked submitted",
+    "operator_acceptance": "packet validation passed; application submitted and confirmed on 2026-08-31",
     "spelling_and_grammar": "pass",
     "ats": "pass - truth-safe target coverage with unsupported tools and metrics excluded"
   },
@@ -53,5 +53,9 @@
   ],
   "candidate_confirmations": [
     "Required weekend commitment acknowledged on 2026-08-31."
-  ]
+  ],
+  "applied_date": "2026-08-31",
+  "submission_confirmed_date": "2026-08-31",
+  "submission_method": "Official Flock Safety Ashby application system",
+  "submission_confirmation": "Archived in private Google Drive application folder"
 }
