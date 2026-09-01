@@ -36,7 +36,11 @@ def update_metadata() -> None:
     path = APP_DIR / "application_metadata.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
     payload["candidate"] = "Troy Hokanson"
-    payload["status"] = "drafting"
+    payload["status"] = "submitted"
+    payload["applied_date"] = "2026-08-31"
+    payload["submission_confirmed_date"] = "2026-08-31"
+    payload["submission_method"] = "Official Flock Safety Ashby application system"
+    payload["submission_confirmation"] = "Archived in private Google Drive application folder"
     payload["documents"].update({
         "resume_docx": f"output/{STEM}_Resume.docx",
         "resume_pdf": f"output/{STEM}_Resume.pdf",
@@ -54,7 +58,7 @@ def update_metadata() -> None:
         "final_validator": "pass - 0 errors and 0 warnings for resume and cover letter",
         "spelling_and_grammar": "pass",
         "ats": "pass - truth-safe target coverage with unsupported tools and metrics excluded",
-        "operator_acceptance": "accepted for candidate review; not marked submitted",
+        "operator_acceptance": "packet validation passed; application submitted and confirmed on 2026-08-31",
     })
     write_json(path, payload)
 
@@ -77,13 +81,14 @@ def main() -> None:
     acceptance = {
         "accepted_by": "Codex operator review",
         "accepted_date": "2026-08-31",
-        "packet_status": "Drafting",
+        "packet_status": "Submitted",
+        "application_status": "Submitted",
+        "submission_confirmed_date": "2026-08-31",
+        "submission_evidence": "Official Flock Safety Ashby confirmation archived in private Google Drive application folder",
         "document_gate": "pass",
-        "candidate_review_required": True,
-        "submission_blockers": [
-            "Troy must approve the final wording and documents before submission.",
-            "The GitHub draft pull request must be reviewed under the repository workflow; no merge is performed automatically.",
-        ],
+        "candidate_review_required": False,
+        "submission_blockers": [],
+        "repository_status": "Draft pull request pending review; repository publication status is independent of application submission.",
         "candidate_confirmations": [
             "Required weekend commitment acknowledged on 2026-08-31.",
         ],
@@ -146,7 +151,7 @@ def main() -> None:
 
 ## Outcome
 
-PASS for candidate review. The packet contains a two-page resume and a one-page cover letter. It is not marked submitted.
+PASS. The packet contains a two-page resume and a one-page cover letter. The application was submitted and confirmed through Flock Safety's official Ashby application system on August 31, 2026.
 
 Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value is **88/100** because successful tenure would add vendor-side public-safety SaaS support, ticketing, customer metrics, and escalation ownership to Troy's record.
 
@@ -163,7 +168,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 ## Evidence carried into the packet
 
 - $40,000 Target-funded Genetec AutoVu ALPR deployment with agency, city IT, BCA CJIS, vendor, data-synchronization, camera, and connectivity coordination
-- Initial Cellebrite UFED acquisition and configuration plus an investigator preservation, subpoena, search-warrant, and provider-guidance library
+- Initial Cellebrite UFED acquisition and configuration plus an investigator preservation, subpoena, search-warrant, and service-provider guidance library
 - Commercial-burglary case example combining surveillance, physical evidence, cloud legal process, and forensic analysis, resulting in a felony conviction and written supervisory recognition
 - 20+ written commendations, Phoenix500 Faculty Excellence Awards in 2020 and 2021, and a 2021 Faculty of the Year nomination
 - 18 years of remote college instruction and $3.2 million in residential transactions
@@ -183,11 +188,12 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - ATS truth-safe coverage audit: PASS
 - Final packet validator: PASS with 0 errors and 0 warnings
 
-## Candidate review before submission
+## Submission status
 
 - Weekend commitment acknowledged August 31, 2026; no longer an unresolved packet issue.
-- Approve the candid explanation of the Jira, live-chat, SaaS-title, and support-metric gaps.
-- Review and approve the final packet. No submission action has been taken.
+- Application submitted and confirmed August 31, 2026.
+- Submission confirmation is archived in the private Google Drive application folder.
+- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.
 """
     (APP_DIR / "validation_summary.md").write_text(summary, encoding="utf-8")
 
