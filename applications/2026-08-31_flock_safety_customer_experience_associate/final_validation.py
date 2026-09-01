@@ -176,7 +176,6 @@ def ats_report(resume: str, cover: str) -> dict[str, object]:
         "No verified Jira experience.",
         "No verified Salesforce experience; omitted rather than inferred.",
         "No verified SLA, ticket-volume, CSAT, or first-response-time metrics.",
-        "Weekend availability must be confirmed by Troy before submission.",
     ]
     return {
         "official_job_description": "job_description.md",
