@@ -12,7 +12,7 @@
 | Independent prioritization and ambiguity | Direct | Self-initiated case follow-up outside formal investigative assignment. 2019 initiative rating of Exceeds Standards | Use as ownership evidence |
 | Public-safety operating context | Direct | Patrol, investigations, digital forensics, ALPR, body camera, fleet video, digital evidence, 10-agency task force, teaching, and FTO experience | Core differentiator |
 | Salesforce or Jira | Gap | No verified Jira experience. Salesforce evidence does not clear the current repository claim gate | Exclude both as experience claims |
-| Weekend shifts | Acknowledged | Current posting requires weekend availability; candidate acknowledged the commitment on August 31, 2026 | Treat the schedule as understood; do not imply the application has been submitted |
+| Weekend shifts | Acknowledged | Current posting requires weekend availability; candidate acknowledged the commitment on August 31, 2026 | Application submitted and confirmed August 31, 2026 |
 
 ## Selected Case and Recognition Evidence
 
