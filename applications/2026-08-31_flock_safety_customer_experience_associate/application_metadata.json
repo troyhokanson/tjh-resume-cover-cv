@@ -1,0 +1,61 @@
+{
+  "candidate": "Troy Hokanson",
+  "employer": "Flock Safety",
+  "role": "Customer Experience Associate",
+  "job_id": "1cabec78-f1bd-4615-95d2-5d8196eb46e0",
+  "job_url": "https://jobs.ashbyhq.com/Flock%20Safety/1cabec78-f1bd-4615-95d2-5d8196eb46e0",
+  "location": "Remote - USA",
+  "work_mode": "Remote",
+  "salary": "$55,000 plus equity",
+  "posted_date": "2026-08-25",
+  "verified_live_date": "2026-08-31",
+  "application_deadline": null,
+  "travel": "Not stated",
+  "primary_lane": "technical-account-management",
+  "secondary_lanes": [
+    "vendor-solutions"
+  ],
+  "notion_profile_mapping": "Public Safety Customer Success / TAM",
+  "fit_score": 79,
+  "strategic_bridge_score": 88,
+  "classification": "Transferable",
+  "priority": "Tier 2",
+  "status": "submitted",
+  "google_drive_folder": "",
+  "notion_record": "",
+  "github_branch": "applications/2026-08-31-flock-customer-experience-associate",
+  "documents": {
+    "resume_markdown": "resume.md",
+    "cover_letter_markdown": "cover_letter.md",
+    "resume_docx": "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.docx",
+    "resume_pdf": "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.pdf",
+    "cover_letter_docx": "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Cover-Letter.docx",
+    "cover_letter_pdf": "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Cover-Letter.pdf"
+  },
+  "qa": {
+    "repository_commit": "d9533b7bfdcc1c978cc0c33b881e8551d71755ce",
+    "profile": "technical-account-management",
+    "formatting_preflight": "pass",
+    "anti_ai": "pass - technical-account-management profile",
+    "privacy": "pass - no case names, identifiers, victim data, or gated terminology",
+    "metadata": "pass",
+    "docx_structure": "pass",
+    "visual_inspection": "pass - all 3 pages inspected at original resolution",
+    "final_validator": "pass - 0 errors and 0 warnings for resume and cover letter",
+    "operator_acceptance": "packet validation passed; application submitted and confirmed on 2026-08-31",
+    "spelling_and_grammar": "pass",
+    "ats": "pass - truth-safe target coverage with unsupported tools and metrics excluded"
+  },
+  "exceptions": [
+    "No verified Jira experience.",
+    "No verified commercial SaaS support metrics or support-queue ownership."
+  ],
+  "candidate_confirmations": [
+    "Required weekend commitment acknowledged on 2026-08-31."
+  ],
+  "applied_date": "2026-08-31",
+  "submission_confirmed_date": "2026-08-31",
+  "submission_method": "Official Flock Safety Ashby application system",
+  "submission_confirmation": "Archived in private Google Drive application folder",
+  "repository_correction_note": "Post-submission sanitized repository source splits the November 1998-August 2016 service into the authoritative patrol and investigative assignment date blocks. Private submitted artifacts remain unchanged."
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.2.0",
+  "repository_commit": "d9533b7bfdcc1c978cc0c33b881e8551d71755ce",
+  "recorded_date": "2026-08-31",
+  "page": {
+    "size": "US Letter",
+    "width_inches": 8.5,
+    "height_inches": 11,
+    "orientation": "portrait"
+  },
+  "header": {
+    "implementation": "docx_header.build_navy_header",
+    "location": "Word header part",
+    "height_inches": 1.28,
+    "background": "#0D1B2A",
+    "background_geometry_points": [612, 92.16],
+    "name": "Troy Hokanson",
+    "name_font": "EB Garamond",
+    "name_size_points": 26,
+    "name_color": "#FFFFFF",
+    "gold_rule": "#C9A84C",
+    "rule_width_percent_of_page": 55,
+    "contact_font_size_points": 9.5,
+    "contact_order": ["phone", "email", "LinkedIn", "TroyHokanson.com"]
+  },
+  "resume": {
+    "target_pages": 2,
+    "maximum_pages": 2,
+    "margins_inches": {
+      "top": 1.46,
+      "bottom": 0.55,
+      "left": 0.65,
+      "right": 0.65
+    },
+    "body_start_below_header_inches": 0.18,
+    "body_font": "EB Garamond",
+    "body_size_points": 10.25,
+    "line_spacing": 1.05,
+    "section_heading_size_points": 11,
+    "section_before_points": 8,
+    "section_after_points": 4,
+    "job_heading_size_points": 10.5,
+    "job_before_points": 5,
+    "job_after_points": 0,
+    "job_subheading_size_points": 9.75,
+    "job_subheading_after_points": 2,
+    "bullet_left_indent_inches": 0.18,
+    "bullet_first_line_indent_inches": -0.18,
+    "bullet_after_points": 2
+  },
+  "cover_letter": {
+    "target_pages": 1,
+    "maximum_pages": 1,
+    "margins_inches": {
+      "top": 1.52,
+      "bottom": 0.68,
+      "left": 0.78,
+      "right": 0.78
+    },
+    "body_start_below_header_inches": 0.24,
+    "body_font": "EB Garamond",
+    "body_size_points": 10.25,
+    "line_spacing": 1.05,
+    "date_after_points": 4,
+    "address_after_points": 5,
+    "salutation_after_points": 5,
+    "paragraph_after_points": 4,
+    "closing_before_points": 0,
+    "signature_gap_points": 38
+  },
+  "pagination": {
+    "widow_control": true,
+    "keep_with_next": ["section_heading", "job_heading", "job_subheading"],
+    "minimum_following_lines_after_heading": 2,
+    "compression_rule": "Remove or condense weaker content before reducing margins, fonts, or minimum spacing."
+  }
+}

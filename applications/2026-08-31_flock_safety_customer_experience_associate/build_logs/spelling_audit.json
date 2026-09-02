@@ -1,0 +1,9 @@
+{
+  "checker": "Hunspell en_US dictionary plus saved role-specific proper-name allowlist",
+  "allowlist": "proper_names_allowlist.txt",
+  "unknown_tokens": {
+    "resume": [],
+    "cover_letter": []
+  },
+  "passed": true
+}

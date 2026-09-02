@@ -1,0 +1,9 @@
+{
+  "checker": "Deterministic punctuation, repetition, and layout-language scan plus visual/manual readback",
+  "findings": {
+    "resume": {},
+    "cover_letter": {}
+  },
+  "passed": true,
+  "manual_readback": "Pass. All three rendered pages were inspected; no clipping, orphan headings, malformed bullets, or sentence fragments were observed."
+}

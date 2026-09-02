@@ -16,6 +16,7 @@ inspect something important.
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import re
 import subprocess
@@ -39,6 +40,11 @@ try:
     from anti_ai_scan import scan_text
 except Exception:  # pragma: no cover
     scan_text = None
+
+
+
+def file_sha256(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()
 
 NAVY = "#0D1B2A"
 GOLD = "#C9A84C"
@@ -261,6 +267,13 @@ def validate_one(args: argparse.Namespace) -> dict[str, Any]:
         "pdf": str(pdf_path) if pdf_path else None,
         "docx": str(docx_path) if docx_path else None,
         "header_pngs": [str(p) for p in header_pngs],
+        "artifact_sha256": {
+            "pdf": file_sha256(pdf_path) if pdf_path and pdf_path.is_file() else None,
+            "docx": file_sha256(docx_path) if docx_path and docx_path.is_file() else None,
+            "header_pngs": {
+                str(path): file_sha256(path) for path in header_pngs if path.is_file()
+            },
+        },
         "passed": len(failed_errors) == 0,
         "failed_error_count": len(failed_errors),
         "failed_warning_count": len(failed_warnings),
