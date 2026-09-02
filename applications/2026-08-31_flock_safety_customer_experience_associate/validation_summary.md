@@ -45,3 +45,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Application submitted and confirmed August 31, 2026.
 - Submission confirmation is archived in the private Google Drive application folder.
 - GitHub PR #51 remains pending repository review; that does not alter the submitted application status.
+
+## Repository clarification
+
+- After submission, the sanitized repository source corrected the combined police-assignment heading to Police Officer. The March 2010-May 2011 investigative rotation remains stated explicitly. Private submitted artifacts remain unchanged.
