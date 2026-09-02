@@ -35,11 +35,18 @@ Technical troubleshooting | Customer and stakeholder communication | Hardware an
 - Acquired and configured the unit's initial Cellebrite UFED and supported investigators troubleshooting mobile-device and digital-evidence questions.
 - Built a reusable investigator resource library with preservation-request, administrative-subpoena, search-warrant, and service-provider guidance to support consistent electronic-evidence work.
 
-### Police Officer | Lakeville Police Department | Lakeville, MN | November 1998 - August 2016
+### Police Officer / Field Training Officer | Lakeville Police Department | Lakeville, MN | June 2011 - August 2016
 
-- Completed a full-time investigative rotation from March 2010 through May 2011, managing financial and property cases from intake through interviews, records review, legal process, documentation, and prosecutorial handoff.
-- Led agency-side operations for a $40,000 Target-funded Genetec AutoVu ALPR project, coordinating Target, department leadership, city IT, BCA CJIS, Genetec, nightly hotlist synchronization, and field troubleshooting.
-- Trained and coached officers, supported reserve and park-ranger development, and received 20+ written commendations across the law-enforcement career.
+- Returned to patrol after the first investigative rotation, training and coaching officers and supporting reserve and park-ranger development.
+
+### Police Officer / Investigator (First Investigative Rotation) | Lakeville Police Department | Lakeville, MN | March 2010 - May 2011
+
+- Managed financial and property cases from intake through interviews, records review, legal process, documentation, and prosecutorial handoff during a full-time investigative rotation.
+
+### Police Officer / Field Training Officer | Lakeville Police Department | Lakeville, MN | November 1998 - February 2010
+
+- Led agency-side operations for a $40,000 Target-funded Genetec AutoVu ALPR project from 2007 to 2010, coordinating Target, department leadership, city IT, BCA CJIS, Genetec, nightly hotlist synchronization, and field troubleshooting.
+- Received 20+ written commendations across the law-enforcement career.
 
 ### Adjunct Faculty / Criminal Justice | University of Phoenix | Remote | March 2007 - October 2025
 
