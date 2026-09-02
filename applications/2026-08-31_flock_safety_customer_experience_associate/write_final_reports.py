@@ -14,6 +14,12 @@ OUTPUT_DIR = APP_DIR / "output"
 LOG_DIR = APP_DIR / "build_logs"
 PINNED_COMMIT = "d9533b7bfdcc1c978cc0c33b881e8551d71755ce"
 STEM = "2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78"
+EXPECTED_OUTPUTS = {
+    "resume_docx": OUTPUT_DIR / f"{STEM}_Resume.docx",
+    "resume_pdf": OUTPUT_DIR / f"{STEM}_Resume.pdf",
+    "cover_docx": OUTPUT_DIR / f"{STEM}_Cover-Letter.docx",
+    "cover_pdf": OUTPUT_DIR / f"{STEM}_Cover-Letter.pdf",
+}
 VALIDATION_REPORTS = {
     "docx_structure": "docx_structure_audit.json",
     "spelling": "spelling_audit.json",
@@ -61,6 +67,39 @@ def load_validation_reports() -> dict[str, dict[str, object]]:
             raise ValueError(f"Validation report lacks a boolean passed result: {path}")
         reports[name] = report
     return reports
+
+
+def require_expected_outputs() -> None:
+    missing = [str(path) for path in EXPECTED_OUTPUTS.values() if not path.is_file()]
+    if missing:
+        raise FileNotFoundError("Required output artifact(s) not found: " + ", ".join(missing))
+
+
+def verify_reported_output_hashes(reports: dict[str, dict[str, object]]) -> None:
+    metadata_documents = reports["metadata"].get("documents")
+    if not isinstance(metadata_documents, dict):
+        raise ValueError("Metadata audit lacks document results")
+    mismatches: list[str] = []
+    for name, path in EXPECTED_OUTPUTS.items():
+        document_report = metadata_documents.get(name)
+        recorded = document_report.get("sha256") if isinstance(document_report, dict) else None
+        actual = sha256(path)
+        if recorded != actual:
+            mismatches.append(f"{name} (metadata audit)")
+
+    docx_report_names = {"resume_docx": "resume", "cover_docx": "cover_letter"}
+    for output_name, report_name in docx_report_names.items():
+        document_report = reports["docx_structure"].get(report_name)
+        recorded = document_report.get("sha256") if isinstance(document_report, dict) else None
+        actual = sha256(EXPECTED_OUTPUTS[output_name])
+        if recorded != actual:
+            mismatches.append(f"{output_name} (DOCX structure audit)")
+
+    if mismatches:
+        raise RuntimeError(
+            "Refusing to finalize because validation hashes do not match current outputs: "
+            + ", ".join(mismatches)
+        )
 
 
 def require_passing_validation(reports: dict[str, dict[str, object]]) -> None:
@@ -126,7 +165,9 @@ def main() -> None:
         raise FileNotFoundError(
             f"Output directory not found: {OUTPUT_DIR}. Run build_flock.py before writing final reports."
         )
+    require_expected_outputs()
     validation_reports = load_validation_reports()
+    verify_reported_output_hashes(validation_reports)
     require_passing_validation(validation_reports)
     update_metadata(validation_reports)
 
@@ -184,10 +225,7 @@ def main() -> None:
         "validate_application_packet.py",
     ]
     artifact_paths = [
-        OUTPUT_DIR / f"{STEM}_Resume.docx",
-        OUTPUT_DIR / f"{STEM}_Resume.pdf",
-        OUTPUT_DIR / f"{STEM}_Cover-Letter.docx",
-        OUTPUT_DIR / f"{STEM}_Cover-Letter.pdf",
+        *EXPECTED_OUTPUTS.values(),
         # The DOCX structure audit is an intermediate local build artifact and is not
         # committed with the sanitized packet, so provenance must not reference it.
         *sorted(path for path in LOG_DIR.glob("*.json") if path.name != "docx_structure_audit.json"),
