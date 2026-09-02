@@ -23,36 +23,38 @@
     "validate_application_packet.py": "96a3dbc1a4c7715d8a8c2a070f239508dba15b2d"
   },
   "application_source_hashes": {
-    "application_metadata.json": "92a80422a7111ee1cd8ada9b968b42d4438cde86b2b5c6d18d76bb9ec6475ff5",
-    "build_flock.py": "fe366a42d202239d473acc4d21691a5e31bd05a1bf7f76337773e57059327b9b",
+    "application_metadata.json": "85d43a12723ba1e453ed690617682c2883a6948f4c66ee15157716c3fb6f5ed9",
+    "build_flock.py": "bfb500a2f188d7fdedd2b2180722fd5db3c13799acaa7077492b7cd2f9cdb93b",
     "cover_letter.md": "de92d2654d396ca8820b4510dedbcf521d4d6986d67793c5ec39fa4d5c82f099",
-    "evidence_matrix.md": "3925d621b06b1f383d47627fe833ec49573f976e9f6fd75669d379a1d4ac5cfa",
-    "final_validation.py": "5166d8481df06b6b6d28b1b71e599cca8c8b5ef152dc4b3dec5a9a1dd53abf17",
+    "evidence_matrix.md": "2c50b540a941a77782d73ba557ee4fb7e19b071d83a61068a7a6c0ec86697235",
+    "final_validation.py": "f5ca63618d10ae5720d975de5c00a5c9de13a7cf6b9c328c524baa3363082e46",
     "fit_assessment.md": "46042405fb26254468a6ab399779812cffb26794e2587fd0de80bf937e7eddeb",
     "job_description.md": "7b66a91d279a8cee313c6c8edcc7d62ff0c8351cc51843b0bab78e9a3577ffa9",
     "layout_contract.json": "c9695b71c658366d1542622f020f798d3f7261d49db6ceac06ce20bbf4f3a362",
     "proper_names_allowlist.txt": "2b94c842bc7ed2035306179aba336acce9e4e57ee4738799dbbc5c51437a9019",
-    "resume.md": "b33c1c1e69909f73e5796a40890f1ebf417ba2635570e5a14027aa3275753085",
-    "sanitize_pdfs.py": "210dbfa5578cff6c6dfb1ff3f8bf05f0afc37e32588bc006266e0c04d5046f07"
+    "resume.md": "36621e39b5c67018e07e3b6ade23ec78db2c4df2e1e981f8ea04a24a87feb2c3",
+    "sanitize_pdfs.py": "210dbfa5578cff6c6dfb1ff3f8bf05f0afc37e32588bc006266e0c04d5046f07",
+    "validation_summary.md": "f1649c8593d5cd5023e6887da596507f9ba836ba74e3e233334d479929d6016e"
   },
   "artifact_and_report_hashes": {
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.docx": "da2b6057f0a19930d5943ac8bced3dbba84ed834447e75b095404c53429d89bb",
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.pdf": "35295d8c158ce3c0d8a28b7fad8a712cbd2628e9296908a8890d4ea432c6b827",
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Cover-Letter.docx": "5deb4912b9a26ec61040f79e2b8bf46b3bd88fab0514ad5e76f7c0cac7ea02e8",
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Cover-Letter.pdf": "a53173c839738cc9e39e06664e4e7737d1cd82120ba494b28c8e4647d9edcd07",
-    "build_logs/ats_audit.json": "56ac254f41903bf0ffa716eac798de547a48b9b337bc158ba17e0cfd4e5a7989",
-    "build_logs/docx_structure_audit.json": "ec6b4c1eabcc606d9350f3ed86b50f6e9de2e1343cf3efe18f408e6b59100156",
+    "build_logs/anti_ai_cover.txt": "5a464fc8671d07fd96223f187c327c0b59a3bba107088cfe18149e57e635898a",
+    "build_logs/anti_ai_resume.txt": "1c269e5eb3b6ce62eb08de4dd4a4eb3eab755d9521b502e0b0a51b71c7c4cdb7",
+    "build_logs/ats_audit.json": "e0009749d73c6307e1c9e95eda7e1d597d177f8c26ee1fca8b658d1c958b4862",
     "build_logs/grammar_audit.json": "b15faad2074245e8690a75daa3490e48fe17403df570989192b20de8144423f6",
     "build_logs/header_validation_cover_page_1.json": "2833ffe6c2e53f146f9e2b19109607328207a6664863ecf9e9875fb497846ce0",
     "build_logs/header_validation_resume_page_1.json": "df8d0227d13f9e6a6b242a7c18eeb84f6e8b6475d72338e045c9de6d3bd7d849",
     "build_logs/header_validation_resume_page_2.json": "f1c78a985ba766b103b6d785d0eefa73b7911e6260fc4b48124ab7690580a896",
     "build_logs/metadata_audit.json": "2d1001b7920442c180a56efb6ef857b544b5d769250233c0416175ba942def15",
-    "build_logs/operator_acceptance.json": "cd13e09fb96f619e5238dbfa7e26ca38a1064109714797ccf40c635765e5653d",
+    "build_logs/operator_acceptance.json": "a3f95ad280cd58f2ed0fb2c54045c62616ce568cf86f9b3668cd39bf8a8d4c6a",
     "build_logs/packet_validation_cover.json": "920960aa5194fb86003ee1d874189657ac1caeb66ec175b532949dab6bf197f0",
     "build_logs/packet_validation_resume.json": "1e6060964f47f9965bc536612234f5aabdddf48697dd0ba3bf3cdd1167f9b64c",
     "build_logs/spelling_audit.json": "b1b0aa6d8478ff173d37b00fbbf1c9c7badaf3cdf012b55a4d1c001a6e2fa730",
-    "build_logs/visual_inspection.json": "44440011f07aff07ff7a6d6842a6745bafb4bd9ba7daa4d12af07f8cdf06ed2a",
-    "build_logs/anti_ai_cover.txt": "5a464fc8671d07fd96223f187c327c0b59a3bba107088cfe18149e57e635898a",
-    "build_logs/anti_ai_resume.txt": "1c269e5eb3b6ce62eb08de4dd4a4eb3eab755d9521b502e0b0a51b71c7c4cdb7"
-  }
+    "build_logs/visual_inspection.json": "44440011f07aff07ff7a6d6842a6745bafb4bd9ba7daa4d12af07f8cdf06ed2a"
+  },
+  "provenance_updated_date": "2026-09-02",
+  "provenance_note": "Source and committed report hashes regenerated after submission-status and review-driven repository corrections. Private output artifact hashes remain those of the archived submitted files."
 }
