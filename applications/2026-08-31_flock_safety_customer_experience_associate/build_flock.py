@@ -96,13 +96,28 @@ RESUME_JOBS_PAGE_2 = [
         ],
     },
     {
-        "title": "Police Officer",
+        "title": "Police Officer / Field Training Officer",
         "employer": "Lakeville Police Department | Lakeville, MN",
-        "dates": "November 1998 - August 2016",
+        "dates": "June 2011 - August 2016",
         "bullets": [
-            "Completed a full-time investigative rotation from March 2010 through May 2011, managing financial and property cases from intake through interviews, records review, legal process, documentation, and prosecutorial handoff.",
-            "Led agency-side operations for a $40,000 Target-funded Genetec AutoVu ALPR project, coordinating Target, department leadership, city IT, BCA CJIS, Genetec, nightly hotlist synchronization, and field troubleshooting.",
-            "Trained and coached officers, supported reserve and park-ranger development, and received 20+ written commendations across the law-enforcement career.",
+            "Returned to patrol after the first investigative rotation, training and coaching officers and supporting reserve and park-ranger development.",
+        ],
+    },
+    {
+        "title": "Police Officer / Investigator (First Investigative Rotation)",
+        "employer": "Lakeville Police Department | Lakeville, MN",
+        "dates": "March 2010 - May 2011",
+        "bullets": [
+            "Managed financial and property cases from intake through interviews, records review, legal process, documentation, and prosecutorial handoff during a full-time investigative rotation.",
+        ],
+    },
+    {
+        "title": "Police Officer / Field Training Officer",
+        "employer": "Lakeville Police Department | Lakeville, MN",
+        "dates": "November 1998 - February 2010",
+        "bullets": [
+            "Led agency-side operations for a $40,000 Target-funded Genetec AutoVu ALPR project from 2007 to 2010, coordinating Target, department leadership, city IT, BCA CJIS, Genetec, nightly hotlist synchronization, and field troubleshooting.",
+            "Received 20+ written commendations across the law-enforcement career.",
         ],
     },
     {
