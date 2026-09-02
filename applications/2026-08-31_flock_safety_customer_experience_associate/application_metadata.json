@@ -40,7 +40,6 @@
     "privacy": "pass - no case names, identifiers, victim data, or gated terminology",
     "metadata": "pass",
     "docx_structure": "pass",
-    "rendered_headers": "pass - resume pages 1-2 and cover page 1",
     "visual_inspection": "pass - all 3 pages inspected at original resolution",
     "final_validator": "pass - 0 errors and 0 warnings for resume and cover letter",
     "operator_acceptance": "packet validation passed; application submitted and confirmed on 2026-08-31",
