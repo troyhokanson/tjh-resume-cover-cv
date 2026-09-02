@@ -299,6 +299,9 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
         "pinned_repository_commit": PINNED_COMMIT,
         "branch": "applications/2026-08-31-flock-customer-experience-associate",
         "controlling_file_blob_shas": {path: blob_sha(path) for path in controlling},
+        "application_tool_hashes": {
+            "validate_application_packet.py": sha256(REPO_ROOT / "validate_application_packet.py"),
+        },
         "application_source_hashes": {
             path.name: sha256(path)
             for path in sorted(APP_DIR.iterdir())
