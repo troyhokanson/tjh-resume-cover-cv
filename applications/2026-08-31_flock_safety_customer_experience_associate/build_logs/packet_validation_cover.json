@@ -202,5 +202,11 @@
       "severity": "error",
       "detail": "sampled edge pixels: [(13, 27, 42), (13, 27, 42), (13, 27, 42)], expected near (13, 27, 42)"
     }
-  ]
+  ],
+  "artifact_sha256": {
+    "pdf": "a53173c839738cc9e39e06664e4e7737d1cd82120ba494b28c8e4647d9edcd07",
+    "docx": "5deb4912b9a26ec61040f79e2b8bf46b3bd88fab0514ad5e76f7c0cac7ea02e8",
+    "header_pngs": {}
+  },
+  "repository_enrichment_note": "Artifact hashes were added from the archived metadata audit during post-submission repository reconciliation."
 }
