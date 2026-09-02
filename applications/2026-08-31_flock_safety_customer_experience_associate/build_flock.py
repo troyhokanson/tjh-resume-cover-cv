@@ -591,6 +591,12 @@ def main() -> int:
     cover_pdf = cover.with_suffix(".pdf")
     resume_pages = render_pdf_pages(resume_pdf, OUTPUT_DIR / "final_render_resume")
     cover_pages = render_pdf_pages(cover_pdf, OUTPUT_DIR / "final_render_cover")
+    if len(resume_pages) != 2 or len(cover_pages) != 1:
+        raise RuntimeError(
+            "Rendered page-count contract failed: "
+            f"resume={len(resume_pages)} (expected 2), "
+            f"cover_letter={len(cover_pages)} (expected 1)"
+        )
     run_packet_validator(
         pdf=resume_pdf,
         docx=resume,
