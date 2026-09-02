@@ -41,6 +41,11 @@ def update_metadata() -> None:
     payload["submission_confirmed_date"] = "2026-08-31"
     payload["submission_method"] = "Official Flock Safety Ashby application system"
     payload["submission_confirmation"] = "Archived in private Google Drive application folder"
+    payload["repository_correction_note"] = (
+        "Post-submission sanitized repository source corrects the combined police-assignment heading "
+        "to Police Officer; the March 2010-May 2011 investigative rotation remains stated explicitly. "
+        "Private submitted artifacts remain unchanged."
+    )
     payload["documents"].update({
         "resume_docx": f"output/{STEM}_Resume.docx",
         "resume_pdf": f"output/{STEM}_Resume.pdf",
@@ -198,8 +203,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Weekend commitment acknowledged August 31, 2026; no longer an unresolved packet issue.
 - Application submitted and confirmed August 31, 2026.
 - Submission confirmation is archived in the private Google Drive application folder.
-- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.
-"""
+- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.\n\n## Repository clarification\n\n- After submission, the sanitized repository source corrected the combined police-assignment heading to Police Officer. The March 2010-May 2011 investigative rotation remains stated explicitly. Private submitted artifacts remain unchanged.\n"""
     (APP_DIR / "validation_summary.md").write_text(summary, encoding="utf-8")
 
 
