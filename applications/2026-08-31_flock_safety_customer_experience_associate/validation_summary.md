@@ -48,4 +48,4 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 
 ## Repository clarification
 
-- After submission, the sanitized repository source corrected the combined police-assignment heading to Police Officer. The March 2010-May 2011 investigative rotation remains stated explicitly. Private submitted artifacts remain unchanged.
+- After submission, the sanitized repository source split the November 1998-August 2016 service into the authoritative patrol and investigative assignment date blocks. Private submitted artifacts remain unchanged.
