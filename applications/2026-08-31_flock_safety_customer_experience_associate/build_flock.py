@@ -278,7 +278,6 @@ def add_job(doc: Document, job: dict[str, object]) -> None:
         p.paragraph_format.left_indent = Inches(0.18)
         p.paragraph_format.first_line_indent = Inches(-0.18)
         set_keep(p, keep_together=index == 0)
-    return title_p, employer_p
 
 
 def add_degree(doc: Document, lines: list[str]) -> None:
