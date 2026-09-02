@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import re
 import zipfile
 from pathlib import Path
@@ -33,7 +34,22 @@ def pdf_text(path: Path) -> str:
 
 
 def spelling_report(texts: dict[str, str]) -> dict[str, object]:
-    dictionary_path = Path("/usr/share/hunspell/en_US.dic")
+    configured_path = os.environ.get("HUNSPELL_DICTIONARY")
+    candidates = (
+        [Path(configured_path)]
+        if configured_path
+        else [
+            Path("/usr/share/hunspell/en_US.dic"),
+            Path("/usr/local/share/hunspell/en_US.dic"),
+        ]
+    )
+    dictionary_path = next((path for path in candidates if path.is_file()), None)
+    if dictionary_path is None:
+        checked = ", ".join(str(path) for path in candidates)
+        raise FileNotFoundError(
+            "Hunspell en_US dictionary not found. "
+            f"Checked: {checked}. Set HUNSPELL_DICTIONARY to the dictionary file path."
+        )
     dictionary = set()
     for line in dictionary_path.read_text(encoding="utf-8", errors="ignore").splitlines()[1:]:
         word = line.split("/", 1)[0].strip().lower()
