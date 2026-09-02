@@ -206,51 +206,6 @@ def main() -> None:
     }
     write_json(LOG_DIR / "operator_acceptance.json", acceptance)
 
-    controlling = [
-        "CAREER_CONSTANTS.md",
-        "PROFILES.md",
-        "PROFILE_SELECTOR.md",
-        "ROLE_ADAPTATION_STANDARD.md",
-        "VOICE_STANDARD.md",
-        "PRIVACY_STANDARD.md",
-        "EDUCATION_CONSTANTS.md",
-        "HEADER_STANDARD.md",
-        "CONTACT_STANDARD.md",
-        "standards/body_typography_pagination_standard.md",
-        "standards/cover_letter_layout.json",
-        "standards/document_design_standard.json",
-        "RESUME_HEADLINE_SCANABILITY_STANDARD.md",
-        "docx_header.py",
-        "anti_ai_scan.py",
-        "validate_application_packet.py",
-    ]
-    artifact_paths = [
-        *EXPECTED_OUTPUTS.values(),
-        # The DOCX structure audit is an intermediate local build artifact and is not
-        # committed with the sanitized packet, so provenance must not reference it.
-        *sorted(path for path in LOG_DIR.glob("*.json") if path.name != "docx_structure_audit.json"),
-        *sorted(LOG_DIR.glob("*.txt")),
-    ]
-    provenance = {
-        "build_date": "2026-08-31",
-        "job_id": "1cabec78-f1bd-4615-95d2-5d8196eb46e0",
-        "repository": "troyhokanson/tjh-resume-cover-cv",
-        "pinned_repository_commit": PINNED_COMMIT,
-        "branch": "applications/2026-08-31-flock-customer-experience-associate",
-        "controlling_file_blob_shas": {path: blob_sha(path) for path in controlling},
-        "application_source_hashes": {
-            path.name: sha256(path)
-            for path in sorted(APP_DIR.iterdir())
-            if path.is_file() and path.name not in {"build_provenance.json", "write_final_reports.py"}
-        },
-        "artifact_and_report_hashes": {
-            str(path.relative_to(APP_DIR)): sha256(path)
-            for path in artifact_paths
-            if path.exists() and path.name != "build_provenance.json"
-        },
-    }
-    write_json(APP_DIR / "build_provenance.json", provenance)
-
     summary = """# Validation Summary
 
 ## Outcome
@@ -299,6 +254,53 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Submission confirmation is archived in the private Google Drive application folder.
 - GitHub PR #51 remains pending repository review; that does not alter the submitted application status.\n\n## Repository clarification\n\n- After submission, the sanitized repository source corrected the combined police-assignment heading to Police Officer. The March 2010-May 2011 investigative rotation remains stated explicitly. Private submitted artifacts remain unchanged.\n"""
     (APP_DIR / "validation_summary.md").write_text(summary, encoding="utf-8")
+
+    controlling = [
+        "CAREER_CONSTANTS.md",
+        "PROFILES.md",
+        "PROFILE_SELECTOR.md",
+        "ROLE_ADAPTATION_STANDARD.md",
+        "VOICE_STANDARD.md",
+        "PRIVACY_STANDARD.md",
+        "EDUCATION_CONSTANTS.md",
+        "HEADER_STANDARD.md",
+        "CONTACT_STANDARD.md",
+        "standards/body_typography_pagination_standard.md",
+        "standards/cover_letter_layout.json",
+        "standards/document_design_standard.json",
+        "RESUME_HEADLINE_SCANABILITY_STANDARD.md",
+        "docx_header.py",
+        "anti_ai_scan.py",
+        "validate_application_packet.py",
+    ]
+    artifact_paths = [
+        *EXPECTED_OUTPUTS.values(),
+        # The DOCX structure audit is an intermediate local build artifact and is not
+        # committed with the sanitized packet, so provenance must not reference it.
+        *sorted(path for path in LOG_DIR.glob("*.json") if path.name != "docx_structure_audit.json"),
+        *sorted(LOG_DIR.glob("*.txt")),
+    ]
+    provenance = {
+        "build_date": "2026-08-31",
+        "job_id": "1cabec78-f1bd-4615-95d2-5d8196eb46e0",
+        "repository": "troyhokanson/tjh-resume-cover-cv",
+        "pinned_repository_commit": PINNED_COMMIT,
+        "branch": "applications/2026-08-31-flock-customer-experience-associate",
+        "controlling_file_blob_shas": {path: blob_sha(path) for path in controlling},
+        "application_source_hashes": {
+            path.name: sha256(path)
+            for path in sorted(APP_DIR.iterdir())
+            if path.is_file() and path.name not in {"build_provenance.json", "write_final_reports.py"}
+        },
+        "artifact_and_report_hashes": {
+            str(path.relative_to(APP_DIR)): sha256(path)
+            for path in artifact_paths
+            if path.exists() and path.name != "build_provenance.json"
+        },
+    }
+    write_json(APP_DIR / "build_provenance.json", provenance)
+
+
 
 
 if __name__ == "__main__":
