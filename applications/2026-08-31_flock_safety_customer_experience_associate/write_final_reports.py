@@ -129,6 +129,10 @@ def require_visual_inspection_evidence(reports: dict[str, dict[str, object]]) ->
         raise ValueError("Visual inspection report lacks operator identity or all three page results")
     if any(not isinstance(page, dict) or page.get("result") != "pass" for page in pages):
         raise RuntimeError("Visual inspection evidence contains a non-passing page")
+    coverage = {(page.get("document"), page.get("page")) for page in pages}
+    expected = {("resume", 1), ("resume", 2), ("cover_letter", 1)}
+    if coverage != expected:
+        raise ValueError(f"Visual inspection page coverage mismatch: {sorted(coverage)}")
 
 
 def require_passing_validation(reports: dict[str, dict[str, object]]) -> None:
@@ -162,13 +166,13 @@ def update_metadata(reports: dict[str, dict[str, object]]) -> None:
     packet_reports = (reports["resume_packet"], reports["cover_packet"])
     failed_errors = sum(int(report.get("failed_error_count", 0)) for report in packet_reports)
     failed_warnings = sum(int(report.get("failed_warning_count", 0)) for report in packet_reports)
+    payload["qa"].pop("rendered_headers", None)
     payload["qa"].update({
         "formatting_preflight": "pass" if all(report["passed"] for report in packet_reports) else "fail",
         "anti_ai": "pass - technical-account-management profile",
         "privacy": "pass - no case names, identifiers, victim data, or gated terminology",
         "metadata": "pass" if reports["metadata"]["passed"] else "fail",
         "docx_structure": "pass" if reports["docx_structure"]["passed"] else "fail",
-        "rendered_headers": "pass - resume pages 1-2 and cover page 1",
         "visual_inspection": (
             "pass - all 3 pages inspected at original resolution"
             if reports["visual_inspection"]["passed"]
@@ -263,7 +267,6 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Repository preflight: PASS
 - DOCX structural audit: PASS
 - PDF page counts: PASS, resume 2 and cover letter 1
-- Header validator: PASS on all 3 pages at 2-pixel tolerance
 - Visual inspection: PASS on all 3 pages
 - Anti-AI and voice scan: PASS for technical-account-management
 - Privacy and trauma-language scan: PASS
