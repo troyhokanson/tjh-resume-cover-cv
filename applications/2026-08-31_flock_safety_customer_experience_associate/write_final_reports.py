@@ -100,6 +100,13 @@ def verify_reported_output_hashes(reports: dict[str, dict[str, object]]) -> None
             if artifact_hashes.get(kind) != sha256(EXPECTED_OUTPUTS[output_name]):
                 mismatches.append(f"{output_name} ({report_name})")
 
+    visual_hashes = reports["visual_inspection"].get("artifact_sha256")
+    if not isinstance(visual_hashes, dict):
+        raise ValueError("Visual inspection evidence lacks artifact SHA-256 values")
+    for output_name in ("resume_pdf", "cover_pdf"):
+        if visual_hashes.get(output_name) != sha256(EXPECTED_OUTPUTS[output_name]):
+            mismatches.append(f"{output_name} (visual inspection)")
+
     docx_report_names = {"resume_docx": "resume", "cover_docx": "cover_letter"}
     for output_name, report_name in docx_report_names.items():
         document_report = reports["docx_structure"].get(report_name)
@@ -307,6 +314,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
         "controlling_file_blob_shas": {path: blob_sha(path) for path in controlling},
         "application_tool_hashes": {
             "validate_application_packet.py": sha256(REPO_ROOT / "validate_application_packet.py"),
+            "requirements.txt": sha256(REPO_ROOT / "requirements.txt"),
         },
         "application_source_hashes": {
             path.name: sha256(path)
