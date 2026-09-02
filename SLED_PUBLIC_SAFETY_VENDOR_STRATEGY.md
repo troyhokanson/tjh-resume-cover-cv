@@ -1,7 +1,7 @@
 # Troy Hokanson — Remote-First SLED Public Safety Vendor Strategy
 
 **Status:** Active career-strategy source of truth  
-**Last validated:** August 28, 2026  
+**Last validated:** September 2, 2026  
 **Primary profile:** `vendor-solutions`  
 **Related files:** [`PROFILES.md`](./PROFILES.md), [`PROFILE_SELECTOR.md`](./PROFILE_SELECTOR.md), [`JD_CONTEXT_ENGINE.md`](./JD_CONTEXT_ENGINE.md), [`CAREER_CONSTANTS.md`](./CAREER_CONSTANTS.md), [`CASE_BANK.md`](./CASE_BANK.md)
 
@@ -48,8 +48,8 @@ Remote work is a core strategy requirement because Troy plans to relocate from M
 
 - **0-25% travel:** preferred
 - **26-40% travel:** acceptable for a strong role
-- **41-50% travel:** selective; weigh health, recovery, and quality of life
-- **More than 50% travel:** apply only when compensation, role fit, and long-term value justify it
+- **41-50% travel:** selective; consider only when the role is unusually strong and the travel pattern is sustainable
+- **More than 50% travel:** default exclusion. Consider only a genuine dream role with unusually high direct fit, minor hard gaps, strong compensation, and clear long-term value. Employer brand or transition-pathway evidence alone cannot override the travel ceiling
 - A role labeled `remote` may still require substantial field travel. Always read the travel requirement.
 
 ### Remote-validation rule
@@ -494,7 +494,7 @@ Reduce the fit score when a posting is primarily:
 - Deep network engineering, cloud architecture, or API integration beyond transferable experience
 - Direct people management requiring a long record of formal employee supervision
 - Heavy aviation operations requiring extensive logged flight hours Troy does not have
-- More than 50% travel without a compelling strategic reason
+- More than 50% travel unless the posting qualifies as a genuine dream role under the travel-priority rule
 - Onsite-only outside Minnesota before the move or outside southwest Washington / Portland after the move
 - Commission-only or contractor-only
 - Generic customer support with no meaningful public-safety, investigative, training, or technical ownership
