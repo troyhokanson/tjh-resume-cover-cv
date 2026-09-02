@@ -35,7 +35,7 @@ Technical troubleshooting | Customer and stakeholder communication | Hardware an
 - Acquired and configured the unit's initial Cellebrite UFED and supported investigators troubleshooting mobile-device and digital-evidence questions.
 - Built a reusable investigator resource library with preservation-request, administrative-subpoena, search-warrant, and service-provider guidance to support consistent electronic-evidence work.
 
-### Police Officer / Investigator / Field Training Officer | Lakeville Police Department | Lakeville, MN | November 1998 - August 2016
+### Police Officer | Lakeville Police Department | Lakeville, MN | November 1998 - August 2016
 
 - Completed a full-time investigative rotation from March 2010 through May 2011, managing financial and property cases from intake through interviews, records review, legal process, documentation, and prosecutorial handoff.
 - Led agency-side operations for a $40,000 Target-funded Genetec AutoVu ALPR project, coordinating Target, department leadership, city IT, BCA CJIS, Genetec, nightly hotlist synchronization, and field troubleshooting.
