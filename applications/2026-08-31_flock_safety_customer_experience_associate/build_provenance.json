@@ -23,8 +23,8 @@
     "validate_application_packet.py": "96a3dbc1a4c7715d8a8c2a070f239508dba15b2d"
   },
   "application_source_hashes": {
-    "application_metadata.json": "3600dbd2a5ab7908759e31b790b2477ddc1e0afbdd519afd2a6510cd31b7723c",
-    "build_flock.py": "2a11a2b13b1746452050e40b6c9511c98ea4a523fdd902e99a4a14009256f611",
+    "application_metadata.json": "8688c5b4d5bc17f1e245ecdb04890a8119810cad3234258549ddffe457f803a9",
+    "build_flock.py": "dedc8ba15404b00b09b1e4b4eecfd8aff5fef56d6231d41906df68d16916aa07",
     "cover_letter.md": "de92d2654d396ca8820b4510dedbcf521d4d6986d67793c5ec39fa4d5c82f099",
     "evidence_matrix.md": "2c50b540a941a77782d73ba557ee4fb7e19b071d83a61068a7a6c0ec86697235",
     "final_validation.py": "f5ca63618d10ae5720d975de5c00a5c9de13a7cf6b9c328c524baa3363082e46",
@@ -34,8 +34,8 @@
     "proper_names_allowlist.txt": "2b94c842bc7ed2035306179aba336acce9e4e57ee4738799dbbc5c51437a9019",
     "resume.md": "3c7dce3b99f6a22e4e5081e118b315dde7e2bef3a8003d2baaa38527b0910821",
     "sanitize_pdfs.py": "210dbfa5578cff6c6dfb1ff3f8bf05f0afc37e32588bc006266e0c04d5046f07",
-    "validation_summary.md": "bea7066cf42c684c0130b20cc5b8ce0ee4fc097eebe21b2b7c0e5e7fbdaf32ec",
-    "write_final_reports.py": "dc90e0906253b9fc83566d1665b1533894212ad9d69e6160332e5c7e8663a0b0"
+    "validation_summary.md": "54cad1f85bc3c4b3f5c829f5b012a9d046d1478f921fa6fff69fceb7bf8fddb1",
+    "write_final_reports.py": "f5bf708c33a3dbb5f1b2a3f0bed0e235bed91107efc57eae311b41e57643c7f0"
   },
   "artifact_and_report_hashes": {
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.docx": "da2b6057f0a19930d5943ac8bced3dbba84ed834447e75b095404c53429d89bb",
