@@ -28,6 +28,7 @@ VALIDATION_REPORTS = {
     "ats": "ats_audit.json",
     "resume_packet": "packet_validation_resume.json",
     "cover_packet": "packet_validation_cover.json",
+    "visual_inspection": "visual_inspection.json",
 }
 
 
@@ -114,6 +115,15 @@ def verify_reported_output_hashes(reports: dict[str, dict[str, object]]) -> None
         )
 
 
+def require_visual_inspection_evidence(reports: dict[str, dict[str, object]]) -> None:
+    report = reports["visual_inspection"]
+    pages = report.get("pages")
+    if not report.get("inspected_by") or not isinstance(pages, list) or len(pages) != 3:
+        raise ValueError("Visual inspection report lacks operator identity or all three page results")
+    if any(not isinstance(page, dict) or page.get("result") != "pass" for page in pages):
+        raise RuntimeError("Visual inspection evidence contains a non-passing page")
+
+
 def require_passing_validation(reports: dict[str, dict[str, object]]) -> None:
     failed = [name for name, report in reports.items() if report.get("passed") is not True]
     if failed:
@@ -152,7 +162,11 @@ def update_metadata(reports: dict[str, dict[str, object]]) -> None:
         "metadata": "pass" if reports["metadata"]["passed"] else "fail",
         "docx_structure": "pass" if reports["docx_structure"]["passed"] else "fail",
         "rendered_headers": "pass - resume pages 1-2 and cover page 1",
-        "visual_inspection": "pass - all 3 pages inspected at original resolution",
+        "visual_inspection": (
+            "pass - all 3 pages inspected at original resolution"
+            if reports["visual_inspection"]["passed"]
+            else "fail"
+        ),
         "final_validator": (
             f"pass - {failed_errors} errors and {failed_warnings} warnings for resume and cover letter"
             if all(report["passed"] for report in packet_reports)
@@ -180,20 +194,9 @@ def main() -> None:
     require_expected_outputs()
     validation_reports = load_validation_reports()
     verify_reported_output_hashes(validation_reports)
+    require_visual_inspection_evidence(validation_reports)
     require_passing_validation(validation_reports)
     update_metadata(validation_reports)
-
-    visual = {
-        "inspection_date": "2026-08-31",
-        "method": "Original-resolution inspection of PNG renders generated from metadata-sanitized final PDFs",
-        "pages": [
-            {"document": "resume", "page": 1, "result": "pass", "notes": "Header, hierarchy, bullets, wrapping, and bottom clearance are clean."},
-            {"document": "resume", "page": 2, "result": "pass", "notes": "Repeated header, experience, credentials, and education render without clipping or orphaning."},
-            {"document": "cover_letter", "page": 1, "result": "pass", "notes": "One-page layout, six paragraphs, closing, and signature gap render cleanly."},
-        ],
-        "passed": True,
-    }
-    write_json(LOG_DIR / "visual_inspection.json", visual)
 
     acceptance = {
         "accepted_by": "Codex operator review",
@@ -218,7 +221,10 @@ def main() -> None:
     }
     write_json(LOG_DIR / "operator_acceptance.json", acceptance)
 
-    summary = """# Validation Summary
+    packet_reports = (validation_reports["resume_packet"], validation_reports["cover_packet"])
+    failed_errors = sum(int(report.get("failed_error_count", 0)) for report in packet_reports)
+    failed_warnings = sum(int(report.get("failed_warning_count", 0)) for report in packet_reports)
+    summary = f"""# Validation Summary
 
 ## Outcome
 
@@ -257,7 +263,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Metadata audit: PASS
 - Spelling and grammar audit: PASS
 - ATS truth-safe coverage audit: PASS
-- Final packet validator: PASS with 0 errors and 0 warnings
+- Final packet validator: PASS with {failed_errors} errors and {failed_warnings} warnings
 
 ## Submission status
 
