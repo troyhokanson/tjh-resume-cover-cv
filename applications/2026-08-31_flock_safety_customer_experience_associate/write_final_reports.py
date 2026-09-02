@@ -50,7 +50,14 @@ def load_validation_reports() -> dict[str, dict[str, object]]:
                 f"Required validation report not found: {path}. Run the build and validation steps first."
             )
         report = json.loads(path.read_text(encoding="utf-8"))
-        if not isinstance(report, dict) or "passed" not in report:
+        if not isinstance(report, dict):
+            raise ValueError(f"Validation report must contain a JSON object: {path}")
+        if name == "docx_structure" and "passed" not in report:
+            document_results = [report.get("resume"), report.get("cover_letter")]
+            if not all(isinstance(item, dict) and "passed" in item for item in document_results):
+                raise ValueError(f"DOCX structure report lacks document pass results: {path}")
+            report["passed"] = all(item["passed"] is True for item in document_results)
+        if "passed" not in report:
             raise ValueError(f"Validation report lacks a boolean passed result: {path}")
         reports[name] = report
     return reports
