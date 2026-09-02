@@ -14,6 +14,15 @@ OUTPUT_DIR = APP_DIR / "output"
 LOG_DIR = APP_DIR / "build_logs"
 PINNED_COMMIT = "d9533b7bfdcc1c978cc0c33b881e8551d71755ce"
 STEM = "2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78"
+VALIDATION_REPORTS = {
+    "docx_structure": "docx_structure_audit.json",
+    "spelling": "spelling_audit.json",
+    "grammar": "grammar_audit.json",
+    "metadata": "metadata_audit.json",
+    "ats": "ats_audit.json",
+    "resume_packet": "packet_validation_resume.json",
+    "cover_packet": "packet_validation_cover.json",
+}
 
 
 def sha256(path: Path) -> str:
@@ -32,7 +41,30 @@ def write_json(path: Path, payload: object) -> None:
     path.write_text(json.dumps(payload, indent=2) + "\n", encoding="utf-8")
 
 
-def update_metadata() -> None:
+def load_validation_reports() -> dict[str, dict[str, object]]:
+    reports: dict[str, dict[str, object]] = {}
+    for name, filename in VALIDATION_REPORTS.items():
+        path = LOG_DIR / filename
+        if not path.is_file():
+            raise FileNotFoundError(
+                f"Required validation report not found: {path}. Run the build and validation steps first."
+            )
+        report = json.loads(path.read_text(encoding="utf-8"))
+        if not isinstance(report, dict) or "passed" not in report:
+            raise ValueError(f"Validation report lacks a boolean passed result: {path}")
+        reports[name] = report
+    return reports
+
+
+def require_passing_validation(reports: dict[str, dict[str, object]]) -> None:
+    failed = [name for name, report in reports.items() if report.get("passed") is not True]
+    if failed:
+        raise RuntimeError(
+            "Refusing to finalize reports because validation failed: " + ", ".join(failed)
+        )
+
+
+def update_metadata(reports: dict[str, dict[str, object]]) -> None:
     path = APP_DIR / "application_metadata.json"
     payload = json.loads(path.read_text(encoding="utf-8"))
     payload["candidate"] = "Troy Hokanson"
@@ -52,17 +84,30 @@ def update_metadata() -> None:
         "cover_letter_docx": f"output/{STEM}_Cover-Letter.docx",
         "cover_letter_pdf": f"output/{STEM}_Cover-Letter.pdf",
     })
+    packet_reports = (reports["resume_packet"], reports["cover_packet"])
+    failed_errors = sum(int(report.get("failed_error_count", 0)) for report in packet_reports)
+    failed_warnings = sum(int(report.get("failed_warning_count", 0)) for report in packet_reports)
     payload["qa"].update({
-        "formatting_preflight": "pass",
+        "formatting_preflight": "pass" if all(report["passed"] for report in packet_reports) else "fail",
         "anti_ai": "pass - technical-account-management profile",
         "privacy": "pass - no case names, identifiers, victim data, or gated terminology",
-        "metadata": "pass",
-        "docx_structure": "pass",
+        "metadata": "pass" if reports["metadata"]["passed"] else "fail",
+        "docx_structure": "pass" if reports["docx_structure"]["passed"] else "fail",
         "rendered_headers": "pass - resume pages 1-2 and cover page 1",
         "visual_inspection": "pass - all 3 pages inspected at original resolution",
-        "final_validator": "pass - 0 errors and 0 warnings for resume and cover letter",
-        "spelling_and_grammar": "pass",
-        "ats": "pass - truth-safe target coverage with unsupported tools and metrics excluded",
+        "final_validator": (
+            f"pass - {failed_errors} errors and {failed_warnings} warnings for resume and cover letter"
+            if all(report["passed"] for report in packet_reports)
+            else f"fail - {failed_errors} errors and {failed_warnings} warnings for resume and cover letter"
+        ),
+        "spelling_and_grammar": (
+            "pass" if reports["spelling"]["passed"] and reports["grammar"]["passed"] else "fail"
+        ),
+        "ats": (
+            "pass - truth-safe target coverage with unsupported tools and metrics excluded"
+            if reports["ats"]["passed"]
+            else "fail - target coverage audit did not pass"
+        ),
         "operator_acceptance": "packet validation passed; application submitted and confirmed on 2026-08-31",
     })
     write_json(path, payload)
@@ -74,7 +119,9 @@ def main() -> None:
         raise FileNotFoundError(
             f"Output directory not found: {OUTPUT_DIR}. Run build_flock.py before writing final reports."
         )
-    update_metadata()
+    validation_reports = load_validation_reports()
+    require_passing_validation(validation_reports)
+    update_metadata(validation_reports)
 
     visual = {
         "inspection_date": "2026-08-31",
@@ -98,7 +145,7 @@ def main() -> None:
         "document_gate": "pass",
         "candidate_review_required": False,
         "submission_blockers": [],
-        "repository_status": "Draft pull request pending review; repository publication status is independent of application submission.",
+        "repository_status": "Open pull request pending merge; repository publication status is independent of application submission.",
         "candidate_confirmations": [
             "Required weekend commitment acknowledged on 2026-08-31.",
         ],
@@ -134,7 +181,9 @@ def main() -> None:
         OUTPUT_DIR / f"{STEM}_Resume.pdf",
         OUTPUT_DIR / f"{STEM}_Cover-Letter.docx",
         OUTPUT_DIR / f"{STEM}_Cover-Letter.pdf",
-        *sorted(LOG_DIR.glob("*.json")),
+        # The DOCX structure audit is an intermediate local build artifact and is not
+        # committed with the sanitized packet, so provenance must not reference it.
+        *sorted(path for path in LOG_DIR.glob("*.json") if path.name != "docx_structure_audit.json"),
         *sorted(LOG_DIR.glob("*.txt")),
     ]
     provenance = {
