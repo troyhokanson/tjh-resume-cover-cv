@@ -46,10 +46,16 @@ def spelling_report(texts: dict[str, str]) -> dict[str, object]:
     dictionary_path = next((path for path in candidates if path.is_file()), None)
     if dictionary_path is None:
         checked = ", ".join(str(path) for path in candidates)
-        raise FileNotFoundError(
-            "Hunspell en_US dictionary not found. "
-            f"Checked: {checked}. Set HUNSPELL_DICTIONARY to the dictionary file path."
-        )
+        return {
+            "checker": "Hunspell en_US dictionary plus saved role-specific proper-name allowlist",
+            "allowlist": "proper_names_allowlist.txt",
+            "error": (
+                "Hunspell en_US dictionary not found. "
+                f"Checked: {checked}. Set HUNSPELL_DICTIONARY to the dictionary file path."
+            ),
+            "unknown_tokens": {},
+            "passed": False,
+        }
     dictionary = set()
     for line in dictionary_path.read_text(encoding="utf-8", errors="ignore").splitlines()[1:]:
         word = line.split("/", 1)[0].strip().lower()
