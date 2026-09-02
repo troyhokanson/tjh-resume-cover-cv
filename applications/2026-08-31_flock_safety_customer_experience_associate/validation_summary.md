@@ -30,7 +30,6 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Repository preflight: PASS
 - DOCX structural audit: PASS
 - PDF page counts: PASS, resume 2 and cover letter 1
-- Header validator: PASS on all 3 pages at 2-pixel tolerance
 - Visual inspection: PASS on all 3 pages
 - Anti-AI and voice scan: PASS for technical-account-management
 - Privacy and trauma-language scan: PASS
