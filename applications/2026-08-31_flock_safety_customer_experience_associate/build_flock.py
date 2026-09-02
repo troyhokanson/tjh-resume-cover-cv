@@ -5,6 +5,8 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+import shutil
+import subprocess
 import sys
 import zipfile
 from copy import deepcopy
@@ -525,6 +527,40 @@ def inspect_docx(path: Path, doc_type: str) -> dict[str, object]:
     }
 
 
+def render_pdf_pages(pdf_path: Path, output_dir: Path) -> list[Path]:
+    try:
+        import fitz
+    except ImportError as exc:
+        raise RuntimeError("PyMuPDF is required to render validation PNGs") from exc
+    output_dir.mkdir(parents=True, exist_ok=True)
+    for stale in output_dir.glob("page-*.png"):
+        stale.unlink()
+    rendered: list[Path] = []
+    with fitz.open(pdf_path) as document:
+        for index, page in enumerate(document, start=1):
+            path = output_dir / f"page-{index}.png"
+            page.get_pixmap(matrix=fitz.Matrix(2, 2), alpha=False).save(path)
+            rendered.append(path)
+    return rendered
+
+
+def run_packet_validator(
+    *, pdf: Path, docx: Path, rendered_pages: list[Path], doc_type: str, report_name: str
+) -> None:
+    command = [
+        sys.executable,
+        str(REPO_ROOT / "validate_application_packet.py"),
+        "--pdf", str(pdf),
+        "--docx", str(docx),
+        "--doc-type", doc_type,
+        "--profile", "technical-account-management",
+        "--json-out", str(BUILD_LOG_DIR / report_name),
+    ]
+    for page in rendered_pages:
+        command.extend(["--header-png", str(page)])
+    subprocess.run(command, cwd=REPO_ROOT, check=True)
+
+
 def main() -> int:
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
     BUILD_LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -534,13 +570,52 @@ def main() -> int:
         "resume": inspect_docx(resume, "resume"),
         "cover_letter": inspect_docx(cover, "cover"),
     }
-    (BUILD_LOG_DIR / "docx_structure_audit.json").write_text(json.dumps(audits, indent=2), encoding="utf-8")
+    (BUILD_LOG_DIR / "docx_structure_audit.json").write_text(
+        json.dumps(audits, indent=2), encoding="utf-8"
+    )
+    if not all(item["passed"] for item in audits.values()):
+        print(json.dumps({"docx_audits_passed": False}, indent=2))
+        return 1
+
+    office = shutil.which("libreoffice") or shutil.which("soffice")
+    if office is None:
+        raise RuntimeError("LibreOffice is required to render the DOCX files to PDF")
+    subprocess.run(
+        [office, "--headless", "--convert-to", "pdf", "--outdir", str(OUTPUT_DIR), str(resume), str(cover)],
+        cwd=REPO_ROOT,
+        check=True,
+    )
+    subprocess.run([sys.executable, str(APP_DIR / "sanitize_pdfs.py")], cwd=REPO_ROOT, check=True)
+
+    resume_pdf = resume.with_suffix(".pdf")
+    cover_pdf = cover.with_suffix(".pdf")
+    resume_pages = render_pdf_pages(resume_pdf, OUTPUT_DIR / "final_render_resume")
+    cover_pages = render_pdf_pages(cover_pdf, OUTPUT_DIR / "final_render_cover")
+    run_packet_validator(
+        pdf=resume_pdf,
+        docx=resume,
+        rendered_pages=resume_pages,
+        doc_type="resume",
+        report_name="packet_validation_resume.json",
+    )
+    run_packet_validator(
+        pdf=cover_pdf,
+        docx=cover,
+        rendered_pages=cover_pages,
+        doc_type="cover",
+        report_name="packet_validation_cover.json",
+    )
+    subprocess.run([sys.executable, str(APP_DIR / "final_validation.py")], cwd=REPO_ROOT, check=True)
     print(json.dumps({
-        "resume": str(resume),
-        "cover_letter": str(cover),
-        "audits_passed": all(item["passed"] for item in audits.values()),
+        "resume_docx": str(resume),
+        "resume_pdf": str(resume_pdf),
+        "cover_letter_docx": str(cover),
+        "cover_letter_pdf": str(cover_pdf),
+        "rendered_pages": [str(path) for path in resume_pages + cover_pages],
+        "validation_reports_written": True,
+        "passed": True,
     }, indent=2))
-    return 0 if all(item["passed"] for item in audits.values()) else 1
+    return 0
 
 
 if __name__ == "__main__":
