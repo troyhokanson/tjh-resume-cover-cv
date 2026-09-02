@@ -123,7 +123,7 @@
       "name": "pagination.page_1.orphan_heading_tail",
       "passed": true,
       "severity": "error",
-      "detail": "tail: \uf0b7 Managed concurrent examinations and investigations, documented technical findings for non-technical | decision-makers, and maintained clear follow-up when work required assistance from other agencies or | service providers."
+      "detail": "tail:  Managed concurrent examinations and investigations, documented technical findings for non-technical | decision-makers, and maintained clear follow-up when work required assistance from other agencies or | service providers."
     },
     {
       "name": "pagination.page_2.orphan_heading_tail",
@@ -221,5 +221,11 @@
       "severity": "error",
       "detail": "sampled edge pixels: [(13, 27, 42), (13, 27, 42), (13, 27, 42)], expected near (13, 27, 42)"
     }
-  ]
+  ],
+  "artifact_sha256": {
+    "pdf": "35295d8c158ce3c0d8a28b7fad8a712cbd2628e9296908a8890d4ea432c6b827",
+    "docx": "da2b6057f0a19930d5943ac8bced3dbba84ed834447e75b095404c53429d89bb",
+    "header_pngs": {}
+  },
+  "repository_enrichment_note": "Artifact hashes were added from the archived metadata audit during post-submission repository reconciliation."
 }
