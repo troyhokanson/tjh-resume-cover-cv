@@ -96,7 +96,7 @@ RESUME_JOBS_PAGE_2 = [
         ],
     },
     {
-        "title": "Police Officer / Investigator / Field Training Officer",
+        "title": "Police Officer",
         "employer": "Lakeville Police Department | Lakeville, MN",
         "dates": "November 1998 - August 2016",
         "bullets": [
