@@ -64,6 +64,11 @@ def update_metadata() -> None:
 
 
 def main() -> None:
+    LOG_DIR.mkdir(parents=True, exist_ok=True)
+    if not OUTPUT_DIR.is_dir():
+        raise FileNotFoundError(
+            f"Output directory not found: {OUTPUT_DIR}. Run build_flock.py before writing final reports."
+        )
     update_metadata()
 
     visual = {
