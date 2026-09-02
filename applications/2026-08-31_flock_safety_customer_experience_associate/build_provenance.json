@@ -23,8 +23,8 @@
     "validate_application_packet.py": "96a3dbc1a4c7715d8a8c2a070f239508dba15b2d"
   },
   "application_source_hashes": {
-    "application_metadata.json": "85d43a12723ba1e453ed690617682c2883a6948f4c66ee15157716c3fb6f5ed9",
-    "build_flock.py": "bfb500a2f188d7fdedd2b2180722fd5db3c13799acaa7077492b7cd2f9cdb93b",
+    "application_metadata.json": "3600dbd2a5ab7908759e31b790b2477ddc1e0afbdd519afd2a6510cd31b7723c",
+    "build_flock.py": "5136265edc03dfa733f41bd11cb29614c076c802c2fd5b09b7d8fde6635ba7d4",
     "cover_letter.md": "de92d2654d396ca8820b4510dedbcf521d4d6986d67793c5ec39fa4d5c82f099",
     "evidence_matrix.md": "2c50b540a941a77782d73ba557ee4fb7e19b071d83a61068a7a6c0ec86697235",
     "final_validation.py": "f5ca63618d10ae5720d975de5c00a5c9de13a7cf6b9c328c524baa3363082e46",
@@ -32,9 +32,10 @@
     "job_description.md": "7b66a91d279a8cee313c6c8edcc7d62ff0c8351cc51843b0bab78e9a3577ffa9",
     "layout_contract.json": "c9695b71c658366d1542622f020f798d3f7261d49db6ceac06ce20bbf4f3a362",
     "proper_names_allowlist.txt": "2b94c842bc7ed2035306179aba336acce9e4e57ee4738799dbbc5c51437a9019",
-    "resume.md": "36621e39b5c67018e07e3b6ade23ec78db2c4df2e1e981f8ea04a24a87feb2c3",
+    "resume.md": "3c7dce3b99f6a22e4e5081e118b315dde7e2bef3a8003d2baaa38527b0910821",
     "sanitize_pdfs.py": "210dbfa5578cff6c6dfb1ff3f8bf05f0afc37e32588bc006266e0c04d5046f07",
-    "validation_summary.md": "f1649c8593d5cd5023e6887da596507f9ba836ba74e3e233334d479929d6016e"
+    "validation_summary.md": "bea7066cf42c684c0130b20cc5b8ce0ee4fc097eebe21b2b7c0e5e7fbdaf32ec",
+    "write_final_reports.py": "39e1ecc557fc34ae486a443645ec5138b563508482fc1b0bc395aa8a89e7353c"
   },
   "artifact_and_report_hashes": {
     "output/2026-08-31_Troy-Hokanson_Flock-Customer-Experience-Associate_1cabec78_Resume.docx": "da2b6057f0a19930d5943ac8bced3dbba84ed834447e75b095404c53429d89bb",
@@ -50,11 +51,14 @@
     "build_logs/header_validation_resume_page_2.json": "f1c78a985ba766b103b6d785d0eefa73b7911e6260fc4b48124ab7690580a896",
     "build_logs/metadata_audit.json": "2d1001b7920442c180a56efb6ef857b544b5d769250233c0416175ba942def15",
     "build_logs/operator_acceptance.json": "a3f95ad280cd58f2ed0fb2c54045c62616ce568cf86f9b3668cd39bf8a8d4c6a",
-    "build_logs/packet_validation_cover.json": "920960aa5194fb86003ee1d874189657ac1caeb66ec175b532949dab6bf197f0",
-    "build_logs/packet_validation_resume.json": "1e6060964f47f9965bc536612234f5aabdddf48697dd0ba3bf3cdd1167f9b64c",
+    "build_logs/packet_validation_cover.json": "0917db9749ba4f7d7796c0feb92a820edecdb194a8df0af28e2e0ec8aa5abd8d",
+    "build_logs/packet_validation_resume.json": "edeb3b43c8c3a614765457aeb8a1a664a3a6b1ff6b516c0d69aa9c1fece07eed",
     "build_logs/spelling_audit.json": "b1b0aa6d8478ff173d37b00fbbf1c9c7badaf3cdf012b55a4d1c001a6e2fa730",
     "build_logs/visual_inspection.json": "44440011f07aff07ff7a6d6842a6745bafb4bd9ba7daa4d12af07f8cdf06ed2a"
   },
   "provenance_updated_date": "2026-09-02",
-  "provenance_note": "Source and committed report hashes regenerated after submission-status and review-driven repository corrections. Private output artifact hashes remain those of the archived submitted files."
+  "provenance_note": "Source, validation-tool, and committed report hashes regenerated after submission-status and review-driven repository corrections. Private output artifact hashes remain those of the archived submitted files.",
+  "application_tool_hashes": {
+    "validate_application_packet.py": "39a0da56488e184a253b64dd72908b8f3f1aebf1f0fa6270ba57dd4b416d07a4"
+  }
 }
