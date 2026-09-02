@@ -87,6 +87,18 @@ def verify_reported_output_hashes(reports: dict[str, dict[str, object]]) -> None
         if recorded != actual:
             mismatches.append(f"{name} (metadata audit)")
 
+    packet_report_names = {
+        "resume_packet": ("resume_pdf", "resume_docx"),
+        "cover_packet": ("cover_pdf", "cover_docx"),
+    }
+    for report_name, (pdf_name, docx_name) in packet_report_names.items():
+        artifact_hashes = reports[report_name].get("artifact_sha256")
+        if not isinstance(artifact_hashes, dict):
+            raise ValueError(f"{report_name} lacks artifact SHA-256 values")
+        for kind, output_name in (("pdf", pdf_name), ("docx", docx_name)):
+            if artifact_hashes.get(kind) != sha256(EXPECTED_OUTPUTS[output_name]):
+                mismatches.append(f"{output_name} ({report_name})")
+
     docx_report_names = {"resume_docx": "resume", "cover_docx": "cover_letter"}
     for output_name, report_name in docx_report_names.items():
         document_report = reports["docx_structure"].get(report_name)
@@ -120,8 +132,8 @@ def update_metadata(reports: dict[str, dict[str, object]]) -> None:
     payload["submission_method"] = "Official Flock Safety Ashby application system"
     payload["submission_confirmation"] = "Archived in private Google Drive application folder"
     payload["repository_correction_note"] = (
-        "Post-submission sanitized repository source corrects the combined police-assignment heading "
-        "to Police Officer; the March 2010-May 2011 investigative rotation remains stated explicitly. "
+        "Post-submission sanitized repository source splits the November 1998-August 2016 service "
+        "into the authoritative patrol and investigative assignment date blocks. "
         "Private submitted artifacts remain unchanged."
     )
     payload["documents"].update({
@@ -252,7 +264,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
 - Weekend commitment acknowledged August 31, 2026; no longer an unresolved packet issue.
 - Application submitted and confirmed August 31, 2026.
 - Submission confirmation is archived in the private Google Drive application folder.
-- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.\n\n## Repository clarification\n\n- After submission, the sanitized repository source corrected the combined police-assignment heading to Police Officer. The March 2010-May 2011 investigative rotation remains stated explicitly. Private submitted artifacts remain unchanged.\n"""
+- GitHub PR #51 remains pending repository review; that does not alter the submitted application status.\n\n## Repository clarification\n\n- After submission, the sanitized repository source split the November 1998-August 2016 service into the authoritative patrol and investigative assignment date blocks. Private submitted artifacts remain unchanged.\n"""
     (APP_DIR / "validation_summary.md").write_text(summary, encoding="utf-8")
 
     controlling = [
@@ -290,7 +302,7 @@ Recommendation: **Apply.** Direct role fit is **79/100**; strategic bridge value
         "application_source_hashes": {
             path.name: sha256(path)
             for path in sorted(APP_DIR.iterdir())
-            if path.is_file() and path.name not in {"build_provenance.json", "write_final_reports.py"}
+            if path.is_file() and path.name != "build_provenance.json"
         },
         "artifact_and_report_hashes": {
             str(path.relative_to(APP_DIR)): sha256(path)
