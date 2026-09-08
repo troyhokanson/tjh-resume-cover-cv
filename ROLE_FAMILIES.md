@@ -1,6 +1,6 @@
 # Career Role Families
 
-This is the canonical role-family taxonomy for job discovery, application tracking, document selection, automation routing, and portfolio planning. Troy's strategy is broader than an investigator-only pivot.
+This is the canonical role-family taxonomy for job discovery, application tracking, document selection, automation routing, and portfolio planning. Read CAREER_SEARCH_STRATEGY.json for current priority: investigations and digital evidence first, substantive legal support and municipal safety next. The taxonomy is broader than the current effort allocation.
 
 ## Current role families
 
@@ -14,6 +14,8 @@ This is the canonical role-family taxonomy for job discovery, application tracki
 | Financial Crimes / Fraud / SIU / Program Integrity | Financial Crimes Investigator, Fraud Investigator, SIU Investigator, Program Integrity Investigator or Analyst, AML/Fraud Analyst | `siu-fraud` for claims/SIU work; `analyst-intelligence` for bank, fintech, AML, or analytical work |
 | Corporate Security and Enterprise Investigations | Corporate Investigator, Global Investigator, Insider Threat Investigator, Ethics Investigator, Threat Assessment Investigator | `corporate-security-investigations` |
 | Intelligence / OSINT / DFIR | Investigative Analyst, Intelligence Analyst, OSINT Analyst, Digital Forensics Analyst, DFIR Analyst, eDiscovery or forensic support | `analyst-intelligence` |
+| Legal Investigation and Substantive Legal Support | Legal Investigator, Legal Assistant, Litigation Support Specialist, Investigative Paralegal, Legal Case Coordinator | Use `adaptive` to choose the closest evidence-backed profile; distinguish legal-sector gaps |
+| Municipal Safety and Risk | Safety Specialist, Safety Coordinator, Safety Training Coordinator, Risk and Safety Specialist | Use `adaptive` and emphasize incident investigation and training; do not force vendor sales framing |
 | Adjacent Customer Support, Training, and Education | Senior Support Consultant, Customer Support Specialist, Training Manager, Learning or enablement roles, selective adjunct roles | Select by the posting's audience and dominant work; do not force an investigator profile |
 
 ## Operating rules
