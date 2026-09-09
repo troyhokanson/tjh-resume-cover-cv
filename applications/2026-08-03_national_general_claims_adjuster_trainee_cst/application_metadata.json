@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "candidate": "Troy Hokanson",
+  "employer": "National General, an Allstate company",
+  "role": "Claims Adjuster Trainee - CST",
+  "job_id": "R33584",
+  "job_url": "https://www.allstate.jobs/job/23658670/claims-adjuster-trainee-cst/",
+  "created_date": "2026-08-03",
+  "applied_date": null,
+  "status": "Drafting",
+  "fit_score": 83,
+  "priority": "Tier 1",
+  "work_mode": "Remote",
+  "signature_decision": "Typed name only",
+  "notion": {
+    "record_url": "https://app.notion.com/p/3b2a574973a98137999dddb681d9ccda",
+    "record_complete": true
+  },
+  "google_drive": {
+    "folder_url": "https://drive.google.com/drive/folders/1V5Ryd9zc5SW4SO1L5DhJfdsrX7T4qtea",
+    "folder_path": "09_Applications/2026-08-03 National General Claims Adjuster Trainee CST",
+    "upload_complete": true
+  },
+  "github": {
+    "repository": "troyhokanson/tjh-resume-cover-cv",
+    "package_path": "applications/2026-08-03_national_general_claims_adjuster_trainee_cst",
+    "commit_sha": "41631b4165b2c91cf1710e38fe0ea4a163798681",
+    "pull_request_url": "https://github.com/troyhokanson/tjh-resume-cover-cv/pull/27"
+  },
+  "artifacts": {
+    "job_description": "job_description.md",
+    "resume_md": "resume.md",
+    "cover_letter_md": "cover_letter.md",
+    "resume_docx": "Troy_Hokanson_National_General_Claims_Adjuster_Trainee_Resume.docx",
+    "resume_pdf": "Troy_Hokanson_National_General_Claims_Adjuster_Trainee_Resume.pdf",
+    "cover_letter_docx": "Troy_Hokanson_National_General_Claims_Adjuster_Trainee_Cover_Letter.docx",
+    "cover_letter_pdf": "Troy_Hokanson_National_General_Claims_Adjuster_Trainee_Cover_Letter.pdf",
+    "qa_report": "qa_report.md"
+  },
+  "automation": {
+    "last_sync_at": "2026-08-04T00:00:34Z",
+    "last_sync_status": "complete_with_posting_exception",
+    "errors": [
+      "Official Allstate job URL redirects to job-not-found; accepting application form not confirmed."
+    ]
+  }
+}
