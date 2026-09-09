@@ -193,6 +193,7 @@ evidence_pack:
 - **Hybrid Sales Engineer + Solutions Consultant** at a forensics vendor -> `vendor-solutions`. Do not split the cover letter.
 - **Customer Success Manager or Account Manager with `Manager` in the title but no direct reports** -> treat as a senior individual-contributor `vendor-solutions` role.
 - **SIU title at a vendor company** -> `siu-fraud` if the JD reads as investigation-side; `vendor-solutions` if it reads as customer-product, training, implementation, or carrier-product-side.
+- **Claims investigation, audit, quality, review, or adjuster roles** -> route through [`CLAIMS_ROLE_TARGETING_STANDARD.md`](./CLAIMS_ROLE_TARGETING_STANDARD.md), then select `siu-fraud` only when the role passes its direct/transferable/reject gates.
 - **Financial Crime Investigator** at a bank -> usually `analyst-intelligence`. Confirm via Step 3 verbs.
 - **Public Safety Sales Engineer** at Axon, Veritone, Mark43, Flock, Peregrine, Motorola, Genetec, or LexisNexis Risk Solutions -> `vendor-solutions`.
 - **Investigative Trainer at LexisNexis Risk Solutions** -> `vendor-solutions`; lead with Accurint, ZetX / Accurint TraX, cellular investigations, Google Earth, teaching, and curriculum development.
