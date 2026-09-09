@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "collection": "Technology Implementation",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "alpr-target-blue-2007-2010",
+      "title": "ALPR / Target + Blue grant program",
+      "category": "implementation_project",
+      "dates": "2007/2010",
+      "source": "CAREER_CONSTANTS.md:384-405",
+      "verification_status": "indexed",
+      "verified_facts": ["Automated License Plate Recognition Program Lead", "$40,000 Target + Blue corporate-partnership grant", "Genetec AutoVu system", "Coordinated BCA CJIS, Genetec AutoVu, Lakeville IT, and reserve-officer support", "Supported automatic nightly hotlist transfers and field adoption"],
+      "competencies": ["technology-implementation", "grant-development", "stakeholder-coordination", "data-integration", "user-adoption", "troubleshooting"],
+      "profiles": ["vendor-solutions", "customer-success", "analyst-intelligence", "public-safety"],
+      "safe_claims": ["Led a $40,000 public-private ALPR implementation involving Genetec AutoVu, BCA CJIS, municipal IT, reliable data transfers, and field adoption."],
+      "cautions": ["Place under the November 1998-February 2010 Lakeville patrol block.", "Do not repeat the $40,000 figure throughout one application package."],
+      "related_archives": ["public_safety_vendors", "lakeville_programs"]
+    },
+    {
+      "id": "initial-cellebrite-ufed-implementation",
+      "title": "Initial Cellebrite UFED acquisition and configuration",
+      "category": "implementation_project",
+      "dates": "2016/2017",
+      "source": "CAREER_CONSTANTS.md:125-142",
+      "verification_status": "indexed",
+      "verified_facts": ["Acquired and configured Lakeville's initial Cellebrite UFED", "Connected the tool to lawful evidence-collection and investigative workflows"],
+      "competencies": ["technology-acquisition", "configuration", "workflow-implementation", "user-training"],
+      "profiles": ["vendor-solutions", "dfir", "public-safety"],
+      "safe_claims": ["Acquired and configured the department's initial Cellebrite UFED and helped investigators understand its role in lawful case workflows."],
+      "cautions": ["Do not imply procurement authority beyond the supported acquisition and configuration role."],
+      "related_archives": ["electronic_crimes", "public_safety_vendors"]
+    }
+  ]
+}
