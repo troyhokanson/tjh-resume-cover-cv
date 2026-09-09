@@ -1,0 +1,53 @@
+{
+  "recorded_on": "2026-08-08",
+  "source": "troyhokanson/tjh-resume-cover-cv current main branch",
+  "page_size": "US Letter portrait",
+  "design": "locked navy, gold and white branded header created by docx_header.build_navy_header",
+  "margins_inches": {
+    "top": 1.55,
+    "bottom": 0.55,
+    "left": 0.6,
+    "right": 0.6
+  },
+  "header": {
+    "background": "#0D1B2A",
+    "height_points": 92.16,
+    "name_font": "Garamond bold 26 pt white",
+    "rule_and_contact_color": "#C9A84C",
+    "contact_font": "Garamond 9.5 pt",
+    "body_start_below_header_inches": 0.18
+  },
+  "body": {
+    "font": "Garamond",
+    "resume_size_points": 10.25,
+    "cover_letter_size_points": 10.5,
+    "minimum_size_points": 9.75,
+    "line_spacing": 1.05
+  },
+  "spacing_points": {
+    "header_to_first_heading": 18,
+    "major_section_before": 14,
+    "major_section_after": 6,
+    "major_entry_before": 8,
+    "job_title_after": 2,
+    "employer_line_after": 4,
+    "bullet_after": 2,
+    "cover_letter_paragraph_after": 8,
+    "cover_letter_signature_gap": 38
+  },
+  "bullet_indent_inches": {
+    "left": 0.25,
+    "hanging": 0.18
+  },
+  "page_targets": {
+    "resume": 2,
+    "cover_letter": 1
+  },
+  "pagination": {
+    "keep_section_heading_with_next": true,
+    "keep_job_title_employer_and_first_bullet_together": true,
+    "widow_control": true,
+    "orphan_headings_prohibited": true
+  },
+  "compression_rule": "Remove or tighten weaker content before reducing approved margins, minimum spacing or font size."
+}
