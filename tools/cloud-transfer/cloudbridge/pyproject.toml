@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tjh-cloudbridge"
+version = "0.1.0"
+description = "Copy-only OneDrive and iCloud Drive intake CLI with private manifests and conflict protection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Troy Hokanson" }]
+dependencies = []
+
+[project.scripts]
+cloudbridge = "cloudbridge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
