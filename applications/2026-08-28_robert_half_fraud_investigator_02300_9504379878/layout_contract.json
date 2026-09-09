@@ -1,0 +1,74 @@
+{
+  "contract_version": "2026-08-28-robert-half-fraud-investigator",
+  "page": {
+    "size": "US Letter",
+    "width_inches": 8.5,
+    "height_inches": 11.0
+  },
+  "header": {
+    "builder": "docx_header.build_navy_header",
+    "background": "#0D1B2A",
+    "accent": "#C9A84C",
+    "name_color": "#FFFFFF",
+    "name_font": "EB Garamond",
+    "name_size_pt": 26,
+    "contact_font": "EB Garamond",
+    "contact_size_pt": 9.5,
+    "full_bleed": true,
+    "contact_order": [
+      "phone",
+      "email",
+      "linkedin",
+      "portfolio"
+    ],
+    "location_in_header": false
+  },
+  "body": {
+    "font": "EB Garamond",
+    "color": "#141414",
+    "line_spacing": 1.05,
+    "section_heading_size_pt": 11,
+    "section_heading_color": "#2D6A9F",
+    "section_heading_before_pt": 8,
+    "section_heading_after_pt": 4,
+    "job_before_pt": 6,
+    "bullet_after_pt": 1,
+    "keep_with_next": true,
+    "widow_control": true
+  },
+  "resume": {
+    "target_pages": 2,
+    "maximum_pages": 2,
+    "body_size_pt": 10.25,
+    "left_margin_inches": 0.65,
+    "right_margin_inches": 0.65,
+    "top_margin_inches": 1.46,
+    "bottom_margin_inches": 0.55,
+    "body_gap_below_header_inches": 0.18,
+    "body_tables": false,
+    "real_word_bullets": true,
+    "continuation_page": {
+      "top_margin_inches": 0.55,
+      "branded_header": false,
+      "contact_row_repeated": false
+    }
+  },
+  "cover": {
+    "target_pages": 1,
+    "maximum_pages": 1,
+    "body_size_pt": 10.5,
+    "left_margin_inches": 0.78,
+    "right_margin_inches": 0.78,
+    "top_margin_inches": 1.52,
+    "bottom_margin_inches": 0.68,
+    "body_gap_below_header_inches": 0.24,
+    "paragraph_after_pt": 8,
+    "signature": "typed name only"
+  },
+  "portfolio": {
+    "included_only_to_satisfy_locked_header": true,
+    "used_as_application_evidence": false,
+    "inspection_status": "live_with_material_positioning_drift",
+    "public_update_authorized": false
+  }
+}

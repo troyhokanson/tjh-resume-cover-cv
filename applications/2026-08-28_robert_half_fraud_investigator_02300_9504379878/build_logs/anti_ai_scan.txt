@@ -1,0 +1,8 @@
+Anti-AI and voice scan
+Profile: analyst-intelligence
+Allow ICAC: false
+
+Resume PDF: PASS
+Cover letter PDF: PASS
+
+No forbidden voice phrase, factual hard block, privacy identifier, trauma-scope term, resume contraction, cover-letter semicolon, em dash, en dash, double hyphen, clause-separator hyphen, ellipsis, exclamation point, or curly quote was found.

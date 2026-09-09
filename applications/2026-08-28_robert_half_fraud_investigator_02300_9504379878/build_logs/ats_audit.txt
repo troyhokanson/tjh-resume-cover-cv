@@ -1,0 +1,29 @@
+ATS Audit Report
+Profile: analyst-intelligence
+Coverage: 100.0% (20/20)
+Floor target: 85%
+Meets floor: YES
+
+FOUND TERMS:
+  + LexisNexis Accurint
+  + Microsoft Excel
+  + analytics
+  + asset searches
+  + attention to detail
+  + bachelor's degree
+  + confidential investigations
+  + evidence collection
+  + final report
+  + financial records
+  + fraud investigator
+  + government agency
+  + legal proceedings
+  + management
+  + report writing
+  + research skills
+  + suspected fraud
+  + transactions
+  + verbal communication
+  + written communication
+
+MISSING TERMS:

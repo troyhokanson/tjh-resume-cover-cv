@@ -1,0 +1,72 @@
+{
+  "layout_contract": "/workspace/scratch/a37ca8440ddc/troy-career/applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878/layout_contract.json",
+  "documents": [
+    {
+      "path": "/workspace/scratch/a37ca8440ddc/troy-career/applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878/output/Hokanson_Resume_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+      "document_type": "resume",
+      "section_count": 2,
+      "paragraph_count": 43,
+      "body_table_count": 0,
+      "bullet_paragraph_count": 12,
+      "keep_with_next_count": 24,
+      "margins_inches": {
+        "left": 0.65,
+        "right": 0.65,
+        "bottom": 0.55,
+        "top": 1.46
+      },
+      "checks": {
+        "us_letter": true,
+        "margins_match": true,
+        "approved_header_part_present": true,
+        "header_four_items_present": true,
+        "header_location_absent": true,
+        "continuation_header_empty": true,
+        "no_body_tables": true,
+        "real_list_style_present": true,
+        "keep_with_next_present": true,
+        "garamond_present": true,
+        "calibri_absent": true,
+        "aptos_absent": true,
+        "arial_absent": true,
+        "contact_hyperlinks_present": true,
+        "education_exact": true
+      },
+      "passed": true
+    },
+    {
+      "path": "/workspace/scratch/a37ca8440ddc/troy-career/applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878/output/Hokanson_Cover_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+      "document_type": "cover",
+      "section_count": 1,
+      "paragraph_count": 12,
+      "body_table_count": 0,
+      "bullet_paragraph_count": 0,
+      "keep_with_next_count": 1,
+      "margins_inches": {
+        "left": 0.78,
+        "right": 0.78,
+        "bottom": 0.68,
+        "top": 1.52
+      },
+      "checks": {
+        "us_letter": true,
+        "margins_match": true,
+        "approved_header_part_present": true,
+        "header_four_items_present": true,
+        "header_location_absent": true,
+        "continuation_header_empty": true,
+        "no_body_tables": true,
+        "real_list_style_present": true,
+        "keep_with_next_present": true,
+        "garamond_present": true,
+        "calibri_absent": true,
+        "aptos_absent": true,
+        "arial_absent": true,
+        "contact_hyperlinks_present": true,
+        "education_exact": true
+      },
+      "passed": true
+    }
+  ],
+  "passed": true
+}
