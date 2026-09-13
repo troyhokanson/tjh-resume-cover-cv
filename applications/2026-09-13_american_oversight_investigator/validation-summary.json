@@ -1,0 +1,27 @@
+{
+  "Resume": {
+    "pages": 2,
+    "strict_header_results": [
+      "pass",
+      "pass"
+    ],
+    "validator_findings": []
+  },
+  "Cover_Letter": {
+    "pages": 1,
+    "strict_header_results": [
+      "pass"
+    ],
+    "validator_findings": []
+  },
+  "Resume_ATS": {
+    "pages": 2,
+    "strict_header_results": [],
+    "validator_findings": [
+      "header.xml_header_section_present",
+      "header.navy_color_in_header",
+      "header.gold_color_in_header"
+    ]
+  },
+  "ATS_exception": "Plain portal resume intentionally omits branded header under RESUME_HEADLINE_SCANABILITY_STANDARD.md section 6. Header-only validator findings are expected, not a content defect."
+}

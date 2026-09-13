@@ -1,0 +1,16 @@
+{
+  "commit": "5ee1854d0d57b3d8c3f8bf693ca5548124a1ca5b",
+  "blobs": {
+    "README.md": "e57cd01a2594c2133bcdc2a5a459bf62124fcd1c",
+    "HEADER_STANDARD.md": "19a4f88e8ffa527e3fcbe9248683deb952776a7b",
+    "docx_header.py": "7cd482ed9d2b5881bf687130eabcc819420e5bfd",
+    "EDUCATION_CONSTANTS.md": "e47a651eb527c998b23243737342a8c31ac7d79a",
+    "CAREER_CONSTANTS.md": "730152eada1becaaf977810d50a11611c5a20a40",
+    "RESUME_HEADLINE_SCANABILITY_STANDARD.md": "21edbb1ac5a041be963729e8f514bac05a458cb9",
+    "INTELLIGENCE_OSINT_CASE_EVIDENCE.md": "369932006befedbfca201261de474ff98a5c1b33",
+    "standards/document_design_standard.json": "9bc001d4fa1dffec1dd27c80ccc72ac7789a0eaf"
+  },
+  "lane": "analyst-intelligence",
+  "layout": "Locked helper, repeating full DOCX header; Letter; top 1.55, sides .65, bottom .55; body 10.25; sections 14/6; entries 8/2/4; line 1.05. Separate portal resume uses body contact and no header. Cover 10.5, sides .78, bottom .68.",
+  "preflight": "PASS before generation"
+}
