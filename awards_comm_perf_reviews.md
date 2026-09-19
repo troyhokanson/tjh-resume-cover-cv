@@ -51,6 +51,20 @@ Reviewer attribution must be role-only, such as `a supervisor`, `an outside-agen
 
 ## Priority Crosswalk
 
+### RMA-CUSTOMER-EXPERIENCE
+
+- **Evidence type:** Public real estate client reviews
+- **Observation date:** 2026-09-19
+- **Status:** `verified_paraphrase` from earlier source reading; subsequent retrieval failed.
+- **Evidence record:** [CUSTOMER_FEEDBACK_EVIDENCE.md](CUSTOMER_FEEDBACK_EVIDENCE.md)
+- **Experience anchor:** Real Estate Consultant, eXp Realty / KW Select, June 2024–June 2026
+- **Corroborates:** Patient explanations, responsiveness, follow-through, and consultative service
+- **Best lanes:** Customer success, consultative sales, automotive sales, client-facing service
+- **Use limits:** No approved direct quotations. The record separates the dated aggregate
+  rating from six observed review summaries and the user-attested 2025 sales volume.
+  It is not a complete eight-review archive or evidence of dealership experience.
+
+
 ### PR-2020-DIGITAL-FORENSICS-RESOURCE
 
 - **Evidence type:** Performance review

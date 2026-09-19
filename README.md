@@ -205,6 +205,8 @@ Every build script must finish by rendering the DOCX, rendering page PNGs, and r
 
 ## Files
 
+- [CUSTOMER_FEEDBACK_EVIDENCE.md](CUSTOMER_FEEDBACK_EVIDENCE.md) — sourced RateMyAgent customer-feedback reference, dated rating, reusable paraphrases, and verification limits; use alongside the praise crosswalk and career constants.
+
 - `new_application.sh` — start here for every new application. One command. Handles the ATS audit and prints the mandatory final validator commands.
 - `validate_application_packet.py` — final delivery checklist. Hard-blocks failed application packets.
 - `ats_injector.py` — ATS keyword extraction, coverage audit, and injection engine.

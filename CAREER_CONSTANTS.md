@@ -570,7 +570,8 @@ Use "18 years" or "eighteen years" -- never "19 years". The correct figure is 18
 | SWAT service | 5.5 years |
 | Adjunct faculty | 18 years (March 2007 - October 2025) |
 | Written commendations | 20+ |
-| Real estate sales | $3.2M |
+| Real estate sales | $3.2M in 2025; user-attested, not independently reconciled in the 2026-09-19 update. See CUSTOMER_FEEDBACK_EVIDENCE.md. |
+| RateMyAgent customer rating | 5.0 across eight reviews, observed 2026-09-19; dated platform observation. See CUSTOMER_FEEDBACK_EVIDENCE.md for provenance and use limits. |
 | Wire-fraud public outcome | Official Minnesota records: $360,000+ across three victims; two felony convictions; five years probation; $295,704.11 restitution; appeal affirmed April 27, 2020. Attribute to the public sources, not to Troy personally. |
 | Troy's wire-fraud contribution | Primary forensic report: write-blocked acquisition; FTK/IEF examination; responsive-artifact identification; report media for the police case and Commerce Fraud Bureau |
 | Separate federal case sentence | 15 years, online-exploitation prosecution -- never combine with the wire-fraud matter |
@@ -605,6 +606,9 @@ For application-safe quotations, annual-review excerpts, informal commendations,
 rules, experience crosswalks, and public citation controls, use:
 
 `awards_comm_perf_reviews.md`
+
+For public real estate client feedback, rating provenance, reusable paraphrases, and
+sales-volume verification limits, also read [CUSTOMER_FEEDBACK_EVIDENCE.md](CUSTOMER_FEEDBACK_EVIDENCE.md).
 
 Do not select quotations directly from raw personnel records or the structured extraction
 catalog. The praise evidence file controls quote status, reviewer-name suppression, role
