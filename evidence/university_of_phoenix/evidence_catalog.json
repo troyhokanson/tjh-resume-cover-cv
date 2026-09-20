@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "collection": "University of Phoenix",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "remote-adjunct-faculty-2007-2025",
+      "title": "Remote Adjunct Faculty, Criminal Justice",
+      "category": "employment",
+      "dates": "2007-03/2025-10",
+      "source": "CAREER_CONSTANTS.md:186-197",
+      "verification_status": "indexed",
+      "verified_facts": ["18 years of remote adjunct teaching", "Concurrent with sworn service", "Structured online communication, written feedback, assessment, and reusable learning resources"],
+      "competencies": ["adult-learning", "remote-communication", "customer-education", "written-feedback", "content-development", "deadline-management"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development", "analyst-intelligence"],
+      "safe_claims": ["Taught undergraduate Criminal Justice courses remotely for 18 years while concurrently serving in sworn law enforcement."],
+      "cautions": ["Never describe as 19 years."],
+      "related_archives": ["training_certifications", "public_safety_vendors"]
+    },
+    {
+      "id": "faculty-recognition",
+      "title": "Faculty credentials and recognition",
+      "category": "awards_and_credentials",
+      "dates": "2020/2024",
+      "source": "Google Drive Credly Transcript UOPX Awards.pdf and original award records",
+      "verification_status": "verified",
+      "verified_facts": ["Certified Advanced Facilitator", "Phoenix500 Faculty Excellence Awards in 2020 and 2021", "2021 Faculty of the Year nomination", "John Sperling Distinguished Faculty Award in 2024"],
+      "competencies": ["teaching-quality", "student-support", "facilitation", "professional-recognition"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development"],
+      "safe_claims": ["Earned the Certified Advanced Facilitator designation, Phoenix500 Faculty Excellence Awards in 2020 and 2021, and the 2024 John Sperling Distinguished Faculty Award."],
+      "cautions": ["Use exact award names from source records."],
+      "related_archives": ["training_certifications"]
+    }
+  ]
+}

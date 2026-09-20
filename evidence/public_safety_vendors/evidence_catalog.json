@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "collection": "Public-Safety Vendors",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "genetec-autovu",
+      "title": "Genetec AutoVu",
+      "category": "vendor_product",
+      "dates": "2007/2010",
+      "source": "evidence/technology_implementation/evidence_catalog.json#alpr-target-blue-2007-2010",
+      "verification_status": "indexed",
+      "verified_facts": ["Coordinated implementation of a Genetec AutoVu ALPR system", "Worked with vendor, BCA CJIS, and municipal IT on reliable hotlist transfers and operational use"],
+      "competencies": ["implementation", "integration", "end-user-adoption", "public-safety-customer-empathy"],
+      "profiles": ["vendor-solutions", "customer-success", "public-safety"],
+      "safe_claims": ["Brings end-user implementation experience with Genetec AutoVu in a municipal public-safety environment."],
+      "cautions": ["Do not imply employment by or formal certification from Genetec."],
+      "related_archives": ["technology_implementation"]
+    },
+    {
+      "id": "cellebrite-ufed",
+      "title": "Cellebrite UFED",
+      "category": "vendor_product",
+      "dates": "2016/2021",
+      "source": "evidence/electronic_crimes/evidence_catalog.json#ecu-assignment-2016-2017",
+      "verification_status": "indexed",
+      "verified_facts": ["Acquired and configured Lakeville's initial UFED", "Used UFED within digital-evidence workflows", "Helped investigators understand tool fit and limitations"],
+      "competencies": ["hands-on-operation", "implementation", "training", "technical-support"],
+      "profiles": ["vendor-solutions", "dfir", "public-safety"],
+      "safe_claims": ["Combines hands-on Cellebrite UFED use with implementation and investigator-enablement experience."],
+      "cautions": ["Credential names and dates must come from the training archive before claiming certification."],
+      "related_archives": ["electronic_crimes", "technology_implementation", "training_certifications"]
+    },
+    {
+      "id": "magnet-axiom-and-forensic-toolset",
+      "title": "Magnet AXIOM, FTK, X-Ways, GrayKey, and related forensic tools",
+      "category": "vendor_product_group",
+      "dates": null,
+      "source": "CAREER_CONSTANTS.md confirmed-tools section and training credentials catalog",
+      "verification_status": "indexed",
+      "verified_facts": ["Confirmed hands-on digital-forensics tool experience", "Used tools in public-safety examination workflows"],
+      "competencies": ["digital-forensics", "tool-evaluation", "technical-communication", "end-user-workflow"],
+      "profiles": ["vendor-solutions", "dfir", "analyst-intelligence"],
+      "safe_claims": ["Brings a practitioner perspective across mobile, computer, and digital-evidence platforms used by public-safety investigators."],
+      "cautions": ["Validate tool-by-tool operation and training status before naming a product in an application.", "Do not list i2 Analyst's Notebook or Alteryx."],
+      "related_archives": ["electronic_crimes", "training_certifications"]
+    },
+    {
+      "id": "flock-safety-target-mapping",
+      "title": "Flock Safety role mapping",
+      "category": "target_company_mapping",
+      "dates": null,
+      "source": "Flock Scaled Customer Success Manager job description and ALPR implementation evidence",
+      "verification_status": "indexed",
+      "verified_facts": ["Public-safety customer perspective", "ALPR implementation experience", "Training, onboarding, documentation, CRM, AI-tool, and workflow-automation experience"],
+      "competencies": ["customer-success", "onboarding", "activation", "training", "self-service-content", "workflow-automation"],
+      "profiles": ["vendor-solutions", "customer-success"],
+      "safe_claims": ["Public-safety practitioner with ALPR implementation, customer education, CRM, and workflow-improvement experience relevant to scaled customer success."],
+      "cautions": ["Do not imply prior Flock employment or direct Flock product operation without separate evidence."],
+      "related_archives": ["technology_implementation", "lakeville_programs", "real_estate", "university_of_phoenix"]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "collection": "Electronic Crimes",
+  "subject": "Troy Hokanson",
+  "entries": [
+    {
+      "id": "ecu-assignment-2016-2017",
+      "title": "Lakeville Police Department Electronic Crimes Unit",
+      "category": "assignment",
+      "dates": "2016-09/2017-06",
+      "source": "CAREER_CONSTANTS.md:125-142",
+      "verification_status": "indexed",
+      "verified_facts": ["Developed an investigator training folder", "Included preservation-request, administrative-subpoena, search-warrant, ISP, and ESP references", "Acquired and configured the initial Cellebrite UFED", "Connected patrol and investigations with DCECTF resources"],
+      "competencies": ["digital-forensics", "knowledge-management", "legal-process", "training", "implementation", "cross-functional-support"],
+      "profiles": ["vendor-solutions", "analyst-intelligence", "siu-fraud", "dfir"],
+      "safe_claims": ["Built a structured electronic-crimes resource package that reduced the learning curve for investigators.", "Acquired and configured the department's initial Cellebrite UFED and helped investigators use it within lawful evidence workflows."],
+      "cautions": ["Do not claim Troy established the ECU."],
+      "related_archives": ["technology_implementation", "public_safety_vendors", "training_certifications"]
+    },
+    {
+      "id": "dcectf-assignment-2017-2021",
+      "title": "Dakota County Electronic Crimes Task Force",
+      "category": "assignment",
+      "dates": "2017-06/2021-12",
+      "source": "CAREER_CONSTANTS.md:99-123",
+      "verification_status": "indexed",
+      "verified_facts": ["Ten partner agencies", "Lakeville Police Department representative and agency digital-forensics SME", "Performed examinations for Lakeville and other partner agencies", "Guided personnel on devices, storage media, intake, and forensic workflow"],
+      "competencies": ["digital-forensics", "multi-agency-coordination", "technical-support", "training", "case-management"],
+      "profiles": ["vendor-solutions", "analyst-intelligence", "dfir", "public-safety"],
+      "safe_claims": ["Served as Lakeville's representative and digital-forensics subject-matter resource within a ten-agency task force."],
+      "cautions": ["Do not describe Troy as task-force lead or lead examiner."],
+      "related_archives": ["public_safety_vendors", "investigations_casework"]
+    },
+    {
+      "id": "digital-evidence-volume-2020",
+      "title": "2020 personal digital-evidence examination volume",
+      "category": "metric",
+      "dates": "2020",
+      "source": "CAREER_CONSTANTS.md:520-529",
+      "verification_status": "indexed",
+      "verified_facts": ["Personally processed 5,304 GB of digital evidence in 2020"],
+      "competencies": ["high-volume-work", "digital-forensics", "documentation", "quality-control"],
+      "profiles": ["vendor-solutions", "analyst-intelligence", "dfir"],
+      "safe_claims": ["Personally processed 5,304 GB of digital evidence in 2020 while maintaining examination records and chain of custody."],
+      "cautions": ["Personal volume across agencies supported through the task force; not Lakeville-only and not a task-force-wide aggregate."],
+      "related_archives": ["investigations_casework"]
+    }
+  ]
+}

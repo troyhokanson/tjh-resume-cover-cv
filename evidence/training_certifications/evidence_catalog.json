@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "collection": "Training and Certifications",
+  "subject": "Troy Hokanson",
+  "canonical_sources": ["Google Drive: Hokanson_Certification_Tracker_2026_UPDATED.xlsx", "skills/troy-credentials-library/credentials_catalog.json", "TRAINING_CONSTANTS.md"],
+  "entries": [
+    {
+      "id": "field-training-officer-course-2004",
+      "title": "Field Training Officer Course",
+      "category": "course",
+      "dates": "2004",
+      "source": "Updated certification tracker and direct confirmation from Troy Hokanson",
+      "verification_status": "verified",
+      "verified_facts": ["Completed formal Field Training Officer education in 2004"],
+      "competencies": ["onboarding", "coaching", "performance-assessment", "adult-learning"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development", "public-safety"],
+      "safe_claims": ["Completed the Field Training Officer Course in 2004, providing the formal foundation for long-term officer onboarding and coaching work."],
+      "cautions": [],
+      "related_archives": ["lakeville_programs"]
+    },
+    {
+      "id": "mentoring-new-warrior-2006",
+      "title": "Mentoring the New Warrior...Being the Example",
+      "category": "course",
+      "dates": "2006-11",
+      "source": "Updated certification tracker and EVIDENCE_BANK.md",
+      "verification_status": "verified",
+      "verified_facts": ["Association of Training Officers of Minnesota course", "Eight continuing-education credits"],
+      "competencies": ["mentoring", "coaching", "role-modeling", "adult-learning"],
+      "profiles": ["vendor-solutions", "customer-success", "learning-development", "management"],
+      "safe_claims": ["Completed an eight-credit mentoring course focused on coaching new personnel and modeling professional expectations."],
+      "cautions": ["Use the exact punctuation from the source only when space permits."],
+      "related_archives": ["lakeville_programs"]
+    },
+    {
+      "id": "bca-supervision-management-2012",
+      "title": "BCA Supervision and Management Credential",
+      "category": "credential",
+      "dates": "2012",
+      "source": "Google Drive certification evidence and Notion Law Enforcement Supervision and Management Program record",
+      "verification_status": "indexed",
+      "verified_facts": ["Formal law-enforcement supervision and management education", "Notion record identifies 98 hours in the BCA DELTA workbook"],
+      "competencies": ["supervision", "management", "communication", "operational-discipline"],
+      "profiles": ["management", "public-safety", "vendor-solutions"],
+      "safe_claims": ["Completed the BCA Supervision and Management Credential in 2012."],
+      "cautions": ["Supporting credential for individual-contributor roles; do not let it overshadow customer enablement and implementation evidence."],
+      "related_archives": ["lakeville_programs"]
+    }
+  ]
+}

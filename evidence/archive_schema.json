@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "required_collection_fields": ["schema_version", "collection", "subject", "entries"],
+  "entry_fields": {
+    "id": "Stable lowercase identifier",
+    "title": "Human-readable evidence title",
+    "category": "Role, award, project, credential, outcome, tool, or source reference",
+    "dates": "ISO date, date range, or null",
+    "source": "Repository path, Drive path or URL, or direct user confirmation",
+    "verification_status": "verified, user_confirmed, indexed, or pending",
+    "verified_facts": "Array of facts supported by the source",
+    "competencies": "Array of normalized competency tags",
+    "profiles": "Array of target application profiles",
+    "safe_claims": "Array of application-safe paraphrases",
+    "cautions": "Array of accuracy, privacy, scope, or usage boundaries",
+    "related_archives": "Array of related evidence archive names"
+  },
+  "verification_status_definitions": {
+    "verified": "Original source or authoritative repository record inspected",
+    "user_confirmed": "Confirmed directly by Troy Hokanson; original source not yet archived",
+    "indexed": "Canonical repository source identifies the fact; underlying artifact may remain in Drive",
+    "pending": "Do not use until corroborated"
+  }
+}
