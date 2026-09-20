@@ -5,6 +5,10 @@ description: Canonical end-to-end application builder for Troy Hokanson. Trigger
 
 # Build Troy Application
 
+## Standing formatting requirement
+
+Always use full-bleed navy, gold accents and Garamond. Plain copies require Troy's explicit request; role adaptation and ATS assumptions cannot override this. Read `standards/formatting_delivery_contract.md` and run the required body validator. Draft status never waives formatting.
+
 ## Purpose
 
 This is the single controlling workflow for every Troy Hokanson job application. It combines the former career-application-builder concept with the `build-troy-application` trigger so there is one authoritative process, one completion gate, and one cross-system status.

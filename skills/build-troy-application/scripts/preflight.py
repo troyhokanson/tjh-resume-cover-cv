@@ -40,6 +40,9 @@ def main() -> int:
         ),
     }
 
+    checks[ROOT / "body_typography_pagination_validator.py"] = (r"def validate_body\(",)
+    checks[ROOT / "header_render_validator.py"] = (r"def validate_header\(",)
+    checks[ROOT / "standards/formatting_delivery_contract.md"] = (r"standing default",)
     failures: list[str] = []
     for path, patterns in checks.items():
         if not path.exists():

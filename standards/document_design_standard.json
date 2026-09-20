@@ -93,7 +93,8 @@
       "content_group": "name_rule_and_contact_row",
       "vertical_centering_reference": "entire_content_group_not_name_alone",
       "name_expected_position": "above_header_midpoint_because_rule_and_contact_row_follow"
-    }
+    },
+    "plain_exception": "Only an explicit Troy request naming the plain deliverable; never an inferred ATS preference."
   },
   "body": {
     "font_family_primary": "Garamond",
@@ -216,7 +217,13 @@
       "Condense bullets only if the wording remains truthful and passes the anti-AI scan.",
       "Never solve an orphan by changing body font away from Garamond or by hiding content."
     ],
-    "manual_visual_gate": "Render DOCX to PDF and PNG, inspect every page, and fail if any heading, subheading, or job title is isolated at the page bottom."
+    "manual_visual_gate": "Render DOCX to PDF and PNG, inspect every page, and fail if any heading, subheading, or job title is isolated at the page bottom.",
+    "max_bottom_blank_inches": {
+      "resume": 2.0,
+      "cv": 2.5,
+      "cover": 2.0
+    },
+    "max_resume_bottom_blank_difference_inches": 1.0
   },
   "margins": {
     "resume": {

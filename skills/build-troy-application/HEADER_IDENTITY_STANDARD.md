@@ -105,3 +105,7 @@ Every final packet must verify:
 - the rendered page passes physical centering and header-to-body spacing checks
 
 A packet fails visual QA if any of these requirements are not met.
+
+## Continuation routing clarification
+
+The higher-precedence `HEADER_STANDARD.md` controls: full banner repeats for DOCX and PDFs exported from DOCX; a slim name-only bar applies to the direct-PDF route. The name-only language above is scoped to that direct-PDF route.
