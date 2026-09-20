@@ -1,0 +1,52 @@
+{
+  "candidate": "Troy Hokanson",
+  "company_of_record": "Robert Half",
+  "client": "Undisclosed",
+  "role": "Fraud Investigator",
+  "job_id": "02300-9504379878",
+  "official_reference": "02300-9504379878-usen",
+  "official_url": "https://www.roberthalf.com/us/en/job/minnetonka-mn/fraud-investigator/02300-9504379878-usen",
+  "provided_url": "https://www.roberthalf.com/us/en/job/hopkinsmn/fraudinvestigator/02300-9504379878",
+  "location": "Minnetonka, MN",
+  "work_mode": "Onsite",
+  "engagement": "Temporary / Contract",
+  "compensation": "$30-$35/hour",
+  "compensation_acceptable": true,
+  "posted_date": "2026-08-17",
+  "verified_live_date": "2026-08-28",
+  "deadline": null,
+  "fit_score": 91,
+  "priority": "Tier 1",
+  "repository_profile": "analyst-intelligence",
+  "tracking_profile": "Financial Fraud Investigator",
+  "status": "ready_to_submit",
+  "submission_status": "Not submitted",
+  "signature_decision": "Typed name only",
+  "google_drive_folder": "Stored outside public repository",
+  "notion_record": "Tracked outside public repository",
+  "git": {
+    "branch": "application/2026-08-28-robert-half-fraud-investigator",
+    "pull_request": 43,
+    "package_path": "applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878"
+  },
+  "documents": {
+    "resume_markdown": "resume.md",
+    "cover_letter_markdown": "cover_letter.md",
+    "resume_docx": "output/Hokanson_Resume_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+    "resume_pdf": "output/Hokanson_Resume_Robert_Half_Fraud_Investigator_02300-9504379878.pdf",
+    "cover_letter_docx": "output/Hokanson_Cover_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+    "cover_letter_pdf": "output/Hokanson_Cover_Robert_Half_Fraud_Investigator_02300-9504379878.pdf"
+  },
+  "qa": {
+    "profile": "analyst-intelligence",
+    "allow_icac": false,
+    "source_revision": "84fd94342a57634677d3d31c74d851b65ffbb13d",
+    "resume_pages": 2,
+    "cover_pages": 1,
+    "ats_coverage_percent": 100,
+    "validation_passed": true
+  },
+  "remaining_action": "Troy review and explicit approval before submission or recruiter contact",
+  "created_at": "2026-08-28",
+  "facts_policy": "Only verified Troy career evidence and the live official posting are used."
+}

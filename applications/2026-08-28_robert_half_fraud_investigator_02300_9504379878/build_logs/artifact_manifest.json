@@ -1,0 +1,29 @@
+{
+  "created": "2026-08-28",
+  "artifacts": [
+    {
+      "file": "output/Hokanson_Resume_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+      "bytes": 42544,
+      "sha256": "3bca3fd597978da88b1e4d66b13eaee3e2d5c2f3266c569abd1792cda4c6fb03"
+    },
+    {
+      "file": "output/Hokanson_Resume_Robert_Half_Fraud_Investigator_02300-9504379878.pdf",
+      "bytes": 99993,
+      "sha256": "d648a7bb34295ec38937164f3c58d604a8d02b7ca24c247a4432ecc49cab07ba",
+      "pages": 2,
+      "page_size": "US Letter"
+    },
+    {
+      "file": "output/Hokanson_Cover_Robert_Half_Fraud_Investigator_02300-9504379878.docx",
+      "bytes": 40148,
+      "sha256": "d94bb4f26d9bbb980dce0782e621e6afa695a92a2cb101f9c7bd31c40ded5c03"
+    },
+    {
+      "file": "output/Hokanson_Cover_Robert_Half_Fraud_Investigator_02300-9504379878.pdf",
+      "bytes": 37804,
+      "sha256": "05bda52db3f08c7e2b4e71846dbd7e8d3f97308495939d8c9d39d7391e49b065",
+      "pages": 1,
+      "page_size": "US Letter"
+    }
+  ]
+}

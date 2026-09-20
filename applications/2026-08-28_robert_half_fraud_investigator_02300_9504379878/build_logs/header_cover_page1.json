@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "image": "applications/2026-08-28_robert_half_fraud_investigator_02300_9504379878/release_render_cover/page-1.png",
+  "metrics": {
+    "image_size": [1547, 2002],
+    "header_bottom_px": 232,
+    "header_height_inches_estimate": 1.2802,
+    "page_center_x": 773.0,
+    "composition_bbox": [217, 55, 1330, 175],
+    "name_bbox": [520, 55, 1024, 119],
+    "accent_bbox": [217, 133, 1328, 167],
+    "composition_horizontal_error_px": 0.5,
+    "name_horizontal_error_px": -1.0,
+    "accent_horizontal_error_px": -0.5,
+    "composition_vertical_offset_fraction": -0.004292
+  },
+  "failures": []
+}
