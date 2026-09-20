@@ -15,6 +15,8 @@ If the role is genuinely ambiguous, use **`adaptive`** for the initial scan, doc
 
 ---
 
+Read CAREER_SEARCH_STRATEGY.json and INVESTIGATIONS_LEGAL_SAFETY_STRATEGY.md for current priorities. For legal support or municipal safety, use `adaptive` initially and select an evidence-backed profile from the actual duties; never default to vendor sales or infer legal/safety credentials.
+
 ## Step 1: Read the posting title
 
 | Title contains | Profile |

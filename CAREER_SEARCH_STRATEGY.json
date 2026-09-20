@@ -1,40 +1,48 @@
 {
-  "schema_version": "1.0.0",
-  "effective_date": "2026-08-30",
+  "schema_version": "1.1.0",
+  "effective_date": "2026-09-08",
   "candidate": "Troy J. Hokanson",
-  "purpose": "Prioritize interview probability for fully remote or approved hybrid work without overstating direct industry experience.",
+  "purpose": "Center investigative work and digital evidence, add legal support that values verified case experience, and retain municipal safety as a secondary lane. Prioritize realistic qualification matches.",
   "primary_market_identity": {
-    "headline": "Former Detective & Digital Forensic Examiner | Public-Safety Software Training, Technical Support & Evidence Workflows",
-    "positioning": "Former detective and digital-forensic examiner who helps public-safety organizations adopt technology, resolve evidence and workflow problems, train users, and communicate clearly under pressure.",
-    "retention_context": "Intentionally pursuing a hands-on individual-contributor role."
+    "headline": "Investigator & Digital Forensic Examiner | Evidence Analysis, Case Preparation & Investigative Support",
+    "positioning": "Former detective and digital-forensic examiner bringing evidence analysis, interviews, investigative reporting, prosecutor coordination, and clear communication to investigations and legal case support.",
+    "retention_context": "Intentionally pursuing a hands-on individual-contributor role.",
+    "publication_status": "Internal strategy; public-profile wording requires separate review and approval."
   },
   "effort_allocation": {
-    "primary_public_safety_training_support": 60,
-    "secondary_corporate_investigations_security_intelligence": 25,
-    "employment_safety_net_claims_bridge": 15
+    "digital_forensics_and_evidence": 30,
+    "investigations_and_investigative_support": 30,
+    "legal_assistant_and_litigation_support": 20,
+    "municipal_safety_and_risk": 20
   },
   "role_families": {
     "primary": [
-      "Public Safety Software Trainer",
-      "Digital Forensics Technical Support",
-      "Digital Evidence Specialist",
-      "Customer Delivery Specialist - Public Safety",
-      "Product Specialist - Public Safety or Digital Evidence",
-      "Customer Education Specialist",
-      "Implementation Associate - Public Safety",
-      "Professional Services Consultant - Public Safety",
-      "Law Enforcement Customer Support"
+      "Digital Forensic Examiner",
+      "Digital Evidence Investigator or Specialist",
+      "Fraud Investigator",
+      "Corporate Investigator",
+      "Civil or Regulatory Investigator",
+      "Test Security or Integrity Investigator",
+      "Investigative Analyst",
+      "Case Analyst",
+      "Investigative Researcher"
     ],
     "secondary": [
-      "Corporate Investigator",
-      "Corporate Security Analyst",
-      "Security Intelligence Analyst",
-      "Digital Forensic Examiner"
+      "Legal Investigator",
+      "Investigative Paralegal where equivalent experience is accepted",
+      "Legal Assistant with substantive case support",
+      "Litigation Support Specialist",
+      "Legal Support Specialist",
+      "Legal Case Coordinator",
+      "Legal Intake Specialist",
+      "Municipal Safety Specialist",
+      "Safety Coordinator",
+      "Safety Training Coordinator",
+      "Risk and Safety Specialist"
     ],
-    "safety_net": [
-      "Claims Adjuster Trainee",
-      "Claims Investigator I",
-      "SIU Investigator I or Trainee"
+    "opportunistic": [
+      "Public-safety or digital-evidence training and customer support with a strong verified match",
+      "Claims or SIU bridge roles accepting law-enforcement experience"
     ],
     "reach_or_deprioritized": [
       "SIU Investigator II or III requiring direct carrier claims experience",
@@ -42,7 +50,10 @@
       "Senior Implementation Consultant requiring full-cycle SaaS deployments",
       "Solutions Architect or Sales Engineer requiring quota or presales ownership",
       "Enterprise DFIR requiring current SIEM, EDR, cloud incident response, or reverse engineering",
-      "Loss Prevention or Asset Protection roles tied to stores, sites, or field territories"
+      "Loss Prevention or Asset Protection roles tied to stores, sites, or field territories",
+      "Legal roles requiring unverified paralegal credentials, recent law-firm tenure, civil procedure, or litigation-platform administration",
+      "Safety roles requiring unverified CSP, industrial hygiene, safety engineering, or independent OSHA/WISHA program ownership",
+      "Primarily clerical legal reception, billing, or calendar work with little use of investigative experience"
     ]
   },
   "probability_gate": {
@@ -54,7 +65,9 @@
       "Required active adjuster or other occupational license not already verified",
       "Required production application-support, networking, cloud, SIEM, EDR, coding, reverse-engineering, or incident-response experience not already verified",
       "Required sales quota, pipeline, or formal presales ownership",
-      "Required people-management scope not already verified"
+      "Required people-management scope not already verified",
+      "Required paralegal credential, recent law-firm tenure, substantive civil litigation procedure, or eDiscovery platform administration not verified",
+      "Required independent occupational safety program ownership, regulatory audits, CSP, industrial hygiene, hazardous waste, or DOT testing administration not verified"
     ],
     "classifications": {
       "direct": "Verified function and relevant industry line; no material mandatory gap.",
@@ -85,5 +98,12 @@
     "protected_case_data_publication": "prohibited",
     "medical_retirement_in_private_sector_marketing": "omit unless Troy explicitly requests it",
     "public_updates_require_explicit_approval": true
-  }
+  },
+  "allocation_rule": "Planning shares across qualified opportunities, not quotas. Do not lower hard requirements to fill a lane. Vendor roles remain opportunistic and use the relevant lane allocation.",
+  "search_constraints": {
+    "location": "Remote U.S. work allowing Minnesota now and Washington after relocation first; approved Twin Cities, Vancouver/SW Washington and Portland hybrid. Consider strong municipal safety onsite roles in those areas with explicit relocation and physical-demand screening.",
+    "compensation": "General target $75,000 or more; flag strong lower-paid bridges. Preserve the existing legal watch exception: no minimum salary filter, always report compensation and tradeoff.",
+    "preserve_existing_limits": "Keep watch-specific travel, clearance, physical-demand, content-exposure, crypto exclusions, deduplication, and no-contact/no-submission rules."
+  },
+  "supporting_standard": "INVESTIGATIONS_LEGAL_SAFETY_STRATEGY.md"
 }
