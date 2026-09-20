@@ -255,6 +255,14 @@ def validate_one(args: argparse.Namespace) -> dict[str, Any]:
     else:
         checks.append(result("docx.provided", False, "DOCX path not provided", severity="warning"))
 
+    if docx_path and pdf_path:
+        try:
+            from body_typography_pagination_validator import validate_body
+            body_report = validate_body(docx_path, pdf_path, args.doc_type)
+            checks.extend(CheckResult(**check) for check in body_report['checks'])
+        except Exception as exc:
+            checks.append(result('body.validator_available', False, str(exc)))
+
     for png in header_pngs:
         checks.extend(inspect_rendered_header_png(png))
 

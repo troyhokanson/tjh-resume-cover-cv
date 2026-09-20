@@ -24,15 +24,10 @@ Use this order when instructions appear to conflict:
 | Public portfolio | `troyhokanson/troyhokanson.github.io`, governed by `PUBLIC_PROFILE_CONTRACT.json` |
 | Portfolio evidence | Link only to reviewed public-safe evidence; keep originals in Drive/Notion |
 
-## One-page spacing sequence
+## Layout precedence and delivery
 
-1. Start with the locked 1.55-inch body top margin and 0.55-inch bottom margin.
-2. Center the document title and focus line below the header.
-3. Use 8 points before and 2 points after section headings.
-4. Use 6 points before role titles, 0 after titles, and 2 after employer/date lines.
-5. Use 2 points after bullets and approximately 1.15 line spacing.
-6. If whitespace remains, add measured space to the opening block and between sections before enlarging body type.
-7. If content overflows, tighten paragraph spacing before reducing body text below 9 points.
+Use `standards/document_design_standard.json` for typography and margins and `workflow_contract.json` for minimum spacing. Use the greater spacing when values differ. The older 9-point compression and spacing-reduction guidance is withdrawn. Edit content before reducing approved font sizes or minimum spacing.
 
-Always inspect the bottom quarter of the rendered page. A one-pager should look intentionally balanced, not compressed at the top or stranded above a large empty area.
+Follow `standards/formatting_delivery_contract.md`. Inspect the bottom of every page, not only one-pagers. The user's standing navy/gold/Garamond requirement overrides plain-ATS autonomy. A missing validator is an Exception, never permission to substitute an unbranded document.
 
+For DOCX and DOCX-exported PDFs, the full banner repeats as `HEADER_STANDARD.md` specifies. Slim continuation bars belong to the direct-PDF route only. Do not mix routes after rendering.

@@ -2,7 +2,7 @@
 
 **Branded presentation-header standard. Updated July 22, 2026.**
 
-This standard controls documents that use Troy's navy/gold brand. It is mandatory for branded presentation copies, but it is not mandatory for every ATS upload. Under [`ROLE_ADAPTATION_STANDARD.md`](./ROLE_ADAPTATION_STANDARD.md), the AI may use a plain, text-first header when that better fits ATS parsing or the target industry's norms.
+Troy's standing default for every resume, cover letter, CV, DOCX and PDF is the full-bleed navy header, gold accents, and Garamond-family typography. This is an established requirement, not a preference to reconfirm on each application. ATS concerns, role adaptation, convenience, and a missing validator do not authorize a plain substitute. Only Troy's explicit request for a named plain-text or unbranded deliverable permits that exception; preserve the branded copies and record the scope. An employer restriction must be raised with Troy rather than silently changing his standard.
 
 ---
 
@@ -72,16 +72,16 @@ For every serious job application, build two resume tracks:
    - DOCX preferred unless the employer requires PDF.
    - No tables, text boxes, columns, floating shapes, or decorative section grids.
    - Standard headings, left-aligned body text, bullets, and plain parsing-friendly layout.
-   - Use a plain, text-first contact header by default. The navy header is optional and allowed only when created by `build_navy_header(doc)`, not as a body table or text box.
+   - Use the locked navy/gold header created by `build_navy_header(doc)`. Keep the body single-column and parsing-friendly. A plain copy requires Troy's explicit request.
    - Education must remain separate from Training and Certifications.
 
 2. **Executive Presentation Resume - human-facing PDF**
-   - May use the locked header and limited visual design.
+   - Uses the locked header and restrained gold accents.
    - Tables may be used only when they improve human readability.
    - Do not submit the table-heavy version as the primary ATS upload unless the application portal clearly preserves PDF formatting and parsing is not a concern.
 
 3. **Cover letter**
-   - May use a plain ATS header or the branded header, based on the employer, upload method, and role lane.
+   - Use the same locked navy/gold header and Garamond typography as the resume. A plain copy requires Troy's explicit request.
    - PDF is acceptable for human review.
    - DOCX may be used if an application portal requests editable upload.
 
@@ -157,3 +157,9 @@ clean_pdf_metadata(out_path, title="Resume - Troy Hokanson")
 ## Repo
 
 Public repo: https://github.com/troyhokanson/tjh-resume-cover-cv
+
+## Delivery and page balance
+
+Follow `standards/formatting_delivery_contract.md`. Draft status does not waive formatting checks. Never deliver a knowingly nonconforming file as the completed correction.
+
+DOCX-exported PDFs retain the DOCX continuation header (full repeated banner). The slim continuation applies only to the direct PDF builder. Record the route before generation; do not patch exported PDF headers.

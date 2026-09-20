@@ -37,7 +37,7 @@ After reviewing the complete job posting, the AI has discretion to choose:
 - The amount of law-enforcement, military, teaching, real-estate, customer-facing, and technical detail.
 - The most relevant verified outcomes and metrics.
 - Cover-letter narrative, paragraph structure, degree of warmth, and professional closing.
-- A plain ATS header or the branded navy/gold presentation header.
+- Role-specific content within the required full-bleed navy/gold header and Garamond typography.
 - One-page or two-page length based on seniority, relevance, and content density; two pages are acceptable for Troy's experience when both pages are relevant.
 - Whether a portfolio or sanitized work sample should be referenced.
 
@@ -159,8 +159,8 @@ The primary upload must be ATS-readable, but it does not have to use a single vi
 
 The AI may select:
 
-- A plain text-first ATS header for portals and automated parsing.
-- The navy/gold branded header for a recruiter-facing PDF, networking copy, interview packet, or human-facing attachment.
+- A plain copy only when Troy explicitly requests that named deliverable. ATS assumptions alone never authorize it.
+- The required navy/gold branded header for all resume and cover-letter copies, including ATS uploads unless Troy explicitly requests an exception.
 - Chronological, hybrid chronological, or selected-achievements emphasis, provided the work history remains truthful and easy to follow.
 - One or two pages based on role seniority and relevance.
 

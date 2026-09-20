@@ -81,3 +81,7 @@ A pass requires:
 - required spacing between the completed header and first body heading
 
 Rendered output controls. Word, DOCX, or PDF alignment settings alone do not establish a pass.
+
+## Continuation routing clarification
+
+The higher-precedence `HEADER_STANDARD.md` controls: full banner repeats for DOCX and PDFs exported from DOCX; a slim name-only bar applies to the direct-PDF route. The name-only language above is scoped to that direct-PDF route.
