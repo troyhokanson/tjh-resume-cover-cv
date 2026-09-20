@@ -1,0 +1,96 @@
+ATS Audit Report
+Profile: analyst-intelligence
+Coverage: 2.5% (2/80)
+Floor target: 85%
+Meets floor: NO -- ACTION REQUIRED
+
+FOUND TERMS:
+  + hugging face
+  + wild card
+
+MISSING TERMS (review for injection or flag as overclaim):
+  - accomplishment comfort
+  - ambitious team
+  - application remained
+  - apply workable
+  - august salary
+  - benefits opportunity
+  - candidate troy
+  - card candidate
+  - card location
+  - com huggingface
+  - community benefits
+  - company work
+  - competitive salary
+  - contribute requirements
+  - creative work
+  - culture emphasizing
+  - deep passion
+  - democratizing technology
+  - department wild
+  - distributed ambitious
+  - driven company
+  - emphasizing openness
+  - employer hugging
+  - employment type
+  - equity unlimited
+  - face job
+  - face wild
+  - first flexibility
+  - flexibility work
+  - full time
+  - fun competitive
+  - help design
+  - hokanson employer
+  - https apply
+  - identify work
+  - job position
+  - live august
+  - location united
+  - meaningful project
+  - mission driven
+  - mode remote
+  - movement verification
+  - october verified
+  - official posting
+  - official workable
+  - one hugging
+  - open source
+  - openness experimentation
+  - own role
+  - paper startup
+  - perfect job
+  - position apply
+  - posted october
+  - posting https
+  - project paper
+  - published travel
+  - remained open
+  - remote employment
+  - remote first
+  - requirements deep
+  - role interest
+  - salary equity
+  - shaping one
+  - startup creative
+  - stated deadline
+  - stated official
+  - states work
+  - team culture
+  - time off
+  - time posted
+  - type full
+  - united states
+  - unlimited time
+  - verification note
+  - verified live
+  - work mode
+  - workable application
+  - workable com
+
+REVIEW DISPOSITION:
+  - Exception recorded. The posting is an open-ended talent-pool invitation rather than a role-specific job description.
+  - The audit parser treated archive metadata, adjacent word pairs, URLs and benefits language as job requirements.
+  - Examples of false requirements include "october verified," "salary equity," "apply workable" and "workable com."
+  - No unsupported terms were inserted merely to raise the score.
+  - Substantive alignment is addressed in the resume and cover letter through AI-assisted workflow design, investigations, public-sector enablement, teaching, ambiguity and an explicit discussion of technical gaps.
