@@ -140,6 +140,10 @@ There is no mandatory detective-led opener. There is no requirement to mention m
 
 **Do not import:** SIU procedures or analyst tradecraft as the main identity.
 
+## Required DFIR casework supplement
+
+For every relevant DFIR application, automatically prepare a tailored one-page **Selected Digital Forensics Casework** supplement under [DFIR_CASEWORK_SUPPLEMENT_STANDARD.md](DFIR_CASEWORK_SUPPLEMENT_STANDARD.md). This is a required companion to the resume and cover letter when the posting materially values Troy's verified forensic work, including applicable hybrid roles. Record applicability and completion; do not ask Troy to repeat this preference. Employer upload restrictions and existing submission/publication approvals still apply.
+
 ## Hybrid-role rule
 
 A posting may combine lanes, such as a DFIR vendor Technical Account Manager or a public-safety Customer Success Manager. Select the lane that owns the job's primary business outcome, then borrow only the relevant vocabulary and evidence from one secondary lane.
