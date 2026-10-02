@@ -65,6 +65,52 @@ personally produced, and do not combine it with the separate 15-year federal sen
 
 ---
 
+## DFIR Evidence -- Legal Process, Devices, and Provider Returns
+
+Source: Troy's direct confirmation on October 2, 2026 during the Booz Allen
+Digital Forensic Examiner application discussion. Verification status:
+candidate-confirmed experience; no individual case file reviewed for these
+additional details. Approved for future career-document use by Troy on
+October 2, 2026.
+
+Confirmed experience:
+- Extensive experience writing search warrants, administrative subpoenas, and
+  preservation requests involving electronic service providers (ESPs), internet
+  service providers (ISPs), individual residences, and businesses.
+- Experience working with digital storage, iOS and Android mobile devices,
+  desktop computers, and laptops in digital-evidence investigations.
+- Received data returns from ISPs and ESPs and translated that data into
+  defensible evidence.
+- Interpreted location data, used Google Earth for mapping, and processed
+  call detail records (CDRs).
+
+Reusable wording, adapted only to the actual posting:
+  "Authored search warrants, administrative subpoenas, and preservation requests
+  involving electronic service providers, internet service providers, residences,
+  and businesses."
+  "Examined digital storage, iOS and Android mobile devices, desktop computers,
+  and laptops; interpreted ISP/ESP data returns, location data, and call detail
+  records, using Google Earth mapping to support defensible evidence findings."
+
+Future DFIR application rule:
+Use these facts when the posting calls for evidence collection, investigative
+scoping, legal-process documentation, provider records, mobile/computer evidence,
+location interpretation, CDR processing, timeline development, or understandable
+technical reporting. Keep legal-process writing separate from receipt and
+analysis of provider returns. Preserve the locked investigative assignment dates;
+the October 2 confirmation does not establish a new duration or tie every activity
+to one specific assignment.
+
+Boundaries:
+Do not invent examination volumes, provider names, request counts, case outcomes,
+or tool versions. Do not imply that every examination involved every device class
+or provider-data type. Do not convert provider-data interpretation or CDR
+processing into enterprise log analysis, SIEM/EDR use, malware analysis,
+exfiltration analysis, scripting proficiency, or full enterprise incident-response
+experience. No protected case details or private source records are included.
+
+---
+
 ## Employment Records (Reverse Chronological)
 
 ### Independent Professional
@@ -254,6 +300,14 @@ LexisNexis Accurint
               investigative rotations" when duration is material or required.
   Boundary:   Do not imply LexisNexis employment, platform administration, certification,
               current-version expertise, or use outside the two investigative rotations.
+
+Google Earth
+  Category:   Geospatial mapping / location evidence
+  Usage:      Used to map location data in digital-evidence investigations,
+              alongside interpretation of ISP/ESP returns and CDR processing.
+              Directly confirmed by Troy on October 2, 2026.
+  Boundary:   Do not imply a specific version, GIS administration, survey-grade
+              precision, or a new duration of experience.
 
 ZetX (TRAXi / Traxx)
   Category:   Cell site analysis / call detail record (CDR) mapping
@@ -774,3 +828,9 @@ script, not this file.
   Application-safe quotes, experience crosswalks, and public citation controls now live in
   awards_comm_perf_reviews.md. Source originals remain private.
 - 2026-08-28: Troy directly confirmed the connected Axon workflow: Body 3 and Fleet 3 capture with Axon Evidence (Evidence.com) for operational and investigative digital-evidence use. Fleet 3 supersedes the earlier Fleet 2 references. Added explicit end-user versus administration/implementation boundaries.
+
+- 2026-10-02: Added candidate-confirmed legal-process writing, digital-storage and
+  iOS/Android/computer examination, ISP/ESP return interpretation, location data,
+  Google Earth mapping, and CDR processing for future DFIR applications. Added
+  Google Earth to Confirmed Tools. Preserved limits against unsupported enterprise
+  IR, malware, log-analysis, and scripting claims; no new metrics or dates inferred.
