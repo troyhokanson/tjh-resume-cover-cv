@@ -9,7 +9,7 @@
 
 ## 1. Strategic Direction
 
-Troy's primary public-safety technology strategy is to pursue **senior individual-contributor roles with companies serving state, local, and education (SLED) public-safety customers, especially law-enforcement agencies**.
+Within the public-safety vendor lane, Troy's strategy is to pursue **senior individual-contributor roles with companies serving state, local, and education (SLED) public-safety customers, especially law-enforcement agencies**.
 
 The preferred lane is not generic technology sales and is not limited to investigator job titles. The strongest fit is where an employer needs someone who can:
 
@@ -550,7 +550,7 @@ These links document why Flock, Axon, and LexisNexis Risk Solutions are currentl
 
 ## 10. Standing Career Decision
 
-Public-safety vendor roles are a **primary career lane**, not a side experiment.
+As of September 8, 2026, public-safety vendor roles are an opportunistic supporting lane under CAREER_SEARCH_STRATEGY.json. Investigations, legal support, and municipal safety govern overall effort allocation.
 
 When a strong remote or home-based role appears in customer success, solutions consulting, professional services, implementation, training, technical account management, public-safety strategy, investigative analytics, digital evidence, DFIR, ALPR, RTCC, body-worn camera, CAD/RMS, or DFR, the system should evaluate it seriously even when the title does not contain `investigator`.
 
