@@ -1,0 +1,7 @@
+output/
+render_*/
+final_render_*/
+verified_render_*/
+release_render_*/
+build_logs/final_resume_text.txt
+build_logs/final_cover_text.txt
