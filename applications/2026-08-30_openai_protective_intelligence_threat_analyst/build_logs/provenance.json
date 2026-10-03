@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-08-30T03:07:59.896360+00:00",
+  "status": "Drafting",
+  "portfolio_omitted": true,
+  "sources": {
+    "applications/2026-08-17_general_online_resume/resume.md": "a418000355103f176bccee9edc88adb9b8a61c698436f8a593a7598d37b56ed2",
+    "applications/2026-08-30_openai_protective_intelligence_threat_analyst/resume.md": "8b13df2e6ac762149832c48e7a468b40d2b7c4ad502e52730290e332eca26d82",
+    "applications/2026-08-30_openai_protective_intelligence_threat_analyst/cover_letter.md": "54db53942c7373d9565741ac1e0a539911dfb711fea93784ac707862d29e8b8a"
+  },
+  "outputs": {
+    "Troy_Hokanson_OpenAI_Protective_Intelligence_Resume_2026-08-30.docx": "bf2f2dfe7cabe9703dcfdd4c238b39cf2930993c01576beca1efc785b687dbf0",
+    "Troy_Hokanson_General_Resume_ATS_2026-08-30.docx": "2d25334f61a1de7e68d48a460e6f7449dc80c7b3a90ca3165357d7b44656f863",
+    "Troy_Hokanson_General_Resume_Branded_2026-08-30.docx": "c5d560fe144f36c52942b8c4610faf48c1c89ea014616e611026e8786915f331",
+    "Troy_Hokanson_OpenAI_Protective_Intelligence_Cover_Letter_2026-08-30.docx": "3f8e7f7a6a722c342e40d614dde0ac7f8ffd64be99142d441016730b1893cb6e"
+  }
+}
